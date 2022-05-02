@@ -1,0 +1,151 @@
+//Color variables
+$red: #DD8797;
+$green: #00AE8D;
+$dark: #292929;
+$light: #F4F4F4;
+$orange: #FFB548;
+$blue: #1226AA;
+
+//Font
+@font-face {
+    font-family: "proximaNova";
+    src: url("../assets/Fonts/Proxima\ Nova\ Font.otf");
+}
+
+//Body styles
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "proximaNova";
+}
+
+nav {
+    min-height: 96px;
+    .logo {
+        width: 260px;
+        height: 79px;
+    }
+    .pageLinks {
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            color: $dark;
+        }
+        .activeLink {
+            font-weight: bolder !important;
+            color: $blue !important;
+        }
+    }
+    .navIcons {
+        img {
+            width: 46.61px;
+            height: 46.61px;
+        }
+    }
+    .navBtns {
+        a {
+            min-width: 168px;
+            height: 60px;
+            font-size: 16px;
+            border: 3px solid $blue;
+            border-radius: 25px;
+        }
+        .call {
+            color: white;
+            font-weight: bold;
+            background: $blue;
+        }
+        .login {
+            color: $blue;
+            background: transparent;
+        }
+    }
+}
+
+//footer 
+footer {
+    background: #EACBD1;
+    min-height: 544px;
+    color: $dark;
+    
+    .top {
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr;
+    }
+    .logoSection {
+        img {
+            width: 382.92px;
+            height: 116.35px;
+            object-fit: cover;
+        }
+        p {
+            font-size: 32px;
+            font-weight: normal;
+            line-height: 40px;
+            color: $dark;
+        }
+        input {
+            width: 452px;
+            height: 78px;
+            background: $dark;
+            color: white;
+            outline: none;
+            border-radius: 50px;
+            font-size: 24px;
+            line-height: 32px;
+            &::placeholder {
+                color: #EACBD1;
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+    }
+    
+    .linkSection {
+        .sect {
+            h5 {
+                color: $dark;
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: bold;
+            }
+            a { 
+                font-size: 16px;
+                line-height: 24px;
+                color: $dark;
+                font-weight: bold;
+            }
+        }
+    }
+    .iconSection {
+        h5 {
+            color: $dark;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: bold;
+        }
+        img {
+            width: 38px;
+            height: 38px;
+        }
+    }
+    .footerEnd {
+        img {
+            width: 29px;
+            height: 29px;
+        }   
+        p {
+            font-size: 24px;
+            font-weight: normal;
+            line-height: 40px;
+        }
+    }
+}
+
+//MEDIA QUERY
+@media only screen and (max-width: 480px) {}
+
+//Page File Imports
+@import "./home";
+@import "./products";

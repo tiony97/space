@@ -1,0 +1,1062 @@
+//HOME BANNER
+.homeBanner {
+    //TAB LINKS
+    .tabGrids {
+        .gridLink {
+            height: 284px;
+            background-color: $light;
+            color: $dark;
+            border-right: 2px solid rgba(128, 128, 128, 0.438);
+            border-bottom: 1px solid rgba(128, 128, 128, 0.438);
+            transition: all .3s ease-in-out;
+            img {
+                height: 80px;
+                width: 80px;
+            }
+            h1 {
+                font-size: 48px;
+                font-weight: 500;
+                line-height: 56px;
+                font-style: normal;
+            }
+        }
+    }
+    
+    //TAB SECTIONS
+    .tabSection {
+        min-height: 700px;
+    }
+    
+    //Tab link classes
+    .blue {
+        background: $blue !important;
+        h1,h2 {
+            font-weight: 900 !important;
+            color: white !important;
+        }
+        
+    }
+    .orange {
+        background: $orange !important;
+        h1, h2 {
+            font-weight: 900 !important;
+            color: $dark !important;
+        }
+        
+    }
+    .green {
+        background: $green !important;
+        h1,h2 {
+            font-weight: 900 !important;
+            color: white !important;
+        }
+        
+    }
+    .red {
+        background: $red !important;
+        h1, h2 {
+            font-weight: 900 !important;
+            color: $dark !important;
+        }
+        
+    }
+    
+    //Actual tabs
+    .tab1 {
+        background: $blue;
+        .textContent {
+            h3 {
+                color: white;
+                font-size: 32px;
+                font-weight: 500;
+            }
+            form {
+                input,select,button {
+                    min-height: 100px;
+                    width: 350px;
+                    font-size: 24px;
+                    padding: 0px 20px;
+                    border-radius: 25px;
+                    outline: none;
+                    &::placeholder {
+                        color: white;
+                        font-size: 24px;
+                    }
+                }
+                input,select {
+                    background: #2C3EB3;
+                    color: $light;
+                }
+                select {
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    z-index: 1;
+                    //Custom arrow
+                    &::after {
+                        content: "";
+                        justify-self: end;
+                        width: 0.8em;
+                        height: 0.5em;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background-color: #8A93D5;
+                        clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+                    }
+                }
+                button {
+                    background: $orange;
+                    color: $dark;
+                    font-weight: 900 !important;
+                }
+            }
+        }
+        img {
+            width: 897px;
+            height: 494px;
+            object-fit: cover;
+        }
+    }
+    
+    .tab2 {
+        background: $orange;
+        h4 {
+            font-size: 32px;
+            font-weight: 40px;
+            font-weight: 500;
+        }
+        .productCategory {
+            .categoryCard {
+                width: 300px;
+                height: 315px;
+                border-radius: 50px;
+                background: url('../assets/IMAGE\ HOLDER.png') no-repeat center center;
+                background-size: cover;
+                .info {
+                    min-width: 184px;
+                    height: 38px;
+                    border-radius: 25px;
+                    padding: 0 20px;
+                    background: $light;
+                    color: $dark;
+                    box-shadow: 1px 2px 3px 2px #70707062;
+                    font-size: 24px;
+                    font-weight: bolder;
+                    z-index: 5;
+                }
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: $light;
+                    border-radius: 50px;
+                    transition: all .5s ease-in-out;
+                    opacity: 0;
+                    .overlayInfo {
+                        width: 233px;
+                        height: 64px;
+                        border-radius: 25px;
+                        background: transparent;
+                    }
+                    .overlayTxt {
+                        font-size: 24px;
+                        color: $blue;
+                    }
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                .shopLink {
+                    width: auto;
+                    height: 44px;
+                    border-radius: 25px;
+                    transition: all .5s ease-in-out;
+                    background: $blue;
+                    z-index: 5;
+                    &:hover {
+                        color: white;
+                        background: $orange;
+                        p {
+                            display: block;
+                        }
+                    }
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 21px;
+                        font-weight: bolder;
+                        color: white;
+                        display: none;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    
+    .tab3 {
+        background: $green;
+        .textContent {
+            h3 {
+                color: white;
+                font-size: 32px;
+                font-weight: 500;
+            }
+            form {
+                input,select,button {
+                    min-height: 100px;
+                    width: 350px;
+                    font-size: 24px;
+                    padding: 0px 20px;
+                    border-radius: 25px;
+                    outline: none;
+                    &::placeholder {
+                        color: white;
+                        font-size: 24px;
+                    }
+                }
+                input,select {
+                    background: #64B49B;
+                    color: $light;
+                }
+                select {
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    z-index: 1;
+                    //Custom arrow
+                    &::after {
+                        content: "";
+                        justify-self: end;
+                        width: 0.8em;
+                        height: 0.5em;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background-color: #8A93D5;
+                        clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+                    }
+                }
+                button {
+                    background: $orange;
+                    color: $dark;
+                    font-weight: 900 !important;
+                }
+            }
+        }
+        img {
+            width: 897px;
+            height: 494px;
+            object-fit: cover;
+        }
+    }
+    
+    .tab4 {
+        background: $red;
+        h3 {
+            color: $dark;
+            font-size: 32px;
+            font-weight: 500;
+        }
+        form {
+            .radios {
+                .container {
+                    position: relative;
+                    cursor: pointer;
+                    font-size: 22px;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    &:hover {
+                        input ~ .checkmark {
+                            background-color: $red;
+                        }
+                    }
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                        &:checked ~ .checkmark {
+                            background-color: $red;
+                        }
+                        &:checked ~ .checkmark:after {
+                            display: block;
+                        }
+                    }
+                    .checkmark {
+                        position: relative;
+                        height: 40px;
+                        width: 40px;
+                        background-color: $red;
+                        border: 5px solid $dark;
+                        border-radius: 50%;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+                        &:after {
+                            top: 5px;
+                            left: 5px;
+                            right: 5px;
+                            bottom: 5px;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background: $dark;
+                        }
+                    }
+                    p {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .otherInputs {
+                .search {
+                    width: 350px;
+                    height: 100px;
+                    background: #D597A3;
+                    border-radius: 25px;
+                    img {
+                        width: 41.05px;
+                        height: 41.05px;
+                    }
+                    input {
+                        outline: none;
+                        width: 100%;
+                        height: 100%;
+                        color: $dark;
+                        background: transparent;
+                        font-size: 24px;
+                        font-weight: bolder;
+                        &::placeholder {
+                            color: $dark;
+                            font-size: 24px;
+                        }
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+                button {
+                    width: 350px;
+                    height: 100px;
+                    background: #1226AA;
+                    border-radius: 25px;
+                    font-size: 24px;
+                    font-weight: bolder;
+                    color: white;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+//ASSEMBLE SECTION
+.assemble {
+    position: relative;
+    .bgCover {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: $light;
+        width: 95vw;
+        height: 100%;
+        z-index: -1;
+    }
+    h1 {
+        font-size: 48px;
+        font-weight: 900 !important;
+        line-height: 56px;
+        text-align: center;
+        color: $dark;
+        span {
+            color: $blue !important;
+        }
+    }
+    .imgHolder {
+        img {
+            height: 647px;
+            width: 757px;
+        }
+    }
+    .gridContent {
+        .tabLink {
+            width: 141px;
+            height: 97px;
+            background: white;
+            border-radius: 25px;
+            box-shadow: 2px 2px 2px 2px lighten($color: $dark, $amount: 75%);
+            transition: all .3s ease-in-out;
+        }
+        .activeBlue {
+            .tabLink {
+                border: 3px solid $blue !important;
+            }
+            
+            p {
+                color: $blue !important;
+                font-weight: 900 !important;
+            }
+        }
+        h3 {
+            font-size: 32px;
+            transition: all .3s ease-in-out;
+        }
+        .search {
+            width: 868.24px;
+            height: 69.24px;
+            border-radius: 25px;
+            background: #DDDBDB;
+            input {
+                background: transparent;
+                width: 100%;
+                height: 69.24px;
+                font-size: 24px;
+                &::placeholder {
+                    font-size: 24px;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        .gallery {
+            max-width: 870px;
+            grid-row-gap: 50px;
+            .galleryCard {
+                img {
+                    width: 158px;
+                    height: 169px;
+                }
+                p {
+                    font-size: 16px;
+                    color: $dark;
+                }
+            }
+        }
+    }
+    .assembleButtons {
+        a {
+            width: 415px;
+            height: 98px;
+            border-radius: 25px;
+            outline: none;
+            color: $dark;
+            font-size: 24px;
+            font-weight: 900;
+        }
+        .quote {
+            background: $orange;
+        }
+        .plan {
+            background: transparent;
+            border: 3px solid $dark;
+            img {
+                height: 75px;
+                width: 75px;
+            }
+        }
+    }
+}
+
+//EXPLORE SECTION
+.explore {
+    .exploreContent {
+        h3 {
+            font-size: 48px;
+            font-weight: bolder;
+            color: $dark;
+            span {
+                color: $blue !important;
+            }
+        }
+        p {
+            font-size: 32px;
+            color: $dark
+        }
+        a {
+            width: 338px;
+            height: 85px;
+            border-radius: 25px;
+            line-height: 56px;
+            outline: none;
+            border: 3px solid $blue;
+            background: transparent;
+            color: $blue;
+            font-size: 24px;
+        }
+    }
+    .exploreCards {
+        grid-row-gap: 60px;
+        .cardLayout {
+            width: 494px;
+            height: 518px;
+            border-radius: 50px;
+            .info {
+                min-width: 233px;
+                height: 64px;
+                border-radius: 25px;
+                padding: 0 20px;
+                background: #0E1C77;
+                color: white;
+                font-size: 24px;
+                font-weight: bolder;
+                z-index: 5;
+            }
+            span {
+                font-size: 24px;
+                color: white;
+            }
+            a {
+                min-width: 201px;
+                height: 59px;
+                p {
+                    font-size: 24px;
+                    color: $orange;
+                }
+                img {
+                    width: 59px;
+                    height: 59px;
+                }
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $blue;
+                border-radius: 50px;
+                transition: all .5s ease-in-out;
+                opacity: 0;
+                .overlayInfo {
+                    width: 233px;
+                    height: 64px;
+                    border-radius: 25px;
+                    background: transparent;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        .exploreCard1 {
+            background: url('../assets/MATERIAL\ HOLDER.png') no-repeat center center;
+            background-size: cover;
+        }
+        .exploreCard2 {
+            background: url('../assets/MATERIAL\ HOLDER.png') no-repeat center center;
+            background-size: cover;
+        }
+        .exploreCard3 {
+            background: url('../assets/MATERIAL\ HOLDER.png') no-repeat center center;
+            background-size: cover;
+        }
+        .exploreCard4 {
+            background: url('../assets/MATERIAL\ HOLDER.png') no-repeat center center;
+            background-size: cover;
+        }
+    }
+}
+
+//BRANCHES
+.branches {
+    min-height: 906px;
+    .bgBack {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: $blue;
+        width: 100%;
+        height: 85%;
+        z-index: -1;
+    }
+    .wrapper {
+        background: $red;
+        height: auto;
+        border-radius: 50px;
+        h2 {
+            font-size: 48px;
+            font-weight: bolder;
+            color: $dark;
+        }
+        form {
+            .search {
+                width: 981px;
+                height: 100px;
+                background: #D597A3;
+                border-radius: 50px;
+                img {
+                    width: 41.05px;
+                    height: 41.05px;
+                }
+                input {
+                    outline: none;
+                    width: 100%;
+                    height: 100%;
+                    color: $dark;
+                    background: transparent;
+                    font-size: 24px;
+                    &::placeholder {
+                        color: $dark;
+                        font-size: 24px;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            .radios {
+                .container {
+                    position: relative;
+                    padding-left: 35px;
+                    margin-bottom: 5px;
+                    cursor: pointer;
+                    font-size: 22px;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    &:hover {
+                        input ~ .checkmark {
+                            background-color: $red;
+                        }
+                    }
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                        &:checked ~ .checkmark {
+                            background-color: $red;
+                        }
+                        &:checked ~ .checkmark:after {
+                            display: block;
+                        }
+                    }
+                    .checkmark {
+                        position: relative;
+                        height: 40px;
+                        width: 40px;
+                        background-color: $red;
+                        border: 5px solid $dark;
+                        border-radius: 50%;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+                        &:after {
+                            top: 5px;
+                            left: 5px;
+                            right: 5px;
+                            bottom: 5px;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background: $dark;
+                        }
+                    }
+                    p {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 32px;
+            color: $dark;
+        }
+        .hardware {
+            margin-top: 50px;
+            .hardwareCard {
+                width: 300px;
+                height: 315px;
+                border-radius: 50px;
+                background: url('../assets/IMAGE\ HOLDER.png') no-repeat center center;
+                background-size: cover;
+                .info {
+                    min-width: 184px;
+                    height: 38px;
+                    border-radius: 25px;
+                    padding: 0 20px;
+                    background: $blue;
+                    color: white;
+                    font-size: 24px;
+                    font-weight: bolder;
+                    z-index: 5;
+                }
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: $light;
+                    border-radius: 50px;
+                    transition: all .5s ease-in-out;
+                    opacity: 0;
+                    .overlayInfo {
+                        width: 233px;
+                        height: 64px;
+                        border-radius: 25px;
+                        background: transparent;
+                    }
+                    .overlayTxt {
+                        font-size: 24px;
+                        color: $blue;
+                    }
+                    .distance {
+                        p {
+                            font-size: 14px;
+                            color: $blue;
+                        }
+                        img {
+                            width: 22.39px;
+                            height: 31.98px;
+                        }
+                    }
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//DIFFERENCES
+.differences {
+    background: $blue;
+    h2 {
+        color: white;
+        font-size: 72px;
+        font-weight: bolder;
+    }
+    .differenceCard {
+        position: relative;
+        height: 363px;
+        width: 363px;
+        border-radius: 50px;
+        background: $light;
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        h5 {
+            font-size: 32px;
+            font-weight: normal;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50px;
+            background: $orange;
+            color: $dark;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all .5s ease-in-out;
+            h4 {
+                font-size: 40px;
+                font-weight: bold;
+                line-height: 45px;
+            }
+            p {
+                font-size: 24px;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+//PARTNERS
+.partners {
+    .partnerText {
+        h2 {
+            font-size: 48px;
+            font-weight: bolder;
+            line-height: 56px;
+            color: $dark;
+            width: 55%;
+            span {
+                color: $blue;
+            }
+        }
+        a {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: underline;
+            color: $blue;
+        }
+    }
+    .partnerSlider {
+        .sliderCard {
+            border: 2px solid #AAAAAA;
+            border-radius: 50px;
+            img {
+                width: 466px;
+                height: 526px;
+                border-radius: 50px;
+                object-fit: cover;
+            }
+            p {
+                font-size: 32px;
+                font-weight: normal;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+//CUSTOMERS
+.customers {
+    .titleSection {
+        h2 {
+            font-size: 48px;
+            font-weight: bolder;
+            line-height: 56px;
+            color: $dark;
+            width: 55%;
+            span {
+                color: $blue;
+            }
+        }
+        a {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: underline;
+            color: $blue;
+        }
+    }
+    .customerSlider {
+        .customerCard {
+            width: 494px;
+            height: 518px;
+            border-radius: 50px;
+            border: 2px solid #AAAAAA;
+            background: url('../assets/PATTERN.png') no-repeat center center;
+            background-size: cover;
+            transition: all .5s ease-in-out;
+            &:hover {
+                color: white !important;
+                .overlay {
+                    display: block !important;
+                }
+                .overlayImg {
+                    display: block !important;
+                }
+                .hover {
+                    display: flex !important;
+                }
+                .light {
+                    display: none !important;
+                }
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $blue;
+                z-index: -1;
+                display: none;
+                transition: all .5s ease-in-out;
+                border-radius: 50px;
+            }
+            .overlayImg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50px;
+                object-fit: cover;
+                z-index: 100;
+                display: none;
+                transition: all .5s ease-in-out;
+            }
+            .name {
+                img {
+                    width: 151px;
+                    height: 151px;
+                    object-fit: cover;
+                }
+                h4 {
+                    font-size: 24px;
+                    font-weight: bold;
+                    line-height: 32px;
+                }
+            }
+            p {
+                font-size: 32px;
+                font-weight: lighter;
+                line-height: 40px;
+            }
+            .ratings {
+                img {
+                    width: 61px;
+                    height: 61px;
+                }
+                .hover {
+                    transition: all .5s ease-in-out;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//COMMUNITY
+.community {
+    .back {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 95%;
+        height: 100%;
+        background: $light;
+        z-index: -1;
+    }
+    h2 {
+        font-size: 48px;
+        font-weight: bolder;
+        line-height: 56px;
+        color: $dark;
+        span {
+            color: $blue;
+        }
+    }
+    .communityInfo {
+        .imgWrapper {
+            width: 80vw;
+            height: 60vh;
+            .communityImg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+            .linkBtns {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+                .commBtn {
+                    width: 90px;
+                    height: 73px;
+                    cursor: pointer;
+                    img {
+                        width: 25.82px;
+                        height: 30.03px;
+                        object-fit: cover;
+                        z-index: 5;
+                    }
+                }
+                .btn1 {
+                    background: $dark !important;
+                }
+                .btn2 {
+                    background: $blue !important;
+                }
+            }
+        }
+        .communityText {
+            h5 {
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: bold;
+                color: $dark;
+                width: 90%;
+            }
+            h3 {
+                font-size: 40px;
+                font-weight: bolder;
+                line-height: 48px;
+            }
+            p {
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 32px;
+                color: $dark;
+                width: 70%;
+            }
+            a {
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 32px;
+                color: $blue;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+//STYLE POINTS SECTION
+.stylePoints {
+    background: $blue;
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url('../assets/PATTERN.png') repeat center center;
+        background-size: contain;
+        z-index: 5;
+    }
+    img {
+        width: 904px;
+        height: 487px;
+        object-fit: cover;
+    }
+    .styleText {
+        h2 {
+            font-size: 48px;
+            font-weight: bolder;
+            line-height: 56px;
+            color: white;
+        }
+        h5 {
+            font-size: 32px;
+            font-weight: normal;
+            line-height: 43px;
+            color: white;
+        }
+        a {
+            width: 266px;
+            height: 85px;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: bolder;
+            background: $orange;
+            color: $dark;
+            border-radius: 25px;
+            outline: none;
+        }
+    }
+}

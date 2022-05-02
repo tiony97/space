@@ -1,0 +1,16 @@
+<svg id="location_on_black_24dp" xmlns="http://www.w3.org/2000/svg" width="38.376" height="38.376" viewBox="0 0 38.376 38.376">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #1226aa;
+      }
+    </style>
+  </defs>
+  <path id="Path_38" data-name="Path 38" class="cls-1" d="M0,0H38.376V38.376H0Z"/>
+  <path id="Path_39" data-name="Path 39" class="cls-2" d="M16.193,2A11.185,11.185,0,0,0,5,13.193C5,21.588,16.193,33.98,16.193,33.98S27.386,21.588,27.386,13.193A11.185,11.185,0,0,0,16.193,2Zm-8,11.193a8,8,0,1,1,15.99,0c0,4.605-4.605,11.5-8,15.8C12.867,24.722,8.2,17.75,8.2,13.193Z" transform="translate(2.995 1.198)"/>
+  <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-2" cx="4" cy="4" r="4" transform="translate(15 10.376)"/>
+</svg>

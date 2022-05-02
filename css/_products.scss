@@ -1,0 +1,320 @@
+//PRODUCT BANNER
+.productBanner {
+    background: #EACBD1;
+    border: none;
+    .back {
+        background: $blue;
+        width: 100%;
+        height: 70%;
+        top: 0;
+        left: 0;
+    }
+    .bannerTxt {
+        z-index: 1;
+        h1 {
+            font-size: 64px;
+            font-weight: 900;
+            color: white;
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+        h5 {
+            font-size: 24px;
+            color: $dark;
+        }
+        h6 {
+            font-size: 24px;
+            color: white;
+            font-weight: bolder;
+        }
+        img {
+            width: 39px;
+            height: 39px;
+        }
+    }
+    .bannerImg {
+        width: 939px;
+        height: 554px;
+        z-index: 1;
+    }
+}
+
+//PRODUCT GRIDS SECTION
+.productGrids {
+    background: #EACBD1;
+    h4 {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: bolder;
+        color: $dark;
+    }
+    .productCard {
+        min-height: 611px;
+        width: auto;
+        .imgWrapper {
+            width: auto;
+            height: 450px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                transition: all .3s ease-in-out;
+            }
+            &:hover {
+                overflow: hidden;
+                img {
+                    width: 120%;
+                    height: 120%;
+                }
+            }
+        }
+        
+        .cardTxt {
+            background: white;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            h4 {
+                color: $dark;
+                font-size: 32px;
+                font-weight: bold;
+            }
+            p {
+                color: $dark;
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+//TIPS SECTION
+.productTips {
+    background: #EACBD1;
+    .back {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 95%;
+        height: 100%;
+        background: white !important;
+        z-index: 0;
+    }
+    .tipsHeader {
+        z-index: 1;
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+            font-weight: 900;
+            color: $dark;
+            span {
+                color: $blue;
+            }
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+    }
+    .tipsInfo {
+        z-index: 1;
+        .imgWrapper {
+            width: 80vw;
+            height: 60vh;
+            .tipsImg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+            .linkBtns {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+                .commBtn {
+                    width: 90px;
+                    height: 73px;
+                    cursor: pointer;
+                    img {
+                        width: 25.82px;
+                        height: 30.03px;
+                        object-fit: cover;
+                        z-index: 5;
+                    }
+                }
+                .btn1 {
+                    background: $dark !important;
+                }
+                .btn2 {
+                    background: $blue !important;
+                }
+            }
+        }
+        .communityText {
+            h3 {
+                font-size: 40px;
+                font-weight: bolder;
+                line-height: 48px;
+            }
+            p {
+                font-size: 24px;
+                font-weight: normal;
+                line-height: 32px;
+                color: $dark;
+                width: 70%;
+            }
+            a {
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 32px;
+                color: $blue;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+//BRANCHES SECTION
+.productBranches {
+    @extend .branches;
+    background: #EACBD1;
+    .bgBack {
+        background: white !important;
+        height: 70%;
+        z-index: 1;
+    }   
+    .wrapper {
+        z-index: 2;
+    }
+}
+
+
+/*PRODUCTS ROOFING */
+.roofingBanner {
+    @extend .productBanner;
+    .back {
+        height: 60%;
+    }
+}
+
+.productsExplore {
+    background: #EACBD1;
+    
+    .back {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 95%;
+        height: 100%;
+        background: white !important;
+        z-index: 0;
+    }
+    
+    h1 {
+        font-size: 48px;
+        font-weight: 900 !important;
+        color: $dark;
+        line-height: 56px;
+        z-index: 1;
+        span {
+            color: $blue;
+        }
+    }
+    .exploreWrapper {
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        grid-gap: 50px;
+        .tiles {
+            .choice {
+                width: 304px;
+                height: 97px;
+                border-radius: 25px;
+                border: 3px solid $blue;
+                color: $dark;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: normal;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+            }
+            .activeChoice {
+                color: white !important;
+                font-weight: bold !important;
+                background: $blue !important;
+            }
+        }
+        .tileTypes {
+            h4 {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: bold;
+                color: $dark;
+            }
+            .galleryCard {
+                cursor: pointer;
+                img {
+                    width: 158px;
+                    height: 169px;
+                    border-radius: 25px;
+                }
+                p {
+                    font-size: 16px;
+                    color: $dark;
+                }
+            }
+            .activeImageChoice {
+                img {
+                    border: 5px solid $blue;
+                }
+                p {
+                    color: $blue;
+                }
+            }
+        }
+        .inputs {
+            h3 {
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: bold;
+            }
+            label {
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: normal;
+            }
+            input {
+                width: 350px;
+                height: 98px;
+                border-radius: 25px;
+                font-size: 24px;
+                color: $dark;
+                background: #E2E2E2;
+                outline: none;
+            }
+        }
+        button {
+            width: 415px;
+            height: 98px;
+            border-radius: 25px;
+            background: $orange;
+            color: $dark;
+            outline: none;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 900;
+        }
+    }
+}

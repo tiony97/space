@@ -1,0 +1,1749 @@
+@font-face {
+  font-family: "proximaNova";
+  src: url("../assets/Fonts/Proxima Nova Font.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "proximaNova";
+}
+
+nav {
+  min-height: 96px;
+}
+
+nav .logo {
+  width: 260px;
+  height: 79px;
+}
+
+nav .pageLinks a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #292929;
+}
+
+nav .pageLinks .activeLink {
+  font-weight: bolder !important;
+  color: #1226AA !important;
+}
+
+nav .navIcons img {
+  width: 46.61px;
+  height: 46.61px;
+}
+
+nav .navBtns a {
+  min-width: 168px;
+  height: 60px;
+  font-size: 16px;
+  border: 3px solid #1226AA;
+  border-radius: 25px;
+}
+
+nav .navBtns .call {
+  color: white;
+  font-weight: bold;
+  background: #1226AA;
+}
+
+nav .navBtns .login {
+  color: #1226AA;
+  background: transparent;
+}
+
+footer {
+  background: #EACBD1;
+  min-height: 544px;
+  color: #292929;
+}
+
+footer .top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr 1fr;
+      grid-template-columns: 2fr 3fr 1fr;
+}
+
+footer .logoSection img {
+  width: 382.92px;
+  height: 116.35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer .logoSection p {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #292929;
+}
+
+footer .logoSection input {
+  width: 452px;
+  height: 78px;
+  background: #292929;
+  color: white;
+  outline: none;
+  border-radius: 50px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+footer .logoSection input::-webkit-input-placeholder {
+  color: #EACBD1;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+footer .logoSection input:-ms-input-placeholder {
+  color: #EACBD1;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+footer .logoSection input::-ms-input-placeholder {
+  color: #EACBD1;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+footer .logoSection input::placeholder {
+  color: #EACBD1;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+footer .linkSection .sect h5 {
+  color: #292929;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+footer .linkSection .sect a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #292929;
+  font-weight: bold;
+}
+
+footer .iconSection h5 {
+  color: #292929;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+footer .iconSection img {
+  width: 38px;
+  height: 38px;
+}
+
+footer .footerEnd img {
+  width: 29px;
+  height: 29px;
+}
+
+footer .footerEnd p {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+.homeBanner .tabGrids .gridLink {
+  height: 284px;
+  background-color: #F4F4F4;
+  color: #292929;
+  border-right: 2px solid rgba(128, 128, 128, 0.438);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.438);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.homeBanner .tabGrids .gridLink img {
+  height: 80px;
+  width: 80px;
+}
+
+.homeBanner .tabGrids .gridLink h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  font-style: normal;
+}
+
+.homeBanner .tabSection {
+  min-height: 700px;
+}
+
+.homeBanner .blue {
+  background: #1226AA !important;
+}
+
+.homeBanner .blue h1, .homeBanner .blue h2 {
+  font-weight: 900 !important;
+  color: white !important;
+}
+
+.homeBanner .orange {
+  background: #FFB548 !important;
+}
+
+.homeBanner .orange h1, .homeBanner .orange h2 {
+  font-weight: 900 !important;
+  color: #292929 !important;
+}
+
+.homeBanner .green {
+  background: #00AE8D !important;
+}
+
+.homeBanner .green h1, .homeBanner .green h2 {
+  font-weight: 900 !important;
+  color: white !important;
+}
+
+.homeBanner .red {
+  background: #DD8797 !important;
+}
+
+.homeBanner .red h1, .homeBanner .red h2 {
+  font-weight: 900 !important;
+  color: #292929 !important;
+}
+
+.homeBanner .tab1 {
+  background: #1226AA;
+}
+
+.homeBanner .tab1 .textContent h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.homeBanner .tab1 .textContent form input, .homeBanner .tab1 .textContent form select, .homeBanner .tab1 .textContent form button {
+  min-height: 100px;
+  width: 350px;
+  font-size: 24px;
+  padding: 0px 20px;
+  border-radius: 25px;
+  outline: none;
+}
+
+.homeBanner .tab1 .textContent form input::-webkit-input-placeholder, .homeBanner .tab1 .textContent form select::-webkit-input-placeholder, .homeBanner .tab1 .textContent form button::-webkit-input-placeholder {
+  color: white;
+  font-size: 24px;
+}
+
+.homeBanner .tab1 .textContent form input:-ms-input-placeholder, .homeBanner .tab1 .textContent form select:-ms-input-placeholder, .homeBanner .tab1 .textContent form button:-ms-input-placeholder {
+  color: white;
+  font-size: 24px;
+}
+
+.homeBanner .tab1 .textContent form input::-ms-input-placeholder, .homeBanner .tab1 .textContent form select::-ms-input-placeholder, .homeBanner .tab1 .textContent form button::-ms-input-placeholder {
+  color: white;
+  font-size: 24px;
+}
+
+.homeBanner .tab1 .textContent form input::placeholder, .homeBanner .tab1 .textContent form select::placeholder, .homeBanner .tab1 .textContent form button::placeholder {
+  color: white;
+  font-size: 24px;
+}
+
+.homeBanner .tab1 .textContent form input, .homeBanner .tab1 .textContent form select {
+  background: #2C3EB3;
+  color: #F4F4F4;
+}
+
+.homeBanner .tab1 .textContent form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  z-index: 1;
+}
+
+.homeBanner .tab1 .textContent form select::after {
+  content: "";
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 0.8em;
+  height: 0.5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #8A93D5;
+  -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+          clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+.homeBanner .tab1 .textContent form button {
+  background: #FFB548;
+  color: #292929;
+  font-weight: 900 !important;
+}
+
+.homeBanner .tab1 img {
+  width: 897px;
+  height: 494px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.homeBanner .tab2 {
+  background: #FFB548;
+}
+
+.homeBanner .tab2 h4 {
+  font-size: 32px;
+  font-weight: 40px;
+  font-weight: 500;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard {
+  width: 300px;
+  height: 315px;
+  border-radius: 50px;
+  background: url("../assets/IMAGE HOLDER.png") no-repeat center center;
+  background-size: cover;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard .info {
+  min-width: 184px;
+  height: 38px;
+  border-radius: 25px;
+  padding: 0 20px;
+  background: #F4F4F4;
+  color: #292929;
+  -webkit-box-shadow: 1px 2px 3px 2px #70707062;
+          box-shadow: 1px 2px 3px 2px #70707062;
+  font-size: 24px;
+  font-weight: bolder;
+  z-index: 5;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F4F4F4;
+  border-radius: 50px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  opacity: 0;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard .overlay .overlayInfo {
+  width: 233px;
+  height: 64px;
+  border-radius: 25px;
+  background: transparent;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard .overlay .overlayTxt {
+  font-size: 24px;
+  color: #1226AA;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard .overlay:hover {
+  opacity: 1;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard .shopLink {
+  width: auto;
+  height: 44px;
+  border-radius: 25px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  background: #1226AA;
+  z-index: 5;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard .shopLink:hover {
+  color: white;
+  background: #FFB548;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard .shopLink:hover p {
+  display: block;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard .shopLink img {
+  width: 30px;
+  height: 30px;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard .shopLink p {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bolder;
+  color: white;
+  display: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.homeBanner .tab3 {
+  background: #00AE8D;
+}
+
+.homeBanner .tab3 .textContent h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.homeBanner .tab3 .textContent form input, .homeBanner .tab3 .textContent form select, .homeBanner .tab3 .textContent form button {
+  min-height: 100px;
+  width: 350px;
+  font-size: 24px;
+  padding: 0px 20px;
+  border-radius: 25px;
+  outline: none;
+}
+
+.homeBanner .tab3 .textContent form input::-webkit-input-placeholder, .homeBanner .tab3 .textContent form select::-webkit-input-placeholder, .homeBanner .tab3 .textContent form button::-webkit-input-placeholder {
+  color: white;
+  font-size: 24px;
+}
+
+.homeBanner .tab3 .textContent form input:-ms-input-placeholder, .homeBanner .tab3 .textContent form select:-ms-input-placeholder, .homeBanner .tab3 .textContent form button:-ms-input-placeholder {
+  color: white;
+  font-size: 24px;
+}
+
+.homeBanner .tab3 .textContent form input::-ms-input-placeholder, .homeBanner .tab3 .textContent form select::-ms-input-placeholder, .homeBanner .tab3 .textContent form button::-ms-input-placeholder {
+  color: white;
+  font-size: 24px;
+}
+
+.homeBanner .tab3 .textContent form input::placeholder, .homeBanner .tab3 .textContent form select::placeholder, .homeBanner .tab3 .textContent form button::placeholder {
+  color: white;
+  font-size: 24px;
+}
+
+.homeBanner .tab3 .textContent form input, .homeBanner .tab3 .textContent form select {
+  background: #64B49B;
+  color: #F4F4F4;
+}
+
+.homeBanner .tab3 .textContent form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  z-index: 1;
+}
+
+.homeBanner .tab3 .textContent form select::after {
+  content: "";
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 0.8em;
+  height: 0.5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #8A93D5;
+  -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+          clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+.homeBanner .tab3 .textContent form button {
+  background: #FFB548;
+  color: #292929;
+  font-weight: 900 !important;
+}
+
+.homeBanner .tab3 img {
+  width: 897px;
+  height: 494px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.homeBanner .tab4 {
+  background: #DD8797;
+}
+
+.homeBanner .tab4 h3 {
+  color: #292929;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.homeBanner .tab4 form .radios .container {
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.homeBanner .tab4 form .radios .container:hover input ~ .checkmark {
+  background-color: #DD8797;
+}
+
+.homeBanner .tab4 form .radios .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.homeBanner .tab4 form .radios .container input:checked ~ .checkmark {
+  background-color: #DD8797;
+}
+
+.homeBanner .tab4 form .radios .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.homeBanner .tab4 form .radios .container .checkmark {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background-color: #DD8797;
+  border: 5px solid #292929;
+  border-radius: 50%;
+}
+
+.homeBanner .tab4 form .radios .container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.homeBanner .tab4 form .radios .container .checkmark:after {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #292929;
+}
+
+.homeBanner .tab4 form .radios .container p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.homeBanner .tab4 form .otherInputs .search {
+  width: 350px;
+  height: 100px;
+  background: #D597A3;
+  border-radius: 25px;
+}
+
+.homeBanner .tab4 form .otherInputs .search img {
+  width: 41.05px;
+  height: 41.05px;
+}
+
+.homeBanner .tab4 form .otherInputs .search input {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  color: #292929;
+  background: transparent;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.homeBanner .tab4 form .otherInputs .search input::-webkit-input-placeholder {
+  color: #292929;
+  font-size: 24px;
+}
+
+.homeBanner .tab4 form .otherInputs .search input:-ms-input-placeholder {
+  color: #292929;
+  font-size: 24px;
+}
+
+.homeBanner .tab4 form .otherInputs .search input::-ms-input-placeholder {
+  color: #292929;
+  font-size: 24px;
+}
+
+.homeBanner .tab4 form .otherInputs .search input::placeholder {
+  color: #292929;
+  font-size: 24px;
+}
+
+.homeBanner .tab4 form .otherInputs .search input:focus {
+  outline: none;
+}
+
+.homeBanner .tab4 form .otherInputs button {
+  width: 350px;
+  height: 100px;
+  background: #1226AA;
+  border-radius: 25px;
+  font-size: 24px;
+  font-weight: bolder;
+  color: white;
+  outline: none;
+}
+
+.assemble {
+  position: relative;
+}
+
+.assemble .bgCover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #F4F4F4;
+  width: 95vw;
+  height: 100%;
+  z-index: -1;
+}
+
+.assemble h1 {
+  font-size: 48px;
+  font-weight: 900 !important;
+  line-height: 56px;
+  text-align: center;
+  color: #292929;
+}
+
+.assemble h1 span {
+  color: #1226AA !important;
+}
+
+.assemble .imgHolder img {
+  height: 647px;
+  width: 757px;
+}
+
+.assemble .gridContent .tabLink {
+  width: 141px;
+  height: 97px;
+  background: white;
+  border-radius: 25px;
+  -webkit-box-shadow: 2px 2px 2px 2px #e8e8e8;
+          box-shadow: 2px 2px 2px 2px #e8e8e8;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.assemble .gridContent .activeBlue .tabLink {
+  border: 3px solid #1226AA !important;
+}
+
+.assemble .gridContent .activeBlue p {
+  color: #1226AA !important;
+  font-weight: 900 !important;
+}
+
+.assemble .gridContent h3 {
+  font-size: 32px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.assemble .gridContent .search {
+  width: 868.24px;
+  height: 69.24px;
+  border-radius: 25px;
+  background: #DDDBDB;
+}
+
+.assemble .gridContent .search input {
+  background: transparent;
+  width: 100%;
+  height: 69.24px;
+  font-size: 24px;
+}
+
+.assemble .gridContent .search input::-webkit-input-placeholder {
+  font-size: 24px;
+}
+
+.assemble .gridContent .search input:-ms-input-placeholder {
+  font-size: 24px;
+}
+
+.assemble .gridContent .search input::-ms-input-placeholder {
+  font-size: 24px;
+}
+
+.assemble .gridContent .search input::placeholder {
+  font-size: 24px;
+}
+
+.assemble .gridContent .search input:focus {
+  outline: none;
+}
+
+.assemble .gridContent .gallery {
+  max-width: 870px;
+  grid-row-gap: 50px;
+}
+
+.assemble .gridContent .gallery .galleryCard img {
+  width: 158px;
+  height: 169px;
+}
+
+.assemble .gridContent .gallery .galleryCard p {
+  font-size: 16px;
+  color: #292929;
+}
+
+.assemble .assembleButtons a {
+  width: 415px;
+  height: 98px;
+  border-radius: 25px;
+  outline: none;
+  color: #292929;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.assemble .assembleButtons .quote {
+  background: #FFB548;
+}
+
+.assemble .assembleButtons .plan {
+  background: transparent;
+  border: 3px solid #292929;
+}
+
+.assemble .assembleButtons .plan img {
+  height: 75px;
+  width: 75px;
+}
+
+.explore .exploreContent h3 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #292929;
+}
+
+.explore .exploreContent h3 span {
+  color: #1226AA !important;
+}
+
+.explore .exploreContent p {
+  font-size: 32px;
+  color: #292929;
+}
+
+.explore .exploreContent a {
+  width: 338px;
+  height: 85px;
+  border-radius: 25px;
+  line-height: 56px;
+  outline: none;
+  border: 3px solid #1226AA;
+  background: transparent;
+  color: #1226AA;
+  font-size: 24px;
+}
+
+.explore .exploreCards {
+  grid-row-gap: 60px;
+}
+
+.explore .exploreCards .cardLayout {
+  width: 494px;
+  height: 518px;
+  border-radius: 50px;
+}
+
+.explore .exploreCards .cardLayout .info {
+  min-width: 233px;
+  height: 64px;
+  border-radius: 25px;
+  padding: 0 20px;
+  background: #0E1C77;
+  color: white;
+  font-size: 24px;
+  font-weight: bolder;
+  z-index: 5;
+}
+
+.explore .exploreCards .cardLayout span {
+  font-size: 24px;
+  color: white;
+}
+
+.explore .exploreCards .cardLayout a {
+  min-width: 201px;
+  height: 59px;
+}
+
+.explore .exploreCards .cardLayout a p {
+  font-size: 24px;
+  color: #FFB548;
+}
+
+.explore .exploreCards .cardLayout a img {
+  width: 59px;
+  height: 59px;
+}
+
+.explore .exploreCards .cardLayout .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1226AA;
+  border-radius: 50px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  opacity: 0;
+}
+
+.explore .exploreCards .cardLayout .overlay .overlayInfo {
+  width: 233px;
+  height: 64px;
+  border-radius: 25px;
+  background: transparent;
+}
+
+.explore .exploreCards .cardLayout .overlay:hover {
+  opacity: 1;
+}
+
+.explore .exploreCards .exploreCard1 {
+  background: url("../assets/MATERIAL HOLDER.png") no-repeat center center;
+  background-size: cover;
+}
+
+.explore .exploreCards .exploreCard2 {
+  background: url("../assets/MATERIAL HOLDER.png") no-repeat center center;
+  background-size: cover;
+}
+
+.explore .exploreCards .exploreCard3 {
+  background: url("../assets/MATERIAL HOLDER.png") no-repeat center center;
+  background-size: cover;
+}
+
+.explore .exploreCards .exploreCard4 {
+  background: url("../assets/MATERIAL HOLDER.png") no-repeat center center;
+  background-size: cover;
+}
+
+.branches, .productBranches {
+  min-height: 906px;
+}
+
+.branches .bgBack, .productBranches .bgBack {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #1226AA;
+  width: 100%;
+  height: 85%;
+  z-index: -1;
+}
+
+.branches .wrapper, .productBranches .wrapper {
+  background: #DD8797;
+  height: auto;
+  border-radius: 50px;
+}
+
+.branches .wrapper h2, .productBranches .wrapper h2 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #292929;
+}
+
+.branches .wrapper form .search, .productBranches .wrapper form .search {
+  width: 981px;
+  height: 100px;
+  background: #D597A3;
+  border-radius: 50px;
+}
+
+.branches .wrapper form .search img, .productBranches .wrapper form .search img {
+  width: 41.05px;
+  height: 41.05px;
+}
+
+.branches .wrapper form .search input, .productBranches .wrapper form .search input {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  color: #292929;
+  background: transparent;
+  font-size: 24px;
+}
+
+.branches .wrapper form .search input::-webkit-input-placeholder, .productBranches .wrapper form .search input::-webkit-input-placeholder {
+  color: #292929;
+  font-size: 24px;
+}
+
+.branches .wrapper form .search input:-ms-input-placeholder, .productBranches .wrapper form .search input:-ms-input-placeholder {
+  color: #292929;
+  font-size: 24px;
+}
+
+.branches .wrapper form .search input::-ms-input-placeholder, .productBranches .wrapper form .search input::-ms-input-placeholder {
+  color: #292929;
+  font-size: 24px;
+}
+
+.branches .wrapper form .search input::placeholder, .productBranches .wrapper form .search input::placeholder {
+  color: #292929;
+  font-size: 24px;
+}
+
+.branches .wrapper form .search input:focus, .productBranches .wrapper form .search input:focus {
+  outline: none;
+}
+
+.branches .wrapper form .radios .container, .productBranches .wrapper form .radios .container {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.branches .wrapper form .radios .container:hover input ~ .checkmark, .productBranches .wrapper form .radios .container:hover input ~ .checkmark {
+  background-color: #DD8797;
+}
+
+.branches .wrapper form .radios .container input, .productBranches .wrapper form .radios .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.branches .wrapper form .radios .container input:checked ~ .checkmark, .productBranches .wrapper form .radios .container input:checked ~ .checkmark {
+  background-color: #DD8797;
+}
+
+.branches .wrapper form .radios .container input:checked ~ .checkmark:after, .productBranches .wrapper form .radios .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.branches .wrapper form .radios .container .checkmark, .productBranches .wrapper form .radios .container .checkmark {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background-color: #DD8797;
+  border: 5px solid #292929;
+  border-radius: 50%;
+}
+
+.branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #292929;
+}
+
+.branches .wrapper form .radios .container p, .productBranches .wrapper form .radios .container p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.branches .wrapper p, .productBranches .wrapper p {
+  font-size: 32px;
+  color: #292929;
+}
+
+.branches .wrapper .hardware, .productBranches .wrapper .hardware {
+  margin-top: 50px;
+}
+
+.branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard {
+  width: 300px;
+  height: 315px;
+  border-radius: 50px;
+  background: url("../assets/IMAGE HOLDER.png") no-repeat center center;
+  background-size: cover;
+}
+
+.branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info {
+  min-width: 184px;
+  height: 38px;
+  border-radius: 25px;
+  padding: 0 20px;
+  background: #1226AA;
+  color: white;
+  font-size: 24px;
+  font-weight: bolder;
+  z-index: 5;
+}
+
+.branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F4F4F4;
+  border-radius: 50px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  opacity: 0;
+}
+
+.branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+  width: 233px;
+  height: 64px;
+  border-radius: 25px;
+  background: transparent;
+}
+
+.branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+  font-size: 24px;
+  color: #1226AA;
+}
+
+.branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p {
+  font-size: 14px;
+  color: #1226AA;
+}
+
+.branches .wrapper .hardware .hardwareCard .overlay .distance img, .productBranches .wrapper .hardware .hardwareCard .overlay .distance img {
+  width: 22.39px;
+  height: 31.98px;
+}
+
+.branches .wrapper .hardware .hardwareCard .overlay:hover, .productBranches .wrapper .hardware .hardwareCard .overlay:hover {
+  opacity: 1;
+}
+
+.differences {
+  background: #1226AA;
+}
+
+.differences h2 {
+  color: white;
+  font-size: 72px;
+  font-weight: bolder;
+}
+
+.differences .differenceCard {
+  position: relative;
+  height: 363px;
+  width: 363px;
+  border-radius: 50px;
+  background: #F4F4F4;
+}
+
+.differences .differenceCard:hover .overlay {
+  opacity: 1;
+}
+
+.differences .differenceCard img {
+  width: 200px;
+  height: 200px;
+}
+
+.differences .differenceCard h5 {
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.differences .differenceCard .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  background: #FFB548;
+  color: #292929;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.differences .differenceCard .overlay h4 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 45px;
+}
+
+.differences .differenceCard .overlay p {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.partners .partnerText h2 {
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 56px;
+  color: #292929;
+  width: 55%;
+}
+
+.partners .partnerText h2 span {
+  color: #1226AA;
+}
+
+.partners .partnerText a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #1226AA;
+}
+
+.partners .partnerSlider .sliderCard {
+  border: 2px solid #AAAAAA;
+  border-radius: 50px;
+}
+
+.partners .partnerSlider .sliderCard img {
+  width: 466px;
+  height: 526px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.partners .partnerSlider .sliderCard p {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+.customers .titleSection h2 {
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 56px;
+  color: #292929;
+  width: 55%;
+}
+
+.customers .titleSection h2 span {
+  color: #1226AA;
+}
+
+.customers .titleSection a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #1226AA;
+}
+
+.customers .customerSlider .customerCard {
+  width: 494px;
+  height: 518px;
+  border-radius: 50px;
+  border: 2px solid #AAAAAA;
+  background: url("../assets/PATTERN.png") no-repeat center center;
+  background-size: cover;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.customers .customerSlider .customerCard:hover {
+  color: white !important;
+}
+
+.customers .customerSlider .customerCard:hover .overlay {
+  display: block !important;
+}
+
+.customers .customerSlider .customerCard:hover .overlayImg {
+  display: block !important;
+}
+
+.customers .customerSlider .customerCard:hover .hover {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.customers .customerSlider .customerCard:hover .light {
+  display: none !important;
+}
+
+.customers .customerSlider .customerCard .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1226AA;
+  z-index: -1;
+  display: none;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  border-radius: 50px;
+}
+
+.customers .customerSlider .customerCard .overlayImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 100;
+  display: none;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.customers .customerSlider .customerCard .name img {
+  width: 151px;
+  height: 151px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.customers .customerSlider .customerCard .name h4 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+}
+
+.customers .customerSlider .customerCard p {
+  font-size: 32px;
+  font-weight: lighter;
+  line-height: 40px;
+}
+
+.customers .customerSlider .customerCard .ratings img {
+  width: 61px;
+  height: 61px;
+}
+
+.customers .customerSlider .customerCard .ratings .hover {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  display: none;
+}
+
+.community .back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 95%;
+  height: 100%;
+  background: #F4F4F4;
+  z-index: -1;
+}
+
+.community h2 {
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 56px;
+  color: #292929;
+}
+
+.community h2 span {
+  color: #1226AA;
+}
+
+.community .communityInfo .imgWrapper {
+  width: 80vw;
+  height: 60vh;
+}
+
+.community .communityInfo .imgWrapper .communityImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.community .communityInfo .imgWrapper .linkBtns {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.community .communityInfo .imgWrapper .linkBtns .commBtn {
+  width: 90px;
+  height: 73px;
+  cursor: pointer;
+}
+
+.community .communityInfo .imgWrapper .linkBtns .commBtn img {
+  width: 25.82px;
+  height: 30.03px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 5;
+}
+
+.community .communityInfo .imgWrapper .linkBtns .btn1 {
+  background: #292929 !important;
+}
+
+.community .communityInfo .imgWrapper .linkBtns .btn2 {
+  background: #1226AA !important;
+}
+
+.community .communityInfo .communityText h5 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #292929;
+  width: 90%;
+}
+
+.community .communityInfo .communityText h3 {
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 48px;
+}
+
+.community .communityInfo .communityText p {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  color: #292929;
+  width: 70%;
+}
+
+.community .communityInfo .communityText a {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  color: #1226AA;
+  text-decoration: underline;
+}
+
+.stylePoints {
+  background: #1226AA;
+}
+
+.stylePoints .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../assets/PATTERN.png") repeat center center;
+  background-size: contain;
+  z-index: 5;
+}
+
+.stylePoints img {
+  width: 904px;
+  height: 487px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.stylePoints .styleText h2 {
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 56px;
+  color: white;
+}
+
+.stylePoints .styleText h5 {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 43px;
+  color: white;
+}
+
+.stylePoints .styleText a {
+  width: 266px;
+  height: 85px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bolder;
+  background: #FFB548;
+  color: #292929;
+  border-radius: 25px;
+  outline: none;
+}
+
+.productBanner, .roofingBanner {
+  background: #EACBD1;
+  border: none;
+}
+
+.productBanner .back, .roofingBanner .back {
+  background: #1226AA;
+  width: 100%;
+  height: 70%;
+  top: 0;
+  left: 0;
+}
+
+.productBanner .bannerTxt, .roofingBanner .bannerTxt {
+  z-index: 1;
+}
+
+.productBanner .bannerTxt h1, .roofingBanner .bannerTxt h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+}
+
+.productBanner .bannerTxt p, .roofingBanner .bannerTxt p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.productBanner .bannerTxt h5, .roofingBanner .bannerTxt h5 {
+  font-size: 24px;
+  color: #292929;
+}
+
+.productBanner .bannerTxt h6, .roofingBanner .bannerTxt h6 {
+  font-size: 24px;
+  color: white;
+  font-weight: bolder;
+}
+
+.productBanner .bannerTxt img, .roofingBanner .bannerTxt img {
+  width: 39px;
+  height: 39px;
+}
+
+.productBanner .bannerImg, .roofingBanner .bannerImg {
+  width: 939px;
+  height: 554px;
+  z-index: 1;
+}
+
+.productGrids {
+  background: #EACBD1;
+}
+
+.productGrids h4 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bolder;
+  color: #292929;
+}
+
+.productGrids .productCard {
+  min-height: 611px;
+  width: auto;
+}
+
+.productGrids .productCard .imgWrapper {
+  width: auto;
+  height: 450px;
+}
+
+.productGrids .productCard .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.productGrids .productCard .imgWrapper:hover {
+  overflow: hidden;
+}
+
+.productGrids .productCard .imgWrapper:hover img {
+  width: 120%;
+  height: 120%;
+}
+
+.productGrids .productCard .cardTxt {
+  background: white;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.productGrids .productCard .cardTxt h4 {
+  color: #292929;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.productGrids .productCard .cardTxt p {
+  color: #292929;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+}
+
+.productTips {
+  background: #EACBD1;
+}
+
+.productTips .back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 95%;
+  height: 100%;
+  background: white !important;
+  z-index: 0;
+}
+
+.productTips .tipsHeader {
+  z-index: 1;
+}
+
+.productTips .tipsHeader h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #292929;
+}
+
+.productTips .tipsHeader h1 span {
+  color: #1226AA;
+}
+
+.productTips .tipsHeader p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.productTips .tipsInfo {
+  z-index: 1;
+}
+
+.productTips .tipsInfo .imgWrapper {
+  width: 80vw;
+  height: 60vh;
+}
+
+.productTips .tipsInfo .imgWrapper .tipsImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.productTips .tipsInfo .imgWrapper .linkBtns {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.productTips .tipsInfo .imgWrapper .linkBtns .commBtn {
+  width: 90px;
+  height: 73px;
+  cursor: pointer;
+}
+
+.productTips .tipsInfo .imgWrapper .linkBtns .commBtn img {
+  width: 25.82px;
+  height: 30.03px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 5;
+}
+
+.productTips .tipsInfo .imgWrapper .linkBtns .btn1 {
+  background: #292929 !important;
+}
+
+.productTips .tipsInfo .imgWrapper .linkBtns .btn2 {
+  background: #1226AA !important;
+}
+
+.productTips .tipsInfo .communityText h3 {
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 48px;
+}
+
+.productTips .tipsInfo .communityText p {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+  color: #292929;
+  width: 70%;
+}
+
+.productTips .tipsInfo .communityText a {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  color: #1226AA;
+  text-decoration: underline;
+}
+
+.productBranches {
+  background: #EACBD1;
+}
+
+.productBranches .bgBack {
+  background: white !important;
+  height: 70%;
+  z-index: 1;
+}
+
+.productBranches .wrapper {
+  z-index: 2;
+}
+
+/*PRODUCTS ROOFING */
+.roofingBanner .back {
+  height: 60%;
+}
+
+.productsExplore {
+  background: #EACBD1;
+}
+
+.productsExplore .back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 95%;
+  height: 100%;
+  background: white !important;
+  z-index: 0;
+}
+
+.productsExplore h1 {
+  font-size: 48px;
+  font-weight: 900 !important;
+  color: #292929;
+  line-height: 56px;
+  z-index: 1;
+}
+
+.productsExplore h1 span {
+  color: #1226AA;
+}
+
+.productsExplore .exploreWrapper {
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 2fr;
+      grid-template-columns: 1.5fr 2fr;
+  grid-gap: 50px;
+}
+
+.productsExplore .exploreWrapper .tiles .choice {
+  width: 304px;
+  height: 97px;
+  border-radius: 25px;
+  border: 3px solid #1226AA;
+  color: #292929;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.productsExplore .exploreWrapper .tiles .activeChoice {
+  color: white !important;
+  font-weight: bold !important;
+  background: #1226AA !important;
+}
+
+.productsExplore .exploreWrapper .tileTypes h4 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #292929;
+}
+
+.productsExplore .exploreWrapper .tileTypes .galleryCard {
+  cursor: pointer;
+}
+
+.productsExplore .exploreWrapper .tileTypes .galleryCard img {
+  width: 158px;
+  height: 169px;
+  border-radius: 25px;
+}
+
+.productsExplore .exploreWrapper .tileTypes .galleryCard p {
+  font-size: 16px;
+  color: #292929;
+}
+
+.productsExplore .exploreWrapper .tileTypes .activeImageChoice img {
+  border: 5px solid #1226AA;
+}
+
+.productsExplore .exploreWrapper .tileTypes .activeImageChoice p {
+  color: #1226AA;
+}
+
+.productsExplore .exploreWrapper .inputs h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.productsExplore .exploreWrapper .inputs label {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: normal;
+}
+
+.productsExplore .exploreWrapper .inputs input {
+  width: 350px;
+  height: 98px;
+  border-radius: 25px;
+  font-size: 24px;
+  color: #292929;
+  background: #E2E2E2;
+  outline: none;
+}
+
+.productsExplore .exploreWrapper button {
+  width: 415px;
+  height: 98px;
+  border-radius: 25px;
+  background: #FFB548;
+  color: #292929;
+  outline: none;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+}
+/*# sourceMappingURL=main.css.map */
