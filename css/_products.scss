@@ -201,7 +201,7 @@
 }
 
 
-/*PRODUCTS ROOFING */
+/*PRODUCTS CATEGORY STYLES */
 .roofingBanner {
     @extend .productBanner;
     .back {
@@ -315,6 +315,549 @@
             font-size: 24px;
             line-height: 32px;
             font-weight: 900;
+        }
+    }
+}
+
+.materialsSlider {
+    background: #EACBD1;
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 900 !important;
+        color: $dark;
+        span {
+            color: $blue !important;
+        }
+    }
+    .materialsCard {
+        width: 494px;
+        height: 518px;
+        border-radius: 50px;
+        .back1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            z-index: -1;
+            background-color: $blue;
+        }
+        .back2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            z-index: -1;
+        }
+        .cardWrapper {
+            z-index: 5;
+            span {
+                min-width: 390px;
+                height: 98px;
+                border-radius: 25px;
+                background: #0E1C77;
+                font-size: 32px;
+                color: white;
+                line-height: 40px;
+                font-weight: bold;
+            }
+            p {
+                font-size: 24px;
+                color: white;
+                line-height: 32px;
+            }
+            a {
+                font-size: 24px;
+                color: $orange;
+                line-height: 32px;
+                font-weight: bolder;
+                img {
+                    width: 59px;
+                    height: 59px;
+                }
+            }
+        }
+    }
+}
+
+.faq {
+    background: #EACBD1;
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 900 !important;
+        color: $dark;
+    }
+    .faqCard {
+        width: 347px;
+        height: 98px;
+        border-radius: 25px;
+        background: white;
+        color: $dark;
+        transition: all .3s ease-in-out;
+        p {
+            font-size: 24px;
+            font-weight: 900 !important;
+            line-height: 32px;
+        }
+    }
+    .activeFaq{
+        background: $blue !important;
+        color: white !important;
+    }
+    .accordion {
+        background: white;
+        color: $dark;
+        .accord {
+            min-height: 94px;
+            border-bottom: 1px solid#EACBD1;
+            transition: all .3s ease-in-out;
+            span {
+                h4 {
+                   font-size: 32px;
+                   line-height: 40px;
+                   font-weight: bold; 
+                }
+                img {
+                    width: 61.63px;
+                    height: 61.63px;
+                }
+            }
+            p {
+                font-size: 24px;
+                line-height: 40px;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+/*PRODUCT SUB CATEGORY STYLES*/
+.profileGrid {
+    background: #EACBD1;
+    .profileIntro {
+        h1{
+            font-size: 48px;
+            font-weight: 900 !important;
+            color: $dark;
+            line-height: 56px;
+            z-index: 1;
+            span {
+                color: $blue;
+            } 
+        }
+        p{
+            font-size: 32px;
+            line-height: 40px;
+            color: $dark;
+            font-weight: normal;
+        }
+    }
+    .profileCard {
+        min-height: 611px;
+        width: auto;
+        .imgWrapper {
+            width: auto;
+            height: 450px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                transition: all .3s ease-in-out;
+            }
+            &:hover {
+                overflow: hidden;
+                img {
+                    width: 120%;
+                    height: 120%;
+                }
+            }
+        }
+        
+        .cardTxt {
+            background: white;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            h4 {
+                color: $dark;
+                font-size: 32px;
+                font-weight: bold;
+            }
+            p {
+                color: $dark;
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+.prodBenefits {
+    background: #EACBD1;
+    .bgBack {
+        top: 0;
+        right: 0;
+        background: white;
+        height: 100%;
+        width: 95%;
+        z-index: 0;
+    }
+    .benfWrapper {
+        .top {
+            img {
+                width: 100%;
+                height: 647px;
+                z-index: 2;
+            }
+            h1{
+                font-size: 48px;
+                font-weight: 900 !important;
+                color: $dark;
+                line-height: 56px;
+                z-index: 2;
+                span {
+                    color: $blue;
+                } 
+            }
+            p{
+                font-size: 32px;
+                line-height: 40px;
+                color: $dark;
+                font-weight: normal;
+                z-index: 2;
+            }  
+            h3 {
+                font-size: 40px;
+                font-weight: 900 !important;
+                color: $dark;
+                line-height: 48px;
+                z-index: 2;
+            }
+            .list {
+                font-size: 24px;
+                font-weight: normal;
+                color: $dark;
+                line-height: 32px;
+                z-index: 2;
+                img {
+                    width: 21px;
+                    height: 21px;
+                }
+            }
+        }
+        .bottom {
+            z-index: 2;
+            .title {
+                font-size: 32px;
+                font-weight: bold;
+                color: $dark;
+                line-height: 40px;
+                z-index: 2 !important;
+            }
+            .benf {
+                z-index: 2;
+                img {
+                    width: 129px;
+                    height: 129px;
+                }
+                h5 {
+                    font-size: 32px;
+                    line-height: 40px;
+                    font-weight: bolder;
+                    color: $dark;
+                }
+                p {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: $dark;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}
+
+.styleResources {
+   @extend .branches;
+   background: #EACBD1;
+   .bgBack {
+       z-index: 1 !important;
+       height: 70%;
+       background: white;
+   }
+   .wrapper {
+       z-index: 5 !important;
+       background: $blue;
+       h2 {
+           color: white;
+       }
+       form {
+           .search {
+               background: #2C3EB3;
+               input {
+                   color: white;
+                   &::placeholder {
+                       color: white;
+                   }
+               }
+           }
+       }
+       .helpTxt {
+            color: white;
+            margin-top: 50px !important;    
+       }
+   }
+   .resources {
+       margin-top: 80px !important;
+       .resourceCard {
+            width: 300px;
+            height: 315px;
+            border-radius: 50px;
+            background: $light;
+            .info {
+                min-width: 184px;
+                height: 38px;
+                border-radius: 25px;
+                padding: 0 20px;
+                background: $blue;
+                color: white;
+                font-size: 24px;
+                font-weight: bolder;
+                z-index: 5;
+            }
+            .resourceTxt {
+                font-size: 24px;
+                color: $blue;
+            }
+            .arrowBtn {
+                img {
+                    width: 41px;
+                    height: 41px;
+                }
+            }
+       }
+   } 
+}
+
+/*PRODUCT SUB CATEGORY EXTENDED STYLES*/
+
+.subCategorySlider {
+    background: #EACBD1;
+    .subCard {
+        width: 347px;
+        height: 98px;
+        border-radius: 25px;
+        cursor: pointer;
+        color: $dark;
+        font-weight: 900 !important;
+        background: white;
+        transition: all .3s ease-in-out;
+        h6 {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 900;
+        }
+    }
+    .activeTile {
+        background: $blue !important;
+        color: white !important;
+    }
+}
+
+.subCategoryForm {
+    @extend .productsExplore;
+    .back {
+        z-index: 0 !important;
+    }
+    .imgSection {
+        z-index: 5 !important;
+    }
+    .formSection {
+        z-index: 5 !important;
+        .top {
+            h1 {
+                font-size: 48px;
+                line-height: 56px;
+                font-weight: 900;
+                color: $dark;
+            }
+            p {
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: normal;
+                color: $dark;
+            }
+        }
+        .tileColors {
+            h6 {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: normal;
+                color: $dark;
+            }
+            span {
+                width: 47px;
+                height: 47px;
+                border-radius: 50%;
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+            }
+            .color1 {
+                background: #867D0D;
+            }
+            .color2 {
+                background: #A16014;
+            }
+            .color3 {
+                background: #A11460;
+            }
+            .color4 {
+                background: #00AE8D;
+            }
+            .color5 {
+                background: #DD8797;
+            }
+            .activeTileColor{
+                border: 5px solid $blue;
+            }
+        }
+    }
+}
+
+.subCategorySpecs {
+    background: #EACBD1;
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: bolder;
+        color: $dark;
+    }
+    .benf {
+        img {
+            width: 129px;
+            height: 129px;
+        }
+        h5 {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: bolder;
+            color: $dark;
+        }
+        p {
+            font-size: 24px;
+            font-weight: bold;
+            color: $dark;
+            line-height: 32px;
+        }
+    }
+}
+
+.subCategoryComments {
+    background: #EACBD1;
+    .back {
+        top: 0;
+        right: 0;
+        background: white;
+        height: 100%;
+        width: 95%;
+        z-index: 0;
+    }
+    .comments {
+        .imgWrapper {
+            width: 80vw;
+            height: 60vh;
+            .commentImg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+            .linkBtns {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+                .commBtn {
+                    width: 90px;
+                    height: 73px;
+                    cursor: pointer;
+                    img {
+                        width: 25.82px;
+                        height: 30.03px;
+                        object-fit: cover;
+                        z-index: 5;
+                    }
+                }
+                .btn1 {
+                    background: $dark !important;
+                }
+                .btn2 {
+                    background: $blue !important;
+                }
+            }
+        }
+        .commentsText {
+            z-index: 2;
+            .quote {
+                width: auto;
+                height: auto;
+            }
+            h1 {
+                font-size: 48px;
+                font-weight: bolder;
+                line-height: 56px;
+                color: $dark;
+                span {
+                    color: $blue;
+                }
+            }
+            p {
+                font-size: 32px;
+                font-weight: normal;
+                line-height: 40px;
+                color: $dark;
+                width: 70%; 
+            }
+            .person {
+                h4 {
+                    font-size: 24px;
+                    font-weight: bolder;
+                    line-height: 32px;
+                    color: $dark;
+                }
+                h6 {
+                    font-size: 24px;
+                    font-weight: normal;
+                    line-height: 40px;
+                    color: $dark;
+                }
+            }
+        }
+    }
+    .gallery {
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+            color: $dark;
+            font-weight: 900;
+            z-index: 5 !important;
+        }
+        
+        .heritageImg{
+            width: 579px;
+            height: 475px;
+            object-fit: cover;
+            cursor: pointer;
         }
     }
 }

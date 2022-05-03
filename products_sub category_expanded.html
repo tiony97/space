@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS FILES-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    
+    <title>Space & Style | Products_Sub Category_Expanded</title>
+</head>
+<body>
+    
+    <div class="app" id="app">
+        <!--NAVIGATION-->
+        <nav class="flex items-center justify-center w-full lg:px-20 lg:py-5">
+            <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo lg:mr-32">
+            <div class="links flex">
+                <div class="pageLinks flex items-center justify-center lg:space-x-10">
+                    <a href="./index.html">Home</a>
+                    <a href="./products.html" class="activeLink">Products</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Style Points</a>
+                    <a href="#">Our Impact</a>
+                    <a href="#">News</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="navIcons flex lg:space-x-12 lg:px-12">
+                    <img src="./assets/search_black_24dp.png" alt="" class="search">
+                    <img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag">
+                </div>
+                <div class="navBtns flex flex-row lg:space-x-12">
+                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="#" class="login flex items-center justify-center">Login</a>
+                </div>
+            </div>
+        </nav>
+        
+        <main class="w-full">
+            <!--PRODUCT ROOFING BANNER-->
+            <div class="roofingBanner relative w-full h-auto pl-24 pb-24 grid grid-cols-2">
+                <div class="back absolute"></div>
+                <div class="bannerTxt h-full flex flex-col justify-end items-start space-y-3 pb-5">
+                    <span class="flex items-center h-auto justify-center space-x-4 mb-10">
+                        <h6>Roofing</h6>
+                        <h1>Decra Roof Tiles</h1>
+                    </span>
+                    <p>Our variety of building products meets<br/> the needs of a wide range of construction.</p>
+                    <div class="flex space-x-4">
+                        <h5>Over 400 (4.5) reviews</h5>
+                        <div class="flex">
+                            <img src="./assets/yellow fill star.png" alt="">
+                            <img src="./assets/yellow fill star.png" alt="">
+                            <img src="./assets/yellow fill star.png" alt="">
+                            <img src="./assets/yellow fill star.png" alt="">
+                            <img src="./assets/hollow star.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/IMAGE HOLDER.png" alt="" class="bannerImg mt-24">
+            </div>
+            
+            <!--SUBCATEGORY SLIDER-->
+            <div class="subCategorySlider w-full h-auto pl-24 pb-24">
+                <div class="swiper subSlider h-full w-full">
+                    <div class="swiper-wrapper">
+                        <div @click="activeTileType=1" :class="{'swiper-slide relative subCard p-8 flex items-center justify-center': true,'activeTile': activeTileType==1}">
+                            <h6>Heritage</h6>
+                        </div>
+                        <div @click="activeTileType=2" :class="{'swiper-slide relative subCard p-8 flex items-center justify-center': true,'activeTile': activeTileType==2}">
+                            <h6>Shingle</h6>
+                        </div>
+                        <div @click="activeTileType=3" :class="{'swiper-slide relative subCard p-8 flex items-center justify-center': true,'activeTile': activeTileType==3}">
+                            <h6>Milano</h6>
+                        </div>
+                        <div @click="activeTileType=4" :class="{'swiper-slide relative subCard p-8 flex items-center justify-center': true,'activeTile': activeTileType==4}">
+                            <h6>Slate</h6>
+                        </div>
+                        <div @click="activeTileType=5" :class="{'swiper-slide relative subCard p-8 flex items-center justify-center': true,'activeTile': activeTileType==5}">
+                            <h6>Shake</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--SUBCATEGORY FORM-->
+            <div class="subCategoryForm relative w-full h-auto py-24">
+                <div class="back"></div>
+                <div class="exploreWrapper grid">
+                    <div class="imgSection">
+                        <img src="./assets/HOUSE HOLDER.png" alt="">
+                    </div>
+                    <div class="formSection">
+                        <div class="top space-y-4 mb-5">
+                            <h1>Decra Heritage tile</h1>
+                            <p>Space & Style is heavily invested in our local community <br/>
+                                and the world at large to help make it a better place <br/>
+                                for future generations.</p>
+                        </div>
+                        
+                        <form action="#">
+                            <div class="tileColors">
+                                <h6>Choose color</h6>
+                                <div class="flex items-center space-x-4 mt-3">
+                                    <span @click="activeTileColor=1" :class="{'color1': true, 'activeTileColor': activeTileColor==1}"></span>
+                                    <span @click="activeTileColor=2" :class="{'color2': true, 'activeTileColor': activeTileColor==2}"></span>
+                                    <span @click="activeTileColor=3" :class="{'color3': true, 'activeTileColor': activeTileColor==3}"></span>
+                                    <span @click="activeTileColor=4" :class="{'color4': true, 'activeTileColor': activeTileColor==4}"></span>
+                                    <span @click="activeTileColor=5" :class="{'color5': true, 'activeTileColor': activeTileColor==5}"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="inputs mt-12">
+                                <h3>Calculate the number of tiles for your building project</h3>
+                                <div class="flex space-x-5 mt-2">
+                                    <div class="flex flex-col space-y-4">
+                                        <label>Enter your space measurement(Meters)</label>
+                                        <input type="number" name="" id="">
+                                    </div>
+                                    <div class="flex flex-col space-y-4">
+                                        <label>Estimated number of tiles</label>
+                                        <input type="number">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tileTypes mt-12">
+                                <h4>Add your Heritage accessories</h4>
+                                <div class="gallery flex items-center justify-start space-x-5 p-0 mt-5">
+                                    <div @click="activeImageChoice=1" :class="{'galleryCard flex flex-col items-center justify-center space-y-3':true, 'activeImageChoice': activeImageChoice==1}">
+                                        <img src="./assets/MATERIAL HOLDER.png" alt="">
+                                        <p>Material Name</p>
+                                    </div>
+                                    <div @click="activeImageChoice=2" :class="{'galleryCard flex flex-col items-center justify-center space-y-3':true, 'activeImageChoice': activeImageChoice==2}">
+                                        <img src="./assets/MATERIAL HOLDER.png" alt="">
+                                        <p>Material Name</p>
+                                    </div>
+                                    <div @click="activeImageChoice=3" :class="{'galleryCard flex flex-col items-center justify-center space-y-3':true, 'activeImageChoice': activeImageChoice==3}">
+                                        <img src="./assets/MATERIAL HOLDER.png" alt="">
+                                        <p>Material Name</p>
+                                    </div>
+                                    <div @click="activeImageChoice=4" :class="{'galleryCard flex flex-col items-center justify-center space-y-3':true, 'activeImageChoice': activeImageChoice==4}">
+                                        <img src="./assets/MATERIAL HOLDER.png" alt="">
+                                        <p>Material Name</p>
+                                    </div>
+                                    <div @click="activeImageChoice=5" :class="{'galleryCard flex flex-col items-center justify-center space-y-3':true, 'activeImageChoice': activeImageChoice==5}">
+                                        <img src="./assets/MATERIAL HOLDER.png" alt="">
+                                        <p>Material Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <button type="submit" class="mt-24">Get quotation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!--SUBCATEGORY SPECIFICATIONS-->
+            <div class="subCategorySpecs relative w-full h-auto py-24 px-24">
+                <h1>Heritage tile <br/>specifications</h1>
+                <div class="grid grid-cols-3 gap-12 mt-12">
+                    <div class="benf flex items-start space-x-5">
+                        <img src="./assets/hand blue.png" alt="">
+                        <div class="text">
+                            <h5>Warranty</h5>
+                            <p>Decra tiles have benefits updated with latest building technology for a successful project.<br/>Assemble the building materials for your 1 bedroom home.</p>
+                        </div>
+                    </div>
+                    <div class="benf flex items-start space-x-5">
+                        <img src="./assets/fire blue.png" alt="">
+                        <div class="text">
+                            <h5>Fire</h5>
+                            <p>Decra tiles have benefits updated with latest building technology for a successful project.<br/>Assemble the building materials for your 1 bedroom home.</p>
+                        </div>
+                    </div>
+                    <div class="benf flex items-start space-x-5">
+                        <img src="./assets/quality blue.png" alt="">
+                        <div class="text">
+                            <h5>Quality</h5>
+                            <p>Decra tiles have benefits updated with latest building technology for a successful project.<br/>Assemble the building materials for your 1 bedroom home.</p>
+                        </div>
+                    </div>
+                    <div class="benf flex items-start space-x-5">
+                        <img src="./assets/security.png" alt="">
+                        <div class="text">
+                            <h5>Security</h5>
+                            <p>Decra tiles have benefits updated with latest building technology for a successful project.<br/>Assemble the building materials for your 1 bedroom home.</p>
+                        </div>
+                    </div>
+                    <div class="benf flex items-start space-x-5">
+                        <img src="./assets/install blue.png" alt="">
+                        <div class="text">
+                            <h5>Fast Installation</h5>
+                            <p>Decra tiles have benefits updated with latest building technology for a successful project.<br/>Assemble the building materials for your 1 bedroom home.</p>
+                        </div>
+                    </div>
+                    <div class="benf flex items-start space-x-5">
+                        <img src="./assets/lightweight.png" alt="">
+                        <div class="text">
+                            <h5>Lightweight</h5>
+                            <p>Decra tiles have benefits updated with latest building technology for a successful project.<br/>Assemble the building materials for your 1 bedroom home.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--CATEGORY COMMENTS SECTION-->
+            <div class="subCategoryComments relative w-full h-auto py-24">
+                <div class="back absolute"></div>
+                
+                <div class="comments pr-24 flex justify-start space-x-12 h-auto w-full">
+                    <div class="imgWrapper relative">
+                        <img src="./assets/dealer.png" alt="" class="commentImg" v-show="currentComment==1">
+                        <img src="./assets/open spaces.png" alt="" class="commentImg" v-show="currentComment==2">
+                        <img src="./assets/sustainable.png" alt="" class="commentImg" v-show="currentComment==3">
+                        <div class="linkBtns flex">
+                            <span class="commBtn btn1 flex items-center justify-center cursor-pointer" @click="currentComment-=1" v-if="currentComment>1">
+                                <img src="./assets/arrow left white.png" alt="">
+                            </span>
+                            <span class="commBtn btn1 flex items-center justify-center" v-if="currentComment==1">
+                                <img src="./assets/arrow left white.png" alt="">
+                            </span>
+                            <span class="commBtn btn2 flex items-center justify-center cursor-pointer" @click="currentComment+=1" v-if="currentComment<3">
+                                <img src="./assets/arrow right white.png" alt="">
+                            </span>
+                            <span class="commBtn btn2 flex items-center justify-center" v-if="currentComment==3">
+                                <img src="./assets/arrow right white.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="commentsText h-full flex flex-col items-start justify-start">
+                        <img src="./assets/quote.png" alt="" class="quote">
+                        <h1 class="mt-12">Why choose <span>Heritage</span></h1>
+                        <p class="my-6">From the recent activities involving Fundi Maalum
+                            workshops in major towns across the country.
+                            Local handymen were present
+                            at the training workshop.</p>
+                        <div class="person flex flex-col space-y-3">
+                            <h4>Maizo and Ingumba</h4>
+                            <h6>Developer</h6>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery pl-40 mt-20">
+                    <div class="swiper heritageSlider w-full mt-12">
+                        <h1 class="mb-12">Heritage <br/> gallery</h1>
+                        <div class="swiper-wrapper">
+                            <div class="heritageImg swiper-slide h-auto w-auto">
+                                <img src="./assets/heritage 1.png" alt="">
+                            </div>
+                            <div class="heritageImg swiper-slide h-auto w-auto">
+                                <img src="./assets/heritage 2.png" alt="">
+                            </div>
+                            <div class="heritageImg swiper-slide h-auto w-auto">
+                                <img src="./assets/heritage 3.png" alt="">
+                            </div>
+                            <div class="heritageImg swiper-slide h-auto w-auto">
+                                <img src="./assets/heritage 4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--STYLE RESOURCES SECTION-->
+            <div class="styleResources relative flex items-start justify-center py-24">
+                <div class="bgBack"></div>
+                <div class="wrapper flex flex-col justify-center items-center px-24 py-12 space-y-5 h-auto">
+                    <h2>Style Resources</h2>
+                    <form action="#" class="w-full flex flex-col items-center">
+                        <div class="search flex items-center space-x-5 px-5">
+                            <img src="./assets/search_white.png" alt="">
+                            <input type="text" placeholder="Search style resources">
+                        </div>
+                    </form>
+                    <p class="helpTxt">We help you get updated with latest building tips for a successful project</p>
+                    <div class="resources grid grid-cols-4 gap-8 mt-20">
+                        <div class="resourceCard relative p-6 flex flex-col items-start">
+                           <span class="info flex items-center justify-center">Downloads</span>
+                            <p class="resourceTxt mt-12 mb-5">Assemble the building materials for your 1 bedroom home.</p>
+                            <div class="arrowBtn flex items-center space-x-3">
+                                    <img src="./assets/Group 10.png" alt="">
+                            </div>
+                        </div>
+                        <div class="resourceCard relative p-6 flex flex-col items-start">
+                            <span class="info flex items-center justify-center">Installation</span>
+                             <p class="resourceTxt mt-12 mb-5">Assemble the building materials for your 1 bedroom home.</p>
+                             <div class="arrowBtn flex items-center space-x-3">
+                                     <img src="./assets/Group 10.png" alt="">
+                             </div>
+                        </div>
+                        <div class="resourceCard relative p-6 flex flex-col items-start">
+                        <span class="info flex items-center justify-center">Videos</span>
+                            <p class="resourceTxt mt-12 mb-5">Assemble the building materials for your 1 bedroom home.</p>
+                            <div class="arrowBtn flex items-center space-x-3">
+                                    <img src="./assets/Group 10.png" alt="">
+                            </div>
+                        </div> 
+                        <div class="resourceCard relative p-6 flex flex-col items-start">
+                            <span class="info flex items-center justify-center">Certification</span>
+                            <p class="resourceTxt mt-12 mb-5">Assemble the building materials for your 1 bedroom home.</p>
+                            <div class="arrowBtn flex items-center space-x-3">
+                                <img src="./assets/Group 10.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!--FOOTER-->
+        <footer class="px-24 py-20">
+            <div class="top">
+                <div class="logoSection flex flex-col space-y-5">
+                    <img src="./assets/SPACE & STYLE LOGO HOLDER.png" alt="">
+                    <p>Receive updates about building materials</p>
+                    <input type="text" placeholder="Enter Your Email Address" class="px-10">
+                </div>
+                <div class="linkSection grid grid-cols-4 gap-2">
+                    <div class="sect flex flex-col items-start space-y-3">
+                        <h5 class="mb-3">Company</h5>
+                        <a href="#">About Us</a>
+                        <a href="#">Products</a>
+                        <a href="#">Partnership</a>
+                        <a href="#">Style Points</a>
+                        <a href="#">Style Projects</a>
+                        <a href="#">Style Careers</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-3">
+                        <h5 class="mb-3">Style Hub</h5>
+                        <a href="#">Press Releases</a>
+                        <a href="#">Downloads</a>
+                        <a href="#">Resources</a>
+                        <a href="#">FAQs</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-3">
+                        <h5 class="mb-3">Style Community</h5>
+                        <a href="#">Trainings</a>
+                        <a href="#">Environment</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-3">
+                        <h5 class="mb-3">Head Office</h5>
+                        <a href="#">Libra House, Mombasa Rd</a>
+                        <a href="#">Telephone: 020 2086700</a>
+                    </div>
+                </div>
+                <div class="iconSection flex flex-col items-center">
+                    <h5 class="mb-5">Get interactive</h5>
+                    <div class="flex space-x-5">
+                        <img src="./assets/Layer 2.png" alt="" class="socialIcon">
+                        <img src="./assets/Logo_1_.png" alt="" class="socialIcon">
+                        <img src="./assets/Layer 3.png" alt="" class="socialIcon">
+                    </div>
+                </div>
+            </div>
+            <div class="footerEnd w-full flex items-center justify-center mt-12">
+                <img src="./assets/Path 730.png" alt="">
+                <p>2022 Space & Style</p>
+            </div>
+        </footer>
+    </div>
+    
+    
+    <!--JS FILES-->
+    <script src="./vue.js"></script>
+    <script src="./jquery 3.4_1.min.js"></script>
+    <script src="./swiper-bundle.min.js"></script>
+
+    <script>
+        let vue1 = new Vue({
+            el: '#app',
+            data:{
+                activeTileColor: 0,
+                activeImageChoice: 0,
+                activeTileType: 0,
+                currentComment: 1,
+            }
+        });
+        
+        //Sub Category Slider
+        const subSlider = new Swiper('.subSlider', {
+            slidesPerView: 4.6,
+            loop: false,
+            spaceBetween: 20,
+            pagination: {
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                slidesPerView: 1.6,
+                spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 3.6,
+                spaceBetween: 10
+                },
+                // when window width is >= 640px
+                640: {
+                slidesPerView: 4.6,
+                spaceBetween: 50
+                }
+            }
+        });
+        
+        //Sub Category Slider
+        const heritageSlider = new Swiper('.heritageSlider', {
+            slidesPerView: 2.8,
+            loop: false,
+            spaceBetween: 20,
+            pagination: {
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                slidesPerView: 1.6,
+                spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 3.6,
+                spaceBetween: 10
+                },
+                // when window width is >= 640px
+                640: {
+                slidesPerView: 2.8,
+                spaceBetween: 50
+                }
+            }
+        });
+    </script>
+</body>
+</html>

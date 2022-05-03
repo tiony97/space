@@ -838,11 +838,11 @@ footer .footerEnd p {
   background-size: cover;
 }
 
-.branches, .productBranches {
+.branches, .productBranches, .styleResources {
   min-height: 906px;
 }
 
-.branches .bgBack, .productBranches .bgBack {
+.branches .bgBack, .productBranches .bgBack, .styleResources .bgBack {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -852,31 +852,31 @@ footer .footerEnd p {
   z-index: -1;
 }
 
-.branches .wrapper, .productBranches .wrapper {
+.branches .wrapper, .productBranches .wrapper, .styleResources .wrapper {
   background: #DD8797;
   height: auto;
   border-radius: 50px;
 }
 
-.branches .wrapper h2, .productBranches .wrapper h2 {
+.branches .wrapper h2, .productBranches .wrapper h2, .styleResources .wrapper h2 {
   font-size: 48px;
   font-weight: bolder;
   color: #292929;
 }
 
-.branches .wrapper form .search, .productBranches .wrapper form .search {
+.branches .wrapper form .search, .productBranches .wrapper form .search, .styleResources .wrapper form .search {
   width: 981px;
   height: 100px;
   background: #D597A3;
   border-radius: 50px;
 }
 
-.branches .wrapper form .search img, .productBranches .wrapper form .search img {
+.branches .wrapper form .search img, .productBranches .wrapper form .search img, .styleResources .wrapper form .search img {
   width: 41.05px;
   height: 41.05px;
 }
 
-.branches .wrapper form .search input, .productBranches .wrapper form .search input {
+.branches .wrapper form .search input, .productBranches .wrapper form .search input, .styleResources .wrapper form .search input {
   outline: none;
   width: 100%;
   height: 100%;
@@ -885,31 +885,31 @@ footer .footerEnd p {
   font-size: 24px;
 }
 
-.branches .wrapper form .search input::-webkit-input-placeholder, .productBranches .wrapper form .search input::-webkit-input-placeholder {
+.branches .wrapper form .search input::-webkit-input-placeholder, .productBranches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
   color: #292929;
   font-size: 24px;
 }
 
-.branches .wrapper form .search input:-ms-input-placeholder, .productBranches .wrapper form .search input:-ms-input-placeholder {
+.branches .wrapper form .search input:-ms-input-placeholder, .productBranches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
   color: #292929;
   font-size: 24px;
 }
 
-.branches .wrapper form .search input::-ms-input-placeholder, .productBranches .wrapper form .search input::-ms-input-placeholder {
+.branches .wrapper form .search input::-ms-input-placeholder, .productBranches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
   color: #292929;
   font-size: 24px;
 }
 
-.branches .wrapper form .search input::placeholder, .productBranches .wrapper form .search input::placeholder {
+.branches .wrapper form .search input::placeholder, .productBranches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
   color: #292929;
   font-size: 24px;
 }
 
-.branches .wrapper form .search input:focus, .productBranches .wrapper form .search input:focus {
+.branches .wrapper form .search input:focus, .productBranches .wrapper form .search input:focus, .styleResources .wrapper form .search input:focus {
   outline: none;
 }
 
-.branches .wrapper form .radios .container, .productBranches .wrapper form .radios .container {
+.branches .wrapper form .radios .container, .productBranches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
   position: relative;
   padding-left: 35px;
   margin-bottom: 5px;
@@ -921,11 +921,11 @@ footer .footerEnd p {
   user-select: none;
 }
 
-.branches .wrapper form .radios .container:hover input ~ .checkmark, .productBranches .wrapper form .radios .container:hover input ~ .checkmark {
+.branches .wrapper form .radios .container:hover input ~ .checkmark, .productBranches .wrapper form .radios .container:hover input ~ .checkmark, .styleResources .wrapper form .radios .container:hover input ~ .checkmark {
   background-color: #DD8797;
 }
 
-.branches .wrapper form .radios .container input, .productBranches .wrapper form .radios .container input {
+.branches .wrapper form .radios .container input, .productBranches .wrapper form .radios .container input, .styleResources .wrapper form .radios .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -933,15 +933,15 @@ footer .footerEnd p {
   width: 0;
 }
 
-.branches .wrapper form .radios .container input:checked ~ .checkmark, .productBranches .wrapper form .radios .container input:checked ~ .checkmark {
+.branches .wrapper form .radios .container input:checked ~ .checkmark, .productBranches .wrapper form .radios .container input:checked ~ .checkmark, .styleResources .wrapper form .radios .container input:checked ~ .checkmark {
   background-color: #DD8797;
 }
 
-.branches .wrapper form .radios .container input:checked ~ .checkmark:after, .productBranches .wrapper form .radios .container input:checked ~ .checkmark:after {
+.branches .wrapper form .radios .container input:checked ~ .checkmark:after, .productBranches .wrapper form .radios .container input:checked ~ .checkmark:after, .styleResources .wrapper form .radios .container input:checked ~ .checkmark:after {
   display: block;
 }
 
-.branches .wrapper form .radios .container .checkmark, .productBranches .wrapper form .radios .container .checkmark {
+.branches .wrapper form .radios .container .checkmark, .productBranches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
   position: relative;
   height: 40px;
   width: 40px;
@@ -950,13 +950,13 @@ footer .footerEnd p {
   border-radius: 50%;
 }
 
-.branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after {
+.branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after {
+.branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
   top: 5px;
   left: 5px;
   right: 5px;
@@ -967,21 +967,21 @@ footer .footerEnd p {
   background: #292929;
 }
 
-.branches .wrapper form .radios .container p, .productBranches .wrapper form .radios .container p {
+.branches .wrapper form .radios .container p, .productBranches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
   font-size: 24px;
   font-weight: bold;
 }
 
-.branches .wrapper p, .productBranches .wrapper p {
+.branches .wrapper p, .productBranches .wrapper p, .styleResources .wrapper p {
   font-size: 32px;
   color: #292929;
 }
 
-.branches .wrapper .hardware, .productBranches .wrapper .hardware {
+.branches .wrapper .hardware, .productBranches .wrapper .hardware, .styleResources .wrapper .hardware {
   margin-top: 50px;
 }
 
-.branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard {
+.branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
   width: 300px;
   height: 315px;
   border-radius: 50px;
@@ -989,7 +989,7 @@ footer .footerEnd p {
   background-size: cover;
 }
 
-.branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info {
+.branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
   min-width: 184px;
   height: 38px;
   border-radius: 25px;
@@ -1001,7 +1001,7 @@ footer .footerEnd p {
   z-index: 5;
 }
 
-.branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay {
+.branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1014,29 +1014,29 @@ footer .footerEnd p {
   opacity: 0;
 }
 
-.branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+.branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
   width: 233px;
   height: 64px;
   border-radius: 25px;
   background: transparent;
 }
 
-.branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+.branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
   font-size: 24px;
   color: #1226AA;
 }
 
-.branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p {
+.branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
   font-size: 14px;
   color: #1226AA;
 }
 
-.branches .wrapper .hardware .hardwareCard .overlay .distance img, .productBranches .wrapper .hardware .hardwareCard .overlay .distance img {
+.branches .wrapper .hardware .hardwareCard .overlay .distance img, .productBranches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
   width: 22.39px;
   height: 31.98px;
 }
 
-.branches .wrapper .hardware .hardwareCard .overlay:hover, .productBranches .wrapper .hardware .hardwareCard .overlay:hover {
+.branches .wrapper .hardware .hardwareCard .overlay:hover, .productBranches .wrapper .hardware .hardwareCard .overlay:hover, .styleResources .wrapper .hardware .hardwareCard .overlay:hover {
   opacity: 1;
 }
 
@@ -1623,16 +1623,16 @@ footer .footerEnd p {
   z-index: 2;
 }
 
-/*PRODUCTS ROOFING */
+/*PRODUCTS CATEGORY STYLES */
 .roofingBanner .back {
   height: 60%;
 }
 
-.productsExplore {
+.productsExplore, .subCategoryForm {
   background: #EACBD1;
 }
 
-.productsExplore .back {
+.productsExplore .back, .subCategoryForm .back {
   position: absolute;
   top: 0;
   right: 0;
@@ -1642,7 +1642,7 @@ footer .footerEnd p {
   z-index: 0;
 }
 
-.productsExplore h1 {
+.productsExplore h1, .subCategoryForm h1 {
   font-size: 48px;
   font-weight: 900 !important;
   color: #292929;
@@ -1650,11 +1650,11 @@ footer .footerEnd p {
   z-index: 1;
 }
 
-.productsExplore h1 span {
+.productsExplore h1 span, .subCategoryForm h1 span {
   color: #1226AA;
 }
 
-.productsExplore .exploreWrapper {
+.productsExplore .exploreWrapper, .subCategoryForm .exploreWrapper {
   z-index: 1;
   display: -ms-grid;
   display: grid;
@@ -1663,7 +1663,7 @@ footer .footerEnd p {
   grid-gap: 50px;
 }
 
-.productsExplore .exploreWrapper .tiles .choice {
+.productsExplore .exploreWrapper .tiles .choice, .subCategoryForm .exploreWrapper .tiles .choice {
   width: 304px;
   height: 97px;
   border-radius: 25px;
@@ -1677,55 +1677,55 @@ footer .footerEnd p {
   transition: all .3s ease-in-out;
 }
 
-.productsExplore .exploreWrapper .tiles .activeChoice {
+.productsExplore .exploreWrapper .tiles .activeChoice, .subCategoryForm .exploreWrapper .tiles .activeChoice {
   color: white !important;
   font-weight: bold !important;
   background: #1226AA !important;
 }
 
-.productsExplore .exploreWrapper .tileTypes h4 {
+.productsExplore .exploreWrapper .tileTypes h4, .subCategoryForm .exploreWrapper .tileTypes h4 {
   font-size: 24px;
   line-height: 32px;
   font-weight: bold;
   color: #292929;
 }
 
-.productsExplore .exploreWrapper .tileTypes .galleryCard {
+.productsExplore .exploreWrapper .tileTypes .galleryCard, .subCategoryForm .exploreWrapper .tileTypes .galleryCard {
   cursor: pointer;
 }
 
-.productsExplore .exploreWrapper .tileTypes .galleryCard img {
+.productsExplore .exploreWrapper .tileTypes .galleryCard img, .subCategoryForm .exploreWrapper .tileTypes .galleryCard img {
   width: 158px;
   height: 169px;
   border-radius: 25px;
 }
 
-.productsExplore .exploreWrapper .tileTypes .galleryCard p {
+.productsExplore .exploreWrapper .tileTypes .galleryCard p, .subCategoryForm .exploreWrapper .tileTypes .galleryCard p {
   font-size: 16px;
   color: #292929;
 }
 
-.productsExplore .exploreWrapper .tileTypes .activeImageChoice img {
+.productsExplore .exploreWrapper .tileTypes .activeImageChoice img, .subCategoryForm .exploreWrapper .tileTypes .activeImageChoice img {
   border: 5px solid #1226AA;
 }
 
-.productsExplore .exploreWrapper .tileTypes .activeImageChoice p {
+.productsExplore .exploreWrapper .tileTypes .activeImageChoice p, .subCategoryForm .exploreWrapper .tileTypes .activeImageChoice p {
   color: #1226AA;
 }
 
-.productsExplore .exploreWrapper .inputs h3 {
+.productsExplore .exploreWrapper .inputs h3, .subCategoryForm .exploreWrapper .inputs h3 {
   font-size: 32px;
   line-height: 40px;
   font-weight: bold;
 }
 
-.productsExplore .exploreWrapper .inputs label {
+.productsExplore .exploreWrapper .inputs label, .subCategoryForm .exploreWrapper .inputs label {
   font-size: 16px;
   line-height: 32px;
   font-weight: normal;
 }
 
-.productsExplore .exploreWrapper .inputs input {
+.productsExplore .exploreWrapper .inputs input, .subCategoryForm .exploreWrapper .inputs input {
   width: 350px;
   height: 98px;
   border-radius: 25px;
@@ -1735,7 +1735,7 @@ footer .footerEnd p {
   outline: none;
 }
 
-.productsExplore .exploreWrapper button {
+.productsExplore .exploreWrapper button, .subCategoryForm .exploreWrapper button {
   width: 415px;
   height: 98px;
   border-radius: 25px;
@@ -1745,5 +1745,630 @@ footer .footerEnd p {
   font-size: 24px;
   line-height: 32px;
   font-weight: 900;
+}
+
+.materialsSlider {
+  background: #EACBD1;
+}
+
+.materialsSlider h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900 !important;
+  color: #292929;
+}
+
+.materialsSlider h1 span {
+  color: #1226AA !important;
+}
+
+.materialsSlider .materialsCard {
+  width: 494px;
+  height: 518px;
+  border-radius: 50px;
+}
+
+.materialsSlider .materialsCard .back1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  z-index: -1;
+  background-color: #1226AA;
+}
+
+.materialsSlider .materialsCard .back2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.materialsSlider .materialsCard .cardWrapper {
+  z-index: 5;
+}
+
+.materialsSlider .materialsCard .cardWrapper span {
+  min-width: 390px;
+  height: 98px;
+  border-radius: 25px;
+  background: #0E1C77;
+  font-size: 32px;
+  color: white;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.materialsSlider .materialsCard .cardWrapper p {
+  font-size: 24px;
+  color: white;
+  line-height: 32px;
+}
+
+.materialsSlider .materialsCard .cardWrapper a {
+  font-size: 24px;
+  color: #FFB548;
+  line-height: 32px;
+  font-weight: bolder;
+}
+
+.materialsSlider .materialsCard .cardWrapper a img {
+  width: 59px;
+  height: 59px;
+}
+
+.faq {
+  background: #EACBD1;
+}
+
+.faq h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900 !important;
+  color: #292929;
+}
+
+.faq .faqCard {
+  width: 347px;
+  height: 98px;
+  border-radius: 25px;
+  background: white;
+  color: #292929;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.faq .faqCard p {
+  font-size: 24px;
+  font-weight: 900 !important;
+  line-height: 32px;
+}
+
+.faq .activeFaq {
+  background: #1226AA !important;
+  color: white !important;
+}
+
+.faq .accordion {
+  background: white;
+  color: #292929;
+}
+
+.faq .accordion .accord {
+  min-height: 94px;
+  border-bottom: 1px solid #EACBD1;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.faq .accordion .accord span h4 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.faq .accordion .accord span img {
+  width: 61.63px;
+  height: 61.63px;
+}
+
+.faq .accordion .accord p {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+/*PRODUCT SUB CATEGORY STYLES*/
+.profileGrid {
+  background: #EACBD1;
+}
+
+.profileGrid .profileIntro h1 {
+  font-size: 48px;
+  font-weight: 900 !important;
+  color: #292929;
+  line-height: 56px;
+  z-index: 1;
+}
+
+.profileGrid .profileIntro h1 span {
+  color: #1226AA;
+}
+
+.profileGrid .profileIntro p {
+  font-size: 32px;
+  line-height: 40px;
+  color: #292929;
+  font-weight: normal;
+}
+
+.profileGrid .profileCard {
+  min-height: 611px;
+  width: auto;
+}
+
+.profileGrid .profileCard .imgWrapper {
+  width: auto;
+  height: 450px;
+}
+
+.profileGrid .profileCard .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.profileGrid .profileCard .imgWrapper:hover {
+  overflow: hidden;
+}
+
+.profileGrid .profileCard .imgWrapper:hover img {
+  width: 120%;
+  height: 120%;
+}
+
+.profileGrid .profileCard .cardTxt {
+  background: white;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.profileGrid .profileCard .cardTxt h4 {
+  color: #292929;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.profileGrid .profileCard .cardTxt p {
+  color: #292929;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+}
+
+.prodBenefits {
+  background: #EACBD1;
+}
+
+.prodBenefits .bgBack {
+  top: 0;
+  right: 0;
+  background: white;
+  height: 100%;
+  width: 95%;
+  z-index: 0;
+}
+
+.prodBenefits .benfWrapper .top img {
+  width: 100%;
+  height: 647px;
+  z-index: 2;
+}
+
+.prodBenefits .benfWrapper .top h1 {
+  font-size: 48px;
+  font-weight: 900 !important;
+  color: #292929;
+  line-height: 56px;
+  z-index: 2;
+}
+
+.prodBenefits .benfWrapper .top h1 span {
+  color: #1226AA;
+}
+
+.prodBenefits .benfWrapper .top p {
+  font-size: 32px;
+  line-height: 40px;
+  color: #292929;
+  font-weight: normal;
+  z-index: 2;
+}
+
+.prodBenefits .benfWrapper .top h3 {
+  font-size: 40px;
+  font-weight: 900 !important;
+  color: #292929;
+  line-height: 48px;
+  z-index: 2;
+}
+
+.prodBenefits .benfWrapper .top .list {
+  font-size: 24px;
+  font-weight: normal;
+  color: #292929;
+  line-height: 32px;
+  z-index: 2;
+}
+
+.prodBenefits .benfWrapper .top .list img {
+  width: 21px;
+  height: 21px;
+}
+
+.prodBenefits .benfWrapper .bottom {
+  z-index: 2;
+}
+
+.prodBenefits .benfWrapper .bottom .title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #292929;
+  line-height: 40px;
+  z-index: 2 !important;
+}
+
+.prodBenefits .benfWrapper .bottom .benf {
+  z-index: 2;
+}
+
+.prodBenefits .benfWrapper .bottom .benf img {
+  width: 129px;
+  height: 129px;
+}
+
+.prodBenefits .benfWrapper .bottom .benf h5 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bolder;
+  color: #292929;
+}
+
+.prodBenefits .benfWrapper .bottom .benf p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #292929;
+  line-height: 32px;
+}
+
+.styleResources {
+  background: #EACBD1;
+}
+
+.styleResources .bgBack {
+  z-index: 1 !important;
+  height: 70%;
+  background: white;
+}
+
+.styleResources .wrapper {
+  z-index: 5 !important;
+  background: #1226AA;
+}
+
+.styleResources .wrapper h2 {
+  color: white;
+}
+
+.styleResources .wrapper form .search {
+  background: #2C3EB3;
+}
+
+.styleResources .wrapper form .search input {
+  color: white;
+}
+
+.styleResources .wrapper form .search input::-webkit-input-placeholder {
+  color: white;
+}
+
+.styleResources .wrapper form .search input:-ms-input-placeholder {
+  color: white;
+}
+
+.styleResources .wrapper form .search input::-ms-input-placeholder {
+  color: white;
+}
+
+.styleResources .wrapper form .search input::placeholder {
+  color: white;
+}
+
+.styleResources .wrapper .helpTxt {
+  color: white;
+  margin-top: 50px !important;
+}
+
+.styleResources .resources {
+  margin-top: 80px !important;
+}
+
+.styleResources .resources .resourceCard {
+  width: 300px;
+  height: 315px;
+  border-radius: 50px;
+  background: #F4F4F4;
+}
+
+.styleResources .resources .resourceCard .info {
+  min-width: 184px;
+  height: 38px;
+  border-radius: 25px;
+  padding: 0 20px;
+  background: #1226AA;
+  color: white;
+  font-size: 24px;
+  font-weight: bolder;
+  z-index: 5;
+}
+
+.styleResources .resources .resourceCard .resourceTxt {
+  font-size: 24px;
+  color: #1226AA;
+}
+
+.styleResources .resources .resourceCard .arrowBtn img {
+  width: 41px;
+  height: 41px;
+}
+
+/*PRODUCT SUB CATEGORY EXTENDED STYLES*/
+.subCategorySlider {
+  background: #EACBD1;
+}
+
+.subCategorySlider .subCard {
+  width: 347px;
+  height: 98px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #292929;
+  font-weight: 900 !important;
+  background: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.subCategorySlider .subCard h6 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+}
+
+.subCategorySlider .activeTile {
+  background: #1226AA !important;
+  color: white !important;
+}
+
+.subCategoryForm .back {
+  z-index: 0 !important;
+}
+
+.subCategoryForm .imgSection {
+  z-index: 5 !important;
+}
+
+.subCategoryForm .formSection {
+  z-index: 5 !important;
+}
+
+.subCategoryForm .formSection .top h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #292929;
+}
+
+.subCategoryForm .formSection .top p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.subCategoryForm .formSection .tileColors h6 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.subCategoryForm .formSection .tileColors span {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.subCategoryForm .formSection .tileColors .color1 {
+  background: #867D0D;
+}
+
+.subCategoryForm .formSection .tileColors .color2 {
+  background: #A16014;
+}
+
+.subCategoryForm .formSection .tileColors .color3 {
+  background: #A11460;
+}
+
+.subCategoryForm .formSection .tileColors .color4 {
+  background: #00AE8D;
+}
+
+.subCategoryForm .formSection .tileColors .color5 {
+  background: #DD8797;
+}
+
+.subCategoryForm .formSection .tileColors .activeTileColor {
+  border: 5px solid #1226AA;
+}
+
+.subCategorySpecs {
+  background: #EACBD1;
+}
+
+.subCategorySpecs h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: bolder;
+  color: #292929;
+}
+
+.subCategorySpecs .benf img {
+  width: 129px;
+  height: 129px;
+}
+
+.subCategorySpecs .benf h5 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bolder;
+  color: #292929;
+}
+
+.subCategorySpecs .benf p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #292929;
+  line-height: 32px;
+}
+
+.subCategoryComments {
+  background: #EACBD1;
+}
+
+.subCategoryComments .back {
+  top: 0;
+  right: 0;
+  background: white;
+  height: 100%;
+  width: 95%;
+  z-index: 0;
+}
+
+.subCategoryComments .comments .imgWrapper {
+  width: 80vw;
+  height: 60vh;
+}
+
+.subCategoryComments .comments .imgWrapper .commentImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.subCategoryComments .comments .imgWrapper .linkBtns {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.subCategoryComments .comments .imgWrapper .linkBtns .commBtn {
+  width: 90px;
+  height: 73px;
+  cursor: pointer;
+}
+
+.subCategoryComments .comments .imgWrapper .linkBtns .commBtn img {
+  width: 25.82px;
+  height: 30.03px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 5;
+}
+
+.subCategoryComments .comments .imgWrapper .linkBtns .btn1 {
+  background: #292929 !important;
+}
+
+.subCategoryComments .comments .imgWrapper .linkBtns .btn2 {
+  background: #1226AA !important;
+}
+
+.subCategoryComments .comments .commentsText {
+  z-index: 2;
+}
+
+.subCategoryComments .comments .commentsText .quote {
+  width: auto;
+  height: auto;
+}
+
+.subCategoryComments .comments .commentsText h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 56px;
+  color: #292929;
+}
+
+.subCategoryComments .comments .commentsText h1 span {
+  color: #1226AA;
+}
+
+.subCategoryComments .comments .commentsText p {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #292929;
+  width: 70%;
+}
+
+.subCategoryComments .comments .commentsText .person h4 {
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 32px;
+  color: #292929;
+}
+
+.subCategoryComments .comments .commentsText .person h6 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #292929;
+}
+
+.subCategoryComments .gallery h1 {
+  font-size: 48px;
+  line-height: 56px;
+  color: #292929;
+  font-weight: 900;
+  z-index: 5 !important;
+}
+
+.subCategoryComments .gallery .heritageImg {
+  width: 579px;
+  height: 475px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
