@@ -1,0 +1,789 @@
+//ABOUT PAGE BANNER
+.aboutBanner {
+    background: $light;
+    border: none;
+    .back {
+        background: $blue;
+        width: 100%;
+        height: 60%;
+        top: 0;
+        left: 0;
+    }
+    .bannerTxt {
+        z-index: 1;
+        h1 {
+            font-size: 64px;
+            font-weight: 900;
+            color: white;
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+        h5 {
+            font-size: 24px;
+            color: $dark;
+        }
+        h6 {
+            font-size: 24px;
+            color: white;
+            font-weight: bolder;
+        }
+        img {
+            width: 39px;
+            height: 39px;
+        }
+    }
+    .bannerImg {
+        width: 939px;
+        height: 554px;
+        z-index: 1;
+    }
+}
+
+//VIDEO SECTION
+.videoSection {
+    background: $light;
+    min-height: 950px;
+    .back {
+        top: 0;
+        right: 0;
+        width: 95%;
+        height: 100%;
+        background: white !important;
+        z-index: 0;
+    }
+    .imgBox {
+        z-index: 2;
+        height: 647px;
+        width: auto;
+        background: url('../assets/VIDEO.png') no-repeat center center;
+        background-size: cover;
+        span {
+            width: 135px;
+            height: 135px;
+            background: $blue;
+            border-radius: 50%;
+            img {
+                width: 57px;
+                height: 57px;
+            }
+        }
+    }
+    .textBox {
+        z-index: 2;
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+            font-weight: 900;
+            color: $dark;
+            span {
+                color: $blue;
+            }
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+    }
+    .videoModal {
+        display: none;
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background: #EACBD1;
+        .videoWrapper {
+            position: relative;   
+            background-color: white;
+            .close {
+                position: absolute;
+                top: 50px;
+                right: 50px;
+                img {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+            .video {
+                width: 80vw;
+                height: 70vh;
+            }
+        }
+    }
+}
+
+//LIFETIME SECTION
+.lifetime {
+    background: $light;
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 900;
+        color: $dark;
+        span {
+            color: $blue;
+        }
+    }
+    .imageBox {
+        width: auto;
+        height: 660px;
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .detailsBox {
+        .detail {
+            h3 {
+                font-size: 40px;
+                line-height: 48px;
+                font-weight: bold;
+                color: $dark;
+            }
+            p {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: normal;
+                color: $dark;
+            }
+            span {
+                img{
+                    width: 89px;
+                    height: 89px;
+                }
+            }
+        }
+        .detail1 {
+            background: $orange;
+        }
+        .detail2 {
+            background: $blue;
+            h3,p {
+                color: white !important;
+            }
+        }
+        .detail3 {
+            background: $green;
+            h3,p {
+                color: white !important;
+            }
+        }
+        .detail4 {
+            background: $red;
+        }
+    }
+}
+
+//ASSURANCE SECTION
+.assurance {
+    grid-template-columns: 1fr 3fr;
+    background: $light;
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 900;
+        color: $dark;
+        span {
+            color: $blue;
+        }
+    }
+    h5 {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: normal;
+        color: $dark;
+    }
+    .item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 0 !important;
+        span {
+            width: 160px;
+            height: 168px;
+            background: $blue;
+            border-radius: 25px;
+            img {
+                width: 128px;
+                height: 128px;
+                object-fit: cover;
+            }
+        }
+        h6 {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 900;
+            color: $dark;
+        }
+        p {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: normal;
+            color: $dark;
+        }
+    }
+}
+
+//TEAM SECTION
+.team {
+    background: $light;
+    .back {
+        top: 0;
+        right: 0;
+        background: white;
+        height: 100%;
+        width: 95%;
+        z-index: 0;
+    }
+    .teamWrapper {
+        display: grid;
+        grid-template-columns: 2.4fr 2fr;
+        grid-gap: 60px;
+        .left {
+            z-index: 2;
+            img {
+                width: auto;
+                height: 647px;
+                object-fit: cover;
+            }
+            h4 {
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: bold;
+                color: $dark;
+            }
+            p {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: normal;
+                color: $dark;
+            }
+            a {
+                width: 415px;
+                height: 98px;
+                background: $orange;
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 900 !important;
+                color: $dark;
+                border-radius: 25px;
+                outline: none;
+            }
+        }
+        .right {
+            z-index: 2;
+            h3 {
+                font-size: 40px;
+                line-height: 48px;
+                font-weight: normal;
+                color: $dark;
+            }
+            h1 {
+                font-size: 48px;
+                line-height: 56px;
+                font-weight: 900;
+                color: $dark;
+                span {
+                    color: $blue;
+                }
+            }
+            p {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: normal;
+                color: $dark;
+            }
+            a {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: bolder;
+                color: $blue;
+                text-decoration: underline;
+                outline: none;
+            }
+            img {
+                width: auto;
+                height: 544px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+//CAREERS SECTION
+.career {
+    background: $blue;
+    .overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url('../assets/PATTERN.png') repeat center center;
+        background-size: contain;
+        z-index: 0;
+    }
+    img {
+        width: 904px;
+        height: 487px;
+        object-fit: cover;
+    }
+    .careerText {
+        z-index: 3 !important;
+        h2 {
+            font-size: 48px;
+            font-weight: bolder;
+            line-height: 56px;
+            color: white;
+        }
+        h5 {
+            font-size: 32px;
+            font-weight: normal;
+            line-height: 43px;
+            color: white;
+        }
+        a {
+            width: 266px;
+            height: 85px;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: bolder;
+            background: $orange;
+            color: $dark;
+            border-radius: 25px;
+            outline: none;
+        }
+    }
+}
+
+
+/*ABOUT TEAM PAGE STYLES*/
+.aboutTeamBanner {
+    background: $light;
+    border: none;
+    .back {
+        background: $blue;
+        width: 100%;
+        height: 65%;
+        top: 0;
+        left: 0;
+    }
+    .bannerTxt {
+        z-index: 1;
+        h1 {
+            font-size: 64px;
+            font-weight: 900;
+            color: white;
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+        h5 {
+            font-size: 24px;
+            color: $dark;
+        }
+        h6 {
+            font-size: 24px;
+            color: white;
+            font-weight: bolder;
+        }
+    }
+    .bannerImg {
+        width: 939px;
+        height: 554px;
+        z-index: 1;
+    }
+}
+
+.executives {
+    background: $light;
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 900;
+        color: $dark;
+        span {
+            color: $blue;
+        }
+    }
+    .bio {
+        .bioImg {
+            width: 354px;
+            height: 354px;
+        }
+        .text {
+            h4 {
+                font-size: 32px;
+                line-height: 48px;
+                font-weight: bold;
+                color: $dark;
+            }
+            p {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: normal;
+                color: $dark;
+            }
+            a {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: bold;
+                color: $dark;
+                img {
+                    width: 59px;
+                    height: 59px;
+                }
+            }
+        }
+    }
+}
+
+/*ABOUT TEAM BIO STYLES*/
+.bioInfo {
+    background: $light;
+    min-height: 950px;
+    .back {
+        top: 0;
+        right: 0;
+        width: 95%;
+        height: 100%;
+        background: white !important;
+        z-index: 0;
+    }
+    .imgBox {
+        z-index: 2;
+        height: 647px;
+        width: auto;
+        background: url('../assets/BIO_IMAGE\ HOLDER.png') no-repeat center center;
+        background-size: cover;
+    }
+    .textBox {
+        z-index: 2;
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+            font-weight: 900;
+            color: $dark;
+        }
+        h5 {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+        p {
+            font-size: 24px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+    }
+}
+.teamSpacer {
+    background: $light;
+}
+
+/*ABOUT CULTURE*/
+.investing {
+    .intro {
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+            font-weight: 900;
+            color: $dark;
+            z-index: 2;
+            span {
+                color: $blue;
+            }
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+            z-index: 2;
+        }
+    }
+    .imageBox {
+        width: auto;
+        height: 553px;
+        z-index: 2;
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .detailsBox {
+        z-index: 2;
+        .detail {
+            z-index: 2;
+            h3 {
+                z-index: 2;
+                font-size: 40px;
+                line-height: 48px;
+                font-weight: bold;
+                color: $dark;
+            }
+            p {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: normal;
+                color: $dark;
+            }
+            span {
+                img{
+                    width: 89px;
+                    height: 89px;
+                }
+            }
+        }
+        .detail1 {
+            background: $orange;
+        }
+        .detail2 {
+            background: $blue;
+            h3,p {
+                color: white !important;
+            }
+        }
+        .detail3 {
+            background: $green;
+            h3,p {
+                color: white !important;
+            }
+        }
+        .detail4 {
+            background: $red;
+        }
+    }
+}
+
+.diversity {
+    .imgWrapper {
+        z-index: 2;
+        img {
+            width: auto;
+            height: 647px;
+            object-fit: cover;
+        }
+    }
+    .textWrapper {
+        z-index: 2;
+        h2 {
+            font-size: 48px;
+            line-height: 56px;
+            font-weight: 800;
+            color: $dark;
+        }
+        h5 {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+        p {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: normal;
+            color: $dark;
+        }
+    }
+}
+
+/*ABOUT CAREERS STYLES*/
+.careerJoin {
+    background: $light;
+    .back {
+        top: 0;
+        right: 0;
+        width: 95%;
+        height: 100%;
+        background: white !important;
+        z-index: 0;
+    }
+    .imgBox {
+        z-index: 2;
+        height: 647px;
+        width: auto;
+        background: url('../assets/CAREER_JOIN\ IMAGE\ HOLDER.png') no-repeat center center;
+        background-size: cover;
+        span {
+            width: 135px;
+            height: 135px;
+            background: $blue;
+            border-radius: 50%;
+            img {
+                width: 57px;
+                height: 57px;
+            }
+        }
+    }
+    .textBox {
+        z-index: 2;
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+            font-weight: 900;
+            color: $dark;
+            span {
+                color: $blue;
+            }
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+        .applyBtn {
+            width: 415px;
+            height: 98px;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: bolder;
+            background: $orange;
+            color: $dark;
+            border-radius: 25px;
+            outline: none;
+        }
+    }
+}
+
+/*CAREER EXPLORE STYLES*/
+.careerExplore {
+    background: $light;
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 900;
+        color: $dark;
+    }
+    .search {
+        width: 673px;
+        height: 98px;
+        background: #E2E2E2;
+        border-radius: 50px;
+        border: 1px solid #717171;
+        img {
+            width: 41.05px;
+            height: 41.05px;
+        }
+        input {
+            outline: none;
+            width: 100%;
+            height: 100%;
+            color: $dark;
+            background: transparent;
+            font-size: 24px;
+            &::placeholder {
+                color: $dark;
+                font-size: 24px;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    
+    .jobs {
+        .jobCard {
+            background: white;
+            min-height: auto;
+            h4 {
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: normal;
+                color: $dark;  
+            }
+            p {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: normal;
+                color: $dark;
+            }
+            h6{
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: 900;
+                color: $blue;
+            }
+            .right {
+                a {
+                    width: 130px;
+                    font-size: 16px;
+                    line-height: 32px;
+                    font-weight: 900;
+                    color: $blue;
+                    text-decoration: underline;
+                    outline: none;
+                }
+            }
+        }
+    }
+    .pagination {
+        .previous {
+            background: $dark;
+            width: 206px;
+            height: 73px;
+            transition: all .3s ease-in-out;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            p{
+                font-size: 24px;
+                font-weight: 800;
+                line-height: 32px;
+                color: white;
+            }
+        }
+        .pages {
+            span {
+                width: 68px;
+                height: 73px;
+                font-size: 32px;
+                color: $dark;
+                border: 1px solid $dark;
+                background: transparent;
+                transition: all .3s ease-in-out;
+            }
+            .activePage {
+                color: white;
+                border: 1px solid $blue;
+                background: $blue;
+            }
+        }
+        .next {
+            background: $blue;
+            width: 206px;
+            height: 73px;
+            transition: all .3s ease-in-out;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            p{
+                font-size: 24px;
+                font-weight: 800;
+                line-height: 32px;
+                color: white;
+            }
+        }
+    }
+}

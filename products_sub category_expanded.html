@@ -22,11 +22,11 @@
                 <div class="pageLinks flex items-center justify-center lg:space-x-10">
                     <a href="./index.html">Home</a>
                     <a href="./products.html" class="activeLink">Products</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Style Points</a>
-                    <a href="#">Our Impact</a>
-                    <a href="#">News</a>
-                    <a href="#">Contact Us</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./style.html">Style Points</a>
+                    <a href="./impact.html">Our Impact</a>
+                    <a href="./news.html">News</a>
+                    <a href="contact.html">Contact Us</a>
                 </div>
                 <div class="navIcons flex lg:space-x-12 lg:px-12">
                     <img src="./assets/search_black_24dp.png" alt="" class="search">
@@ -246,8 +246,8 @@
                     </div>
                 </div>
                 
-                <div class="gallery pl-40 mt-20">
-                    <div class="swiper heritageSlider w-full mt-12">
+                <div class="gallery pl-40 mt-20 h-auto">
+                    <div class="swiper heritageSlider w-full h-auto mt-12">
                         <h1 class="mb-12">Heritage <br/> gallery</h1>
                         <div class="swiper-wrapper">
                             <div class="heritageImg swiper-slide h-auto w-auto">
@@ -262,6 +262,20 @@
                             <div class="heritageImg swiper-slide h-auto w-auto">
                                 <img src="./assets/heritage 4.png" alt="">
                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--IMAGE MODAL-->
+                <div class="imgLightbox">
+                    <div class="modalWrapper flex items-center justify-center w-full h-full">
+                        <span class="close cursor-pointer"><img src="./assets/close_black_24dp.png" alt=""></span>
+                        <div class="modalContent flex items-center justify-center w-full h-full space-x-12">
+                            <span class="previous cursor-pointer"><img src="./assets/Backward Button.png" alt=""></span>
+                            <div class="imgWrap h-auto w-auto">
+                                <img alt="" class="modalImage">
+                            </div>
+                            <span class="next cursor-pointer"><img src="./assets/Forward Button.png" alt=""></span>
                         </div>
                     </div>
                 </div>
@@ -381,6 +395,31 @@
                 currentComment: 1,
             }
         });
+        
+        //IMAGE LIGHTBOX CODE
+        $(document).ready(function() {
+            //Opening the lightbox
+            $('.heritageImg img').click(function() {
+                //collect the image source
+                var image_src = $(this).attr("src");
+                
+                $('.imgWrap img').attr('src', image_src);
+                
+                //Show the lightbox
+                $('.imgLightbox').show();
+            });
+            
+            //Next button click
+            
+            
+            //Previous buton click
+            
+            //Closing the lightbox
+            $('.imgLightbox .close').click(()=>{
+                $('.imgLightbox').hide();
+            });
+        });
+        
         
         //Sub Category Slider
         const subSlider = new Swiper('.subSlider', {

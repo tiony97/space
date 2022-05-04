@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS FILES-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    
+    <title>Space & Style | About</title>
+</head>
+<body>
+    <div class="app" id="app">
+        <!--NAVIGATION-->
+        <nav class="flex items-center justify-center w-full lg:px-20 lg:py-5">
+            <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo lg:mr-32">
+            <div class="links flex">
+                <div class="pageLinks flex items-center justify-center lg:space-x-10">
+                    <a href="./index.html">Home</a>
+                    <a href="./products.html">Products</a>
+                    <a href="./about.html" class="activeLink">About Us</a>
+                    <a href="./style.html">Style Points</a>
+                    <a href="./impact.html">Our Impact</a>
+                    <a href="./news.html">News</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="navIcons flex lg:space-x-12 lg:px-12">
+                    <img src="./assets/search_black_24dp.png" alt="" class="search">
+                    <img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag">
+                </div>
+                <div class="navBtns flex flex-row lg:space-x-12">
+                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="#" class="login flex items-center justify-center">Login</a>
+                </div>
+            </div>
+        </nav>
+        
+        <main class="w-full">
+            <!--ABOUT PAGE BANNER SECTION-->
+            <div class="aboutBanner relative w-full h-auto pl-24 pb-24 grid grid-cols-2">
+                <div class="back absolute"></div>
+                <div class="bannerTxt h-full flex flex-col justify-end items-start space-y-3 pb-5">
+                    <h1 class="mb-10">About Us</h1>
+                    <p>18 years of experience in <br/> specialised building materials</p>
+                    <div class="flex space-x-4">
+                        <h5>Over 400 (4.5) reviews</h5>
+                        <div class="flex">
+                            <img src="./assets/yellow fill star.png" alt="">
+                            <img src="./assets/yellow fill star.png" alt="">
+                            <img src="./assets/yellow fill star.png" alt="">
+                            <img src="./assets/yellow fill star.png" alt="">
+                            <img src="./assets/hollow star.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/about banner.png" alt="" class="bannerImg mt-24">
+            </div>
+            
+            <!--VIDEO SECTION-->
+            <div class="videoSection relative w-full flex items-center justify-start">
+                <div class="back absolute"></div>
+                <div class="grid grid-cols-2 gap-16 pr-24">
+                    <div class="imgBox flex items-center justify-center">
+                        <span class="play flex items-center justify-center cursor-pointer pl-3"><img src="./assets/play.png" alt=""></span>
+                    </div>
+                    <div class="textBox space-y-5">
+                        <h1><span>Space & Style</span> is<br/> a Kenyan company</h1>
+                        <p>That has been in operation since 2002, steadily growing To be at the forefront of supply of specialised building solutions. It is through the strength of our products That we have potential to be market leaders in the building industry in Kenya and the region.</p>
+                    </div>
+                </div>
+                <div class="videoModal pl-24">
+                    <div class="videoWrapper flex items-center justify-center w-full h-full">
+                        <span class="close cursor-pointer"><img src="./assets/close_black_24dp.png" alt=""></span>
+                        <video src="" controls autoplay class="video"></video>
+                    </div>
+                </div>
+            </div>
+            
+            <!--LIFETIME SOLUTIONS-->
+            <div class="lifetime relative w-full h-full space-y-12 px-24 py-24">
+                <h1>Need <span>lifetime building</span> solutions?<br/>
+                    We deliver.</h1>
+                <div class="grid grid-cols-2 gap-0">
+                    <div class="imageBox relative">
+                        <img v-show="activelife==1" src="./assets/lifetime 1.png" alt="">
+                        <img v-show="activelife==2" src="./assets/lifetime 2.png" alt="">
+                        <img v-show="activelife==3" src="./assets/lifetime 3.png" alt="">
+                        <img v-show="activelife==4" src="./assets/lifetime 4.png" alt="">
+                    </div>
+                    <div class="detailsBox">
+                        <div v-show="activelife==1" class="detail detail1 w-full h-full flex flex-col items-start justify-center px-16 space-y-6">
+                            <h3>Our Vision</h3>
+                            <p>That has been in operation since 2002, steadily growing
+                                To be at the forefront of supply of specialised building
+                                solutions. It is through the strength of our products
+                                That we have potential to be market leaders in the
+                                building industry in Kenya and the region.</p>
+                            <div class="btns flex items-center space-x-5">
+                                <span class="cursor-pointer"><img src="./assets/Backward Button.png" alt=""></span>
+                                <span @click="activelife+=1" class="cursor-pointer"><img src="./assets/Forward Button Orange.png" alt=""></span>
+                            </div>
+                        </div>
+                        <div v-show="activelife==2" class="detail detail2 w-full h-full flex flex-col items-start justify-center px-16 space-y-6">
+                            <h3>Our Mission</h3>
+                            <p>That has been in operation since 2002, steadily growing
+                                To be at the forefront of supply of specialised building
+                                solutions. It is through the strength of our products
+                                That we have potential to be market leaders in the
+                                building industry in Kenya and the region.</p>
+                            <div class="btns flex items-center space-x-5">
+                                <span @click="activelife-=1" class="cursor-pointer"><img src="./assets/Backward Button White.png" alt=""></span>
+                                <span @click="activelife+=1" class="cursor-pointer"><img src="./assets/Forward Button Blue.png" alt=""></span>
+                            </div>
+                        </div>
+                        <div v-show="activelife==3" class="detail detail3 w-full h-full flex flex-col items-start justify-center px-16 space-y-6">
+                            <h3>Our Values</h3>
+                            <p>That has been in operation since 2002, steadily growing
+                                To be at the forefront of supply of specialised building
+                                solutions. It is through the strength of our products
+                                That we have potential to be market leaders in the
+                                building industry in Kenya and the region.</p>
+                            <div class="btns flex items-center space-x-5">
+                                <span @click="activelife-=1" class="cursor-pointer"><img src="./assets/Backward Button White.png" alt=""></span>
+                                <span @click="activelife+=1" class="cursor-pointer"><img src="./assets/Forward Button Green.png" alt=""></span>
+                            </div>
+                        </div>
+                        <div v-show="activelife==4" class="detail detail4 w-full h-full flex flex-col items-start justify-center px-16 space-y-6">
+                            <h3>Our Best Self</h3>
+                            <p>That has been in operation since 2002, steadily growing
+                                To be at the forefront of supply of specialised building
+                                solutions. It is through the strength of our products
+                                That we have potential to be market leaders in the
+                                building industry in Kenya and the region.</p>
+                            <div class="btns flex items-center space-x-5">
+                                <span @click="activelife-=1" class="cursor-pointer"><img src="./assets/Backward Button.png" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--ASSURANCE SECTION-->
+            <div class="assurance relative w-full h-auto px-24 py-24 grid">
+                <h1>Style quality<span><br/>assurance</span><br/>& <span>difference</span></h1>
+                <div class="flex flex-col space-y-8">
+                    <h5 class="w-4/5">Designed to be different, our company to offer you high quality
+                        products at the most competitive price. </h5>
+                    <div class="grid grid-cols-2 gap-16">
+                        <div class="item">
+                            <span class="flex items-center justify-center"><img src="./assets/quality white.png" alt=""></span>
+                            <div class="space-y-4">
+                                <h6>Quality</h6>
+                                <p>Space & Style is heavily invested in
+                                    our local community and the world
+                                    at large to help make it a better
+                                    place for future generations.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="flex items-center justify-center"><img src="./assets/quality white.png" alt=""></span>
+                            <div class="space-y-4">
+                                <h6>Product</h6>
+                                <p>Space & Style is heavily invested in
+                                    our local community and the world
+                                    at large to help make it a better
+                                    place for future generations.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="flex items-center justify-center"><img src="./assets/quality white.png" alt=""></span>
+                            <div class="space-y-4">
+                                <h6>Standards</h6>
+                                <p>Space & Style is heavily invested in
+                                    our local community and the world
+                                    at large to help make it a better
+                                    place for future generations.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="flex items-center justify-center"><img src="./assets/quality white.png" alt=""></span>
+                            <div class="space-y-4">
+                                <h6>Technology</h6>
+                                <p>Space & Style is heavily invested in
+                                    our local community and the world
+                                    at large to help make it a better
+                                    place for future generations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--TEAM SECTION-->
+            <div class="team relative w-full h-auto py-24">
+                <div class="back absolute"></div>
+                <div class="teamWrapper pr-24">
+                    <div class="left">
+                        <img src="./assets/team_1.png" alt="">
+                        <div class="leftText pl-32 mt-24">
+                            <h4>Why work at Space & Style?</h4>
+                            <p class="mt-4 mb-8">We put emphasis on teamwork, human capacity
+                                <br/>development and innovation</p>
+                            <a href="./about_culture.html" class="flex items-center justify-center">Learn about our culture</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="rightText mb-32">
+                            <h3>Our Team</h3>
+                            <h1 class="my-5">Style <span>team</span> make the
+                                <br/><span>difference</span> every time.</h1>
+                            <p class="mb-12 w-3/5">Space & Style is heavily invested in our local community
+                                and the  World at large to help make it a better place
+                                for future generations.</p>
+                            <a href="./about_team.html">Lear more about Style team</a>
+                        </div>
+                        <img src="./assets/team_2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <!--CAREER SECTION-->
+            <div class="career relative h-auto w-full grid grid-cols-2 gap-12 py-24 pr-24">
+                <div class="overlay"></div>
+                <img src="./assets/career.png" alt="">
+                <div class="careerText h-full flex flex-col space-y-6 justify-center items-start">
+                    <h2>Style Career</h2>
+                    <h5>We put emphasis on teamwork, human capacity
+                        <br/>development and innovation</h5>
+                    <a href="./about_careers.html" class="flex items-center justify-center mt-2">Join Style Team</a>
+                </div>
+            </div>
+        </main>
+        
+        <!--FOOTER-->
+        <footer class="px-24 py-20">
+            <div class="top">
+                <div class="logoSection flex flex-col space-y-5">
+                    <img src="./assets/SPACE & STYLE LOGO HOLDER.png" alt="">
+                    <p>Receive updates about building materials</p>
+                    <input type="text" placeholder="Enter Your Email Address" class="px-10">
+                </div>
+                <div class="linkSection grid grid-cols-4 gap-2">
+                    <div class="sect flex flex-col items-start space-y-3">
+                        <h5 class="mb-3">Company</h5>
+                        <a href="#">About Us</a>
+                        <a href="#">Products</a>
+                        <a href="#">Partnership</a>
+                        <a href="#">Style Points</a>
+                        <a href="#">Style Projects</a>
+                        <a href="#">Style Careers</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-3">
+                        <h5 class="mb-3">Style Hub</h5>
+                        <a href="#">Press Releases</a>
+                        <a href="#">Downloads</a>
+                        <a href="#">Resources</a>
+                        <a href="#">FAQs</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-3">
+                        <h5 class="mb-3">Style Community</h5>
+                        <a href="#">Trainings</a>
+                        <a href="#">Environment</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-3">
+                        <h5 class="mb-3">Head Office</h5>
+                        <a href="#">Libra House, Mombasa Rd</a>
+                        <a href="#">Telephone: 020 2086700</a>
+                    </div>
+                </div>
+                <div class="iconSection flex flex-col items-center">
+                    <h5 class="mb-5">Get interactive</h5>
+                    <div class="flex space-x-5">
+                        <img src="./assets/Layer 2.png" alt="" class="socialIcon">
+                        <img src="./assets/Logo_1_.png" alt="" class="socialIcon">
+                        <img src="./assets/Layer 3.png" alt="" class="socialIcon">
+                    </div>
+                </div>
+            </div>
+            <div class="footerEnd w-full flex items-center justify-center mt-12">
+                <img src="./assets/Path 730.png" alt="">
+                <p>2022 Space & Style</p>
+            </div>
+        </footer>
+    </div>
+    
+    <!--JS FILES-->
+    <script src="./vue.js"></script>
+    <script src="./jquery 3.4_1.min.js"></script>
+    
+    <script>
+        let vue1 = new Vue({
+            el: '#app',
+            data: {
+                activelife: 1,
+            },
+        });
+        
+        //VIDEO MODAL
+        $(document).ready(function() {
+            $('.imgBox .play').click(function() {
+                //Show the lightbox
+                $('.videoModal').show();
+            }); 
+            
+            //Close the video modal
+            $('.videoModal .close').click(function() {
+                $('.videoModal').hide();
+            });
+        });
+    </script>
+</body>
+</html>

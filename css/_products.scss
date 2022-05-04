@@ -1,6 +1,6 @@
 //PRODUCT BANNER
 .productBanner {
-    background: #EACBD1;
+    background: $light;
     border: none;
     .back {
         background: $blue;
@@ -45,7 +45,7 @@
 
 //PRODUCT GRIDS SECTION
 .productGrids {
-    background: #EACBD1;
+    background: $light;
     h4 {
         font-size: 32px;
         line-height: 40px;
@@ -96,7 +96,7 @@
 
 //TIPS SECTION
 .productTips {
-    background: #EACBD1;
+    background: $light;
     .back {
         position: absolute;
         top: 0;
@@ -189,7 +189,7 @@
 //BRANCHES SECTION
 .productBranches {
     @extend .branches;
-    background: #EACBD1;
+    background: $light;
     .bgBack {
         background: white !important;
         height: 70%;
@@ -210,8 +210,7 @@
 }
 
 .productsExplore {
-    background: #EACBD1;
-    
+    background: $light; 
     .back {
         position: absolute;
         top: 0;
@@ -320,7 +319,7 @@
 }
 
 .materialsSlider {
-    background: #EACBD1;
+    background: $light;
     h1 {
         font-size: 48px;
         line-height: 56px;
@@ -385,7 +384,7 @@
 }
 
 .faq {
-    background: #EACBD1;
+    background: $light;
     h1 {
         font-size: 48px;
         line-height: 56px;
@@ -438,7 +437,7 @@
 
 /*PRODUCT SUB CATEGORY STYLES*/
 .profileGrid {
-    background: #EACBD1;
+    background: $light;
     .profileIntro {
         h1{
             font-size: 48px;
@@ -500,7 +499,7 @@
 }
 
 .prodBenefits {
-    background: #EACBD1;
+    background: $light;
     .bgBack {
         top: 0;
         right: 0;
@@ -586,7 +585,7 @@
 
 .styleResources {
    @extend .branches;
-   background: #EACBD1;
+   background: $light;
    .bgBack {
        z-index: 1 !important;
        height: 70%;
@@ -649,7 +648,7 @@
 /*PRODUCT SUB CATEGORY EXTENDED STYLES*/
 
 .subCategorySlider {
-    background: #EACBD1;
+    background: $light;
     .subCard {
         width: 347px;
         height: 98px;
@@ -732,7 +731,7 @@
 }
 
 .subCategorySpecs {
-    background: #EACBD1;
+    background: $light;
     h1 {
         font-size: 48px;
         line-height: 56px;
@@ -760,7 +759,7 @@
 }
 
 .subCategoryComments {
-    background: #EACBD1;
+    background: $light;
     .back {
         top: 0;
         right: 0;
@@ -858,6 +857,48 @@
             height: 475px;
             object-fit: cover;
             cursor: pointer;
+        }
+    }
+    .imgLightbox {
+        display: none;
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #EACBD1;
+        .modalWrapper {
+            position: relative;
+            .close {
+                position: absolute;
+                top: 50px;
+                right: 50px;
+                img {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+            .modalContent {
+                .previous {
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+                .modalImage {
+                    width: 50vw;
+                    height: 70vh;
+                    object-fit: cover;
+                }
+                .next {
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
         }
     }
 }

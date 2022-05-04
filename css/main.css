@@ -1354,7 +1354,7 @@ footer .footerEnd p {
   left: 0;
   background: url("../assets/PATTERN.png") repeat center center;
   background-size: contain;
-  z-index: 5;
+  z-index: 0;
 }
 
 .stylePoints img {
@@ -1362,6 +1362,10 @@ footer .footerEnd p {
   height: 487px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.stylePoints .styleText {
+  z-index: 3 !important;
 }
 
 .stylePoints .styleText h2 {
@@ -1391,7 +1395,7 @@ footer .footerEnd p {
 }
 
 .productBanner, .roofingBanner {
-  background: #EACBD1;
+  background: #F4F4F4;
   border: none;
 }
 
@@ -1443,7 +1447,7 @@ footer .footerEnd p {
 }
 
 .productGrids {
-  background: #EACBD1;
+  background: #F4F4F4;
 }
 
 .productGrids h4 {
@@ -1503,7 +1507,7 @@ footer .footerEnd p {
 }
 
 .productTips {
-  background: #EACBD1;
+  background: #F4F4F4;
 }
 
 .productTips .back {
@@ -1610,7 +1614,7 @@ footer .footerEnd p {
 }
 
 .productBranches {
-  background: #EACBD1;
+  background: #F4F4F4;
 }
 
 .productBranches .bgBack {
@@ -1629,7 +1633,7 @@ footer .footerEnd p {
 }
 
 .productsExplore, .subCategoryForm {
-  background: #EACBD1;
+  background: #F4F4F4;
 }
 
 .productsExplore .back, .subCategoryForm .back {
@@ -1748,7 +1752,7 @@ footer .footerEnd p {
 }
 
 .materialsSlider {
-  background: #EACBD1;
+  background: #F4F4F4;
 }
 
 .materialsSlider h1 {
@@ -1823,7 +1827,7 @@ footer .footerEnd p {
 }
 
 .faq {
-  background: #EACBD1;
+  background: #F4F4F4;
 }
 
 .faq h1 {
@@ -1885,7 +1889,7 @@ footer .footerEnd p {
 
 /*PRODUCT SUB CATEGORY STYLES*/
 .profileGrid {
-  background: #EACBD1;
+  background: #F4F4F4;
 }
 
 .profileGrid .profileIntro h1 {
@@ -1957,7 +1961,7 @@ footer .footerEnd p {
 }
 
 .prodBenefits {
-  background: #EACBD1;
+  background: #F4F4F4;
 }
 
 .prodBenefits .bgBack {
@@ -2052,7 +2056,7 @@ footer .footerEnd p {
 }
 
 .styleResources {
-  background: #EACBD1;
+  background: #F4F4F4;
 }
 
 .styleResources .bgBack {
@@ -2134,7 +2138,7 @@ footer .footerEnd p {
 
 /*PRODUCT SUB CATEGORY EXTENDED STYLES*/
 .subCategorySlider {
-  background: #EACBD1;
+  background: #F4F4F4;
 }
 
 .subCategorySlider .subCard {
@@ -2227,7 +2231,7 @@ footer .footerEnd p {
 }
 
 .subCategorySpecs {
-  background: #EACBD1;
+  background: #F4F4F4;
 }
 
 .subCategorySpecs h1 {
@@ -2257,7 +2261,7 @@ footer .footerEnd p {
 }
 
 .subCategoryComments {
-  background: #EACBD1;
+  background: #F4F4F4;
 }
 
 .subCategoryComments .back {
@@ -2370,5 +2374,964 @@ footer .footerEnd p {
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
+}
+
+.subCategoryComments .imgLightbox {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #EACBD1;
+}
+
+.subCategoryComments .imgLightbox .modalWrapper {
+  position: relative;
+}
+
+.subCategoryComments .imgLightbox .modalWrapper .close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.subCategoryComments .imgLightbox .modalWrapper .close img {
+  width: 48px;
+  height: 48px;
+}
+
+.subCategoryComments .imgLightbox .modalWrapper .modalContent .previous img {
+  width: 80px;
+  height: 80px;
+}
+
+.subCategoryComments .imgLightbox .modalWrapper .modalContent .modalImage {
+  width: 50vw;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.subCategoryComments .imgLightbox .modalWrapper .modalContent .next img {
+  width: 80px;
+  height: 80px;
+}
+
+.aboutBanner {
+  background: #F4F4F4;
+  border: none;
+}
+
+.aboutBanner .back {
+  background: #1226AA;
+  width: 100%;
+  height: 60%;
+  top: 0;
+  left: 0;
+}
+
+.aboutBanner .bannerTxt {
+  z-index: 1;
+}
+
+.aboutBanner .bannerTxt h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+}
+
+.aboutBanner .bannerTxt p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.aboutBanner .bannerTxt h5 {
+  font-size: 24px;
+  color: #292929;
+}
+
+.aboutBanner .bannerTxt h6 {
+  font-size: 24px;
+  color: white;
+  font-weight: bolder;
+}
+
+.aboutBanner .bannerTxt img {
+  width: 39px;
+  height: 39px;
+}
+
+.aboutBanner .bannerImg {
+  width: 939px;
+  height: 554px;
+  z-index: 1;
+}
+
+.videoSection {
+  background: #F4F4F4;
+  min-height: 950px;
+}
+
+.videoSection .back {
+  top: 0;
+  right: 0;
+  width: 95%;
+  height: 100%;
+  background: white !important;
+  z-index: 0;
+}
+
+.videoSection .imgBox {
+  z-index: 2;
+  height: 647px;
+  width: auto;
+  background: url("../assets/VIDEO.png") no-repeat center center;
+  background-size: cover;
+}
+
+.videoSection .imgBox span {
+  width: 135px;
+  height: 135px;
+  background: #1226AA;
+  border-radius: 50%;
+}
+
+.videoSection .imgBox span img {
+  width: 57px;
+  height: 57px;
+}
+
+.videoSection .textBox {
+  z-index: 2;
+}
+
+.videoSection .textBox h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #292929;
+}
+
+.videoSection .textBox h1 span {
+  color: #1226AA;
+}
+
+.videoSection .textBox p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.videoSection .videoModal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: #EACBD1;
+}
+
+.videoSection .videoModal .videoWrapper {
+  position: relative;
+  background-color: white;
+}
+
+.videoSection .videoModal .videoWrapper .close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.videoSection .videoModal .videoWrapper .close img {
+  width: 48px;
+  height: 48px;
+}
+
+.videoSection .videoModal .videoWrapper .video {
+  width: 80vw;
+  height: 70vh;
+}
+
+.lifetime {
+  background: #F4F4F4;
+}
+
+.lifetime h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #292929;
+}
+
+.lifetime h1 span {
+  color: #1226AA;
+}
+
+.lifetime .imageBox {
+  width: auto;
+  height: 660px;
+}
+
+.lifetime .imageBox img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lifetime .detailsBox .detail h3 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: bold;
+  color: #292929;
+}
+
+.lifetime .detailsBox .detail p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.lifetime .detailsBox .detail span img {
+  width: 89px;
+  height: 89px;
+}
+
+.lifetime .detailsBox .detail1 {
+  background: #FFB548;
+}
+
+.lifetime .detailsBox .detail2 {
+  background: #1226AA;
+}
+
+.lifetime .detailsBox .detail2 h3, .lifetime .detailsBox .detail2 p {
+  color: white !important;
+}
+
+.lifetime .detailsBox .detail3 {
+  background: #00AE8D;
+}
+
+.lifetime .detailsBox .detail3 h3, .lifetime .detailsBox .detail3 p {
+  color: white !important;
+}
+
+.lifetime .detailsBox .detail4 {
+  background: #DD8797;
+}
+
+.assurance {
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  background: #F4F4F4;
+}
+
+.assurance h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #292929;
+}
+
+.assurance h1 span {
+  color: #1226AA;
+}
+
+.assurance h5 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.assurance .item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  grid-gap: 0 !important;
+}
+
+.assurance .item span {
+  width: 160px;
+  height: 168px;
+  background: #1226AA;
+  border-radius: 25px;
+}
+
+.assurance .item span img {
+  width: 128px;
+  height: 128px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.assurance .item h6 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 900;
+  color: #292929;
+}
+
+.assurance .item p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.team {
+  background: #F4F4F4;
+}
+
+.team .back {
+  top: 0;
+  right: 0;
+  background: white;
+  height: 100%;
+  width: 95%;
+  z-index: 0;
+}
+
+.team .teamWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.4fr 2fr;
+      grid-template-columns: 2.4fr 2fr;
+  grid-gap: 60px;
+}
+
+.team .teamWrapper .left {
+  z-index: 2;
+}
+
+.team .teamWrapper .left img {
+  width: auto;
+  height: 647px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team .teamWrapper .left h4 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #292929;
+}
+
+.team .teamWrapper .left p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.team .teamWrapper .left a {
+  width: 415px;
+  height: 98px;
+  background: #FFB548;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900 !important;
+  color: #292929;
+  border-radius: 25px;
+  outline: none;
+}
+
+.team .teamWrapper .right {
+  z-index: 2;
+}
+
+.team .teamWrapper .right h3 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.team .teamWrapper .right h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #292929;
+}
+
+.team .teamWrapper .right h1 span {
+  color: #1226AA;
+}
+
+.team .teamWrapper .right p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.team .teamWrapper .right a {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bolder;
+  color: #1226AA;
+  text-decoration: underline;
+  outline: none;
+}
+
+.team .teamWrapper .right img {
+  width: auto;
+  height: 544px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.career {
+  background: #1226AA;
+}
+
+.career .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("../assets/PATTERN.png") repeat center center;
+  background-size: contain;
+  z-index: 0;
+}
+
+.career img {
+  width: 904px;
+  height: 487px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.career .careerText {
+  z-index: 3 !important;
+}
+
+.career .careerText h2 {
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 56px;
+  color: white;
+}
+
+.career .careerText h5 {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 43px;
+  color: white;
+}
+
+.career .careerText a {
+  width: 266px;
+  height: 85px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bolder;
+  background: #FFB548;
+  color: #292929;
+  border-radius: 25px;
+  outline: none;
+}
+
+/*ABOUT TEAM PAGE STYLES*/
+.aboutTeamBanner {
+  background: #F4F4F4;
+  border: none;
+}
+
+.aboutTeamBanner .back {
+  background: #1226AA;
+  width: 100%;
+  height: 65%;
+  top: 0;
+  left: 0;
+}
+
+.aboutTeamBanner .bannerTxt {
+  z-index: 1;
+}
+
+.aboutTeamBanner .bannerTxt h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+}
+
+.aboutTeamBanner .bannerTxt p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.aboutTeamBanner .bannerTxt h5 {
+  font-size: 24px;
+  color: #292929;
+}
+
+.aboutTeamBanner .bannerTxt h6 {
+  font-size: 24px;
+  color: white;
+  font-weight: bolder;
+}
+
+.aboutTeamBanner .bannerImg {
+  width: 939px;
+  height: 554px;
+  z-index: 1;
+}
+
+.executives {
+  background: #F4F4F4;
+}
+
+.executives h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #292929;
+}
+
+.executives h1 span {
+  color: #1226AA;
+}
+
+.executives .bio .bioImg {
+  width: 354px;
+  height: 354px;
+}
+
+.executives .bio .text h4 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: bold;
+  color: #292929;
+}
+
+.executives .bio .text p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.executives .bio .text a {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #292929;
+}
+
+.executives .bio .text a img {
+  width: 59px;
+  height: 59px;
+}
+
+/*ABOUT TEAM BIO STYLES*/
+.bioInfo {
+  background: #F4F4F4;
+  min-height: 950px;
+}
+
+.bioInfo .back {
+  top: 0;
+  right: 0;
+  width: 95%;
+  height: 100%;
+  background: white !important;
+  z-index: 0;
+}
+
+.bioInfo .imgBox {
+  z-index: 2;
+  height: 647px;
+  width: auto;
+  background: url("../assets/BIO_IMAGE HOLDER.png") no-repeat center center;
+  background-size: cover;
+}
+
+.bioInfo .textBox {
+  z-index: 2;
+}
+
+.bioInfo .textBox h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #292929;
+}
+
+.bioInfo .textBox h5 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.bioInfo .textBox p {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.teamSpacer {
+  background: #F4F4F4;
+}
+
+/*ABOUT CULTURE*/
+.investing .intro h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #292929;
+  z-index: 2;
+}
+
+.investing .intro h1 span {
+  color: #1226AA;
+}
+
+.investing .intro p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+  z-index: 2;
+}
+
+.investing .imageBox {
+  width: auto;
+  height: 553px;
+  z-index: 2;
+}
+
+.investing .imageBox img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.investing .detailsBox {
+  z-index: 2;
+}
+
+.investing .detailsBox .detail {
+  z-index: 2;
+}
+
+.investing .detailsBox .detail h3 {
+  z-index: 2;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: bold;
+  color: #292929;
+}
+
+.investing .detailsBox .detail p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.investing .detailsBox .detail span img {
+  width: 89px;
+  height: 89px;
+}
+
+.investing .detailsBox .detail1 {
+  background: #FFB548;
+}
+
+.investing .detailsBox .detail2 {
+  background: #1226AA;
+}
+
+.investing .detailsBox .detail2 h3, .investing .detailsBox .detail2 p {
+  color: white !important;
+}
+
+.investing .detailsBox .detail3 {
+  background: #00AE8D;
+}
+
+.investing .detailsBox .detail3 h3, .investing .detailsBox .detail3 p {
+  color: white !important;
+}
+
+.investing .detailsBox .detail4 {
+  background: #DD8797;
+}
+
+.diversity .imgWrapper {
+  z-index: 2;
+}
+
+.diversity .imgWrapper img {
+  width: auto;
+  height: 647px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.diversity .textWrapper {
+  z-index: 2;
+}
+
+.diversity .textWrapper h2 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 800;
+  color: #292929;
+}
+
+.diversity .textWrapper h5 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.diversity .textWrapper p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #292929;
+}
+
+/*ABOUT CAREERS STYLES*/
+.careerJoin {
+  background: #F4F4F4;
+}
+
+.careerJoin .back {
+  top: 0;
+  right: 0;
+  width: 95%;
+  height: 100%;
+  background: white !important;
+  z-index: 0;
+}
+
+.careerJoin .imgBox {
+  z-index: 2;
+  height: 647px;
+  width: auto;
+  background: url("../assets/CAREER_JOIN IMAGE HOLDER.png") no-repeat center center;
+  background-size: cover;
+}
+
+.careerJoin .imgBox span {
+  width: 135px;
+  height: 135px;
+  background: #1226AA;
+  border-radius: 50%;
+}
+
+.careerJoin .imgBox span img {
+  width: 57px;
+  height: 57px;
+}
+
+.careerJoin .textBox {
+  z-index: 2;
+}
+
+.careerJoin .textBox h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #292929;
+}
+
+.careerJoin .textBox h1 span {
+  color: #1226AA;
+}
+
+.careerJoin .textBox p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.careerJoin .textBox .applyBtn {
+  width: 415px;
+  height: 98px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bolder;
+  background: #FFB548;
+  color: #292929;
+  border-radius: 25px;
+  outline: none;
+}
+
+/*CAREER EXPLORE STYLES*/
+.careerExplore {
+  background: #F4F4F4;
+}
+
+.careerExplore h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #292929;
+}
+
+.careerExplore .search {
+  width: 673px;
+  height: 98px;
+  background: #E2E2E2;
+  border-radius: 50px;
+  border: 1px solid #717171;
+}
+
+.careerExplore .search img {
+  width: 41.05px;
+  height: 41.05px;
+}
+
+.careerExplore .search input {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  color: #292929;
+  background: transparent;
+  font-size: 24px;
+}
+
+.careerExplore .search input::-webkit-input-placeholder {
+  color: #292929;
+  font-size: 24px;
+}
+
+.careerExplore .search input:-ms-input-placeholder {
+  color: #292929;
+  font-size: 24px;
+}
+
+.careerExplore .search input::-ms-input-placeholder {
+  color: #292929;
+  font-size: 24px;
+}
+
+.careerExplore .search input::placeholder {
+  color: #292929;
+  font-size: 24px;
+}
+
+.careerExplore .search input:focus {
+  outline: none;
+}
+
+.careerExplore .jobs .jobCard {
+  background: white;
+  min-height: auto;
+}
+
+.careerExplore .jobs .jobCard h4 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.careerExplore .jobs .jobCard p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.careerExplore .jobs .jobCard h6 {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 900;
+  color: #1226AA;
+}
+
+.careerExplore .jobs .jobCard .right a {
+  width: 130px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 900;
+  color: #1226AA;
+  text-decoration: underline;
+  outline: none;
+}
+
+.careerExplore .pagination .previous {
+  background: #292929;
+  width: 206px;
+  height: 73px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.careerExplore .pagination .previous img {
+  width: 20px;
+  height: 20px;
+}
+
+.careerExplore .pagination .previous p {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32px;
+  color: white;
+}
+
+.careerExplore .pagination .pages span {
+  width: 68px;
+  height: 73px;
+  font-size: 32px;
+  color: #292929;
+  border: 1px solid #292929;
+  background: transparent;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.careerExplore .pagination .pages .activePage {
+  color: white;
+  border: 1px solid #1226AA;
+  background: #1226AA;
+}
+
+.careerExplore .pagination .next {
+  background: #1226AA;
+  width: 206px;
+  height: 73px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.careerExplore .pagination .next img {
+  width: 20px;
+  height: 20px;
+}
+
+.careerExplore .pagination .next p {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32px;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
