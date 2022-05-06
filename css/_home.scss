@@ -687,7 +687,7 @@
                 width: 300px;
                 height: 315px;
                 border-radius: 50px;
-                background: url('../assets/IMAGE\ HOLDER.png') no-repeat center center;
+                background: url('../assets/sustainable.png') no-repeat center center;
                 background-size: cover;
                 .info {
                     min-width: 184px;
@@ -1060,4 +1060,9 @@
             outline: none;
         }
     }
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+
 }

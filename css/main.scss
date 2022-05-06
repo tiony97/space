@@ -20,11 +20,12 @@ body {
     font-family: "proximaNova";
 }
 
+//Main Nav Menu
 nav {
     min-height: 96px;
     .logo {
-        width: 260px;
-        height: 79px;
+        width: auto;
+        height: auto;
     }
     .pageLinks {
         a {
@@ -63,21 +64,111 @@ nav {
     }
 }
 
+//Responsive Navigation
+.responsiveNav {
+    height: 90px;
+    display: none;
+    .logo {
+        width: auto;
+        height: auto;
+    }
+    .mobileLogo {
+        width: auto;
+        height: auto;
+        display: none;
+    }
+    .navIcons {
+        img {
+            width: 40.61px;
+            height: 40.61px;
+        }
+    }
+}
+
+//Overlay Menu
+.menuOverlay {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $dark; 
+    z-index: 100;
+    transition: all .3s ease-in-out;
+    .overlayWrapper {
+        width: 100%;
+        height: 100%;
+    }
+    .menuClose {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .overlayLinks {
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            color: $light;
+        }
+        .activeLink {
+            font-weight: bolder !important;
+            color: $blue !important;
+        }
+    }
+    .overlayBtns {
+        a {
+            min-width: 140px;
+            height: 60px;
+            font-size: 16px;
+            border: 3px solid $blue;
+            border-radius: 25px;
+        }
+        .call {
+            color: white;
+            font-weight: bold;
+            background: $blue;
+        }
+        .login {
+            color: $blue;
+            background: transparent;
+        }
+    }
+    .overlaySocial {
+        img {
+            width: 24px;
+            height: 24px;
+            object-fit: cover;
+        }
+    }
+}
+.menuOverlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
 //footer 
 footer {
     background: #EACBD1;
-    min-height: 544px;
+    height: auto;
     color: $dark;
     
     .top {
         display: grid;
-        grid-template-columns: 2fr 3fr 1fr;
+        grid-template-columns: 2fr 3.5fr 1fr;
+        grid-gap: 30px;
     }
     .logoSection {
         img {
-            width: 382.92px;
-            height: 116.35px;
+            width: auto;
+            height: auto;
             object-fit: cover;
+            object-position: left;
         }
         p {
             font-size: 32px;
@@ -86,7 +177,7 @@ footer {
             color: $dark;
         }
         input {
-            width: 452px;
+            width: auto;
             height: 78px;
             background: $dark;
             color: white;
@@ -143,10 +234,309 @@ footer {
     }
 }
 
-//MEDIA QUERY
-@media only screen and (max-width: 480px) {}
+/*MEDIA QUERY*/
+//Big Screens
+@media only screen and (max-width: 1600px) {
+    nav {
+        .logo {
+            width: auto;
+            height: auto;
+        }
+        .navIcons {
+            img {
+                width: 40px;
+                object-fit: cover;
+                height: 40px;
+            }
+        }
+        .navBtns {
+            a {
+                min-width: 140px;
+                height: 60px;
+                font-size: 16px;
+            }
+        }
+    }
+    
+    footer {
+        .logoSection {
+            p {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            input {
+                height: 60px;
+                font-size: 16px;
+                &::placeholder {
+                    font-size: 16px;
+                }
+            }
+        }
+        .linkSection {
+            h5 {
+                font-size: 21px !important;
+                line-height: 32px;
+            }
+        }
+        .iconSection {
+            h5 {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+        .footerEnd {
+            img {
+                width: 25px;
+                height: 25px;
+            }   
+            p {
+                font-size: 20px;
+                font-weight: normal;
+                line-height: 32px;
+            }
+        }
+    }
+}
+
+//Small laptops and tablets (768-1024) 
+@media only screen and (max-width: 1024px) {
+    nav {
+        display: none !important;
+    }
+    .responsiveNav {
+        display: flex;
+        .navIcons {
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+    footer {
+        background: #EACBD1;
+        height: auto;
+        color: $dark;
+        
+        .top {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 30px;
+        }
+        .logoSection {
+            img {
+                width: auto;
+                height: auto;
+                object-fit: cover;
+                object-position: center;
+            }
+            p {
+                font-size: 18px;
+                font-weight: normal;
+                line-height: 24px;
+                color: $dark;
+            }
+            input {
+                width: auto;
+                height: 60px;
+                background: $dark;
+                color: white;
+                outline: none;
+                border-radius: 25px;
+                font-size: 16px;
+                line-height: 24px;
+                &::placeholder {
+                    color: #EACBD1;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+        
+        .linkSection {
+            grid-template-columns: 1fr 1fr 1.5fr 1fr !important;
+            .sect {
+                h5 {
+                    color: $dark;
+                    font-size: 18px !important;
+                    line-height: 24px;
+                    font-weight: bolder !important;
+                }
+                a { 
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: $dark;
+                    font-weight: bold;
+                }
+            }
+        }
+        .iconSection {
+            display: none;
+        }
+        .footerEnd {
+            img {
+                width: 25px;
+                height: 25px;
+            }   
+            p {
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 24px;
+            }
+        }
+    }
+    
+}
+
+//Tablets
+@media only screen and (max-width: 768px) {
+    .responsiveNav {
+        height: 80px;
+        .logo {
+            width: auto;
+            height: auto;
+        }
+        .navIcons {
+            img {
+                width: 30.61px;
+                height: 30.61px;
+            }
+        }
+    }
+    
+    footer {
+        background: #EACBD1;
+        height: auto;
+        color: $dark;
+        .top {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
+        }
+        .logoSection {
+            img {
+                width: auto;
+                height: auto;
+                object-fit: cover;
+                object-position: center;
+            }
+            p {
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 24px;
+                color: $dark;
+            }
+            input {
+                width: 40vw;
+                height: 60px;
+                font-size: 16px;
+                line-height: 24px;
+                &::placeholder {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+        
+        .linkSection {
+            grid-template-columns: 1fr 1fr 1fr 1fr !important;
+            .sect {
+                h5 {
+                    color: $dark;
+                    font-size: 18px !important;
+                    line-height: 24px;
+                    font-weight: bolder !important;
+                }
+                a { 
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: $dark;
+                    font-weight: bold;
+                }
+            }
+        }
+        .footerEnd {
+            img {
+                width: 25px;
+                height: 25px;
+            }   
+            p {
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+//Mobile
+@media only screen and (max-width: 540px) {
+    .responsiveNav {
+        height: 80px;
+        .logo {
+            display: none !important;
+        }
+        .mobileLogo {
+            display: flex !important;
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+        .navIcons {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    .menuOverlay {
+        .overlayBtns {
+            flex-direction: row !important;
+        }
+    }
+    footer {
+        .logoSection {
+            p {
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 24px;
+                color: $dark;
+            }
+            input {
+                width: 100%;
+                height: 60px;
+            }
+        }
+        
+        .linkSection {
+            grid-template-columns: 1fr 1fr !important;
+            grid-row-gap: 20px;
+            .sect {
+                align-items: center !important;
+            }
+        }
+        .footerEnd {
+            img {
+                width: 25px;
+                height: 25px;
+            }   
+            p {
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 24px;
+            }
+        }
+    }
+}
 
 //Page File Imports
 @import "./home";
 @import "./products";
 @import "./about";
+@import "./style";
+@import "./impact";

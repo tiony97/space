@@ -1,0 +1,206 @@
+/*STYLE PAGE BANNER*/
+.styleBanner {
+    background: $light;
+    border: none;
+    .back {
+        background: $blue;
+        width: 100%;
+        height: 70%;
+        top: 0;
+        left: 0;
+    }
+    .bannerTxt {
+        z-index: 1;
+        h1 {
+            font-size: 64px;
+            font-weight: 900;
+            color: white;
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+        h5 {
+            font-size: 24px;
+            color: $dark;
+        }
+        h6 {
+            font-size: 24px;
+            color: white;
+            font-weight: bolder;
+        }
+        img {
+            width: 39px;
+            height: 39px;
+        }
+    }
+    .bannerImg {
+        width: 939px;
+        height: 554px;
+        z-index: 1;
+    }
+}
+
+.styleHow {
+    background: $light;
+    .back {
+        top: 0;
+        right: 0;
+        width: 95%;
+        height: 100%;
+        background: white !important;
+        z-index: 0;
+    }
+    .imgBox {
+        z-index: 2;
+        height: 647px;
+        width: auto;
+        background: url('../assets/CAREER_JOIN\ IMAGE\ HOLDER.png') no-repeat center center;
+        background-size: cover;
+    }
+    .textBox {
+        z-index: 2;
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+            font-weight: 900;
+            color: $dark;
+            span {
+                color: $blue;
+            }
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+        .applyBtn {
+            width: 415px;
+            height: 98px;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: bolder;
+            background: $orange;
+            color: $dark;
+            border-radius: 25px;
+            outline: none;
+        }
+    }
+}
+
+.styleBenefits {
+    background: $light;
+    .intro {
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+            font-weight: 900 !important;
+            color: $dark;
+            span {
+                color: $blue;
+            }
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+    }
+    .benefitsCard {
+        width: 494px;
+        height: 518px;
+        border-radius: 50px;
+        .back1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            z-index: -1;
+            background-color: $blue;
+        }
+        .back2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            z-index: -1;
+        }
+        .cardWrapper {
+            z-index: 5;
+            span {
+                min-width: 390px;
+                height: 98px;
+                border-radius: 25px;
+                background: #0E1C77;
+                font-size: 32px;
+                color: white;
+                line-height: 40px;
+                font-weight: bold;
+            }
+            p {
+                font-size: 24px;
+                color: white;
+                line-height: 32px;
+            }
+            a {
+                font-size: 24px;
+                color: $orange;
+                line-height: 32px;
+                font-weight: bolder;
+                img {
+                    width: 59px;
+                    height: 59px;
+                }
+            }
+        }
+    }
+}
+
+.styleRegister {
+    background: $light;
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 900 !important;
+        color: $dark;
+        span {
+            color: $blue;
+        }
+    }
+    
+    .left, .right {
+        height: 660px;
+        width: auto;
+    }
+    
+    .left {
+        background: $orange;
+        img {
+            width: 500px;
+            height: 500px;
+        }
+    }
+    .right {
+        background: $green;
+        h3 {
+            font-size: 40px;
+            line-height: 48px;
+            font-weight: 900 !important;
+            color: white;
+        }
+        p {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: normal;
+            color: white;
+        }
+    }
+}

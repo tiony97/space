@@ -16,8 +16,8 @@ nav {
 }
 
 nav .logo {
-  width: 260px;
-  height: 79px;
+  width: auto;
+  height: auto;
 }
 
 nav .pageLinks a {
@@ -55,24 +55,120 @@ nav .navBtns .login {
   background: transparent;
 }
 
+.responsiveNav {
+  height: 90px;
+  display: none;
+}
+
+.responsiveNav .logo {
+  width: auto;
+  height: auto;
+}
+
+.responsiveNav .mobileLogo {
+  width: auto;
+  height: auto;
+  display: none;
+}
+
+.responsiveNav .navIcons img {
+  width: 40.61px;
+  height: 40.61px;
+}
+
+.menuOverlay {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #292929;
+  z-index: 100;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.menuOverlay .overlayWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.menuOverlay .menuClose {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.menuOverlay .menuClose img {
+  width: 40px;
+  height: 40px;
+}
+
+.menuOverlay .overlayLinks a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #F4F4F4;
+}
+
+.menuOverlay .overlayLinks .activeLink {
+  font-weight: bolder !important;
+  color: #1226AA !important;
+}
+
+.menuOverlay .overlayBtns a {
+  min-width: 140px;
+  height: 60px;
+  font-size: 16px;
+  border: 3px solid #1226AA;
+  border-radius: 25px;
+}
+
+.menuOverlay .overlayBtns .call {
+  color: white;
+  font-weight: bold;
+  background: #1226AA;
+}
+
+.menuOverlay .overlayBtns .login {
+  color: #1226AA;
+  background: transparent;
+}
+
+.menuOverlay .overlaySocial img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menuOverlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
 footer {
   background: #EACBD1;
-  min-height: 544px;
+  height: auto;
   color: #292929;
 }
 
 footer .top {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 3fr 1fr;
-      grid-template-columns: 2fr 3fr 1fr;
+  -ms-grid-columns: 2fr 3.5fr 1fr;
+      grid-template-columns: 2fr 3.5fr 1fr;
+  grid-gap: 30px;
 }
 
 footer .logoSection img {
-  width: 382.92px;
-  height: 116.35px;
+  width: auto;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
 }
 
 footer .logoSection p {
@@ -83,7 +179,7 @@ footer .logoSection p {
 }
 
 footer .logoSection input {
-  width: 452px;
+  width: auto;
   height: 78px;
   background: #292929;
   color: white;
@@ -152,6 +248,313 @@ footer .footerEnd p {
   font-size: 24px;
   font-weight: normal;
   line-height: 40px;
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 1600px) {
+  nav .logo {
+    width: auto;
+    height: auto;
+  }
+  nav .navIcons img {
+    width: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 40px;
+  }
+  nav .navBtns a {
+    min-width: 140px;
+    height: 60px;
+    font-size: 16px;
+  }
+  footer .logoSection p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  footer .logoSection input {
+    height: 60px;
+    font-size: 16px;
+  }
+  footer .logoSection input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  footer .logoSection input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  footer .logoSection input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  footer .logoSection input::placeholder {
+    font-size: 16px;
+  }
+  footer .linkSection h5 {
+    font-size: 21px !important;
+    line-height: 32px;
+  }
+  footer .iconSection h5 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  footer .iconSection img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  footer .footerEnd img {
+    width: 25px;
+    height: 25px;
+  }
+  footer .footerEnd p {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    display: none !important;
+  }
+  .responsiveNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .responsiveNav .navIcons img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  footer {
+    background: #EACBD1;
+    height: auto;
+    color: #292929;
+  }
+  footer .top {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+    grid-gap: 30px;
+  }
+  footer .logoSection img {
+    width: auto;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  footer .logoSection p {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #292929;
+  }
+  footer .logoSection input {
+    width: auto;
+    height: 60px;
+    background: #292929;
+    color: white;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer .logoSection input::-webkit-input-placeholder {
+    color: #EACBD1;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer .logoSection input:-ms-input-placeholder {
+    color: #EACBD1;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer .logoSection input::-ms-input-placeholder {
+    color: #EACBD1;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer .logoSection input::placeholder {
+    color: #EACBD1;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer .linkSection {
+    -ms-grid-columns: 1fr 1fr 1.5fr 1fr !important;
+        grid-template-columns: 1fr 1fr 1.5fr 1fr !important;
+  }
+  footer .linkSection .sect h5 {
+    color: #292929;
+    font-size: 18px !important;
+    line-height: 24px;
+    font-weight: bolder !important;
+  }
+  footer .linkSection .sect a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #292929;
+    font-weight: bold;
+  }
+  footer .iconSection {
+    display: none;
+  }
+  footer .footerEnd img {
+    width: 25px;
+    height: 25px;
+  }
+  footer .footerEnd p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .responsiveNav {
+    height: 80px;
+  }
+  .responsiveNav .logo {
+    width: auto;
+    height: auto;
+  }
+  .responsiveNav .navIcons img {
+    width: 30.61px;
+    height: 30.61px;
+  }
+  footer {
+    background: #EACBD1;
+    height: auto;
+    color: #292929;
+  }
+  footer .top {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  footer .logoSection img {
+    width: auto;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  footer .logoSection p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #292929;
+  }
+  footer .logoSection input {
+    width: 40vw;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer .logoSection input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer .logoSection input:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer .logoSection input::-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer .logoSection input::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer .linkSection {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  }
+  footer .linkSection .sect h5 {
+    color: #292929;
+    font-size: 18px !important;
+    line-height: 24px;
+    font-weight: bolder !important;
+  }
+  footer .linkSection .sect a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #292929;
+    font-weight: bold;
+  }
+  footer .footerEnd img {
+    width: 25px;
+    height: 25px;
+  }
+  footer .footerEnd p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .responsiveNav {
+    height: 80px;
+  }
+  .responsiveNav .logo {
+    display: none !important;
+  }
+  .responsiveNav .mobileLogo {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    height: 50px;
+    width: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .responsiveNav .navIcons img {
+    width: 30px;
+    height: 30px;
+  }
+  .menuOverlay .overlayBtns {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  footer .logoSection p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #292929;
+  }
+  footer .logoSection input {
+    width: 100%;
+    height: 60px;
+  }
+  footer .linkSection {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    grid-row-gap: 20px;
+  }
+  footer .linkSection .sect {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  footer .footerEnd img {
+    width: 25px;
+    height: 25px;
+  }
+  footer .footerEnd p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+  }
 }
 
 .homeBanner .tabGrids .gridLink {
@@ -985,7 +1388,7 @@ footer .footerEnd p {
   width: 300px;
   height: 315px;
   border-radius: 50px;
-  background: url("../assets/IMAGE HOLDER.png") no-repeat center center;
+  background: url("../assets/sustainable.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -1394,6 +1797,7 @@ footer .footerEnd p {
   outline: none;
 }
 
+/*MEDIA QUERIES*/
 .productBanner, .roofingBanner {
   background: #F4F4F4;
   border: none;
@@ -1402,7 +1806,7 @@ footer .footerEnd p {
 .productBanner .back, .roofingBanner .back {
   background: #1226AA;
   width: 100%;
-  height: 70%;
+  height: 65%;
   top: 0;
   left: 0;
 }
@@ -1441,8 +1845,8 @@ footer .footerEnd p {
 }
 
 .productBanner .bannerImg, .roofingBanner .bannerImg {
-  width: 939px;
-  height: 554px;
+  width: auto;
+  height: auto;
   z-index: 1;
 }
 
@@ -1458,52 +1862,57 @@ footer .footerEnd p {
 }
 
 .productGrids .productCard {
-  min-height: 611px;
   width: auto;
-}
-
-.productGrids .productCard .imgWrapper {
-  width: auto;
-  height: 450px;
-}
-
-.productGrids .productCard .imgWrapper img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  height: 600px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
-.productGrids .productCard .imgWrapper:hover {
+.productGrids .productCard .imgWrapper {
   overflow: hidden;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
-.productGrids .productCard .imgWrapper:hover img {
-  width: 120%;
-  height: 120%;
+.productGrids .productCard .imgWrapper img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.productGrids .productCard .imgWrapper img:hover {
+  width: 120% !important;
+  height: 120% !important;
 }
 
 .productGrids .productCard .cardTxt {
   background: white;
-  border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 .productGrids .productCard .cardTxt h4 {
-  color: #292929;
   font-size: 32px;
   font-weight: bold;
+  color: #292929;
 }
 
 .productGrids .productCard .cardTxt p {
-  color: #292929;
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
+  color: #292929;
 }
 
 .productTips {
@@ -2420,6 +2829,562 @@ footer .footerEnd p {
   height: 80px;
 }
 
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+  .productBanner .bannerTxt h1, .roofingBanner .bannerTxt h1 {
+    font-size: 55px;
+  }
+  .productBanner .bannerTxt p, .roofingBanner .bannerTxt p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .productBanner .bannerTxt h5, .roofingBanner .bannerTxt h5 {
+    font-size: 20px;
+  }
+  .productBanner .bannerTxt h6, .roofingBanner .bannerTxt h6 {
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+  }
+  .productBanner .bannerTxt img, .roofingBanner .bannerTxt img {
+    width: 30px;
+    height: 30px;
+  }
+  .productGrids h4 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .productGrids .productCard {
+    height: 500px;
+  }
+  .productGrids .productCard .cardTxt {
+    height: auto;
+  }
+  .productGrids .productCard .cardTxt h4 {
+    font-size: 30px;
+  }
+  .productGrids .productCard .cardTxt p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .productTips .tipsHeader h1 {
+    font-size: 45px;
+  }
+  .productTips .tipsHeader p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .productTips .tipsInfo .imgWrapper .linkBtns .commBtn {
+    width: 80px;
+    height: 60px;
+  }
+  .productTips .tipsInfo .imgWrapper .linkBtns .commBtn img {
+    width: 20.82px;
+    height: 25.03px;
+  }
+  .productTips .tipsInfo .communityText h3 {
+    font-size: 32px;
+  }
+  .productTips .tipsInfo .communityText p {
+    font-size: 22px !important;
+    width: 80%;
+  }
+  .productTips .tipsInfo .communityText a {
+    font-size: 22px;
+  }
+  .productBranches .wrapper h2 {
+    font-size: 45px;
+    font-weight: bolder;
+    color: #292929;
+  }
+  .productBranches .wrapper form .search {
+    width: 60vw;
+    height: 80px;
+  }
+  .productBranches .wrapper form .search img {
+    width: 40px;
+    height: 40px;
+  }
+  .productBranches .wrapper form .search input {
+    font-size: 22px;
+  }
+  .productBranches .wrapper form .search input::-webkit-input-placeholder {
+    color: #292929;
+    font-size: 22px;
+  }
+  .productBranches .wrapper form .search input:-ms-input-placeholder {
+    color: #292929;
+    font-size: 22px;
+  }
+  .productBranches .wrapper form .search input::-ms-input-placeholder {
+    color: #292929;
+    font-size: 22px;
+  }
+  .productBranches .wrapper form .search input::placeholder {
+    color: #292929;
+    font-size: 22px;
+  }
+  .productBranches .wrapper form .search input:focus {
+    outline: none;
+  }
+  .productBranches .wrapper form .radios .container {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .radios .container .checkmark {
+    height: 30px;
+    width: 30px;
+  }
+  .productBranches .wrapper form .radios .container .checkmark:after {
+    top: 2px;
+    left: 2.5px;
+    right: 1px;
+    bottom: 1px;
+    width: 15px;
+    height: 15px;
+  }
+  .productBranches .wrapper form .radios .container p {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .productBranches .wrapper p {
+    font-size: 30px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard {
+    width: auto;
+    height: 280px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .info {
+    width: 80%;
+    height: 38px;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+    width: 80%;
+    height: 38px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+    font-size: 16px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .distance p {
+    font-size: 14px;
+    color: #1226AA;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .distance img {
+    width: 22.39px;
+    height: 31.98px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay:hover {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .productBanner .bannerTxt h1, .roofingBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .productBanner .bannerTxt p, .roofingBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .productBanner .bannerTxt h5, .roofingBanner .bannerTxt h5 {
+    font-size: 16px;
+  }
+  .productBanner .bannerTxt h6, .roofingBanner .bannerTxt h6 {
+    font-size: 16px;
+  }
+  .productGrids h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .productGrids .productCard {
+    height: 400px !important;
+  }
+  .productGrids .productCard .cardTxt {
+    padding: 20px 30px !important;
+  }
+  .productGrids .productCard .cardTxt h4 {
+    font-size: 22px;
+  }
+  .productGrids .productCard .cardTxt p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .productTips .tipsHeader h1 {
+    font-size: 32px;
+  }
+  .productTips .tipsHeader p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .productTips .tipsInfo {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .productTips .tipsInfo .imgWrapper {
+    width: auto !important;
+  }
+  .productTips .tipsInfo .imgWrapper .linkBtns .commBtn {
+    width: 70px;
+    height: 50px;
+  }
+  .productTips .tipsInfo .imgWrapper .linkBtns .commBtn img {
+    width: 15.82px;
+    height: 20.03px;
+  }
+  .productTips .tipsInfo .communityText h3 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .productTips .tipsInfo .communityText p {
+    font-size: 16px !important;
+    line-height: 24px;
+    width: 90%;
+  }
+  .productTips .tipsInfo .communityText a {
+    font-size: 16px;
+  }
+  .productBranches .wrapper {
+    width: 80vw !important;
+  }
+  .productBranches .wrapper h2 {
+    font-size: 32px;
+  }
+  .productBranches .wrapper form .search {
+    width: 60vw;
+    height: 60px;
+  }
+  .productBranches .wrapper form .search img {
+    width: 30px;
+    height: 30px;
+  }
+  .productBranches .wrapper form .search input {
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .search input::-webkit-input-placeholder {
+    color: #292929;
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .search input:-ms-input-placeholder {
+    color: #292929;
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .search input::-ms-input-placeholder {
+    color: #292929;
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .search input::placeholder {
+    color: #292929;
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .radios .container {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .radios .container .checkmark {
+    height: 30px;
+    width: 30px;
+  }
+  .productBranches .wrapper form .radios .container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    width: 14px;
+    height: 14px;
+  }
+  .productBranches .wrapper form .radios .container p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .productBranches .wrapper p {
+    font-size: 24px;
+  }
+  .productBranches .wrapper .hardware {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    width: 100% !important;
+  }
+  .productBranches .wrapper .hardware .hardwareCard {
+    width: auto !important;
+    height: 280px;
+    padding: 10px !important;
+    border-radius: 25px !important;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .info {
+    width: auto;
+    height: 38px;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay {
+    border-radius: 25px !important;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+    width: 80%;
+    height: 38px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+    font-size: 16px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .distance p {
+    font-size: 14px;
+    color: #1226AA;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .distance img {
+    width: 22.39px;
+    height: 31.98px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay:hover {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .productBanner .back, .roofingBanner .back {
+    height: 55%;
+  }
+  .productBanner .bannerTxt h1, .roofingBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .productBanner .bannerTxt p, .roofingBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .productBanner .bannerTxt h5, .roofingBanner .bannerTxt h5 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .productBanner .bannerTxt img, .roofingBanner .bannerTxt img {
+    width: 24px;
+    height: 24px;
+  }
+  .productGrids h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .productGrids .productCard .cardTxt {
+    padding: 15px 25px !important;
+  }
+  .productGrids .productCard .cardTxt h4 {
+    font-size: 20px;
+  }
+  .productGrids .productCard .cardTxt p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .productTips .tipsHeader h1 {
+    font-size: 30px;
+  }
+  .productTips .tipsInfo .imgWrapper .linkBtns .commBtn {
+    width: 60px;
+    height: 40px;
+  }
+  .productTips .tipsInfo .imgWrapper .linkBtns .commBtn img {
+    width: 10.82px;
+    height: 15.03px;
+  }
+  .productTips .tipsInfo .communityText h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .productTips .tipsInfo .communityText p {
+    font-size: 16px !important;
+    line-height: 24px;
+    width: 90%;
+  }
+  .productTips .tipsInfo .communityText a {
+    font-size: 16px;
+  }
+  .productBranches .wrapper h2 {
+    font-size: 30px;
+  }
+  .productBranches .wrapper form .search {
+    width: 60vw;
+    height: 60px;
+  }
+  .productBranches .wrapper form .search img {
+    width: 24px;
+    height: 24px;
+  }
+  .productBranches .wrapper form .search input {
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .search input::-webkit-input-placeholder {
+    color: #292929;
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .search input:-ms-input-placeholder {
+    color: #292929;
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .search input::-ms-input-placeholder {
+    color: #292929;
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .search input::placeholder {
+    color: #292929;
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .radios .container {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .radios .container .checkmark {
+    height: 24px;
+    width: 24px;
+    border: 4px solid #292929;
+  }
+  .productBranches .wrapper form .radios .container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    width: 10px;
+    height: 10px;
+  }
+  .productBranches .wrapper form .radios .container p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .productBranches .wrapper p {
+    font-size: 18px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard {
+    width: auto;
+    height: 250px;
+    padding: 10px !important;
+    border-radius: 25px !important;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .info {
+    width: auto;
+    height: auto;
+    padding: 5px 2px;
+    font-size: 14px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay {
+    border-radius: 25px !important;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+    width: 80%;
+    height: 38px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+    font-size: 16px;
+    margin-top: 30px !important;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .distance p {
+    font-size: 14px;
+    color: #1226AA;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .distance img {
+    width: 22.39px;
+    height: 31.98px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .productBanner, .roofingBanner {
+    grid-gap: 0;
+    padding-top: 30px;
+  }
+  .productBanner .back, .roofingBanner .back {
+    height: 80%;
+  }
+  .productBanner .bannerTxt h1, .roofingBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .productBanner .bannerTxt p, .roofingBanner .bannerTxt p, .productBanner .bannerTxt h5, .roofingBanner .bannerTxt h5 {
+    color: white;
+  }
+  .productBanner .bannerImg, .roofingBanner .bannerImg {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .productTips .back {
+    width: 100%;
+  }
+  .productTips .tipsHeader h1 {
+    font-size: 30px;
+  }
+  .productTips .tipsInfo {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+  .productTips .tipsInfo .imgWrapper {
+    height: 300px;
+  }
+  .productBranches .wrapper {
+    width: 100vw !important;
+    border-radius: 0;
+  }
+  .productBranches .wrapper h2 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .productBranches .wrapper form .search {
+    width: 100%;
+    height: 60px;
+  }
+  .productBranches .wrapper form .radios .container {
+    position: relative;
+    padding-left: 0px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .productBranches .wrapper p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .productBranches .wrapper .hardware {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    padding: 0 20px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard {
+    width: auto;
+    height: 250px;
+    padding: 10px inherit !important;
+    border-radius: 25px !important;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .info {
+    width: auto;
+    height: auto;
+    padding: 5px 2px;
+    font-size: 14px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay {
+    border-radius: 25px !important;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+    width: 80%;
+    height: 38px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+    font-size: 16px;
+    margin-top: 30px !important;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .distance p {
+    font-size: 14px;
+    color: #1226AA;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay .distance img {
+    width: 22.39px;
+    height: 31.98px;
+  }
+}
+
 .aboutBanner {
   background: #F4F4F4;
   border: none;
@@ -3333,5 +4298,512 @@ footer .footerEnd p {
   font-weight: 800;
   line-height: 32px;
   color: white;
+}
+
+/*STYLE PAGE BANNER*/
+.styleBanner {
+  background: #F4F4F4;
+  border: none;
+}
+
+.styleBanner .back {
+  background: #1226AA;
+  width: 100%;
+  height: 70%;
+  top: 0;
+  left: 0;
+}
+
+.styleBanner .bannerTxt {
+  z-index: 1;
+}
+
+.styleBanner .bannerTxt h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+}
+
+.styleBanner .bannerTxt p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.styleBanner .bannerTxt h5 {
+  font-size: 24px;
+  color: #292929;
+}
+
+.styleBanner .bannerTxt h6 {
+  font-size: 24px;
+  color: white;
+  font-weight: bolder;
+}
+
+.styleBanner .bannerTxt img {
+  width: 39px;
+  height: 39px;
+}
+
+.styleBanner .bannerImg {
+  width: 939px;
+  height: 554px;
+  z-index: 1;
+}
+
+.styleHow {
+  background: #F4F4F4;
+}
+
+.styleHow .back {
+  top: 0;
+  right: 0;
+  width: 95%;
+  height: 100%;
+  background: white !important;
+  z-index: 0;
+}
+
+.styleHow .imgBox {
+  z-index: 2;
+  height: 647px;
+  width: auto;
+  background: url("../assets/CAREER_JOIN IMAGE HOLDER.png") no-repeat center center;
+  background-size: cover;
+}
+
+.styleHow .textBox {
+  z-index: 2;
+}
+
+.styleHow .textBox h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #292929;
+}
+
+.styleHow .textBox h1 span {
+  color: #1226AA;
+}
+
+.styleHow .textBox p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.styleHow .textBox .applyBtn {
+  width: 415px;
+  height: 98px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bolder;
+  background: #FFB548;
+  color: #292929;
+  border-radius: 25px;
+  outline: none;
+}
+
+.styleBenefits {
+  background: #F4F4F4;
+}
+
+.styleBenefits .intro h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900 !important;
+  color: #292929;
+}
+
+.styleBenefits .intro h1 span {
+  color: #1226AA;
+}
+
+.styleBenefits .intro p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.styleBenefits .benefitsCard {
+  width: 494px;
+  height: 518px;
+  border-radius: 50px;
+}
+
+.styleBenefits .benefitsCard .back1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  z-index: -1;
+  background-color: #1226AA;
+}
+
+.styleBenefits .benefitsCard .back2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.styleBenefits .benefitsCard .cardWrapper {
+  z-index: 5;
+}
+
+.styleBenefits .benefitsCard .cardWrapper span {
+  min-width: 390px;
+  height: 98px;
+  border-radius: 25px;
+  background: #0E1C77;
+  font-size: 32px;
+  color: white;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.styleBenefits .benefitsCard .cardWrapper p {
+  font-size: 24px;
+  color: white;
+  line-height: 32px;
+}
+
+.styleBenefits .benefitsCard .cardWrapper a {
+  font-size: 24px;
+  color: #FFB548;
+  line-height: 32px;
+  font-weight: bolder;
+}
+
+.styleBenefits .benefitsCard .cardWrapper a img {
+  width: 59px;
+  height: 59px;
+}
+
+.styleRegister {
+  background: #F4F4F4;
+}
+
+.styleRegister h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900 !important;
+  color: #292929;
+}
+
+.styleRegister h1 span {
+  color: #1226AA;
+}
+
+.styleRegister .left, .styleRegister .right {
+  height: 660px;
+  width: auto;
+}
+
+.styleRegister .left {
+  background: #FFB548;
+}
+
+.styleRegister .left img {
+  width: 500px;
+  height: 500px;
+}
+
+.styleRegister .right {
+  background: #00AE8D;
+}
+
+.styleRegister .right h3 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 900 !important;
+  color: white;
+}
+
+.styleRegister .right p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  color: white;
+}
+
+.impactBanner {
+  background: #F4F4F4;
+  border: none;
+}
+
+.impactBanner .back {
+  background: #1226AA;
+  width: 100%;
+  height: 65%;
+  top: 0;
+  left: 0;
+}
+
+.impactBanner .bannerTxt {
+  z-index: 1;
+}
+
+.impactBanner .bannerTxt h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+}
+
+.impactBanner .bannerTxt p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.impactBanner .bannerTxt h5 {
+  font-size: 24px;
+  color: #292929;
+}
+
+.impactBanner .bannerTxt h6 {
+  font-size: 24px;
+  color: white;
+  font-weight: bolder;
+}
+
+.impactBanner .bannerTxt img {
+  width: 39px;
+  height: 39px;
+}
+
+.impactBanner .bannerImg {
+  width: 939px;
+  height: 554px;
+  z-index: 1;
+}
+
+.impactTraining {
+  background: #F4F4F4;
+}
+
+.impactTraining .back {
+  top: 0;
+  right: 0;
+  width: 95%;
+  height: 100%;
+  background: white !important;
+  z-index: 0;
+}
+
+.impactTraining h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900 !important;
+  color: #292929;
+  z-index: 2;
+}
+
+.impactTraining h1 span {
+  color: #1226AA;
+}
+
+.impactTraining h5 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+  z-index: 2;
+}
+
+.impactTraining .impactCard {
+  z-index: 2;
+}
+
+.impactTraining .impactCard .cardImg {
+  width: 100%;
+  height: 647px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.impactTraining .impactCard .text {
+  border-top: 1px solid #292929;
+  border-bottom: 1px solid #292929;
+}
+
+.impactTraining .impactCard .text h3 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #292929;
+  font-weight: bold;
+}
+
+.impactTraining .impactCard .text p {
+  font-size: 24px;
+  color: #292929;
+  line-height: 32px;
+}
+
+.impactTraining .impactCard .text a {
+  font-size: 24px;
+  color: #1226AA;
+  line-height: 32px;
+  font-weight: bolder;
+}
+
+.impactTraining .impactCard .text a img {
+  width: 59px;
+  height: 59px;
+}
+
+.impactCommunity {
+  background: #F4F4F4;
+}
+
+.impactCommunity .intro h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900 !important;
+  color: #292929;
+  z-index: 2;
+}
+
+.impactCommunity .intro h1 span {
+  color: #1226AA;
+}
+
+.impactCommunity .intro p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+  z-index: 2;
+}
+
+.impactCommunity .imageBox {
+  width: auto;
+  height: 660px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.impactCommunity .imageBox img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.impactCommunity .detailsBox .impact h3 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: bold;
+  color: #292929;
+}
+
+.impactCommunity .detailsBox .impact p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.impactCommunity .detailsBox .impact span img {
+  width: 89px;
+  height: 89px;
+}
+
+.impactCommunity .detailsBox .impact1, .impactCommunity .detailsBox .impact2, .impactCommunity .detailsBox .impact3 {
+  background: #FFB548;
+}
+
+.impactCommunity .detailsBox .impact4 {
+  background: #DD8797;
+}
+
+.impactEnvironment {
+  background: #F4F4F4;
+}
+
+.impactEnvironment .intro h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900 !important;
+  color: #292929;
+  z-index: 2;
+}
+
+.impactEnvironment .intro h1 span {
+  color: #1226AA;
+}
+
+.impactEnvironment .intro p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+  z-index: 2;
+}
+
+.impactEnvironment .impactCard {
+  width: auto;
+  height: 600px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.impactEnvironment .impactCard .imgWrapper {
+  overflow: hidden;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.impactEnvironment .impactCard .imgWrapper img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.impactEnvironment .impactCard .imgWrapper img:hover {
+  width: 120% !important;
+  height: 120% !important;
+}
+
+.impactEnvironment .impactCard .cardTxt {
+  background: white;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.impactEnvironment .impactCard .cardTxt h4 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #292929;
+}
+
+.impactEnvironment .impactCard .cardTxt p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #292929;
 }
 /*# sourceMappingURL=main.css.map */

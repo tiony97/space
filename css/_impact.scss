@@ -1,0 +1,234 @@
+.impactBanner {
+    background: $light;
+    border: none;
+    .back {
+        background: $blue;
+        width: 100%;
+        height: 65%;
+        top: 0;
+        left: 0;
+    }
+    .bannerTxt {
+        z-index: 1;
+        h1 {
+            font-size: 64px;
+            font-weight: 900;
+            color: white;
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+        h5 {
+            font-size: 24px;
+            color: $dark;
+        }
+        h6 {
+            font-size: 24px;
+            color: white;
+            font-weight: bolder;
+        }
+        img {
+            width: 39px;
+            height: 39px;
+        }
+    }
+    .bannerImg {
+        width: 939px;
+        height: 554px;
+        z-index: 1;
+    }
+}
+
+.impactTraining {
+    background: $light;
+    .back {
+        top: 0;
+        right: 0;
+        width: 95%;
+        height: 100%;
+        background: white !important;
+        z-index: 0;
+    }
+    h1 {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 900 !important;
+        color: $dark;
+        z-index: 2;
+        span {
+            color: $blue;
+        }
+    }
+    h5 {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: normal;
+        color: $dark;
+        z-index: 2;
+    }
+    .impactCard {
+        z-index: 2;
+        .cardImg {
+            width: 100%;
+            height: 647px;
+            object-fit: cover;
+        }
+        .text {
+            border-top: 1px solid #292929;
+            border-bottom: 1px solid #292929;
+            h3 {
+                font-size: 32px;
+                line-height: 40px;
+                color: $dark;
+                font-weight: bold;
+            }
+            p {
+                font-size: 24px;
+                color: $dark;
+                line-height: 32px;
+            }
+            a {
+                font-size: 24px;
+                color: $blue;
+                line-height: 32px;
+                font-weight: bolder;
+                img {
+                    width: 59px;
+                    height: 59px;
+                }
+            }
+        }
+        
+    }
+}
+
+.impactCommunity {
+    background: $light;
+    .intro {
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+            font-weight: 900 !important;
+            color: $dark;
+            z-index: 2;
+            span {
+                color: $blue;
+            }
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+            z-index: 2; 
+        }
+    }
+    .imageBox {
+        width: auto;
+        height: 660px;
+        object-fit: cover;
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .detailsBox {
+        .impact {
+            h3 {
+                font-size: 40px;
+                line-height: 48px;
+                font-weight: bold;
+                color: $dark;
+            }
+            p {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: normal;
+                color: $dark;
+            }
+            span {
+                img{
+                    width: 89px;
+                    height: 89px;
+                }
+            }
+        }
+        .impact1,.impact2,.impact3 {
+            background: $orange;
+        }
+        .impact4 {
+            background: $red;
+        }
+    }
+}
+
+.impactEnvironment {
+    background: $light;
+    .intro {
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+            font-weight: 900 !important;
+            color: $dark;
+            z-index: 2;
+            span {
+                color: $blue;
+            }
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+            z-index: 2; 
+        }
+    }
+    
+    .impactCard {
+        width: auto;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        transition: all .3s ease-in-out;
+        .imgWrapper {
+            overflow: hidden;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            img {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    width: 120% !important;
+                    height: 120% !important;
+                }
+            }
+        }
+        .cardTxt {
+            background: white;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            h4 {
+                font-size: 32px;
+                font-weight: bold;
+                color: $dark;
+            }
+            p {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: normal;
+                color: $dark;
+            }
+        }
+    }
+}

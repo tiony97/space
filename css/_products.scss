@@ -5,7 +5,7 @@
     .back {
         background: $blue;
         width: 100%;
-        height: 70%;
+        height: 65%;
         top: 0;
         left: 0;
     }
@@ -37,8 +37,8 @@
         }
     }
     .bannerImg {
-        width: 939px;
-        height: 554px;
+        width: auto;
+        height: auto;
         z-index: 1;
     }
 }
@@ -53,42 +53,43 @@
         color: $dark;
     }
     .productCard {
-        min-height: 611px;
         width: auto;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        transition: all .3s ease-in-out;
         .imgWrapper {
-            width: auto;
-            height: 450px;
+            overflow: hidden;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
             img {
+                top: 0;
+                left: 0;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                border-top-left-radius: 50px;
-                border-top-right-radius: 50px;
                 transition: all .3s ease-in-out;
-            }
-            &:hover {
-                overflow: hidden;
-                img {
-                    width: 120%;
-                    height: 120%;
+                &:hover {
+                    width: 120% !important;
+                    height: 120% !important;
                 }
             }
         }
-        
         .cardTxt {
             background: white;
-            border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
             h4 {
-                color: $dark;
                 font-size: 32px;
                 font-weight: bold;
+                color: $dark;
             }
             p {
-                color: $dark;
                 font-size: 24px;
                 line-height: 32px;
                 font-weight: normal;
+                color: $dark;
             }
         }
     }
@@ -896,6 +897,628 @@
                     img {
                         width: 80px;
                         height: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+    .productBanner {
+        .bannerTxt {
+            h1 {
+                font-size: 55px;
+            }
+            p {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            h5 {
+                font-size: 20px;
+            }
+            h6 {
+                font-size: 20px;
+                color: white;
+                font-weight: bolder;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    
+    .productGrids {
+        h4 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .productCard {
+            height: 500px;
+            .cardTxt {
+                height: auto;
+                h4 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+    
+    .productTips {
+        .tipsHeader {
+            h1 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+        .tipsInfo {
+            .imgWrapper {
+                .linkBtns {
+                    .commBtn {
+                        width: 80px;
+                        height: 60px;
+                        img {
+                            width: 20.82px;
+                            height: 25.03px;
+                        }
+                    }
+                }
+            }
+            .communityText {
+                h3 {
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 22px !important;
+                    width: 80%;
+                }
+                a {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    
+    .productBranches {
+        .wrapper {
+            h2 {
+                font-size: 45px;
+                font-weight: bolder;
+                color: $dark;
+            }
+            form {
+                .search {
+                    width: 60vw;
+                    height: 80px;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    input {
+                        font-size: 22px;
+                        &::placeholder {
+                            color: $dark;
+                            font-size: 22px;
+                        }
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+                .radios {
+                    .container {
+                        position: relative;
+                        padding-left: 35px;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        .checkmark {
+                            height: 30px;
+                            width: 30px;
+                            &:after {
+                                top: 2px;
+                                left: 2.5px;
+                                right: 1px;
+                                bottom: 1px;
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+                        p {
+                            font-size: 22px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            p {
+                font-size: 30px;
+            }
+            .hardware {
+                .hardwareCard {
+                    width: auto;
+                    height: 280px;
+                    .info {
+                        width: 80%;
+                        height: 38px;
+                        padding: 0 10px;
+                        font-size: 16px;
+                    }
+                    .overlay {
+                        .overlayInfo {
+                            width: 80%;
+                            height: 38px;
+                        }
+                        .overlayTxt {
+                            font-size: 16px;
+                        }
+                        .distance {
+                            p {
+                                font-size: 14px;
+                                color: $blue;
+                            }
+                            img {
+                                width: 22.39px;
+                                height: 31.98px;
+                            }
+                        }
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Medium size screens and laptops
+@media only screen and (max-width: 1024px) {
+    .productBanner {
+        .bannerTxt {
+            h1 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            h5 {
+                font-size: 16px;
+            }
+            h6 {
+                font-size: 16px;
+            }
+        }
+    }
+    .productGrids {
+        h4 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .productCard {
+            height: 400px !important;
+            .cardTxt {
+                padding: 20px 30px !important;
+                h4 {
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    .productTips {
+        .tipsHeader {
+            h1 {
+                font-size: 32px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .tipsInfo {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr;
+            .imgWrapper {
+                width: auto !important;
+                .linkBtns {
+                    .commBtn {
+                        width: 70px;
+                        height: 50px;
+                        img {
+                            width: 15.82px;
+                            height: 20.03px;
+                        }
+                    }
+                }
+            }
+            .communityText {
+                h3 {
+                    font-size: 24px;
+                    line-height: 40px;
+                }
+                p {
+                    font-size: 16px !important;
+                    line-height: 24px;
+                    width: 90%;
+                }
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .productBranches {
+        .wrapper {
+            width: 80vw !important;
+            h2 {
+                font-size: 32px;
+            }
+            form {
+                .search {
+                    width: 60vw;
+                    height: 60px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    input {
+                        font-size: 16px;
+                        &::placeholder {
+                            color: $dark;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .radios {
+                    .container {
+                        position: relative;
+                        padding-left: 30px;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        .checkmark {
+                            height: 30px;
+                            width: 30px;
+                            &:after {
+                                top: 3px;
+                                left: 3px;
+                                right: 3px;
+                                bottom: 3px;
+                                width: 14px;
+                                height: 14px;
+                            }
+                        }
+                        p {
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            p {
+                font-size: 24px;
+            }
+            .hardware {
+                grid-template-columns: 1fr 1fr !important;
+                width: 100% !important;
+                .hardwareCard {
+                    width: auto !important;
+                    height: 280px;
+                    padding: 10px !important;
+                    border-radius: 25px !important;
+                    .info {
+                        width: auto;
+                        height: 38px;
+                        padding: 0 10px;
+                        font-size: 16px;
+                    }
+                    .overlay {
+                        border-radius: 25px !important;
+                        .overlayInfo {
+                            width: 80%;
+                            height: 38px;
+                        }
+                        .overlayTxt {
+                            font-size: 16px;
+                        }
+                        .distance {
+                            p {
+                                font-size: 14px;
+                                color: $blue;
+                            }
+                            img {
+                                width: 22.39px;
+                                height: 31.98px;
+                            }
+                        }
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Tablets
+@media only screen and (max-width: 768px) {
+    .productBanner {
+        .back {
+            height: 55%;
+        }
+        .bannerTxt {
+            h1 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            h5 {
+                font-size: 14px;
+                line-height: 24px;
+            }
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .productGrids {
+        h4 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .productCard {
+            .cardTxt {
+                padding: 15px 25px !important;
+                h4 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    .productTips {
+        .tipsHeader {
+            h1 {
+                font-size: 30px;
+            }
+        }
+        .tipsInfo {
+            .imgWrapper {
+                .linkBtns {
+                    .commBtn {
+                        width: 60px;
+                        height: 40px;
+                        img {
+                            width: 10.82px;
+                            height: 15.03px;
+                        }
+                    }
+                }
+            }
+            .communityText {
+                h3 {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                p {
+                    font-size: 16px !important;
+                    line-height: 24px;
+                    width: 90%;
+                }
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .productBranches {
+        .wrapper {
+            h2 {
+                font-size: 30px;
+            }
+            form {
+                .search {
+                    width: 60vw;
+                    height: 60px;
+                    img {
+                        width: 24px;
+                        height:24px;
+                    }
+                    input {
+                        font-size: 16px;
+                        &::placeholder {
+                            color: $dark;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .radios {
+                    .container {
+                        position: relative;
+                        padding-left: 30px;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        .checkmark {
+                            height: 24px;
+                            width: 24px;
+                            border: 4px solid $dark;
+                            &:after {
+                                top: 3px;
+                                left: 3px;
+                                right: 3px;
+                                bottom: 3px;
+                                width: 10px;
+                                height: 10px;
+                            }
+                        }
+                        p {
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            p {
+                font-size: 18px;
+            }
+            .hardware {
+                .hardwareCard {
+                    width: auto;
+                    height: 250px;
+                    padding: 10px !important;
+                    border-radius: 25px !important;
+                    .info {
+                        width: auto;
+                        height: auto;
+                        padding: 5px 2px;
+                        font-size: 14px;
+                    }
+                    .overlay {
+                        border-radius: 25px !important;
+                        .overlayInfo {
+                            width: 80%;
+                            height: 38px;
+                        }
+                        .overlayTxt {
+                            font-size: 16px;
+                            margin-top: 30px !important;
+                        }
+                        .distance {
+                            p {
+                                font-size: 14px;
+                                color: $blue;
+                            }
+                            img {
+                                width: 22.39px;
+                                height: 31.98px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .productBanner {
+        grid-gap: 0;
+        padding-top: 30px;
+        .back {
+            height: 80%;
+        }
+        .bannerTxt {
+            h1 {
+                font-size: 45px;
+            }
+            p,h5 {
+                color: white;
+            }
+        }
+        .bannerImg {
+            object-fit: cover;
+        }
+    }
+    
+    .productTips {
+        .back {
+            width: 100%;
+        }
+        .tipsHeader {
+            h1 {
+                font-size: 30px;
+            }
+        }
+        .tipsInfo {
+            grid-template-columns: 1fr;
+            grid-row-gap: 10px;
+            .imgWrapper {
+                height: 300px;
+            }
+        }
+    }
+    
+    .productBranches {
+        .wrapper {
+            width: 100vw !important;
+            border-radius: 0;
+            h2 {
+                font-size: 30px;
+                line-height: 40px;
+                text-align: center;
+            }
+            form {
+                .search {
+                    width: 100%;
+                    height: 60px;
+                }
+                .radios {
+                    .container {
+                        position: relative;
+                        padding-left: 0px;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            p {
+                font-size: 18px;
+                text-align: center;
+            }
+            .hardware {
+                grid-template-columns: 1fr !important;
+                padding: 0 20px;
+                .hardwareCard {
+                    width: auto;
+                    height: 250px;
+                    padding: 10px inherit !important;
+                    border-radius: 25px !important;
+                    .info {
+                        width: auto;
+                        height: auto;
+                        padding: 5px 2px;
+                        font-size: 14px;
+                    }
+                    .overlay {
+                        border-radius: 25px !important;
+                        .overlayInfo {
+                            width: 80%;
+                            height: 38px;
+                        }
+                        .overlayTxt {
+                            font-size: 16px;
+                            margin-top: 30px !important;
+                        }
+                        .distance {
+                            p {
+                                font-size: 14px;
+                                color: $blue;
+                            }
+                            img {
+                                width: 22.39px;
+                                height: 31.98px;
+                            }
+                        }
                     }
                 }
             }
