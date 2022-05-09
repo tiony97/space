@@ -15,10 +15,10 @@
 <body>
     <div class="app" id="app">
         <!--NAVIGATION-->
-        <nav class="flex items-center justify-center w-full lg:px-20 lg:py-5">
-            <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo lg:mr-32">
-            <div class="links flex">
-                <div class="pageLinks flex items-center justify-center lg:space-x-10">
+        <nav class="flex items-center justify-between w-full lg:px-20 md:px-8 py-5">
+            <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
+            <div class="links flex lg:space-x-8">
+                <div class="pageLinks flex items-center justify-center lg:space-x-5">
                     <a href="./index.html">Home</a>
                     <a href="./products.html" class="activeLink">Products</a>
                     <a href="./about.html">About Us</a>
@@ -27,28 +27,66 @@
                     <a href="./news.html">News</a>
                     <a href="contact.html">Contact Us</a>
                 </div>
-                <div class="navIcons flex lg:space-x-12 lg:px-12">
+                <div class="navIcons flex items-center lg:space-x-4">
                     <img src="./assets/search_black_24dp.png" alt="" class="search">
                     <img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag">
                 </div>
-                <div class="navBtns flex flex-row lg:space-x-12">
+                <div class="navBtns flex lg:space-x-4">
                     <a href="#" class="call flex items-center justify-center">Call Us Now</a>
                     <a href="#" class="login flex items-center justify-center">Login</a>
                 </div>
             </div>
         </nav>
         
+        <!--RESPONSIVE NAV-->
+        <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-5">
+            <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
+            <img src="./assets/mobile logo.png" alt="" class="mobileLogo">
+            <div class="navIcons flex items-center lg:space-x-4 md:space-x-2 space-x-2">
+                <a href="#"><img src="./assets/search_black_24dp.png" alt="" class="search"></a>
+                <a href="#"><img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag"></a>
+                <span class="cursor-pointer menuOpen"><img src="./assets/menu open black.png" alt=""></span>
+            </div>
+        </div>
+        
+        <!--OVERLAY-->
+        <div class="menuOverlay">
+            <div class="overlayWrapper relative flex flex-col items-start justify-center w-full h-full px-12 space-y-5">
+                <span class="menuClose cursor-pointer"><img src="./assets/menu close white.png" alt=""></span>
+                <div class="overlayLinks flex flex-col space-y-3 items-start justify-center">
+                    <a href="./index.html">Home</a>
+                    <a href="./products.html" class="activeLink">Products</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./style.html">Style Points</a>
+                    <a href="./impact.html">Our Impact</a>
+                    <a href="./news.html">News</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="overlayBtns flex space-x-4">
+                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="#" class="login flex items-center justify-center">Login</a>
+                </div>
+                <div class="overlaySocial flex flex-col items-center">
+                    <div class="flex lg:space-x-5 space-x-2">
+                        <a href="#"><img src="./assets/icons8-facebook-50.png" alt="" class="socialIcon"></a>
+                        <a href="#"><img src="./assets/icons8-twitter-30.png" alt="" class="socialIcon"></a>
+                        <a href="#"><img src="./assets/icons8-instagram-24.png" alt="" class="socialIcon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <main class="w-full">
             <!--PRODUCT ROOFING BANNER-->
-            <div class="roofingBanner relative w-full h-auto pl-24 pb-24 grid grid-cols-2">
+            <div class="roofingBanner relative w-full h-auto lg:pl-24 md:pl-12 pl-5 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:pb-24 md:pb-12 pb-6">
                 <div class="back absolute"></div>
                 <div class="bannerTxt h-full flex flex-col justify-end items-start space-y-3 pb-5">
-                    <span class="flex items-center h-auto justify-center space-x-4 mb-10">
+                    <span class="top flex flex-col lg:flex-row  h-auto items-center justify-center lg:space-x-4 lg:mb-10 md:mb-6 mb-4">
                         <h6>Style Products</h6>
                         <h1>Roofing</h1>
                     </span>
                     <p>Our variety of building products meets<br/> the needs of a wide range of construction.</p>
-                    <div class="flex space-x-4">
+                    <div class="flex flex-col lg:flex-row md:flex-row lg:space-x-4 md:space-x-4">
                         <h5>Over 400 (4.5) reviews</h5>
                         <div class="flex">
                             <img src="./assets/yellow fill star.png" alt="">
@@ -63,29 +101,29 @@
             </div>
             
             <!--PRODUCTS EXPLORE SECTION-->
-            <div class="productsExplore relative w-full h-auto pr-24 pb-12 flex flex-col">
+            <div class="productsExplore relative w-full h-auto lg:pr-24 md:pr-12 pr-0 pb-12 flex flex-col">
                 <div class="back"></div>
-                <h1 class="text-center py-12"><span>Explore</span> our roofing building materials for your project</h1>
+                <h1 class="text-center lg:py-12 md:py-6 py-3 lg:mx-24 md:mx-12 sm:mx-6"><span>Explore</span> our roofing building materials for your project</h1>
                 <div class="exploreWrapper grid">
                     <div class="imgSection">
                         <img src="./assets/HOUSE HOLDER.png" alt="">
                     </div>
                     <div class="formSection">
                         <form action="#">
-                            <div class="tiles grid grid-cols-3 gap-6">
-                                <span @click="activeChoice=1" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==1}">Steel Structures</span>
-                                <span @click="activeChoice=2" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==2}">Decra Roof Tiles</span>
-                                <span @click="activeChoice=3" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==3}">Asili Roofing Tiles</span>
+                            <div class="tiles grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 gap-6">
+                                <span @click="activeChoice=1" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==1}"><p class="text-center">Steel Structures</p></span>
+                                <span @click="activeChoice=2" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==2}"><p class="text-center">Decra Roof Tiles</p></span>
+                                <span @click="activeChoice=3" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==3}"><p class="text-center">Asili Roofing Tiles</p></span>
                                 <span @click="activeChoice=4" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==4}"><p class="text-center">Roofcolor Butiminous Shingles</p></span>
-                                <span @click="activeChoice=5" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==5}">Fortiza Tiles</span>
+                                <span @click="activeChoice=5" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==5}"><p class="text-center">Fortiza Tiles</p></span>
                                 <span @click="activeChoice=6" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==6}"><p class="text-center">Bitumous Water Proofing Membranes</p></span>
-                                <span @click="activeChoice=7" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==7}">Pitched Roof Drainage</span>
-                                <span @click="activeChoice=8" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==8}">Flat Roof Drainage</span>
-                                <span @click="activeChoice=9" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==9}">Solar Water Heaters</span>
+                                <span @click="activeChoice=7" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==7}"><p class="text-center">Pitched Roof Drainage</p></span>
+                                <span @click="activeChoice=8" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==8}"><p class="text-center">Flat Roof Drainage</p></span>
+                                <span @click="activeChoice=9" :class="{'choice flex items-center justify-center px-2': true, 'activeChoice':activeChoice==9}"><p class="text-center">Solar Water Heaters</p></span>
                             </div>
-                            <div class="tileTypes mt-12">
+                            <div class="tileTypes lg:mt-12 md:mt-6 mt-4">
                                 <h4>Select the tile type</h4>
-                                <div class="gallery flex items-center justify-start space-x-5 p-0 mt-5">
+                                <div class="gallery flex items-center justify-start lg:space-x-5 lg:space-x-3 p-0 mt-5">
                                     <div @click="activeImageChoice=1" :class="{'galleryCard flex flex-col items-center justify-center space-y-3':true, 'activeImageChoice': activeImageChoice==1}">
                                         <img src="./assets/MATERIAL HOLDER.png" alt="">
                                         <p>Material Name</p>
@@ -108,29 +146,41 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="inputs mt-12">
+                            <div class="inputs lg:mt-12 md:mt-6 mt-4">
                                 <h3>Calculate the number of tiles for your building project</h3>
-                                <div class="flex space-x-5 mt-2">
+                                <div class="inputWrapper grid grid-cols-2 gap-3 mt-2">
                                     <div class="flex flex-col space-y-4">
                                         <label>Enter your space measurement(Meters)</label>
-                                        <input type="number" name="" id="">
+                                        <div class="numberInput flex items-center justify-center">
+                                            <div class="numberBtns flex flex-col items-center justify-center lg:space-y-4 md:space-y-1 space-y-1">
+                                                <span class="cursor-pointer addBtn"><img src="./assets/arrow up white.png" alt=""></span>
+                                                <span class="cursor-pointer minusBtn"><img src="./assets/arrow down white.png" alt=""></span>
+                                            </div>
+                                            <input type="number" data-max="100" data-min="0" data-inc="1">
+                                        </div>
                                     </div>
                                     <div class="flex flex-col space-y-4">
                                         <label>Estimated number of tiles</label>
-                                        <input type="number">
+                                        <div class="numberInput flex items-center justify-center">
+                                            <div class="numberBtns flex flex-col items-center justify-center lg:space-y-4 md:space-y-1 space-y-1">
+                                                <span class="cursor-pointer addBtn"><img src="./assets/arrow up white.png" alt=""></span>
+                                                <span class="cursor-pointer minusBtn"><img src="./assets/arrow down white.png" alt=""></span>
+                                            </div>
+                                            <input type="number" data-max="100" data-min="0" data-inc="1">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="mt-24">Get quotation</button>
+                            <button type="submit" class="lg:mt-20 md:mt-14 mt-8">Get quotation</button>
                         </form>
                     </div>
                 </div>
             </div>
             
             <!--MATERIALS SLIDER SECTION-->
-            <div class="materialsSlider flex flex-col items-start w-full h-auto py-24 pl-24">
+            <div class="materialsSlider flex flex-col items-start w-full h-auto lg:py-24 md:py-12 py-6 lg:pl-24 md:pl-12 pl-6">
                 <h1>Explore our <span>roofing</span> materials</h1>
-                <div class="swiper materialsSlider h-full w-full mt-12">
+                <div class="swiper materialsSlider h-full w-full lg:mt-12 md:mt-6 mt-4">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide relative materialsCard p-8">
                             <div class="back1"></div>
@@ -264,13 +314,13 @@
             </div>
             
             <!--TIPS INFO SECTION-->
-            <div class="productTips relative flex w-full flex-col pr-24 py-24">
+            <div class="productTips relative flex w-full flex-col lg:pr-24 md:pr-12 pr-5 lg:py-24 md:py-12 py-6">
                 <div class="back"></div>
-                <div class="tipsHeader flex items-center justify-center space-x-12 mb-12">
+                <div class="tipsHeader flex flex-col lg:flex-row items-center justify-center lg:space-x-12 space-x-5 lg:mb-12 mb-5">
                     <h1>Building <span>tips</span> and <span>resources</span></h1>
                     <p>We help you get updated with latest <br/>building tips for a successful project</p>
                 </div>
-                <div class="tipsInfo pr-24 flex justify-start space-x-12 h-auto w-full">
+                <div class="tipsInfo lg:pr-24 md:pr-12 pr-5 flex justify-start lg:space-x-12 space-x-6 h-auto w-full">
                     <div class="imgWrapper relative">
                         <img src="./assets/dealer.png" alt="" class="tipsImg" v-show="currentTipsImg==1">
                         <img src="./assets/open spaces.png" alt="" class="tipsImg" v-show="currentTipsImg==2">
@@ -291,23 +341,23 @@
                         </div>
                     </div>
                     <div class="communityText h-full flex flex-col items-start justify-start">
-                        <div class="names mt-12 mb-12">
+                        <div class="names lg:mb-5 mb-2">
                             <h3 v-show="currentTipsImg==1">Buy products from approved dealers</h3>
                             <h3 v-show="currentTipsImg==2">Open spaces impact on buildings</h3>
                             <h3 v-show="currentTipsImg==3">Sustainable roofing technology</h3>
                         </div>
                         <p>Space & Style is heavily invested in our local community and the  World at large to help make it a better place for future generations.</p>
-                        <a href="#" class="mt-12">Read full story here</a>
+                        <a href="#" class="lg:mt-5 mt-3">Read full story here</a>
                     </div>
                 </div>
             </div>
             
             <!--FAQ-->
-            <div class="faq flex flex-col w-full h-auto py-24">
-                <h1 class="text-center">Frequently Asked Questions</h1>
+            <div class="faq flex flex-col w-full h-auto lg:py-24 md:py-12 py-6">
+                <h1 class="text-center lg:mx-24 md:mx-12 sm:mx-6">Frequently Asked Questions</h1>
                 
-                <div class="faqSlider swiper h-full w-full my-12">
-                    <div class="swiper-wrapper pl-24">
+                <div class="faqSlider swiper h-full w-full lg:my-12 md:my-12 my-6">
+                    <div class="swiper-wrapper lg:pl-24 md:pl-12 pl-6">
                         <div @click="activeFaq=1" :class="{'swiper-slide relative faqCard p-8 flex justify-center items-center' : true, 'activeFaq' : activeFaq==1}">
                             <p>Steel Structures</p>
                         </div>
@@ -318,13 +368,13 @@
                             <p>Asili Roofing Tiles</p>
                         </div>
                         <div @click="activeFaq=4" :class="{'swiper-slide relative faqCard p-8 flex justify-center items-center' : true, 'activeFaq' : activeFaq==4}">
-                            <p>Roofcolor <br/>Butiminous Shingles</p>
+                            <p>Roofcolor Butiminous Shingles</p>
                         </div>
                         <div @click="activeFaq=5" :class="{'swiper-slide relative faqCard p-8 flex justify-center items-center' : true, 'activeFaq' : activeFaq==5}">
                             <p>Fortiza Tiles</p>
                         </div>
                         <div @click="activeFaq=6" :class="{'swiper-slide relative faqCard p-8 flex justify-center items-center' : true, 'activeFaq' : activeFaq==6}">
-                            <p>Bitumous Water <br/>Proofing Membranes</p>
+                            <p>Bitumous Water Proofing Membranes</p>
                         </div>
                         <div @click="activeFaq=7" :class="{'swiper-slide relative faqCard p-8 flex justify-center items-center' : true, 'activeFaq' : activeFaq==7}">
                             <p>Pitched Roof Drainage</p>
@@ -338,8 +388,8 @@
                     </div>
                 </div>
                 
-                <div class="accordion mx-24">
-                    <div class="accord p-5">
+                <div class="accordion lg:mx-24 md:mx-12 mx-6">
+                    <div class="accord lg:p-5 md:p-3 p-3">
                         <span @click.prevent="toggleAccord(1)" :class="{'cursor-pointer flex items-center justify-between mb-5':true}">
                             <h4>Question title maximum of 14 words in one sentence </h4>
                             <img src="./assets/arrow up.png" alt="" v-show="activeGroup==1">
@@ -347,7 +397,7 @@
                         </span>
                         <p v-show="activeGroup==1">Space & Style is heavily invested in our local community and the world at large to help make it a better place for future generations. We help you get updated with latest building tips for a successful project</p>
                     </div>
-                    <div class="accord p-5">
+                    <div class="accord lg:p-5 md:p-3 p-3">
                         <span @click.prevent="toggleAccord(2)" :class="{'cursor-pointer flex items-center justify-between mb-5':true}">
                             <h4>Question title maximum of 14 words in one sentence </h4>
                             <img src="./assets/arrow up.png" alt="" v-show="activeGroup==2">
@@ -355,7 +405,7 @@
                         </span>
                         <p v-show="activeGroup==2">Space & Style is heavily invested in our local community and the world at large to help make it a better place for future generations. We help you get updated with latest building tips for a successful project</p>
                     </div>
-                    <div class="accord p-5">
+                    <div class="accord lg:p-5 md:p-3 p-3">
                         <span @click.prevent="toggleAccord(3)" :class="{'cursor-pointer flex items-center justify-between mb-5':true}">
                             <h4>Question title maximum of 14 words in one sentence </h4>
                             <img src="./assets/arrow up.png" alt="" v-show="activeGroup==3">
@@ -363,7 +413,7 @@
                         </span>
                         <p v-show="activeGroup==3">Space & Style is heavily invested in our local community and the world at large to help make it a better place for future generations. We help you get updated with latest building tips for a successful project</p>
                     </div>
-                    <div class="accord p-5">
+                    <div class="accord lg:p-5 md:p-3 p-3">
                         <span @click.prevent="toggleAccord(4)" :class="{'cursor-pointer flex items-center justify-between mb-5':true}">
                             <h4>Question title maximum of 14 words in one sentence </h4>
                             <img src="./assets/arrow up.png" alt="" v-show="activeGroup==4">
@@ -371,7 +421,7 @@
                         </span>
                         <p v-show="activeGroup==4">Space & Style is heavily invested in our local community and the world at large to help make it a better place for future generations. We help you get updated with latest building tips for a successful project</p>
                     </div>
-                    <div class="accord p-5">
+                    <div class="accord lg:p-5 md:p-3 p-3">
                         <span @click.prevent="toggleAccord(5)" :class="{'cursor-pointer flex items-center justify-between mb-5':true}">
                             <h4>Question title maximum of 14 words in one sentence </h4>
                             <img src="./assets/arrow up.png" alt="" v-show="activeGroup==5">
@@ -379,7 +429,7 @@
                         </span>
                         <p v-show="activeGroup==5">Space & Style is heavily invested in our local community and the world at large to help make it a better place for future generations. We help you get updated with latest building tips for a successful project</p>
                     </div>
-                    <div class="accord p-5">
+                    <div class="accord lg:p-5 md:p-3 p-3">
                         <span @click.prevent="toggleAccord(6)" :class="{'cursor-pointer flex items-center justify-between mb-5':true}">
                             <h4>Question title maximum of 14 words in one sentence </h4>
                             <img src="./assets/arrow up.png" alt="" v-show="activeGroup==6">
@@ -392,15 +442,15 @@
         </main>
         
         <!--FOOTER-->
-        <footer class="px-24 py-20">
+        <footer class="px-5 md:px-12 lg:px-20 lg:pt-20 md:pt-10 pt-6 pb-4">
             <div class="top">
-                <div class="logoSection flex flex-col space-y-5">
+                <div class="logoSection flex flex-col items-center lg:items-start space-y-5">
                     <img src="./assets/SPACE & STYLE LOGO HOLDER.png" alt="">
                     <p>Receive updates about building materials</p>
                     <input type="text" placeholder="Enter Your Email Address" class="px-10">
                 </div>
-                <div class="linkSection grid grid-cols-4 gap-2">
-                    <div class="sect flex flex-col items-start space-y-3">
+                <div class="linkSection grid gap-1">
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Company</h5>
                         <a href="#">About Us</a>
                         <a href="#">Products</a>
@@ -409,19 +459,19 @@
                         <a href="#">Style Projects</a>
                         <a href="#">Style Careers</a>
                     </div>
-                    <div class="sect flex flex-col items-start space-y-3">
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Style Hub</h5>
                         <a href="#">Press Releases</a>
                         <a href="#">Downloads</a>
                         <a href="#">Resources</a>
                         <a href="#">FAQs</a>
                     </div>
-                    <div class="sect flex flex-col items-start space-y-3">
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Style Community</h5>
                         <a href="#">Trainings</a>
                         <a href="#">Environment</a>
                     </div>
-                    <div class="sect flex flex-col items-start space-y-3">
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Head Office</h5>
                         <a href="#">Libra House, Mombasa Rd</a>
                         <a href="#">Telephone: 020 2086700</a>
@@ -429,14 +479,14 @@
                 </div>
                 <div class="iconSection flex flex-col items-center">
                     <h5 class="mb-5">Get interactive</h5>
-                    <div class="flex space-x-5">
+                    <div class="flex lg:space-x-5 space-x-2">
                         <img src="./assets/Layer 2.png" alt="" class="socialIcon">
                         <img src="./assets/Logo_1_.png" alt="" class="socialIcon">
                         <img src="./assets/Layer 3.png" alt="" class="socialIcon">
                     </div>
                 </div>
             </div>
-            <div class="footerEnd w-full flex items-center justify-center mt-12">
+            <div class="footerEnd w-full flex items-center justify-center mt-12 h-auto space-x-2">
                 <img src="./assets/Path 730.png" alt="">
                 <p>2022 Space & Style</p>
             </div>
@@ -447,6 +497,7 @@
     <script src="./vue.js"></script>
     <script src="./jquery 3.4_1.min.js"></script>
     <script src="./swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
     
     <script>
         let vue1 = new Vue({
@@ -477,18 +528,28 @@
             breakpoints: {
                 // when window width is >= 320px
                 320: {
+                slidesPerView: 1.1,
+                spaceBetween: 10
+                },
+               
+                520: {
                 slidesPerView: 1.6,
                 spaceBetween: 10
                 },
-                // when window width is >= 480px
-                480: {
-                slidesPerView: 2.6,
-                spaceBetween: 10
+                
+                750: {
+                slidesPerView: 2.1,
+                spaceBetween: 20
                 },
-                // when window width is >= 640px
-                640: {
-                slidesPerView: 3.6,
-                spaceBetween: 50
+                
+                1024: {
+                slidesPerView: 2.6,
+                spaceBetween: 30
+                },
+                
+                1280: {
+                slidesPerView: 3.5,
+                spaceBetween: 40
                 }
             }
         });
@@ -514,10 +575,55 @@
                 },
                 // when window width is >= 640px
                 640: {
+                slidesPerView: 3.6,
+                spaceBetween: 30
+                },
+                1280: {
                 slidesPerView: 4.8,
-                spaceBetween: 50
+                spaceBetween: 40
                 }
             }
+        });
+        
+        //Custom number input 
+        $(document).ready(function() {
+            $('.numberBtns .addBtn').on('click', function() {
+                var spinner = $(this).parent().parent();
+                var input = $(spinner).find('input');
+                var valOfAmout = input.val();
+                var dataMax = input.data('max');
+                var newVal = 0;
+                
+                if (valOfAmout == 0 || valOfAmout == "") {
+				    newVal = input.data('inc');
+			    } else {
+                    if (valOfAmout < dataMax) {
+                        newVal = parseFloat(valOfAmout) + input.data('inc');
+                    } else {
+					newVal = parseFloat(dataMax);
+				    }
+                }
+                input.val(newVal);
+            });
+            
+            $('.numberBtns .minusBtn').on('click', function() {
+                var spinner = $(this).parent().parent();
+                var input = $(spinner).find('input');
+                var valOfAmout = input.val();
+                var dataMin = input.data('min');
+                var newVal = dataMin;
+
+                if (valOfAmout == dataMin || valOfAmout == "") {
+                    newVal = dataMin;
+                } else {
+                    if (valOfAmout > dataMin) {
+                        newVal = parseFloat(valOfAmout) - input.data('inc');
+                    } else {
+                        newVal = 0;
+                    }
+                }
+                input.val(newVal);
+            });
         });
     </script>
 </body>

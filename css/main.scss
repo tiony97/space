@@ -32,6 +32,7 @@ nav {
             font-size: 16px;
             font-weight: 400;
             color: $dark;
+            padding: 0 12px !important;
         }
         .activeLink {
             font-weight: bolder !important;
@@ -42,6 +43,7 @@ nav {
         img {
             width: 46.61px;
             height: 46.61px;
+            margin: 0 15px;
         }
     }
     .navBtns {
@@ -51,6 +53,7 @@ nav {
             font-size: 16px;
             border: 3px solid $blue;
             border-radius: 25px;
+            margin: 0 15px !important;
         }
         .call {
             color: white;
@@ -194,6 +197,7 @@ footer {
     }
     
     .linkSection {
+        grid-template-columns: 1fr 1fr 1.5fr 1fr;
         .sect {
             h5 {
                 color: $dark;
@@ -242,18 +246,31 @@ footer {
             width: auto;
             height: auto;
         }
+        .pageLinks {
+            margin: 0 5px !important;
+            a {
+                font-size: 15px;
+                font-weight: 400;
+                color: $dark;
+                padding: 0 !important;
+            }
+        }
         .navIcons {
+            margin: 0 5px !important;
             img {
-                width: 40px;
+                width: 30px;
                 object-fit: cover;
-                height: 40px;
+                height: 30px;
+                margin: 0 5px !important;
             }
         }
         .navBtns {
+            margin: 0 5px !important;
             a {
-                min-width: 140px;
+                min-width: 120px;
                 height: 60px;
-                font-size: 16px;
+                font-size: 15px;
+                margin: 0px 5px !important;
             }
         }
     }
@@ -303,6 +320,46 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1280px) {
+    nav {
+        display: none !important;
+    }
+    .responsiveNav {
+        display: flex;
+        .navIcons {
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+    .menuOverlay {
+        .overlayLinks {
+            a {
+                font-size: 32px;
+                font-weight: 800;
+                color: $light;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    color: $blue;
+                }
+            }
+            .activeLink {
+                font-weight: bolder !important;
+                color: $blue !important;
+            }
+        }
+        .overlaySocial {
+            img {
+                width: 40px !important;
+                height: 40px !important;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
 //Small laptops and tablets (768-1024) 
 @media only screen and (max-width: 1024px) {
     nav {
@@ -315,6 +372,30 @@ footer {
                 width: 40px;
                 height: 40px;
                 object-fit: contain;
+            }
+        }
+    }
+    .menuOverlay {
+        .overlayLinks {
+            a {
+                font-size: 24px;
+                font-weight: 600;
+                color: $light;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    color: $blue;
+                }
+            }
+            .activeLink {
+                font-weight: bolder !important;
+                color: $blue !important;
+            }
+        }
+        .overlaySocial {
+            img {
+                width: 30px !important;
+                height: 30px !important;
+                object-fit: cover;
             }
         }
     }
@@ -352,7 +433,7 @@ footer {
                 line-height: 24px;
                 &::placeholder {
                     color: #EACBD1;
-                    font-size: 16px;
+                    font-size: 14px;
                     line-height: 24px;
                 }
             }
@@ -408,7 +489,30 @@ footer {
             }
         }
     }
-    
+    .menuOverlay {
+        .overlayLinks {
+            a {
+                font-size: 20px;
+                font-weight: 500;
+                color: $light;
+                transition: all .2s ease-in-out;
+                &:hover {
+                    color: $blue;
+                }
+            }
+            .activeLink {
+                font-weight: bolder !important;
+                color: $blue !important;
+            }
+        }
+        .overlaySocial {
+            img {
+                width: 24px !important;
+                height: 24px !important;
+                object-fit: cover;
+            }
+        }
+    }
     footer {
         background: #EACBD1;
         height: auto;
@@ -495,8 +599,37 @@ footer {
         }
     }
     .menuOverlay {
+        .overlayLinks {
+            a {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
         .overlayBtns {
-            flex-direction: row !important;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            margin: 0;
+            padding: 0;
+            margin-top: 40px;
+            a {
+                min-width: 140px;
+                height: 60px;
+                font-size: 16px;
+                border: 3px solid $blue;
+                border-radius: 25px;
+                margin: 0;
+                padding: 0;
+            }
+            .call {
+                color: white;
+                font-weight: bold;
+                background: $blue;
+            }
+            .login {
+                color: $blue;
+                background: transparent;
+            }
         }
     }
     footer {

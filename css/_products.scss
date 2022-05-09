@@ -295,14 +295,39 @@
                 line-height: 32px;
                 font-weight: normal;
             }
-            input {
-                width: 350px;
+            
+            .numberInput {
+                width: 100%;
                 height: 98px;
                 border-radius: 25px;
-                font-size: 24px;
-                color: $dark;
                 background: #E2E2E2;
-                outline: none;
+                .numberBtns {
+                    height: 100%;
+                    width: 30%;
+                    padding: 2px 4px;
+                    background: $dark;
+                    border-top-left-radius: 25px;
+                    border-bottom-left-radius: 25px;
+                    img {
+                        width: auto;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+                input {
+                    width: 100%;
+                    height: 100%;
+                    font-size: 24px;
+                    padding: 0 10px;
+                    outline: none;
+                    color: $dark;
+                    background: transparent;
+                    -moz-appearance: textfield;
+                    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                }
             }
         }
         button {
@@ -355,8 +380,9 @@
         }
         .cardWrapper {
             z-index: 5;
+            width: 100% !important;
             span {
-                min-width: 390px;
+                width: 100% !important;
                 height: 98px;
                 border-radius: 25px;
                 background: #0E1C77;
@@ -501,85 +527,95 @@
 
 .prodBenefits {
     background: $light;
-    .bgBack {
+    .back {
+        position: absolute;
         top: 0;
         right: 0;
-        background: white;
-        height: 100%;
         width: 95%;
+        height: 100%;
+        background: white;
         z-index: 0;
     }
     .benfWrapper {
-        .top {
+        img {
+            width: 100%;
+            height: 647px;
+            z-index: 2;
+        }
+        h1{
+            font-size: 48px;
+            font-weight: 900 !important;
+            color: $dark;
+            line-height: 56px;
+            z-index: 2;
+            span {
+                color: $blue;
+            } 
+        }
+        p{
+            font-size: 32px;
+            line-height: 40px;
+            color: $dark;
+            font-weight: normal;
+            z-index: 2;
+        }  
+        h3 {
+            font-size: 40px;
+            font-weight: 900 !important;
+            color: $dark;
+            line-height: 48px;
+            z-index: 2;
+        }
+        .list {
+            font-size: 24px;
+            font-weight: normal;
+            color: $dark;
+            line-height: 32px;
+            z-index: 2;
             img {
-                width: 100%;
-                height: 647px;
-                z-index: 2;
-            }
-            h1{
-                font-size: 48px;
-                font-weight: 900 !important;
-                color: $dark;
-                line-height: 56px;
-                z-index: 2;
-                span {
-                    color: $blue;
-                } 
-            }
-            p{
-                font-size: 32px;
-                line-height: 40px;
-                color: $dark;
-                font-weight: normal;
-                z-index: 2;
-            }  
-            h3 {
-                font-size: 40px;
-                font-weight: 900 !important;
-                color: $dark;
-                line-height: 48px;
-                z-index: 2;
-            }
-            .list {
-                font-size: 24px;
-                font-weight: normal;
-                color: $dark;
-                line-height: 32px;
-                z-index: 2;
-                img {
-                    width: 21px;
-                    height: 21px;
-                }
+                width: 21px;
+                height: 21px;
             }
         }
-        .bottom {
-            z-index: 2;
-            .title {
-                font-size: 32px;
-                font-weight: bold;
-                color: $dark;
-                line-height: 40px;
-                z-index: 2 !important;
-            }
-            .benf {
-                z-index: 2;
-                img {
-                    width: 129px;
-                    height: 129px;
-                }
-                h5 {
-                    font-size: 32px;
-                    line-height: 40px;
-                    font-weight: bolder;
-                    color: $dark;
-                }
-                p {
-                    font-size: 24px;
-                    font-weight: bold;
-                    color: $dark;
-                    line-height: 32px;
-                }
-            }
+    }
+}
+
+.featuresGrid {
+    background: white;
+    .back {
+        width: 5%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $light;
+        z-index: 0;
+    }
+    
+    h4 {
+        font-size: 32px;
+        font-weight: bold;
+        color: $dark;
+        line-height: 45px;
+    }
+    
+    .benf {
+        z-index: 2;
+        img {
+            width: 129px;
+            height: 129px;
+        }
+        h5 {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: bolder;
+            color: $dark;
+        }
+        p {
+            font-size: 24px;
+            font-weight: normal;
+            color: $dark;
+            line-height: 32px;
         }
     }
 }
@@ -595,6 +631,7 @@
    .wrapper {
        z-index: 5 !important;
        background: $blue;
+       width: 90vw;
        h2 {
            color: white;
        }
@@ -726,6 +763,47 @@
             }
             .activeTileColor{
                 border: 5px solid $blue;
+            }
+        }
+        .inputs {
+            label {
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: normal;
+            }
+            
+            .numberInput {
+                width: 100%;
+                height: 98px;
+                border-radius: 25px;
+                background: #E2E2E2;
+                .numberBtns {
+                    height: 100%;
+                    width: 30%;
+                    padding: 2px 4px;
+                    background: $dark;
+                    border-top-left-radius: 25px;
+                    border-bottom-left-radius: 25px;
+                    img {
+                        width: auto;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+                input {
+                    width: 100%;
+                    height: 100%;
+                    font-size: 24px;
+                    padding: 0 10px;
+                    outline: none;
+                    color: $dark;
+                    background: transparent;
+                    -moz-appearance: textfield;
+                    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                }
             }
         }
     }
@@ -930,7 +1008,6 @@
             }
         }
     }
-    
     .productGrids {
         h4 {
             font-size: 32px;
@@ -950,7 +1027,6 @@
             }
         }
     }
-    
     .productTips {
         .tipsHeader {
             h1 {
@@ -988,7 +1064,6 @@
             }
         }
     }
-    
     .productBranches {
         .wrapper {
             h2 {
@@ -1079,6 +1154,527 @@
             }
         }
     }
+    
+    //Product Category Page
+    .roofingBanner {
+        .back {
+            height: 58%;
+        }
+        .bannerTxt {
+            h1 {
+                font-size: 55px;
+                line-height: 60px;
+            }
+            p {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            h5 {
+                font-size: 20px;
+            }
+            h6 {
+                font-size: 20px;
+                color: white;
+                font-weight: bolder;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    .productsExplore {
+        h1 {
+            font-size: 45px;
+        }
+        .exploreWrapper {
+            .tiles {
+                .choice {
+                    width: auto;
+                    height: 90px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: normal;
+                }
+            }
+            .tileTypes {
+                h4 {
+                    font-size: 20px;
+                    line-height: 32px;
+                    font-weight: bold;
+                    color: $dark;
+                }
+                .galleryCard {
+                    cursor: pointer;
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 25px;
+                    }
+                    p {
+                        font-size: 16px;
+                        color: $dark;
+                    }
+                }
+            }
+            .inputs {
+                h3 {
+                    font-size: 30px;
+                    line-height: 40px;
+                    font-weight: bold;
+                }
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: normal;
+                }
+                .numberInput {
+                    width: 100%;
+                    height: 90px;
+                    .numberBtns {
+                        height: 100%;
+                        width: 30%;
+                        padding: 2px 4px;
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            object-fit: contain;
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 22px;
+                        padding: 0 10px;
+                    }
+                }
+            }
+            button {
+                width: 350px;
+                height: 90px;
+                font-size: 22px;
+                line-height: 24px;
+            }
+        }
+    }
+    .materialsSlider {
+        background: $light;
+        h1 {
+            font-size: 45px;
+            line-height: 56px;
+        }
+        .materialsCard {
+            width: auto;
+            height: 450px !important;
+            .cardWrapper {
+                span {
+                    height: 70px;
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                a {
+                    font-size: 18px;
+                    line-height: 24px;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+    .faq {
+        h1 {
+            font-size: 45px;
+            line-height: 56px;
+        }
+        .faqCard {
+            width: 340px;
+            height: 95px;
+            p {
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+        .accordion {
+            .accord {
+                min-height: 90px;
+                span {
+                    h4 {
+                       font-size: 30px;
+                       line-height: 32px;
+                       font-weight: bold; 
+                    }
+                    img {
+                        width: 50.63px;
+                        height: 50.63px;
+                    }
+                }
+                p {
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+    
+    //Product Sub Category styles
+    .profileGrid {
+        .profileIntro {
+            h1{
+                font-size: 45px;
+                line-height: 50px;
+            }
+            p{
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+        .profileCard {
+            min-height: 500px;
+            width: auto;
+            .imgWrapper {
+                width: auto;
+                height: 350px;
+            }
+            .cardTxt {
+                h4 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .prodBenefits {
+        .benfWrapper {
+            img {
+                height: 500px;
+            }
+            h1{
+                font-size: 45px;
+                line-height: 56px;
+            }
+            p{
+                font-size: 24px;
+                line-height: 32px;
+            }  
+            h3 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            .list {
+                p {
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+                
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    .featuresGrid {
+        h4 {
+            font-size: 32px;
+            line-height: 45px;
+        }
+        
+        .benf {
+            img {
+                width: 120px;
+                height: 120px;
+            }
+            h5 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    .styleResources {
+        .wrapper {
+            h2 {
+                font-size: 45px;
+            }
+            form {
+                .search {
+                    width: 60vw;
+                    height: 80px;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    input {
+                        font-size: 22px;
+                        &::placeholder {
+                            font-size: 22px;
+                        }
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+            .helpTxt {
+                font-size: 30px;    
+            }
+        }
+        .resources {
+            .resourceCard {
+                width: auto;
+                height: 300px;
+                border-radius: 50px;
+                justify-content: space-between;
+                margin-top: 0;
+                .info {
+                    min-width: 184px;
+                    height: 38px;
+                    padding: 0 20px;
+                    font-size: 20px;
+                }
+                .resourceTxt {
+                    font-size: 20px;
+                }
+                .arrowBtn {
+                    img {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+    
+    //Product expanded sub category styles
+    .subCategorySlider {
+        .subCard {
+            width: 340px;
+            height: 95px;
+            border-radius: 25px;
+            h6 {
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+    }
+    .subCategoryForm {
+        .formSection {
+            z-index: 5 !important;
+            .top {
+                h1 {
+                    font-size: 45px;
+                    line-height: 50px;
+                }
+                p {
+                    font-size: 24px;
+                    line-height: 40px;
+                }
+            }
+            .tileColors {
+                h6 {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                span {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            .tileTypes {
+                h4 {
+                    font-size: 20px;
+                    line-height: 32px;
+                    font-weight: bold;
+                    color: $dark;
+                }
+                .galleryCard {
+                    cursor: pointer;
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 25px;
+                    }
+                    p {
+                        font-size: 16px;
+                        color: $dark;
+                    }
+                }
+            }
+            .inputs {
+                h3 {
+                    font-size: 24px !important;
+                    line-height: 40px;
+                    font-weight: bold;
+                }
+                label {
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: normal;
+                }
+                .numberInput {
+                    width: 100%;
+                    height: 90px;
+                    .numberBtns {
+                        height: 100%;
+                        width: 30%;
+                        padding: 2px 4px;
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            object-fit: contain;
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 22px;
+                        padding: 0 10px;
+                    }
+                }
+            }
+            button {
+                width: 350px;
+                height: 90px;
+                font-size: 22px;
+                line-height: 24px;
+            }
+        }
+    }
+    .subCategorySpecs {
+        background: $light;
+        h1 {
+            font-size: 45px;
+            line-height: 50px;
+        }
+        .benf {
+            flex-direction: column;
+            img {
+                width: 120px;
+                height: 120px;
+            }
+            h5 {
+                font-size: 30px;
+                line-height: 40px;
+                margin-top: 10px !important;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    .subCategoryComments {
+        .comments {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            .imgWrapper {
+                width: auto;
+                height: 80vh;
+                .linkBtns {
+                    .commBtn {
+                        width: 70px;
+                        height: 50px;
+                        img {
+                            width: 20.82px;
+                            height: 25.03px;
+                        }
+                    }
+                }
+            }
+            .commentsText {
+                .quote {
+                    width: auto;
+                    height: auto;
+                }
+                h1 {
+                    font-size: 45px;
+                    line-height: 50px;
+                }
+                p {
+                    font-size: 24px;
+                    line-height: 32px;
+                    width: 70%; 
+                }
+                .person {
+                    h4 {
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+                    h6 {
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+        .gallery {
+            h1 {
+                font-size: 45px;
+                line-height: 50px;
+            }
+            
+            .heritageImg{
+                width: 579px;
+                height: 475px;
+            }
+        }
+        .imgLightbox {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: #EACBD1;
+            .modalWrapper {
+                position: relative;
+                .close {
+                    position: absolute;
+                    top: 50px;
+                    right: 50px;
+                    img {
+                        width: 48px;
+                        height: 48px;
+                    }
+                }
+                .modalContent {
+                    .previous {
+                        img {
+                            width: 80px;
+                            height: 80px;
+                        }
+                    }
+                    .modalImage {
+                        width: 50vw;
+                        height: 70vh;
+                        object-fit: cover;
+                    }
+                    .next {
+                        img {
+                            width: 80px;
+                            height: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 //Medium size screens and laptops
@@ -1134,6 +1730,7 @@
             grid-template-columns: 1fr 1fr;
             .imgWrapper {
                 width: auto !important;
+                height: 400px;
                 .linkBtns {
                     .commBtn {
                         width: 70px;
@@ -1252,6 +1849,528 @@
             }
         }
     }
+    
+    //Product Category Page
+    .roofingBanner {
+        .back {
+            height: 50%;
+        }
+        .bannerTxt {
+            h1 {
+                font-size: 45px;
+                line-height: 50px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            h5 {
+                font-size: 16px;
+            }
+            h6 {
+                font-size: 16px;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    .productsExplore {
+        h1 {
+            font-size: 32px;
+        }
+        .exploreWrapper {
+            .tiles {
+                grid-gap: 20px;
+                .choice {
+                    width: auto;
+                    height: 80px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: normal;
+                }
+            }
+            .tileTypes {
+                h4 {
+                    font-size: 20px;
+                    line-height: 32px;
+                    font-weight: bold;
+                    color: $dark;
+                }
+                .galleryCard {
+                    cursor: pointer;
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 25px;
+                    }
+                    p {
+                        font-size: 16px;
+                        text-align: center;
+                        color: $dark;
+                    }
+                }
+            }
+            .inputs {
+                h3 {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: bold;
+                }
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: normal;
+                }
+                .inputWrapper {
+                    grid-template-columns: 1fr;
+                }
+                .numberInput {
+                    width: 100%;
+                    height: 70px;
+                    .numberBtns {
+                        height: 100%;
+                        width: 30%;
+                        padding: 2px 4px;
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            object-fit: contain;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 16px;
+                        padding: 0 10px;
+                    }
+                }
+            }
+            button {
+                width: 300px;
+                height: 70px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .materialsSlider {
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .materialsCard {
+            width: auto;
+            height: 400px !important;
+            .cardWrapper {
+                span {
+                    height: 70px;
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                a {
+                    font-size: 16px;
+                    line-height: 24px;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+    .faq {
+        h1 {
+            font-size: 32px;
+            line-height: 45px;
+        }
+        .faqCard {
+            width: auto;
+            height: 80px;
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .accordion {
+            .accord {
+                min-height: 60px;
+                span {
+                    margin-bottom: 10px;
+                    h4 {
+                       font-size: 20px;
+                       line-height: 32px;
+                       font-weight: bold; 
+                    }
+                    img {
+                        width: 40.63px;
+                        height: 40.63px;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    
+    //Product Sub Category styles
+    .profileGrid {
+        .profileIntro {
+            h1{
+                font-size: 45px;
+                line-height: 50px;
+            }
+            p{
+                font-size: 20px;
+                line-height: 32px;
+            }
+        }
+        .profileCard {
+            min-height: 500px;
+            width: auto;
+            .imgWrapper {
+                width: auto;
+                height: 300px;
+            }
+            .cardTxt {
+                h4 {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .prodBenefits {
+        .benfWrapper {
+            img {
+                height: 500px;
+            }
+            h1{
+                font-size: 32px;
+                line-height: 40px;
+            }
+            p{
+                font-size: 20px;
+                line-height: 30px;
+            }  
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            .list {
+                p {
+                    font-size: 18px;
+                    line-height: 34px;
+                }
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+    .featuresGrid {
+        h4 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        
+        .benf {
+            flex-direction: column;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            h5 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .styleResources {
+        .wrapper {
+            h2 {
+                font-size: 45px;
+            }
+            form {
+                .search {
+                    width: 60vw;
+                    height: 60px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    input {
+                        font-size: 20px;
+                        &::placeholder {
+                            font-size: 20px;
+                        }
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+            .helpTxt {
+                font-size: 30px;
+                text-align: center;   
+                margin: 20px 0 !important; 
+            }
+        }
+        .resources {
+            grid-template-columns: 1fr 1fr;
+            margin-top: 20px !important;
+            .resourceCard {
+                width: 300px;
+                height: 300px;
+                border-radius: 50px;
+                justify-content: space-between;
+                margin-top: 0;
+                .info {
+                    min-width: 184px;
+                    height: 38px;
+                    padding: 0 20px;
+                    font-size: 20px;
+                }
+                .resourceTxt {
+                    font-size: 20px;
+                }
+                .arrowBtn {
+                    img {
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+    
+    //Product expanded sub category styles
+    .subCategorySlider {
+        .subCard {
+            width: auto;
+            height: 80px;
+            h6 {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .subCategoryForm {
+        .formSection {
+            .top {
+                h1 {
+                    font-size: 45px;
+                    line-height: 40px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+            .tileColors {
+                h6 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: bold;
+                }
+                span {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+            .tileTypes {
+                h4 {
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+                .galleryCard {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    p {
+                        font-size: 16px;
+                        text-align: center;
+                        color: $dark;
+                    }
+                }
+            }
+            .inputs {
+                h3 {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: bold;
+                }
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: normal;
+                }
+                .inputWrapper {
+                    grid-template-columns: 1fr;
+                }
+                .numberInput {
+                    width: 100%;
+                    height: 70px;
+                    .numberBtns {
+                        height: 100%;
+                        width: 30%;
+                        padding: 2px 4px;
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            object-fit: contain;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 16px;
+                        padding: 0 10px;
+                    }
+                }
+            }
+            button {
+                width: 300px;
+                height: 70px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .subCategorySpecs {
+        background: $light;
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .benf {
+            flex-direction: column;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            h5 {
+                font-size: 24px;
+                line-height: 32px;
+                margin-top: 10px !important;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .subCategoryComments {
+        .comments {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
+            .imgWrapper {
+                width: auto;
+                height: 70vh;
+                .linkBtns {
+                    .commBtn {
+                        width: 60px;
+                        height: 40px;
+                        img {
+                            width: 15.82px;
+                            height: 20.03px;
+                        }
+                    }
+                }
+            }
+            .commentsText {
+                .quote {
+                    width: auto;
+                    height: auto;
+                }
+                h1 {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 24px;
+                    width: 80%; 
+                }
+                .person {
+                    h4 {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                    h6 {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+        .gallery {
+            h1 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            
+            .heritageImg{
+                width: auto;
+                height: auto;
+            }
+        }
+        .imgLightbox {
+            .modalWrapper {
+                position: relative;
+                .close {
+                    position: absolute;
+                    top: 50px;
+                    right: 50px;
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+                .modalContent {
+                    .previous {
+                        img {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                    .modalImage {
+                        width: 50vw;
+                        height: 70vh;
+                        object-fit: cover;
+                    }
+                    .next {
+                        img {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 //Tablets
@@ -1273,8 +2392,8 @@
                 line-height: 24px;
             }
             img {
-                width: 24px;
-                height: 24px;
+                width: 20px;
+                height: 20px;
             }
         }
     }
@@ -1304,6 +2423,7 @@
         }
         .tipsInfo {
             .imgWrapper {
+                height: 350px;
                 .linkBtns {
                     .commBtn {
                         width: 60px;
@@ -1418,6 +2538,550 @@
             }
         }
     }
+    
+    //Product Category Page
+    .roofingBanner {
+        .back {
+            height: 50% !important;
+        }
+        .bannerTxt {
+            .top {
+                align-items: flex-start;
+            }
+            h1 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            h5 {
+                font-size: 14px;
+            }
+            h6 {
+                font-size: 14px;
+            }
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    .productsExplore {
+        .back {
+            width: 100%;
+        }
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .exploreWrapper {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            padding: 0 48px !important;
+            .imgSection {
+                img {
+                    height: 300px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .tiles {
+                grid-gap: 20px;
+                .choice {
+                    width: auto;
+                    height: 60px;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+            .tileTypes {
+                h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                .gallery{
+                    display: grid !important;
+                    grid-template-columns: repeat(5,1fr);
+                    grid-gap: 10px;
+                }
+                .galleryCard {
+                    cursor: pointer;
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        object-fit: cover;
+                        border-radius: 25px;
+                    }
+                    p {
+                        font-size: 14px;
+                        text-align: center;
+                        color: $dark;
+                    }
+                }
+            }
+            .inputs {
+                h3 {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: normal;
+                }
+                .inputWrapper {
+                    grid-template-columns: 1fr;
+                }
+                .numberInput {
+                    width: 100%;
+                    height: 60px;
+                    .numberBtns {
+                        height: 100%;
+                        width: 20%;
+                        padding: 5px 4px;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            object-fit: contain;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 16px;
+                        padding: 0 10px;
+                    }
+                }
+            }
+            button {
+                width: 300px;
+                height: 60px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .materialsSlider {
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .materialsCard {
+            width: auto;
+            height: 350px !important;
+            .cardWrapper {
+                span {
+                    height: 70px;
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                a {
+                    font-size: 16px;
+                    line-height: 24px;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+    .faq {
+        h1 {
+            font-size: 30px;
+            line-height: 45px;
+        }
+        .faqCard {
+            width: auto;
+            height: 80px;
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .accordion {
+            .accord {
+                min-height: 60px;
+                span {
+                    margin-bottom: 10px;
+                    h4 {
+                       font-size: 18px;
+                       line-height: 24px;
+                       font-weight: bold; 
+                    }
+                    img {
+                        width: 40.63px;
+                        height: 40.63px;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    
+    //Product Sub Category styles
+    .profileGrid {
+        .profileIntro {
+            h1 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .profileCard {
+            min-height: 400px;
+            width: auto;
+            .imgWrapper {
+                width: auto;
+                height: 200px;
+            }
+            .cardTxt {
+                padding: 20px;
+                h4 {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .prodBenefits {
+        .benfWrapper {
+            img {
+                height: 400px;
+                object-fit: cover;
+            }
+            h1 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+            }  
+            h3 {
+                font-size: 20px;
+                line-height: 28px;
+            }
+            .list {
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+    .featuresGrid {
+        h4 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        
+        .benf {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            h5 {
+                font-size: 22px;
+                line-height: 30px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .styleResources {
+        .wrapper {
+            h2 {
+                font-size: 45px;
+            }
+            form {
+                .search {
+                    width: 60vw;
+                    height: 60px;
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                    input {
+                        font-size: 16px;
+                        &::placeholder {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .helpTxt {
+                font-size: 24px;
+                text-align: center;   
+                margin: 20px 0 !important; 
+            }
+        }
+        .resources {
+            grid-template-columns: 1fr 1fr;
+            margin-top: 20px !important;
+            .resourceCard {
+                width: auto;
+                height: 300px;
+                border-radius: 50px;
+                justify-content: space-between;
+                margin-top: 0;
+                .info {
+                    min-width: 100%;
+                    height: 38px;
+                    padding: 0 20px;
+                    font-size: 20px;
+                }
+                .resourceTxt {
+                    font-size: 16px;
+                }
+                .arrowBtn {
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    
+    //Product expanded sub category styles
+    .subCategorySlider {
+        .subCard {
+            width: auto;
+            height: 80px;
+            h6 {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .subCategoryForm {
+        .formSection {
+            .top {
+                h1 {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+            .tileColors {
+                h6 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: bold;
+                }
+                span {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+            .tileTypes {
+                h4 {
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+                .galleryCard {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    p {
+                        font-size: 16px;
+                        text-align: center;
+                        color: $dark;
+                    }
+                }
+            }
+            .inputs {
+                h3 {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-weight: bold;
+                }
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: normal;
+                }
+                .inputWrapper {
+                    grid-template-columns: 1fr;
+                }
+                .numberInput {
+                    width: 100%;
+                    height: 70px;
+                    .numberBtns {
+                        height: 100%;
+                        width: 20%;
+                        padding: 2px 4px;
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            object-fit: contain;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 16px;
+                        padding: 0 10px;
+                    }
+                }
+            }
+            button {
+                width: 300px;
+                height: 70px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .subCategorySpecs {
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .benf {
+            flex-direction: column;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            h5 {
+                font-size: 24px;
+                line-height: 32px;
+                margin-top: 10px !important;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .subCategoryComments {
+        .back {
+            width: 100%;
+        }
+        .comments {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
+            .imgWrapper {
+                width: auto;
+                height: 40vh;
+                .linkBtns {
+                    .commBtn {
+                        width: 60px;
+                        height: 40px;
+                        img {
+                            width: 15.82px;
+                            height: 20.03px;
+                        }
+                    }
+                }
+            }
+            .commentsText {
+                .quote {
+                    width: 100px;
+                    height: 100px;
+                }
+                h1 {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 24px;
+                    width: 80%; 
+                }
+                .person {
+                    h4 {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                    h6 {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+        .gallery {
+            h1 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            
+            .heritageImg{
+                width: auto;
+                height: auto;
+            }
+        }
+        .imgLightbox {
+            .modalWrapper {
+                position: relative;
+                .close {
+                    position: absolute;
+                    top: 50px;
+                    right: 50px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                .modalContent {
+                    .previous {
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            object-fit: contain;
+                        }
+                    }
+                    .modalImage {
+                        width: 60vw;
+                        height: 50vh;
+                        object-fit: cover;
+                    }
+                    .next {
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 540px) {
@@ -1439,7 +3103,6 @@
             object-fit: cover;
         }
     }
-    
     .productTips {
         .back {
             width: 100%;
@@ -1447,6 +3110,8 @@
         .tipsHeader {
             h1 {
                 font-size: 30px;
+                line-height: 32px;
+                text-align: center;
             }
         }
         .tipsInfo {
@@ -1457,7 +3122,6 @@
             }
         }
     }
-    
     .productBranches {
         .wrapper {
             width: 100vw !important;
@@ -1465,6 +3129,7 @@
             h2 {
                 font-size: 30px;
                 line-height: 40px;
+                text-align: center;
                 text-align: center;
             }
             form {
@@ -1518,6 +3183,586 @@
                                 width: 22.39px;
                                 height: 31.98px;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    //Product Category Page
+    .roofingBanner {
+        grid-gap: 0;
+        padding-top: 30px;
+        .back {
+            height: 80% !important;
+        }
+        .bannerTxt {
+            h1 {
+                font-size: 45px;
+            }
+            p,h5,h6 {
+                color: white;
+            }
+        }
+        .bannerImg {
+            object-fit: cover;
+        }
+    }
+    .productsExplore {
+        .back {
+            width: 100%;
+        }
+        h1 {
+            font-size: 30px;
+            line-height: 32px;
+        }
+        .exploreWrapper {
+            padding: 0 24px !important;
+            .imgSection {
+                img {
+                    height: 250px;
+                }
+            }
+            .tiles {
+                grid-gap: 10px;
+                .choice {
+                    width: auto;
+                    height: 60px;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+            .tileTypes {
+                h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                }
+                .gallery{
+                    display: grid !important;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-gap: 10px;
+                    margin-top: 5px;
+                }
+                .galleryCard {
+                    cursor: pointer;
+                    img {
+                        width: auto;
+                        height: 100px;
+                        object-fit: cover;
+                        border-radius: 25px;
+                    }
+                    p {
+                        font-size: 14px;
+                        text-align: center;
+                        color: $dark;
+                    }
+                }
+            }
+            .inputs {
+                h3 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                }
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: normal;
+                }
+                .numberInput {
+                    width: 100%;
+                    height: 60px;
+                    .numberBtns {
+                        height: 100%;
+                        width: 20%;
+                        padding: 5px 4px;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        img {
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 16px;
+                        padding: 0 10px;
+                    }
+                }
+            }
+            button {
+                width: 100%;
+                height: 60px;
+                font-weight: bolder;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .materialsSlider {
+        h1 {
+            font-size: 30px;
+            line-height: 32px;
+            text-align: center;
+        }
+        .materialsCard {
+            width: auto;
+            height: 300px !important;
+            .cardWrapper {
+                .top * {
+                    margin: 0;
+                }
+                span {
+                    height: 70px;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-top: 10px !important;
+                }
+                a {
+                    font-size: 16px;
+                    line-height: 24px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+    .faq {
+        h1 {
+            font-size: 30px;
+            line-height: 32px;
+        }
+        .faqCard {
+            width: auto;
+            height: 60px;
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        .accordion {
+            .accord {
+                min-height: 60px;
+                span {
+                    margin-bottom: 10px;
+                    h4 {
+                       font-size: 16px;
+                       line-height: 20px;
+                       font-weight: bold; 
+                    }
+                    img {
+                        width: 30.63px;
+                        height: 30.63px;
+                    }
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    
+    //Product Sub Category styles
+    .profileGrid {
+        .profileIntro {
+            align-items: center;
+            justify-content: center;
+            h1 {
+                font-size: 30px;
+                line-height: 40px;
+                text-align: center;
+            }
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+        .profileCard {
+            min-height: 350px;
+            width: auto;
+            .imgWrapper {
+                width: auto;
+                height: 200px;
+            }
+            .cardTxt {
+                padding: 20px;
+                h4 {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    .prodBenefits {
+        .back {
+            width: 100%;
+        }
+        .benfWrapper {
+            padding: 0 24px !important;
+            img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+            h1 {
+                font-size: 32px;
+                line-height: 40px;
+                text-align: center;
+            }
+            .featureText {
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+            }  
+            h3 {
+                font-size: 20px;
+                line-height: 28px;
+            }
+            .list {
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                img {
+                    width: 10px;
+                    height: 10px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .featuresGrid {
+        .back {
+            display: none;
+        }
+        h4 {
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+        }
+        .benf {
+            justify-content: center;
+            align-items: center;
+            .text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            h5 {
+                font-size: 22px;
+                line-height: 30px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: normal !important;
+            }
+        }
+    }
+    .styleResources {
+        .wrapper {
+            width: 100%;
+            border-radius: 0 !important;
+            h2 {
+                font-size: 32px;
+            }
+            form {
+                .search {
+                    width: 100%;
+                    height: 60px;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    input {
+                        font-size: 14px;
+                        &::placeholder {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .helpTxt {
+                font-size: 22px;
+                text-align: center;   
+                margin: 20px 0 !important; 
+            }
+        }
+        .resources {
+            grid-template-columns: 1fr;
+            margin-top: 20px !important;
+            .resourceCard {
+                width: auto;
+                height: 300px;
+                border-radius: 50px;
+                justify-content: space-between;
+                margin-top: 0;
+                .info {
+                    min-width: 100%;
+                    height: 38px;
+                    padding: 15px;
+                    font-size: 15px;
+                }
+                .resourceTxt {
+                    font-size: 16px;
+                }
+                .arrowBtn {
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    }
+    
+    //Product expanded sub category styles
+    .subCategorySlider {
+        .subCard {
+            width: auto;
+            height: 60px;
+            h6 {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .subCategoryForm {
+        .formSection {
+            .top {
+                h1 {
+                    font-size: 32px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                }
+            }
+            .tileColors {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h6 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+                span {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+            .tileTypes {
+                h4 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                }
+                .galleryCard {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    p {
+                        font-size: 16px;
+                        text-align: center;
+                        color: $dark;
+                    }
+                }
+            }
+            .inputs {
+                h3 {
+                    font-size: 20px;
+                    line-height: 32px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: normal;
+                    text-align: center;
+                }
+                .inputWrapper {
+                    grid-template-columns: 1fr;
+                }
+                .numberInput {
+                    width: 100%;
+                    height: 70px;
+                    .numberBtns {
+                        height: 100%;
+                        width: 20%;
+                        padding: 2px 4px;
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            object-fit: contain;
+                            margin: 0 !important;
+                            padding: 0 !important;
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 16px;
+                        padding: 0 10px;
+                    }
+                }
+            }
+            button {
+                width: 100%;
+                height: 60px;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: bold;
+            }
+        }
+    }
+    .subCategorySpecs {
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .benf {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            h5 {
+                font-size: 24px;
+                line-height: 32px;
+                margin-top: 10px !important;
+                text-align: center;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .subCategoryComments {
+        .comments {
+            grid-template-columns: 1fr;
+            grid-gap: 15px;
+            .imgWrapper {
+                width: auto;
+                height: 40vh;
+                .linkBtns {
+                    .commBtn {
+                        width: 60px;
+                        height: 40px;
+                        img {
+                            width: 15.82px;
+                            height: 20.03px;
+                        }
+                    }
+                }
+            }
+            .commentsText {
+                align-items: center !important;
+                justify-content: center !important;
+                padding: 0 24px !important;
+                .quote {
+                    width: 80px;
+                    height: 80px;
+                }
+                h1 {
+                    font-size: 30px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    width: 100%; 
+                    text-align: center;
+                }
+                .person {
+                    h4 {
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-align: center;
+                    }
+                    h6 {
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .gallery {
+            h1 {
+                font-size: 30px;
+                line-height: 40px;
+                margin-top: 20px !important;
+                text-align: center;
+            }
+            
+            .heritageImg{
+                width: auto;
+                height: auto;
+            }
+        }
+        .imgLightbox {
+            .modalWrapper {
+                position: relative;
+                .close {
+                    position: absolute;
+                    top: 50px;
+                    right: 50px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                .modalContent {
+                    .previous {
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            object-fit: contain;
+                        }
+                    }
+                    .modalImage {
+                        width: 60vw;
+                        height: 50vh;
+                        object-fit: cover;
+                    }
+                    .next {
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            object-fit: contain;
                         }
                     }
                 }
