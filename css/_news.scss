@@ -1,0 +1,345 @@
+//News Banner Section
+.newsBanner {
+    background: $light;
+    border: none;
+    .back {
+        background: $blue;
+        width: 100%;
+        height: 60%;
+        top: 0;
+        left: 0;
+    }
+    .bannerTxt {
+        z-index: 1;
+        h1 {
+            font-size: 64px;
+            font-weight: 900;
+            color: white;
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+        h5 {
+            font-size: 24px;
+            color: $dark;
+        }
+    }
+    .bannerImg {
+        width: auto;
+        height: 554px;
+        z-index: 1;
+    }
+}
+
+//News Articles Section
+.newsArticles {
+    background: $light;
+    .newsTabs {
+        .tab {
+            width: 348px;
+            height: 98px;
+            border-radius: 30px;
+            background: white;
+            box-shadow: 4px 2px 4px 3px #7070701f;
+            transition: all .3s ease-in-out;
+            p {
+                color: $dark;
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: bolder;
+            }
+        }
+        .activeNewsTab {
+            background: $blue !important;
+            p {
+                color: white !important;
+            }
+        }
+    }
+    .yearInput {
+        background: #E2E2E2;
+        border-radius: 30px;
+        width: fit-content;
+        height: 95px;
+        p {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: normal;
+            color: $dark;
+        }
+        .s-hidden {
+            visibility:hidden;
+            padding-right: 10px;
+        }
+        .select {
+            cursor:pointer;
+            display:flex;
+            align-items: center;
+            position:relative;
+            color: $dark;
+            background: $light;
+            width: 300px;
+            height: 100%;
+            border-radius: 30px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .styledSelect {
+            position:absolute;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            background-color: $light;
+            padding:0 20px;
+            font-weight:normal;
+            font-size: 24px;
+            line-height: 32px;
+            width: 300px;
+            height: 100%;
+            border-radius: 30px !important;
+            display:flex;
+            align-items: center;
+            &:after {
+                content:"";
+                width:0;
+                height:0;
+                border:10px solid transparent;
+                border-color: $dark transparent transparent transparent;
+                position:absolute;
+                top: 45%;
+                right: 20px;
+            }
+            &:active {
+                background-color: $light;
+            }
+        }
+        .styledSelect.active {
+            background-color: $light;
+        }
+        .options {
+            display:none;
+            position:absolute;
+            top:100%;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            right:0;
+            left:0;
+            z-index: 60;
+            margin:0 0;
+            padding: 10px;
+            list-style:none;
+            border:1px solid #E2E2E2;
+            background-color: $light;
+            -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+            box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+            
+            li {
+                padding:0 6px;
+                margin:0 0;
+                padding:0 10px;
+                &:hover {
+                    background-color: $blue;
+                    color:white;
+                }
+            }
+        }
+    }
+    .articles {
+        .article {
+            background: white;
+            border-radius: 30px;
+            height: 700px;
+            transition: all .3s ease-in-out;
+            img {
+                width: 100%;
+                height: 70%;
+                object-fit: cover;
+                border-radius: 40px;
+            }
+            p {
+                font-size: 24px;
+                line-height: 32px;
+                color: $dark;
+                font-weight: normal;
+            }
+            &:hover {
+                border: 2px solid #707070;
+            }
+        }
+    }
+    .more {
+        width: 360px;
+        height: 85px;
+        background: transparent;
+        color: $blue;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: bolder;
+        border: 3px solid $blue;
+        border-radius: 30px;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background: $blue;
+            color: white;
+        }
+    }
+}
+
+/*Article Page Styles*/
+.articleTabs {
+    background: $light;
+    .tab {
+        width: 348px;
+        height: 98px;
+        border-radius: 30px;
+        background: white;
+        box-shadow: 4px 2px 4px 3px #7070701f;
+        transition: all .3s ease-in-out;
+        p {
+            color: $dark;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: bolder;
+        }
+    }
+    .activeNewsTab {
+        background: $blue !important;
+        p {
+            color: white !important;
+        }
+    }
+}
+
+.articleContent {
+    background: $light;
+    .back {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 95%;
+        height: 100%;
+        background: white;
+        z-index: 0;
+    }
+    .top {
+        z-index: 2;
+        .articleImage {
+            width: 100%;
+            height: 650px;
+            object-fit: cover;
+        }
+        .textContent {
+            h4 {
+                font-size: 48px;
+                line-height: 56px;
+                color: $dark;
+                font-weight: bolder;
+            }
+            .time {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+                h6 {
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: $blue;
+                    font-weight: bolder;
+                }
+            }
+            p {
+                font-size: 24px;
+                line-height: 40px;
+                color: $dark;
+                font-weight: normal;
+            }
+        }
+    }
+    .textWrap{
+        z-index: 2;
+        p {
+            font-size: 24px;
+            line-height: 40px;
+            color: $dark;
+            font-weight: normal;
+        }
+    }
+    .bottom {
+        z-index: 2;
+        .author {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            h6 {
+                font-size: 24px;
+                line-height: 40px;
+                color: $dark;
+                font-weight: bold;
+            }
+            p {
+                font-size: 24px;
+                line-height: 40px;
+                color: $dark;
+                font-weight: normal;
+            }
+        }
+        .shareBtn {
+            height: 70px;
+            width: auto;
+            background: $blue;
+            border-radius: 30px;
+            padding: 0 24px;
+            p {
+                font-size: 16px;
+                line-height: 40px;
+                color: white;
+                font-weight: bolder;
+            }
+            img {
+                width: 46px;
+                height: 38px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+//Related stories
+.relatedStories {
+    background: $light;
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+    .articles {
+        .article {
+            background: white;
+            border-radius: 30px;
+            height: 700px;
+            transition: all .3s ease-in-out;
+            img {
+                width: 100%;
+                height: 70%;
+                object-fit: cover;
+                border-radius: 40px;
+            }
+            p {
+                font-size: 24px;
+                line-height: 32px;
+                color: $dark;
+                font-weight: normal;
+            }
+            &:hover {
+                border: 2px solid #707070;
+            }
+        }
+    }
+}

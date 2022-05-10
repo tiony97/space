@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS FILES-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    
+    <title>Space & Style | Style Impact Training</title>
+</head>
+<body>
+    <div class="app" id="app">
+        <!--NAVIGATION-->
+        <nav class="flex items-center justify-between w-full lg:px-20 md:px-8 py-5">
+            <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
+            <div class="links flex lg:space-x-8">
+                <div class="pageLinks flex items-center justify-center lg:space-x-5">
+                    <a href="./index.html">Home</a>
+                    <a href="./products.html">Products</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./style.html">Style Points</a>
+                    <a href="./impact.html" class="activeLink">Our Impact</a>
+                    <a href="./news.html">News</a>
+                    <a href="./contact.html">Contact Us</a>
+                </div>
+                <div class="navIcons flex items-center lg:space-x-4">
+                    <img src="./assets/search_black_24dp.png" alt="" class="search">
+                    <img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag">
+                </div>
+                <div class="navBtns flex lg:space-x-4">
+                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="#" class="login flex items-center justify-center">Login</a>
+                </div>
+            </div>
+        </nav>
+        
+        <!--RESPONSIVE NAV-->
+        <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-5">
+            <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
+            <img src="./assets/mobile logo.png" alt="" class="mobileLogo">
+            <div class="navIcons flex items-center lg:space-x-4 md:space-x-2 space-x-2">
+                <a href="#"><img src="./assets/search_black_24dp.png" alt="" class="search"></a>
+                <a href="#"><img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag"></a>
+                <span class="cursor-pointer menuOpen"><img src="./assets/menu open black.png" alt=""></span>
+            </div>
+        </div>
+        
+        <!--OVERLAY-->
+        <div class="menuOverlay">
+            <div class="overlayWrapper relative flex flex-col items-start justify-center w-full h-full px-12 space-y-5">
+                <span class="menuClose cursor-pointer"><img src="./assets/menu close white.png" alt=""></span>
+                <div class="overlayLinks flex flex-col space-y-3 items-start justify-center">
+                    <a href="./index.html">Home</a>
+                    <a href="./products.html">Products</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./style.html">Style Points</a>
+                    <a href="./impact.html" class="activeLink">Our Impact</a>
+                    <a href="./news.html">News</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="overlayBtns flex space-x-4">
+                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="#" class="login flex items-center justify-center">Login</a>
+                </div>
+                <div class="overlaySocial flex flex-col items-center">
+                    <div class="flex lg:space-x-5 space-x-2">
+                        <a href="#"><img src="./assets/icons8-facebook-50.png" alt="" class="socialIcon"></a>
+                        <a href="#"><img src="./assets/icons8-twitter-30.png" alt="" class="socialIcon"></a>
+                        <a href="#"><img src="./assets/icons8-instagram-24.png" alt="" class="socialIcon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <main class="w-full">
+            <!--IMPACT PAGE BANNER SECTION-->
+            <div class="impactBanner relative w-full h-auto pl-24 pb-24 grid grid-cols-2">
+                <div class="back absolute"></div>
+                <div class="bannerTxt h-full flex flex-col justify-end items-start space-y-3 pb-5">
+                    <h1 class="mb-10">Style Training</h1>
+                    <p class="w-4/5">Style & Space has developed a training
+                        program to impact the working force
+                        and students in learning institutions.</p>
+                </div>
+                <img src="./assets/training 1 banner.png" alt="" class="bannerImg mt-24">
+            </div>
+            
+            <!--TRAINING DETAILS-->
+            <div class="trainingDetails relative w-full h-auto lg:pr-24 md:pr-12 pr-5 lg:py-24 md:py-12 py-6">
+                <div class="back absolute"></div>
+                <div class="wrapper relative grid lg:gap-16 md:gap-10 gap-8">
+                    <img src="./assets/training image 1.png" alt="">
+                    <div class="trainingText space-y-6 mt-12">
+                        <h1>Skills Transfer</h1>
+                        <p class="lg:w-4/5 md:w-4/5 w-full">At Space & Style, we believe in social transformation through
+                            positively impacting on our community. With this in mind
+                            the company embarked, in 2012, on a skills training
+                            and development program dubbed Fundi Maalum.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--TRAINING COMMITMENT-->
+            <div class="trainingCommitment relative w-full h-auto lg:px-24 md:px-12 px-5 lg:py-24 md:py-12 py-6">
+                <div class="wrapper grid lg:gap-12 md:gap-8 gap-5">
+                    <div class="avatarSection lg:space-y-12 md:space-y-8 space-y-4">
+                        <h1>Impacting the <span>future </span>generations</h1>
+                        <img src="./assets/training avatar_1.png" alt="">
+                    </div>
+                    <div class="textSection lg:space-y-16">
+                        <h3>Through skills tranfer program across the country</h3>
+                        <div class="initiatives grid lg:gap-20 md:gap-10 gap-5">
+                            <div class="initiative space-y-4">
+                                <div class="top flex items-center space-x-3">
+                                    <span class="flex items-center justify-center"><img src="./assets/initiative Icon 4.png" alt=""></span>
+                                    <h5>We have partnered
+                                        with Egerton University</h5>
+                                </div>
+                                <p>This training centre will continue to offer continuous
+                                    training in the emerging new innovative building
+                                    solutions that we offer</p>
+                            </div>
+                            <div class="initiative space-y-4">
+                                <div class="top flex items-center space-x-3">
+                                    <span class="flex items-center justify-center"><img src="./assets/initiative Icon 2.png" alt=""></span>
+                                    <h5>We continue to
+                                        seek and engage</h5>
+                                </div>
+                                <p>With new partners, stakeholders to invest
+                                    In this social economic transformation
+                                    initiative</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--TRAINING GALLERY-->
+            <div class="trainingGallery relative w-full h-auto lg:py-24 md:py-12 py-6">
+                <div class="back absolute"></div>
+                <div class="topSection relative lg:pr-24 md:pr-12 pr-6 h-auto w-full grid grid-cols-2 gap-12">
+                    <img src="./assets/training features image.png" alt="">
+                    <div class="topText h-full flex flex-col items-start justify-start">
+                        <h1 class="lg:mt-12 md:mt-6 mt-3">Our featured photos</h1>
+                        <p class="lg:my-6 my-3">From the recent activities involving Fundi Maalum
+                            workshops in major towns across the country.
+                            Local handymen were present
+                            at the training workshop.</p>
+                    </div>
+                </div>
+                
+                <div class="gallery relative lg:pl-40 md:pl-20 pl-0 lg:mt-20 md:mt-10 mt-5 h-auto">
+                    <div class="swiper trainingSlider w-full h-auto lg:mt-12 md:mt-6 mt-3">
+                        <div class="swiper-wrapper">
+                            <div class="trainingImg swiper-slide h-auto w-auto">
+                                <img src="./assets/heritage 1.png" alt="">
+                            </div>
+                            <div class="trainingImg swiper-slide h-auto w-auto">
+                                <img src="./assets/heritage 2.png" alt="">
+                            </div>
+                            <div class="trainingImg swiper-slide h-auto w-auto">
+                                <img src="./assets/heritage 3.png" alt="">
+                            </div>
+                            <div class="trainingImg swiper-slide h-auto w-auto">
+                                <img src="./assets/heritage 4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--IMAGE MODAL-->
+                <div class="imgLightbox">
+                    <div class="modalWrapper flex items-center justify-center w-full h-full">
+                        <span class="close cursor-pointer"><img src="./assets/close_black_24dp.png" alt=""></span>
+                        <div class="modalContent flex items-center justify-center w-full h-full space-x-12">
+                            <span class="previous cursor-pointer"><img src="./assets/Backward Button.png" alt=""></span>
+                            <div class="imgWrap h-auto w-auto">
+                                <img alt="" class="modalImage">
+                            </div>
+                            <span class="next cursor-pointer"><img src="./assets/Forward Button.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--SPACER-->
+            <div class="trainingSpacing w-full lg:h-24 md:h-12 h-6"></div>
+        </main>
+        
+        <!--FOOTER-->
+        <footer class="px-5 md:px-12 lg:px-20 lg:pt-20 md:pt-10 pt-6 pb-4">
+            <div class="top">
+                <div class="logoSection flex flex-col items-center lg:items-start space-y-5">
+                    <img src="./assets/SPACE & STYLE LOGO HOLDER.png" alt="">
+                    <p>Receive updates about building materials</p>
+                    <input type="text" placeholder="Enter Your Email Address" class="px-10">
+                </div>
+                <div class="linkSection grid gap-1">
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
+                        <h5 class="mb-3">Company</h5>
+                        <a href="#">About Us</a>
+                        <a href="#">Products</a>
+                        <a href="#">Partnership</a>
+                        <a href="#">Style Points</a>
+                        <a href="#">Style Projects</a>
+                        <a href="#">Style Careers</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
+                        <h5 class="mb-3">Style Hub</h5>
+                        <a href="#">Press Releases</a>
+                        <a href="#">Downloads</a>
+                        <a href="#">Resources</a>
+                        <a href="#">FAQs</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
+                        <h5 class="mb-3">Style Community</h5>
+                        <a href="#">Trainings</a>
+                        <a href="#">Environment</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
+                        <h5 class="mb-3">Head Office</h5>
+                        <a href="#">Libra House, Mombasa Rd</a>
+                        <a href="#">Telephone: 020 2086700</a>
+                    </div>
+                </div>
+                <div class="iconSection flex flex-col items-center">
+                    <h5 class="mb-5">Get interactive</h5>
+                    <div class="flex lg:space-x-5 space-x-2">
+                        <img src="./assets/Layer 2.png" alt="" class="socialIcon">
+                        <img src="./assets/Logo_1_.png" alt="" class="socialIcon">
+                        <img src="./assets/Layer 3.png" alt="" class="socialIcon">
+                    </div>
+                </div>
+            </div>
+            <div class="footerEnd w-full flex items-center justify-center mt-12 h-auto space-x-2">
+                <img src="./assets/Path 730.png" alt="">
+                <p>2022 Space & Style</p>
+            </div>
+        </footer>
+    </div>
+    <!--JS FILES-->
+    <script src="./vue.js"></script>
+    <script src="./jquery 3.4_1.min.js"></script>
+    <script src="./swiper-bundle.min.js"></script>
+    
+    <script>
+        let vue1 = new Vue({
+            el: '#app',
+            data:{
+                activeImpact: 1,
+            },
+            methods: {}
+        });
+        
+        //IMAGE LIGHTBOX CODE
+        $(document).ready(function() {
+            //Opening the lightbox
+            $('.trainingImg img').click(function() {
+                //collect the image source
+                var image_src = $(this).attr("src");
+                
+                $('.imgWrap img').attr('src', image_src);
+                
+                //Show the lightbox
+                $('.imgLightbox').show();
+            });
+            
+            //Next button click
+            $('.imgLightbox .next').click(()=>{
+                //List of images in the gallery
+                var images = $(".gallery img");
+                
+                // The current img being overlayed.
+                var currentImg = $('.gallery .trainingSlider img[src="' + $('.imgLightbox .imgWrap img').attr('src') + '"]'); 
+                
+                // The next img in the gallery.
+                var nextImg = $(currentImg.parent().next('div').attr('class', 'trainingImg').find('img')); 
+                
+                $('.imgLightbox .imgWrap img').attr('src', nextImg.attr('src'));
+            });
+            
+            //Previous buton click
+            $('.imgLightbox .previous').click(()=>{
+                //List of images in the gallery
+                var images = $(".gallery img");
+                
+                // The current img being overlayed.
+                var currentImg = $('.gallery .trainingSlider img[src="' + $('.imgLightbox .imgWrap img').attr('src') + '"]'); 
+                
+                // The next img in the gallery.
+                var previousImg = $(currentImg.parent().prev('div').attr('class', 'trainingImg').find('img')); 
+                
+                $('.imgLightbox .imgWrap img').attr('src', previousImg.attr('src'));
+            });
+            
+            //Closing the lightbox
+            $('.imgLightbox .close').click(()=>{
+                $('.imgLightbox').hide();
+            });
+        });
+        
+        //Training Slider
+        const trainingSlider = new Swiper('.trainingSlider', {
+            slidesPerView: 2.8,
+            loop: false,
+            spaceBetween: 20,
+            pagination: {
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                slidesPerView: 1.6,
+                spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 1.6,
+                spaceBetween: 10
+                },
+                // when window width is >= 640px
+                640: {
+                slidesPerView: 2.8,
+                spaceBetween: 50
+                }
+            }
+        });
+    </script>
+</body>
+</html>

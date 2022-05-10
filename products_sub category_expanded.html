@@ -459,9 +459,32 @@
             });
             
             //Next button click
-            
+            $('.imgLightbox .next').click(()=>{
+                //List of images in the gallery
+                var images = $(".gallery img");
+                
+                // The current img being overlayed.
+                var currentImg = $('.gallery .heritageSlider img[src="' + $('.imgLightbox .imgWrap img').attr('src') + '"]'); 
+                
+                // The next img in the gallery.
+                var nextImg = $(currentImg.parent().next('div').attr('class', 'heritageImg').find('img')); 
+                
+                $('.imgLightbox .imgWrap img').attr('src', nextImg.attr('src'));
+            });
             
             //Previous buton click
+            $('.imgLightbox .previous').click(()=>{
+                //List of images in the gallery
+                var images = $(".gallery img");
+                
+                // The current img being overlayed.
+                var currentImg = $('.gallery .heritageSlider img[src="' + $('.imgLightbox .imgWrap img').attr('src') + '"]'); 
+                
+                // The next img in the gallery.
+                var previousImg = $(currentImg.parent().prev('div').attr('class', 'heritageImg').find('img')); 
+                
+                $('.imgLightbox .imgWrap img').attr('src', previousImg.attr('src'));
+            });
             
             //Closing the lightbox
             $('.imgLightbox .close').click(()=>{
@@ -501,7 +524,7 @@
             }
         });
         
-        //Sub Category Slider
+        //Heritage Slider
         const heritageSlider = new Swiper('.heritageSlider', {
             slidesPerView: 2.8,
             loop: false,
