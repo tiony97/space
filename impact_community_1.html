@@ -14,5 +14,175 @@
 </head>
 <body>
     <div class="app" id="app">
+        <!--NAVIGATION-->
+        <nav class="flex items-center justify-between w-full lg:px-20 md:px-8 py-5">
+            <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
+            <div class="links flex lg:space-x-8">
+                <div class="pageLinks flex items-center justify-center lg:space-x-5">
+                    <a href="./index.html">Home</a>
+                    <a href="./products.html">Products</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./style.html">Style Points</a>
+                    <a href="./impact.html" class="activeLink">Our Impact</a>
+                    <a href="./news.html">News</a>
+                    <a href="./contact.html">Contact Us</a>
+                </div>
+                <div class="navIcons flex items-center lg:space-x-4">
+                    <img src="./assets/search_black_24dp.png" alt="" class="search">
+                    <img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag">
+                </div>
+                <div class="navBtns flex lg:space-x-4">
+                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="#" class="login flex items-center justify-center">Login</a>
+                </div>
+            </div>
+        </nav>
         
+        <!--RESPONSIVE NAV-->
+        <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-5">
+            <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
+            <img src="./assets/mobile logo.png" alt="" class="mobileLogo">
+            <div class="navIcons flex items-center lg:space-x-4 md:space-x-2 space-x-2">
+                <a href="#"><img src="./assets/search_black_24dp.png" alt="" class="search"></a>
+                <a href="#"><img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag"></a>
+                <span class="cursor-pointer menuOpen"><img src="./assets/menu open black.png" alt=""></span>
+            </div>
+        </div>
+        
+        <!--OVERLAY-->
+        <div class="menuOverlay">
+            <div class="overlayWrapper relative flex flex-col items-start justify-center w-full h-full px-12 space-y-5">
+                <span class="menuClose cursor-pointer"><img src="./assets/menu close white.png" alt=""></span>
+                <div class="overlayLinks flex flex-col space-y-3 items-start justify-center">
+                    <a href="./index.html">Home</a>
+                    <a href="./products.html">Products</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./style.html">Style Points</a>
+                    <a href="./impact.html" class="activeLink">Our Impact</a>
+                    <a href="./news.html">News</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="overlayBtns flex space-x-4">
+                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="#" class="login flex items-center justify-center">Login</a>
+                </div>
+                <div class="overlaySocial flex flex-col items-center">
+                    <div class="flex lg:space-x-5 space-x-2">
+                        <a href="#"><img src="./assets/icons8-facebook-50.png" alt="" class="socialIcon"></a>
+                        <a href="#"><img src="./assets/icons8-twitter-30.png" alt="" class="socialIcon"></a>
+                        <a href="#"><img src="./assets/icons8-instagram-24.png" alt="" class="socialIcon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <main class="w-full">
+            <!--IMPACT PAGE BANNER SECTION-->
+            <div class="impactBanner relative w-full h-auto pl-24 pb-24 grid grid-cols-2">
+                <div class="back absolute"></div>
+                <div class="bannerTxt h-full flex flex-col justify-end items-start space-y-3 pb-5">
+                    <h1 class="mb-10">Style Impact</h1>
+                    <p class="w-4/5">Space & Style is heavily invested in our
+                        local community and the world at large to help
+                        make it a better place for future generations.</p>
+                </div>
+                <img src="./assets/style points banner.png" alt="" class="bannerImg mt-24">
+            </div>
+            
+            <!---->
+        </main>
+        
+        <!--FOOTER-->
+        <footer class="px-5 md:px-12 lg:px-20 lg:pt-20 md:pt-10 pt-6 pb-4">
+            <div class="top">
+                <div class="logoSection flex flex-col items-center lg:items-start space-y-5">
+                    <img src="./assets/SPACE & STYLE LOGO HOLDER.png" alt="">
+                    <p>Receive updates about building materials</p>
+                    <input type="text" placeholder="Enter Your Email Address" class="px-10">
+                </div>
+                <div class="linkSection grid gap-1">
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
+                        <h5 class="mb-3">Company</h5>
+                        <a href="#">About Us</a>
+                        <a href="#">Products</a>
+                        <a href="#">Partnership</a>
+                        <a href="#">Style Points</a>
+                        <a href="#">Style Projects</a>
+                        <a href="#">Style Careers</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
+                        <h5 class="mb-3">Style Hub</h5>
+                        <a href="#">Press Releases</a>
+                        <a href="#">Downloads</a>
+                        <a href="#">Resources</a>
+                        <a href="#">FAQs</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
+                        <h5 class="mb-3">Style Community</h5>
+                        <a href="#">Trainings</a>
+                        <a href="#">Environment</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
+                        <h5 class="mb-3">Head Office</h5>
+                        <a href="#">Libra House, Mombasa Rd</a>
+                        <a href="#">Telephone: 020 2086700</a>
+                    </div>
+                </div>
+                <div class="iconSection flex flex-col items-center">
+                    <h5 class="mb-5">Get interactive</h5>
+                    <div class="flex lg:space-x-5 space-x-2">
+                        <img src="./assets/Layer 2.png" alt="" class="socialIcon">
+                        <img src="./assets/Logo_1_.png" alt="" class="socialIcon">
+                        <img src="./assets/Layer 3.png" alt="" class="socialIcon">
+                    </div>
+                </div>
+            </div>
+            <div class="footerEnd w-full flex items-center justify-center mt-12 h-auto space-x-2">
+                <img src="./assets/Path 730.png" alt="">
+                <p>2022 Space & Style</p>
+            </div>
+        </footer>
     </div>
+    <!--JS FILES-->
+    <script src="./vue.js"></script>
+    <script src="./jquery 3.4_1.min.js"></script>
+    <script src="./swiper-bundle.min.js"></script>
+    
+    <script>
+        let vue1 = new Vue({
+            el: '#app',
+            data:{
+                activeImpact: 1,
+            },
+            methods: {}
+        });
+        
+        //Impact Slider
+        const impactSwiper = new Swiper('.impactSlider', {
+            slidesPerView: 3.6,
+            loop: false,
+            spaceBetween: 20,
+            pagination: {
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                slidesPerView: 1.6,
+                spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 2.6,
+                spaceBetween: 10
+                },
+                // when window width is >= 640px
+                640: {
+                slidesPerView: 2.5,
+                spaceBetween: 50
+                }
+            }
+        });
+    </script>
+</body>
+</html>
