@@ -7300,6 +7300,8 @@ footer .footerEnd p {
 
 .trainingGallery .topSection {
   z-index: 2;
+  -ms-grid-columns: 1.5fr 2fr;
+      grid-template-columns: 1.5fr 2fr;
 }
 
 .trainingGallery .topSection img {
@@ -7386,6 +7388,107 @@ footer .footerEnd p {
 
 .trainingSpacing {
   background: #F4F4F4;
+}
+
+.communityInfo {
+  background: #F4F4F4;
+}
+
+.communityInfo .back {
+  top: 0;
+  right: 0;
+  background: white;
+  height: 100%;
+  width: 95%;
+  z-index: 0;
+}
+
+.communityInfo .topSection {
+  z-index: 2;
+  -ms-grid-columns: 1.5fr 2fr;
+      grid-template-columns: 1.5fr 2fr;
+}
+
+.communityInfo .topSection img {
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.communityInfo .topSection .topText h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 56px;
+  color: #292929;
+}
+
+.communityInfo .topSection .topText h1 span {
+  color: #1226AA;
+}
+
+.communityInfo .topSection .topText p {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #292929;
+  width: 100%;
+}
+
+.communityInfo .gallery {
+  z-index: 2;
+}
+
+.communityInfo .gallery .communityImg {
+  width: auto;
+  height: 475px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.communityInfo .imgLightbox {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #EACBD1;
+}
+
+.communityInfo .imgLightbox .modalWrapper {
+  position: relative;
+}
+
+.communityInfo .imgLightbox .modalWrapper .close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.communityInfo .imgLightbox .modalWrapper .close img {
+  width: 48px;
+  height: 48px;
+}
+
+.communityInfo .imgLightbox .modalWrapper .modalContent .previous img {
+  width: 80px;
+  height: 80px;
+}
+
+.communityInfo .imgLightbox .modalWrapper .modalContent .modalImage {
+  width: 50vw;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.communityInfo .imgLightbox .modalWrapper .modalContent .next img {
+  width: 80px;
+  height: 80px;
 }
 
 .newsBanner {
@@ -8026,5 +8129,57 @@ footer .footerEnd p {
   line-height: 24px;
   font-weight: medium;
   color: #292929;
+}
+
+.partnershipBanner {
+  background: #F4F4F4;
+  border: none;
+}
+
+.partnershipBanner .back {
+  background: #1226AA;
+  width: 100%;
+  height: 65%;
+  top: 0;
+  left: 0;
+}
+
+.partnershipBanner .bannerTxt {
+  z-index: 1;
+}
+
+.partnershipBanner .bannerTxt h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+}
+
+.partnershipBanner .bannerTxt p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.partnershipBanner .bannerTxt h5 {
+  font-size: 24px;
+  color: #292929;
+}
+
+.partnershipBanner .bannerTxt h6 {
+  font-size: 24px;
+  color: white;
+  font-weight: bolder;
+}
+
+.partnershipBanner .bannerTxt img {
+  width: 39px;
+  height: 39px;
+}
+
+.partnershipBanner .bannerImg {
+  width: 939px;
+  height: 554px;
+  z-index: 1;
 }
 /*# sourceMappingURL=main.css.map */
