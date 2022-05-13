@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/tailwind.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     
-    <title>Space & Style | Style Partnership</title>
+    <title>Space & Style | Style Project</title>
 </head>
 <body>
     <div class="app" id="app">
@@ -77,84 +77,67 @@
         </div>
         
         <main class="w-full">
-            <!--PARTNERSHIP BANNER SECTION-->
-            <div class="partnershipBanner relative w-full h-auto pl-24 pb-24 grid grid-cols-2">
+            <!--PROJECT BANNER SECTION-->
+            <div class="projectBanner relative w-full h-auto pl-24 pb-24 grid grid-cols-2">
                 <div class="back absolute"></div>
                 <div class="bannerTxt h-full flex flex-col justify-end items-start space-y-3 pb-5">
-                    <h1 class="mb-10">Style Partnership</h1>
-                    <p class="w-4/5">Now is a great time to consider
-                        becoming a partner with
-                        Space & Style. </p>
+                    <h1 class="mb-10">Style Projects</h1>
+                    <p class="lg:w-4/5 md:w-4/5 w-full">Partnership with investors in building and construction industry is one of our biggest corner stone </p>
                 </div>
-                <img src="./assets/style points banner.png" alt="" class="bannerImg mt-24">
+                <img src="./assets/projects banner.png" alt="" class="bannerImg mt-24">
             </div>
             
-            <!--PARTNERSHIP GRIDS-->
-            <div class="partnerGrids relative w-full h-full lg:px-24 md:px-12 px-6 lg:pb-24 md:pb-12 pb-6">
-                <div class="top flex items-center lg:space-x-8 md:space-x-4 lg:mb-8 md:mb-4 mb-3">
-                    <h1>To <span>better</span><br/>
-                        partnership</h1>
-                    <p class="lg:w-3/5 w-full">We provide a variety of tools, resources and programming to help our partners succeed in their building and construction projects.</p>
+            <!--PROJECT DETAILS-->
+            <div class="projectDetails relative w-full h-auto lg:py-24 md:py-12 py-6">
+                <div class="back absolute"></div>
+                <div class="topSection relative lg:pr-24 md:pr-12 pr-6 h-auto w-full grid gap-12">
+                    <img src="./assets/project details img.png" alt="">
+                    <div class="topText h-full flex flex-col items-start justify-start">
+                        <h1 class="lg:mt-12 md:mt-6 mt-3">Name of the project</h1>
+                        <span class="time flex items-center w-auto space-x-5 lg:my-8 md:my-6 my-4">
+                            <img src="./assets/time.png" alt="">
+                            <h6>17th June 2021</h6>
+                        </span>
+                        <p class="lg:my-6 my-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
                 </div>
-                <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-8 gap-5">
-                    <div class="partnerCard card1 relative flex flex-col justify-between items-start lg:p-10 md:p-6 p-5">
-                        <img src="./assets/PATTERN.png" alt="" class="overlay absolute">
-                        <div class="top relative lg:space-y-16">
-                            <span class="flex items-center jusify-start p-5"><h4>Developer</h4></span>
-                            <p>Assemble the building materials
-                            for your 1 bedroom home.
-                            Assemble the building materials
-                            for your 1 bedroom home.</p>
+                
+                <div class="gallery relative lg:pl-40 md:pl-20 pl-0 lg:mt-20 md:mt-10 mt-5 h-auto">
+                    <div class="swiper projectSlider w-full h-auto lg:mt-12 md:mt-6 mt-3">
+                        <div class="swiper-wrapper">
+                            <div class="projectImg swiper-slide h-auto w-auto">
+                                <img src="./assets/heritage 1.png" alt="">
+                            </div>
+                            <div class="projectImg swiper-slide h-auto w-auto">
+                                <img src="./assets/heritage 2.png" alt="">
+                            </div>
+                            <div class="projectImg swiper-slide h-auto w-auto">
+                                <img src="./assets/heritage 3.png" alt="">
+                            </div>
+                            <div class="projectImg swiper-slide h-auto w-auto">
+                                <img src="./assets/heritage 4.png" alt="">
+                            </div>
                         </div>
-                        <a href="./partnership_developer.html" class="more relative flex items-center space-x-4 lg:mb-8 md:mb-6 mb-4">
-                            <h6>Learn More</h6>
-                            <img src="./assets/Forward Button.png" alt="">
-                        </a>
                     </div>
-                    <div class="partnerCard card2 relative flex flex-col justify-between items-start lg:p-10 md:p-6 p-5">
-                        <img src="./assets/PATTERN.png" alt="" class="overlay absolute">
-                        <div class="top relative lg:space-y-16">
-                            <span class="flex items-center jusify-start p-5"><h4>Architect</h4></span>
-                            <p>Assemble the building materials
-                            for your 1 bedroom home.
-                            Assemble the building materials
-                            for your 1 bedroom home.</p>
+                </div>
+                
+                <!--IMAGE MODAL-->
+                <div class="imgLightbox">
+                    <div class="modalWrapper flex items-center justify-center w-full h-full">
+                        <span class="close cursor-pointer"><img src="./assets/close_black_24dp.png" alt=""></span>
+                        <div class="modalContent flex items-center justify-center w-full h-full space-x-12">
+                            <span class="previous cursor-pointer"><img src="./assets/Backward Button.png" alt=""></span>
+                            <div class="imgWrap h-auto w-auto">
+                                <img alt="" class="modalImage">
+                            </div>
+                            <span class="next cursor-pointer"><img src="./assets/Forward Button.png" alt=""></span>
                         </div>
-                        <a href="./partnership_architect.html" class="more relative flex items-center space-x-4 lg:mb-8 md:mb-6 mb-4">
-                            <h6>Learn More</h6>
-                            <img src="./assets/forward btn architect.png" alt="">
-                        </a>
-                    </div>
-                    <div class="partnerCard card3 relative flex flex-col justify-between items-start lg:p-10 md:p-6 p-5">
-                        <img src="./assets/PATTERN.png" alt="" class="overlay absolute">
-                        <div class="top relative lg:space-y-16">
-                            <span class="flex items-center jusify-start p-5"><h4>Handyman</h4></span>
-                            <p>Assemble the building materials
-                            for your 1 bedroom home.
-                            Assemble the building materials
-                            for your 1 bedroom home.</p>
-                        </div>
-                        <a href="./partnership_handyman.html" class="more relative flex items-center space-x-4 lg:mb-8 md:mb-6 mb-4">
-                            <h6>Learn More</h6>
-                            <img src="./assets/forward btn handyman.png" alt="">
-                        </a>
-                    </div>
-                    <div class="partnerCard card4 relative flex flex-col justify-between items-start lg:p-10 md:p-6 p-5">
-                        <img src="./assets/PATTERN.png" alt="" class="overlay absolute">
-                        <div class="top relative lg:space-y-16">
-                            <span class="flex items-center jusify-start p-5"><h4>Contractor</h4></span>
-                            <p>Assemble the building materials
-                            for your 1 bedroom home.
-                            Assemble the building materials
-                            for your 1 bedroom home.</p>
-                        </div>
-                        <a href="./partnership_contractor.html" class="more relative flex items-center space-x-4 lg:mb-8 md:mb-6 mb-4">
-                            <h6>Learn More</h6>
-                            <img src="./assets/forward btn contractor.png" alt="">
-                        </a>
                     </div>
                 </div>
             </div>
+            
+            <!--SPACER-->
+            <div class="trainingSpacing w-full lg:h-24 md:h-12 h-6"></div>
         </main>
         
         <!--FOOTER-->
@@ -208,6 +191,7 @@
             </div>
         </footer>
     </div>
+    
     <!--JS FILES-->
     <script src="./vue.js"></script>
     <script src="./jquery 3.4_1.min.js"></script>
@@ -221,6 +205,80 @@
                 activeImpact: 1,
             },
             methods: {}
+        });
+        
+        //IMAGE LIGHTBOX CODE
+        $(document).ready(function() {
+            //Opening the lightbox
+            $('.projectImg img').click(function() {
+                //collect the image source
+                var image_src = $(this).attr("src");
+                
+                $('.imgWrap img').attr('src', image_src);
+                
+                //Show the lightbox
+                $('.imgLightbox').show();
+            });
+            
+            //Next button click
+            $('.imgLightbox .next').click(()=>{
+                //List of images in the gallery
+                var images = $(".gallery img");
+                
+                // The current img being overlayed.
+                var currentImg = $('.gallery .projectSlider img[src="' + $('.imgLightbox .imgWrap img').attr('src') + '"]'); 
+                
+                // The next img in the gallery.
+                var nextImg = $(currentImg.parent().next('div').attr('class', 'projectImg').find('img')); 
+                
+                $('.imgLightbox .imgWrap img').attr('src', nextImg.attr('src'));
+            });
+            
+            //Previous buton click
+            $('.imgLightbox .previous').click(()=>{
+                //List of images in the gallery
+                var images = $(".gallery img");
+                
+                // The current img being overlayed.
+                var currentImg = $('.gallery .projectSlider img[src="' + $('.imgLightbox .imgWrap img').attr('src') + '"]'); 
+                
+                // The next img in the gallery.
+                var previousImg = $(currentImg.parent().prev('div').attr('class', 'projectImg').find('img')); 
+                
+                $('.imgLightbox .imgWrap img').attr('src', previousImg.attr('src'));
+            });
+            
+            //Closing the lightbox
+            $('.imgLightbox .close').click(()=>{
+                $('.imgLightbox').hide();
+            });
+        });
+        
+        //Training Slider
+        const projectSlider = new Swiper('.projectSlider', {
+            slidesPerView: 2.8,
+            loop: false,
+            spaceBetween: 20,
+            pagination: {
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                slidesPerView: 1.6,
+                spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 1.6,
+                spaceBetween: 10
+                },
+                // when window width is >= 640px
+                640: {
+                slidesPerView: 2.8,
+                spaceBetween: 50
+                }
+            }
         });
     </script>
 </body>

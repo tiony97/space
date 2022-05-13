@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS FILES-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    
+    <title>Space & Style | Style Resources</title>
+</head>
+<body>
+    <div class="app" id="app">
+        <!--NAVIGATION-->
+        <nav class="flex items-center justify-between w-full lg:px-20 md:px-8 py-5">
+            <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
+            <div class="links flex lg:space-x-8">
+                <div class="pageLinks flex items-center justify-center lg:space-x-5">
+                    <a href="./index.html">Home</a>
+                    <a href="./products.html">Products</a>
+                    <a href="./about.html" class="activeLink">About Us</a>
+                    <a href="./style.html">Style Points</a>
+                    <a href="./impact.html">Our Impact</a>
+                    <a href="./news.html">News</a>
+                    <a href="./contact.html">Contact Us</a>
+                </div>
+                <div class="navIcons flex items-center lg:space-x-4">
+                    <img src="./assets/search_black_24dp.png" alt="" class="search">
+                    <img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag">
+                </div>
+                <div class="navBtns flex lg:space-x-4">
+                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="#" class="login flex items-center justify-center">Login</a>
+                </div>
+            </div>
+        </nav>
+        
+        <!--RESPONSIVE NAV-->
+        <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-5">
+            <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
+            <img src="./assets/mobile logo.png" alt="" class="mobileLogo">
+            <div class="navIcons flex items-center lg:space-x-4 md:space-x-2 space-x-2">
+                <a href="#"><img src="./assets/search_black_24dp.png" alt="" class="search"></a>
+                <a href="#"><img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag"></a>
+                <span class="cursor-pointer menuOpen"><img src="./assets/menu open black.png" alt=""></span>
+            </div>
+        </div>
+        
+        <!--OVERLAY-->
+        <div class="menuOverlay">
+            <div class="overlayWrapper relative flex flex-col items-start justify-center w-full h-full px-12 space-y-5">
+                <span class="menuClose cursor-pointer"><img src="./assets/menu close white.png" alt=""></span>
+                <div class="overlayLinks flex flex-col space-y-3 items-start justify-center">
+                    <a href="./index.html">Home</a>
+                    <a href="./products.html">Products</a>
+                    <a href="./about.html" class="activeLink">About Us</a>
+                    <a href="./style.html">Style Points</a>
+                    <a href="./impact.html">Our Impact</a>
+                    <a href="./news.html">News</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="overlayBtns flex space-x-4">
+                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="#" class="login flex items-center justify-center">Login</a>
+                </div>
+                <div class="overlaySocial flex flex-col items-center">
+                    <div class="flex lg:space-x-5 space-x-2">
+                        <a href="#"><img src="./assets/icons8-facebook-50.png" alt="" class="socialIcon"></a>
+                        <a href="#"><img src="./assets/icons8-twitter-30.png" alt="" class="socialIcon"></a>
+                        <a href="#"><img src="./assets/icons8-instagram-24.png" alt="" class="socialIcon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <main class="w-full">
+            <!--RESOURCE BANNER SECTION-->
+            <div class="resourceBanner relative w-full h-auto pl-24 pb-24 grid grid-cols-2">
+                <div class="back absolute"></div>
+                <div class="bannerTxt h-full flex flex-col justify-end items-start space-y-3 pb-5">
+                    <h1 class="mb-10">Style Resources</h1>
+                    <p class="lg:w-4/5 md:w-4/5 w-full">We help you get updated with latest building tips for a successful project</p>
+                </div>
+                <img src="./assets/resources banner.png" alt="" class="bannerImg mt-24">
+            </div>
+            
+            <!--FEATURED RESOURCES SECTION-->
+            <div class="featuredResources relative flex w-full flex-col lg:pr-24 md:pr-12 pr-5 lg:py-24 md:py-12 py-6">
+                <div class="back"></div>
+                <div class="featuresInfo lg:pr-24 md:pr-12 pr-5 flex justify-start lg:space-x-12 space-x-6 h-auto w-full">
+                    <div class="imgWrapper relative">
+                        <img src="./assets/dealer.png" alt="" class="resourceImg" v-show="currentResourceImg==1">
+                        <img src="./assets/open spaces.png" alt="" class="resourceImg" v-show="currentResourceImg==2">
+                        <img src="./assets/sustainable.png" alt="" class="resourceImg" v-show="currentResourceImg==3">
+                        <div class="linkBtns flex">
+                            <span class="commBtn btn1 flex items-center justify-center cursor-pointer" @click="currentResourceImg-=1" v-if="currentResourceImg>1">
+                                <img src="./assets/arrow left white.png" alt="">
+                            </span>
+                            <span class="commBtn btn1 flex items-center justify-center" v-if="currentResourceImg==1">
+                                <img src="./assets/arrow left white.png" alt="">
+                            </span>
+                            <span class="commBtn btn2 flex items-center justify-center cursor-pointer" @click="currentResourceImg+=1" v-if="currentResourceImg<3">
+                                <img src="./assets/arrow right white.png" alt="">
+                            </span>
+                            <span class="commBtn btn2 flex items-center justify-center" v-if="currentResourceImg==3">
+                                <img src="./assets/arrow right white.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="featuresText h-full flex flex-col items-start justify-start">
+                        <h1 class="mb-6">Our featured <span>resources</span></h1>
+                        <div class="names lg:mb-5 mb-2">
+                            <h3 v-show="currentResourceImg==1">Buy products from approved dealers</h3>
+                            <h3 v-show="currentResourceImg==2">Open spaces impact on buildings</h3>
+                            <h3 v-show="currentResourceImg==3">Sustainable roofing technology</h3>
+                        </div>
+                        <p>Space & Style is heavily invested in our local community and the  World at large to help make it a better place for future generations.</p>
+                        <a href="#" class="lg:mt-5 mt-3">Read full story here</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!--RESOURCES FILTER-->
+            <div class="resourceFilter lg:px-24 md:px-12 px-5 lg:py-24 md:py-12 py-6">
+                <div class="filter flex items-center space-x-8">
+                    <p>Search for tips and resources</p>
+                    <span @click="activateFilter=true" class="flex items-center space-x-5 lg:p-6 md:p-4 p-3 cursor-pointer">
+                        <h5>All Categories</h5>
+                        <img src="./assets/arrow down.png" alt="" v-show="activateFilter==false">
+                        <img src="./assets/arrow up.png" alt="" v-show="activateFilter==true">
+                    </span>
+                </div>
+                <div v-show="activateFilter==true" class="filterContent relative w-full h-auto p-5 mt-5">
+                    <div class="flex items-center justify-between">
+                        <p>Select topic</p>
+                        <img @click="activateFilter=false" src="./assets/close_black_24dp.png" alt="" class="close cursor-pointer">
+                    </div>
+                    <div class="flex items-center justify-between mt-12 lg:w-4/5 w-full">
+                        <h5>Roofing</h5>
+                        <h5 class="active">Flooring</h5>
+                        <h5>Drainage</h5>
+                        <h5>Steel Structures</h5>
+                        <h5>General Materials</h5>
+                    </div>
+                </div>
+                
+                <div class="resources grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-8 gap-5 lg:mt-12 md:mt-6 mt-3">
+                    <a href="./resource.html" class="resource flex flex-col items-start p-5 w-auto cursor-pointer">
+                        <img src="./assets/roof.png" alt="">
+                        <p class="lg:mt-10 md:mt-8 mt-5 lg:w-4/5 md:w-4/5 w-full">Brief news article title description maximum 2 lines</p>
+                    </a>
+                    <a href="./resource.html" class="resource flex flex-col items-start p-5 w-auto cursor-pointer">
+                        <img src="./assets/roof.png" alt="">
+                        <p class="lg:mt-10 md:mt-8 mt-5 lg:w-4/5 md:w-4/5 w-full">Brief news article title description maximum 2 lines</p>
+                    </a>
+                    <a href="./resource.html" class="resource flex flex-col items-start p-5 w-auto cursor-pointer">
+                        <img src="./assets/roof.png" alt="">
+                        <p class="lg:mt-10 md:mt-8 mt-5 lg:w-4/5 md:w-4/5 w-full">Brief news article title description maximum 2 lines</p>
+                    </a>
+                    <a href="./resource.html" class="resource flex flex-col items-start p-5 w-auto cursor-pointer">
+                        <img src="./assets/roof.png" alt="">
+                        <p class="lg:mt-10 md:mt-8 mt-5 lg:w-4/5 md:w-4/5 w-full">Brief news article title description maximum 2 lines</p>
+                    </a>
+                    <a href="./resource.html" class="resource flex flex-col items-start p-5 w-auto cursor-pointer">
+                        <img src="./assets/roof.png" alt="">
+                        <p class="lg:mt-10 md:mt-8 mt-5 lg:w-4/5 md:w-4/5 w-full">Brief news article title description maximum 2 lines</p>
+                    </a>
+                    <a href="./resource.html" class="resource flex flex-col items-start p-5 w-auto cursor-pointer">
+                        <img src="./assets/roof.png" alt="">
+                        <p class="lg:mt-10 md:mt-8 mt-5 lg:w-4/5 md:w-4/5 w-full">Brief news article title description maximum 2 lines</p>
+                    </a>
+                </div>
+            </div>
+        </main>
+        
+        <!--FOOTER-->
+        <footer class="px-5 md:px-12 lg:px-20 lg:pt-20 md:pt-10 pt-6 pb-4">
+            <div class="top">
+                <div class="logoSection flex flex-col items-center lg:items-start space-y-5">
+                    <img src="./assets/SPACE & STYLE LOGO HOLDER.png" alt="">
+                    <p>Receive updates about building materials</p>
+                    <input type="text" placeholder="Enter Your Email Address" class="px-10">
+                </div>
+                <div class="linkSection grid gap-1">
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
+                        <h5 class="mb-3">Company</h5>
+                        <a href="#">About Us</a>
+                        <a href="#">Products</a>
+                        <a href="#">Partnership</a>
+                        <a href="#">Style Points</a>
+                        <a href="#">Style Projects</a>
+                        <a href="#">Style Careers</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
+                        <h5 class="mb-3">Style Hub</h5>
+                        <a href="#">Press Releases</a>
+                        <a href="#">Downloads</a>
+                        <a href="#">Resources</a>
+                        <a href="#">FAQs</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
+                        <h5 class="mb-3">Style Community</h5>
+                        <a href="#">Trainings</a>
+                        <a href="#">Environment</a>
+                    </div>
+                    <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
+                        <h5 class="mb-3">Head Office</h5>
+                        <a href="#">Libra House, Mombasa Rd</a>
+                        <a href="#">Telephone: 020 2086700</a>
+                    </div>
+                </div>
+                <div class="iconSection flex flex-col items-center">
+                    <h5 class="mb-5">Get interactive</h5>
+                    <div class="flex lg:space-x-5 space-x-2">
+                        <img src="./assets/Layer 2.png" alt="" class="socialIcon">
+                        <img src="./assets/Logo_1_.png" alt="" class="socialIcon">
+                        <img src="./assets/Layer 3.png" alt="" class="socialIcon">
+                    </div>
+                </div>
+            </div>
+            <div class="footerEnd w-full flex items-center justify-center mt-12 h-auto space-x-2">
+                <img src="./assets/Path 730.png" alt="">
+                <p>2022 Space & Style</p>
+            </div>
+        </footer>
+    </div>
+    
+    <!--JS FILES-->
+    <script src="./vue.js"></script>
+    <script src="./jquery 3.4_1.min.js"></script>
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    
+    <script>
+        let vue1 = new Vue({
+            el: '#app',
+            data:{
+                currentResourceImg: 1,
+                activateFilter: false,
+            },
+            methods: {}
+        });
+        
+        //IMAGE LIGHTBOX CODE
+        $(document).ready(function() {
+            //Opening the lightbox
+            $('.projectImg img').click(function() {
+                //collect the image source
+                var image_src = $(this).attr("src");
+                
+                $('.imgWrap img').attr('src', image_src);
+                
+                //Show the lightbox
+                $('.imgLightbox').show();
+            });
+            
+            //Next button click
+            $('.imgLightbox .next').click(()=>{
+                //List of images in the gallery
+                var images = $(".gallery img");
+                
+                // The current img being overlayed.
+                var currentImg = $('.gallery .projectSlider img[src="' + $('.imgLightbox .imgWrap img').attr('src') + '"]'); 
+                
+                // The next img in the gallery.
+                var nextImg = $(currentImg.parent().next('div').attr('class', 'projectImg').find('img')); 
+                
+                $('.imgLightbox .imgWrap img').attr('src', nextImg.attr('src'));
+            });
+            
+            //Previous buton click
+            $('.imgLightbox .previous').click(()=>{
+                //List of images in the gallery
+                var images = $(".gallery img");
+                
+                // The current img being overlayed.
+                var currentImg = $('.gallery .projectSlider img[src="' + $('.imgLightbox .imgWrap img').attr('src') + '"]'); 
+                
+                // The next img in the gallery.
+                var previousImg = $(currentImg.parent().prev('div').attr('class', 'projectImg').find('img')); 
+                
+                $('.imgLightbox .imgWrap img').attr('src', previousImg.attr('src'));
+            });
+            
+            //Closing the lightbox
+            $('.imgLightbox .close').click(()=>{
+                $('.imgLightbox').hide();
+            });
+        });
+        
+        //Training Slider
+        const projectSlider = new Swiper('.projectSlider', {
+            slidesPerView: 2.8,
+            loop: false,
+            spaceBetween: 20,
+            pagination: {
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                slidesPerView: 1.6,
+                spaceBetween: 10
+                },
+                // when window width is >= 480px
+                480: {
+                slidesPerView: 1.6,
+                spaceBetween: 10
+                },
+                // when window width is >= 640px
+                640: {
+                slidesPerView: 2.8,
+                spaceBetween: 50
+                }
+            }
+        });
+    </script>
+</body>
+</html>

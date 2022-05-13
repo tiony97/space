@@ -11,8 +11,19 @@ body {
   font-family: "proximaNova";
 }
 
+.fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white !important;
+}
+
 nav {
   min-height: 96px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  z-index: 50;
 }
 
 nav .logo {
@@ -68,6 +79,7 @@ nav .navBtns .login:hover {
 .responsiveNav {
   height: 90px;
   display: none;
+  z-index: 50;
 }
 
 .responsiveNav .logo {
@@ -926,7 +938,7 @@ footer .footerEnd p {
   width: 300px;
   height: 315px;
   border-radius: 50px;
-  background: url("../assets/IMAGE HOLDER.png") no-repeat center center;
+  background: url("../assets/project img 2.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -1312,16 +1324,21 @@ footer .footerEnd p {
   color: #1226AA !important;
 }
 
+.assemble .wrapper {
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
 .assemble .imgHolder img {
   height: 647px;
-  width: 757px;
+  width: auto;
 }
 
 .assemble .gridContent .tabLink {
   width: 141px;
   height: 97px;
   background: white;
-  border-radius: 25px;
+  border-radius: 30px;
   -webkit-box-shadow: 2px 2px 2px 2px #e8e8e8;
           box-shadow: 2px 2px 2px 2px #e8e8e8;
   -webkit-transition: all .3s ease-in-out;
@@ -1378,13 +1395,13 @@ footer .footerEnd p {
 }
 
 .assemble .gridContent .gallery {
-  max-width: 870px;
+  max-width: 100%;
   grid-row-gap: 50px;
 }
 
 .assemble .gridContent .gallery .galleryCard img {
-  width: 158px;
-  height: 169px;
+  width: 170px;
+  height: 170px;
 }
 
 .assemble .gridContent .gallery .galleryCard p {
@@ -1416,6 +1433,11 @@ footer .footerEnd p {
   width: 75px;
 }
 
+.explore {
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
 .explore .exploreContent h3 {
   font-size: 48px;
   font-weight: bolder;
@@ -1441,6 +1463,13 @@ footer .footerEnd p {
   background: transparent;
   color: #1226AA;
   font-size: 24px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.explore .exploreContent a:hover {
+  background: #1226AA;
+  color: white;
 }
 
 .explore .exploreCards {
@@ -1510,22 +1539,22 @@ footer .footerEnd p {
 }
 
 .explore .exploreCards .exploreCard1 {
-  background: url("../assets/MATERIAL HOLDER.png") no-repeat center center;
+  background: url("../assets/drainage.png") no-repeat center center;
   background-size: cover;
 }
 
 .explore .exploreCards .exploreCard2 {
-  background: url("../assets/MATERIAL HOLDER.png") no-repeat center center;
+  background: url("../assets/drainage.png") no-repeat center center;
   background-size: cover;
 }
 
 .explore .exploreCards .exploreCard3 {
-  background: url("../assets/MATERIAL HOLDER.png") no-repeat center center;
+  background: url("../assets/drainage.png") no-repeat center center;
   background-size: cover;
 }
 
 .explore .exploreCards .exploreCard4 {
-  background: url("../assets/MATERIAL HOLDER.png") no-repeat center center;
+  background: url("../assets/drainage.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -1813,7 +1842,7 @@ footer .footerEnd p {
 }
 
 .partners .partnerSlider .sliderCard img {
-  width: 466px;
+  width: 100%;
   height: 526px;
   border-radius: 50px;
   -o-object-fit: cover;
@@ -1944,7 +1973,7 @@ footer .footerEnd p {
   width: 95%;
   height: 100%;
   background: #F4F4F4;
-  z-index: -1;
+  z-index: 0;
 }
 
 .community h2 {
@@ -1952,10 +1981,15 @@ footer .footerEnd p {
   font-weight: bolder;
   line-height: 56px;
   color: #292929;
+  z-index: 1;
 }
 
 .community h2 span {
   color: #1226AA;
+}
+
+.community .communityInfo {
+  z-index: 1;
 }
 
 .community .communityInfo .imgWrapper {
@@ -1971,7 +2005,7 @@ footer .footerEnd p {
      object-fit: cover;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
 }
 
 .community .communityInfo .imgWrapper .linkBtns {
@@ -2086,6 +2120,2444 @@ footer .footerEnd p {
 }
 
 /*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+  .homeBanner .tabGrids .gridLink {
+    height: 284px;
+    padding: 0 15px !important;
+  }
+  .homeBanner .tabGrids .gridLink img {
+    height: 60px;
+    width: 60px;
+  }
+  .homeBanner .tabGrids .gridLink h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .homeBanner .tabSection {
+    min-height: 700px;
+  }
+  .homeBanner .tab1 .textContent h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .homeBanner .tab1 .textContent form input, .homeBanner .tab1 .textContent form select, .homeBanner .tab1 .textContent form button {
+    min-height: 80px;
+    font-size: 18px;
+    padding: 0px 15px;
+  }
+  .homeBanner .tab1 .textContent form input::-webkit-input-placeholder, .homeBanner .tab1 .textContent form select::-webkit-input-placeholder, .homeBanner .tab1 .textContent form button::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab1 .textContent form input:-ms-input-placeholder, .homeBanner .tab1 .textContent form select:-ms-input-placeholder, .homeBanner .tab1 .textContent form button:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab1 .textContent form input::-ms-input-placeholder, .homeBanner .tab1 .textContent form select::-ms-input-placeholder, .homeBanner .tab1 .textContent form button::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab1 .textContent form input::placeholder, .homeBanner .tab1 .textContent form select::placeholder, .homeBanner .tab1 .textContent form button::placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab1 .textContent form .s-hidden {
+    padding-right: 10px;
+  }
+  .homeBanner .tab1 .textContent form .select {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .homeBanner .tab1 .textContent form .styledSelect {
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .homeBanner .tab1 .textContent form .styledSelect:after {
+    content: "";
+    width: 0;
+    height: 0;
+    top: 45%;
+    right: 20px;
+  }
+  .homeBanner .tab1 .textContent form .options {
+    padding: 10px;
+  }
+  .homeBanner .tab1 .textContent form .options li {
+    padding: 0 6px;
+    padding: 0 10px;
+  }
+  .homeBanner .tab1 .textContent form button {
+    background: #FFB548;
+    color: #292929;
+    font-weight: 900 !important;
+  }
+  .homeBanner .tab1 img {
+    width: auto;
+    height: 490px;
+  }
+  .homeBanner .tab2 h4 {
+    font-size: 32px;
+    font-weight: 40px;
+  }
+  .homeBanner .tab2 .productCategory {
+    -ms-grid-columns: (1fr)[4] !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard {
+    width: auto;
+    height: 315px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .info {
+    min-width: 70%;
+    height: 38px;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-size: 18px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .overlay {
+    border-radius: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayInfo {
+    width: auto;
+    height: 64px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayTxt {
+    font-size: 18px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .shopLink {
+    width: auto;
+    height: 44px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .shopLink img {
+    width: 30px;
+    height: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .shopLink p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .homeBanner .tab3 .textContent h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .homeBanner .tab3 .textContent form input, .homeBanner .tab3 .textContent form select, .homeBanner .tab3 .textContent form button {
+    min-height: 80px;
+    width: 100%;
+    font-size: 18px;
+    padding: 0px 15px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab3 .textContent form input::-webkit-input-placeholder, .homeBanner .tab3 .textContent form select::-webkit-input-placeholder, .homeBanner .tab3 .textContent form button::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab3 .textContent form input:-ms-input-placeholder, .homeBanner .tab3 .textContent form select:-ms-input-placeholder, .homeBanner .tab3 .textContent form button:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab3 .textContent form input::-ms-input-placeholder, .homeBanner .tab3 .textContent form select::-ms-input-placeholder, .homeBanner .tab3 .textContent form button::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab3 .textContent form input::placeholder, .homeBanner .tab3 .textContent form select::placeholder, .homeBanner .tab3 .textContent form button::placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab3 .textContent form .s-hidden {
+    visibility: hidden;
+    padding-right: 10px;
+  }
+  .homeBanner .tab3 .textContent form .select {
+    width: 100% !important;
+    height: 100%;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .homeBanner .tab3 .textContent form .styledSelect {
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .homeBanner .tab3 .textContent form .styledSelect:after {
+    top: 45%;
+    right: 20px;
+  }
+  .homeBanner .tab3 .textContent form .options {
+    padding: 10px;
+  }
+  .homeBanner .tab3 .textContent form .options li {
+    padding: 0 6px;
+    margin: 0 0;
+    padding: 0 10px;
+  }
+  .homeBanner .tab3 img {
+    width: auto;
+    height: 494px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .homeBanner .tab4 h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .homeBanner .tab4 form .radios .container {
+    font-size: 18px;
+  }
+  .homeBanner .tab4 form .radios .container .checkmark {
+    height: 30px;
+    width: 30px;
+  }
+  .homeBanner .tab4 form .radios .container .checkmark:after {
+    top: 2px;
+    left: 3px;
+    right: 3px;
+    bottom: 2px;
+    width: 15px;
+    height: 15px;
+  }
+  .homeBanner .tab4 form .radios .container p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .homeBanner .tab4 form .otherInputs .search {
+    width: 350px;
+    height: 80px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab4 form .otherInputs .search img {
+    width: 35.05px;
+    height: 35.05px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input {
+    font-size: 18px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input::placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab4 form .otherInputs button {
+    width: 350px;
+    height: 80px;
+    border-radius: 30px;
+    font-size: 18px;
+  }
+  .assemble .bgCover {
+    width: 95vw;
+  }
+  .assemble h1 {
+    font-size: 45px;
+    line-height: 56px;
+  }
+  .assemble .wrapper {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+  }
+  .assemble .imgHolder img {
+    height: 90vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .assemble .gridContent .tabLink {
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+  }
+  .assemble .gridContent .tabLink img {
+    width: 50px;
+    height: 50px;
+  }
+  .assemble .gridContent h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .assemble .gridContent .search {
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .assemble .gridContent .search img {
+    width: 40px;
+    height: 40px;
+  }
+  .assemble .gridContent .search input {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+  }
+  .assemble .gridContent .search input::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .assemble .gridContent .search input:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .assemble .gridContent .search input::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .assemble .gridContent .search input::placeholder {
+    font-size: 18px;
+  }
+  .assemble .gridContent .gallery {
+    width: 100%;
+    grid-gap: 20px;
+  }
+  .assemble .gridContent .gallery .galleryCard img {
+    width: auto;
+    height: 150px;
+  }
+  .assemble .gridContent .gallery .galleryCard p {
+    font-size: 16px;
+    color: #292929;
+  }
+  .assemble .assembleButtons a {
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 18px;
+  }
+  .assemble .assembleButtons .plan img {
+    height: 50px;
+    width: 50px;
+  }
+  .explore {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+  }
+  .explore .exploreContent h3 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .explore .exploreContent p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .explore .exploreContent a {
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    line-height: 40px;
+    font-size: 18px;
+  }
+  .explore .exploreCards {
+    grid-gap: 50px;
+  }
+  .explore .exploreCards .cardLayout {
+    width: auto;
+    height: 450px;
+    border-radius: 30px;
+  }
+  .explore .exploreCards .cardLayout .info {
+    min-width: 80%;
+    height: 60px;
+    border-radius: 30x;
+    padding: 0 15px;
+    font-size: 18px;
+  }
+  .explore .exploreCards .cardLayout span {
+    font-size: 18px;
+  }
+  .explore .exploreCards .cardLayout a {
+    min-width: 80%;
+    height: 60px;
+  }
+  .explore .exploreCards .cardLayout a p {
+    font-size: 18px;
+  }
+  .explore .exploreCards .cardLayout a img {
+    width: 50px;
+    height: 50px;
+  }
+  .explore .exploreCards .cardLayout .overlay {
+    border-radius: 30px;
+  }
+  .explore .exploreCards .cardLayout .overlay .overlayInfo {
+    width: 80%px;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .branches .wrapper h2, .productBranches .wrapper h2, .styleResources .wrapper h2 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .branches .wrapper form .search, .productBranches .wrapper form .search, .styleResources .wrapper form .search {
+    width: 60vw;
+    height: 60px;
+  }
+  .branches .wrapper form .search img, .productBranches .wrapper form .search img, .styleResources .wrapper form .search img {
+    width: 40px;
+    height: 40px;
+  }
+  .branches .wrapper form .search input, .productBranches .wrapper form .search input, .styleResources .wrapper form .search input {
+    font-size: 20px;
+  }
+  .branches .wrapper form .search input::-webkit-input-placeholder, .productBranches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
+    color: #292929;
+    font-size: 20px;
+  }
+  .branches .wrapper form .search input:-ms-input-placeholder, .productBranches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
+    color: #292929;
+    font-size: 20px;
+  }
+  .branches .wrapper form .search input::-ms-input-placeholder, .productBranches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
+    color: #292929;
+    font-size: 20px;
+  }
+  .branches .wrapper form .search input::placeholder, .productBranches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
+    color: #292929;
+    font-size: 20px;
+  }
+  .branches .wrapper form .search input:focus, .productBranches .wrapper form .search input:focus, .styleResources .wrapper form .search input:focus {
+    outline: none;
+  }
+  .branches .wrapper form .radios .container, .productBranches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .branches .wrapper form .radios .container .checkmark, .productBranches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
+    height: 30px;
+    width: 30px;
+  }
+  .branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
+    top: 2px;
+    left: 2.5px;
+    right: 1px;
+    bottom: 1px;
+    width: 15px;
+    height: 15px;
+  }
+  .branches .wrapper form .radios .container p, .productBranches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .branches .wrapper p, .productBranches .wrapper p, .styleResources .wrapper p {
+    font-size: 30px;
+  }
+  .branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
+    width: auto;
+    height: 280px;
+  }
+  .branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
+    width: 80%;
+    height: 38px;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+    width: 80%;
+    height: 38px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+    font-size: 16px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
+    font-size: 14px;
+    color: #1226AA;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .distance img, .productBranches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
+    width: 22.39px;
+    height: 31.98px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay:hover, .productBranches .wrapper .hardware .hardwareCard .overlay:hover, .styleResources .wrapper .hardware .hardwareCard .overlay:hover {
+    opacity: 1;
+  }
+  .differences h2 {
+    font-size: 60px;
+  }
+  .differences .differenceCard {
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+  }
+  .differences .differenceCard img {
+    width: 150px;
+    height: 150px;
+  }
+  .differences .differenceCard h5 {
+    font-size: 30px;
+  }
+  .differences .differenceCard .overlay {
+    border-radius: 30px;
+  }
+  .differences .differenceCard .overlay h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .differences .differenceCard .overlay p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .partners {
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+  }
+  .partners .partnerText h2 {
+    font-size: 45px;
+    line-height: 52px;
+    width: 80%;
+  }
+  .partners .partnerText a {
+    font-size: 18px;
+  }
+  .partners .partnerSlider .sliderCard {
+    border-radius: 30px;
+  }
+  .partners .partnerSlider .sliderCard img {
+    width: auto;
+    height: 350px;
+    border-radius: 30px;
+  }
+  .partners .partnerSlider .sliderCard p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .customers .titleSection h2 {
+    font-size: 45px;
+    line-height: 52px;
+    width: 80%;
+  }
+  .customers .titleSection a {
+    font-size: 18px;
+  }
+  .customers .customerSlider .customerCard {
+    width: auto;
+    height: 450px;
+    border-radius: 30px;
+  }
+  .customers .customerSlider .customerCard .overlay {
+    border-radius: 30px;
+    border: 2px solid #1226AA;
+  }
+  .customers .customerSlider .customerCard .name img {
+    width: 120px;
+    height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .customers .customerSlider .customerCard .name h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .customers .customerSlider .customerCard p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .customers .customerSlider .customerCard .ratings img {
+    width: 35px;
+    height: 35px;
+  }
+  .community h2 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .community .communityInfo .imgWrapper {
+    width: 80vw;
+    height: 60vh;
+  }
+  .community .communityInfo .imgWrapper .linkBtns .commBtn {
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .community .communityInfo .imgWrapper .linkBtns .commBtn img {
+    width: 20.82px;
+    height: 20.03px;
+  }
+  .community .communityInfo .communityText h5 {
+    font-size: 24px;
+    line-height: 32px;
+    width: 90%;
+  }
+  .community .communityInfo .communityText h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .community .communityInfo .communityText p {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: normal;
+    width: 70%;
+  }
+  .community .communityInfo .communityText a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .stylePoints img {
+    width: auto;
+    height: 450px;
+  }
+  .stylePoints .styleText h2 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .stylePoints .styleText h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .stylePoints .styleText a {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .homeBanner .tabGrids .gridLink {
+    height: 250px;
+    padding: 0 15px !important;
+  }
+  .homeBanner .tabGrids .gridLink img {
+    height: 50px;
+    width: 50px;
+  }
+  .homeBanner .tabGrids .gridLink h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .explore {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+  }
+  .explore .exploreContent h3 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .explore .exploreContent p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .explore .exploreContent a {
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    line-height: 40px;
+    font-size: 18px;
+  }
+  .explore .exploreCards {
+    grid-gap: 50px;
+  }
+  .explore .exploreCards .cardLayout {
+    width: auto;
+    height: 450px;
+    border-radius: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .explore .exploreCards .cardLayout .info {
+    min-width: 80%;
+    height: 60px;
+    border-radius: 30x;
+    padding: 0 15px;
+    font-size: 18px;
+  }
+  .explore .exploreCards .cardLayout span {
+    font-size: 18px;
+  }
+  .explore .exploreCards .cardLayout a {
+    min-width: 80%;
+    height: 60px;
+  }
+  .explore .exploreCards .cardLayout a p {
+    font-size: 18px;
+  }
+  .explore .exploreCards .cardLayout a img {
+    width: 50px;
+    height: 50px;
+  }
+  .explore .exploreCards .cardLayout .overlay {
+    border-radius: 30px;
+  }
+  .explore .exploreCards .cardLayout .overlay .overlayInfo {
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .explore .exploreCards .cardLayout .overlay span {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .homeBanner .tabGrids .gridLink {
+    height: 200px;
+    padding: 0 15px !important;
+  }
+  .homeBanner .tabGrids .gridLink img {
+    height: 40px;
+    width: 40px;
+  }
+  .homeBanner .tabGrids .gridLink h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .homeBanner .tabSection {
+    min-height: 500px;
+  }
+  .homeBanner .tab1 {
+    grid-gap: 20px !important;
+  }
+  .homeBanner .tab1 .textContent h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .homeBanner .tab1 .textContent form input, .homeBanner .tab1 .textContent form select, .homeBanner .tab1 .textContent form button {
+    min-height: 60px;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 0px 15px;
+  }
+  .homeBanner .tab1 .textContent form input::-webkit-input-placeholder, .homeBanner .tab1 .textContent form select::-webkit-input-placeholder, .homeBanner .tab1 .textContent form button::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab1 .textContent form input:-ms-input-placeholder, .homeBanner .tab1 .textContent form select:-ms-input-placeholder, .homeBanner .tab1 .textContent form button:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab1 .textContent form input::-ms-input-placeholder, .homeBanner .tab1 .textContent form select::-ms-input-placeholder, .homeBanner .tab1 .textContent form button::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab1 .textContent form input::placeholder, .homeBanner .tab1 .textContent form select::placeholder, .homeBanner .tab1 .textContent form button::placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab1 .textContent form .s-hidden {
+    padding-right: 10px;
+  }
+  .homeBanner .tab1 .textContent form .select {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .homeBanner .tab1 .textContent form .styledSelect {
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .homeBanner .tab1 .textContent form .styledSelect:after {
+    content: "";
+    width: 0;
+    height: 0;
+    top: 45%;
+    right: 15px;
+  }
+  .homeBanner .tab1 .textContent form .options {
+    padding: 10px;
+  }
+  .homeBanner .tab1 .textContent form .options li {
+    padding: 0 6px;
+    padding: 0 10px;
+  }
+  .homeBanner .tab1 img {
+    width: auto;
+    height: 400px;
+  }
+  .homeBanner .tab2 h4 {
+    font-size: 30px;
+    font-weight: 40px;
+  }
+  .homeBanner .tab2 .productCategory {
+    -ms-grid-columns: (1fr)[3] !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard {
+    width: auto;
+    height: 300px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .info {
+    min-width: 70%;
+    height: 35px;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-size: 18px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .overlay {
+    border-radius: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayInfo {
+    width: auto;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayTxt {
+    font-size: 18px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .shopLink {
+    width: auto;
+    height: 40px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .shopLink img {
+    width: 30px;
+    height: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .shopLink p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .homeBanner .tab3 {
+    grid-gap: 20px !important;
+  }
+  .homeBanner .tab3 .textContent h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .homeBanner .tab3 .textContent form input, .homeBanner .tab3 .textContent form select, .homeBanner .tab3 .textContent form button {
+    min-height: 60px;
+    width: 100%;
+    font-size: 18px;
+    padding: 0px 15px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab3 .textContent form input::-webkit-input-placeholder, .homeBanner .tab3 .textContent form select::-webkit-input-placeholder, .homeBanner .tab3 .textContent form button::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab3 .textContent form input:-ms-input-placeholder, .homeBanner .tab3 .textContent form select:-ms-input-placeholder, .homeBanner .tab3 .textContent form button:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab3 .textContent form input::-ms-input-placeholder, .homeBanner .tab3 .textContent form select::-ms-input-placeholder, .homeBanner .tab3 .textContent form button::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab3 .textContent form input::placeholder, .homeBanner .tab3 .textContent form select::placeholder, .homeBanner .tab3 .textContent form button::placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab3 .textContent form .s-hidden {
+    visibility: hidden;
+    padding-right: 10px;
+  }
+  .homeBanner .tab3 .textContent form .select {
+    width: 100% !important;
+    height: 100%;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .homeBanner .tab3 .textContent form .styledSelect {
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .homeBanner .tab3 .textContent form .styledSelect:after {
+    top: 45%;
+    right: 15px;
+  }
+  .homeBanner .tab3 .textContent form .options {
+    padding: 10px;
+  }
+  .homeBanner .tab3 .textContent form .options li {
+    padding: 0 6px;
+    margin: 0 0;
+    padding: 0 10px;
+  }
+  .homeBanner .tab3 img {
+    width: auto;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .homeBanner .tab4 h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .homeBanner .tab4 form .radios .container {
+    font-size: 18px;
+  }
+  .homeBanner .tab4 form .radios .container .checkmark {
+    height: 30px;
+    width: 30px;
+  }
+  .homeBanner .tab4 form .radios .container .checkmark:after {
+    top: 2px;
+    left: 3px;
+    right: 3px;
+    bottom: 2px;
+    width: 15px;
+    height: 15px;
+  }
+  .homeBanner .tab4 form .radios .container p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .homeBanner .tab4 form .otherInputs .search {
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab4 form .otherInputs .search img {
+    width: 35.05px;
+    height: 35.05px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input {
+    font-size: 18px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input::placeholder {
+    font-size: 18px;
+  }
+  .homeBanner .tab4 form .otherInputs button {
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 18px;
+  }
+  .assemble .bgCover {
+    width: 95vw;
+  }
+  .assemble h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .assemble .wrapper {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+  }
+  .assemble .imgHolder img {
+    height: 90vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .assemble .gridContent .tabLink {
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+  }
+  .assemble .gridContent .tabLink img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .assemble .gridContent h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .assemble .gridContent .search {
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .assemble .gridContent .search img {
+    width: 30px;
+    height: 30px;
+  }
+  .assemble .gridContent .search input {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+  }
+  .assemble .gridContent .search input::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .assemble .gridContent .search input:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .assemble .gridContent .search input::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .assemble .gridContent .search input::placeholder {
+    font-size: 18px;
+  }
+  .assemble .gridContent .gallery {
+    width: 100%;
+    grid-gap: 20px;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .assemble .gridContent .gallery .galleryCard img {
+    width: auto;
+    height: 120px;
+  }
+  .assemble .gridContent .gallery .galleryCard p {
+    font-size: 16px;
+    color: #292929;
+  }
+  .assemble .assembleButtons a {
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 18px;
+  }
+  .assemble .assembleButtons .plan img {
+    height: 40px;
+    width: 40px;
+  }
+  .explore {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .explore .exploreContent h3 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .explore .exploreContent p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .explore .exploreContent a {
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    line-height: 40px;
+    font-size: 18px;
+  }
+  .explore .exploreCards {
+    grid-gap: 50px;
+  }
+  .explore .exploreCards .cardLayout {
+    width: auto;
+    height: 450px;
+    border-radius: 30px;
+  }
+  .explore .exploreCards .cardLayout .info {
+    min-width: 80%;
+    height: 60px;
+    border-radius: 30x;
+    padding: 0 15px;
+    font-size: 18px;
+  }
+  .explore .exploreCards .cardLayout span {
+    font-size: 18px;
+  }
+  .explore .exploreCards .cardLayout a {
+    min-width: 80%;
+    height: 60px;
+    justify-self: flex-end;
+  }
+  .explore .exploreCards .cardLayout a p {
+    font-size: 18px;
+  }
+  .explore .exploreCards .cardLayout a img {
+    width: 50px;
+    height: 50px;
+  }
+  .explore .exploreCards .cardLayout .overlay {
+    border-radius: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .explore .exploreCards .cardLayout .overlay .overlayInfo {
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .branches .wrapper, .productBranches .wrapper, .styleResources .wrapper {
+    width: 80vw !important;
+  }
+  .branches .wrapper h2, .productBranches .wrapper h2, .styleResources .wrapper h2 {
+    font-size: 40px;
+    line-height: 50p8;
+    text-align: center;
+  }
+  .branches .wrapper form .search, .productBranches .wrapper form .search, .styleResources .wrapper form .search {
+    width: 60vw;
+    height: 60px;
+  }
+  .branches .wrapper form .search img, .productBranches .wrapper form .search img, .styleResources .wrapper form .search img {
+    width: 30px;
+    height: 30px;
+  }
+  .branches .wrapper form .search input, .productBranches .wrapper form .search input, .styleResources .wrapper form .search input {
+    font-size: 18px;
+  }
+  .branches .wrapper form .search input::-webkit-input-placeholder, .productBranches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
+    color: #292929;
+    font-size: 18px;
+  }
+  .branches .wrapper form .search input:-ms-input-placeholder, .productBranches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
+    color: #292929;
+    font-size: 18px;
+  }
+  .branches .wrapper form .search input::-ms-input-placeholder, .productBranches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
+    color: #292929;
+    font-size: 18px;
+  }
+  .branches .wrapper form .search input::placeholder, .productBranches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
+    color: #292929;
+    font-size: 18px;
+  }
+  .branches .wrapper form .radios .container, .productBranches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .branches .wrapper form .radios .container .checkmark, .productBranches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
+    height: 30px;
+    width: 30px;
+  }
+  .branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    width: 14px;
+    height: 14px;
+  }
+  .branches .wrapper form .radios .container p, .productBranches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .branches .wrapper p, .productBranches .wrapper p, .styleResources .wrapper p {
+    font-size: 24px;
+  }
+  .branches .wrapper .hardware, .productBranches .wrapper .hardware, .styleResources .wrapper .hardware {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    width: 100% !important;
+  }
+  .branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
+    width: auto !important;
+    height: 280px;
+    padding: 10px !important;
+    border-radius: 25px !important;
+  }
+  .branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
+    width: auto;
+    height: 38px;
+    padding: 0 10px;
+    font-size: 18px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
+    border-radius: 25px !important;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+    width: 80%;
+    height: 38px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+    font-size: 18px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
+    font-size: 16px;
+    color: #1226AA;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .distance img, .productBranches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
+    width: 22.39px;
+    height: 31.98px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay:hover, .productBranches .wrapper .hardware .hardwareCard .overlay:hover, .styleResources .wrapper .hardware .hardwareCard .overlay:hover {
+    opacity: 1;
+  }
+  .differences h2 {
+    font-size: 60px;
+  }
+  .differences .differenceCard {
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  .differences .differenceCard img {
+    width: 100px;
+    height: 100px;
+  }
+  .differences .differenceCard h5 {
+    font-size: 22px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .differences .differenceCard .overlay {
+    border-radius: 30px;
+  }
+  .differences .differenceCard .overlay h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .differences .differenceCard .overlay p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .partners {
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+  }
+  .partners .partnerText h2 {
+    font-size: 40px;
+    line-height: 52px;
+    width: 100%;
+  }
+  .partners .partnerText a {
+    font-size: 18px;
+  }
+  .partners .partnerSlider .sliderCard {
+    border-radius: 30px;
+  }
+  .partners .partnerSlider .sliderCard img {
+    width: auto;
+    height: 350px;
+    border-radius: 30px;
+  }
+  .partners .partnerSlider .sliderCard p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .customers .titleSection h2 {
+    font-size: 40px;
+    line-height: 50px;
+    width: 80%;
+  }
+  .customers .titleSection a {
+    font-size: 18px;
+  }
+  .customers .customerSlider .customerCard {
+    width: auto;
+    height: 450px;
+    border-radius: 30px;
+  }
+  .customers .customerSlider .customerCard .overlay {
+    border-radius: 30px;
+    border: 2px solid #1226AA;
+  }
+  .customers .customerSlider .customerCard .name img {
+    width: 120px;
+    height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .customers .customerSlider .customerCard .name h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .customers .customerSlider .customerCard p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .customers .customerSlider .customerCard .ratings img {
+    width: 35px;
+    height: 35px;
+  }
+  .stylePoints img {
+    width: auto;
+    height: 450px;
+  }
+  .stylePoints .styleText h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .stylePoints .styleText h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .stylePoints .styleText a {
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .homeBanner .tabGrids .gridLink {
+    height: 200px;
+    padding: 0 15px !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homeBanner .tabGrids .gridLink img {
+    height: 40px;
+    width: 40px;
+  }
+  .homeBanner .tabGrids .gridLink h1 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .homeBanner .tabSection {
+    min-height: 500px;
+  }
+  .homeBanner .tab1 {
+    padding: 40px inherit !important;
+  }
+  .homeBanner .tab1 .textContent h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .homeBanner .tab1 .textContent form input, .homeBanner .tab1 .textContent form select, .homeBanner .tab1 .textContent form button {
+    min-height: 60px;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 0px 15px;
+  }
+  .homeBanner .tab1 .textContent form input::-webkit-input-placeholder, .homeBanner .tab1 .textContent form select::-webkit-input-placeholder, .homeBanner .tab1 .textContent form button::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab1 .textContent form input:-ms-input-placeholder, .homeBanner .tab1 .textContent form select:-ms-input-placeholder, .homeBanner .tab1 .textContent form button:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab1 .textContent form input::-ms-input-placeholder, .homeBanner .tab1 .textContent form select::-ms-input-placeholder, .homeBanner .tab1 .textContent form button::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab1 .textContent form input::placeholder, .homeBanner .tab1 .textContent form select::placeholder, .homeBanner .tab1 .textContent form button::placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab1 .textContent form .s-hidden {
+    padding-right: 10px;
+  }
+  .homeBanner .tab1 .textContent form .select {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .homeBanner .tab1 .textContent form .styledSelect {
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .homeBanner .tab1 .textContent form .styledSelect:after {
+    content: "";
+    width: 0;
+    height: 0;
+    top: 45%;
+    right: 15px;
+  }
+  .homeBanner .tab1 .textContent form .options {
+    padding: 10px;
+  }
+  .homeBanner .tab1 .textContent form .options li {
+    padding: 0 6px;
+    padding: 0 10px;
+  }
+  .homeBanner .tab1 img {
+    width: auto;
+    height: 400px;
+  }
+  .homeBanner .tab2 h4 {
+    font-size: 30px;
+    font-weight: 40px;
+  }
+  .homeBanner .tab2 .productCategory {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    grid-gap: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard {
+    width: auto;
+    height: 250px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .info {
+    min-width: 70%;
+    height: 35px;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .overlay {
+    border-radius: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayInfo {
+    width: auto;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayTxt {
+    font-size: 16px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .shopLink {
+    width: auto;
+    height: 40px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .shopLink img {
+    width: 30px;
+    height: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .shopLink p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .homeBanner .tab3 .textContent h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .homeBanner .tab3 .textContent form input, .homeBanner .tab3 .textContent form select, .homeBanner .tab3 .textContent form button {
+    min-height: 60px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0px 15px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab3 .textContent form input::-webkit-input-placeholder, .homeBanner .tab3 .textContent form select::-webkit-input-placeholder, .homeBanner .tab3 .textContent form button::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab3 .textContent form input:-ms-input-placeholder, .homeBanner .tab3 .textContent form select:-ms-input-placeholder, .homeBanner .tab3 .textContent form button:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab3 .textContent form input::-ms-input-placeholder, .homeBanner .tab3 .textContent form select::-ms-input-placeholder, .homeBanner .tab3 .textContent form button::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab3 .textContent form input::placeholder, .homeBanner .tab3 .textContent form select::placeholder, .homeBanner .tab3 .textContent form button::placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab3 .textContent form .s-hidden {
+    visibility: hidden;
+    padding-right: 10px;
+  }
+  .homeBanner .tab3 .textContent form .select {
+    width: 100% !important;
+    height: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .homeBanner .tab3 .textContent form .styledSelect {
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .homeBanner .tab3 .textContent form .styledSelect:after {
+    top: 45%;
+    right: 15px;
+  }
+  .homeBanner .tab3 .textContent form .options {
+    padding: 10px;
+  }
+  .homeBanner .tab3 .textContent form .options li {
+    padding: 0 6px;
+    margin: 0 0;
+    padding: 0 10px;
+  }
+  .homeBanner .tab3 img {
+    width: auto;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .homeBanner .tab4 h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .homeBanner .tab4 form .radios {
+    width: 50%;
+  }
+  .homeBanner .tab4 form .radios .container {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .homeBanner .tab4 form .radios .container .checkmark {
+    height: 24px;
+    width: 24px;
+    border: 4px solid #292929;
+  }
+  .homeBanner .tab4 form .radios .container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    width: 10px;
+    height: 10px;
+  }
+  .homeBanner .tab4 form .radios .container p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .homeBanner .tab4 form .otherInputs {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  .homeBanner .tab4 form .otherInputs .search {
+    width: auto;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab4 form .otherInputs .search img {
+    width: 35.05px;
+    height: 35.05px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input {
+    font-size: 16px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input::placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab4 form .otherInputs button {
+    width: auto;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+  .assemble .bgCover {
+    width: 95vw;
+  }
+  .assemble h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .assemble .wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .assemble .imgHolder img {
+    height: 300px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .assemble .gridContent .tabLink {
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+  }
+  .assemble .gridContent .tabLink img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .assemble .gridContent h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .assemble .gridContent .search {
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .assemble .gridContent .search img {
+    width: 30px;
+    height: 30px;
+  }
+  .assemble .gridContent .search input {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .assemble .gridContent .search input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .assemble .gridContent .search input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .assemble .gridContent .search input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .assemble .gridContent .search input::placeholder {
+    font-size: 16px;
+  }
+  .assemble .gridContent .gallery {
+    width: 100%;
+    grid-gap: 20px;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .assemble .gridContent .gallery .galleryCard img {
+    width: auto;
+    height: 120px;
+  }
+  .assemble .gridContent .gallery .galleryCard p {
+    font-size: 16px;
+    color: #292929;
+  }
+  .assemble .assembleButtons a {
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+  .assemble .assembleButtons .plan img {
+    height: 40px;
+    width: 40px;
+  }
+  .explore {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .explore .exploreContent h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .explore .exploreContent p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .explore .exploreContent a {
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  .explore .exploreCards {
+    grid-gap: 30px;
+  }
+  .explore .exploreCards .cardLayout {
+    width: auto;
+    height: 350px;
+    border-radius: 30px;
+  }
+  .explore .exploreCards .cardLayout .info {
+    min-width: 80%;
+    height: 60px;
+    border-radius: 30x;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  .explore .exploreCards .cardLayout span {
+    font-size: 16px;
+  }
+  .explore .exploreCards .cardLayout a {
+    min-width: 80%;
+    height: 60px;
+    justify-self: flex-end;
+  }
+  .explore .exploreCards .cardLayout a p {
+    font-size: 16px;
+  }
+  .explore .exploreCards .cardLayout a img {
+    width: 40px;
+    height: 40px;
+  }
+  .explore .exploreCards .cardLayout .overlay {
+    border-radius: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .explore .exploreCards .cardLayout .overlay .overlayInfo {
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .branches .wrapper h2, .productBranches .wrapper h2, .styleResources .wrapper h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .branches .wrapper form .search, .productBranches .wrapper form .search, .styleResources .wrapper form .search {
+    width: 60vw;
+    height: 60px;
+  }
+  .branches .wrapper form .search img, .productBranches .wrapper form .search img, .styleResources .wrapper form .search img {
+    width: 24px;
+    height: 24px;
+  }
+  .branches .wrapper form .search input, .productBranches .wrapper form .search input, .styleResources .wrapper form .search input {
+    font-size: 16px;
+  }
+  .branches .wrapper form .search input::-webkit-input-placeholder, .productBranches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
+    color: #292929;
+    font-size: 16px;
+  }
+  .branches .wrapper form .search input:-ms-input-placeholder, .productBranches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
+    color: #292929;
+    font-size: 16px;
+  }
+  .branches .wrapper form .search input::-ms-input-placeholder, .productBranches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
+    color: #292929;
+    font-size: 16px;
+  }
+  .branches .wrapper form .search input::placeholder, .productBranches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
+    color: #292929;
+    font-size: 16px;
+  }
+  .branches .wrapper form .radios .container, .productBranches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
+    position: relative;
+    padding-left: 0px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .branches .wrapper form .radios .container .checkmark, .productBranches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
+    height: 24px;
+    width: 24px;
+    border: 4px solid #292929;
+  }
+  .branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    width: 10px;
+    height: 10px;
+  }
+  .branches .wrapper form .radios .container p, .productBranches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .branches .wrapper p, .productBranches .wrapper p, .styleResources .wrapper p {
+    font-size: 18px;
+  }
+  .branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
+    width: auto;
+    height: 250px;
+    padding: 10px !important;
+    border-radius: 25px !important;
+  }
+  .branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
+    width: auto;
+    height: auto;
+    padding: 5px 2px;
+    font-size: 14px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
+    border-radius: 25px !important;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+    width: 80%;
+    height: 38px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+    font-size: 16px;
+    margin-top: 30px !important;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
+    font-size: 14px;
+    color: #1226AA;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .distance img, .productBranches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
+    width: 22.39px;
+    height: 31.98px;
+  }
+  .differences h2 {
+    font-size: 50px;
+  }
+  .differences .differenceCard {
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  .differences .differenceCard img {
+    width: 100px;
+    height: 100px;
+  }
+  .differences .differenceCard h5 {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .differences .differenceCard .overlay {
+    border-radius: 30px;
+  }
+  .differences .differenceCard .overlay h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .differences .differenceCard .overlay p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .partners {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .partners .partnerText {
+    margin-bottom: 20px;
+  }
+  .partners .partnerText h2 {
+    font-size: 32px;
+    line-height: 40px;
+    width: 100%;
+  }
+  .partners .partnerText a {
+    font-size: 16px;
+  }
+  .partners .partnerSlider .sliderCard {
+    border-radius: 30px;
+  }
+  .partners .partnerSlider .sliderCard img {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+  }
+  .partners .partnerSlider .sliderCard p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .customers .titleSection h2 {
+    font-size: 32px;
+    line-height: 40px;
+    width: 80%;
+  }
+  .customers .titleSection a {
+    font-size: 16px;
+  }
+  .customers .customerSlider .customerCard {
+    width: 100%;
+    height: 400px;
+  }
+  .customers .customerSlider .customerCard .name img {
+    width: 80px;
+    height: 80px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .customers .customerSlider .customerCard .name h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .customers .customerSlider .customerCard p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .customers .customerSlider .customerCard .ratings img {
+    width: 30px;
+    height: 30px;
+  }
+  .community h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .community .communityInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .community .communityInfo .imgWrapper {
+    width: 100%;
+    height: 300px;
+  }
+  .community .communityInfo .imgWrapper .linkBtns .commBtn {
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .community .communityInfo .imgWrapper .linkBtns .commBtn img {
+    width: 20.82px;
+    height: 20.03px;
+  }
+  .community .communityInfo .communityText h5 {
+    font-size: 24px;
+    line-height: 32px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .community .communityInfo .communityText h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .community .communityInfo .communityText p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    width: 100%;
+  }
+  .community .communityInfo .communityText a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .stylePoints img {
+    width: auto;
+    height: 400px;
+  }
+  .stylePoints .styleText h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .stylePoints .styleText h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .stylePoints .styleText a {
+    width: 150px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .homeBanner .tabGrids .gridLink {
+    height: auto;
+    padding: 20px !important;
+  }
+  .homeBanner .tabGrids .gridLink img {
+    height: 40px;
+    width: 40px;
+  }
+  .homeBanner .tabGrids .gridLink h1 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .homeBanner .tabSection {
+    min-height: 500px;
+  }
+  .homeBanner .tab1 {
+    padding: 40px 16px !important;
+  }
+  .homeBanner .tab1 .textContent h3 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .homeBanner .tab1 .textContent form input, .homeBanner .tab1 .textContent form select, .homeBanner .tab1 .textContent form button {
+    min-height: 60px;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 0px 15px;
+  }
+  .homeBanner .tab1 .textContent form input::-webkit-input-placeholder, .homeBanner .tab1 .textContent form select::-webkit-input-placeholder, .homeBanner .tab1 .textContent form button::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab1 .textContent form input:-ms-input-placeholder, .homeBanner .tab1 .textContent form select:-ms-input-placeholder, .homeBanner .tab1 .textContent form button:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab1 .textContent form input::-ms-input-placeholder, .homeBanner .tab1 .textContent form select::-ms-input-placeholder, .homeBanner .tab1 .textContent form button::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab1 .textContent form input::placeholder, .homeBanner .tab1 .textContent form select::placeholder, .homeBanner .tab1 .textContent form button::placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab1 .textContent form .s-hidden {
+    padding-right: 10px;
+  }
+  .homeBanner .tab1 .textContent form .select {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .homeBanner .tab1 .textContent form .styledSelect {
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .homeBanner .tab1 .textContent form .styledSelect:after {
+    content: "";
+    width: 0;
+    height: 0;
+    top: 45%;
+    right: 15px;
+  }
+  .homeBanner .tab1 .textContent form .options {
+    padding: 10px;
+  }
+  .homeBanner .tab1 .textContent form .options li {
+    padding: 0 6px;
+    padding: 0 10px;
+  }
+  .homeBanner .tab1 img {
+    width: auto;
+    height: 300px;
+  }
+  .homeBanner .tab2 h4 {
+    font-size: 24px;
+    font-weight: 30px;
+    text-align: center;
+  }
+  .homeBanner .tab2 .productCategory {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    grid-gap: 30px;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard {
+    width: 250px;
+    height: 250px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .info {
+    min-width: 100%;
+    height: 35px;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .overlay {
+    border-radius: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayInfo {
+    width: auto;
+    height: 35px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayTxt {
+    font-size: 16px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .shopLink {
+    width: auto;
+    height: 40px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .shopLink img {
+    width: 30px;
+    height: 30px;
+  }
+  .homeBanner .tab2 .productCategory .categoryCard .shopLink p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .homeBanner .tab3 {
+    padding: 40px 16px !important;
+  }
+  .homeBanner .tab3 .textContent h3 {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .homeBanner .tab3 .textContent form input, .homeBanner .tab3 .textContent form select, .homeBanner .tab3 .textContent form button {
+    min-height: 60px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0px 15px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab3 .textContent form input::-webkit-input-placeholder, .homeBanner .tab3 .textContent form select::-webkit-input-placeholder, .homeBanner .tab3 .textContent form button::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab3 .textContent form input:-ms-input-placeholder, .homeBanner .tab3 .textContent form select:-ms-input-placeholder, .homeBanner .tab3 .textContent form button:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab3 .textContent form input::-ms-input-placeholder, .homeBanner .tab3 .textContent form select::-ms-input-placeholder, .homeBanner .tab3 .textContent form button::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab3 .textContent form input::placeholder, .homeBanner .tab3 .textContent form select::placeholder, .homeBanner .tab3 .textContent form button::placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab3 .textContent form .s-hidden {
+    visibility: hidden;
+    padding-right: 10px;
+  }
+  .homeBanner .tab3 .textContent form .select {
+    width: 100% !important;
+    height: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .homeBanner .tab3 .textContent form .styledSelect {
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .homeBanner .tab3 .textContent form .styledSelect:after {
+    top: 45%;
+    right: 15px;
+  }
+  .homeBanner .tab3 .textContent form .options {
+    padding: 10px;
+  }
+  .homeBanner .tab3 .textContent form .options li {
+    padding: 0 6px;
+    margin: 0 0;
+    padding: 0 10px;
+  }
+  .homeBanner .tab3 img {
+    width: auto;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .homeBanner .tab4 {
+    padding: 40px 16px !important;
+  }
+  .homeBanner .tab4 h3 {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .homeBanner .tab4 form .radios {
+    width: 100%;
+  }
+  .homeBanner .tab4 form .radios .container {
+    padding-left: 0px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .homeBanner .tab4 form .radios .container .checkmark {
+    height: 24px;
+    width: 24px;
+    border: 4px solid #292929;
+  }
+  .homeBanner .tab4 form .radios .container .checkmark:after {
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    width: 10px;
+    height: 10px;
+  }
+  .homeBanner .tab4 form .radios .container p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .homeBanner .tab4 form .otherInputs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .homeBanner .tab4 form .otherInputs .search {
+    width: auto;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .homeBanner .tab4 form .otherInputs .search img {
+    width: 35.05px;
+    height: 35.05px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input {
+    font-size: 16px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab4 form .otherInputs .search input::placeholder {
+    font-size: 16px;
+  }
+  .homeBanner .tab4 form .otherInputs button {
+    width: auto;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+  .branches .wrapper, .productBranches .wrapper, .styleResources .wrapper {
+    width: 100vw !important;
+    border-radius: 0;
+  }
+  .branches .wrapper h2, .productBranches .wrapper h2, .styleResources .wrapper h2 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    text-align: center;
+  }
+  .branches .wrapper form .search, .productBranches .wrapper form .search, .styleResources .wrapper form .search {
+    width: 100%;
+    height: 60px;
+  }
+  .branches .wrapper form .search input, .productBranches .wrapper form .search input, .styleResources .wrapper form .search input {
+    font-size: 16px;
+  }
+  .branches .wrapper form .search input::-webkit-input-placeholder, .productBranches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .branches .wrapper form .search input:-ms-input-placeholder, .productBranches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .branches .wrapper form .search input::-ms-input-placeholder, .productBranches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .branches .wrapper form .search input::placeholder, .productBranches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
+    font-size: 16px;
+  }
+  .branches .wrapper form .radios .container, .productBranches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
+    position: relative;
+    padding-left: 0px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .branches .wrapper p, .productBranches .wrapper p, .styleResources .wrapper p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .branches .wrapper .hardware, .productBranches .wrapper .hardware, .styleResources .wrapper .hardware {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    padding: 0 20px;
+  }
+  .branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
+    width: auto;
+    height: 250px;
+    padding: 10px inherit !important;
+    border-radius: 25px !important;
+  }
+  .branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
+    width: auto;
+    height: auto;
+    padding: 5px 2px;
+    font-size: 16px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
+    border-radius: 25px !important;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+    width: 80%;
+    height: 38px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+    font-size: 16px;
+    margin-top: 30px !important;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
+    font-size: 16px;
+    color: #1226AA;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay .distance img, .productBranches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
+    width: 22.39px;
+    height: 31.98px;
+  }
+  .assemble {
+    padding: 16px !important;
+  }
+  .assemble .bgCover {
+    width: 100%;
+  }
+  .assemble h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .assemble .imgHolder img {
+    height: 300px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .assemble .gridContent .tabs {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  .assemble .gridContent .tabLink {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+  }
+  .assemble .gridContent .tabLink img {
+    width: 35px;
+    height: 35px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .assemble .gridContent h3 {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .assemble .gridContent .search {
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+  }
+  .assemble .gridContent .search img {
+    width: 30px;
+    height: 30px;
+  }
+  .assemble .gridContent .search input {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+  }
+  .assemble .gridContent .search input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .assemble .gridContent .search input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .assemble .gridContent .search input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .assemble .gridContent .search input::placeholder {
+    font-size: 16px;
+  }
+  .assemble .gridContent .gallery {
+    width: 100%;
+    grid-gap: 20px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .assemble .gridContent .gallery .galleryCard img {
+    width: auto;
+    height: 120px;
+  }
+  .assemble .gridContent .gallery .galleryCard p {
+    font-size: 16px;
+    color: #292929;
+  }
+  .assemble .assembleButtons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .assemble .assembleButtons a {
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+  .assemble .assembleButtons .plan {
+    margin-top: 20px;
+  }
+  .assemble .assembleButtons .plan img {
+    height: 40px;
+    width: 40px;
+  }
+  .differences h2 {
+    font-size: 45px;
+    line-height: 52px;
+    text-align: center;
+  }
+  .partners .partnerText {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .partners .partnerText h2 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .partners .partnerText a {
+    font-size: 16px;
+  }
+  .partners .partnerSlider .sliderCard img {
+    width: 100%;
+    height: 250px;
+  }
+  .customers .titleSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .customers .titleSection h2 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  .customers .titleSection a {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .customers .customerSlider .customerCard {
+    width: 100%;
+    height: 400px;
+  }
+  .customers .customerSlider .customerCard .name img {
+    width: 80px;
+    height: 80px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .customers .customerSlider .customerCard .name h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .customers .customerSlider .customerCard p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .customers .customerSlider .customerCard .ratings img {
+    width: 30px;
+    height: 30px;
+  }
+  .community {
+    padding: 16px !important;
+  }
+  .community .back {
+    width: 100%;
+  }
+  .community h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .community .communityInfo .imgWrapper {
+    width: 100%;
+    height: 300px;
+  }
+  .community .communityInfo .imgWrapper .linkBtns .commBtn {
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .community .communityInfo .imgWrapper .linkBtns .commBtn img {
+    width: 20.82px;
+    height: 20.03px;
+  }
+  .community .communityInfo .communityText {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .community .communityInfo .communityText h5 {
+    font-size: 24px;
+    line-height: 32px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .community .communityInfo .communityText h3 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .community .communityInfo .communityText p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    width: 100%;
+    text-align: center;
+  }
+  .community .communityInfo .communityText a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .stylePoints {
+    padding: 16px !important;
+  }
+  .stylePoints img {
+    width: auto;
+    height: 300px;
+  }
+  .stylePoints .styleText {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .stylePoints .styleText h2 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .stylePoints .styleText h5 {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .stylePoints .styleText a {
+    width: 250px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .productBanner, .roofingBanner {
   background: #F4F4F4;
   border: none;
@@ -3883,7 +6355,9 @@ footer .footerEnd p {
     width: 80vw !important;
   }
   .productBranches .wrapper h2 {
-    font-size: 32px;
+    font-size: 40px;
+    line-height: 50p8;
+    text-align: center;
   }
   .productBranches .wrapper form .search {
     width: 60vw;
@@ -3894,29 +6368,29 @@ footer .footerEnd p {
     height: 30px;
   }
   .productBranches .wrapper form .search input {
-    font-size: 16px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .search input::-webkit-input-placeholder {
     color: #292929;
-    font-size: 16px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .search input:-ms-input-placeholder {
     color: #292929;
-    font-size: 16px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .search input::-ms-input-placeholder {
     color: #292929;
-    font-size: 16px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .search input::placeholder {
     color: #292929;
-    font-size: 16px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .radios .container {
     position: relative;
     padding-left: 30px;
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .radios .container .checkmark {
     height: 30px;
@@ -3952,7 +6426,7 @@ footer .footerEnd p {
     width: auto;
     height: 38px;
     padding: 0 10px;
-    font-size: 16px;
+    font-size: 18px;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay {
     border-radius: 25px !important;
@@ -3962,10 +6436,10 @@ footer .footerEnd p {
     height: 38px;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt {
-    font-size: 16px;
+    font-size: 18px;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .distance p {
-    font-size: 14px;
+    font-size: 16px;
     color: #1226AA;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .distance img {
@@ -4501,6 +6975,7 @@ footer .footerEnd p {
   }
   .productBranches .wrapper h2 {
     font-size: 30px;
+    line-height: 40px;
   }
   .productBranches .wrapper form .search {
     width: 60vw;
@@ -4531,7 +7006,7 @@ footer .footerEnd p {
   }
   .productBranches .wrapper form .radios .container {
     position: relative;
-    padding-left: 30px;
+    padding-left: 0px;
     margin-bottom: 5px;
     font-size: 16px;
   }
@@ -8131,12 +10606,12 @@ footer .footerEnd p {
   color: #292929;
 }
 
-.partnershipBanner {
+.partnershipBanner, .projectBanner {
   background: #F4F4F4;
   border: none;
 }
 
-.partnershipBanner .back {
+.partnershipBanner .back, .projectBanner .back {
   background: #1226AA;
   width: 100%;
   height: 65%;
@@ -8144,42 +10619,1175 @@ footer .footerEnd p {
   left: 0;
 }
 
-.partnershipBanner .bannerTxt {
+.partnershipBanner .bannerTxt, .projectBanner .bannerTxt {
   z-index: 1;
 }
 
-.partnershipBanner .bannerTxt h1 {
+.partnershipBanner .bannerTxt h1, .projectBanner .bannerTxt h1 {
   font-size: 64px;
   font-weight: 900;
   color: white;
 }
 
-.partnershipBanner .bannerTxt p {
+.partnershipBanner .bannerTxt p, .projectBanner .bannerTxt p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
   color: #292929;
 }
 
-.partnershipBanner .bannerTxt h5 {
+.partnershipBanner .bannerTxt h5, .projectBanner .bannerTxt h5 {
   font-size: 24px;
   color: #292929;
 }
 
-.partnershipBanner .bannerTxt h6 {
+.partnershipBanner .bannerTxt h6, .projectBanner .bannerTxt h6 {
   font-size: 24px;
   color: white;
   font-weight: bolder;
 }
 
-.partnershipBanner .bannerTxt img {
+.partnershipBanner .bannerTxt img, .projectBanner .bannerTxt img {
   width: 39px;
   height: 39px;
 }
 
-.partnershipBanner .bannerImg {
+.partnershipBanner .bannerImg, .projectBanner .bannerImg {
   width: 939px;
   height: 554px;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 1;
+}
+
+.partnerGrids {
+  background: #F4F4F4;
+}
+
+.partnerGrids .top h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 56px;
+  color: #292929;
+}
+
+.partnerGrids .top h1 span {
+  color: #1226AA;
+}
+
+.partnerGrids .top p {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #292929;
+}
+
+.partnerGrids .partnerCard {
+  width: 100%;
+  min-height: 80vh;
+  border-radius: 30px;
+}
+
+.partnerGrids .partnerCard .overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.partnerGrids .partnerCard .top {
+  z-index: 3;
+}
+
+.partnerGrids .partnerCard .top span {
+  width: 100%;
+  height: 130px;
+  border-radius: 30px;
+}
+
+.partnerGrids .partnerCard .top span h4 {
+  font-size: 36px;
+  font-weight: bolder;
+  line-height: 40px;
+  color: #292929;
+}
+
+.partnerGrids .partnerCard .top p {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #292929;
+}
+
+.partnerGrids .partnerCard a {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bolder;
+  color: #1226AA;
+  z-index: 3;
+}
+
+.partnerGrids .partnerCard a img {
+  width: 90px;
+  height: 90px;
+}
+
+.partnerGrids .card1 {
+  background: #FFB548;
+}
+
+.partnerGrids .card1 span {
+  background: #FEBD5C;
+}
+
+.partnerGrids .card2 {
+  background: #1226AA;
+}
+
+.partnerGrids .card2 span {
+  background: #2C3EB3;
+}
+
+.partnerGrids .card2 span h4 {
+  color: white !important;
+}
+
+.partnerGrids .card2 p {
+  color: white !important;
+}
+
+.partnerGrids .card2 a {
+  color: #FFB548 !important;
+}
+
+.partnerGrids .card3 {
+  background: #00AE8D;
+}
+
+.partnerGrids .card3 span {
+  background: #64B49B;
+}
+
+.partnerGrids .card3 a {
+  color: #FFB548;
+}
+
+.partnerGrids .card4 {
+  background: #DD8797;
+}
+
+.partnerGrids .card4 span {
+  background: #D597A3;
+}
+
+.partnerDetails {
+  background: #F4F4F4;
+}
+
+.partnerDetails .back {
+  top: 0;
+  right: 0;
+  width: 95%;
+  height: 100%;
+  background: white !important;
+  z-index: 0;
+}
+
+.partnerDetails .wrapper {
+  -ms-grid-columns: 1.5fr 2fr;
+      grid-template-columns: 1.5fr 2fr;
+}
+
+.partnerDetails .wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.partnerDetails .wrapper h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900 !important;
+  color: #292929;
+  z-index: 2;
+}
+
+.partnerDetails .wrapper h1 span {
+  color: #1226AA;
+}
+
+.partnerDetails .wrapper p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+  z-index: 2;
+}
+
+.partnerDetails .wrapper a {
+  width: 400px;
+  height: 90px;
+  border-radius: 30px;
+  background: #FFB548;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bolder;
+}
+
+.partnerRequire {
+  background: #F4F4F4;
+}
+
+.partnerRequire h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #292929;
+  line-height: 56px;
+}
+
+.partnerRequire h1 span {
+  color: #1226AA;
+}
+
+.partnerRequire .req img {
+  width: 129px;
+  height: 129px;
+}
+
+.partnerRequire .req h5 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bolder;
+  color: #292929;
+}
+
+.partnerRequire .req p {
+  font-size: 24px;
+  font-weight: normal;
+  color: #292929;
+  line-height: 32px;
+}
+
+.partnerDownload {
+  background: #1226AA;
+}
+
+.partnerDownload .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+.partnerDownload .wrapper {
+  -ms-grid-columns: 2fr 1.5fr;
+      grid-template-columns: 2fr 1.5fr;
+  z-index: 3;
+}
+
+.partnerDownload .wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.partnerDownload .wrapper h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900 !important;
+  color: white;
+}
+
+.partnerDownload .wrapper a {
+  width: 400px;
+  height: 90px;
+  border-radius: 30px;
+  background: #FFB548;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bolder;
+}
+
+.projectsGrid {
+  background: #F4F4F4;
+}
+
+.projectsGrid h1 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bolder;
+  color: #292929;
+}
+
+.projectsGrid .projectCard {
+  width: auto;
+  height: 600px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.projectsGrid .projectCard .imgWrapper {
+  overflow: hidden;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.projectsGrid .projectCard .imgWrapper img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.projectsGrid .projectCard .imgWrapper img:hover {
+  width: 120% !important;
+  height: 120% !important;
+}
+
+.projectsGrid .projectCard .cardTxt {
+  background: white;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.projectsGrid .projectCard .cardTxt h4 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #292929;
+}
+
+.projectsGrid .projectCard .cardTxt p {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.projectDetails {
+  background: #F4F4F4;
+}
+
+.projectDetails .back {
+  top: 0;
+  right: 0;
+  background: white;
+  height: 100%;
+  width: 95%;
+  z-index: 0;
+}
+
+.projectDetails .topSection {
+  z-index: 2;
+  -ms-grid-columns: 1.5fr 2fr;
+      grid-template-columns: 1.5fr 2fr;
+}
+
+.projectDetails .topSection img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projectDetails .topSection .topText h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 56px;
+  color: #292929;
+}
+
+.projectDetails .topSection .topText h1 span {
+  color: #1226AA;
+}
+
+.projectDetails .topSection .topText .time img {
+  width: 40px;
+  height: 40px;
+}
+
+.projectDetails .topSection .topText .time h6 {
+  font-size: 18px;
+  line-height: 32px;
+  color: #1226AA;
+  font-weight: bolder;
+}
+
+.projectDetails .topSection .topText p {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+  color: #292929;
+  width: 80%;
+}
+
+.projectDetails .gallery {
+  z-index: 2;
+}
+
+.projectDetails .gallery .projectImg {
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.projectDetails .imgLightbox {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #EACBD1;
+}
+
+.projectDetails .imgLightbox .modalWrapper {
+  position: relative;
+}
+
+.projectDetails .imgLightbox .modalWrapper .close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.projectDetails .imgLightbox .modalWrapper .close img {
+  width: 48px;
+  height: 48px;
+}
+
+.projectDetails .imgLightbox .modalWrapper .modalContent .previous img {
+  width: 80px;
+  height: 80px;
+}
+
+.projectDetails .imgLightbox .modalWrapper .modalContent .modalImage {
+  width: 50vw;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projectDetails .imgLightbox .modalWrapper .modalContent .next img {
+  width: 80px;
+  height: 80px;
+}
+
+.resourceBanner {
+  background: #F4F4F4;
+  border: none;
+}
+
+.resourceBanner .back {
+  background: #1226AA;
+  width: 100%;
+  height: 65%;
+  top: 0;
+  left: 0;
+}
+
+.resourceBanner .bannerTxt {
+  z-index: 1;
+}
+
+.resourceBanner .bannerTxt h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+}
+
+.resourceBanner .bannerTxt p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.resourceBanner .bannerTxt h5 {
+  font-size: 24px;
+  color: #292929;
+}
+
+.resourceBanner .bannerTxt h6 {
+  font-size: 24px;
+  color: white;
+  font-weight: bolder;
+}
+
+.resourceBanner .bannerTxt img {
+  width: 39px;
+  height: 39px;
+}
+
+.resourceBanner .bannerImg {
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.featuredResources {
+  background: #F4F4F4;
+}
+
+.featuredResources .back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 95%;
+  height: 100%;
+  background: white !important;
+  z-index: 0;
+}
+
+.featuredResources .featuresInfo {
+  z-index: 1;
+}
+
+.featuredResources .featuresInfo .imgWrapper {
+  width: 80vw;
+  height: 60vh;
+}
+
+.featuredResources .featuresInfo .imgWrapper .resourceImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.featuredResources .featuresInfo .imgWrapper .linkBtns {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.featuredResources .featuresInfo .imgWrapper .linkBtns .commBtn {
+  width: 90px;
+  height: 73px;
+  cursor: pointer;
+}
+
+.featuredResources .featuresInfo .imgWrapper .linkBtns .commBtn img {
+  width: 25.82px;
+  height: 30.03px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 5;
+}
+
+.featuredResources .featuresInfo .imgWrapper .linkBtns .btn1 {
+  background: #292929 !important;
+}
+
+.featuredResources .featuresInfo .imgWrapper .linkBtns .btn2 {
+  background: #1226AA !important;
+}
+
+.featuredResources .featuresInfo .featuresText h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+  color: #292929;
+}
+
+.featuredResources .featuresInfo .featuresText h1 span {
+  color: #1226AA;
+}
+
+.featuredResources .featuresInfo .featuresText h3 {
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 48px;
+}
+
+.featuredResources .featuresInfo .featuresText p {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+  color: #292929;
+  width: 70%;
+}
+
+.featuredResources .featuresInfo .featuresText a {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+  color: #1226AA;
+  text-decoration: underline;
+}
+
+.resourceFilter {
+  background: #F4F4F4;
+}
+
+.resourceFilter .filter p {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.resourceFilter .filter span {
+  width: auto;
+  height: 95px;
+  background: white;
+  border-radius: 30px;
+  border: 2px solid #1629a323;
+}
+
+.resourceFilter .filter span h5 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: bolder;
+  color: #292929;
+}
+
+.resourceFilter .filter span img {
+  width: 60px;
+  height: 60px;
+}
+
+.resourceFilter .filterContent {
+  background: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.resourceFilter .filterContent .close {
+  width: 48px;
+  height: 48px;
+}
+
+.resourceFilter .filterContent p {
+  font-size: 24px;
+  line-height: 32px;
+  color: #292929;
+  font-weight: normal;
+}
+
+.resourceFilter .filterContent h5 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #292929;
+  font-weight: bolder;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.resourceFilter .filterContent h5:hover {
+  color: #1226AA;
+}
+
+.resourceFilter .filterContent .active {
+  color: #1226AA;
+}
+
+.resourceFilter .resources .resource {
+  background: white;
+  border-radius: 30px;
+  height: 700px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.resourceFilter .resources .resource img {
+  width: 100%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+}
+
+.resourceFilter .resources .resource p {
+  font-size: 24px;
+  line-height: 32px;
+  color: #292929;
+  font-weight: normal;
+}
+
+.resourceFilter .resources .resource:hover {
+  border: 2px solid #707070;
+}
+
+.resourceContent {
+  background: #F4F4F4;
+}
+
+.resourceContent .back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 95%;
+  height: 100%;
+  background: white;
+  z-index: 0;
+}
+
+.resourceContent .top {
+  z-index: 2;
+}
+
+.resourceContent .top .resourceImage {
+  width: 100%;
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.resourceContent .top .textContent h4 {
+  font-size: 48px;
+  line-height: 56px;
+  color: #292929;
+  font-weight: bolder;
+}
+
+.resourceContent .top .textContent .time img {
+  width: 40px;
+  height: 40px;
+}
+
+.resourceContent .top .textContent .time h6 {
+  font-size: 18px;
+  line-height: 32px;
+  color: #1226AA;
+  font-weight: bolder;
+}
+
+.resourceContent .top .textContent p {
+  font-size: 24px;
+  line-height: 40px;
+  color: #292929;
+  font-weight: normal;
+}
+
+.resourceContent .textWrap {
+  z-index: 2;
+}
+
+.resourceContent .textWrap p {
+  font-size: 24px;
+  line-height: 40px;
+  color: #292929;
+  font-weight: normal;
+}
+
+.resourceContent .bottom {
+  z-index: 2;
+}
+
+.resourceContent .bottom .author img {
+  width: 100px;
+  height: 100px;
+}
+
+.resourceContent .bottom .author h6 {
+  font-size: 24px;
+  line-height: 40px;
+  color: #292929;
+  font-weight: bold;
+}
+
+.resourceContent .bottom .author p {
+  font-size: 24px;
+  line-height: 40px;
+  color: #292929;
+  font-weight: normal;
+}
+
+.resourceContent .bottom .shareBtn {
+  height: 70px;
+  width: auto;
+  background: #1226AA;
+  border-radius: 30px;
+  padding: 0 24px;
+}
+
+.resourceContent .bottom .shareBtn p {
+  font-size: 16px;
+  line-height: 40px;
+  color: white;
+  font-weight: bolder;
+}
+
+.resourceContent .bottom .shareBtn img {
+  width: 46px;
+  height: 38px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.relatedResources {
+  background: #F4F4F4;
+}
+
+.relatedResources h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: bolder;
+  color: #292929;
+}
+
+.relatedResources h1 span {
+  color: #1226AA;
+}
+
+.relatedResources p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.relatedResources .resources .resource {
+  background: white;
+  border-radius: 30px;
+  height: 700px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.relatedResources .resources .resource img {
+  width: 100%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+}
+
+.relatedResources .resources .resource p {
+  font-size: 24px;
+  line-height: 32px;
+  color: #292929;
+  font-weight: normal;
+}
+
+.relatedResources .resources .resource:hover {
+  border: 2px solid #707070;
+}
+
+.relatedResources .more {
+  width: 400px;
+  height: 85px;
+  border-radius: 30px;
+  color: #292929;
+  background: #FFB548;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bolder;
+}
+
+.downloadsBanner {
+  background: #F4F4F4;
+  border: none;
+}
+
+.downloadsBanner .back {
+  background: #1226AA;
+  width: 100%;
+  height: 65%;
+  top: 0;
+  left: 0;
+}
+
+.downloadsBanner .bannerTxt {
+  z-index: 1;
+}
+
+.downloadsBanner .bannerTxt h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+}
+
+.downloadsBanner .bannerTxt p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.downloadsBanner .bannerTxt h5 {
+  font-size: 24px;
+  color: #292929;
+}
+
+.downloadsBanner .bannerTxt h6 {
+  font-size: 24px;
+  color: white;
+  font-weight: bolder;
+}
+
+.downloadsBanner .bannerTxt img {
+  width: 39px;
+  height: 39px;
+}
+
+.downloadsBanner .bannerImg {
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.downloadsFilter {
+  background: #F4F4F4;
+}
+
+.downloadsFilter .filter p {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.downloadsFilter .filter span {
+  width: auto;
+  height: 95px;
+  background: white;
+  border-radius: 30px;
+  border: 2px solid #1629a323;
+}
+
+.downloadsFilter .filter span h5 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: bolder;
+  color: #292929;
+}
+
+.downloadsFilter .filter span img {
+  width: 60px;
+  height: 60px;
+}
+
+.downloadsFilter .filterContent {
+  background: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.downloadsFilter .filterContent .close {
+  width: 48px;
+  height: 48px;
+}
+
+.downloadsFilter .filterContent p {
+  font-size: 24px;
+  line-height: 32px;
+  color: #292929;
+  font-weight: normal;
+}
+
+.downloadsFilter .filterContent h5 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #292929;
+  font-weight: bolder;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.downloadsFilter .filterContent h5:hover {
+  color: #1226AA;
+}
+
+.downloadsFilter .filterContent .active {
+  color: #1226AA;
+}
+
+.downloadsFilter .downloads .download {
+  background: white;
+  border-radius: 30px;
+  height: 500px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.downloadsFilter .downloads .download .overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+.downloadsFilter .downloads .download p {
+  font-size: 32px;
+  line-height: 40px;
+  color: #292929;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.downloadsFilter .downloads .download h6 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #292929;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.downloadsFilter .downloads .download .downloadIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.downloadsFilter .downloads .download:hover {
+  background: #1226AA;
+}
+
+.downloadsFilter .downloads .download:hover h6 {
+  color: #FFB548 !important;
+}
+
+.downloadsFilter .downloads .download:hover p {
+  color: white !important;
+}
+
+.faqBanner {
+  background: #F4F4F4;
+  border: none;
+}
+
+.faqBanner .back {
+  background: #1226AA;
+  width: 100%;
+  height: 65%;
+  top: 0;
+  left: 0;
+}
+
+.faqBanner .bannerTxt {
+  z-index: 1;
+}
+
+.faqBanner .bannerTxt h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+}
+
+.faqBanner .bannerTxt p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.faqBanner .bannerTxt h5 {
+  font-size: 24px;
+  color: #292929;
+}
+
+.faqBanner .bannerTxt h6 {
+  font-size: 24px;
+  color: white;
+  font-weight: bolder;
+}
+
+.faqBanner .bannerTxt img {
+  width: 39px;
+  height: 39px;
+}
+
+.faqBanner .bannerImg {
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.faqFilter {
+  background: #F4F4F4;
+}
+
+.faqFilter .filter p {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.faqFilter .filter span {
+  width: auto;
+  height: 95px;
+  background: white;
+  border-radius: 30px;
+  border: 2px solid #1629a323;
+}
+
+.faqFilter .filter span h5 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: bolder;
+  color: #292929;
+}
+
+.faqFilter .filter span img {
+  width: 60px;
+  height: 60px;
+}
+
+.faqFilter .filterContent {
+  background: white;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.faqFilter .filterContent .close {
+  width: 48px;
+  height: 48px;
+}
+
+.faqFilter .filterContent p {
+  font-size: 24px;
+  line-height: 32px;
+  color: #292929;
+  font-weight: normal;
+}
+
+.faqFilter .filterContent h5 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #292929;
+  font-weight: bolder;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.faqFilter .filterContent h5:hover {
+  color: #1226AA;
+}
+
+.faqFilter .filterContent .active {
+  color: #1226AA;
 }
 /*# sourceMappingURL=main.css.map */

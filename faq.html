@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/tailwind.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     
-    <title>Space & Style | Style Partnership</title>
+    <title>Space & Style | Style FAQ</title>
 </head>
 <body>
     <div class="app" id="app">
@@ -77,81 +77,93 @@
         </div>
         
         <main class="w-full">
-            <!--PARTNERSHIP BANNER SECTION-->
-            <div class="partnershipBanner relative w-full h-auto pl-24 pb-24 grid grid-cols-2">
+            <!--FAQ BANNER SECTION-->
+            <div class="faqBanner relative w-full h-auto pl-24 pb-24 grid grid-cols-2">
                 <div class="back absolute"></div>
                 <div class="bannerTxt h-full flex flex-col justify-end items-start space-y-3 pb-5">
-                    <h1 class="mb-10">Style Partnership</h1>
-                    <p class="w-4/5">Now is a great time to consider
-                        becoming a partner with
-                        Space & Style. </p>
+                    <h1 class="mb-10">Frequently Asked Questions</h1>
+                    <p class="lg:w-4/5 md:w-4/5 w-full">Get answers to some of the most common
+                        questions about the Space & Style products.</p>
                 </div>
-                <img src="./assets/style points banner.png" alt="" class="bannerImg mt-24">
+                <img src="./assets/downloads banner.png" alt="" class="bannerImg mt-24">
             </div>
             
-            <!--PARTNERSHIP GRIDS-->
-            <div class="partnerGrids relative w-full h-full lg:px-24 md:px-12 px-6 lg:pb-24 md:pb-12 pb-6">
-                <div class="top flex items-center lg:space-x-8 md:space-x-4 lg:mb-8 md:mb-4 mb-3">
-                    <h1>To <span>better</span><br/>
-                        partnership</h1>
-                    <p class="lg:w-3/5 w-full">We provide a variety of tools, resources and programming to help our partners succeed in their building and construction projects.</p>
+            <!--FAQ FILTER-->
+            <div class="faqFilter lg:px-24 md:px-12 px-5 lg:pb-24 md:pb-12 pb-6">
+                <div class="filter flex items-center space-x-8">
+                    <p>Search for questions about our products</p>
+                    <span @click="activateFilter=true" class="flex items-center space-x-5 lg:p-6 md:p-4 p-3 cursor-pointer">
+                        <h5>All Categories</h5>
+                        <img src="./assets/arrow down.png" alt="" v-show="activateFilter==false">
+                        <img src="./assets/arrow up.png" alt="" v-show="activateFilter==true">
+                    </span>
                 </div>
-                <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-8 gap-5">
-                    <div class="partnerCard card1 relative flex flex-col justify-between items-start lg:p-10 md:p-6 p-5">
-                        <img src="./assets/PATTERN.png" alt="" class="overlay absolute">
-                        <div class="top relative lg:space-y-16">
-                            <span class="flex items-center jusify-start p-5"><h4>Developer</h4></span>
-                            <p>Assemble the building materials
-                            for your 1 bedroom home.
-                            Assemble the building materials
-                            for your 1 bedroom home.</p>
-                        </div>
-                        <a href="./partnership_developer.html" class="more relative flex items-center space-x-4 lg:mb-8 md:mb-6 mb-4">
-                            <h6>Learn More</h6>
-                            <img src="./assets/Forward Button.png" alt="">
-                        </a>
+                <div v-show="activateFilter==true" class="filterContent relative w-full h-auto p-5 mt-5">
+                    <div class="flex items-center justify-between">
+                        <p>Select topic</p>
+                        <img @click="activateFilter=false" src="./assets/close_black_24dp.png" alt="" class="close cursor-pointer">
                     </div>
-                    <div class="partnerCard card2 relative flex flex-col justify-between items-start lg:p-10 md:p-6 p-5">
-                        <img src="./assets/PATTERN.png" alt="" class="overlay absolute">
-                        <div class="top relative lg:space-y-16">
-                            <span class="flex items-center jusify-start p-5"><h4>Architect</h4></span>
-                            <p>Assemble the building materials
-                            for your 1 bedroom home.
-                            Assemble the building materials
-                            for your 1 bedroom home.</p>
-                        </div>
-                        <a href="./partnership_architect.html" class="more relative flex items-center space-x-4 lg:mb-8 md:mb-6 mb-4">
-                            <h6>Learn More</h6>
-                            <img src="./assets/forward btn architect.png" alt="">
-                        </a>
+                    <div class="flex items-center justify-between mt-12 lg:w-4/5">
+                        <h5>Roofing</h5>
+                        <h5 class="active">Flooring</h5>
+                        <h5>Drainage</h5>
+                        <h5>Steel Structures</h5>
+                        <h5>General Materials</h5>
                     </div>
-                    <div class="partnerCard card3 relative flex flex-col justify-between items-start lg:p-10 md:p-6 p-5">
-                        <img src="./assets/PATTERN.png" alt="" class="overlay absolute">
-                        <div class="top relative lg:space-y-16">
-                            <span class="flex items-center jusify-start p-5"><h4>Handyman</h4></span>
-                            <p>Assemble the building materials
-                            for your 1 bedroom home.
-                            Assemble the building materials
-                            for your 1 bedroom home.</p>
+                    <div class="spacer lg:h-24 md:h-12 h-6"></div>
+                </div>
+                
+                <!--FAQ-->
+                <div class="faq flex flex-col w-full h-auto mt-12">        
+                    <div class="accordion">
+                        <div class="accord p-5">
+                            <span @click.prevent="toggleAccord(1)" :class="{'cursor-pointer flex items-center justify-between mb-5':true}">
+                                <h4>Question title maximum of 14 words in one sentence </h4>
+                                <img src="./assets/arrow up.png" alt="" v-show="activeGroup==1">
+                                <img src="./assets/arrow down.png" alt="" v-show="activeGroup!==1">
+                            </span>
+                            <p v-show="activeGroup==1">Space & Style is heavily invested in our local community and the world at large to help make it a better place for future generations. We help you get updated with latest building tips for a successful project</p>
                         </div>
-                        <a href="./partnership_handyman.html" class="more relative flex items-center space-x-4 lg:mb-8 md:mb-6 mb-4">
-                            <h6>Learn More</h6>
-                            <img src="./assets/forward btn handyman.png" alt="">
-                        </a>
-                    </div>
-                    <div class="partnerCard card4 relative flex flex-col justify-between items-start lg:p-10 md:p-6 p-5">
-                        <img src="./assets/PATTERN.png" alt="" class="overlay absolute">
-                        <div class="top relative lg:space-y-16">
-                            <span class="flex items-center jusify-start p-5"><h4>Contractor</h4></span>
-                            <p>Assemble the building materials
-                            for your 1 bedroom home.
-                            Assemble the building materials
-                            for your 1 bedroom home.</p>
+                        <div class="accord p-5">
+                            <span @click.prevent="toggleAccord(2)" :class="{'cursor-pointer flex items-center justify-between mb-5':true}">
+                                <h4>Question title maximum of 14 words in one sentence </h4>
+                                <img src="./assets/arrow up.png" alt="" v-show="activeGroup==2">
+                                <img src="./assets/arrow down.png" alt="" v-show="activeGroup!==2">
+                            </span>
+                            <p v-show="activeGroup==2">Space & Style is heavily invested in our local community and the world at large to help make it a better place for future generations. We help you get updated with latest building tips for a successful project</p>
                         </div>
-                        <a href="./partnership_contractor.html" class="more relative flex items-center space-x-4 lg:mb-8 md:mb-6 mb-4">
-                            <h6>Learn More</h6>
-                            <img src="./assets/forward btn contractor.png" alt="">
-                        </a>
+                        <div class="accord p-5">
+                            <span @click.prevent="toggleAccord(3)" :class="{'cursor-pointer flex items-center justify-between mb-5':true}">
+                                <h4>Question title maximum of 14 words in one sentence </h4>
+                                <img src="./assets/arrow up.png" alt="" v-show="activeGroup==3">
+                                <img src="./assets/arrow down.png" alt="" v-show="activeGroup!==3">
+                            </span>
+                            <p v-show="activeGroup==3">Space & Style is heavily invested in our local community and the world at large to help make it a better place for future generations. We help you get updated with latest building tips for a successful project</p>
+                        </div>
+                        <div class="accord p-5">
+                            <span @click.prevent="toggleAccord(4)" :class="{'cursor-pointer flex items-center justify-between mb-5':true}">
+                                <h4>Question title maximum of 14 words in one sentence </h4>
+                                <img src="./assets/arrow up.png" alt="" v-show="activeGroup==4">
+                                <img src="./assets/arrow down.png" alt="" v-show="activeGroup!==4">
+                            </span>
+                            <p v-show="activeGroup==4">Space & Style is heavily invested in our local community and the world at large to help make it a better place for future generations. We help you get updated with latest building tips for a successful project</p>
+                        </div>
+                        <div class="accord p-5">
+                            <span @click.prevent="toggleAccord(5)" :class="{'cursor-pointer flex items-center justify-between mb-5':true}">
+                                <h4>Question title maximum of 14 words in one sentence </h4>
+                                <img src="./assets/arrow up.png" alt="" v-show="activeGroup==5">
+                                <img src="./assets/arrow down.png" alt="" v-show="activeGroup!==5">
+                            </span>
+                            <p v-show="activeGroup==5">Space & Style is heavily invested in our local community and the world at large to help make it a better place for future generations. We help you get updated with latest building tips for a successful project</p>
+                        </div>
+                        <div class="accord p-5">
+                            <span @click.prevent="toggleAccord(6)" :class="{'cursor-pointer flex items-center justify-between mb-5':true}">
+                                <h4>Question title maximum of 14 words in one sentence </h4>
+                                <img src="./assets/arrow up.png" alt="" v-show="activeGroup==6">
+                                <img src="./assets/arrow down.png" alt="" v-show="activeGroup!==6">
+                            </span>
+                            <p v-show="activeGroup==6">Space & Style is heavily invested in our local community and the world at large to help make it a better place for future generations. We help you get updated with latest building tips for a successful project</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -217,10 +229,15 @@
     <script>
         let vue1 = new Vue({
             el: '#app',
-            data:{
-                activeImpact: 1,
+            data: {
+                activateFilter: false,
+                activeGroup: 1
             },
-            methods: {}
+            methods: {
+                toggleAccord(group) {
+                    this.activeGroup = group
+                } 
+            }
         });
     </script>
 </body>

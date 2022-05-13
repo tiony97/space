@@ -1762,7 +1762,9 @@
         .wrapper {
             width: 80vw !important;
             h2 {
-                font-size: 32px;
+                font-size: 40px;
+                line-height: 50p8;
+                text-align: center;
             }
             form {
                 .search {
@@ -1773,10 +1775,10 @@
                         height: 30px;
                     }
                     input {
-                        font-size: 16px;
+                        font-size: 18px;
                         &::placeholder {
                             color: $dark;
-                            font-size: 16px;
+                            font-size: 18px;
                         }
                     }
                 }
@@ -1785,7 +1787,7 @@
                         position: relative;
                         padding-left: 30px;
                         margin-bottom: 5px;
-                        font-size: 16px;
+                        font-size: 18px;
                         .checkmark {
                             height: 30px;
                             width: 30px;
@@ -1820,7 +1822,7 @@
                         width: auto;
                         height: 38px;
                         padding: 0 10px;
-                        font-size: 16px;
+                        font-size: 18px;
                     }
                     .overlay {
                         border-radius: 25px !important;
@@ -1829,11 +1831,11 @@
                             height: 38px;
                         }
                         .overlayTxt {
-                            font-size: 16px;
+                            font-size: 18px;
                         }
                         .distance {
                             p {
-                                font-size: 14px;
+                                font-size: 16px;
                                 color: $blue;
                             }
                             img {
@@ -2455,6 +2457,7 @@
         .wrapper {
             h2 {
                 font-size: 30px;
+                line-height: 40px;
             }
             form {
                 .search {
@@ -2475,7 +2478,7 @@
                 .radios {
                     .container {
                         position: relative;
-                        padding-left: 30px;
+                        padding-left: 0px;
                         margin-bottom: 5px;
                         font-size: 16px;
                         .checkmark {

@@ -192,7 +192,7 @@
                 width: 300px;
                 height: 315px;
                 border-radius: 50px;
-                background: url('../assets/IMAGE\ HOLDER.png') no-repeat center center;
+                background: url('../assets/project\ img\ 2.png') no-repeat center center;
                 background-size: cover;
                 .info {
                     min-width: 184px;
@@ -507,10 +507,13 @@
             color: $blue !important;
         }
     }
+    .wrapper {
+        grid-template-columns: 1fr 2fr;
+    }
     .imgHolder {
         img {
             height: 647px;
-            width: 757px;
+            width: auto;
         }
     }
     .gridContent {
@@ -518,7 +521,7 @@
             width: 141px;
             height: 97px;
             background: white;
-            border-radius: 25px;
+            border-radius: 30px;
             box-shadow: 2px 2px 2px 2px lighten($color: $dark, $amount: 75%);
             transition: all .3s ease-in-out;
         }
@@ -555,12 +558,12 @@
             }
         }
         .gallery {
-            max-width: 870px;
+            max-width: 100%;
             grid-row-gap: 50px;
             .galleryCard {
                 img {
-                    width: 158px;
-                    height: 169px;
+                    width: 170px;
+                    height: 170px;
                 }
                 p {
                     font-size: 16px;
@@ -595,6 +598,7 @@
 
 //EXPLORE SECTION
 .explore {
+    grid-template-columns: 1fr 2fr;
     .exploreContent {
         h3 {
             font-size: 48px;
@@ -618,6 +622,11 @@
             background: transparent;
             color: $blue;
             font-size: 24px;
+            transition: all .2s ease-in-out;
+            &:hover {
+                background: $blue;
+                color: white;
+            }
         }
     }
     .exploreCards {
@@ -675,19 +684,19 @@
             }
         }
         .exploreCard1 {
-            background: url('../assets/MATERIAL\ HOLDER.png') no-repeat center center;
+            background: url('../assets/drainage.png') no-repeat center center;
             background-size: cover;
         }
         .exploreCard2 {
-            background: url('../assets/MATERIAL\ HOLDER.png') no-repeat center center;
+            background: url('../assets/drainage.png') no-repeat center center;
             background-size: cover;
         }
         .exploreCard3 {
-            background: url('../assets/MATERIAL\ HOLDER.png') no-repeat center center;
+            background: url('../assets/drainage.png') no-repeat center center;
             background-size: cover;
         }
         .exploreCard4 {
-            background: url('../assets/MATERIAL\ HOLDER.png') no-repeat center center;
+            background: url('../assets/drainage.png') no-repeat center center;
             background-size: cover;
         }
     }
@@ -937,7 +946,7 @@
             border: 2px solid #AAAAAA;
             border-radius: 50px;
             img {
-                width: 466px;
+                width: 100%;
                 height: 526px;
                 border-radius: 50px;
                 object-fit: cover;
@@ -1059,18 +1068,20 @@
         width: 95%;
         height: 100%;
         background: $light;
-        z-index: -1;
+        z-index: 0;
     }
     h2 {
         font-size: 48px;
         font-weight: bolder;
         line-height: 56px;
         color: $dark;
+        z-index: 1;
         span {
             color: $blue;
         }
     }
     .communityInfo {
+        z-index: 1;
         .imgWrapper {
             width: 80vw;
             height: 60vh;
@@ -1081,7 +1092,7 @@
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
-                z-index: -1;
+                z-index: 1;
             }
             .linkBtns {
                 position: absolute;
@@ -1186,5 +1197,2498 @@
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
+.homeBanner {
+    //TAB LINKS
+    .tabGrids {
+        .gridLink {
+            height: 284px;
+            padding: 0 15px !important;
+            img {
+                height: 60px;
+                width: 60px;
+            }
+            h1 {
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+    }
+    
+    //TAB SECTIONS
+    .tabSection {
+        min-height: 700px;
+    }
+    
+    //Actual tabs
+    .tab1 {
+        .textContent {
+            h3 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            form {
+                input,select,button {
+                    min-height: 80px;
+                    font-size: 18px;
+                    padding: 0px 15px;
+                    &::placeholder {
+                        font-size: 18px;
+                    }
+                }
+                .s-hidden {
+                    padding-right: 10px;
+                }
+                .select {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+                .styledSelect {
+                    padding:0 20px;
+                    font-size: 18px;
+                    line-height: 32px;
+                    &:after {
+                        content:"";
+                        width:0;
+                        height:0;
+                        top: 45%;
+                        right: 20px;
+                    }
+                }
+                .options {
+                    padding: 10px;
+                    li {
+                        padding:0 6px;
+                        padding:0 10px;
+                    }
+                }
+                button {
+                    background: $orange;
+                    color: $dark;
+                    font-weight: 900 !important;
+                }
+            }
+        }
+        img {
+            width: auto;
+            height: 490px;
+        }
+    }
+    
+    .tab2 {
+        h4 {
+            font-size: 32px;
+            font-weight: 40px;
+        }
+        .productCategory {
+            grid-template-columns: repeat(4, 1fr) !important;
+            .categoryCard {
+                width: auto;
+                height: 315px;
+                .info {
+                    min-width: 70%;
+                    height: 38px;
+                    border-radius: 30px;
+                    padding: 0 20px;
+                    font-size: 18px;
+                }
+                .overlay {
+                    border-radius: 30px;
+                    .overlayInfo {
+                        width: auto;
+                        height: 64px;
+                        border-radius: 30px;
+                    }
+                    .overlayTxt {
+                        font-size: 18px;
+                    }
+                }
+                .shopLink {
+                    width: auto;
+                    height: 44px;
+                    border-radius: 30px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .tab3 {
+        .textContent {
+            h3 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            form {
+                input,select,button {
+                    min-height: 80px;
+                    width: 100%;
+                    font-size: 18px;
+                    padding: 0px 15px;
+                    border-radius: 30px;
+                    &::placeholder {
+                        font-size: 18px;
+                    }
+                }
+                
+                .s-hidden {
+                    visibility:hidden;
+                    padding-right: 10px;
+                }
+                .select {
+                    width: 100% !important;
+                    height: 100%;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                .styledSelect {
+                    padding:0 15px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    &:after {
+                        top: 45%;
+                        right: 20px;
+                    }
+                }
+                .options {
+                    padding: 10px;
+                    li {
+                        padding:0 6px;
+                        margin:0 0;
+                        padding:0 10px;
+                    }
+                }
+            }
+        }
+        img {
+            width: auto;
+            height: 494px;
+            object-fit: cover;
+        }
+    }
+    
+    .tab4 {
+        h3 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        form {
+            .radios {
+                .container {
+                    font-size: 18px;
+                    .checkmark {
+                        height: 30px;
+                        width: 30px;
+                        &:after {
+                            top: 2px;
+                            left: 3px;
+                            right: 3px;
+                            bottom: 2px;
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                    p {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+            }
+            .otherInputs {
+                .search {
+                    width: 350px;
+                    height: 80px;
+                    border-radius: 30px;
+                    img {
+                        width: 35.05px;
+                        height: 35.05px;
+                    }
+                    input {
+                        font-size: 18px;
+                        &::placeholder {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                button {
+                    width: 350px;
+                    height: 80px;
+                    border-radius: 30px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+.assemble {
+    .bgCover {
+        width: 95vw;
+    }
+    h1 {
+        font-size: 45px;
+        line-height: 56px;
+    }
+    .wrapper {
+        grid-template-columns: 1.5fr 2fr;
+    }
+    .imgHolder {
+        img {
+            height: 90vh;
+            object-fit: cover;
+        }
+    }
+    .gridContent {
+        .tabLink {
+            width: 100px;
+            height: 100px;
+            border-radius: 30px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        
+        h3 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .search {
+            width: 100%;
+            height: 60px;
+            border-radius: 30px;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+            input {
+                width: 100%;
+                height: 100%;
+                font-size: 18px;
+                &::placeholder {
+                    font-size: 18px;
+                }
+            }
+        }
+        .gallery {
+            width: 100%;
+            grid-gap: 20px;
+            .galleryCard {
+                img {
+                    width: auto;
+                    height: 150px;
+                }
+                p {
+                    font-size: 16px;
+                    color: $dark;
+                }
+            }
+        }
+    }
+    .assembleButtons {
+        a {
+            width: 250px;
+            height: 60px;
+            border-radius: 30px;
+            font-size: 18px;
+        }
+        .plan {
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+}
+.explore {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+    .exploreContent {
+        h3 {
+            font-size: 45px;
+            line-height: 50px;
+        }
+        p {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        a {
+            width: 250px;
+            height: 60px;
+            border-radius: 30px;
+            line-height: 40px;
+            font-size: 18px;
+        }
+    }
+    .exploreCards {
+        grid-gap: 50px;
+        .cardLayout {
+            width: auto;
+            height: 450px;
+            border-radius: 30px;
+            .info {
+                min-width: 80%;
+                height: 60px;
+                border-radius: 30x;
+                padding: 0 15px;
+                font-size: 18px;
+            }
+            span {
+                font-size: 18px;
+            }
+            a {
+                min-width: 80%;
+                height: 60px;
+                p {
+                    font-size: 18px;
+                }
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            .overlay {
+                border-radius: 30px;
+                .overlayInfo {
+                    width: 80%px;
+                    height: 60px;
+                    border-radius: 30px;
+                }
+            }
+        }
+        
+    }
+}
+.branches {
+    .wrapper {
+        h2 {
+            font-size: 45px;
+            line-height: 52px;
+        }
+        form {
+            .search {
+                width: 60vw;
+                height: 60px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+                input {
+                    font-size: 20px;
+                    &::placeholder {
+                        color: $dark;
+                        font-size: 20px;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            .radios {
+                .container {
+                    position: relative;
+                    padding-left: 35px;
+                    margin-bottom: 5px;
+                    font-size: 16px;
+                    .checkmark {
+                        height: 30px;
+                        width: 30px;
+                        &:after {
+                            top: 2px;
+                            left: 2.5px;
+                            right: 1px;
+                            bottom: 1px;
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                    p {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 30px;
+        }
+        .hardware {
+            .hardwareCard {
+                width: auto;
+                height: 280px;
+                .info {
+                    width: 80%;
+                    height: 38px;
+                    padding: 0 10px;
+                    font-size: 16px;
+                }
+                .overlay {
+                    .overlayInfo {
+                        width: 80%;
+                        height: 38px;
+                    }
+                    .overlayTxt {
+                        font-size: 16px;
+                    }
+                    .distance {
+                        p {
+                            font-size: 14px;
+                            color: $blue;
+                        }
+                        img {
+                            width: 22.39px;
+                            height: 31.98px;
+                        }
+                    }
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+.differences {
+    h2 {
+        font-size: 60px;
+    }
+    .differenceCard {
+        height: 300px;
+        width: 300px;
+        border-radius: 30px;
+        img {
+            width: 150px;
+            height: 150px;
+        }
+        h5 {
+            font-size: 30px;
+        }
+        .overlay {
+            border-radius: 30px;
+            h4 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+.partners {
+    grid-template-columns: 1fr 3fr;
+    .partnerText {
+        h2 {
+            font-size: 45px;
+            line-height: 52px;
+            width: 80%;
+        }
+        a {
+            font-size: 18px;
+        }
+    }
+    .partnerSlider {
+        .sliderCard {
+            border-radius: 30px;
+            img {
+                width: auto;
+                height: 350px;
+                border-radius: 30px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+.customers {
+    .titleSection {
+        h2 {
+            font-size: 45px;
+            line-height: 52px;
+            width: 80%;
+        }
+        a {
+            font-size: 18px;
+        }
+    }
+    .customerSlider {
+        .customerCard {
+            width: auto;
+            height: 450px;
+            border-radius: 30px;
+            .overlay {
+                border-radius: 30px;
+                border: 2px solid $blue;
+            }
+            .name {
+                img {
+                    width: 120px;
+                    height: 120px;
+                    object-fit: cover;
+                }
+                h4 {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            .ratings {
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
+.community {
+    h2 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+    .communityInfo {
+        .imgWrapper {
+            width: 80vw;
+            height: 60vh;
+            .linkBtns {
+                .commBtn {
+                    width: 70px;
+                    height: 50px;
+                    cursor: pointer;
+                    img {
+                        width: 20.82px;
+                        height: 20.03px;
+                    }
+                }
+            }
+        }
+        .communityText {
+            h5 {
+                font-size: 24px;
+                line-height: 32px;
+                width: 90%;
+            }
+            h3 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 32px;
+                font-weight: normal;
+                width: 70%;
+            }
+            a {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+.stylePoints {
+    img {
+        width: auto;
+        height: 450px;
+    }
+    .styleText {
+        h2 {
+            font-size: 45px;
+            line-height: 52px;
+        }
+        h5 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        a {
+            width: 200px;
+            height: 60px;
+            font-size: 20px;
+            line-height: 30px;
+            border-radius: 30px;
+        }
+    }
+}
+}
 
+//Medium size screens and laptops
+@media only screen and (max-width: 1280px) {
+    .homeBanner {
+        .tabGrids {
+            .gridLink {
+                height: 250px;
+                padding: 0 15px !important;
+                img {
+                    height: 50px;
+                    width: 50px;
+                }
+                h1 {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+    .explore {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 30px;
+        .exploreContent {
+            h3 {
+                font-size: 45px;
+                line-height: 50px;
+            }
+            p {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            a {
+                width: 250px;
+                height: 60px;
+                border-radius: 30px;
+                line-height: 40px;
+                font-size: 18px;
+            }
+        }
+        .exploreCards {
+            grid-gap: 50px;
+            .cardLayout {
+                width: auto;
+                height: 450px;
+                border-radius: 30px;
+                justify-content: space-between;
+                .info {
+                    min-width: 80%;
+                    height: 60px;
+                    border-radius: 30x;
+                    padding: 0 15px;
+                    font-size: 18px;
+                }
+                span {
+                    font-size: 18px;
+                }
+                a {
+                    min-width: 80%;
+                    height: 60px;
+                    p {
+                        font-size: 18px;
+                    }
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                .overlay {
+                    border-radius: 30px;
+                    .overlayInfo {
+                        width: 80%;
+                        height: 60px;
+                        border-radius: 30px;
+                    }
+                    span {
+                        margin-top: 20px;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+//Medium size screens and laptops
+@media only screen and (max-width: 1024px) {
+.homeBanner {
+    //TAB LINKS
+    .tabGrids {
+        .gridLink {
+            height: 200px;
+            padding: 0 15px !important;
+            img {
+                height: 40px;
+                width: 40px;
+            }
+            h1 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+    
+    //TAB SECTIONS
+    .tabSection {
+        min-height: 500px;
+    }
+    
+    //Actual tabs
+    .tab1 {
+        grid-gap: 20px !important;
+        .textContent {
+            h3 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            form {
+                input,select,button {
+                    min-height: 60px;
+                    border-radius: 30px;
+                    font-size: 18px;
+                    padding: 0px 15px;
+                    &::placeholder {
+                        font-size: 18px;
+                    }
+                }
+                .s-hidden {
+                    padding-right: 10px;
+                }
+                .select {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                .styledSelect {
+                    padding:0 15px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    &:after {
+                        content:"";
+                        width:0;
+                        height:0;
+                        top: 45%;
+                        right: 15px;
+                    }
+                }
+                .options {
+                    padding: 10px;
+                    li {
+                        padding:0 6px;
+                        padding:0 10px;
+                    }
+                }
+            }
+        }
+        img {
+            width: auto;
+            height: 400px;
+        }
+    }
+    
+    .tab2 {
+        h4 {
+            font-size: 30px;
+            font-weight: 40px;
+        }
+        .productCategory {
+            grid-template-columns: repeat(3, 1fr) !important;
+            .categoryCard {
+                width: auto;
+                height: 300px;
+                .info {
+                    min-width: 70%;
+                    height: 35px;
+                    border-radius: 30px;
+                    padding: 0 20px;
+                    font-size: 18px;
+                }
+                .overlay {
+                    border-radius: 30px;
+                    .overlayInfo {
+                        width: auto;
+                        height: 60px;
+                        border-radius: 30px;
+                    }
+                    .overlayTxt {
+                        font-size: 18px;
+                    }
+                }
+                .shopLink {
+                    width: auto;
+                    height: 40px;
+                    border-radius: 30px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .tab3 {
+        grid-gap: 20px !important;
+        .textContent {
+            h3 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            form {
+                input,select,button {
+                    min-height: 60px;
+                    width: 100%;
+                    font-size: 18px;
+                    padding: 0px 15px;
+                    border-radius: 30px;
+                    &::placeholder {
+                        font-size: 18px;
+                    }
+                }
+                
+                .s-hidden {
+                    visibility:hidden;
+                    padding-right: 10px;
+                }
+                .select {
+                    width: 100% !important;
+                    height: 100%;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                .styledSelect {
+                    padding:0 10px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    &:after {
+                        top: 45%;
+                        right: 15px;
+                    }
+                }
+                .options {
+                    padding: 10px;
+                    li {
+                        padding:0 6px;
+                        margin:0 0;
+                        padding:0 10px;
+                    }
+                }
+            }
+        }
+        img {
+            width: auto;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+    
+    .tab4 {
+        h3 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        form {
+            .radios {
+                .container {
+                    font-size: 18px;
+                    .checkmark {
+                        height: 30px;
+                        width: 30px;
+                        &:after {
+                            top: 2px;
+                            left: 3px;
+                            right: 3px;
+                            bottom: 2px;
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                    p {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+            }
+            .otherInputs {
+                .search {
+                    width: 300px;
+                    height: 60px;
+                    border-radius: 30px;
+                    img {
+                        width: 35.05px;
+                        height: 35.05px;
+                    }
+                    input {
+                        font-size: 18px;
+                        &::placeholder {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                button {
+                    width: 300px;
+                    height: 60px;
+                    border-radius: 30px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+.assemble {
+    .bgCover {
+        width: 95vw;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .wrapper {
+        grid-template-columns: 1.5fr 2fr;
+    }
+    .imgHolder {
+        img {
+            height: 90vh;
+            object-fit: cover;
+        }
+    }
+    .gridContent {
+        .tabLink {
+            width: 100px;
+            height: 100px;
+            border-radius: 30px;
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+        
+        h3 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .search {
+            width: 100%;
+            height: 60px;
+            border-radius: 30px;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+            input {
+                width: 100%;
+                height: 100%;
+                font-size: 18px;
+                &::placeholder {
+                    font-size: 18px;
+                }
+            }
+        }
+        .gallery {
+            width: 100%;
+            grid-gap: 20px;
+            grid-template-columns: repeat(4,1fr);
+            .galleryCard {
+                img {
+                    width: auto;
+                    height: 120px;
+                }
+                p {
+                    font-size: 16px;
+                    color: $dark;
+                }
+            }
+        }
+    }
+    .assembleButtons {
+        a {
+            width: 250px;
+            height: 60px;
+            border-radius: 30px;
+            font-size: 18px;
+        }
+        .plan {
+            img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+}
+.explore {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    .exploreContent {
+        h3 {
+            font-size: 45px;
+            line-height: 50px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        a {
+            width: 250px;
+            height: 60px;
+            border-radius: 30px;
+            line-height: 40px;
+            font-size: 18px;
+        }
+    }
+    .exploreCards {
+        grid-gap: 50px;
+        .cardLayout {
+            width: auto;
+            height: 450px;
+            border-radius: 30px;
+            .info {
+                min-width: 80%;
+                height: 60px;
+                border-radius: 30x;
+                padding: 0 15px;
+                font-size: 18px;
+            }
+            span {
+                font-size: 18px;
+            }
+            a {
+                min-width: 80%;
+                height: 60px;
+                justify-self: flex-end;
+                p {
+                    font-size: 18px;
+                }
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            .overlay {
+                border-radius: 30px;
+                justify-content: space-between;
+                .overlayInfo {
+                    width: 80%;
+                    height: 60px;
+                    border-radius: 30px;
+                }
+            }
+        }
+        
+    }
+}
+.branches {
+    .wrapper {
+        width: 80vw !important;
+        h2 {
+            font-size: 40px;
+            line-height: 50p8;
+            text-align: center;
+        }
+        form {
+            .search {
+                width: 60vw;
+                height: 60px;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+                input {
+                    font-size: 18px;
+                    &::placeholder {
+                        color: $dark;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .radios {
+                .container {
+                    position: relative;
+                    padding-left: 30px;
+                    margin-bottom: 5px;
+                    font-size: 18px;
+                    .checkmark {
+                        height: 30px;
+                        width: 30px;
+                        &:after {
+                            top: 3px;
+                            left: 3px;
+                            right: 3px;
+                            bottom: 3px;
+                            width: 14px;
+                            height: 14px;
+                        }
+                    }
+                    p {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 24px;
+        }
+        .hardware {
+            grid-template-columns: 1fr 1fr !important;
+            width: 100% !important;
+            .hardwareCard {
+                width: auto !important;
+                height: 280px;
+                padding: 10px !important;
+                border-radius: 25px !important;
+                .info {
+                    width: auto;
+                    height: 38px;
+                    padding: 0 10px;
+                    font-size: 18px;
+                }
+                .overlay {
+                    border-radius: 25px !important;
+                    .overlayInfo {
+                        width: 80%;
+                        height: 38px;
+                    }
+                    .overlayTxt {
+                        font-size: 18px;
+                    }
+                    .distance {
+                        p {
+                            font-size: 16px;
+                            color: $blue;
+                        }
+                        img {
+                            width: 22.39px;
+                            height: 31.98px;
+                        }
+                    }
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+.differences {
+    h2 {
+        font-size: 60px;
+    }
+    .differenceCard {
+        height: 250px;
+        width: 250px;
+        padding: 20px;
+        border-radius: 30px;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        h5 {
+            font-size: 22px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .overlay {
+            border-radius: 30px;
+            h4 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+.partners {
+    grid-template-columns: 1fr 3fr;
+    .partnerText {
+        h2 {
+            font-size: 40px;
+            line-height: 52px;
+            width: 100%;
+        }
+        a {
+            font-size: 18px;
+        }
+    }
+    .partnerSlider {
+        .sliderCard {
+            border-radius: 30px;
+            img {
+                width: auto;
+                height: 350px;
+                border-radius: 30px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+.customers {
+    .titleSection {
+        h2 {
+            font-size: 40px;
+            line-height: 50px;
+            width: 80%;
+        }
+        a {
+            font-size: 18px;
+        }
+    }
+    .customerSlider {
+        .customerCard {
+            width: auto;
+            height: 450px;
+            border-radius: 30px;
+            .overlay {
+                border-radius: 30px;
+                border: 2px solid $blue;
+            }
+            .name {
+                img {
+                    width: 120px;
+                    height: 120px;
+                    object-fit: cover;
+                }
+                h4 {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            .ratings {
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
+.stylePoints {
+    img {
+        width: auto;
+        height: 450px;
+    }
+    .styleText {
+        h2 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        h5 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        a {
+            width: 200px;
+            height: 60px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
+}
+
+//Tablets
+@media only screen and (max-width: 768px) {
+.homeBanner {
+    //TAB LINKS
+    .tabGrids {
+        .gridLink {
+            height: 200px;
+            padding: 0 15px !important;
+            flex-direction: column !important;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 40px;
+                width: 40px;
+            }
+            h1 {
+                font-size: 24px;
+                line-height: 32px;
+                text-align: center;
+            }
+        }
+    }
+    
+    //TAB SECTIONS
+    .tabSection {
+        min-height: 500px;
+    }
+    
+    //Actual tabs
+    .tab1 {
+        padding: 40px inherit !important;
+        .textContent {
+            h3 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            form {
+                input,select,button {
+                    min-height: 60px;
+                    border-radius: 30px;
+                    font-size: 16px;
+                    padding: 0px 15px;
+                    &::placeholder {
+                        font-size: 16px;
+                    }
+                }
+                .s-hidden {
+                    padding-right: 10px;
+                }
+                .select {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .styledSelect {
+                    padding:0 15px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    &:after {
+                        content:"";
+                        width:0;
+                        height:0;
+                        top: 45%;
+                        right: 15px;
+                    }
+                }
+                .options {
+                    padding: 10px;
+                    li {
+                        padding:0 6px;
+                        padding:0 10px;
+                    }
+                }
+            }
+        }
+        img {
+            width: auto;
+            height: 400px;
+        }
+    }
+    
+    .tab2 {
+        h4 {
+            font-size: 30px;
+            font-weight: 40px;
+        }
+        .productCategory {
+            grid-template-columns: repeat(2, 1fr) !important;
+            grid-gap: 30px;
+            .categoryCard {
+                width: auto;
+                height: 250px;
+                .info {
+                    min-width: 70%;
+                    height: 35px;
+                    border-radius: 30px;
+                    padding: 0 20px;
+                    font-size: 16px;
+                }
+                .overlay {
+                    border-radius: 30px;
+                    .overlayInfo {
+                        width: auto;
+                        height: 60px;
+                        border-radius: 30px;
+                    }
+                    .overlayTxt {
+                        font-size: 16px;
+                    }
+                }
+                .shopLink {
+                    width: auto;
+                    height: 40px;
+                    border-radius: 30px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .tab3 {
+        .textContent {
+            h3 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            form {
+                input,select,button {
+                    min-height: 60px;
+                    width: 100%;
+                    font-size: 16px;
+                    padding: 0px 15px;
+                    border-radius: 30px;
+                    &::placeholder {
+                        font-size: 16px;
+                    }
+                }
+                
+                .s-hidden {
+                    visibility:hidden;
+                    padding-right: 10px;
+                }
+                .select {
+                    width: 100% !important;
+                    height: 100%;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .styledSelect {
+                    padding:0 10px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    &:after {
+                        top: 45%;
+                        right: 15px;
+                    }
+                }
+                .options {
+                    padding: 10px;
+                    li {
+                        padding:0 6px;
+                        margin:0 0;
+                        padding:0 10px;
+                    }
+                }
+            }
+        }
+        img {
+            width: auto;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+    
+    .tab4 {
+        h3 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        form {
+            .radios {
+                width: 50%;
+                .container {
+                    position: relative;
+                    padding-left: 30px;
+                    margin-bottom: 5px;
+                    font-size: 16px;
+                    .checkmark {
+                        height: 24px;
+                        width: 24px;
+                        border: 4px solid $dark;
+                        &:after {
+                            top: 3px;
+                            left: 3px;
+                            right: 3px;
+                            bottom: 3px;
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                    p {
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .otherInputs {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 30px;
+                .search {
+                    width: auto;
+                    height: 60px;
+                    border-radius: 30px;
+                    img {
+                        width: 35.05px;
+                        height: 35.05px;
+                    }
+                    input {
+                        font-size: 16px;
+                        &::placeholder {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                button {
+                    width: auto;
+                    height: 60px;
+                    border-radius: 30px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+.assemble {
+    .bgCover {
+        width: 95vw;
+    }
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+    .imgHolder {
+        img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .gridContent {
+        .tabLink {
+            width: 100px;
+            height: 100px;
+            border-radius: 30px;
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+            }
+        }
+        
+        h3 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .search {
+            width: 100%;
+            height: 60px;
+            border-radius: 30px;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+            input {
+                width: 100%;
+                height: 100%;
+                font-size: 16px;
+                &::placeholder {
+                    font-size: 16px;
+                }
+            }
+        }
+        .gallery {
+            width: 100%;
+            grid-gap: 20px;
+            grid-template-columns: repeat(4,1fr);
+            .galleryCard {
+                img {
+                    width: auto;
+                    height: 120px;
+                }
+                p {
+                    font-size: 16px;
+                    color: $dark;
+                }
+            }
+        }
+    }
+    .assembleButtons {
+        a {
+            width: 250px;
+            height: 60px;
+            border-radius: 30px;
+            font-size: 16px;
+        }
+        .plan {
+            img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+}
+.explore {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    .exploreContent {
+        h3 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        a {
+            width: 200px;
+            height: 60px;
+            border-radius: 30px;
+            line-height: 40px;
+            font-size: 16px;
+        }
+    }
+    .exploreCards {
+        grid-gap: 30px;
+        .cardLayout {
+            width: auto;
+            height: 350px;
+            border-radius: 30px;
+            .info {
+                min-width: 80%;
+                height: 60px;
+                border-radius: 30x;
+                padding: 0 10px;
+                font-size: 16px;
+            }
+            span {
+                font-size: 16px;
+            }
+            a {
+                min-width: 80%;
+                height: 60px;
+                justify-self: flex-end;
+                p {
+                    font-size: 16px;
+                }
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .overlay {
+                border-radius: 30px;
+                justify-content: space-between;
+                .overlayInfo {
+                    width: 80%;
+                    height: 60px;
+                    border-radius: 30px;
+                }
+            }
+        }
+        
+    }
+}
+.branches {
+    .wrapper {
+        h2 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        form {
+            .search {
+                width: 60vw;
+                height: 60px;
+                img {
+                    width: 24px;
+                    height:24px;
+                }
+                input {
+                    font-size: 16px;
+                    &::placeholder {
+                        color: $dark;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .radios {
+                .container {
+                    position: relative;
+                    padding-left: 0px;
+                    margin-bottom: 5px;
+                    font-size: 16px;
+                    .checkmark {
+                        height: 24px;
+                        width: 24px;
+                        border: 4px solid $dark;
+                        &:after {
+                            top: 3px;
+                            left: 3px;
+                            right: 3px;
+                            bottom: 3px;
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                    p {
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 18px;
+        }
+        .hardware {
+            .hardwareCard {
+                width: auto;
+                height: 250px;
+                padding: 10px !important;
+                border-radius: 25px !important;
+                .info {
+                    width: auto;
+                    height: auto;
+                    padding: 5px 2px;
+                    font-size: 14px;
+                }
+                .overlay {
+                    border-radius: 25px !important;
+                    .overlayInfo {
+                        width: 80%;
+                        height: 38px;
+                    }
+                    .overlayTxt {
+                        font-size: 16px;
+                        margin-top: 30px !important;
+                    }
+                    .distance {
+                        p {
+                            font-size: 14px;
+                            color: $blue;
+                        }
+                        img {
+                            width: 22.39px;
+                            height: 31.98px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.differences {
+    h2 {
+        font-size: 50px;
+    }
+    .differenceCard {
+        height: 250px;
+        width: 250px;
+        padding: 20px;
+        border-radius: 30px;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        h5 {
+            font-size: 18px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .overlay {
+            border-radius: 30px;
+            h4 {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+.partners {
+    grid-template-columns: 1fr;
+    .partnerText {
+        margin-bottom: 20px;
+        h2 {
+            font-size: 32px;
+            line-height: 40px;
+            width: 100%;
+        }
+        a {
+            font-size: 16px;
+        }
+    }
+    .partnerSlider {
+        .sliderCard {
+            border-radius: 30px;
+            img {
+                width: 100%;
+                height: 300px;
+                border-radius: 30px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+.customers {
+    .titleSection {
+        h2 {
+            font-size: 32px;
+            line-height: 40px;
+            width: 80%;
+        }
+        a {
+            font-size: 16px;
+        }
+    }
+    .customerSlider {
+        .customerCard {
+            width: 100%;
+            height: 400px;
+            .name {
+                img {
+                    width: 80px;
+                    height: 80px;
+                    object-fit: cover;
+                }
+                h4 {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .ratings {
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+.community {
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .communityInfo {
+        flex-direction: column;
+        .imgWrapper {
+            width: 100%;
+            height: 300px;
+            .linkBtns {
+                .commBtn {
+                    width: 70px;
+                    height: 50px;
+                    cursor: pointer;
+                    img {
+                        width: 20.82px;
+                        height: 20.03px;
+                    }
+                }
+            }
+        }
+        .communityText {
+            h5 {
+                font-size: 24px;
+                line-height: 32px;
+                width: 100%;
+                margin-top: 20px;
+            }
+            h3 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: normal;
+                width: 100%;
+            }
+            a {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+.stylePoints {
+    img {
+        width: auto;
+        height: 400px;
+    }
+    .styleText {
+        h2 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        h5 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        a {
+            width: 150px;
+            height: 60px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+}
+
+//Mobile
+@media only screen and (max-width: 540px) {
+.homeBanner {
+    //TAB LINKS
+    .tabGrids {
+        .gridLink {
+            height: auto;
+            padding: 20px !important;
+            img {
+                height: 40px;
+                width: 40px;
+            }
+            h1 {
+                font-size: 24px;
+                line-height: 32px;
+                text-align: center;
+            }
+        }
+    }
+    
+    //TAB SECTIONS
+    .tabSection {
+        min-height: 500px;
+    }
+    
+    //Actual tabs
+    .tab1 {
+        padding: 40px 16px !important;
+        .textContent {
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+                text-align: center;
+            }
+            form {
+                input,select,button {
+                    min-height: 60px;
+                    border-radius: 30px;
+                    font-size: 16px;
+                    padding: 0px 15px;
+                    &::placeholder {
+                        font-size: 16px;
+                    }
+                }
+                .s-hidden {
+                    padding-right: 10px;
+                }
+                .select {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .styledSelect {
+                    padding:0 15px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    &:after {
+                        content:"";
+                        width:0;
+                        height:0;
+                        top: 45%;
+                        right: 15px;
+                    }
+                }
+                .options {
+                    padding: 10px;
+                    li {
+                        padding:0 6px;
+                        padding:0 10px;
+                    }
+                }
+            }
+        }
+        img {
+            width: auto;
+            height: 300px;
+        }
+    }
+    
+    .tab2 {
+        h4 {
+            font-size: 24px;
+            font-weight: 30px;
+            text-align: center;
+        }
+        .productCategory {
+            grid-template-columns: 1fr !important;
+            grid-gap: 30px;
+            justify-items: center;
+            align-items: center;
+            .categoryCard {
+                width: 250px;
+                height: 250px;
+                .info {
+                    min-width: 100%;
+                    height: 35px;
+                    border-radius: 30px;
+                    padding: 0 20px;
+                    font-size: 16px;
+                }
+                .overlay {
+                    border-radius: 30px;
+                    .overlayInfo {
+                        width: auto;
+                        height: 35px;
+                        border-radius: 30px;
+                    }
+                    .overlayTxt {
+                        font-size: 16px;
+                    }
+                }
+                .shopLink {
+                    width: auto;
+                    height: 40px;
+                    border-radius: 30px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .tab3 {
+        padding: 40px 16px !important;
+        .textContent {
+            h3 {
+                font-size: 24px;
+                line-height: 30px;
+                text-align: center;
+            }
+            form {
+                input,select,button {
+                    min-height: 60px;
+                    width: 100%;
+                    font-size: 16px;
+                    padding: 0px 15px;
+                    border-radius: 30px;
+                    &::placeholder {
+                        font-size: 16px;
+                    }
+                }
+                
+                .s-hidden {
+                    visibility:hidden;
+                    padding-right: 10px;
+                }
+                .select {
+                    width: 100% !important;
+                    height: 100%;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .styledSelect {
+                    padding:0 10px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    &:after {
+                        top: 45%;
+                        right: 15px;
+                    }
+                }
+                .options {
+                    padding: 10px;
+                    li {
+                        padding:0 6px;
+                        margin:0 0;
+                        padding:0 10px;
+                    }
+                }
+            }
+        }
+        img {
+            width: auto;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    
+    .tab4 {
+        padding: 40px 16px !important;
+        h3 {
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+        }
+        form {
+            .radios {
+                width: 100%;
+                .container {
+                    padding-left: 0px;
+                    margin-bottom: 5px;
+                    font-size: 16px;
+                    .checkmark {
+                        height: 24px;
+                        width: 24px;
+                        border: 4px solid $dark;
+                        &:after {
+                            top: 3px;
+                            left: 3px;
+                            right: 3px;
+                            bottom: 3px;
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                    p {
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .otherInputs {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+                .search {
+                    width: auto;
+                    height: 60px;
+                    border-radius: 30px;
+                    img {
+                        width: 35.05px;
+                        height: 35.05px;
+                    }
+                    input {
+                        font-size: 16px;
+                        &::placeholder {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                button {
+                    width: auto;
+                    height: 60px;
+                    border-radius: 30px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+.branches {
+.wrapper {
+    width: 100vw !important;
+    border-radius: 0;
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        text-align: center;
+    }
+    form {
+        .search {
+            width: 100%;
+            height: 60px;
+            input {
+                font-size: 16px;
+                &::placeholder {
+                    font-size: 16px;
+                }
+            }
+        }
+        .radios {
+            .container {
+                position: relative;
+                padding-left: 0px;
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+        }
+    }
+    p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .hardware {
+        grid-template-columns: 1fr !important;
+        padding: 0 20px;
+        .hardwareCard {
+            width: auto;
+            height: 250px;
+            padding: 10px inherit !important;
+            border-radius: 25px !important;
+            .info {
+                width: auto;
+                height: auto;
+                padding: 5px 2px;
+                font-size: 16px;
+            }
+            .overlay {
+                border-radius: 25px !important;
+                .overlayInfo {
+                    width: 80%;
+                    height: 38px;
+                }
+                .overlayTxt {
+                    font-size: 16px;
+                    margin-top: 30px !important;
+                }
+                .distance {
+                    p {
+                        font-size: 16px;
+                        color: $blue;
+                    }
+                    img {
+                        width: 22.39px;
+                        height: 31.98px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+.assemble {
+    padding: 16px !important;
+    .bgCover {
+        width: 100%;
+    }
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .imgHolder {
+        img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .gridContent {
+        .tabs {
+            display: grid !important;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+        .tabLink {
+            width: 70px;
+            height: 70px;
+            border-radius: 15px;
+            img {
+                width: 35px;
+                height: 35px;
+                object-fit: cover;
+            }
+        }
+        
+        h3 {
+            font-size: 20px;
+            line-height: 32px;
+            text-align: center;
+        }
+        .search {
+            width: 100%;
+            height: 60px;
+            border-radius: 30px;
+            img {
+                width: 30px;
+                height: 30px;
+            }
+            input {
+                width: 100%;
+                height: 100%;
+                font-size: 16px;
+                &::placeholder {
+                    font-size: 16px;
+                }
+            }
+        }
+        .gallery {
+            width: 100%;
+            grid-gap: 20px;
+            grid-template-columns: repeat(3,1fr);
+            .galleryCard {
+                img {
+                    width: auto;
+                    height: 120px;
+                }
+                p {
+                    font-size: 16px;
+                    color: $dark;
+                }
+            }
+        }
+    }
+    .assembleButtons {
+        flex-direction: column;
+        a {
+            width: 250px;
+            height: 60px;
+            border-radius: 30px;
+            font-size: 16px;
+        }
+        .plan {
+            margin-top: 20px;
+            img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+}
+.differences {
+    h2 {
+        font-size: 45px;
+        line-height: 52px;
+        text-align: center;
+    }
+}
+.partners {
+    .partnerText {
+        align-items: center !important;
+        h2 {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+        a {
+            font-size: 16px;
+        }
+    }
+    .partnerSlider {
+        .sliderCard {
+            img {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    }
+}
+.customers {
+    .titleSection {
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-size: 30px;
+            line-height: 40px;
+            width: 100%;
+            text-align: center;
+        }
+        a {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    }
+    .customerSlider {
+        .customerCard {
+            width: 100%;
+            height: 400px;
+            .name {
+                img {
+                    width: 80px;
+                    height: 80px;
+                    object-fit: cover;
+                }
+                h4 {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .ratings {
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+.community {
+    padding: 16px !important;
+    .back {
+        width: 100%;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .communityInfo {
+        .imgWrapper {
+            width: 100%;
+            height: 300px;
+            .linkBtns {
+                .commBtn {
+                    width: 70px;
+                    height: 50px;
+                    cursor: pointer;
+                    img {
+                        width: 20.82px;
+                        height: 20.03px;
+                    }
+                }
+            }
+        }
+        .communityText {
+            align-items: center !important;
+            h5 {
+                font-size: 24px;
+                line-height: 32px;
+                width: 100%;
+                margin-top: 20px;
+                text-align: center;
+            }
+            h3 {
+                font-size: 30px;
+                line-height: 40px;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: normal;
+                width: 100%;
+                text-align: center;
+            }
+            a {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+.stylePoints {
+    padding: 16px !important;
+    img {
+        width: auto;
+        height: 300px;
+    }
+    .styleText {
+        align-items: center !important;
+        h2 {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+        h5 {
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+        }
+        a {
+            width: 250px;
+            height: 60px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
 }

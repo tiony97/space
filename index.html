@@ -16,7 +16,7 @@
     <!--VUE PAGE WRAPPER-->
     <div id="app" class="app">
         <!--NAVIGATION-->
-        <nav class="flex items-center justify-between w-full lg:px-20 md:px-8 py-5">
+        <nav class="flex items-center justify-between w-full lg:px-20 md:px-8 py-5" id="navigation">
             <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
             <div class="links flex lg:space-x-8">
                 <div class="pageLinks flex items-center justify-center lg:space-x-5">
@@ -33,8 +33,8 @@
                     <img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag">
                 </div>
                 <div class="navBtns flex lg:space-x-4">
-                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
-                    <a href="#" class="login flex items-center justify-center">Login</a>
+                    <a href="javascript:void(0)" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="javascript:void(0)" class="login flex items-center justify-center">Login</a>
                 </div>
             </div>
         </nav>
@@ -44,8 +44,8 @@
             <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
             <img src="./assets/mobile logo.png" alt="" class="mobileLogo">
             <div class="navIcons flex items-center lg:space-x-4 md:space-x-2 space-x-2">
-                <a href="#"><img src="./assets/search_black_24dp.png" alt="" class="search"></a>
-                <a href="#"><img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag"></a>
+                <a href="javascript:void(0)"><img src="./assets/search_black_24dp.png" alt="" class="search"></a>
+                <a href="javascript:void(0)"><img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag"></a>
                 <span class="cursor-pointer menuOpen"><img src="./assets/menu open black.png" alt=""></span>
             </div>
         </div>
@@ -64,14 +64,14 @@
                     <a href="contact.html">Contact Us</a>
                 </div>
                 <div class="overlayBtns flex space-x-4">
-                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
-                    <a href="#" class="login flex items-center justify-center">Login</a>
+                    <a href="javascript:void(0)" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="javascript:void(0)" class="login flex items-center justify-center">Login</a>
                 </div>
                 <div class="overlaySocial flex flex-col items-center">
                     <div class="flex lg:space-x-5 space-x-2">
-                        <a href="#"><img src="./assets/icons8-facebook-50.png" alt="" class="socialIcon"></a>
-                        <a href="#"><img src="./assets/icons8-twitter-30.png" alt="" class="socialIcon"></a>
-                        <a href="#"><img src="./assets/icons8-instagram-24.png" alt="" class="socialIcon"></a>
+                        <a href="javascript:void(0)"><img src="./assets/icons8-facebook-50.png" alt="" class="socialIcon"></a>
+                        <a href="javascript:void(0)"><img src="./assets/icons8-twitter-30.png" alt="" class="socialIcon"></a>
+                        <a href="javascript:void(0)"><img src="./assets/icons8-instagram-24.png" alt="" class="socialIcon"></a>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
             <!--BANNER-->
             <div class="homeBanner w-full h-auto">
                 <!--Tab Links-->
-                <div class="tabGrids grid grid-cols-4 h-auto">
+                <div class="tabGrids grid lg:grid-cols-4 md:grid-cols-4 grid-cols-2 h-auto w-full">
                     <div @click="currentHomeTab=1" :class="{'gridLink link1 flex items-center justify-end lg:space-x-5 lg:pl-24 lg:pr-12 cursor-pointer': true,'blue': currentHomeTab==1}">
                         <img src="./assets/store_dark.png" alt="" v-show="currentHomeTab!==1">
                         <img src="./assets/store_black_24dp.png" alt="" v-show="currentHomeTab==1">
@@ -104,10 +104,10 @@
                 </div>
                 
                 <!--Tab Sections-->
-                <div v-show="currentHomeTab==1" class="tabSection tab1 w-full grid lg:grid-cols-2 lg:gap-32 items-center lg:pl-24 m-0 p-0">
+                <div v-show="currentHomeTab==1" class="tabSection tab1 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-20 items-center lg:pl-24 md:px-12 sm:x-6 md:py-12 py-6">
                     <div class="textContent">
-                        <h3>When you build with Space & Style,<br/>we give you innovative building materials.</h3>
-                        <form action="#" class="grid grid-cols-2 lg:gap-8 mt-16">
+                        <h3 class="lg:w-5/6 md:w-4/5 w-full">When you build with Space & Style, we give you innovative building materials.</h3>
+                        <form action="#" class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 lg:mt-16 mt-8">
                             <input type="text" placeholder="Enter Your Name">
                             <input type="text" placeholder="Enter Your Mobile Number">
                             <select name="" id="">
@@ -120,19 +120,19 @@
                             <button type="submit">Build With Us</button>
                         </form>
                     </div>
-                    <img src="./assets/IMAGE HOLDER.png" alt="" class="lg:-mr-20">
+                    <img src="./assets/IMAGE HOLDER.png" alt="" class="lg:-mr-20 lg:mt-0 md:mt-12 mt-6">
                 </div>
                 
-                <div v-show="currentHomeTab==2" class="tabSection tab2 w-full flex flex-col justify-center space-y-12 px-24">
-                    <h4>Our variety of building products meets <br/>the needs of a wide range of construction.</h4>
-                    <div class="productCategory grid grid-cols-5">
+                <div v-show="currentHomeTab==2" class="tabSection tab2 w-full flex flex-col justify-center lg:space-y-12 md:space-y-6 space-y-3 lg:px-24 md:px-12 px-6 lg:py-12 md:py-12 py-6">
+                    <h4 class="lg:w-4/5 md:w-4/5 w-full">Our variety of building products meets the needs of a wide range of construction.</h4>
+                    <div class="productCategory grid lg:grid-cols-5 mg:grid-cols-3 lg:gap-6">
                         <div class="categoryCard relative p-6 flex flex-col items-start justify-between">
                             <span class="info flex items-center justify-center my-1">Category Name</span>
                             <div class="overlay p-10 flex flex-col items-start">
                                 <span class="overlayInfo flex items-center justify-center"></span>
                                 <p class="overlayTxt mb-12">Brief description about the product category maximum of 10 words.</p>
                             </div> 
-                            <a href="#" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
+                            <a href="javascript:void(0)" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
                                 <img src="./assets/shopping_bag_white_24dp.png" alt="">
                                 <p>Shop Now</p>
                             </a>
@@ -143,7 +143,7 @@
                                 <span class="overlayInfo flex items-center justify-center"></span>
                                 <p class="overlayTxt mb-12">Brief description about the product category maximum of 10 words.</p>
                             </div> 
-                            <a href="#" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
+                            <a href="javascript:void(0)" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
                                 <img src="./assets/shopping_bag_white_24dp.png" alt="">
                                 <p>Shop Now</p>
                             </a>
@@ -154,7 +154,7 @@
                                 <span class="overlayInfo flex items-center justify-center"></span>
                                 <p class="overlayTxt mb-12">Brief description about the product category maximum of 10 words.</p>
                             </div> 
-                            <a href="#" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
+                            <a href="javascript:void(0)" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
                                 <img src="./assets/shopping_bag_white_24dp.png" alt="">
                                 <p>Shop Now</p>
                             </a>
@@ -165,7 +165,7 @@
                                 <span class="overlayInfo flex items-center justify-center"></span>
                                 <p class="overlayTxt mb-12">Brief description about the product category maximum of 10 words.</p>
                             </div> 
-                            <a href="#" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
+                            <a href="javascript:void(0)" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
                                 <img src="./assets/shopping_bag_white_24dp.png" alt="">
                                 <p>Shop Now</p>
                             </a>
@@ -176,7 +176,7 @@
                                 <span class="overlayInfo flex items-center justify-center"></span>
                                 <p class="overlayTxt mb-12">Brief description about the product category maximum of 10 words.</p>
                             </div> 
-                            <a href="#" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
+                            <a href="javascript:void(0)" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
                                 <img src="./assets/shopping_bag_white_24dp.png" alt="">
                                 <p>Shop Now</p>
                             </a>
@@ -184,10 +184,10 @@
                     </div>
                 </div>
                 
-                <div v-show="currentHomeTab==3" class="tabSection tab3 w-full grid lg:grid-cols-2 lg:gap-32 items-center lg:pl-24 m-0 p-0">
+                <div v-show="currentHomeTab==3" class="tabSection tab3 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-24 items-center lg:pl-24 md:px-12 sm:x-6 md:py-12 py-6">
                     <div class="textContent">
-                        <h3>Now is a great time to consider becoming<br/>a partner with Space & Style.</h3>
-                        <form action="#" class="grid grid-cols-2 lg:gap-8 mt-16">
+                        <h3 class="lg:w-4/5 md:w-4/5 w-full">Now is a great time to consider becoming a partner with Space & Style.</h3>
+                        <form action="#" class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 lg:mt-16 mt-8">
                             <input type="text" placeholder="Enter Your Name">
                             <input type="text" placeholder="Enter Your Mobile Number">
                             <select name="" id="">
@@ -200,13 +200,13 @@
                             <button type="submit">Build With Us</button>
                         </form>
                     </div>
-                    <img src="./assets/IMAGE HOLDER.png" alt="" class="lg:-mr-20">
+                    <img src="./assets/IMAGE HOLDER.png" alt="" class="lg:-mr-20 lg:mt-16 mt-8">
                 </div>
                 
-                <div v-show="currentHomeTab==4" class="tabSection tab4 w-full grid lg:grid-cols-2 lg:gap-32 items-center lg:pl-24 m-0 p-0">
+                <div v-show="currentHomeTab==4" class="tabSection tab4 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-24 items-center lg:pl-24 md:px-12 sm:x-6 md:py-12 py-6">
                     <div class="textContent">
-                        <h3>Shop building materials<br/>near your location countrywide.</h3>
-                        <form action="#" class="flex flex-col space-y-6">
+                        <h3 class="lg:w-4/5 md:w-4/5 w-full">Shop building materials near your location countrywide.</h3>
+                        <form action="#" class="flex flex-col lg:space-y-6 md:space-y-4 space-y-2 lg:mt-16 mt-8">
                             <div class="radios w-auto h-auto flex items-start justify-start space-x-1 mt-5 mb-8">
                                 <label class="container flex items-center justify-start space-x-2">
                                     <input type="radio" checked>
@@ -224,7 +224,7 @@
                                     <p>Sellers</p>
                                 </label>
                             </div>
-                            <div class="otherInputs flex space-x-5 items-center">
+                            <div class="otherInputs flex lg:space-x-5 md:space-x-3 space-y-0 items-center">
                                 <div class="search flex items-center space-x-2 px-5">
                                     <img src="./assets/location_on_black_24dp.png" alt="">
                                     <input type="text" placeholder="Search location">
@@ -233,16 +233,16 @@
                             </div>
                         </form>
                     </div>
-                    <img src="./assets/Agents banner image.png" alt="" class="lg:-mr-20">
+                    <img src="./assets/Agents banner image.png" alt="" class="lg:-mr-20 lg:mt-16 mt-8">
                 </div>
             </div>
             
             <!--ASSEMBLE SECTION-->
-            <div class="assemble flex flex-col w-full mt-24">
+            <div class="assemble flex flex-col w-full lg:mt-24 md:mt-12 mt-6 lg:pr-24 lg:pl-0 md:px-20 sm:px-6">
                 <div class="bgCover"></div>
-                <h1 class="title py-16"><span>Assemble</span> building materials for your project</h1>
-                <div class="flex space-x-20 relative h-auto">
-                    <div class="imgHolder h-auto">
+                <h1 class="title lg:py-16 md:py-8 py-4"><span>Assemble</span> building materials for your project</h1>
+                <div class="wrapper grid lg:gap-12 md:gap-8 gap-5 relative h-auto w-full">
+                    <div class="imgHolder w-full h-auto">
                         <img src="./assets/HOUSE HOLDER.png" alt="" v-show="currentAssembleTab==1">
                         <img src="./assets/commercial.png" alt="" v-show="currentAssembleTab==3">
                         <img src="./assets/estates.png" alt="" v-show="currentAssembleTab==4">
@@ -251,7 +251,7 @@
                     </div>
                     
                     <div class="gridContent">
-                        <div class="tabs flex space-x-10">
+                        <div class="tabs flex lg:space-x-10 md:space-x-8">
                             <div @click="currentAssembleTab=2" :class="{'card flex flex-col items-center justify-center space-y-3 cursor-pointer': true, 'activeBlue': currentAssembleTab==2}">
                                 <div class="tabLink flex flex-col items-center justify-center">
                                     <img src="./assets/other_houses_black_24dp.png" alt="" v-show="currentAssembleTab!==2">
@@ -295,7 +295,7 @@
                                 <input type="text" placeholder="Search building material">
                             </form>
                         </div>
-                        <div class="gallery grid grid-cols-5 p-0 mt-12">
+                        <div class="gallery grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 p-0 mt-12">
                             <div class="galleryCard flex flex-col items-center justify-center space-y-3">
                                 <img src="./assets/MATERIAL HOLDER.png" alt="">
                                 <p>Material Name</p>
@@ -339,9 +339,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="assembleButtons flex items-center justify-center space-x-12 my-24">
-                    <a href="#" class="quote flex items-center justify-center">Get Quotation</a>
-                    <a href="#" class="plan flex items-center justify-center space-x-5">
+                <div class="assembleButtons flex items-center justify-center lg:space-x-12 md:space-x-6 lg:my-24 md:my-12 my-6">
+                    <a href="javascript:void(0)" class="quote flex items-center justify-center">Get Quotation</a>
+                    <a href="javascript:void(0)" class="plan flex items-center justify-center space-x-5">
                         <img src="./assets/file_upload_black_24dp.png" alt="">
                         <h3>Upload Plan</h3>
                     </a>
@@ -349,52 +349,52 @@
             </div>
             
             <!--EXPLORE SECTION-->
-            <div class="explore w-full h-auto lg:px-24 py-24 grid">
-                <div class="exploreContent flex flex-col items-start justify-start col-start-1 col-end-6">
+            <div class="explore w-full h-auto lg:px-24 md:px-12 px-6 lg:py-24 md:py-12 py-6 grid">
+                <div class="exploreContent flex flex-col items-start justify-start">
                     <h3>Explore our building <br/><span>materials</span></h3>
                     <p class="mt-4">Assemble the building materials<br/> for your 1 bedroom home.</p>
-                    <a href="#" class="flex items-center justify-center mt-8">See All Products</a>
+                    <a href="javascript:void(0)" class="flex items-center justify-center mt-8">See All Products</a>
                 </div>
-                <div class="exploreCards grid grid-cols-2 col-start-6 col-end-12">
-                    <div class="cardLayout exploreCard1 relative p-10 flex flex-col items-start">
+                <div class="exploreCards grid lg:grid-cols-2 md:grid-cols-2">
+                    <div class="cardLayout exploreCard1 relative lg:p-10 md:p-6 p-4 flex flex-col items-start">
                         <div class="info flex items-center justify-center">ROOFING</div>
-                        <div class="overlay p-10 flex flex-col items-start">
+                        <div class="overlay lg:p-10 md:p-6 p-4 flex flex-col items-start">
                             <div class="overlayInfo flex items-center justify-center"></div>
-                            <span class="mt-10 mb-32">Assemble the building materials for your 1 bedroom home. <br/>Assemble the building materials for your 1 bedroom home.</span>
-                            <a href="#" class="flex items-center space-x-5">
+                            <span class="lg:mt-10 lg:mb-32">Assemble the building materials for your 1 bedroom home. <br/>Assemble the building materials for your 1 bedroom home.</span>
+                            <a href="javascript:void(0)" class="flex items-center space-x-5">
                                 <p>Learn More</p>
                                 <img src="./assets/Group 10.png" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="cardLayout exploreCard2 relative p-10 flex flex-col items-start">
+                    <div class="cardLayout exploreCard2 relative lg:p-10 md:p-6 p-4 flex flex-col items-start">
                         <div class="info flex items-center justify-center">FLOORING</div>
-                        <div class="overlay p-10 flex flex-col items-start">
+                        <div class="overlay lg:p-10 md:p-6 p-4 flex flex-col items-start">
                             <div class="overlayInfo flex items-center justify-center"></div>
                             <span class="mt-10 mb-32">Assemble the building materials for your 1 bedroom home. <br/>Assemble the building materials for your 1 bedroom home.</span>
-                            <a href="#" class="flex items-center space-x-5">
+                            <a href="javascript:void(0)" class="flex items-center space-x-5">
                                 <p>Learn More</p>
                                 <img src="./assets/Group 10.png" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="cardLayout exploreCard3 relative p-10 flex flex-col items-start">
+                    <div class="cardLayout exploreCard3 relative lg:p-10 md:p-6 p-4 flex flex-col items-start">
                         <div class="info flex items-center justify-center">STEEL STRUCTURES</div>
-                        <div class="overlay p-10 flex flex-col items-start">
+                        <div class="overlay lg:p-10 md:p-6 p-4 flex flex-col items-start">
                             <div class="overlayInfo flex items-center justify-center"></div>
                             <span class="mt-10 mb-32">Assemble the building materials for your 1 bedroom home. <br/>Assemble the building materials for your 1 bedroom home.</span>
-                            <a href="#" class="flex items-center space-x-5">
+                            <a href="javascript:void(0)" class="flex items-center space-x-5">
                                 <p>Learn More</p>
                                 <img src="./assets/Group 10.png" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="cardLayout exploreCard4 relative p-10 flex flex-col items-start">
+                    <div class="cardLayout exploreCard4 relative lg:p-10 md:p-6 p-4 flex flex-col items-start">
                         <div class="info flex items-center justify-center">WATER MANAGEMENT</div>
-                        <div class="overlay p-10 flex flex-col items-start">
+                        <div class="overlay lg:p-10 md:p-6 p-4 flex flex-col items-start">
                             <div class="overlayInfo flex items-center justify-center"></div>
                             <span class="mt-10 mb-32">Assemble the building materials for your 1 bedroom home. <br/>Assemble the building materials for your 1 bedroom home.</span>
-                            <a href="#" class="flex items-center space-x-5">
+                            <a href="javascript:void(0)" class="flex items-center space-x-5">
                                 <p>Learn More</p>
                                 <img src="./assets/Group 10.png" alt="">
                             </a>
@@ -406,14 +406,14 @@
             <!--BRANCHES SECTION-->
             <div class="branches relative flex items-start justify-center">
                 <div class="bgBack"></div>
-                <div class="wrapper flex flex-col justify-center items-center px-24 py-12 space-y-5">
+                <div class="wrapper flex flex-col justify-center items-center lg:px-24 md:px-12 px-6 lg:py-24 md:py-12 py-6 space-y-5 lg:mb-12 md:mb-12 mb-0">
                     <h2>Shop building materials countrywide</h2>
                     <form action="#" class="w-full flex flex-col items-center">
                         <div class="search flex items-center space-x-5 px-5">
                             <img src="./assets/location_on_black_24dp.png" alt="">
                             <input type="text" placeholder="Search building material">
                         </div>
-                        <div class="radios w-auto flex items-center justify-center space-x-1 mt-16">
+                        <div class="radios w-auto flex items-center justify-center space-x-1 lg:mt-16 md:mt-8 mt-4">
                             <label class="container flex items-center justify-center space-x-2">
                                 <input type="radio" checked>
                                 <span class="checkmark"></span>
@@ -431,7 +431,7 @@
                             </label>
                         </div>
                     </form>
-                    <p class="mb-32">Buy your building materials from these branches near you</p>
+                    <p class="lg:mb-32 md:mb-16 mb-8">Buy your building materials from these branches near you</p>
                     <div class="hardware grid grid-cols-4 gap-8">
                         <div class="hardwareCard relative p-6 flex flex-col items-start">
                            <span class="info flex items-center justify-center">Hardware Name</span>
@@ -482,9 +482,9 @@
             </div>
             
             <!--DIFFERENCES SECTION-->
-            <div class="differences flex flex-col items-center justify-center p-24">
+            <div class="differences flex flex-col items-center justify-center lg:px-24 md:px-12 px-6 lg:py-24 md:py-12 py-6">
                 <h2>The Space & Style difference</h2>
-                <div class="grid grid-cols-3 gap-12 mt-32">
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 lg:mt-24 md:mt-16 mt-8">
                     <div class="differenceCard flex flex-col items-center justify-center">
                         <img src="./assets/Mask Group 1.png" alt="">
                         <h5>Quality & Innovation</h5>
@@ -513,12 +513,12 @@
             </div>
             
             <!--PARTNERS SECTION-->
-            <div class="partners pl-24 grid gap-12 mt-24">
-                <div class="partnerText col-start-1 col-end-3 flex flex-col items-start justify start space-y-5">
+            <div class="partners lg:pl-24 md:pl-12 pl-6 grid lg:gap-12 lg:mt-24 md:mt-12 mt-6">
+                <div class="partnerText flex flex-col items-start justify start space-y-5">
                     <h2>Together with our <span>partners</span>, build the future.</h2>
-                    <a href="#">See All Projects Here</a>
+                    <a href="javascript:void(0)">See All Projects Here</a>
                 </div>
-                <div class="swiper partnerSlider col-start-3 col-end-12 w-full h-full">
+                <div class="swiper partnerSlider w-full h-full">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide sliderCard flex flex-col items-start justify-center h-auto w-auto space-y-5 p-5">
                             <img src="./assets/partner img 1.png" alt="">
@@ -545,13 +545,13 @@
             </div>
             
             <!--CUSTOMERS SECTION-->
-            <div class="customers flex flex-col py-24">
-                <div class="titleSection flex items-center justify-between px-24">
+            <div class="customers flex flex-col lg:py-24 md:py-12 py-6">
+                <div class="titleSection flex items-center justify-between lg:px-24 md:px-12 px-6">
                     <h2>Customers are <span>happy</span> with our service</h2>
-                    <a href="#">Read All Reviews Here</a>
+                    <a href="javascript:void(0)">Read All Reviews Here</a>
                 </div>
-                <div class="swiper customerSlider h-full w-full mt-20">
-                    <div class="swiper-wrapper pl-24">
+                <div class="swiper customerSlider h-full w-full lg:mt-20 md:mt-10 mt-6">
+                    <div class="swiper-wrapper lg:pl-24 md:pl-12 pl-6">
                         <div class="swiper-slide relative customerCard flex flex-col items-start justify-between pt-5 pb-8 px-10">
                             <div class="overlay"></div>
                             <img src="./assets/PATTERN.png" alt="" class="overlayImg">
@@ -707,10 +707,10 @@
             </div>
             
             <!--COMMUNITY SECTION-->
-            <div class="community relative flex w-full flex-col py-24">
+            <div class="community relative flex w-full flex-col lg:py-24 md:py-12 py-6">
                 <div class="back"></div>
                 <h2 class="text-center"><span>Impacting</span> the community for better future</h2>
-                <div class="communityInfo mt-20 pr-24 flex justify-start space-x-12 h-auto w-full">
+                <div class="communityInfo relative lg:mt-20 md:mt-10 mt-5 lg:pr-24 md:px-12 sm:px-6 flex justify-start lg:space-x-12 md:space-x-6 h-auto w-full">
                     <div class="imgWrapper relative">
                         <img src="./assets/githurai all stars.png" alt="" class="communityImg" v-show="currentCommunityImg==1">
                         <img src="./assets/mandaani.png" alt="" class="communityImg" v-show="currentCommunityImg==2">
@@ -730,27 +730,27 @@
                             </span>
                         </div>
                     </div>
-                    <div class="communityText h-full flex flex-col items-start justify-start">
+                    <div class="communityText h-full w-full flex flex-col items-start justify-start">
                         <h5>Space & Style is heavily invested in our local community and the  World at large to help make it a better place for future generations.</h5>
-                        <div class="names mt-12 mb-12">
+                        <div class="names lg:my-12 md:my-6 my-4">
                             <h3 v-show="currentCommunityImg==1">Githurai All Stars FC</h3>
                             <h3 v-show="currentCommunityImg==2">Maandani School Re-roof</h3>
                             <h3 v-show="currentCommunityImg==3">COVID 19 Water Tanks</h3>
                         </div>
                         <p>Space & Style is heavily invested in our local community and the  World at large to help make it a better place for future generations.</p>
-                        <a href="#" class="mt-12">Read full story here</a>
+                        <a href="javascript:void(0)" class="lg:mt-12 md:mt-6 mt-4">Read full story here</a>
                     </div>
                 </div>
             </div>
             
             <!--STYLE POINTS SECTION-->
-            <div class="stylePoints relative h-auto w-full grid grid-cols-2 gap-12 py-24 pr-24">
+            <div class="stylePoints relative h-auto w-full grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 lg:gap-12 gap-6 lg:py-24 md:py-12 py-6 lg:pr-24 md:px-12 sm:px-6">
                 <div class="overlay"></div>
                 <img src="./assets/style img.png" alt="">
                 <div class="styleText h-full flex flex-col space-y-6 justify-center items-start">
                     <h2>Earn Style points when <br/> you buy and build with us.</h2>
                     <h5>Spend up to Ksh.500 and earn <br/>redeemable loyalty points today</h5>
-                    <a href="#" class="flex items-center justify-center mt-2">Register Now</a>
+                    <a href="javascript:void(0)" class="flex items-center justify-center mt-2">Register Now</a>
                 </div>
             </div>
         </main>
@@ -766,37 +766,38 @@
                 <div class="linkSection grid gap-1">
                     <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Company</h5>
-                        <a href="#">About Us</a>
-                        <a href="#">Products</a>
-                        <a href="#">Partnership</a>
-                        <a href="#">Style Points</a>
-                        <a href="#">Style Projects</a>
-                        <a href="#">Style Careers</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./products.html">Products</a>
+                        <a href="./partnership.html">Partnership</a>
+                        <a href="./style.html">Style Points</a>
+                        <a href="./projects.html">Style Projects</a>
+                        <a href="./about_careers.html">Style Careers</a>
                     </div>
                     <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Style Hub</h5>
-                        <a href="#">Press Releases</a>
-                        <a href="#">Downloads</a>
-                        <a href="#">Resources</a>
-                        <a href="#">FAQs</a>
+                        <a href="javascript:void(0)">Press Releases</a>
+                        <a href="./downloads.html">Downloads</a>
+                        <a href="./resources.html">Resources</a>
+                        <a href="./faq.html">FAQs</a>
                     </div>
                     <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Style Community</h5>
-                        <a href="#">Trainings</a>
-                        <a href="#">Environment</a>
+                        <a href="./impact_training_1.html">Trainings</a>
+                        <a href="./impact_environment_1.html">Environment</a>
                     </div>
                     <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Head Office</h5>
-                        <a href="#">Libra House, Mombasa Rd</a>
-                        <a href="#">Telephone: 020 2086700</a>
+                        <a href="javascript:void(0)">Libra House, Mombasa Rd</a>
+                        <a href="javascript:void(0)">Telephone: 020 2086700</a>
                     </div>
                 </div>
                 <div class="iconSection flex flex-col items-center">
                     <h5 class="mb-5">Get interactive</h5>
-                    <div class="flex lg:space-x-5 space-x-2">
+                    <div class="flex lg:space-x-3 space-x-1">
                         <img src="./assets/Layer 2.png" alt="" class="socialIcon">
                         <img src="./assets/Logo_1_.png" alt="" class="socialIcon">
                         <img src="./assets/Layer 3.png" alt="" class="socialIcon">
+                        <img src="./assets/tube.png" alt="" class="socialIcon">
                     </div>
                 </div>
             </div>
@@ -835,18 +836,27 @@
             breakpoints: {
                 // when window width is >= 320px
                 320: {
-                slidesPerView: 1,
+                slidesPerView: 1.2,
                 spaceBetween: 10
                 },
                 // when window width is >= 480px
                 480: {
-                slidesPerView: 1,
+                slidesPerView: 1.6,
                 spaceBetween: 10
                 },
                 // when window width is >= 640px
                 640: {
+                slidesPerView: 2.3,
+                spaceBetween: 20
+                },
+                // when window width is >= 1280px
+                1280: {
                 slidesPerView: 2.6,
-                spaceBetween: 50
+                spaceBetween: 40
+                },
+                1700: {
+                slidesPerView: 3.2,
+                spaceBetween: 40
                 }
             }
         });
@@ -862,16 +872,24 @@
             breakpoints: {
                 // when window width is >= 320px
                 320: {
-                slidesPerView: 1.6,
+                slidesPerView: 1.3,
                 spaceBetween: 10
                 },
                 // when window width is >= 480px
                 480: {
-                slidesPerView: 2.6,
+                slidesPerView: 1.6,
                 spaceBetween: 10
                 },
                 // when window width is >= 640px
                 640: {
+                slidesPerView: 2.6,
+                spaceBetween: 20
+                },
+                1024: {
+                slidesPerView: 2.6,
+                spaceBetween: 50
+                },
+                1280: {
                 slidesPerView: 3.6,
                 spaceBetween: 50
                 }
