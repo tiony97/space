@@ -37,8 +37,8 @@
         }
     }
     .bannerImg {
-        width: 939px;
-        height: 554px;
+        width: auto;
+        height: auto;
         z-index: 1;
     }
 }
@@ -46,7 +46,7 @@
 //VIDEO SECTION
 .videoSection {
     background: $light;
-    min-height: 950px;
+    min-height: auto;
     .back {
         top: 0;
         right: 0;
@@ -786,4 +786,881 @@
             }
         }
     }
+}
+
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+.aboutBanner {
+    .back {
+        height: 55%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 55px;
+        }
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        h5 {
+            font-size: 20px;
+        }
+        h6 {
+            font-size: 20px;
+            color: white;
+            font-weight: bolder;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+.videoSection {
+    background: $light;
+    height: auto !important;
+    
+    .imgBox {
+        height: 550px;
+        width: auto;
+        span {
+            width: 120px;
+            height: 120px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    .textBox {
+        h1 {
+            font-size: 45px;
+            line-height: 52px;
+        }
+        p {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+    .videoModal {
+        width: 100%;
+        height: 100%;
+        .videoWrapper {
+            .close {
+                position: absolute;
+                top: 50px;
+                right: 50px;
+                img {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+            .video {
+                width: 80vw;
+                height: 70vh;
+            }
+        }
+    }
+}
+.lifetime {
+    h1 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+    .imageBox {
+        width: auto;
+        height: 550px;
+    }
+    .detailsBox {
+        .detail {
+            h3 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            span {
+                img{
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+}
+.assurance {
+    grid-template-columns: 1fr 3fr;
+    h1 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+    h5 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .item {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        span {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .inner {
+            h6 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+.team {
+    .back {
+        width: 95%;
+    }
+    .teamWrapper {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 60px;
+        .left {
+            img {
+                width: 100%;
+                height: 550px;
+                object-fit: cover;
+            }
+            h4 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 22px;
+                line-height: 30px;
+            }
+            a {
+                width: 300px;
+                height: 80px;
+                font-size: 22px;
+                line-height: 32px;
+                border-radius: 30px;
+            }
+        }
+        .right {
+            h3 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            h1 {
+                font-size: 45px;
+                line-height: 52px;
+            }
+            p {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            a {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            img {
+                width: 100%;
+                height: 550px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.career {
+    img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+    .careerText {
+        h2 {
+            font-size: 45px;
+            line-height: 52px;
+        }
+        h5 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        a {
+            width: 250px;
+            height: 80px;
+            font-size: 22px;
+            line-height: 30px;
+            border-radius: 30px;
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.aboutBanner {
+    .back {
+        height: 50%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        h5 {
+            font-size: 16px;
+        }
+        h6 {
+            font-size: 16px;
+        }
+    }
+}
+.videoSection {
+    .imgBox {
+        height: 500px;
+        width: 100%;
+        span {
+            width: 100px;
+            height: 100px;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    .textBox {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .videoModal {
+        width: 100%;
+        height: 100%;
+        .videoWrapper {
+            .close {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .video {
+                width: 70vw;
+                height: 60vh;
+            }
+        }
+    }
+}
+.lifetime {
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .imageBox {
+        width: 100%;
+        height: 500px;
+        img {
+            object-fit: cover;
+        }
+    }
+    .detailsBox {
+        .detail {
+            h3 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 32px;
+            }
+            span {
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+.assurance {
+    grid-template-columns: 1fr;
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+        width: 80% !important;
+        margin-bottom: 20px;
+    }
+    h5 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .item {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        span {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .inner {
+            h6 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+.team {
+    .back {
+        width: 95%;
+    }
+    .teamWrapper {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 40px;
+        .left {
+            img {
+                width: 100%;
+                height: 500px;
+            }
+            h4 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            a {
+                width: 300px;
+                height: 60px;
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+        .right {
+            h3 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            h1 {
+                font-size: 40px;
+                line-height: 50px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 32px;
+            }
+            a {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            img {
+                width: 100%;
+                height: 500px;
+            }
+        }
+    }
+}
+.career {
+    img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .careerText {
+        h2 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        h5 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        a {
+            width: 250px;
+            height: 60px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+}
+
+//Tablets
+@media only screen and (max-width: 768px) {
+.aboutBanner {
+    .back {
+        height: 50%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h5 {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+.videoSection {
+    .imgBox {
+        height: 400px;
+        width: 100%;
+        span {
+            width: 80px;
+            height: 80px;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    .textBox {
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .videoModal {
+        width: 100%;
+        height: 100%;
+        .videoWrapper {
+            .close {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .video {
+                width: 70vw;
+                height: 60vh;
+            }
+        }
+    }
+}
+.lifetime {
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .imageBox {
+        width: 100%;
+        height: 400px;
+    }
+    .detailsBox {
+        .detail {
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            span {
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+.assurance {
+    grid-template-columns: 1fr;
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    h5 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .item {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        span {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .inner {
+            h6 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+.team {
+    .back {
+        width: 95%;
+    }
+    .teamWrapper {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 20px;
+        .left {
+            img {
+                width: 100%;
+                height: 400px;
+            }
+            h4 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            a {
+                width: 300px;
+                height: 60px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .right {
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            h1 {
+                font-size: 40px;
+                line-height: 50px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            a {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            img {
+                width: 100%;
+                height: 400px;
+            }
+        }
+    }
+}
+.career {
+    img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    .careerText {
+        h2 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        h5 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        a {
+            width: 200px;
+            height: 60px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+}
+
+//Mobile
+@media only screen and (max-width: 540px) {
+.aboutBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+    .back {
+        height: 80%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+        }
+        p,h5 {
+            color: white;
+        }
+    }
+    .bannerImg {
+        object-fit: cover;
+    }
+}
+.videoSection {
+    padding: 24px !important;
+    .back {
+        width: 100%;
+    }
+    
+    .imgBox {
+        height: 300px;
+        width: 100%;
+        span {
+            width: 60px;
+            height: 60px;
+            img {
+                width: 20px;
+                height: 20px;
+                margin-right: 5px !important;
+            }
+        }
+    }
+    .textBox {
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+    .videoModal {
+        width: 100%;
+        height: 100%;
+        .videoWrapper {
+            padding: 16px !important;
+            .close {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .video {
+                width: 100%;
+                height: 40vh;
+            }
+        }
+    }
+}
+.lifetime {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .imageBox {
+        width: 100%;
+        height: 300px;
+    }
+    .detailsBox {
+        .detail {
+            padding: 24px !important;
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            span {
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+.assurance {
+    grid-template-columns: 1fr;
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+        width: 100% !important;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    h5 {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .item {
+        justify-items: center;
+        align-content: center;
+        grid-gap: 0;
+        span {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .inner {
+            h6 {
+                font-size: 24px;
+                line-height: 32px;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+            }
+        }
+    }
+}
+.team {
+    .back {
+        width: 100%;
+    }
+    .teamWrapper {
+        grid-template-columns: 100%;
+        grid-gap: 40px;
+        .left { 
+            .leftText {
+                display: flex;
+                flex-direction: column;
+                align-items: center !important;
+                justify-content: center !important;
+            }
+            img {
+                width: 100%;
+                height: 300px;
+            }
+            h4 {
+                font-size: 30px;
+                line-height: 40px;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+            }
+            a {
+                width: 250px;
+                height: 60px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .right {
+            .rightText {
+                display: flex;
+                flex-direction: column;
+                align-items: center !important;
+                justify-content: center !important;
+            }
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+                text-align: center;
+            }
+            h1 {
+                font-size: 30px;
+                line-height: 40px;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+            }
+            a {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            img {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+}
+.career {
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .careerText {
+        align-items: center;
+        h2 {
+            font-size: 32px;
+            line-height: 50px;
+            text-align: center;
+        }
+        h5 {
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+        }
+        a {
+            width: 200px;
+            height: 60px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
 }

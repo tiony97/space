@@ -78,12 +78,12 @@
         
         <main class="w-full">
             <!--ABOUT PAGE BANNER SECTION-->
-            <div class="aboutBanner relative w-full h-auto pl-24 pb-24 grid grid-cols-2">
+            <div class="aboutBanner relative w-full h-auto lg:pl-24 md:pl-12 pl-5 lg:pb-24 md:pb-12 pb-6 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
                 <div class="back absolute"></div>
                 <div class="bannerTxt h-full flex flex-col justify-end items-start space-y-3 pb-5">
-                    <h1 class="mb-10">About Us</h1>
+                    <h1 class="lg:mb-10 mb-6">About Us</h1>
                     <p>18 years of experience in <br/> specialised building materials</p>
-                    <div class="flex space-x-4">
+                    <div class="flex flex-col lg:flex-row md:flex-row lg:space-x-4 md:space-x-4">
                         <h5>Over 400 (4.5) reviews</h5>
                         <div class="flex">
                             <img src="./assets/yellow fill star.png" alt="">
@@ -98,9 +98,9 @@
             </div>
             
             <!--VIDEO SECTION-->
-            <div class="videoSection relative w-full flex items-center justify-start">
+            <div class="videoSection relative w-full flex items-center justify-start lg:pr-24 md:pr-12 sm:px-6 lg:pl-0 md:pl-0 lg:py-24 md:py-12 py-6">
                 <div class="back absolute"></div>
-                <div class="grid grid-cols-2 gap-16 pr-24">
+                <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-16 md:gap-8 gap-4">
                     <div class="imgBox flex items-center justify-center">
                         <span class="play flex items-center justify-center cursor-pointer pl-3"><img src="./assets/play.png" alt=""></span>
                     </div>
@@ -109,7 +109,7 @@
                         <p>That has been in operation since 2002, steadily growing To be at the forefront of supply of specialised building solutions. It is through the strength of our products That we have potential to be market leaders in the building industry in Kenya and the region.</p>
                     </div>
                 </div>
-                <div class="videoModal pl-24">
+                <div class="videoModal lg:pr-24 md:pr-12 sm:px-6">
                     <div class="videoWrapper flex items-center justify-center w-full h-full">
                         <span class="close cursor-pointer"><img src="./assets/close_black_24dp.png" alt=""></span>
                         <video src="" controls autoplay class="video"></video>
@@ -118,10 +118,9 @@
             </div>
             
             <!--LIFETIME SOLUTIONS-->
-            <div class="lifetime relative w-full h-full space-y-12 px-24 py-24">
-                <h1>Need <span>lifetime building</span> solutions?<br/>
-                    We deliver.</h1>
-                <div class="grid grid-cols-2 gap-0">
+            <div class="lifetime relative w-full h-full lg:space-y-12 md:space-y-6 space-y-4 lg:px-24 md:px-12 px-6 lg:py-24 md:py-12 py-6">
+                <h1>Need <span>lifetime building</span> solutions? We deliver.</h1>
+                <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-0">
                     <div class="imageBox relative">
                         <img v-show="activelife==1" src="./assets/lifetime 1.png" alt="">
                         <img v-show="activelife==2" src="./assets/lifetime 2.png" alt="">
@@ -129,50 +128,50 @@
                         <img v-show="activelife==4" src="./assets/lifetime 4.png" alt="">
                     </div>
                     <div class="detailsBox">
-                        <div v-show="activelife==1" class="detail detail1 w-full h-full flex flex-col items-start justify-center px-16 space-y-6">
+                        <div v-show="activelife==1" class="detail detail1 w-full h-full flex flex-col items-start justify-center lg:px-16 md:px-8 px-4 lg:space-y-6 md:space-y-3 space-y-2">
                             <h3>Our Vision</h3>
                             <p>That has been in operation since 2002, steadily growing
                                 To be at the forefront of supply of specialised building
                                 solutions. It is through the strength of our products
                                 That we have potential to be market leaders in the
                                 building industry in Kenya and the region.</p>
-                            <div class="btns flex items-center space-x-5">
+                            <div class="btns flex items-center lg:space-x-5 md:space-x-3 space-x-2">
                                 <span class="cursor-pointer"><img src="./assets/Backward Button.png" alt=""></span>
                                 <span @click="activelife+=1" class="cursor-pointer"><img src="./assets/Forward Button Orange.png" alt=""></span>
                             </div>
                         </div>
-                        <div v-show="activelife==2" class="detail detail2 w-full h-full flex flex-col items-start justify-center px-16 space-y-6">
+                        <div v-show="activelife==2" class="detail detail2 w-full h-full flex flex-col items-start justify-center lg:px-16 md:px-8 px-4 lg:space-y-6 md:space-y-3 space-y-2">
                             <h3>Our Mission</h3>
                             <p>That has been in operation since 2002, steadily growing
                                 To be at the forefront of supply of specialised building
                                 solutions. It is through the strength of our products
                                 That we have potential to be market leaders in the
                                 building industry in Kenya and the region.</p>
-                            <div class="btns flex items-center space-x-5">
+                            <div class="btns flex items-center lg:space-x-5 md:space-x-3 space-x-2">
                                 <span @click="activelife-=1" class="cursor-pointer"><img src="./assets/Backward Button White.png" alt=""></span>
                                 <span @click="activelife+=1" class="cursor-pointer"><img src="./assets/Forward Button Blue.png" alt=""></span>
                             </div>
                         </div>
-                        <div v-show="activelife==3" class="detail detail3 w-full h-full flex flex-col items-start justify-center px-16 space-y-6">
+                        <div v-show="activelife==3" class="detail detail3 w-full h-full flex flex-col items-start justify-center lg:px-16 md:px-8 px-4 lg:space-y-6 md:space-y-3 space-y-2">
                             <h3>Our Values</h3>
                             <p>That has been in operation since 2002, steadily growing
                                 To be at the forefront of supply of specialised building
                                 solutions. It is through the strength of our products
                                 That we have potential to be market leaders in the
                                 building industry in Kenya and the region.</p>
-                            <div class="btns flex items-center space-x-5">
+                            <div class="btns flex items-center lg:space-x-5 md:space-x-3 space-x-2">
                                 <span @click="activelife-=1" class="cursor-pointer"><img src="./assets/Backward Button White.png" alt=""></span>
                                 <span @click="activelife+=1" class="cursor-pointer"><img src="./assets/Forward Button Green.png" alt=""></span>
                             </div>
                         </div>
-                        <div v-show="activelife==4" class="detail detail4 w-full h-full flex flex-col items-start justify-center px-16 space-y-6">
+                        <div v-show="activelife==4" class="detail detail4 w-full h-full flex flex-col items-start justify-center lg:px-16 md:px-8 px-4 lg:space-y-6 md:space-y-3 space-y-2">
                             <h3>Our Best Self</h3>
                             <p>That has been in operation since 2002, steadily growing
                                 To be at the forefront of supply of specialised building
                                 solutions. It is through the strength of our products
                                 That we have potential to be market leaders in the
                                 building industry in Kenya and the region.</p>
-                            <div class="btns flex items-center space-x-5">
+                            <div class="btns flex items-center">
                                 <span @click="activelife-=1" class="cursor-pointer"><img src="./assets/Backward Button.png" alt=""></span>
                             </div>
                         </div>
@@ -181,15 +180,15 @@
             </div>
             
             <!--ASSURANCE SECTION-->
-            <div class="assurance relative w-full h-auto px-24 py-24 grid">
-                <h1>Style quality<span><br/>assurance</span><br/>& <span>difference</span></h1>
-                <div class="flex flex-col space-y-8">
-                    <h5 class="w-4/5">Designed to be different, our company to offer you high quality
+            <div class="assurance relative w-full h-auto lg:px-24 md:px-12 px-6 lg:pb-24 md:pb-12 pb-6 grid">
+                <h1 class="lg:w-3/6">Style quality <span>assurance</span> & <span>difference</span></h1>
+                <div class="flex flex-col lg:space-y-8 md:space-y-6 space-y-4">
+                    <h5 class="lg:w-4/5 w-full">Designed to be different, our company to offer you high quality
                         products at the most competitive price. </h5>
-                    <div class="grid grid-cols-2 gap-16">
+                    <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-8 gap-4">
                         <div class="item">
                             <span class="flex items-center justify-center"><img src="./assets/quality white.png" alt=""></span>
-                            <div class="space-y-4">
+                            <div class="inner space-y-4">
                                 <h6>Quality</h6>
                                 <p>Space & Style is heavily invested in
                                     our local community and the world
@@ -199,7 +198,7 @@
                         </div>
                         <div class="item">
                             <span class="flex items-center justify-center"><img src="./assets/quality white.png" alt=""></span>
-                            <div class="space-y-4">
+                            <div class="inner space-y-4">
                                 <h6>Product</h6>
                                 <p>Space & Style is heavily invested in
                                     our local community and the world
@@ -209,7 +208,7 @@
                         </div>
                         <div class="item">
                             <span class="flex items-center justify-center"><img src="./assets/quality white.png" alt=""></span>
-                            <div class="space-y-4">
+                            <div class="inner space-y-4">
                                 <h6>Standards</h6>
                                 <p>Space & Style is heavily invested in
                                     our local community and the world
@@ -219,7 +218,7 @@
                         </div>
                         <div class="item">
                             <span class="flex items-center justify-center"><img src="./assets/quality white.png" alt=""></span>
-                            <div class="space-y-4">
+                            <div class="inner space-y-4">
                                 <h6>Technology</h6>
                                 <p>Space & Style is heavily invested in
                                     our local community and the world
@@ -232,26 +231,22 @@
             </div>
             
             <!--TEAM SECTION-->
-            <div class="team relative w-full h-auto py-24">
+            <div class="team relative w-full h-auto lg:py-24 md:py-12 py-6">
                 <div class="back absolute"></div>
-                <div class="teamWrapper pr-24">
+                <div class="teamWrapper lg:pr-24 md:pr-12 lg:pl-0 md:pl-0 px-6">
                     <div class="left">
                         <img src="./assets/team_1.png" alt="">
-                        <div class="leftText pl-32 mt-24">
+                        <div class="leftText lg:pl-32 md:pl-16 lg:pl-0 lg:mt-24 md:mt-12 mt-6">
                             <h4>Why work at Space & Style?</h4>
-                            <p class="mt-4 mb-8">We put emphasis on teamwork, human capacity
-                                <br/>development and innovation</p>
+                            <p class="mt-4 lg:mb-8 md:mb-6 mb-4">We put emphasis on teamwork, human capacity development and innovation</p>
                             <a href="./about_culture.html" class="flex items-center justify-center">Learn about our culture</a>
                         </div>
                     </div>
                     <div class="right">
-                        <div class="rightText mb-32">
+                        <div class="rightText lg:mb-32 md:mb-12 mb-6">
                             <h3>Our Team</h3>
-                            <h1 class="my-5">Style <span>team</span> make the
-                                <br/><span>difference</span> every time.</h1>
-                            <p class="mb-12 w-3/5">Space & Style is heavily invested in our local community
-                                and the  World at large to help make it a better place
-                                for future generations.</p>
+                            <h1 class="lg:my-5 md:my-3 my-2">Style <span>team</span> make the <span>difference</span> every time.</h1>
+                            <p class="lg:mb-12 md:mb-6 mb-3 lg:w-3/5 md:w-4/5 w-full">Space & Style is heavily invested in our local community and the  World at large to help make it a better place for future generations.</p>
                             <a href="./about_team.html">Lear more about Style team</a>
                         </div>
                         <img src="./assets/team_2.png" alt="">
@@ -260,13 +255,12 @@
             </div>
             
             <!--CAREER SECTION-->
-            <div class="career relative h-auto w-full grid grid-cols-2 gap-12 py-24 pr-24">
+            <div class="career relative h-auto w-full grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-6 gap-4 lg:py-24 md:py-12 py-6 lg:pr-24 md:pr-12 lg:pl-0 md:pl-0 px-6">
                 <div class="overlay"></div>
                 <img src="./assets/career.png" alt="">
-                <div class="careerText h-full flex flex-col space-y-6 justify-center items-start">
+                <div class="careerText h-full flex flex-col lg:space-y-6 md:space-y-4 space-y-3 justify-center items-start">
                     <h2>Style Career</h2>
-                    <h5>We put emphasis on teamwork, human capacity
-                        <br/>development and innovation</h5>
+                    <h5>We put emphasis on teamwork, human capacity development and innovation</h5>
                     <a href="./about_careers.html" class="flex items-center justify-center mt-2">Join Style Team</a>
                 </div>
             </div>
@@ -283,37 +277,38 @@
                 <div class="linkSection grid gap-1">
                     <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Company</h5>
-                        <a href="#">About Us</a>
-                        <a href="#">Products</a>
-                        <a href="#">Partnership</a>
-                        <a href="#">Style Points</a>
-                        <a href="#">Style Projects</a>
-                        <a href="#">Style Careers</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./products.html">Products</a>
+                        <a href="./partnership.html">Partnership</a>
+                        <a href="./style.html">Style Points</a>
+                        <a href="./projects.html">Style Projects</a>
+                        <a href="./about_careers.html">Style Careers</a>
                     </div>
                     <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Style Hub</h5>
-                        <a href="#">Press Releases</a>
-                        <a href="#">Downloads</a>
-                        <a href="#">Resources</a>
-                        <a href="#">FAQs</a>
+                        <a href="javascript:void(0)">Press Releases</a>
+                        <a href="./downloads.html">Downloads</a>
+                        <a href="./resources.html">Resources</a>
+                        <a href="./faq.html">FAQs</a>
                     </div>
                     <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Style Community</h5>
-                        <a href="#">Trainings</a>
-                        <a href="#">Environment</a>
+                        <a href="./impact_training_1.html">Trainings</a>
+                        <a href="./impact_environment_1.html">Environment</a>
                     </div>
                     <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Head Office</h5>
-                        <a href="#">Libra House, Mombasa Rd</a>
-                        <a href="#">Telephone: 020 2086700</a>
+                        <a href="javascript:void(0)">Libra House, Mombasa Rd</a>
+                        <a href="javascript:void(0)">Telephone: 020 2086700</a>
                     </div>
                 </div>
                 <div class="iconSection flex flex-col items-center">
                     <h5 class="mb-5">Get interactive</h5>
-                    <div class="flex lg:space-x-5 space-x-2">
+                    <div class="flex lg:space-x-3 space-x-1">
                         <img src="./assets/Layer 2.png" alt="" class="socialIcon">
                         <img src="./assets/Logo_1_.png" alt="" class="socialIcon">
                         <img src="./assets/Layer 3.png" alt="" class="socialIcon">
+                        <img src="./assets/tube.png" alt="" class="socialIcon">
                     </div>
                 </div>
             </div>

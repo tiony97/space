@@ -3701,7 +3701,7 @@ footer .footerEnd p {
     line-height: 40px;
   }
   .explore .exploreContent p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
   .explore .exploreContent a {
@@ -3807,7 +3807,7 @@ footer .footerEnd p {
     font-weight: bold;
   }
   .branches .wrapper p, .productBranches .wrapper p, .styleResources .wrapper p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
     width: auto;
@@ -3819,7 +3819,7 @@ footer .footerEnd p {
     width: auto;
     height: auto;
     padding: 5px 2px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
     border-radius: 25px !important;
@@ -3833,7 +3833,7 @@ footer .footerEnd p {
     margin-top: 30px !important;
   }
   .branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
-    font-size: 14px;
+    font-size: 16px;
     color: #1226AA;
   }
   .branches .wrapper .hardware .hardwareCard .overlay .distance img, .productBranches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
@@ -3854,7 +3854,7 @@ footer .footerEnd p {
     height: 100px;
   }
   .differences .differenceCard h5 {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 20px;
     text-align: center;
   }
@@ -8267,14 +8267,14 @@ footer .footerEnd p {
 }
 
 .aboutBanner .bannerImg {
-  width: 939px;
-  height: 554px;
+  width: auto;
+  height: auto;
   z-index: 1;
 }
 
 .videoSection {
   background: #F4F4F4;
-  min-height: 950px;
+  min-height: auto;
 }
 
 .videoSection .back {
@@ -9133,6 +9133,815 @@ footer .footerEnd p {
   font-weight: 800;
   line-height: 32px;
   color: white;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+  .aboutBanner .back {
+    height: 55%;
+  }
+  .aboutBanner .bannerTxt h1 {
+    font-size: 55px;
+  }
+  .aboutBanner .bannerTxt p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .aboutBanner .bannerTxt h5 {
+    font-size: 20px;
+  }
+  .aboutBanner .bannerTxt h6 {
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+  }
+  .aboutBanner .bannerTxt img {
+    width: 30px;
+    height: 30px;
+  }
+  .videoSection {
+    background: #F4F4F4;
+    height: auto !important;
+  }
+  .videoSection .imgBox {
+    height: 550px;
+    width: auto;
+  }
+  .videoSection .imgBox span {
+    width: 120px;
+    height: 120px;
+  }
+  .videoSection .imgBox span img {
+    width: 50px;
+    height: 50px;
+  }
+  .videoSection .textBox h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .videoSection .textBox p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .videoSection .videoModal {
+    width: 100%;
+    height: 100%;
+  }
+  .videoSection .videoModal .videoWrapper .close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+  .videoSection .videoModal .videoWrapper .close img {
+    width: 48px;
+    height: 48px;
+  }
+  .videoSection .videoModal .videoWrapper .video {
+    width: 80vw;
+    height: 70vh;
+  }
+  .lifetime h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .lifetime .imageBox {
+    width: auto;
+    height: 550px;
+  }
+  .lifetime .detailsBox .detail h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .lifetime .detailsBox .detail p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .lifetime .detailsBox .detail span img {
+    width: 70px;
+    height: 70px;
+  }
+  .assurance {
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+  }
+  .assurance h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .assurance h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .assurance .item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .assurance .item span {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  .assurance .item span img {
+    width: 100px;
+    height: 100px;
+  }
+  .assurance .item .inner h6 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .assurance .item .inner p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .team .back {
+    width: 95%;
+  }
+  .team .teamWrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    grid-gap: 60px;
+  }
+  .team .teamWrapper .left img {
+    width: 100%;
+    height: 550px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .team .teamWrapper .left h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .team .teamWrapper .left p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .team .teamWrapper .left a {
+    width: 300px;
+    height: 80px;
+    font-size: 22px;
+    line-height: 32px;
+    border-radius: 30px;
+  }
+  .team .teamWrapper .right h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .team .teamWrapper .right h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .team .teamWrapper .right p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .team .teamWrapper .right a {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .team .teamWrapper .right img {
+    width: 100%;
+    height: 550px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .career img {
+    width: 100%;
+    height: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .career .careerText h2 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .career .careerText h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .career .careerText a {
+    width: 250px;
+    height: 80px;
+    font-size: 22px;
+    line-height: 30px;
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .aboutBanner .back {
+    height: 50%;
+  }
+  .aboutBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .aboutBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .aboutBanner .bannerTxt h5 {
+    font-size: 16px;
+  }
+  .aboutBanner .bannerTxt h6 {
+    font-size: 16px;
+  }
+  .videoSection .imgBox {
+    height: 500px;
+    width: 100%;
+  }
+  .videoSection .imgBox span {
+    width: 100px;
+    height: 100px;
+  }
+  .videoSection .imgBox span img {
+    width: 40px;
+    height: 40px;
+  }
+  .videoSection .textBox h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .videoSection .textBox p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .videoSection .videoModal {
+    width: 100%;
+    height: 100%;
+  }
+  .videoSection .videoModal .videoWrapper .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .videoSection .videoModal .videoWrapper .close img {
+    width: 40px;
+    height: 40px;
+  }
+  .videoSection .videoModal .videoWrapper .video {
+    width: 70vw;
+    height: 60vh;
+  }
+  .lifetime h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .lifetime .imageBox {
+    width: 100%;
+    height: 500px;
+  }
+  .lifetime .imageBox img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .lifetime .detailsBox .detail h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .lifetime .detailsBox .detail p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .lifetime .detailsBox .detail span img {
+    width: 50px;
+    height: 50px;
+  }
+  .assurance {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .assurance h1 {
+    font-size: 40px;
+    line-height: 50px;
+    width: 80% !important;
+    margin-bottom: 20px;
+  }
+  .assurance h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .assurance .item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .assurance .item span {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  .assurance .item span img {
+    width: 100px;
+    height: 100px;
+  }
+  .assurance .item .inner h6 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .assurance .item .inner p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .team .back {
+    width: 95%;
+  }
+  .team .teamWrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    grid-gap: 40px;
+  }
+  .team .teamWrapper .left img {
+    width: 100%;
+    height: 500px;
+  }
+  .team .teamWrapper .left h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .team .teamWrapper .left p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .team .teamWrapper .left a {
+    width: 300px;
+    height: 60px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .team .teamWrapper .right h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .team .teamWrapper .right h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .team .teamWrapper .right p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .team .teamWrapper .right a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .team .teamWrapper .right img {
+    width: 100%;
+    height: 500px;
+  }
+  .career img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .career .careerText h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .career .careerText h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .career .careerText a {
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutBanner .back {
+    height: 50%;
+  }
+  .aboutBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .aboutBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .aboutBanner .bannerTxt h5 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .aboutBanner .bannerTxt img {
+    width: 20px;
+    height: 20px;
+  }
+  .videoSection .imgBox {
+    height: 400px;
+    width: 100%;
+  }
+  .videoSection .imgBox span {
+    width: 80px;
+    height: 80px;
+  }
+  .videoSection .imgBox span img {
+    width: 40px;
+    height: 40px;
+  }
+  .videoSection .textBox h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .videoSection .textBox p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .videoSection .videoModal {
+    width: 100%;
+    height: 100%;
+  }
+  .videoSection .videoModal .videoWrapper .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .videoSection .videoModal .videoWrapper .close img {
+    width: 40px;
+    height: 40px;
+  }
+  .videoSection .videoModal .videoWrapper .video {
+    width: 70vw;
+    height: 60vh;
+  }
+  .lifetime h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .lifetime .imageBox {
+    width: 100%;
+    height: 400px;
+  }
+  .lifetime .detailsBox .detail h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .lifetime .detailsBox .detail p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .lifetime .detailsBox .detail span img {
+    width: 30px;
+    height: 30px;
+  }
+  .assurance {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .assurance h1 {
+    font-size: 40px;
+    line-height: 50px;
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .assurance h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .assurance .item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .assurance .item span {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  .assurance .item span img {
+    width: 100px;
+    height: 100px;
+  }
+  .assurance .item .inner h6 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .assurance .item .inner p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .team .back {
+    width: 95%;
+  }
+  .team .teamWrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    grid-gap: 20px;
+  }
+  .team .teamWrapper .left img {
+    width: 100%;
+    height: 400px;
+  }
+  .team .teamWrapper .left h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .team .teamWrapper .left p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .team .teamWrapper .left a {
+    width: 300px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .team .teamWrapper .right h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .team .teamWrapper .right h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .team .teamWrapper .right p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .team .teamWrapper .right a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .team .teamWrapper .right img {
+    width: 100%;
+    height: 400px;
+  }
+  .career img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .career .careerText h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .career .careerText h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .career .careerText a {
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .aboutBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+  }
+  .aboutBanner .back {
+    height: 80%;
+  }
+  .aboutBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .aboutBanner .bannerTxt p, .aboutBanner .bannerTxt h5 {
+    color: white;
+  }
+  .aboutBanner .bannerImg {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .videoSection {
+    padding: 24px !important;
+  }
+  .videoSection .back {
+    width: 100%;
+  }
+  .videoSection .imgBox {
+    height: 300px;
+    width: 100%;
+  }
+  .videoSection .imgBox span {
+    width: 60px;
+    height: 60px;
+  }
+  .videoSection .imgBox span img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px !important;
+  }
+  .videoSection .textBox h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .videoSection .textBox p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .videoSection .videoModal {
+    width: 100%;
+    height: 100%;
+  }
+  .videoSection .videoModal .videoWrapper {
+    padding: 16px !important;
+  }
+  .videoSection .videoModal .videoWrapper .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .videoSection .videoModal .videoWrapper .close img {
+    width: 30px;
+    height: 30px;
+  }
+  .videoSection .videoModal .videoWrapper .video {
+    width: 100%;
+    height: 40vh;
+  }
+  .lifetime h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .lifetime .imageBox {
+    width: 100%;
+    height: 300px;
+  }
+  .lifetime .detailsBox .detail {
+    padding: 24px !important;
+  }
+  .lifetime .detailsBox .detail h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .lifetime .detailsBox .detail p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .lifetime .detailsBox .detail span img {
+    width: 30px;
+    height: 30px;
+  }
+  .assurance {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .assurance h1 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 100% !important;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .assurance h5 {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .assurance .item {
+    justify-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    grid-gap: 0;
+  }
+  .assurance .item span {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  .assurance .item span img {
+    width: 100px;
+    height: 100px;
+  }
+  .assurance .item .inner h6 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .assurance .item .inner p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .team .back {
+    width: 100%;
+  }
+  .team .teamWrapper {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-gap: 40px;
+  }
+  .team .teamWrapper .left .leftText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .team .teamWrapper .left img {
+    width: 100%;
+    height: 300px;
+  }
+  .team .teamWrapper .left h4 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .team .teamWrapper .left p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .team .teamWrapper .left a {
+    width: 250px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .team .teamWrapper .right .rightText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .team .teamWrapper .right h3 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .team .teamWrapper .right h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .team .teamWrapper .right p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .team .teamWrapper .right a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .team .teamWrapper .right img {
+    width: 100%;
+    height: 300px;
+  }
+  .career img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .career .careerText {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .career .careerText h2 {
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .career .careerText h5 {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .career .careerText a {
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 /*STYLE PAGE BANNER*/
