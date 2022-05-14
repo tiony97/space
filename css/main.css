@@ -9330,6 +9330,57 @@ footer .footerEnd p {
     line-height: 30px;
     border-radius: 30px;
   }
+  .aboutTeamBanner .back {
+    height: 65%;
+  }
+  .aboutTeamBanner .bannerTxt h1 {
+    font-size: 50px;
+  }
+  .aboutTeamBanner .bannerTxt p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .aboutTeamBanner .bannerTxt h5 {
+    font-size: 20px;
+  }
+  .aboutTeamBanner .bannerTxt h6 {
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+  }
+  .aboutTeamBanner .bannerTxt img {
+    width: 30px;
+    height: 30px;
+  }
+  .aboutTeamBanner .bannerImg {
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+  }
+  .executives h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .executives .bio img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .executives .bio .text h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .executives .bio .text p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .executives .bio .text a {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .executives .bio .text a img {
+    width: 45px !important;
+    height: 45px !important;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
