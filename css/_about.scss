@@ -37,8 +37,9 @@
         }
     }
     .bannerImg {
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
         z-index: 1;
     }
 }
@@ -360,7 +361,7 @@
             font-weight: bolder;
             background: $orange;
             color: $dark;
-            border-radius: 25px;
+            border-radius: 30px;
             outline: none;
         }
     }
@@ -374,7 +375,7 @@
     .back {
         background: $blue;
         width: 100%;
-        height: 65%;
+        height: 60%;
         top: 0;
         left: 0;
     }
@@ -402,8 +403,9 @@
         }
     }
     .bannerImg {
-        width: 939px;
-        height: 554px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
         z-index: 1;
     }
 }
@@ -454,7 +456,7 @@
 /*ABOUT TEAM BIO STYLES*/
 .bioInfo {
     background: $light;
-    min-height: 950px;
+    height: auto;
     .back {
         top: 0;
         right: 0;
@@ -497,6 +499,47 @@
 }
 
 /*ABOUT CULTURE*/
+.aboutCultureBanner{
+    background: $light;
+    border: none;
+    .back {
+        background: $blue;
+        width: 100%;
+        height: 60%;
+        top: 0;
+        left: 0;
+    }
+    .bannerTxt {
+        z-index: 1;
+        h1 {
+            font-size: 64px;
+            font-weight: 900;
+            color: white;
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: normal;
+            color: $dark;
+        }
+        h5 {
+            font-size: 24px;
+            color: $dark;
+        }
+        h6 {
+            font-size: 24px;
+            color: white;
+            font-weight: bolder;
+        }
+    }
+    .bannerImg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        z-index: 1;
+    }
+}
+
 .investing {
     .intro {
         h1 {
@@ -607,6 +650,10 @@
 }
 
 /*ABOUT CAREERS STYLES*/
+.aboutCareerBanner {
+    @extend .aboutCultureBanner;
+}
+
 .careerJoin {
     background: $light;
     .back {
@@ -1010,7 +1057,7 @@
 //About Team Page
 .aboutTeamBanner {
     .back {
-        height: 65%;
+        height: 55%;
     }
     .bannerTxt {
         h1 {
@@ -1032,11 +1079,6 @@
             width: 30px;
             height: 30px;
         }
-    }
-    .bannerImg {
-        width: 100%;
-        height: 500px;
-        z-index: 1;
     }
 }
 .executives {
@@ -1069,7 +1111,232 @@
         }
     }
 }
+
+//Team Bio Info
+.bioInfo {
+    .back {
+        width: 95%;
+    }
+    .imgBox {
+        height: 500px;
+        width: auto;
+    }
+    .textBox {
+        h1 {
+            font-size: 45px;
+            line-height: 52px;
+        }
+        h5 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
 }
+
+//About Culture
+.aboutCultureBanner{
+    .back {
+        height: 55%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        h5 {
+            font-size: 20px;
+            color: $dark;
+        }
+        h6 {
+            font-size: 20px;
+        }
+    }
+}
+.investing {
+    .intro {
+        h1 {
+            font-size: 45px;
+            line-height: 52px;
+            font-weight: 900;
+        }
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+    .imageBox {
+        width: 100%;
+        height: 500px;
+    }
+    .detailsBox {
+        .detail {
+            h3 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 22px;
+                line-height: 30px;
+            }
+            span {
+                img{
+                    width: 60px;
+                    height: 60px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+.diversity {
+    .imgWrapper {
+        img {
+            width: 100%;
+            height: 600px;
+        }
+    }
+    .textWrapper {
+        h2 {
+            font-size: 45px;
+            line-height: 52px;
+        }
+        h5 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+}
+
+//About Career
+.careerJoin {
+    .back {
+        width: 95%;
+    }
+    .imgBox {
+        height: 500px;
+        width: 100%;
+        span {
+            width: 120px;
+            height: 120px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    .textBox {
+        h1 {
+            font-size: 45px;
+            line-height: 52px;
+        }
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        .applyBtn {
+            width: 250px;
+            height: 80px;
+            font-size: 22px;
+            line-height: 32px;
+            border-radius: 30px;
+        }
+    }
+}
+.careerExplore {
+    h1 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+    .search {
+        width: 600px;
+        height: 80px;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        input {
+            font-size: 22px;
+            &::placeholder {
+                font-size: 22px;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    
+    .jobs {
+        .jobCard {
+            h4 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            h6 {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .right {
+                a {
+                    width: 130px;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .pagination {
+        .previous {
+            width: 200px;
+            height: 60px;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            p{
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+        .pages {
+            span {
+                width: 60px;
+                height: 70px;
+                font-size: 22px;
+            }
+        }
+        .next {
+            background: $blue;
+            width: 200px;
+            height: 70px;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            p{
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+}
+
 
 @media only screen and (max-width: 1024px) {
 .aboutBanner {
@@ -1090,6 +1357,10 @@
         h6 {
             font-size: 16px;
         }
+    }
+    .bannerImg {
+        height: 250px;
+        object-fit: cover;
     }
 }
 .videoSection {
@@ -1278,13 +1549,345 @@
         }
     }
 }
+
+//About Team Page
+.aboutTeamBanner {
+    .back {
+        height: 45%;
+    }
+    .bannerTxt {
+        .bannerHeader {
+            flex-direction: column;
+            align-items: flex-start;
+            * {
+                margin: 0;
+            }
+        }
+        h1 {
+            font-size: 45px;
+            line-height: 52px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        h5 {
+            font-size: 16px;
+        }
+        h6 {
+            font-size: 16px;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .bannerImg {
+        height: 250px !important;
+        object-fit: cover;
+    }
+}
+.executives {
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .bio {
+        flex-direction: column;
+        align-items: flex-start;
+        img {
+            width: 200px !important;
+            height: 200px !important;
+        }
+        .text {
+            margin-top: 20px;
+            h4 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            a {
+                font-size: 20px;
+                line-height: 30px;
+                img {
+                    width: 45px !important;
+                    height: 45px !important;
+                }
+            }
+        }
+    }
+}
+
+//Team Bio Info
+.bioInfo {
+    .textBox {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        h5 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+//About Culture
+.aboutCultureBanner{
+    .back {
+        height: 45%;
+    }
+    .bannerTxt {
+        .bannerHeader {
+            flex-direction: column;
+            align-items: flex-start;
+            * {
+                margin: 0;
+            }
+        }
+        h1 {
+            font-size: 45px;
+            line-height: 52px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        h5 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h6 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .bannerImg {
+        height: 250px !important;
+        object-fit: cover;
+    }
+}
+.investing {
+    .intro {
+        h1 {
+            font-size: 40px;
+            line-height: 52px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+    .imageBox {
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .detailsBox {
+        .detail {
+            h3 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            span {
+                img{
+                    width: 50px;
+                    height: 50px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+.diversity {
+    .imgWrapper {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .textWrapper {
+        h2 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        h5 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+//About Career
+.aboutCareerBanner {
+    .back {
+        height: 50% !important;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+            line-height: 52px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        h5 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h6 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .bannerImg {
+        height: 250px !important;
+        object-fit: cover;
+    }
+}
+.careerJoin {
+    .back {
+        width: 95%;
+    }
+    .imgBox {
+        height: 500px;
+        width: 100%;
+        span {
+            width: 120px;
+            height: 120px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    .textBox {
+        h1 {
+            font-size: 40px;
+            line-height: 52px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .applyBtn {
+            width: 250px;
+            height: 60px;
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+}
+.careerExplore {
+    h1 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+    .search {
+        width: 60vw;
+        height: 60px;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        input {
+            font-size: 20px;
+            &::placeholder {
+                font-size: 20px;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    
+    .jobs {
+        .jobCard {
+            h4 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+                width: 100% !important;
+            }
+            h6 {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .right {
+                a {
+                    width: 130px;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .pagination {
+        .previous {
+            width: 200px;
+            height: 60px;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            p{
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+        .pages {
+            span {
+                width: 60px;
+                height: 70px;
+                font-size: 22px;
+            }
+        }
+        .next {
+            background: $blue;
+            width: 200px;
+            height: 70px;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            p{
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
 }
 
 //Tablets
 @media only screen and (max-width: 768px) {
 .aboutBanner {
     .back {
-        height: 50%;
+        height: 55%;
     }
     .bannerTxt {
         h1 {
@@ -1295,7 +1898,7 @@
             line-height: 24px;
         }
         h5 {
-            font-size: 14px;
+            font-size: 16px;
             line-height: 24px;
         }
         img {
@@ -1312,8 +1915,8 @@
             width: 80px;
             height: 80px;
             img {
-                width: 40px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
             }
         }
     }
@@ -1487,6 +2090,309 @@
         }
     }
 }
+
+//About Team Page
+.aboutTeamBanner {
+    .back {
+        height: 55%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+            line-height: 50px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h5 {
+            font-size: 16px;
+        }
+        h6 {
+            font-size: 16px;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .bannerImg {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+.executives {
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .bio {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        .text {
+            margin-top: 20px;
+            h4 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            a {
+                font-size: 16px;
+                line-height: 24px;
+                img {
+                    width: 35px !important;
+                    height: 35px !important;
+                }
+            }
+        }
+    }
+}
+
+//Team Bio Info
+.bioInfo {
+    .back {
+        width: 95%;
+    }
+    .imgBox {
+        height: 500px;
+        width: auto;
+    }
+    .textBox {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        h5 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+//About Culture
+.aboutCultureBanner{
+    .back {
+        height: 55%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h5 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h6 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    
+}
+.investing {
+    .intro {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .detailsBox {
+        .detail {
+            h3 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            span {
+                img{
+                    width: 45px;
+                    height: 45px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+.diversity {
+    .textWrapper {
+        h2 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        h5 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+//About Career
+.aboutCareerBanner {
+    .back {
+        height: 65% !important;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h5 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h6 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+.careerJoin {
+    .back {
+        width: 95%;
+    }
+    .imgBox {
+        height: 400px;
+        width: 100%;
+        span {
+            width: 120px;
+            height: 120px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    .textBox {
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .applyBtn {
+            width: 250px;
+            height: 60px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+.careerExplore {
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .search {
+        width: 60vw;
+        height: 60px;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        input {
+            font-size: 16px;
+            &::placeholder {
+                font-size: 16px;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    
+    .jobs {
+        .jobCard {
+            h4 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                width: 100% !important;
+            }
+            h6 {
+                font-size: 14px;
+                line-height: 24px;
+            }
+            .right {
+                a {
+                    width: 100px;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .pagination {
+        .previous {
+            width: 150px;
+            height: 40px;
+            img {
+                width: 15px;
+                height: 15px;
+                object-fit: cover;
+            }
+            p{
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+        .pages {
+            span {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+        .next {
+            background: $blue;
+            width: 150px;
+            height: 40px;
+            img {
+                width: 15px;
+                height: 15px;
+                object-fit: cover;
+            }
+            p{
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+    }
+}
 }
 
 //Mobile
@@ -1506,6 +2412,7 @@
         }
     }
     .bannerImg {
+        height: 300px;
         object-fit: cover;
     }
 }
@@ -1723,6 +2630,345 @@
             height: 60px;
             font-size: 16px;
             line-height: 24px;
+        }
+    }
+}
+
+//About Team Page
+.aboutTeamBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+    .back {
+        height: 80%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+        }
+        p,h5 {
+            color: white;
+        }
+    }
+    .bannerImg {
+        object-fit: cover;
+        height: 300px;
+    }
+}
+.executives {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+    .bio {
+        align-items: center;
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        .text {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h4 {
+                font-size: 22px;
+                line-height: 30px;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+            }
+            a {
+                font-size: 16px;
+                line-height: 24px;
+                img {
+                    width: 35px !important;
+                    height: 35px !important;
+                }
+            }
+        }
+    }
+}
+
+//Team Bio Info
+.bioInfo {
+    padding: 30px 24px !important;
+    .back {
+        width: 100%;
+    }
+    .imgBox {
+        height: 300px;
+        width: auto;
+    }
+    .textBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        h5 {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+}
+
+//About Culture
+.aboutCultureBanner{
+    grid-gap: 0;
+    padding: 30px 24px !important;
+    .back {
+        height: 80%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+        }
+        p,h5 {
+            color: white;
+        }
+    }
+    .bannerImg {
+        object-fit: cover;
+        height: 300px;
+    }
+}
+.investing {
+    .intro {
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+    .imageBox {
+        width: 100%;
+        height: 300px;
+    }
+    .detailsBox {
+        .detail {
+            align-items: center !important;
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+            }
+            span {
+                img{
+                    width: 45px;
+                    height: 45px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+.diversity {
+    .textWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-size: 32px;
+            line-height: 40px;
+            text-align: center;
+        }
+        h5 {
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+}
+
+//About Career
+.aboutCareerBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+    .back {
+        height: 80%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+        }
+        p,h5 {
+            color: white;
+        }
+    }
+    .bannerImg {
+        object-fit: cover;
+        height: 300px !important;
+    }
+}
+.careerJoin {
+    padding: 30px 24px !important;
+    .back {
+        width: 100%;
+    }
+    .imgBox {
+        height: 300px;
+        width: 100%;
+        span {
+            width: 120px;
+            height: 120px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    .textBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+        .applyBtn {
+            width: 250px;
+            height: 60px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+.careerExplore {
+    padding: 30px 24px !important;
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;    
+        margin-bottom: 20px;
+    }
+    .search {
+        width: 100%;
+        height: 60px;
+        margin-bottom: 20px;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        input {
+            font-size: 16px;
+            &::placeholder {
+                font-size: 16px;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    
+    .jobs {
+        .jobCard {
+            flex-direction: column;
+            align-items: flex-start !important;
+            h4 {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                width: 100% !important;
+            }
+            h6 {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .details{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-top: 10px;
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .right {
+                width: 100%;
+                justify-content: flex-start;
+                margin: 0;
+                padding: 0;
+                a {
+                    width: 100px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-top: 15px;
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+    .pagination {
+        margin-top: 20px;
+        justify-content: center;
+        .previous {
+            width: auto;
+            height: 40px;
+            img {
+                width: 15px;
+                height: 15px;
+                object-fit: cover;
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .pages {
+            span {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+        .next {
+            width: auto;
+            height: 40px;
+            img {
+                width: 15px;
+                height: 15px;
+                object-fit: cover;
+            }
+            p{
+                font-size: 16px;
+                line-height: 24px;
+            }
         }
     }
 }

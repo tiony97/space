@@ -4015,7 +4015,7 @@ footer .footerEnd p {
     text-align: center;
   }
   .homeBanner .tab1 .textContent form input, .homeBanner .tab1 .textContent form select, .homeBanner .tab1 .textContent form button {
-    min-height: 60px;
+    height: 60px;
     border-radius: 30px;
     font-size: 16px;
     padding: 0px 15px;
@@ -4043,6 +4043,7 @@ footer .footerEnd p {
     padding: 0 15px;
     font-size: 16px;
     line-height: 24px;
+    height: 60px;
   }
   .homeBanner .tab1 .textContent form .styledSelect:after {
     content: "";
@@ -4152,6 +4153,7 @@ footer .footerEnd p {
     padding: 0 10px;
     font-size: 16px;
     line-height: 24px;
+    height: 60px;
   }
   .homeBanner .tab3 .textContent form .styledSelect:after {
     top: 45%;
@@ -4605,8 +4607,10 @@ footer .footerEnd p {
 }
 
 .productBanner .bannerImg, .roofingBanner .bannerImg {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 1;
 }
 
@@ -5943,22 +5947,22 @@ footer .footerEnd p {
     height: 50px;
   }
   .faq h1 {
-    font-size: 45px;
-    line-height: 56px;
+    font-size: 40px;
+    line-height: 52px;
   }
   .faq .faqCard {
-    width: 340px;
-    height: 95px;
+    width: 100%;
+    min-height: 80px;
   }
   .faq .faqCard p {
     font-size: 22px;
     line-height: 32px;
   }
   .faq .accordion .accord {
-    min-height: 90px;
+    min-height: 80px;
   }
   .faq .accordion .accord span h4 {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 32px;
     font-weight: bold;
   }
@@ -6284,6 +6288,9 @@ footer .footerEnd p {
 }
 
 @media only screen and (max-width: 1024px) {
+  .productBanner .back, .roofingBanner .back {
+    height: 55%;
+  }
   .productBanner .bannerTxt h1, .roofingBanner .bannerTxt h1 {
     font-size: 45px;
   }
@@ -6296,6 +6303,11 @@ footer .footerEnd p {
   }
   .productBanner .bannerTxt h6, .roofingBanner .bannerTxt h6 {
     font-size: 16px;
+  }
+  .productBanner .bannerImg, .roofingBanner .bannerImg {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .productGrids h4 {
     font-size: 24px;
@@ -6573,8 +6585,8 @@ footer .footerEnd p {
        object-fit: contain;
   }
   .faq h1 {
-    font-size: 32px;
-    line-height: 45px;
+    font-size: 40px;
+    line-height: 50px;
   }
   .faq .faqCard {
     width: auto;
@@ -6916,7 +6928,7 @@ footer .footerEnd p {
 
 @media only screen and (max-width: 768px) {
   .productBanner .back, .roofingBanner .back {
-    height: 55%;
+    height: 60%;
   }
   .productBanner .bannerTxt h1, .roofingBanner .bannerTxt h1 {
     font-size: 45px;
@@ -8267,8 +8279,10 @@ footer .footerEnd p {
 }
 
 .aboutBanner .bannerImg {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 1;
 }
 
@@ -8643,7 +8657,7 @@ footer .footerEnd p {
   font-weight: bolder;
   background: #FFB548;
   color: #292929;
-  border-radius: 25px;
+  border-radius: 30px;
   outline: none;
 }
 
@@ -8656,7 +8670,7 @@ footer .footerEnd p {
 .aboutTeamBanner .back {
   background: #1226AA;
   width: 100%;
-  height: 65%;
+  height: 60%;
   top: 0;
   left: 0;
 }
@@ -8690,8 +8704,10 @@ footer .footerEnd p {
 }
 
 .aboutTeamBanner .bannerImg {
-  width: 939px;
-  height: 554px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 1;
 }
 
@@ -8744,7 +8760,7 @@ footer .footerEnd p {
 /*ABOUT TEAM BIO STYLES*/
 .bioInfo {
   background: #F4F4F4;
-  min-height: 950px;
+  height: auto;
 }
 
 .bioInfo .back {
@@ -8794,6 +8810,55 @@ footer .footerEnd p {
 }
 
 /*ABOUT CULTURE*/
+.aboutCultureBanner, .aboutCareerBanner {
+  background: #F4F4F4;
+  border: none;
+}
+
+.aboutCultureBanner .back, .aboutCareerBanner .back {
+  background: #1226AA;
+  width: 100%;
+  height: 60%;
+  top: 0;
+  left: 0;
+}
+
+.aboutCultureBanner .bannerTxt, .aboutCareerBanner .bannerTxt {
+  z-index: 1;
+}
+
+.aboutCultureBanner .bannerTxt h1, .aboutCareerBanner .bannerTxt h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+}
+
+.aboutCultureBanner .bannerTxt p, .aboutCareerBanner .bannerTxt p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #292929;
+}
+
+.aboutCultureBanner .bannerTxt h5, .aboutCareerBanner .bannerTxt h5 {
+  font-size: 24px;
+  color: #292929;
+}
+
+.aboutCultureBanner .bannerTxt h6, .aboutCareerBanner .bannerTxt h6 {
+  font-size: 24px;
+  color: white;
+  font-weight: bolder;
+}
+
+.aboutCultureBanner .bannerImg, .aboutCareerBanner .bannerImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 1;
+}
+
 .investing .intro h1 {
   font-size: 48px;
   line-height: 56px;
@@ -9331,7 +9396,7 @@ footer .footerEnd p {
     border-radius: 30px;
   }
   .aboutTeamBanner .back {
-    height: 65%;
+    height: 55%;
   }
   .aboutTeamBanner .bannerTxt h1 {
     font-size: 50px;
@@ -9351,11 +9416,6 @@ footer .footerEnd p {
   .aboutTeamBanner .bannerTxt img {
     width: 30px;
     height: 30px;
-  }
-  .aboutTeamBanner .bannerImg {
-    width: 100%;
-    height: 500px;
-    z-index: 1;
   }
   .executives h1 {
     font-size: 45px;
@@ -9381,6 +9441,193 @@ footer .footerEnd p {
     width: 45px !important;
     height: 45px !important;
   }
+  .bioInfo .back {
+    width: 95%;
+  }
+  .bioInfo .imgBox {
+    height: 500px;
+    width: auto;
+  }
+  .bioInfo .textBox h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .bioInfo .textBox h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .bioInfo .textBox p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .aboutCultureBanner .back, .aboutCareerBanner .back {
+    height: 55%;
+  }
+  .aboutCultureBanner .bannerTxt h1, .aboutCareerBanner .bannerTxt h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .aboutCultureBanner .bannerTxt p, .aboutCareerBanner .bannerTxt p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .aboutCultureBanner .bannerTxt h5, .aboutCareerBanner .bannerTxt h5 {
+    font-size: 20px;
+    color: #292929;
+  }
+  .aboutCultureBanner .bannerTxt h6, .aboutCareerBanner .bannerTxt h6 {
+    font-size: 20px;
+  }
+  .investing .intro h1 {
+    font-size: 45px;
+    line-height: 52px;
+    font-weight: 900;
+  }
+  .investing .intro p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .investing .imageBox {
+    width: 100%;
+    height: 500px;
+  }
+  .investing .detailsBox .detail h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .investing .detailsBox .detail p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .investing .detailsBox .detail span img {
+    width: 60px;
+    height: 60px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .diversity .imgWrapper img {
+    width: 100%;
+    height: 600px;
+  }
+  .diversity .textWrapper h2 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .diversity .textWrapper h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .diversity .textWrapper p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .careerJoin .back {
+    width: 95%;
+  }
+  .careerJoin .imgBox {
+    height: 500px;
+    width: 100%;
+  }
+  .careerJoin .imgBox span {
+    width: 120px;
+    height: 120px;
+  }
+  .careerJoin .imgBox span img {
+    width: 50px;
+    height: 50px;
+  }
+  .careerJoin .textBox h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .careerJoin .textBox p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .careerJoin .textBox .applyBtn {
+    width: 250px;
+    height: 80px;
+    font-size: 22px;
+    line-height: 32px;
+    border-radius: 30px;
+  }
+  .careerExplore h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .careerExplore .search {
+    width: 600px;
+    height: 80px;
+  }
+  .careerExplore .search img {
+    width: 40px;
+    height: 40px;
+  }
+  .careerExplore .search input {
+    font-size: 22px;
+  }
+  .careerExplore .search input::-webkit-input-placeholder {
+    font-size: 22px;
+  }
+  .careerExplore .search input:-ms-input-placeholder {
+    font-size: 22px;
+  }
+  .careerExplore .search input::-ms-input-placeholder {
+    font-size: 22px;
+  }
+  .careerExplore .search input::placeholder {
+    font-size: 22px;
+  }
+  .careerExplore .search input:focus {
+    outline: none;
+  }
+  .careerExplore .jobs .jobCard h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .careerExplore .jobs .jobCard p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .careerExplore .jobs .jobCard h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .careerExplore .jobs .jobCard .right a {
+    width: 130px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .careerExplore .pagination .previous {
+    width: 200px;
+    height: 60px;
+  }
+  .careerExplore .pagination .previous img {
+    width: 20px;
+    height: 20px;
+  }
+  .careerExplore .pagination .previous p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .careerExplore .pagination .pages span {
+    width: 60px;
+    height: 70px;
+    font-size: 22px;
+  }
+  .careerExplore .pagination .next {
+    background: #1226AA;
+    width: 200px;
+    height: 70px;
+  }
+  .careerExplore .pagination .next img {
+    width: 20px;
+    height: 20px;
+  }
+  .careerExplore .pagination .next p {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -9399,6 +9646,11 @@ footer .footerEnd p {
   }
   .aboutBanner .bannerTxt h6 {
     font-size: 16px;
+  }
+  .aboutBanner .bannerImg {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .videoSection .imgBox {
     height: 500px;
@@ -9567,11 +9819,314 @@ footer .footerEnd p {
     font-size: 20px;
     line-height: 30px;
   }
+  .aboutTeamBanner .back {
+    height: 45%;
+  }
+  .aboutTeamBanner .bannerTxt .bannerHeader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .aboutTeamBanner .bannerTxt .bannerHeader * {
+    margin: 0;
+  }
+  .aboutTeamBanner .bannerTxt h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .aboutTeamBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .aboutTeamBanner .bannerTxt h5 {
+    font-size: 16px;
+  }
+  .aboutTeamBanner .bannerTxt h6 {
+    font-size: 16px;
+  }
+  .aboutTeamBanner .bannerTxt img {
+    width: 30px;
+    height: 30px;
+  }
+  .aboutTeamBanner .bannerImg {
+    height: 250px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .executives h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .executives .bio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .executives .bio img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .executives .bio .text {
+    margin-top: 20px;
+  }
+  .executives .bio .text h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .executives .bio .text p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .executives .bio .text a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .executives .bio .text a img {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  .bioInfo .textBox h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .bioInfo .textBox h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .bioInfo .textBox p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .aboutCultureBanner .back, .aboutCareerBanner .back {
+    height: 45%;
+  }
+  .aboutCultureBanner .bannerTxt .bannerHeader, .aboutCareerBanner .bannerTxt .bannerHeader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .aboutCultureBanner .bannerTxt .bannerHeader *, .aboutCareerBanner .bannerTxt .bannerHeader * {
+    margin: 0;
+  }
+  .aboutCultureBanner .bannerTxt h1, .aboutCareerBanner .bannerTxt h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .aboutCultureBanner .bannerTxt p, .aboutCareerBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .aboutCultureBanner .bannerTxt h5, .aboutCareerBanner .bannerTxt h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .aboutCultureBanner .bannerTxt h6, .aboutCareerBanner .bannerTxt h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .aboutCultureBanner .bannerImg, .aboutCareerBanner .bannerImg {
+    height: 250px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .investing .intro h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .investing .intro p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .investing .imageBox {
+    width: 100%;
+    height: 100%;
+  }
+  .investing .imageBox img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .investing .detailsBox .detail h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .investing .detailsBox .detail p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .investing .detailsBox .detail span img {
+    width: 50px;
+    height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .diversity .imgWrapper img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .diversity .textWrapper h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .diversity .textWrapper h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .diversity .textWrapper p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .aboutCareerBanner .back {
+    height: 50% !important;
+  }
+  .aboutCareerBanner .bannerTxt h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .aboutCareerBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .aboutCareerBanner .bannerTxt h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .aboutCareerBanner .bannerTxt h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .aboutCareerBanner .bannerImg {
+    height: 250px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .careerJoin .back {
+    width: 95%;
+  }
+  .careerJoin .imgBox {
+    height: 500px;
+    width: 100%;
+  }
+  .careerJoin .imgBox span {
+    width: 120px;
+    height: 120px;
+  }
+  .careerJoin .imgBox span img {
+    width: 50px;
+    height: 50px;
+  }
+  .careerJoin .textBox h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .careerJoin .textBox p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .careerJoin .textBox .applyBtn {
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .careerExplore h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .careerExplore .search {
+    width: 60vw;
+    height: 60px;
+  }
+  .careerExplore .search img {
+    width: 40px;
+    height: 40px;
+  }
+  .careerExplore .search input {
+    font-size: 20px;
+  }
+  .careerExplore .search input::-webkit-input-placeholder {
+    font-size: 20px;
+  }
+  .careerExplore .search input:-ms-input-placeholder {
+    font-size: 20px;
+  }
+  .careerExplore .search input::-ms-input-placeholder {
+    font-size: 20px;
+  }
+  .careerExplore .search input::placeholder {
+    font-size: 20px;
+  }
+  .careerExplore .search input:focus {
+    outline: none;
+  }
+  .careerExplore .jobs .jobCard h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .careerExplore .jobs .jobCard p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100% !important;
+  }
+  .careerExplore .jobs .jobCard h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .careerExplore .jobs .jobCard .right a {
+    width: 130px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .careerExplore .pagination .previous {
+    width: 200px;
+    height: 60px;
+  }
+  .careerExplore .pagination .previous img {
+    width: 20px;
+    height: 20px;
+  }
+  .careerExplore .pagination .previous p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .careerExplore .pagination .pages span {
+    width: 60px;
+    height: 70px;
+    font-size: 22px;
+  }
+  .careerExplore .pagination .next {
+    background: #1226AA;
+    width: 200px;
+    height: 70px;
+  }
+  .careerExplore .pagination .next img {
+    width: 20px;
+    height: 20px;
+  }
+  .careerExplore .pagination .next p {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .aboutBanner .back {
-    height: 50%;
+    height: 55%;
   }
   .aboutBanner .bannerTxt h1 {
     font-size: 45px;
@@ -9581,7 +10136,7 @@ footer .footerEnd p {
     line-height: 24px;
   }
   .aboutBanner .bannerTxt h5 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
   }
   .aboutBanner .bannerTxt img {
@@ -9597,8 +10152,8 @@ footer .footerEnd p {
     height: 80px;
   }
   .videoSection .imgBox span img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
   .videoSection .textBox h1 {
     font-size: 32px;
@@ -9751,6 +10306,262 @@ footer .footerEnd p {
     font-size: 16px;
     line-height: 24px;
   }
+  .aboutTeamBanner .back {
+    height: 55%;
+  }
+  .aboutTeamBanner .bannerTxt h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .aboutTeamBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .aboutTeamBanner .bannerTxt h5 {
+    font-size: 16px;
+  }
+  .aboutTeamBanner .bannerTxt h6 {
+    font-size: 16px;
+  }
+  .aboutTeamBanner .bannerTxt img {
+    width: 30px;
+    height: 30px;
+  }
+  .aboutTeamBanner .bannerImg {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .executives h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .executives .bio img {
+    width: 200px;
+    height: 200px;
+  }
+  .executives .bio .text {
+    margin-top: 20px;
+  }
+  .executives .bio .text h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .executives .bio .text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .executives .bio .text a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .executives .bio .text a img {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .bioInfo .back {
+    width: 95%;
+  }
+  .bioInfo .imgBox {
+    height: 500px;
+    width: auto;
+  }
+  .bioInfo .textBox h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .bioInfo .textBox h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .bioInfo .textBox p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .aboutCultureBanner .back, .aboutCareerBanner .back {
+    height: 55%;
+  }
+  .aboutCultureBanner .bannerTxt h1, .aboutCareerBanner .bannerTxt h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .aboutCultureBanner .bannerTxt p, .aboutCareerBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .aboutCultureBanner .bannerTxt h5, .aboutCareerBanner .bannerTxt h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .aboutCultureBanner .bannerTxt h6, .aboutCareerBanner .bannerTxt h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .investing .intro h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .investing .intro p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .investing .detailsBox .detail h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .investing .detailsBox .detail p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .investing .detailsBox .detail span img {
+    width: 45px;
+    height: 45px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .diversity .textWrapper h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .diversity .textWrapper h5 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .diversity .textWrapper p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .aboutCareerBanner .back {
+    height: 65% !important;
+  }
+  .aboutCareerBanner .bannerTxt h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .aboutCareerBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .aboutCareerBanner .bannerTxt h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .aboutCareerBanner .bannerTxt h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .careerJoin .back {
+    width: 95%;
+  }
+  .careerJoin .imgBox {
+    height: 400px;
+    width: 100%;
+  }
+  .careerJoin .imgBox span {
+    width: 120px;
+    height: 120px;
+  }
+  .careerJoin .imgBox span img {
+    width: 50px;
+    height: 50px;
+  }
+  .careerJoin .textBox h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .careerJoin .textBox p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .careerJoin .textBox .applyBtn {
+    width: 250px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .careerExplore h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .careerExplore .search {
+    width: 60vw;
+    height: 60px;
+  }
+  .careerExplore .search img {
+    width: 40px;
+    height: 40px;
+  }
+  .careerExplore .search input {
+    font-size: 16px;
+  }
+  .careerExplore .search input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .careerExplore .search input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .careerExplore .search input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .careerExplore .search input::placeholder {
+    font-size: 16px;
+  }
+  .careerExplore .search input:focus {
+    outline: none;
+  }
+  .careerExplore .jobs .jobCard h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .careerExplore .jobs .jobCard p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100% !important;
+  }
+  .careerExplore .jobs .jobCard h6 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .careerExplore .jobs .jobCard .right a {
+    width: 100px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .careerExplore .pagination .previous {
+    width: 150px;
+    height: 40px;
+  }
+  .careerExplore .pagination .previous img {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .careerExplore .pagination .previous p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .careerExplore .pagination .pages span {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .careerExplore .pagination .next {
+    background: #1226AA;
+    width: 150px;
+    height: 40px;
+  }
+  .careerExplore .pagination .next img {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .careerExplore .pagination .next p {
+    font-size: 16px;
+    line-height: 30px;
+  }
 }
 
 @media only screen and (max-width: 540px) {
@@ -9768,6 +10579,7 @@ footer .footerEnd p {
     color: white;
   }
   .aboutBanner .bannerImg {
+    height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -9993,6 +10805,373 @@ footer .footerEnd p {
     font-size: 16px;
     line-height: 24px;
   }
+  .aboutTeamBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+  }
+  .aboutTeamBanner .back {
+    height: 80%;
+  }
+  .aboutTeamBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .aboutTeamBanner .bannerTxt p, .aboutTeamBanner .bannerTxt h5 {
+    color: white;
+  }
+  .aboutTeamBanner .bannerImg {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
+  }
+  .executives h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .executives .bio {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .executives .bio img {
+    width: 200px;
+    height: 200px;
+  }
+  .executives .bio .text {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .executives .bio .text h4 {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .executives .bio .text p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .executives .bio .text a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .executives .bio .text a img {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .bioInfo {
+    padding: 30px 24px !important;
+  }
+  .bioInfo .back {
+    width: 100%;
+  }
+  .bioInfo .imgBox {
+    height: 300px;
+    width: auto;
+  }
+  .bioInfo .textBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bioInfo .textBox h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .bioInfo .textBox h5 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .bioInfo .textBox p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .aboutCultureBanner, .aboutCareerBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+  }
+  .aboutCultureBanner .back, .aboutCareerBanner .back {
+    height: 80%;
+  }
+  .aboutCultureBanner .bannerTxt h1, .aboutCareerBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .aboutCultureBanner .bannerTxt p, .aboutCareerBanner .bannerTxt p, .aboutCultureBanner .bannerTxt h5, .aboutCareerBanner .bannerTxt h5 {
+    color: white;
+  }
+  .aboutCultureBanner .bannerImg, .aboutCareerBanner .bannerImg {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
+  }
+  .investing .intro h1 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .investing .intro p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .investing .imageBox {
+    width: 100%;
+    height: 300px;
+  }
+  .investing .detailsBox .detail {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .investing .detailsBox .detail h3 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .investing .detailsBox .detail p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .investing .detailsBox .detail span img {
+    width: 45px;
+    height: 45px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .diversity .textWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .diversity .textWrapper h2 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .diversity .textWrapper h5 {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .diversity .textWrapper p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .aboutCareerBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+  }
+  .aboutCareerBanner .back {
+    height: 80%;
+  }
+  .aboutCareerBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .aboutCareerBanner .bannerTxt p, .aboutCareerBanner .bannerTxt h5 {
+    color: white;
+  }
+  .aboutCareerBanner .bannerImg {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px !important;
+  }
+  .careerJoin {
+    padding: 30px 24px !important;
+  }
+  .careerJoin .back {
+    width: 100%;
+  }
+  .careerJoin .imgBox {
+    height: 300px;
+    width: 100%;
+  }
+  .careerJoin .imgBox span {
+    width: 120px;
+    height: 120px;
+  }
+  .careerJoin .imgBox span img {
+    width: 50px;
+    height: 50px;
+  }
+  .careerJoin .textBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .careerJoin .textBox h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .careerJoin .textBox p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .careerJoin .textBox .applyBtn {
+    width: 250px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .careerExplore {
+    padding: 30px 24px !important;
+  }
+  .careerExplore h1 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .careerExplore .search {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .careerExplore .search img {
+    width: 40px;
+    height: 40px;
+  }
+  .careerExplore .search input {
+    font-size: 16px;
+  }
+  .careerExplore .search input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .careerExplore .search input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .careerExplore .search input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .careerExplore .search input::placeholder {
+    font-size: 16px;
+  }
+  .careerExplore .search input:focus {
+    outline: none;
+  }
+  .careerExplore .jobs .jobCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .careerExplore .jobs .jobCard h4 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .careerExplore .jobs .jobCard p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100% !important;
+  }
+  .careerExplore .jobs .jobCard h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .careerExplore .jobs .jobCard .details {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+  }
+  .careerExplore .jobs .jobCard .details * {
+    margin: 0;
+    padding: 0;
+  }
+  .careerExplore .jobs .jobCard .right {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+  .careerExplore .jobs .jobCard .right a {
+    width: 100px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .careerExplore .pagination {
+    margin-top: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .careerExplore .pagination .previous {
+    width: auto;
+    height: 40px;
+  }
+  .careerExplore .pagination .previous img {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .careerExplore .pagination .previous p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .careerExplore .pagination .pages span {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .careerExplore .pagination .next {
+    width: auto;
+    height: 40px;
+  }
+  .careerExplore .pagination .next img {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .careerExplore .pagination .next p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 /*STYLE PAGE BANNER*/
@@ -10043,8 +11222,10 @@ footer .footerEnd p {
 }
 
 .styleBanner .bannerImg {
-  width: 939px;
-  height: 554px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 1;
 }
 
@@ -10232,6 +11413,425 @@ footer .footerEnd p {
   color: white;
 }
 
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+  .styleBanner .back {
+    height: 55%;
+  }
+  .styleBanner .bannerTxt h1 {
+    font-size: 55px;
+  }
+  .styleBanner .bannerTxt p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .styleBanner .bannerTxt h5 {
+    font-size: 20px;
+  }
+  .styleHow .back {
+    width: 95%;
+  }
+  .styleHow .imgBox {
+    height: 500px;
+  }
+  .styleHow .textBox h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .styleHow .textBox p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .styleHow .textBox .applyBtn {
+    width: 300px;
+    height: 80px;
+    font-size: 22px;
+    line-height: 32px;
+    border-radius: 30px;
+  }
+  .styleBenefits .intro h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .styleBenefits .intro p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .styleBenefits .benefitsCard {
+    width: auto;
+    height: 450px;
+    border-radius: 30px;
+  }
+  .styleBenefits .benefitsCard .back1 {
+    border-radius: 30px;
+  }
+  .styleBenefits .benefitsCard .back2 {
+    border-radius: 30px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper span {
+    min-width: 60%;
+    height: 80px;
+    border-radius: 30px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper a {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper a img {
+    width: 50px;
+    height: 50px;
+  }
+  .styleRegister h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .styleRegister .left, .styleRegister .right {
+    height: auto;
+    width: auto;
+  }
+  .styleRegister .left img {
+    width: auto;
+    height: 500px;
+  }
+  .styleRegister .right h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .styleRegister .right p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .styleBanner .back {
+    height: 50%;
+  }
+  .styleBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .styleBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .styleBanner .bannerTxt h5 {
+    font-size: 16px;
+  }
+  .styleHow .back {
+    width: 95%;
+  }
+  .styleHow .imgBox {
+    height: 400px;
+  }
+  .styleHow .textBox h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .styleHow .textBox p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .styleHow .textBox .applyBtn {
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .styleBenefits .intro h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .styleBenefits .intro p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .styleBenefits .benefitsCard {
+    width: auto;
+    height: 450px;
+    border-radius: 30px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper span {
+    min-width: 60%;
+    min-height: 60px;
+    border-radius: 30px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper a {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper a img {
+    width: 50px;
+    height: 50px;
+  }
+  .styleRegister h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .styleRegister .left img {
+    width: auto;
+    height: 500px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .styleRegister .right {
+    padding: 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .styleRegister .right h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .styleRegister .right p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .styleBanner .back {
+    height: 50% !important;
+  }
+  .styleBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .styleBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .styleBanner .bannerTxt h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .styleHow .back {
+    width: 95%;
+  }
+  .styleHow .imgBox {
+    height: 400px;
+  }
+  .styleHow .textBox h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .styleHow .textBox p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .styleHow .textBox .applyBtn {
+    width: 250px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .styleBenefits .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .styleBenefits .intro h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .styleBenefits .intro p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .styleBenefits .benefitsCard {
+    width: auto;
+    height: 350px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper span {
+    min-width: 60%;
+    min-height: 60px;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper a img {
+    width: 50px;
+    height: 50px;
+  }
+  .styleRegister h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .styleRegister .left img {
+    width: auto;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .styleRegister .right {
+    padding: 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .styleRegister .right h3 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 100%;
+  }
+  .styleRegister .right p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .styleBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+  }
+  .styleBanner .back {
+    height: 80%;
+  }
+  .styleBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .styleBanner .bannerTxt p, .styleBanner .bannerTxt h5 {
+    color: white;
+  }
+  .styleBanner .bannerImg {
+    height: 300px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .styleHow {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+  }
+  .styleHow .back {
+    width: 100%;
+  }
+  .styleHow .imgBox {
+    height: 300px;
+  }
+  .styleHow .textBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .styleHow .textBox h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .styleHow .textBox p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .styleHow .textBox .applyBtn {
+    width: 250px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .styleBenefits .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .styleBenefits .intro h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .styleBenefits .intro p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .styleBenefits .benefitsCard {
+    width: auto;
+    height: 300px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper span {
+    min-width: 60%;
+    min-height: 60px;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper a img {
+    width: 40px;
+    height: 40px;
+  }
+  .styleRegister h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .styleRegister .left img {
+    width: auto;
+    height: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .styleRegister .right {
+    padding: 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .styleRegister .right h3 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 100%;
+  }
+  .styleRegister .right p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .impactBanner {
   background: #F4F4F4;
   border: none;
@@ -10279,8 +11879,10 @@ footer .footerEnd p {
 }
 
 .impactBanner .bannerImg {
-  width: 939px;
-  height: 554px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 1;
 }
 
@@ -10824,6 +12426,710 @@ footer .footerEnd p {
 .communityInfo .imgLightbox .modalWrapper .modalContent .next img {
   width: 80px;
   height: 80px;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+  .impactBanner .back {
+    height: 55%;
+  }
+  .impactBanner .bannerTxt h1 {
+    font-size: 55px;
+  }
+  .impactBanner .bannerTxt p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .impactBanner .bannerTxt h5 {
+    font-size: 20px;
+  }
+  .impactBanner .bannerTxt h6 {
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+  }
+  .impactBanner .bannerTxt img {
+    width: 30px;
+    height: 30px;
+  }
+  .impactTraining h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .impactTraining h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .impactTraining .impactCard .cardImg {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .impactTraining .impactCard .text h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .impactTraining .impactCard .text p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .impactTraining .impactCard .text a {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .impactTraining .impactCard .text a img {
+    width: 50px;
+    height: 50px;
+  }
+  .impactCommunity .intro h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .impactCommunity .intro p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .impactCommunity .imageBox {
+    width: 100%;
+    height: 500px;
+  }
+  .impactCommunity .imageBox img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .impactCommunity .detailsBox .impact h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .impactCommunity .detailsBox .impact p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .impactCommunity .detailsBox .impact span img {
+    width: 70px;
+    height: 70px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .impactEnvironment .intro h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .impactEnvironment .intro p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .impactEnvironment .impactCard {
+    width: auto;
+    height: 600px;
+  }
+  .impactEnvironment .impactCard .imgWrapper {
+    overflow: hidden;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .impactEnvironment .impactCard .cardTxt {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .impactEnvironment .impactCard .cardTxt h4 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .impactEnvironment .impactCard .cardTxt p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .trainingDetails .wrapper {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+  }
+  .trainingDetails .wrapper img {
+    width: 100%;
+    height: 500px;
+  }
+  .trainingDetails .wrapper .trainingText h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .trainingDetails .wrapper .trainingText p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .trainingCommitment .wrapper {
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+  }
+  .trainingCommitment .wrapper .avatarSection h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .trainingCommitment .wrapper .avatarSection img {
+    width: 300px;
+    height: 300px;
+  }
+  .trainingCommitment .wrapper .textSection h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives {
+    -ms-grid-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top span {
+    width: 110px;
+    height: 100px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top span img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top h5 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .trainingGallery .topSection {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+  }
+  .trainingGallery .topSection img {
+    width: 100%;
+    height: 60vh;
+  }
+  .trainingGallery .topSection .topText h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .trainingGallery .topSection .topText p {
+    font-size: 22px;
+    line-height: 32px;
+    width: 80%;
+  }
+  .trainingGallery .gallery .trainingImg {
+    width: 100%;
+    height: auto;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .close {
+    top: 30px;
+    right: 30px;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .close img {
+    width: 40px;
+    height: 40px;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .modalContent .previous img {
+    width: 60px;
+    height: 60px;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .modalContent .modalImage {
+    width: 50vw;
+    height: 70vh;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .modalContent .next img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .impactBanner .back {
+    height: 45%;
+  }
+  .impactBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .impactBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .impactBanner .bannerTxt h5 {
+    font-size: 20px;
+  }
+  .impactBanner .bannerImg {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .impactTraining h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .impactTraining h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .impactTraining .impactCard .cardImg {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .impactTraining .impactCard .text h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .impactTraining .impactCard .text p {
+    font-size: 20px;
+    line-height: 32px;
+    width: 100%;
+  }
+  .impactTraining .impactCard .text a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .impactTraining .impactCard .text a img {
+    width: 40px;
+    height: 40px;
+  }
+  .impactCommunity .intro h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .impactCommunity .intro p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .impactCommunity .imageBox {
+    width: 100%;
+    height: 100%;
+  }
+  .impactCommunity .detailsBox .impact {
+    height: auto;
+    padding: 30px !important;
+  }
+  .impactCommunity .detailsBox .impact h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .impactCommunity .detailsBox .impact p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .impactCommunity .detailsBox .impact span img {
+    width: 50px;
+    height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .impactEnvironment .intro h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .impactEnvironment .intro p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .impactEnvironment .impactCard {
+    width: auto;
+    height: 500px;
+  }
+  .impactEnvironment .impactCard .cardTxt h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .impactEnvironment .impactCard .cardTxt p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .impactEnvironment .impactCard:last-child h4 {
+    margin-bottom: 32px !important;
+  }
+  .trainingDetails .wrapper {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+  }
+  .trainingDetails .wrapper img {
+    width: 100%;
+    height: 400px;
+  }
+  .trainingDetails .wrapper .trainingText h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .trainingDetails .wrapper .trainingText p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .trainingCommitment .wrapper {
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+  }
+  .trainingCommitment .wrapper .avatarSection h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .trainingCommitment .wrapper .avatarSection img {
+    width: 300px;
+    height: 300px;
+  }
+  .trainingCommitment .wrapper .textSection h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives {
+    -ms-grid-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top span {
+    width: 110px;
+    height: 100px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top span img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top h5 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .trainingGallery .topSection {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+  }
+  .trainingGallery .topSection img {
+    width: 100%;
+    height: 60vh;
+  }
+  .trainingGallery .topSection .topText h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .trainingGallery .topSection .topText p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 80%;
+  }
+  .trainingGallery .gallery {
+    max-height: 300px;
+  }
+  .trainingGallery .gallery .trainingImg {
+    width: 100%;
+    height: 100% auto;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .close {
+    top: 30px;
+    right: 30px;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .close img {
+    width: 40px;
+    height: 40px;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .modalContent .previous img {
+    width: 60px;
+    height: 60px;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .modalContent .modalImage {
+    width: 50vw;
+    height: 60vh;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .modalContent .next img {
+    width: 50px;
+    height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .impactBanner .back {
+    height: 55%;
+  }
+  .impactBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .impactBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .impactBanner .bannerTxt h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .impactBanner .bannerImg {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .impactTraining h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .impactTraining h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .impactTraining .impactCard .cardImg {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .impactTraining .impactCard .text h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .impactTraining .impactCard .text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .impactTraining .impactCard .text a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .impactTraining .impactCard .text a img {
+    width: 30px;
+    height: 30px;
+  }
+  .impactCommunity .intro h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .impactCommunity .intro p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .impactCommunity .detailsBox .impact {
+    height: auto;
+    padding: 30px !important;
+  }
+  .impactCommunity .detailsBox .impact h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .impactCommunity .detailsBox .impact p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .impactCommunity .detailsBox .impact span img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .impactEnvironment .intro h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .impactEnvironment .intro p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .impactEnvironment .impactCard {
+    width: auto;
+    height: 400px;
+  }
+  .impactEnvironment .impactCard .cardTxt h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .impactEnvironment .impactCard .cardTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .impactEnvironment .impactCard:last-child h4 {
+    margin-bottom: 32px !important;
+  }
+  .trainingDetails .wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .trainingDetails .wrapper img {
+    width: 100%;
+    height: 400px;
+  }
+  .trainingDetails .wrapper .trainingText h1 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  .trainingDetails .wrapper .trainingText p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .impactBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+  }
+  .impactBanner .back {
+    height: 80%;
+  }
+  .impactBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .impactBanner .bannerTxt p, .impactBanner .bannerTxt h5 {
+    color: white;
+  }
+  .impactBanner .bannerImg {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .impactTraining {
+    padding: 30px 24px !important;
+  }
+  .impactTraining .back {
+    width: 100%;
+  }
+  .impactTraining h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .impactTraining h5 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .impactTraining .impactCard .cardImg {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .impactTraining .impactCard .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .impactTraining .impactCard .text h3 {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .impactTraining .impactCard .text p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .impactTraining .impactCard .text a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .impactTraining .impactCard .text a img {
+    width: 30px;
+    height: 30px;
+  }
+  .impactCommunity {
+    padding: 30px 24px !important;
+  }
+  .impactCommunity .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .impactCommunity .intro h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .impactCommunity .intro p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .impactCommunity .imageBox {
+    height: 300px;
+  }
+  .impactCommunity .detailsBox .impact {
+    height: auto;
+    padding: 30px !important;
+  }
+  .impactCommunity .detailsBox .impact h3 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .impactCommunity .detailsBox .impact p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .impactCommunity .detailsBox .impact span img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .impactEnvironment {
+    padding: 30px 24px !important;
+  }
+  .impactEnvironment .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .impactEnvironment .intro h1 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .impactEnvironment .intro p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+  }
+  .impactEnvironment .impactCard {
+    width: auto;
+    height: 400px;
+  }
+  .impactEnvironment .impactCard .cardTxt {
+    padding: 15px;
+  }
+  .impactEnvironment .impactCard .cardTxt h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .impactEnvironment .impactCard .cardTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .impactEnvironment .impactCard:last-child h4 {
+    margin-bottom: 32px !important;
+  }
 }
 
 .newsBanner {

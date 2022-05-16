@@ -37,8 +37,9 @@
         }
     }
     .bannerImg {
-        width: 939px;
-        height: 554px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
         z-index: 1;
     }
 }
@@ -203,4 +204,469 @@
             color: white;
         }
     }
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+.styleBanner {
+    .back {
+        height: 55%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 55px;
+        }
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        h5 {
+            font-size: 20px;
+        }
+    }
+}
+.styleHow {
+    .back {
+        width: 95%;
+    }
+    .imgBox {
+        height: 500px;
+    }
+    .textBox {
+        h1 {
+            font-size: 40px;
+            line-height: 52px;
+        }
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        .applyBtn {
+            width: 300px;
+            height: 80px;
+            font-size: 22px;
+            line-height: 32px;
+            border-radius: 30px;
+        }
+    }
+}
+.styleBenefits {
+    .intro {
+        h1 {
+            font-size: 45px;
+            line-height: 52px;
+        }
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+    .benefitsCard {
+        width: auto;
+        height: 450px;
+        border-radius: 30px;
+        .back1 {
+            border-radius: 30px;
+        }
+        .back2 {
+            border-radius: 30px;
+        }
+        .cardWrapper {
+            span {
+                min-width: 60%;
+                height: 80px;
+                border-radius: 30px;
+                font-size: 18px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 32px;
+            }
+            a {
+                font-size: 18px;
+                line-height: 32px;
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+.styleRegister {
+    h1 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+    
+    .left, .right {
+        height: auto;
+        width: auto;
+    }
+    
+    .left {
+        img {
+            width: auto;
+            height: 500px;
+        }
+    }
+    .right {
+        h3 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+}
+}
+
+
+//Medium size laptops
+@media only screen and (max-width: 1024px) {
+.styleBanner {
+    .back {
+        height: 50%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        h5 {
+            font-size: 16px;
+        }
+    }
+}
+.styleHow {
+    .back {
+        width: 95%;
+    }
+    .imgBox {
+        height: 400px;
+    }
+    .textBox {
+        h1 {
+            font-size: 40px;
+            line-height: 52px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .applyBtn {
+            width: 250px;
+            height: 60px;
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+}
+.styleBenefits {
+    .intro {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .benefitsCard {
+        width: auto;
+        height: 450px;
+        border-radius: 30px;
+        .cardWrapper {
+            span {
+                min-width: 60%;
+                min-height: 60px;
+                border-radius: 30px;
+                font-size: 18px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 32px;
+            }
+            a {
+                font-size: 18px;
+                line-height: 32px;
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+.styleRegister {
+    h1 {
+        font-size: 40px;
+        line-height: 52px;
+    }
+ 
+    .left {
+        img {
+            width: auto;
+            height: 500px;
+            object-fit: contain;
+        }
+    }
+    .right {
+        padding: 24px;
+        justify-content: center;
+        h3 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+}
+
+//Tablets
+@media only screen and (max-width: 768px) {
+.styleBanner {
+    .back {
+        height: 50% !important;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h5 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+.styleHow {
+    .back {
+        width: 95%;
+    }
+    .imgBox {
+        height: 400px;
+    }
+    .textBox {
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .applyBtn {
+            width: 250px;
+            height: 60px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+.styleBenefits {
+    .intro {
+        flex-direction: column;
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .benefitsCard {
+        width: auto;
+        height: 350px;
+        .cardWrapper {
+            span {
+                min-width: 60%;
+                min-height: 60px;
+                border-radius: 30px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            a {
+                font-size: 16px;
+                line-height: 24px;
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+.styleRegister {
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+ 
+    .left {
+        img {
+            width: auto;
+            height: 400px;
+            object-fit: contain;
+        }
+    }
+    .right {
+        padding: 24px;
+        justify-content: center;
+        h3 {
+            font-size: 30px;
+            line-height: 40px;
+            width: 100%;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+}
+
+//Mobile
+@media only screen and (max-width: 540px) {
+.styleBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+    .back {
+        height: 80%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+        }
+        p,h5 {
+            color: white;
+        }
+    }
+    .bannerImg {
+        height: 300px !important;
+        object-fit: cover;
+    }
+} 
+.styleHow {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+    .back {
+        width: 100%;
+    }
+    .imgBox {
+        height: 300px;
+    }
+    .textBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+        .applyBtn {
+            width: 250px;
+            height: 60px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+.styleBenefits {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+    .benefitsCard {
+        width: auto;
+        height: 300px;
+        .cardWrapper {
+            span {
+                min-width: 60%;
+                min-height: 60px;
+                border-radius: 30px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            a {
+                font-size: 16px;
+                line-height: 24px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+.styleRegister {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+ 
+    .left {
+        img {
+            width: auto;
+            height: 300px;
+            object-fit: contain;
+        }
+    }
+    .right {
+        padding: 24px;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            font-size: 30px;
+            line-height: 40px;
+            width: 100%;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
 }

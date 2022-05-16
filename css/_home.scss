@@ -3171,7 +3171,7 @@
             }
             form {
                 input,select,button {
-                    min-height: 60px;
+                    height: 60px;
                     border-radius: 30px;
                     font-size: 16px;
                     padding: 0px 15px;
@@ -3190,6 +3190,7 @@
                     padding:0 15px;
                     font-size: 16px;
                     line-height: 24px;
+                    height: 60px;
                     &:after {
                         content:"";
                         width:0;
@@ -3296,6 +3297,7 @@
                     padding:0 10px;
                     font-size: 16px;
                     line-height: 24px;
+                    height: 60px;
                     &:after {
                         top: 45%;
                         right: 15px;
