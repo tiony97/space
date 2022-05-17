@@ -16,10 +16,10 @@
     <!--VUE PAGE WRAPPER-->
     <div id="app" class="app">
         <!--NAVIGATION-->
-        <nav class="flex items-center justify-between w-full lg:px-20 md:px-8 py-5" id="navigation">
+        <nav class="flex items-center justify-between w-full lg:px-20 py-1" id="navigation">
             <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
             <div class="links flex lg:space-x-8">
-                <div class="pageLinks flex items-center justify-center lg:space-x-5">
+                <div class="pageLinks flex items-center justify-center lg:space-x-8">
                     <a href="./index.html" class="activeLink">Home</a>
                     <a href="./products.html">Products</a>
                     <a href="./about.html">About Us</a>
@@ -30,17 +30,15 @@
                 </div>
                 <div class="navIcons flex items-center lg:space-x-4">
                     <img src="./assets/search_black_24dp.png" alt="" class="search">
-                    <img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag">
                 </div>
                 <div class="navBtns flex lg:space-x-4">
                     <a href="javascript:void(0)" class="call flex items-center justify-center">Call Us Now</a>
-                    <a href="javascript:void(0)" class="login flex items-center justify-center">Login</a>
                 </div>
             </div>
         </nav>
         
         <!--RESPONSIVE NAV-->
-        <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-5">
+        <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-1">
             <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
             <img src="./assets/mobile logo.png" alt="" class="mobileLogo">
             <div class="navIcons flex items-center lg:space-x-4 md:space-x-2 space-x-2">
@@ -104,10 +102,10 @@
                 </div>
                 
                 <!--Tab Sections-->
-                <div v-show="currentHomeTab==1" class="tabSection tab1 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-20 items-center lg:pl-24 md:px-12 sm:x-6 md:py-12 py-6">
+                <div v-show="currentHomeTab==1" class="tabSection tab1 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-24 items-start lg:pl-24 lg:pr-0 md:pl-12 md:pr-0 lg:py-24 md:py-12 py-6">
                     <div class="textContent">
                         <h3 class="lg:w-5/6 md:w-4/5 w-full">When you build with Space & Style, we give you innovative building materials.</h3>
-                        <form action="#" class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 lg:mt-16 mt-8">
+                        <form action="#" class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-5 gap-4 lg:mt-16 mt-8">
                             <input type="text" placeholder="Enter Your Name">
                             <input type="text" placeholder="Enter Your Mobile Number">
                             <select name="" id="">
@@ -120,10 +118,10 @@
                             <button type="submit">Build With Us</button>
                         </form>
                     </div>
-                    <img src="./assets/IMAGE HOLDER.png" alt="" class="lg:-mr-20 lg:mt-0 md:mt-12 mt-6">
+                    <img src="./assets/IMAGE HOLDER.png" alt="" class="lg:mt-0">
                 </div>
                 
-                <div v-show="currentHomeTab==2" class="tabSection tab2 w-full flex flex-col justify-center lg:space-y-12 md:space-y-6 space-y-3 lg:px-24 md:px-12 px-6 lg:py-12 md:py-12 py-6">
+                <div v-show="currentHomeTab==2" class="tabSection tab2 w-full flex flex-col justify-start lg:space-y-12 md:space-y-6 space-y-3 lg:px-24 md:px-12 px-6 lg:py-12 lg:py-24 md:py-12 py-6">
                     <h4 class="lg:w-4/5 md:w-4/5 w-full">Our variety of building products meets the needs of a wide range of construction.</h4>
                     <div class="productCategory grid lg:grid-cols-5 mg:grid-cols-3 lg:gap-6">
                         <div class="categoryCard relative p-6 flex flex-col items-start justify-between">
@@ -184,10 +182,10 @@
                     </div>
                 </div>
                 
-                <div v-show="currentHomeTab==3" class="tabSection tab3 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-24 items-center lg:pl-24 md:px-12 sm:x-6 md:py-12 py-6">
+                <div v-show="currentHomeTab==3" class="tabSection tab3 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-24 items-start lg:pl-24 lg:pr-0 md:pl-12 md:pr-0 lg:py-24 md:py-12 py-6">
                     <div class="textContent">
                         <h3 class="lg:w-4/5 md:w-4/5 w-full">Now is a great time to consider becoming a partner with Space & Style.</h3>
-                        <form action="#" class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 lg:mt-16 mt-8">
+                        <form action="#" class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-5 gap-4 lg:mt-16 mt-8">
                             <input type="text" placeholder="Enter Your Name">
                             <input type="text" placeholder="Enter Your Mobile Number">
                             <select name="" id="">
@@ -200,10 +198,10 @@
                             <button type="submit">Build With Us</button>
                         </form>
                     </div>
-                    <img src="./assets/IMAGE HOLDER.png" alt="" class="lg:-mr-20 lg:mt-16 mt-8">
+                    <img src="./assets/IMAGE HOLDER.png" alt="" class="lg:mt-0">
                 </div>
                 
-                <div v-show="currentHomeTab==4" class="tabSection tab4 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-24 items-center lg:pl-24 md:px-12 sm:x-6 md:py-12 py-6">
+                <div v-show="currentHomeTab==4" class="tabSection tab4 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-24 items-start lg:pl-24 lg:pr-0 md:pl-12 md:pr-0 lg:py-24 md:py-12 py-6">
                     <div class="textContent">
                         <h3 class="lg:w-4/5 md:w-4/5 w-full">Shop building materials near your location countrywide.</h3>
                         <form action="#" class="flex flex-col lg:space-y-6 md:space-y-4 space-y-2 lg:mt-16 mt-8">
@@ -233,7 +231,7 @@
                             </div>
                         </form>
                     </div>
-                    <img src="./assets/Agents banner image.png" alt="" class="lg:-mr-20 lg:mt-16 mt-8">
+                    <img src="./assets/Agents banner image.png" alt="" class="lg:mt-0">
                 </div>
             </div>
             
@@ -251,7 +249,7 @@
                     </div>
                     
                     <div class="gridContent">
-                        <div class="tabs flex lg:space-x-10 md:space-x-8">
+                        <div class="tabs flex lg:space-x-6 md:space-x-4">
                             <div @click="currentAssembleTab=2" :class="{'card flex flex-col items-center justify-center space-y-3 cursor-pointer': true, 'activeBlue': currentAssembleTab==2}">
                                 <div class="tabLink flex flex-col items-center justify-center">
                                     <img src="./assets/other_houses_black_24dp.png" alt="" v-show="currentAssembleTab!==2">
@@ -295,7 +293,7 @@
                                 <input type="text" placeholder="Search building material">
                             </form>
                         </div>
-                        <div class="gallery grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 p-0 mt-12">
+                        <div class="gallery grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 p-0 lg:mt-12 md:mt-6">
                             <div class="galleryCard flex flex-col items-center justify-center space-y-3">
                                 <img src="./assets/MATERIAL HOLDER.png" alt="">
                                 <p>Material Name</p>
@@ -337,15 +335,16 @@
                                 <p>Material Name</p>
                             </div>
                         </div>
+                        <div class="assembleButtons flex items-center justify-start lg:space-x-12 md:space-x-6 lg:my-24 md:my-12 my-6">
+                            <a href="javascript:void(0)" class="quote flex items-center justify-center">Get Quotation</a>
+                            <a href="javascript:void(0)" class="plan flex items-center justify-center space-x-5">
+                                <img src="./assets/file_upload_black_24dp.png" alt="">
+                                <h3>Upload Plan</h3>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="assembleButtons flex items-center justify-center lg:space-x-12 md:space-x-6 lg:my-24 md:my-12 my-6">
-                    <a href="javascript:void(0)" class="quote flex items-center justify-center">Get Quotation</a>
-                    <a href="javascript:void(0)" class="plan flex items-center justify-center space-x-5">
-                        <img src="./assets/file_upload_black_24dp.png" alt="">
-                        <h3>Upload Plan</h3>
-                    </a>
-                </div>
+                
             </div>
             
             <!--EXPLORE SECTION-->
@@ -404,7 +403,7 @@
             </div>
             
             <!--BRANCHES SECTION-->
-            <div class="branches relative flex items-start justify-center">
+            <div class="branches relative flex items-center justify-center">
                 <div class="bgBack"></div>
                 <div class="wrapper flex flex-col justify-center items-center lg:px-24 md:px-12 px-6 lg:py-24 md:py-12 py-6 space-y-5 lg:mb-12 md:mb-12 mb-0">
                     <h2>Shop building materials countrywide</h2>
@@ -431,7 +430,7 @@
                             </label>
                         </div>
                     </form>
-                    <p class="lg:mb-32 md:mb-16 mb-8">Buy your building materials from these branches near you</p>
+                    <p class="buildtxt lg:mb-32 md:mb-16 mb-8">Buy your building materials from these branches near you</p>
                     <div class="hardware grid grid-cols-4 gap-8">
                         <div class="hardwareCard relative p-6 flex flex-col items-start">
                            <span class="info flex items-center justify-center">Hardware Name</span>
@@ -484,7 +483,7 @@
             <!--DIFFERENCES SECTION-->
             <div class="differences flex flex-col items-center justify-center lg:px-24 md:px-12 px-6 lg:py-24 md:py-12 py-6">
                 <h2>The Space & Style difference</h2>
-                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 lg:mt-24 md:mt-16 mt-8">
+                <div class="diffGrid grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 lg:mt-24 md:mt-16 mt-8">
                     <div class="differenceCard flex flex-col items-center justify-center">
                         <img src="./assets/Mask Group 1.png" alt="">
                         <h5>Quality & Innovation</h5>
@@ -710,7 +709,7 @@
             <div class="community relative flex w-full flex-col lg:py-24 md:py-12 py-6">
                 <div class="back"></div>
                 <h2 class="text-center"><span>Impacting</span> the community for better future</h2>
-                <div class="communityInfo relative lg:mt-20 md:mt-10 mt-5 lg:pr-24 md:px-12 sm:px-6 flex justify-start lg:space-x-12 md:space-x-6 h-auto w-full">
+                <div class="communityInfo relative lg:mt-20 md:mt-10 mt-5 lg:pr-24 md:px-12 sm:px-6 flex justify-start lg:space-x-10 md:space-x-6 h-auto w-full">
                     <div class="imgWrapper relative">
                         <img src="./assets/githurai all stars.png" alt="" class="communityImg" v-show="currentCommunityImg==1">
                         <img src="./assets/mandaani.png" alt="" class="communityImg" v-show="currentCommunityImg==2">

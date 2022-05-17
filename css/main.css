@@ -20,7 +20,7 @@ body {
 }
 
 nav {
-  min-height: 96px;
+  min-height: 80px;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   z-index: 50;
@@ -77,14 +77,16 @@ nav .navBtns .login:hover {
 }
 
 .responsiveNav {
-  height: 90px;
+  height: 60px;
   display: none;
   z-index: 50;
 }
 
 .responsiveNav .logo {
   width: auto;
-  height: auto;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .responsiveNav .mobileLogo {
@@ -94,8 +96,8 @@ nav .navBtns .login:hover {
 }
 
 .responsiveNav .navIcons img {
-  width: 40.61px;
-  height: 40.61px;
+  width: 30.61px;
+  height: 30.61px;
 }
 
 .menuOverlay {
@@ -286,9 +288,14 @@ footer .footerEnd p {
 
 /*MEDIA QUERY*/
 @media only screen and (max-width: 1600px) {
+  nav {
+    height: 60px;
+  }
   nav .logo {
     width: auto;
-    height: auto;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   nav .pageLinks {
     margin: 0 5px !important;
@@ -313,14 +320,24 @@ footer .footerEnd p {
     margin: 0 5px !important;
   }
   nav .navBtns a {
-    min-width: 120px;
-    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-width: 150px;
+    height: 50px;
+    border-radius: 15px;
     font-size: 15px;
     margin: 0px 5px !important;
   }
   footer .logoSection p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
   }
   footer .logoSection input {
     height: 60px;
@@ -339,12 +356,12 @@ footer .footerEnd p {
     font-size: 16px;
   }
   footer .linkSection h5 {
-    font-size: 21px !important;
-    line-height: 32px;
+    font-size: 20px !important;
+    line-height: 30px;
   }
   footer .iconSection h5 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
   }
   footer .iconSection img {
     width: 30px;
@@ -353,50 +370,13 @@ footer .footerEnd p {
        object-fit: contain;
   }
   footer .footerEnd img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
   footer .footerEnd p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
     line-height: 32px;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  nav {
-    display: none !important;
-  }
-  .responsiveNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .responsiveNav .navIcons img {
-    width: 40px;
-    height: 40px;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .menuOverlay .overlayLinks a {
-    font-size: 32px;
-    font-weight: 800;
-    color: #F4F4F4;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-  }
-  .menuOverlay .overlayLinks a:hover {
-    color: #1226AA;
-  }
-  .menuOverlay .overlayLinks .activeLink {
-    font-weight: bolder !important;
-    color: #1226AA !important;
-  }
-  .menuOverlay .overlaySocial img {
-    width: 40px !important;
-    height: 40px !important;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 
@@ -410,8 +390,8 @@ footer .footerEnd p {
     display: flex;
   }
   .responsiveNav .navIcons img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -737,6 +717,13 @@ footer .footerEnd p {
   min-height: 700px;
 }
 
+.homeBanner .tabSection h3 {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 500 !important;
+  width: 70%;
+}
+
 .homeBanner .blue {
   background: #1226AA !important;
 }
@@ -930,8 +917,9 @@ footer .footerEnd p {
 
 .homeBanner .tab2 h4 {
   font-size: 32px;
-  font-weight: 40px;
+  line-height: 42px;
   font-weight: 500;
+  width: 40%;
 }
 
 .homeBanner .tab2 .productCategory .categoryCard {
@@ -1559,7 +1547,7 @@ footer .footerEnd p {
 }
 
 .branches, .productBranches, .styleResources {
-  min-height: 906px;
+  min-height: auto;
 }
 
 .branches .bgBack, .productBranches .bgBack, .styleResources .bgBack {
@@ -2122,57 +2110,72 @@ footer .footerEnd p {
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
   .homeBanner .tabGrids .gridLink {
-    height: 284px;
-    padding: 0 15px !important;
+    height: 25vh;
+    padding: 0 50px !important;
   }
   .homeBanner .tabGrids .gridLink img {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
   }
   .homeBanner .tabGrids .gridLink h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .homeBanner .tabSection {
-    min-height: 700px;
-  }
-  .homeBanner .tab1 .textContent h3 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
   }
+  .homeBanner .tabGrids .link1 {
+    padding-left: 70px !important;
+  }
+  .homeBanner .tabSection {
+    min-height: 70vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .homeBanner .tab1 .textContent h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .homeBanner .tab1 .textContent form {
+    margin-top: 30px;
+  }
   .homeBanner .tab1 .textContent form input, .homeBanner .tab1 .textContent form select, .homeBanner .tab1 .textContent form button {
-    min-height: 80px;
-    font-size: 18px;
+    min-height: 60px;
+    font-size: 16px;
     padding: 0px 15px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab1 .textContent form input::-webkit-input-placeholder, .homeBanner .tab1 .textContent form select::-webkit-input-placeholder, .homeBanner .tab1 .textContent form button::-webkit-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab1 .textContent form input:-ms-input-placeholder, .homeBanner .tab1 .textContent form select:-ms-input-placeholder, .homeBanner .tab1 .textContent form button:-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab1 .textContent form input::-ms-input-placeholder, .homeBanner .tab1 .textContent form select::-ms-input-placeholder, .homeBanner .tab1 .textContent form button::-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab1 .textContent form input::placeholder, .homeBanner .tab1 .textContent form select::placeholder, .homeBanner .tab1 .textContent form button::placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab1 .textContent form .s-hidden {
     padding-right: 10px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab1 .textContent form .select {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 32px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab1 .textContent form .styledSelect {
     padding: 0 20px;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab1 .textContent form .styledSelect:after {
     content: "";
     width: 0;
     height: 0;
+    border: 8px solid transparent;
+    border-color: #F4F4F4 transparent transparent transparent;
+    position: absolute;
     top: 45%;
     right: 20px;
   }
@@ -2189,91 +2192,115 @@ footer .footerEnd p {
     font-weight: 900 !important;
   }
   .homeBanner .tab1 img {
-    width: auto;
-    height: 490px;
+    width: 100%;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .homeBanner .tab2 h4 {
-    font-size: 32px;
-    font-weight: 40px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 30px;
+    width: 40%;
   }
   .homeBanner .tab2 .productCategory {
-    -ms-grid-columns: (1fr)[4] !important;
-        grid-template-columns: repeat(4, 1fr) !important;
+    -ms-grid-columns: (1fr)[5] !important;
+        grid-template-columns: repeat(5, 1fr) !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 20px !important;
   }
   .homeBanner .tab2 .productCategory .categoryCard {
     width: auto;
-    height: 315px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 20px !important;
   }
   .homeBanner .tab2 .productCategory .categoryCard .info {
     min-width: 70%;
-    height: 38px;
-    border-radius: 30px;
-    padding: 0 20px;
-    font-size: 18px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 14px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .overlay {
-    border-radius: 30px;
+    border-radius: 20px;
+    padding: 20px !important;
   }
   .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayInfo {
     width: auto;
     height: 64px;
-    border-radius: 30px;
+    border-radius: 20px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayTxt {
     font-size: 18px;
+    line-height: 24px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .shopLink {
     width: auto;
-    height: 44px;
-    border-radius: 30px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 15px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .shopLink img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .shopLink p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 21px;
   }
   .homeBanner .tab3 .textContent h3 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .homeBanner .tab3 .textContent form {
+    margin-top: 30px;
   }
   .homeBanner .tab3 .textContent form input, .homeBanner .tab3 .textContent form select, .homeBanner .tab3 .textContent form button {
-    min-height: 80px;
-    width: 100%;
-    font-size: 18px;
+    min-height: 60px;
+    font-size: 16px;
     padding: 0px 15px;
-    border-radius: 30px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab3 .textContent form input::-webkit-input-placeholder, .homeBanner .tab3 .textContent form select::-webkit-input-placeholder, .homeBanner .tab3 .textContent form button::-webkit-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab3 .textContent form input:-ms-input-placeholder, .homeBanner .tab3 .textContent form select:-ms-input-placeholder, .homeBanner .tab3 .textContent form button:-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab3 .textContent form input::-ms-input-placeholder, .homeBanner .tab3 .textContent form select::-ms-input-placeholder, .homeBanner .tab3 .textContent form button::-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab3 .textContent form input::placeholder, .homeBanner .tab3 .textContent form select::placeholder, .homeBanner .tab3 .textContent form button::placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab3 .textContent form .s-hidden {
-    visibility: hidden;
     padding-right: 10px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab3 .textContent form .select {
-    width: 100% !important;
-    height: 100%;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 32px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab3 .textContent form .styledSelect {
-    padding: 0 15px;
-    font-size: 18px;
+    padding: 0 20px;
+    font-size: 16px;
     line-height: 24px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab3 .textContent form .styledSelect:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-color: #F4F4F4 transparent transparent transparent;
+    position: absolute;
     top: 45%;
     right: 20px;
   }
@@ -2282,96 +2309,123 @@ footer .footerEnd p {
   }
   .homeBanner .tab3 .textContent form .options li {
     padding: 0 6px;
-    margin: 0 0;
     padding: 0 10px;
   }
+  .homeBanner .tab3 .textContent form button {
+    background: #FFB548;
+    color: #292929;
+    font-weight: 900 !important;
+  }
   .homeBanner .tab3 img {
-    width: auto;
-    height: 494px;
+    width: 100%;
+    height: 50vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .homeBanner .tab4 h3 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    width: 60%;
+    font-weight: 900 !important;
+  }
+  .homeBanner .tab4 form {
+    margin-top: 0 !important;
+  }
+  .homeBanner .tab4 form .radios {
+    margin-bottom: 10px !important;
+    width: 80%;
   }
   .homeBanner .tab4 form .radios .container {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab4 form .radios .container .checkmark {
     height: 30px;
     width: 30px;
   }
   .homeBanner .tab4 form .radios .container .checkmark:after {
-    top: 2px;
+    top: 3px;
     left: 3px;
     right: 3px;
-    bottom: 2px;
-    width: 15px;
-    height: 15px;
+    bottom: 3px;
+    width: 13px;
+    height: 13px;
   }
   .homeBanner .tab4 form .radios .container p {
     font-size: 18px;
     line-height: 24px;
   }
   .homeBanner .tab4 form .otherInputs .search {
-    width: 350px;
-    height: 80px;
-    border-radius: 30px;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
   }
   .homeBanner .tab4 form .otherInputs .search img {
-    width: 35.05px;
-    height: 35.05px;
+    width: 30.05px;
+    height: 30.05px;
   }
   .homeBanner .tab4 form .otherInputs .search input {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab4 form .otherInputs .search input::-webkit-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab4 form .otherInputs .search input:-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab4 form .otherInputs .search input::-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab4 form .otherInputs .search input::placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab4 form .otherInputs button {
-    width: 350px;
-    height: 80px;
-    border-radius: 30px;
-    font-size: 18px;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  .homeBanner .tab4 img {
+    width: 100%;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .assemble {
+    margin-top: 48px !important;
   }
   .assemble .bgCover {
     width: 95vw;
   }
+  .assemble .title {
+    padding: 30px !important;
+  }
   .assemble h1 {
-    font-size: 45px;
-    line-height: 56px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .assemble .wrapper {
     -ms-grid-columns: 1.5fr 2fr;
         grid-template-columns: 1.5fr 2fr;
   }
   .assemble .imgHolder img {
-    height: 90vh;
+    height: 60vh;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .assemble .gridContent .tabLink {
     width: 100px;
-    height: 100px;
-    border-radius: 30px;
+    height: 60px;
+    border-radius: 20px;
   }
   .assemble .gridContent .tabLink img {
     width: 50px;
     height: 50px;
   }
   .assemble .gridContent h3 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 20px 0 !important;
   }
   .assemble .gridContent .search {
     width: 100%;
@@ -2379,66 +2433,80 @@ footer .footerEnd p {
     border-radius: 30px;
   }
   .assemble .gridContent .search img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
   .assemble .gridContent .search input {
     width: 100%;
     height: 100%;
-    font-size: 18px;
+    font-size: 16px;
   }
   .assemble .gridContent .search input::-webkit-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .assemble .gridContent .search input:-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .assemble .gridContent .search input::-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .assemble .gridContent .search input::placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .assemble .gridContent .gallery {
     width: 100%;
-    grid-gap: 20px;
+    margin-top: 30px;
+    grid-gap: 10px;
   }
   .assemble .gridContent .gallery .galleryCard img {
     width: auto;
-    height: 150px;
+    height: 120px;
   }
   .assemble .gridContent .gallery .galleryCard p {
     font-size: 16px;
     color: #292929;
   }
+  .assemble .assembleButtons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+  }
   .assemble .assembleButtons a {
-    width: 250px;
+    width: 100%;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 20px;
     font-size: 18px;
+    line-height: 24px;
+  }
+  .assemble .assembleButtons a * {
+    font-size: 18px;
+    line-height: 24px;
   }
   .assemble .assembleButtons .plan img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
   .explore {
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
     grid-gap: 30px;
+    padding: 48px 96px !important;
   }
   .explore .exploreContent h3 {
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .explore .exploreContent p {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .explore .exploreContent a {
-    width: 250px;
+    width: 200px;
     height: 60px;
-    border-radius: 30px;
-    line-height: 40px;
+    border-radius: 20px;
+    line-height: 24px;
     font-size: 18px;
   }
   .explore .exploreCards {
@@ -2446,71 +2514,98 @@ footer .footerEnd p {
   }
   .explore .exploreCards .cardLayout {
     width: auto;
-    height: 450px;
-    border-radius: 30px;
+    height: 50vh;
+    border-radius: 20px;
+    padding: 20px !important;
   }
   .explore .exploreCards .cardLayout .info {
-    min-width: 80%;
-    height: 60px;
-    border-radius: 30x;
+    min-width: 60%;
+    height: 50px;
+    border-radius: 20x;
     padding: 0 15px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .explore .exploreCards .cardLayout span {
-    font-size: 18px;
+    font-size: 16px;
   }
   .explore .exploreCards .cardLayout a {
     min-width: 80%;
-    height: 60px;
-  }
-  .explore .exploreCards .cardLayout a p {
-    font-size: 18px;
-  }
-  .explore .exploreCards .cardLayout a img {
-    width: 50px;
     height: 50px;
   }
+  .explore .exploreCards .cardLayout a p {
+    font-size: 16px;
+  }
+  .explore .exploreCards .cardLayout a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px !important;
+  }
   .explore .exploreCards .cardLayout .overlay {
-    border-radius: 30px;
+    border-radius: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .explore .exploreCards .cardLayout .overlay span {
+    margin: 0 !important;
   }
   .explore .exploreCards .cardLayout .overlay .overlayInfo {
-    width: 80%px;
+    width: 80%;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 20px;
+  }
+  .branches, .productBranches, .styleResources {
+    padding-bottom: 48px;
+  }
+  .branches .bgBack, .productBranches .bgBack, .styleResources .bgBack {
+    height: 80%;
+  }
+  .branches .wrapper, .productBranches .wrapper, .styleResources .wrapper {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    width: 80vw !important;
+    padding: 30px 80px !important;
+    margin: 0 !important;
   }
   .branches .wrapper h2, .productBranches .wrapper h2, .styleResources .wrapper h2 {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 900 !important;
   }
   .branches .wrapper form .search, .productBranches .wrapper form .search, .styleResources .wrapper form .search {
-    width: 60vw;
+    width: 50vw;
     height: 60px;
+    border-radius: 20px;
   }
   .branches .wrapper form .search img, .productBranches .wrapper form .search img, .styleResources .wrapper form .search img {
     width: 40px;
     height: 40px;
   }
   .branches .wrapper form .search input, .productBranches .wrapper form .search input, .styleResources .wrapper form .search input {
-    font-size: 20px;
+    font-size: 18px;
   }
   .branches .wrapper form .search input::-webkit-input-placeholder, .productBranches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
     color: #292929;
-    font-size: 20px;
+    font-size: 18px;
   }
   .branches .wrapper form .search input:-ms-input-placeholder, .productBranches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
     color: #292929;
-    font-size: 20px;
+    font-size: 18px;
   }
   .branches .wrapper form .search input::-ms-input-placeholder, .productBranches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
     color: #292929;
-    font-size: 20px;
+    font-size: 18px;
   }
   .branches .wrapper form .search input::placeholder, .productBranches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
     color: #292929;
-    font-size: 20px;
+    font-size: 18px;
   }
   .branches .wrapper form .search input:focus, .productBranches .wrapper form .search input:focus, .styleResources .wrapper form .search input:focus {
     outline: none;
+  }
+  .branches .wrapper form .radios, .productBranches .wrapper form .radios, .styleResources .wrapper form .radios {
+    margin-top: 30px !important;
   }
   .branches .wrapper form .radios .container, .productBranches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
     position: relative;
@@ -2521,38 +2616,59 @@ footer .footerEnd p {
   .branches .wrapper form .radios .container .checkmark, .productBranches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
     height: 30px;
     width: 30px;
+    border-width: 4px;
   }
   .branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
-    top: 2px;
-    left: 2.5px;
-    right: 1px;
-    bottom: 1px;
-    width: 15px;
-    height: 15px;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    width: 13px;
+    height: 13px;
   }
   .branches .wrapper form .radios .container p, .productBranches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
     font-size: 20px;
     font-weight: bold;
   }
-  .branches .wrapper p, .productBranches .wrapper p, .styleResources .wrapper p {
-    font-size: 30px;
+  .branches .wrapper .buildtxt, .productBranches .wrapper .buildtxt, .styleResources .wrapper .buildtxt {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 30px !important;
+  }
+  .branches .wrapper .hardware, .productBranches .wrapper .hardware, .styleResources .wrapper .hardware {
+    width: 100%;
+    margin-top: 0 !important;
+    padding: 0;
+    margin: 0;
   }
   .branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
-    width: auto;
-    height: 280px;
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+    padding: 15px;
   }
   .branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
-    width: 80%;
-    height: 38px;
+    min-width: 70%;
+    min-height: 30px;
     padding: 0 10px;
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 15px;
+    border-radius: 20px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay *, .productBranches .wrapper .hardware .hardwareCard .overlay *, .styleResources .wrapper .hardware .hardwareCard .overlay * {
+    margin: 0;
   }
   .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
     width: 80%;
-    height: 38px;
+    height: 30px;
   }
   .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
-    font-size: 16px;
+    font-size: 14px;
   }
   .branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
     font-size: 14px;
@@ -2565,160 +2681,221 @@ footer .footerEnd p {
   .branches .wrapper .hardware .hardwareCard .overlay:hover, .productBranches .wrapper .hardware .hardwareCard .overlay:hover, .styleResources .wrapper .hardware .hardwareCard .overlay:hover {
     opacity: 1;
   }
+  .differences {
+    padding: 48px 96px !important;
+  }
   .differences h2 {
-    font-size: 60px;
+    font-size: 45px;
+  }
+  .differences .diffGrid {
+    margin-top: 30px !important;
   }
   .differences .differenceCard {
-    height: 300px;
-    width: 300px;
-    border-radius: 30px;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
   }
   .differences .differenceCard img {
     width: 150px;
     height: 150px;
   }
   .differences .differenceCard h5 {
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top: 10px !important;
   }
   .differences .differenceCard .overlay {
-    border-radius: 30px;
+    border-radius: 20px;
   }
   .differences .differenceCard .overlay h4 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .differences .differenceCard .overlay p {
     font-size: 18px;
     line-height: 24px;
   }
   .partners {
-    -ms-grid-columns: 1fr 3fr;
-        grid-template-columns: 1fr 3fr;
+    -ms-grid-columns: 1fr 4fr;
+        grid-template-columns: 1fr 4fr;
+    margin: 48px 0 !important;
   }
   .partners .partnerText h2 {
-    font-size: 45px;
-    line-height: 52px;
-    width: 80%;
+    font-size: 32px;
+    line-height: 42px;
+    width: 60%;
   }
   .partners .partnerText a {
-    font-size: 18px;
+    font-size: 16px;
   }
   .partners .partnerSlider .sliderCard {
-    border-radius: 30px;
+    border-radius: 20px;
   }
   .partners .partnerSlider .sliderCard img {
-    width: auto;
-    height: 350px;
-    border-radius: 30px;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
   }
   .partners .partnerSlider .sliderCard p {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 24px;
+  }
+  .customers {
+    padding: 0 !important;
+    padding-bottom: 48px !important;
   }
   .customers .titleSection h2 {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 42px;
     width: 80%;
   }
   .customers .titleSection a {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .customers .customerSlider {
+    margin-top: 20px !important;
   }
   .customers .customerSlider .customerCard {
-    width: auto;
-    height: 450px;
-    border-radius: 30px;
+    width: 100%;
+    height: 330px;
+    border-radius: 20px;
+    padding: 25px;
   }
   .customers .customerSlider .customerCard .overlay {
-    border-radius: 30px;
-    border: 2px solid #1226AA;
+    border-radius: 20px;
   }
   .customers .customerSlider .customerCard .name img {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .customers .customerSlider .customerCard .name h4 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .customers .customerSlider .customerCard p {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 24px;
   }
   .customers .customerSlider .customerCard .ratings img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+  }
+  .community {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .community h2 {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .community .communityInfo {
+    margin-top: 50px !important;
+    padding-left: 0 !important;
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr 1.5fr;
+        grid-template-columns: 1fr 1.5fr;
+    grid-gap: 30px !important;
   }
   .community .communityInfo .imgWrapper {
-    width: 80vw;
-    height: 60vh;
+    width: 100%;
+    height: 55vh;
+    margin: 0 !important;
+  }
+  .community .communityInfo .imgWrapper img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .community .communityInfo .imgWrapper .linkBtns .commBtn {
-    width: 70px;
+    width: 50px;
     height: 50px;
     cursor: pointer;
   }
   .community .communityInfo .imgWrapper .linkBtns .commBtn img {
     width: 20.82px;
     height: 20.03px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .community .communityInfo .communityText {
+    margin: 0 !important;
+  }
+  .community .communityInfo .communityText .names {
+    margin: 20px 0 !important;
   }
   .community .communityInfo .communityText h5 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
     width: 90%;
   }
   .community .communityInfo .communityText h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .community .communityInfo .communityText p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    width: 60%;
+  }
+  .community .communityInfo .communityText a {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px !important;
+  }
+  .stylePoints {
+    -ms-grid-columns: 1.5fr 1fr !important;
+        grid-template-columns: 1.5fr 1fr !important;
+    margin-top: 48px;
+    padding-left: 0 !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .stylePoints img {
+    width: 100%;
+    height: 400px;
+  }
+  .stylePoints .styleText * {
+    margin: 0;
+  }
+  .stylePoints .styleText h2 {
     font-size: 32px;
     line-height: 40px;
   }
-  .community .communityInfo .communityText p {
-    font-size: 20px;
-    line-height: 32px;
-    font-weight: normal;
-    width: 70%;
-  }
-  .community .communityInfo .communityText a {
+  .stylePoints .styleText h5 {
     font-size: 20px;
     line-height: 30px;
-  }
-  .stylePoints img {
-    width: auto;
-    height: 450px;
-  }
-  .stylePoints .styleText h2 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .stylePoints .styleText h5 {
-    font-size: 30px;
-    line-height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   .stylePoints .styleText a {
     width: 200px;
     height: 60px;
-    font-size: 20px;
-    line-height: 30px;
-    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 20px;
+    border-radius: 20px;
   }
 }
 
 @media only screen and (max-width: 1280px) {
   .homeBanner .tabGrids .gridLink {
-    height: 250px;
-    padding: 0 15px !important;
+    height: 25vh;
+    padding: 0 50px !important;
   }
   .homeBanner .tabGrids .gridLink img {
     height: 50px;
     width: 50px;
   }
   .homeBanner .tabGrids .gridLink h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .homeBanner .tabGrids .link1 {
+    padding-left: 70px !important;
   }
   .explore {
     -ms-grid-columns: 1fr 2fr;
@@ -2788,63 +2965,78 @@ footer .footerEnd p {
 
 @media only screen and (max-width: 1024px) {
   .homeBanner .tabGrids .gridLink {
-    height: 200px;
-    padding: 0 15px !important;
+    height: 25vh;
+    padding: 0 30px !important;
   }
   .homeBanner .tabGrids .gridLink img {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
   }
   .homeBanner .tabGrids .gridLink h1 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .homeBanner .tabGrids .link1 {
+    padding-left: 90px !important;
   }
   .homeBanner .tabSection {
-    min-height: 500px;
+    min-height: 70vh;
   }
-  .homeBanner .tab1 {
-    grid-gap: 20px !important;
+  .homeBanner .tabSection h3 {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100% !important;
   }
   .homeBanner .tab1 .textContent h3 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 32px;
+    width: 100%;
+  }
+  .homeBanner .tab1 .textContent form {
+    margin-top: 20px;
   }
   .homeBanner .tab1 .textContent form input, .homeBanner .tab1 .textContent form select, .homeBanner .tab1 .textContent form button {
     min-height: 60px;
-    border-radius: 30px;
-    font-size: 18px;
+    font-size: 14px;
     padding: 0px 15px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab1 .textContent form input::-webkit-input-placeholder, .homeBanner .tab1 .textContent form select::-webkit-input-placeholder, .homeBanner .tab1 .textContent form button::-webkit-input-placeholder {
-    font-size: 18px;
+    font-size: 14px;
   }
   .homeBanner .tab1 .textContent form input:-ms-input-placeholder, .homeBanner .tab1 .textContent form select:-ms-input-placeholder, .homeBanner .tab1 .textContent form button:-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 14px;
   }
   .homeBanner .tab1 .textContent form input::-ms-input-placeholder, .homeBanner .tab1 .textContent form select::-ms-input-placeholder, .homeBanner .tab1 .textContent form button::-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 14px;
   }
   .homeBanner .tab1 .textContent form input::placeholder, .homeBanner .tab1 .textContent form select::placeholder, .homeBanner .tab1 .textContent form button::placeholder {
-    font-size: 18px;
+    font-size: 14px;
   }
   .homeBanner .tab1 .textContent form .s-hidden {
     padding-right: 10px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab1 .textContent form .select {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 32px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab1 .textContent form .styledSelect {
-    padding: 0 15px;
-    font-size: 18px;
+    padding: 0 20px;
+    font-size: 16px;
     line-height: 24px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab1 .textContent form .styledSelect:after {
     content: "";
     width: 0;
     height: 0;
+    border: 8px solid transparent;
+    border-color: #F4F4F4 transparent transparent transparent;
+    position: absolute;
     top: 45%;
-    right: 15px;
+    right: 20px;
   }
   .homeBanner .tab1 .textContent form .options {
     padding: 10px;
@@ -2854,240 +3046,299 @@ footer .footerEnd p {
     padding: 0 10px;
   }
   .homeBanner .tab1 img {
-    width: auto;
-    height: 400px;
+    width: 100%;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .homeBanner .tab2 h4 {
-    font-size: 30px;
-    font-weight: 40px;
+    font-size: 20px;
+    font-weight: 30px;
+    width: 60%;
   }
   .homeBanner .tab2 .productCategory {
-    -ms-grid-columns: (1fr)[3] !important;
-        grid-template-columns: repeat(3, 1fr) !important;
+    -ms-grid-columns: (1fr)[4] !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 20px !important;
   }
   .homeBanner .tab2 .productCategory .categoryCard {
     width: auto;
-    height: 300px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px !important;
   }
   .homeBanner .tab2 .productCategory .categoryCard .info {
     min-width: 70%;
-    height: 35px;
-    border-radius: 30px;
-    padding: 0 20px;
-    font-size: 18px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 14px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .overlay {
-    border-radius: 30px;
+    border-radius: 20px;
+    padding: 20px !important;
   }
   .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayInfo {
     width: auto;
-    height: 60px;
-    border-radius: 30px;
+    height: 30px;
+    border-radius: 20px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayTxt {
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 30px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .shopLink {
     width: auto;
-    height: 40px;
-    border-radius: 30px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 15px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .shopLink img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .shopLink p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 21px;
   }
-  .homeBanner .tab3 {
-    grid-gap: 20px !important;
-  }
   .homeBanner .tab3 .textContent h3 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .homeBanner .tab3 .textContent form {
+    margin-top: 30px;
   }
   .homeBanner .tab3 .textContent form input, .homeBanner .tab3 .textContent form select, .homeBanner .tab3 .textContent form button {
     min-height: 60px;
-    width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0px 15px;
-    border-radius: 30px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab3 .textContent form input::-webkit-input-placeholder, .homeBanner .tab3 .textContent form select::-webkit-input-placeholder, .homeBanner .tab3 .textContent form button::-webkit-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab3 .textContent form input:-ms-input-placeholder, .homeBanner .tab3 .textContent form select:-ms-input-placeholder, .homeBanner .tab3 .textContent form button:-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab3 .textContent form input::-ms-input-placeholder, .homeBanner .tab3 .textContent form select::-ms-input-placeholder, .homeBanner .tab3 .textContent form button::-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab3 .textContent form input::placeholder, .homeBanner .tab3 .textContent form select::placeholder, .homeBanner .tab3 .textContent form button::placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab3 .textContent form .s-hidden {
-    visibility: hidden;
     padding-right: 10px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab3 .textContent form .select {
-    width: 100% !important;
-    height: 100%;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 32px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab3 .textContent form .styledSelect {
-    padding: 0 10px;
-    font-size: 18px;
+    padding: 0 20px;
+    font-size: 16px;
     line-height: 24px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab3 .textContent form .styledSelect:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-color: #F4F4F4 transparent transparent transparent;
+    position: absolute;
     top: 45%;
-    right: 15px;
+    right: 20px;
   }
   .homeBanner .tab3 .textContent form .options {
     padding: 10px;
   }
   .homeBanner .tab3 .textContent form .options li {
     padding: 0 6px;
-    margin: 0 0;
     padding: 0 10px;
   }
+  .homeBanner .tab3 .textContent form button {
+    background: #FFB548;
+    color: #292929;
+    font-weight: 900 !important;
+  }
   .homeBanner .tab3 img {
-    width: auto;
-    height: 400px;
+    width: 100%;
+    height: 50vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .homeBanner .tab4 h3 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    width: 60%;
+    font-weight: 900 !important;
+  }
+  .homeBanner .tab4 form {
+    margin-top: 0 !important;
+  }
+  .homeBanner .tab4 form .radios {
+    margin-bottom: 10px !important;
+    width: 80%;
   }
   .homeBanner .tab4 form .radios .container {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab4 form .radios .container .checkmark {
     height: 30px;
     width: 30px;
   }
   .homeBanner .tab4 form .radios .container .checkmark:after {
-    top: 2px;
+    top: 3px;
     left: 3px;
     right: 3px;
-    bottom: 2px;
-    width: 15px;
-    height: 15px;
+    bottom: 3px;
+    width: 13px;
+    height: 13px;
   }
   .homeBanner .tab4 form .radios .container p {
     font-size: 18px;
     line-height: 24px;
   }
   .homeBanner .tab4 form .otherInputs .search {
-    width: 300px;
+    width: 100%;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 20px;
   }
   .homeBanner .tab4 form .otherInputs .search img {
-    width: 35.05px;
-    height: 35.05px;
+    width: 30.05px;
+    height: 30.05px;
   }
   .homeBanner .tab4 form .otherInputs .search input {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab4 form .otherInputs .search input::-webkit-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab4 form .otherInputs .search input:-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab4 form .otherInputs .search input::-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab4 form .otherInputs .search input::placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .homeBanner .tab4 form .otherInputs button {
-    width: 300px;
+    width: 100%;
     height: 60px;
-    border-radius: 30px;
-    font-size: 18px;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  .homeBanner .tab4 img {
+    width: 100%;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .assemble {
+    margin-top: 48px !important;
   }
   .assemble .bgCover {
     width: 95vw;
   }
+  .assemble .title {
+    padding: 20px !important;
+  }
   .assemble h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .assemble .wrapper {
     -ms-grid-columns: 1.5fr 2fr;
         grid-template-columns: 1.5fr 2fr;
   }
   .assemble .imgHolder img {
-    height: 90vh;
+    height: 60vh;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .assemble .gridContent .tabLink {
     width: 100px;
-    height: 100px;
-    border-radius: 30px;
+    height: 60px;
+    border-radius: 20px;
   }
   .assemble .gridContent .tabLink img {
     width: 40px;
     height: 40px;
-    -o-object-fit: contain;
-       object-fit: contain;
   }
   .assemble .gridContent h3 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 15px 0 !important;
   }
   .assemble .gridContent .search {
     width: 100%;
-    height: 60px;
+    height: 50px;
     border-radius: 30px;
   }
   .assemble .gridContent .search img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
   .assemble .gridContent .search input {
     width: 100%;
     height: 100%;
-    font-size: 18px;
+    font-size: 16px;
   }
   .assemble .gridContent .search input::-webkit-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .assemble .gridContent .search input:-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .assemble .gridContent .search input::-ms-input-placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .assemble .gridContent .search input::placeholder {
-    font-size: 18px;
+    font-size: 16px;
   }
   .assemble .gridContent .gallery {
     width: 100%;
-    grid-gap: 20px;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    grid-gap: 10px;
   }
   .assemble .gridContent .gallery .galleryCard img {
     width: auto;
-    height: 120px;
+    height: 100px;
   }
   .assemble .gridContent .gallery .galleryCard p {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 20px;
     color: #292929;
+    text-align: center;
+  }
+  .assemble .assembleButtons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
   }
   .assemble .assembleButtons a {
-    width: 250px;
+    width: 100%;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 20px;
     font-size: 18px;
+    line-height: 24px;
+  }
+  .assemble .assembleButtons a * {
+    font-size: 18px;
+    line-height: 24px;
   }
   .assemble .assembleButtons .plan img {
     height: 40px;
@@ -3362,8 +3613,8 @@ footer .footerEnd p {
 
 @media only screen and (max-width: 768px) {
   .homeBanner .tabGrids .gridLink {
-    height: 200px;
-    padding: 0 15px !important;
+    height: auto;
+    padding: 30px 15px !important;
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
@@ -3384,52 +3635,59 @@ footer .footerEnd p {
     line-height: 32px;
     text-align: center;
   }
-  .homeBanner .tabSection {
-    min-height: 500px;
-  }
   .homeBanner .tab1 {
-    padding: 40px inherit !important;
+    padding: 48px;
   }
   .homeBanner .tab1 .textContent h3 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    width: 100%;
+  }
+  .homeBanner .tab1 .textContent form {
+    margin-top: 20px;
   }
   .homeBanner .tab1 .textContent form input, .homeBanner .tab1 .textContent form select, .homeBanner .tab1 .textContent form button {
     min-height: 60px;
-    border-radius: 30px;
-    font-size: 16px;
+    font-size: 14px;
     padding: 0px 15px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab1 .textContent form input::-webkit-input-placeholder, .homeBanner .tab1 .textContent form select::-webkit-input-placeholder, .homeBanner .tab1 .textContent form button::-webkit-input-placeholder {
-    font-size: 16px;
+    font-size: 14px;
   }
   .homeBanner .tab1 .textContent form input:-ms-input-placeholder, .homeBanner .tab1 .textContent form select:-ms-input-placeholder, .homeBanner .tab1 .textContent form button:-ms-input-placeholder {
-    font-size: 16px;
+    font-size: 14px;
   }
   .homeBanner .tab1 .textContent form input::-ms-input-placeholder, .homeBanner .tab1 .textContent form select::-ms-input-placeholder, .homeBanner .tab1 .textContent form button::-ms-input-placeholder {
-    font-size: 16px;
+    font-size: 14px;
   }
   .homeBanner .tab1 .textContent form input::placeholder, .homeBanner .tab1 .textContent form select::placeholder, .homeBanner .tab1 .textContent form button::placeholder {
-    font-size: 16px;
+    font-size: 14px;
   }
   .homeBanner .tab1 .textContent form .s-hidden {
     padding-right: 10px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab1 .textContent form .select {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 32px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab1 .textContent form .styledSelect {
-    padding: 0 15px;
+    padding: 0 20px;
     font-size: 16px;
     line-height: 24px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab1 .textContent form .styledSelect:after {
     content: "";
     width: 0;
     height: 0;
+    border: 8px solid transparent;
+    border-color: #F4F4F4 transparent transparent transparent;
+    position: absolute;
     top: 45%;
-    right: 15px;
+    right: 20px;
   }
   .homeBanner .tab1 .textContent form .options {
     padding: 10px;
@@ -3439,63 +3697,89 @@ footer .footerEnd p {
     padding: 0 10px;
   }
   .homeBanner .tab1 img {
-    width: auto;
-    height: 400px;
+    width: 100%;
+    height: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 20px;
+  }
+  .homeBanner .tab2 {
+    padding: 48px;
   }
   .homeBanner .tab2 h4 {
-    font-size: 30px;
-    font-weight: 40px;
+    font-size: 24px;
+    font-weight: 30px;
+    width: 80%;
   }
   .homeBanner .tab2 .productCategory {
-    -ms-grid-columns: (1fr)[2] !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-    grid-gap: 30px;
+    -ms-grid-columns: (1fr)[3] !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+    grid-gap: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 20px !important;
   }
   .homeBanner .tab2 .productCategory .categoryCard {
     width: auto;
-    height: 250px;
+    height: 20vh;
+    border-radius: 20px;
+    padding: 20px !important;
   }
   .homeBanner .tab2 .productCategory .categoryCard .info {
     min-width: 70%;
-    height: 35px;
-    border-radius: 30px;
-    padding: 0 20px;
-    font-size: 16px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 14px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .overlay {
-    border-radius: 30px;
+    border-radius: 20px;
+    padding: 20px !important;
   }
   .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayInfo {
     width: auto;
-    height: 60px;
-    border-radius: 30px;
+    height: 30px;
+    border-radius: 20px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayTxt {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 30px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .shopLink {
     width: auto;
-    height: 40px;
-    border-radius: 30px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 15px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .shopLink img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .shopLink p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 21px;
   }
+  .homeBanner .tab3 {
+    padding: 48px;
+  }
   .homeBanner .tab3 .textContent h3 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    width: 80%;
+  }
+  .homeBanner .tab3 .textContent form {
+    margin-top: 30px;
   }
   .homeBanner .tab3 .textContent form input, .homeBanner .tab3 .textContent form select, .homeBanner .tab3 .textContent form button {
     min-height: 60px;
-    width: 100%;
     font-size: 16px;
     padding: 0px 15px;
-    border-radius: 30px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab3 .textContent form input::-webkit-input-placeholder, .homeBanner .tab3 .textContent form select::-webkit-input-placeholder, .homeBanner .tab3 .textContent form button::-webkit-input-placeholder {
     font-size: 16px;
@@ -3510,83 +3794,92 @@ footer .footerEnd p {
     font-size: 16px;
   }
   .homeBanner .tab3 .textContent form .s-hidden {
-    visibility: hidden;
     padding-right: 10px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab3 .textContent form .select {
-    width: 100% !important;
-    height: 100%;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 32px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab3 .textContent form .styledSelect {
-    padding: 0 10px;
+    padding: 0 20px;
     font-size: 16px;
     line-height: 24px;
+    border-radius: 20px !important;
   }
   .homeBanner .tab3 .textContent form .styledSelect:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-color: #F4F4F4 transparent transparent transparent;
+    position: absolute;
     top: 45%;
-    right: 15px;
+    right: 20px;
   }
   .homeBanner .tab3 .textContent form .options {
     padding: 10px;
   }
   .homeBanner .tab3 .textContent form .options li {
     padding: 0 6px;
-    margin: 0 0;
     padding: 0 10px;
   }
+  .homeBanner .tab3 .textContent form button {
+    background: #FFB548;
+    color: #292929;
+    font-weight: 900 !important;
+  }
   .homeBanner .tab3 img {
-    width: auto;
-    height: 400px;
+    width: 100%;
+    height: 30vh;
     -o-object-fit: cover;
        object-fit: cover;
+    margin-top: 20px;
+  }
+  .homeBanner .tab4 {
+    padding: 48px;
   }
   .homeBanner .tab4 h3 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    width: 60%;
+    font-weight: 900 !important;
+  }
+  .homeBanner .tab4 form {
+    margin-top: 0 !important;
   }
   .homeBanner .tab4 form .radios {
+    margin-bottom: 10px !important;
     width: 50%;
   }
   .homeBanner .tab4 form .radios .container {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 5px;
     font-size: 16px;
   }
   .homeBanner .tab4 form .radios .container .checkmark {
-    height: 24px;
-    width: 24px;
-    border: 4px solid #292929;
+    height: 30px;
+    width: 30px;
   }
   .homeBanner .tab4 form .radios .container .checkmark:after {
     top: 3px;
     left: 3px;
     right: 3px;
     bottom: 3px;
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 13px;
   }
   .homeBanner .tab4 form .radios .container p {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .homeBanner .tab4 form .otherInputs {
-    display: -ms-grid !important;
-    display: grid !important;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .homeBanner .tab4 form .otherInputs .search {
-    width: auto;
+    width: 100%;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 20px;
   }
   .homeBanner .tab4 form .otherInputs .search img {
-    width: 35.05px;
-    height: 35.05px;
+    width: 30.05px;
+    height: 30.05px;
   }
   .homeBanner .tab4 form .otherInputs .search input {
     font-size: 16px;
@@ -3604,10 +3897,17 @@ footer .footerEnd p {
     font-size: 16px;
   }
   .homeBanner .tab4 form .otherInputs button {
-    width: auto;
+    width: 100%;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 20px;
     font-size: 16px;
+  }
+  .homeBanner .tab4 img {
+    width: 100%;
+    height: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 20px;
   }
   .assemble .bgCover {
     width: 95vw;
@@ -3615,6 +3915,7 @@ footer .footerEnd p {
   .assemble h1 {
     font-size: 32px;
     line-height: 40px;
+    text-align: left;
   }
   .assemble .wrapper {
     -ms-grid-columns: 1fr;
@@ -3628,14 +3929,14 @@ footer .footerEnd p {
   }
   .assemble .gridContent .tabLink {
     width: 100px;
-    height: 100px;
-    border-radius: 30px;
+    height: 60px;
+    border-radius: 20px;
   }
   .assemble .gridContent .tabLink img {
-    width: 40px;
-    height: 40px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .assemble .gridContent h3 {
     font-size: 24px;
@@ -3643,7 +3944,7 @@ footer .footerEnd p {
   }
   .assemble .gridContent .search {
     width: 100%;
-    height: 60px;
+    height: 50px;
     border-radius: 30px;
   }
   .assemble .gridContent .search img {
@@ -3682,14 +3983,9 @@ footer .footerEnd p {
     color: #292929;
   }
   .assemble .assembleButtons a {
-    width: 250px;
     height: 60px;
     border-radius: 30px;
     font-size: 16px;
-  }
-  .assemble .assembleButtons .plan img {
-    height: 40px;
-    width: 40px;
   }
   .explore {
     -ms-grid-columns: 1fr;

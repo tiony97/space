@@ -30,7 +30,7 @@ body {
  
 //Main Nav Menu
 nav {
-    min-height: 96px;
+    min-height: 80px;
     transition: all .2s ease-in-out;
     z-index: 50;
     .logo {
@@ -84,12 +84,13 @@ nav {
 
 //Responsive Navigation
 .responsiveNav {
-    height: 90px;
+    height: 60px;
     display: none;
     z-index: 50;
     .logo {
         width: auto;
-        height: auto;
+        height: 100%;
+        object-fit: contain;
     }
     .mobileLogo {
         width: auto;
@@ -98,8 +99,8 @@ nav {
     }
     .navIcons {
         img {
-            width: 40.61px;
-            height: 40.61px;
+            width: 30.61px;
+            height: 30.61px;
         }
     }
 }
@@ -263,9 +264,11 @@ footer {
 //Big Screens
 @media only screen and (max-width: 1600px) {
     nav {
+        height: 60px;
         .logo {
             width: auto;
-            height: auto;
+            height: 100%;
+            object-fit: contain;
         }
         .pageLinks {
             margin: 0 5px !important;
@@ -288,8 +291,12 @@ footer {
         .navBtns {
             margin: 0 5px !important;
             a {
-                min-width: 120px;
-                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 150px;
+                height: 50px;
+                border-radius: 15px;
                 font-size: 15px;
                 margin: 0px 5px !important;
             }
@@ -299,8 +306,8 @@ footer {
     footer {
         .logoSection {
             p {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 30px;
             }
             input {
                 height: 60px;
@@ -312,14 +319,14 @@ footer {
         }
         .linkSection {
             h5 {
-                font-size: 21px !important;
-                line-height: 32px;
+                font-size: 20px !important;
+                line-height: 30px;
             }
         }
         .iconSection {
             h5 {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 30px;
             }
             img {
                 width: 30px;
@@ -329,53 +336,13 @@ footer {
         }
         .footerEnd {
             img {
-                width: 25px;
-                height: 25px;
+                width: 20px;
+                height: 20px;
             }   
             p {
-                font-size: 20px;
+                font-size: 16px;
                 font-weight: normal;
                 line-height: 32px;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 1280px) {
-    nav {
-        display: none !important;
-    }
-    .responsiveNav {
-        display: flex;
-        .navIcons {
-            img {
-                width: 40px;
-                height: 40px;
-                object-fit: contain;
-            }
-        }
-    }
-    .menuOverlay {
-        .overlayLinks {
-            a {
-                font-size: 32px;
-                font-weight: 800;
-                color: $light;
-                transition: all .2s ease-in-out;
-                &:hover {
-                    color: $blue;
-                }
-            }
-            .activeLink {
-                font-weight: bolder !important;
-                color: $blue !important;
-            }
-        }
-        .overlaySocial {
-            img {
-                width: 40px !important;
-                height: 40px !important;
-                object-fit: cover;
             }
         }
     }
@@ -390,8 +357,8 @@ footer {
         display: flex;
         .navIcons {
             img {
-                width: 40px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
                 object-fit: contain;
             }
         }
