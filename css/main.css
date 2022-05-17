@@ -2471,7 +2471,8 @@ footer .footerEnd p {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    grid-gap: 0;
+    grid-gap: 30px;
+    width: 100% !important;
   }
   .assemble .assembleButtons a {
     width: 100%;
@@ -2479,6 +2480,7 @@ footer .footerEnd p {
     border-radius: 20px;
     font-size: 18px;
     line-height: 24px;
+    margin: 0 !important;
   }
   .assemble .assembleButtons a * {
     font-size: 18px;
