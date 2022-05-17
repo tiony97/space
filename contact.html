@@ -32,8 +32,8 @@
                     <img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag">
                 </div>
                 <div class="navBtns flex lg:space-x-4">
-                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
-                    <a href="#" class="login flex items-center justify-center">Login</a>
+                    <a href="javascript:void(0)" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="javascript:void(0)" class="login flex items-center justify-center">Login</a>
                 </div>
             </div>
         </nav>
@@ -43,8 +43,8 @@
             <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
             <img src="./assets/mobile logo.png" alt="" class="mobileLogo">
             <div class="navIcons flex items-center lg:space-x-4 md:space-x-2 space-x-2">
-                <a href="#"><img src="./assets/search_black_24dp.png" alt="" class="search"></a>
-                <a href="#"><img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag"></a>
+                <a href="javascript:void(0)"><img src="./assets/search_black_24dp.png" alt="" class="search"></a>
+                <a href="javascript:void(0)"><img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag"></a>
                 <span class="cursor-pointer menuOpen"><img src="./assets/menu open black.png" alt=""></span>
             </div>
         </div>
@@ -63,14 +63,14 @@
                     <a href="contact.html" class="activeLink">Contact Us</a>
                 </div>
                 <div class="overlayBtns flex space-x-4">
-                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
-                    <a href="#" class="login flex items-center justify-center">Login</a>
+                    <a href="javascript:void(0)" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="javascript:void(0)" class="login flex items-center justify-center">Login</a>
                 </div>
                 <div class="overlaySocial flex flex-col items-center">
                     <div class="flex lg:space-x-5 space-x-2">
-                        <a href="#"><img src="./assets/icons8-facebook-50.png" alt="" class="socialIcon"></a>
-                        <a href="#"><img src="./assets/icons8-twitter-30.png" alt="" class="socialIcon"></a>
-                        <a href="#"><img src="./assets/icons8-instagram-24.png" alt="" class="socialIcon"></a>
+                        <a href="javascript:void(0)"><img src="./assets/icons8-facebook-50.png" alt="" class="socialIcon"></a>
+                        <a href="javascript:void(0)"><img src="./assets/icons8-twitter-30.png" alt="" class="socialIcon"></a>
+                        <a href="javascript:void(0)"><img src="./assets/icons8-instagram-24.png" alt="" class="socialIcon"></a>
                     </div>
                 </div>
             </div>
@@ -78,14 +78,16 @@
         
         <main class="w-full">
             <!--PRODUCT PAGE BANNER SECTION-->
-            <div class="contactBanner relative w-full h-auto lg:pl-24 md:pl-12 pl-5 lg:pb-24 md:pb-12 pb-6 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
+            <div class="contactBanner relative w-full h-auto lg:pl-24 md:pl-12 lg:pb-24 md:pb-12 pb-6 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
                 <div class="back absolute"></div>
-                <div class="bannerTxt h-full flex flex-col justify-end items-start space-y-3 lg:pb-20 md:pb-12 pb-6">
+                <div class="bannerTxt h-full flex flex-col justify-end items-start space-y-3 pb-6">
                     <h1 class="lg:mb-10 mb-6">Contact Us</h1>
                     <p class="lg:w-4/5 md:w-4/5 w-full">Let us help you by getting close to us</p>
-                    <div class="call flex items-center space-x-5">
-                        <img src="./assets/phone.png" alt="">
-                        <img src="./assets/whatsapp.png" alt="">
+                    <div class="call flex items-center lg:space-x-5 md:space-x-3 space-x-2">
+                        <img src="./assets/phone.png" alt="" class="darkIcons">
+                        <img src="./assets/whatsapp.png" alt="" class="darkIcons">
+                        <img src="./assets/icons8-phone-24.png" alt="" class="lightIcons">
+                        <img src="./assets/icons8-whatsapp-24.png" alt="" class="lightIcons">
                         <h6>020 2086700</h6>
                     </div>
                 </div>
@@ -93,32 +95,32 @@
             </div>
             
             <!--CONTACT FORM SECTION-->
-            <div class="contactForm relative flex w-full flex-col lg:pr-24 md:pr-12 pr-5 lg:py-24 md:py-12 py-6">
+            <div class="contactForm relative flex w-full flex-col lg:pr-24 lg:pl-0 md:px-12 lg:py-24 md:py-12 py-6">
                 <div class="back"></div>
-                <div class="contactInner relative grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 lg:gap-16 md:gap-8 gap-5">
+                <div class="contactInner relative grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 lg:gap-16 md:gap-8 gap-5">
                     <img src="./assets/contact image.png" alt="" class="contactImg">
-                    <form class="content space-y-5">
+                    <form class="content lg:space-y-5 md-space-y-3 space-y-2">
                         <h1 class="lg:w-3/5 md:w-4/5 w-full">Have a question or need more information?</h1>
                         <p>Type your questions or comments below.</p>
-                        <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-6 gap-4">
-                            <div class="input flex flex-col space-y-5">
+                        <div class="inputs grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-6 gap-4">
+                            <div class="input flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
                                 <label>First Name</label>
                                 <input type="text" placeholder="Type your name e.g Salawowo Salapata">
                             </div>
-                            <div class="input flex flex-col space-y-5">
+                            <div class="input flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
                                 <label>Second Name</label>
                                 <input type="text" placeholder="Type your name e.g Salawowo Salapata">
                             </div>
-                            <div class="input flex flex-col space-y-5">
+                            <div class="input flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
                                 <label>Email</label>
                                 <input type="email" placeholder="Type your email e.g salawowo@gmail.com">
                             </div>
-                            <div class="input flex flex-col space-y-5">
+                            <div class="input flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
                                 <label>Phone</label>
                                 <input type="tel" placeholder="Enter your phone number e.g 072X XXXX">
                             </div>
                         </div>
-                        <div class="comment flex flex-col space-y-5">
+                        <div class="comment flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
                             <label>Questions or Comments</label>
                             <textarea cols="30" rows="10" placeholder="Style Points is a loyalty scheme for all Space and Style customers. Once registered to the programme, you start earning points when you spend up to Ksh.500. The more you shop, the more points you earn. Earning of Style Points starts as soon as you register for the programme."></textarea>
                         </div>
@@ -134,9 +136,9 @@
                 </div>
                 <div class="officeDetails lg:space-y-8 md:space-y-6 space-y-4 flex-1">
                     <p>Space & Style has operations in all 47 counties and headquaters in Nairobi and maintains regional offices in offices in Kisumu, Mombasa, Kisii and Eldoret.</p>
-                    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-8 gap-5 lg:w-3/5 md:w-4/5 w-full">
+                    <div class="officesInner grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-8 gap-5 lg:w-3/5 w-full">
                         <div class="office">
-                            <h6 class="mb-8">Kisumu Office</h6>
+                            <h6 class="lg:mb-8 md:mb-6 mb-4">Kisumu Office</h6>
                             <div class="space-y-3">
                                 <p>Hardware Dealers Building, Oginga Odinga Street</p>
                                 <p>P.O Box 27764-00506, Nairobi, Kenya</p>
@@ -144,7 +146,7 @@
                             </div>
                         </div>
                         <div class="office">
-                            <h6 class="mb-8">Kisumu Office</h6>
+                            <h6 class="lg:mb-8 md:mb-6 mb-4">Kisumu Office</h6>
                             <div class="space-y-3">
                                 <p>Hardware Dealers Building, Oginga Odinga Street</p>
                                 <p>P.O Box 27764-00506, Nairobi, Kenya</p>
@@ -152,7 +154,7 @@
                             </div>
                         </div>
                         <div class="office">
-                            <h6 class="mb-8">Kisumu Office</h6>
+                            <h6 class="lg:mb-8 md:mb-6 mb-4">Kisumu Office</h6>
                             <div class="space-y-3">
                                 <p>Hardware Dealers Building, Oginga Odinga Street</p>
                                 <p>P.O Box 27764-00506, Nairobi, Kenya</p>
@@ -160,7 +162,7 @@
                             </div>
                         </div>
                         <div class="office">
-                            <h6 class="mb-8">Kisumu Office</h6>
+                            <h6 class="lg:mb-8 md:mb-6 mb-4">Kisumu Office</h6>
                             <div class="space-y-3">
                                 <p>Hardware Dealers Building, Oginga Odinga Street</p>
                                 <p>P.O Box 27764-00506, Nairobi, Kenya</p>
@@ -168,7 +170,7 @@
                             </div>
                         </div>
                         <div class="office">
-                            <h6 class="mb-8">Kisumu Office</h6>
+                            <h6 class="lg:mb-8 md:mb-6 mb-4">Kisumu Office</h6>
                             <div class="space-y-3">
                                 <p>Hardware Dealers Building, Oginga Odinga Street</p>
                                 <p>P.O Box 27764-00506, Nairobi, Kenya</p>
@@ -176,7 +178,7 @@
                             </div>
                         </div>
                         <div class="office">
-                            <h6 class="mb-8">Kisumu Office</h6>
+                            <h6 class="lg:mb-8 md:mb-6 mb-4">Kisumu Office</h6>
                             <div class="space-y-3">
                                 <p>Hardware Dealers Building, Oginga Odinga Street</p>
                                 <p>P.O Box 27764-00506, Nairobi, Kenya</p>
@@ -199,37 +201,38 @@
                 <div class="linkSection grid gap-1">
                     <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Company</h5>
-                        <a href="#">About Us</a>
-                        <a href="#">Products</a>
-                        <a href="#">Partnership</a>
-                        <a href="#">Style Points</a>
-                        <a href="#">Style Projects</a>
-                        <a href="#">Style Careers</a>
+                        <a href="./about.html">About Us</a>
+                        <a href="./products.html">Products</a>
+                        <a href="./partnership.html">Partnership</a>
+                        <a href="./style.html">Style Points</a>
+                        <a href="./projects.html">Style Projects</a>
+                        <a href="./about_careers.html">Style Careers</a>
                     </div>
                     <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Style Hub</h5>
-                        <a href="#">Press Releases</a>
-                        <a href="#">Downloads</a>
-                        <a href="#">Resources</a>
-                        <a href="#">FAQs</a>
+                        <a href="javascript:void(0)">Press Releases</a>
+                        <a href="./downloads.html">Downloads</a>
+                        <a href="./resources.html">Resources</a>
+                        <a href="./faq.html">FAQs</a>
                     </div>
                     <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Style Community</h5>
-                        <a href="#">Trainings</a>
-                        <a href="#">Environment</a>
+                        <a href="./impact_training_1.html">Trainings</a>
+                        <a href="./impact_environment_1.html">Environment</a>
                     </div>
                     <div class="sect flex flex-col items-start space-y-2 lg:space-y-3">
                         <h5 class="mb-3">Head Office</h5>
-                        <a href="#">Libra House, Mombasa Rd</a>
-                        <a href="#">Telephone: 020 2086700</a>
+                        <a href="javascript:void(0)">Libra House, Mombasa Rd</a>
+                        <a href="javascript:void(0)">Telephone: 020 2086700</a>
                     </div>
                 </div>
                 <div class="iconSection flex flex-col items-center">
                     <h5 class="mb-5">Get interactive</h5>
-                    <div class="flex lg:space-x-5 space-x-2">
+                    <div class="flex lg:space-x-3 space-x-1">
                         <img src="./assets/Layer 2.png" alt="" class="socialIcon">
                         <img src="./assets/Logo_1_.png" alt="" class="socialIcon">
                         <img src="./assets/Layer 3.png" alt="" class="socialIcon">
+                        <img src="./assets/tube.png" alt="" class="socialIcon">
                     </div>
                 </div>
             </div>

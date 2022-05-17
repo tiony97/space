@@ -5,7 +5,7 @@
     .back {
         background: $blue;
         width: 100%;
-        height: 60%;
+        height: 65%;
         top: 0;
         left: 0;
     }
@@ -28,8 +28,9 @@
         }
     }
     .bannerImg {
-        width: auto;
-        height: 554px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
         z-index: 1;
     }
 }
@@ -342,4 +343,699 @@
             }
         }
     }
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+.newsBanner {
+    .back {
+        height: 60%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 55px;
+        }
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        h5 {
+            font-size: 20px;
+        }
+        h6 {
+            font-size: 20px;
+            color: white;
+            font-weight: bolder;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+.newsArticles {
+    .newsTabs {
+        .tab {
+            width: 300px;
+            height: 80px;
+            p {
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+    }
+    .yearInput {
+        min-height: 80px;
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        .select {
+            width: 300px;
+            height: 100%;
+            font-size: 22px;
+            line-height: 32px;
+        }
+        .styledSelect {
+            padding:0 20px;
+            font-size: 22px;
+            line-height: 32px;
+            width: 300px;
+            height: 100%;
+            &:after {
+                top: 45%;
+                right: 20px;
+            }
+        }
+        .options {
+            padding: 10px;
+            li {
+                padding:0 6px;
+                margin:0 0;
+                padding:0 10px;
+            }
+        }
+    }
+    .articles {
+        .article {
+            height: 600px;
+            img {
+                width: 100%;
+                height: 70%;
+                border-radius: 30px;
+            }
+            p {
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+    }
+    .more {
+        width: 300px;
+        height: 80px;
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+//Article Page
+.articleTabs {
+    .tab {
+        width: 300px;
+        height: 80px;
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+}
+.articleContent {
+    .top {
+        .articleImage {
+            width: 100%;
+            height: 600px;
+        }
+        .textContent {
+            h4 {
+                font-size: 40px;
+                line-height: 52px;
+            }
+            .time {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+                h6 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    .textWrap{
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .bottom {
+        .author {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            h6 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        .shareBtn {
+            height: 60px;
+            width: auto;
+            padding: 0 24px;
+            p {
+                font-size: 16px;
+                line-height: 40px;
+                color: white;
+                font-weight: bolder;
+            }
+            img {
+                width: 40px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.relatedStories {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .articles {
+        .article {
+            height: 600px;
+            img {
+                width: 100%;
+                height: 70%;
+                border-radius: 30px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.newsBanner {
+    .back {
+        height: 50%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        h5 {
+            font-size: 20px;
+        }
+    }
+    .bannerImg {
+        height: 250px;
+        object-fit: cover;
+    }
+}
+.newsArticles {
+    .newsTabs {
+        .tab {
+            width: 200px;
+            height: 60px;
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    .yearInput {
+        height: 60px;
+        width: fit-content;
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .select {
+            width: 200px;
+            height: 100%;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .styledSelect {
+            padding:0 20px;
+            font-size: 20px;
+            line-height: 3px;
+            width: 200px;
+            height: 100%;
+            &:after {
+                top: 45%;
+                right: 20px;
+            }
+        }
+        .options {
+            padding: 10px;
+            li {
+                padding:0 6px;
+                margin:0 0;
+                padding:0 10px;
+            }
+        }
+    }
+    .articles {
+        .article {
+            height: 500px;
+            img {
+                width: 100%;
+                height: 70%;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    .more {
+        width: 200px;
+        height: 60px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+//Article Page
+.articleTabs {
+    .tab {
+        width: 200px;
+        height: 60px;
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+.relatedStories {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .articles { 
+        grid-gap: 20px !important;
+        .article {
+            height: 500px;
+            img {
+                width: 100%;
+                height: 70%;
+                border-radius: 30px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 768px) {
+.newsBanner {
+    .back {
+        height: 60%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h5 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .bannerImg {
+        height: 250px;
+        object-fit: cover;
+    }
+}
+.newsArticles {
+    .newsTabs {
+        .tab {
+            width: 160px;
+            height: 60px;
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .yearInput {
+        height: 60px;
+        width: fit-content;
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .select {
+            width: 200px;
+            height: 100%;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .styledSelect {
+            padding:0 15px;
+            font-size: 16px;
+            line-height: 24px;
+            width: 200px;
+            height: 100%;
+            &:after {
+                top: 45%;
+                right: 15px;
+            }
+        }
+        .options {
+            padding: 10px;
+            li {
+                padding:0 6px;
+                margin:0 0;
+                padding:0 10px;
+            }
+        }
+    }
+    .articles {
+        .article {
+            height: 400px;
+            img {
+                width: 100%;
+                height: 70%;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .more {
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+//Article Page
+.articleTabs {
+    .tab {
+        width: 160px;
+        height: 60px;
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+.articleContent {
+    .top {
+        .articleImage {
+            width: 100%;
+            height: 100%;
+        }
+        .textContent {
+            h4 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            .time {
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+                h6 {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .textWrap{
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .bottom {
+        .author {
+            img {
+                width: 80px;
+                height: 80px;
+            }
+            h6 {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .shareBtn {
+            height: 60px;
+            width: 300px;
+            padding: 0 24px;
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            img {
+                width: 40px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.relatedStories {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .articles { 
+        .article {
+            height: 400px;
+            img {
+                width: 100%;
+                height: 70%;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 540px) {
+.newsBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+    .back {
+        height: 80%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+        }
+        p,h5 {
+            color: white;
+        }
+    }
+    .bannerImg {
+        height: 300px;
+        object-fit: cover;
+    }
+} 
+.newsArticles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .newsTabs {
+        flex-direction: column;
+        .tab {
+            width: 100%;
+            height: 60px;
+            margin-bottom: 10px;
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .yearInput {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+        .select {
+            width: 100%;
+            height: 60px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .styledSelect {
+            padding:0 15px;
+            font-size: 16px;
+            line-height: 24px;
+            width: 100%;
+            height: 100%;
+            &:after {
+                top: 45%;
+                right: 15px;
+            }
+        }
+        .options {
+            padding: 10px;
+            li {
+                padding:0 6px;
+                margin:0 0;
+                padding:0 10px;
+            }
+        }
+    }
+    .articles {
+        .article {
+            height: 400px;
+            img {
+                width: 100%;
+                height: 70%;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .more {
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+//Article Page
+.articleTabs {
+    flex-direction: column;
+    .tab {
+        width: 100%;
+        height: 60px;
+        margin-bottom: 10px;
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+.articleContent {
+    padding: 30px 24px !important;
+    .back {
+        width: 100%;
+    }
+    .top {
+        .textContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h4 {
+                font-size: 30px;
+                line-height: 32px;
+                text-align: center;
+            }
+            .time {
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+                h6 {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+            }
+        }
+    }
+    .textWrap{
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+    .bottom {
+        .author {
+            img {
+                width: 60px;
+                height: 60px;
+            }
+            h6 {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .shareBtn {
+            height: 60px;
+            width: 100%;
+            padding: 0 24px;
+            margin-top: 10px;
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            img {
+                width: 40px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.relatedStories {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .articles { 
+        .article {
+            height: 400px;
+            img {
+                width: 100%;
+                height: 70%;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
 }

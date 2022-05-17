@@ -5,7 +5,7 @@
     .back {
         background: $blue;
         width: 100%;
-        height: 55%;
+        height: 60%;
         top: 0;
         left: 0;
     }
@@ -32,6 +32,9 @@
                 height: 75px;
                 object-fit: contain;
             }
+            .lightIcons {
+                display: none;
+            } 
             h6 {
                 font-size: 24px;
                 line-height: 40px;
@@ -41,8 +44,9 @@
         }
     }
     .bannerImg {
-        width: auto;
-        height: 554px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
         z-index: 1;
     }
 }
@@ -181,4 +185,458 @@
             color: $dark;
         }
     }
+}
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+.contactBanner {
+    .back {
+        height: 55%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 55px;
+            line-height: 62px;
+        }
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        h5 {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .call {
+            img {
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+            }
+            h6 {
+                font-size: 20px;
+                line-height: 32px;
+            }
+        }
+    }
+}
+.contactForm {
+    .contactInner {
+        img {
+            width: 100%;
+            height: 600px;
+        }
+        form {
+            h1 {
+                font-size: 45px;
+                line-height: 52px;
+                width: 80%;
+            }
+            p {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            .input {
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                input {
+                    width: 100%;
+                    height: 80px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 15px;
+                }
+            }
+            .comment {
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                textarea {
+                    width: 100%;
+                    min-height: 150px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 20px;
+                }
+            }
+            button {
+                width: 40%;
+                height: 80px;
+                background: $orange;
+                font-size: 22px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+.offices {
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 30px;
+    h1 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+    p {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .office {
+        h6 {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.contactBanner {
+    .back {
+        height: 45%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+            line-height: 52px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        h5 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        .call {
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+            }
+            h6 {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    .bannerImg {
+        height: 250px;
+        object-fit: cover;
+    }
+}
+.contactForm {
+    .contactInner {
+        img {
+            width: 100%;
+            height: 500px;
+        }
+        form {
+            h1 {
+                font-size: 40px;
+                line-height: 50px;
+                width: 80%;
+            }
+            p {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            .inputs {
+                grid-gap: 20px !important;
+            }
+            .input {
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                input {
+                    width: 100%;
+                    height: 80px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 15px;
+                }
+            }
+            .comment {
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                textarea {
+                    width: 100%;
+                    min-height: 150px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 15px;
+                }
+            }
+            button {
+                width: 40%;
+                height: 80px;
+                background: $orange;
+                font-size: 20px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+.offices {
+    grid-template-columns: 2fr 4fr;
+    grid-gap: 30px;
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .officesInner {
+        width: 100%;
+    }
+    .office {
+        h6 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 768px) {
+.contactBanner {
+    .back {
+        height: 55%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h5 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .call {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+            h6 {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+.contactForm {
+    .back {
+        width: 100%;
+    }
+    .contactInner {
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        form {
+            h1 {
+                font-size: 32px;
+                line-height: 40px;
+                width: 100%;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            .inputs {
+                grid-gap: 20px !important;
+            }
+            .input {
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                input {
+                    width: 100%;
+                    height: 60px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 15px;
+                }
+            }
+            .comment {
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                textarea {
+                    width: 100%;
+                    min-height: 100px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 15px;
+                }
+            }
+            button {
+                width: 40%;
+                height: 60px;
+                background: $orange;
+                font-size: 16px;
+                margin-top: 24px;
+            }
+        }
+    }
+}
+.offices {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .officesInner {
+        width: 100%;
+    }
+    .office {
+        h6 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 540px) {
+.contactBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+    .back {
+        height: 80%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+        }
+        p,h5,h6 {
+            color: white !important;
+        }
+        .lightIcons {
+            display: flex !important;
+        }
+        .darkIcons {
+            display: none;
+        }
+    }
+    .bannerImg {
+        height: 300px;
+        object-fit: cover;
+    }
+}
+.contactForm {
+    padding: 30px 24px !important;
+    .contactInner {
+        img {
+            height: 300px;
+        }
+        form {
+            h1 {
+                font-size: 30px;
+                line-height: 40px;
+                text-align: center;
+            }
+            p {
+                font-size: 20px;
+                line-height: 30px;
+                text-align: center;
+            }
+            .inputs {
+                grid-gap: 20px !important;
+            }
+            .input {
+                align-items: center;
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                input {
+                    width: 100%;
+                    height: 60px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 15px;
+                }
+            }
+            .comment {
+                align-items: center;
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                textarea {
+                    width: 100%;
+                    min-height: 100px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 15px;
+                }
+            }
+            button {
+                width: 100%;
+                height: 60px;
+            }
+        }
+    }
+}
+.offices {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .officesInner {
+        width: 100%;
+    }
+    .office {
+        h6 {
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+}
 }

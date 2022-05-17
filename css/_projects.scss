@@ -156,3 +156,190 @@
         }
     }
 }
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+.projectBanner {
+    .back {
+        height: 55%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 55px;
+            line-height: 62px;
+        }
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        h5 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        h6 {
+            font-size: 20px;
+        }
+    }
+}    
+.projectsGrid {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .projectCard {
+        width: 100%;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        .imgWrapper {
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        .cardTxt {
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            h4 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 32px;
+            }
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.projectBanner {
+    .back {
+        height: 45%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+            line-height: 52px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        h5 {
+            font-size: 20px;
+        }
+    }
+    .bannerImg {
+        height: 250px;
+        object-fit: cover;
+    }
+}
+.projectsGrid {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .projectCard {
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        .imgWrapper {
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        .cardTxt {
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            h4 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 20px;
+                line-height: 32px;
+            }
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 768px) {
+.projectBanner {
+    .back {
+        height: 60%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+            line-height: 52px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h5 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+.projectsGrid {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .projectCard {
+        width: 100%;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        .cardTxt {
+            h4 {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}  
+}
+
+@media only screen and (max-width: 540px) {
+.projectBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+    .back {
+        height: 80%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+        }
+        p,h5 {
+            color: white;
+        }
+    }
+    .bannerImg {
+        height: 300px;
+        object-fit: cover;
+    }
+}
+.projectsGrid {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .projectCard {
+        width: 100%;
+        height: 400px;
+    }
+}
+}

@@ -12622,7 +12622,7 @@ footer .footerEnd p {
   }
   .trainingGallery .gallery .trainingImg {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .trainingGallery .imgLightbox .modalWrapper .close {
     top: 30px;
@@ -12641,6 +12641,50 @@ footer .footerEnd p {
     height: 70vh;
   }
   .trainingGallery .imgLightbox .modalWrapper .modalContent .next img {
+    width: 60px;
+    height: 60px;
+  }
+  .communityInfo .topSection {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+  }
+  .communityInfo .topSection img {
+    width: 100%;
+    height: 70vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .communityInfo .topSection .topText h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .communityInfo .topSection .topText p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .communityInfo .gallery .communityImg {
+    width: 100%;
+    height: 100%;
+  }
+  .communityInfo .imgLightbox .modalWrapper .close {
+    top: 40px;
+    right: 40px;
+  }
+  .communityInfo .imgLightbox .modalWrapper .close img {
+    width: 40px;
+    height: 40px;
+  }
+  .communityInfo .imgLightbox .modalWrapper .modalContent .previous img {
+    width: 60px;
+    height: 60px;
+  }
+  .communityInfo .imgLightbox .modalWrapper .modalContent .modalImage {
+    width: 50vw;
+    height: 60vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .communityInfo .imgLightbox .modalWrapper .modalContent .next img {
     width: 60px;
     height: 60px;
   }
@@ -12857,6 +12901,50 @@ footer .footerEnd p {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .communityInfo .topSection {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+  }
+  .communityInfo .topSection img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .communityInfo .topSection .topText h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .communityInfo .topSection .topText p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .communityInfo .gallery .communityImg {
+    width: 100%;
+    height: 100%;
+  }
+  .communityInfo .imgLightbox .modalWrapper .close {
+    top: 40px;
+    right: 40px;
+  }
+  .communityInfo .imgLightbox .modalWrapper .close img {
+    width: 40px;
+    height: 40px;
+  }
+  .communityInfo .imgLightbox .modalWrapper .modalContent .previous img {
+    width: 60px;
+    height: 60px;
+  }
+  .communityInfo .imgLightbox .modalWrapper .modalContent .modalImage {
+    width: 50vw;
+    height: 60vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .communityInfo .imgLightbox .modalWrapper .modalContent .next img {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -12864,7 +12952,7 @@ footer .footerEnd p {
     height: 55%;
   }
   .impactBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 40px;
   }
   .impactBanner .bannerTxt p {
     font-size: 16px;
@@ -12880,21 +12968,21 @@ footer .footerEnd p {
        object-fit: cover;
   }
   .impactTraining h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .impactTraining h5 {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
   }
   .impactTraining .impactCard .cardImg {
     width: 100%;
-    height: 400px;
+    height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .impactTraining .impactCard .text h3 {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
   }
   .impactTraining .impactCard .text p {
@@ -12910,8 +12998,8 @@ footer .footerEnd p {
     height: 30px;
   }
   .impactCommunity .intro h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .impactCommunity .intro p {
     font-size: 16px;
@@ -12922,7 +13010,7 @@ footer .footerEnd p {
     padding: 30px !important;
   }
   .impactCommunity .detailsBox .impact h3 {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
   }
   .impactCommunity .detailsBox .impact p {
@@ -12936,8 +13024,8 @@ footer .footerEnd p {
        object-fit: contain;
   }
   .impactEnvironment .intro h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .impactEnvironment .intro p {
     font-size: 16px;
@@ -12948,7 +13036,7 @@ footer .footerEnd p {
     height: 400px;
   }
   .impactEnvironment .impactCard .cardTxt h4 {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
   }
   .impactEnvironment .impactCard .cardTxt p {
@@ -12964,15 +13052,163 @@ footer .footerEnd p {
   }
   .trainingDetails .wrapper img {
     width: 100%;
-    height: 400px;
+    height: 300px !important;
   }
   .trainingDetails .wrapper .trainingText h1 {
     font-size: 32px;
     line-height: 50px;
   }
   .trainingDetails .wrapper .trainingText p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
+  }
+  .trainingCommitment .wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .trainingCommitment .wrapper .avatarSection {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .trainingCommitment .wrapper .avatarSection h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .trainingCommitment .wrapper .avatarSection img {
+    width: 200px;
+    height: 200px;
+  }
+  .trainingCommitment .wrapper .textSection h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top span {
+    width: 110px;
+    height: 100px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top span img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top h5 {
+    font-size: 22px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .trainingGallery .topSection {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .trainingGallery .topSection img {
+    width: 100%;
+    height: 300px;
+  }
+  .trainingGallery .topSection .topText h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .trainingGallery .topSection .topText p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 80%;
+  }
+  .trainingGallery .gallery {
+    max-height: 300px;
+  }
+  .trainingGallery .gallery .trainingImg {
+    width: 100%;
+    height: 100% auto;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .close {
+    top: 20px;
+    right: 20px;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .close img {
+    width: 30px;
+    height: 30px;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .modalContent .previous img {
+    width: 50px;
+    height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .modalContent .modalImage {
+    width: 60vw;
+    height: 40vh;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .modalContent .next img {
+    width: 50px;
+    height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .communityInfo .topSection {
+    -ms-grid-columns: 1.5fr 1.5fr;
+        grid-template-columns: 1.5fr 1.5fr;
+  }
+  .communityInfo .topSection img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .communityInfo .topSection .topText h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .communityInfo .topSection .topText p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .communityInfo .gallery .communityImg {
+    width: 100%;
+    height: 100%;
+  }
+  .communityInfo .imgLightbox .modalWrapper .close {
+    top: 30px;
+    right: 30px;
+  }
+  .communityInfo .imgLightbox .modalWrapper .close img {
+    width: 40px;
+    height: 40px;
+  }
+  .communityInfo .imgLightbox .modalWrapper .modalContent .previous img {
+    width: 40px;
+    height: 40px;
+  }
+  .communityInfo .imgLightbox .modalWrapper .modalContent .modalImage {
+    width: 50vw;
+    height: 60vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .communityInfo .imgLightbox .modalWrapper .modalContent .next img {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -13117,7 +13353,7 @@ footer .footerEnd p {
     height: 400px;
   }
   .impactEnvironment .impactCard .cardTxt {
-    padding: 15px;
+    padding: 20px;
   }
   .impactEnvironment .impactCard .cardTxt h4 {
     font-size: 20px;
@@ -13130,6 +13366,222 @@ footer .footerEnd p {
   .impactEnvironment .impactCard:last-child h4 {
     margin-bottom: 32px !important;
   }
+  .trainingDetails {
+    padding: 30px 24px !important;
+  }
+  .trainingDetails .back {
+    width: 100%;
+  }
+  .trainingDetails .wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .trainingDetails .wrapper img {
+    width: 100%;
+    height: 300px !important;
+  }
+  .trainingDetails .wrapper .trainingText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .trainingDetails .wrapper .trainingText h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .trainingDetails .wrapper .trainingText p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .trainingCommitment .wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .trainingCommitment .wrapper .avatarSection {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .trainingCommitment .wrapper .avatarSection h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .trainingCommitment .wrapper .avatarSection img {
+    width: 200px;
+    height: 200px;
+  }
+  .trainingCommitment .wrapper .textSection h3 {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top span {
+    width: 110px;
+    height: 100px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top span img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative .top h5 {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .trainingCommitment .wrapper .textSection .initiatives .initiative p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .trainingGallery {
+    padding: 30px 24px !important;
+  }
+  .trainingGallery .back {
+    width: 100%;
+  }
+  .trainingGallery .topSection {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .trainingGallery .topSection img {
+    width: 100%;
+    height: 300px;
+  }
+  .trainingGallery .topSection .topText {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .trainingGallery .topSection .topText h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .trainingGallery .topSection .topText p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    text-align: center;
+  }
+  .trainingGallery .gallery {
+    max-height: 300px;
+  }
+  .trainingGallery .gallery .trainingImg {
+    width: 100%;
+    height: 100% auto;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .close {
+    top: 20px;
+    right: 20px;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .close img {
+    width: 20px;
+    height: 20px;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .modalContent .previous img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .modalContent .modalImage {
+    width: 60vw;
+    height: 30vh;
+  }
+  .trainingGallery .imgLightbox .modalWrapper .modalContent .next img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .communityInfo {
+    padding: 30px 24px !important;
+  }
+  .communityInfo .back {
+    width: 100%;
+  }
+  .communityInfo .topSection {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .communityInfo .topSection img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
+  }
+  .communityInfo .topSection .topText {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .communityInfo .topSection .topText h1 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .communityInfo .topSection .topText p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .communityInfo .gallery .communityImg {
+    width: 100%;
+    height: 100%;
+  }
+  .communityInfo .imgLightbox .modalWrapper .close {
+    top: 30px;
+    right: 30px;
+  }
+  .communityInfo .imgLightbox .modalWrapper .close img {
+    width: 40px;
+    height: 40px;
+  }
+  .communityInfo .imgLightbox .modalWrapper .modalContent .previous img {
+    width: 40px;
+    height: 40px;
+  }
+  .communityInfo .imgLightbox .modalWrapper .modalContent .modalImage {
+    width: 60vw;
+    height: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .communityInfo .imgLightbox .modalWrapper .modalContent .next img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .newsBanner {
@@ -13140,7 +13592,7 @@ footer .footerEnd p {
 .newsBanner .back {
   background: #1226AA;
   width: 100%;
-  height: 60%;
+  height: 65%;
   top: 0;
   left: 0;
 }
@@ -13168,8 +13620,10 @@ footer .footerEnd p {
 }
 
 .newsBanner .bannerImg {
-  width: auto;
-  height: 554px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 1;
 }
 
@@ -13534,6 +13988,634 @@ footer .footerEnd p {
   border: 2px solid #707070;
 }
 
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+  .newsBanner .back {
+    height: 60%;
+  }
+  .newsBanner .bannerTxt h1 {
+    font-size: 55px;
+  }
+  .newsBanner .bannerTxt p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .newsBanner .bannerTxt h5 {
+    font-size: 20px;
+  }
+  .newsBanner .bannerTxt h6 {
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+  }
+  .newsBanner .bannerTxt img {
+    width: 30px;
+    height: 30px;
+  }
+  .newsArticles .newsTabs .tab {
+    width: 300px;
+    height: 80px;
+  }
+  .newsArticles .newsTabs .tab p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .newsArticles .yearInput {
+    min-height: 80px;
+  }
+  .newsArticles .yearInput p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .newsArticles .yearInput .select {
+    width: 300px;
+    height: 100%;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .newsArticles .yearInput .styledSelect {
+    padding: 0 20px;
+    font-size: 22px;
+    line-height: 32px;
+    width: 300px;
+    height: 100%;
+  }
+  .newsArticles .yearInput .styledSelect:after {
+    top: 45%;
+    right: 20px;
+  }
+  .newsArticles .yearInput .options {
+    padding: 10px;
+  }
+  .newsArticles .yearInput .options li {
+    padding: 0 6px;
+    margin: 0 0;
+    padding: 0 10px;
+  }
+  .newsArticles .articles .article {
+    height: 600px;
+  }
+  .newsArticles .articles .article img {
+    width: 100%;
+    height: 70%;
+    border-radius: 30px;
+  }
+  .newsArticles .articles .article p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .newsArticles .more {
+    width: 300px;
+    height: 80px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .articleTabs .tab {
+    width: 300px;
+    height: 80px;
+  }
+  .articleTabs .tab p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .articleContent .top .articleImage {
+    width: 100%;
+    height: 600px;
+  }
+  .articleContent .top .textContent h4 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .articleContent .top .textContent .time img {
+    width: 40px;
+    height: 40px;
+  }
+  .articleContent .top .textContent .time h6 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .articleContent .top .textContent p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .articleContent .textWrap p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .articleContent .bottom .author img {
+    width: 100px;
+    height: 100px;
+  }
+  .articleContent .bottom .author h6 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .articleContent .bottom .author p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .articleContent .bottom .shareBtn {
+    height: 60px;
+    width: auto;
+    padding: 0 24px;
+  }
+  .articleContent .bottom .shareBtn p {
+    font-size: 16px;
+    line-height: 40px;
+    color: white;
+    font-weight: bolder;
+  }
+  .articleContent .bottom .shareBtn img {
+    width: 40px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .relatedStories h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .relatedStories .articles .article {
+    height: 600px;
+  }
+  .relatedStories .articles .article img {
+    width: 100%;
+    height: 70%;
+    border-radius: 30px;
+  }
+  .relatedStories .articles .article p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .newsBanner .back {
+    height: 50%;
+  }
+  .newsBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .newsBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .newsBanner .bannerTxt h5 {
+    font-size: 20px;
+  }
+  .newsBanner .bannerImg {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .newsArticles .newsTabs .tab {
+    width: 200px;
+    height: 60px;
+  }
+  .newsArticles .newsTabs .tab p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .newsArticles .yearInput {
+    height: 60px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .newsArticles .yearInput p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .newsArticles .yearInput .select {
+    width: 200px;
+    height: 100%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .newsArticles .yearInput .styledSelect {
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 3px;
+    width: 200px;
+    height: 100%;
+  }
+  .newsArticles .yearInput .styledSelect:after {
+    top: 45%;
+    right: 20px;
+  }
+  .newsArticles .yearInput .options {
+    padding: 10px;
+  }
+  .newsArticles .yearInput .options li {
+    padding: 0 6px;
+    margin: 0 0;
+    padding: 0 10px;
+  }
+  .newsArticles .articles .article {
+    height: 500px;
+  }
+  .newsArticles .articles .article img {
+    width: 100%;
+    height: 70%;
+  }
+  .newsArticles .articles .article p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .newsArticles .more {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .articleTabs .tab {
+    width: 200px;
+    height: 60px;
+  }
+  .articleTabs .tab p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .relatedStories h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .relatedStories .articles {
+    grid-gap: 20px !important;
+  }
+  .relatedStories .articles .article {
+    height: 500px;
+  }
+  .relatedStories .articles .article img {
+    width: 100%;
+    height: 70%;
+    border-radius: 30px;
+  }
+  .relatedStories .articles .article p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .newsBanner .back {
+    height: 60%;
+  }
+  .newsBanner .bannerTxt h1 {
+    font-size: 40px;
+  }
+  .newsBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .newsBanner .bannerTxt h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .newsBanner .bannerImg {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .newsArticles .newsTabs .tab {
+    width: 160px;
+    height: 60px;
+  }
+  .newsArticles .newsTabs .tab p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .newsArticles .yearInput {
+    height: 60px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .newsArticles .yearInput p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .newsArticles .yearInput .select {
+    width: 200px;
+    height: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .newsArticles .yearInput .styledSelect {
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 200px;
+    height: 100%;
+  }
+  .newsArticles .yearInput .styledSelect:after {
+    top: 45%;
+    right: 15px;
+  }
+  .newsArticles .yearInput .options {
+    padding: 10px;
+  }
+  .newsArticles .yearInput .options li {
+    padding: 0 6px;
+    margin: 0 0;
+    padding: 0 10px;
+  }
+  .newsArticles .articles .article {
+    height: 400px;
+  }
+  .newsArticles .articles .article img {
+    width: 100%;
+    height: 70%;
+  }
+  .newsArticles .articles .article p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .newsArticles .more {
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .articleTabs .tab {
+    width: 160px;
+    height: 60px;
+  }
+  .articleTabs .tab p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .articleContent .top .articleImage {
+    width: 100%;
+    height: 100%;
+  }
+  .articleContent .top .textContent h4 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .articleContent .top .textContent .time img {
+    width: 30px;
+    height: 30px;
+  }
+  .articleContent .top .textContent .time h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .articleContent .top .textContent p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .articleContent .textWrap p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .articleContent .bottom .author img {
+    width: 80px;
+    height: 80px;
+  }
+  .articleContent .bottom .author h6 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .articleContent .bottom .author p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .articleContent .bottom .shareBtn {
+    height: 60px;
+    width: 300px;
+    padding: 0 24px;
+  }
+  .articleContent .bottom .shareBtn p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .articleContent .bottom .shareBtn img {
+    width: 40px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .relatedStories h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .relatedStories .articles .article {
+    height: 400px;
+  }
+  .relatedStories .articles .article img {
+    width: 100%;
+    height: 70%;
+  }
+  .relatedStories .articles .article p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .newsBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+  }
+  .newsBanner .back {
+    height: 80%;
+  }
+  .newsBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .newsBanner .bannerTxt p, .newsBanner .bannerTxt h5 {
+    color: white;
+  }
+  .newsBanner .bannerImg {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .newsArticles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newsArticles .newsTabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .newsArticles .newsTabs .tab {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  .newsArticles .newsTabs .tab p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .newsArticles .yearInput {
+    height: auto;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .newsArticles .yearInput p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .newsArticles .yearInput .select {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .newsArticles .yearInput .styledSelect {
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    height: 100%;
+  }
+  .newsArticles .yearInput .styledSelect:after {
+    top: 45%;
+    right: 15px;
+  }
+  .newsArticles .yearInput .options {
+    padding: 10px;
+  }
+  .newsArticles .yearInput .options li {
+    padding: 0 6px;
+    margin: 0 0;
+    padding: 0 10px;
+  }
+  .newsArticles .articles .article {
+    height: 400px;
+  }
+  .newsArticles .articles .article img {
+    width: 100%;
+    height: 70%;
+  }
+  .newsArticles .articles .article p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .newsArticles .more {
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .articleTabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .articleTabs .tab {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  .articleTabs .tab p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .articleContent {
+    padding: 30px 24px !important;
+  }
+  .articleContent .back {
+    width: 100%;
+  }
+  .articleContent .top .textContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .articleContent .top .textContent h4 {
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .articleContent .top .textContent .time img {
+    width: 25px;
+    height: 25px;
+  }
+  .articleContent .top .textContent .time h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .articleContent .top .textContent p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .articleContent .textWrap p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .articleContent .bottom .author img {
+    width: 60px;
+    height: 60px;
+  }
+  .articleContent .bottom .author h6 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .articleContent .bottom .author p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .articleContent .bottom .shareBtn {
+    height: 60px;
+    width: 100%;
+    padding: 0 24px;
+    margin-top: 10px;
+  }
+  .articleContent .bottom .shareBtn p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .articleContent .bottom .shareBtn img {
+    width: 40px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .relatedStories h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .relatedStories .articles .article {
+    height: 400px;
+  }
+  .relatedStories .articles .article img {
+    width: 100%;
+    height: 70%;
+  }
+  .relatedStories .articles .article p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .contactBanner {
   background: #F4F4F4;
   border: none;
@@ -13542,7 +14624,7 @@ footer .footerEnd p {
 .contactBanner .back {
   background: #1226AA;
   width: 100%;
-  height: 55%;
+  height: 60%;
   top: 0;
   left: 0;
 }
@@ -13576,6 +14658,10 @@ footer .footerEnd p {
      object-fit: contain;
 }
 
+.contactBanner .bannerTxt .call .lightIcons {
+  display: none;
+}
+
 .contactBanner .bannerTxt .call h6 {
   font-size: 24px;
   line-height: 40px;
@@ -13584,8 +14670,10 @@ footer .footerEnd p {
 }
 
 .contactBanner .bannerImg {
-  width: auto;
-  height: 554px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 1;
 }
 
@@ -13772,6 +14860,412 @@ footer .footerEnd p {
   color: #292929;
 }
 
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+  .contactBanner .back {
+    height: 55%;
+  }
+  .contactBanner .bannerTxt h1 {
+    font-size: 55px;
+    line-height: 62px;
+  }
+  .contactBanner .bannerTxt p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .contactBanner .bannerTxt h5 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .contactBanner .bannerTxt .call img {
+    width: 60px;
+    height: 60px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .contactBanner .bannerTxt .call h6 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .contactForm .contactInner img {
+    width: 100%;
+    height: 600px;
+  }
+  .contactForm .contactInner form h1 {
+    font-size: 45px;
+    line-height: 52px;
+    width: 80%;
+  }
+  .contactForm .contactInner form p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .contactForm .contactInner form .input label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contactForm .contactInner form .input input {
+    width: 100%;
+    height: 80px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+  }
+  .contactForm .contactInner form .comment label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contactForm .contactInner form .comment textarea {
+    width: 100%;
+    min-height: 150px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px;
+  }
+  .contactForm .contactInner form button {
+    width: 40%;
+    height: 80px;
+    background: #FFB548;
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  .offices {
+    -ms-grid-columns: 1fr 4fr;
+        grid-template-columns: 1fr 4fr;
+    grid-gap: 30px;
+  }
+  .offices h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .offices p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .offices .office h6 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .offices .office p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contactBanner .back {
+    height: 45%;
+  }
+  .contactBanner .bannerTxt h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .contactBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .contactBanner .bannerTxt h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .contactBanner .bannerTxt .call img {
+    width: 50px;
+    height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .contactBanner .bannerTxt .call h6 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .contactBanner .bannerImg {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contactForm .contactInner img {
+    width: 100%;
+    height: 500px;
+  }
+  .contactForm .contactInner form h1 {
+    font-size: 40px;
+    line-height: 50px;
+    width: 80%;
+  }
+  .contactForm .contactInner form p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .contactForm .contactInner form .inputs {
+    grid-gap: 20px !important;
+  }
+  .contactForm .contactInner form .input label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contactForm .contactInner form .input input {
+    width: 100%;
+    height: 80px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+  }
+  .contactForm .contactInner form .comment label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contactForm .contactInner form .comment textarea {
+    width: 100%;
+    min-height: 150px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+  }
+  .contactForm .contactInner form button {
+    width: 40%;
+    height: 80px;
+    background: #FFB548;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .offices {
+    -ms-grid-columns: 2fr 4fr;
+        grid-template-columns: 2fr 4fr;
+    grid-gap: 30px;
+  }
+  .offices h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .offices p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .offices .officesInner {
+    width: 100%;
+  }
+  .offices .office h6 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .offices .office p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contactBanner .back {
+    height: 55%;
+  }
+  .contactBanner .bannerTxt h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .contactBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contactBanner .bannerTxt h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contactBanner .bannerTxt .call img {
+    width: 40px;
+    height: 40px;
+  }
+  .contactBanner .bannerTxt .call h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contactForm .back {
+    width: 100%;
+  }
+  .contactForm .contactInner img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contactForm .contactInner form h1 {
+    font-size: 32px;
+    line-height: 40px;
+    width: 100%;
+  }
+  .contactForm .contactInner form p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .contactForm .contactInner form .inputs {
+    grid-gap: 20px !important;
+  }
+  .contactForm .contactInner form .input label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contactForm .contactInner form .input input {
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+  }
+  .contactForm .contactInner form .comment label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contactForm .contactInner form .comment textarea {
+    width: 100%;
+    min-height: 100px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+  }
+  .contactForm .contactInner form button {
+    width: 40%;
+    height: 60px;
+    background: #FFB548;
+    font-size: 16px;
+    margin-top: 24px;
+  }
+  .offices {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .offices h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .offices p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .offices .officesInner {
+    width: 100%;
+  }
+  .offices .office h6 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .offices .office p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .contactBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+  }
+  .contactBanner .back {
+    height: 80%;
+  }
+  .contactBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .contactBanner .bannerTxt p, .contactBanner .bannerTxt h5, .contactBanner .bannerTxt h6 {
+    color: white !important;
+  }
+  .contactBanner .bannerTxt .lightIcons {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .contactBanner .bannerTxt .darkIcons {
+    display: none;
+  }
+  .contactBanner .bannerImg {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contactForm {
+    padding: 30px 24px !important;
+  }
+  .contactForm .contactInner img {
+    height: 300px;
+  }
+  .contactForm .contactInner form h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .contactForm .contactInner form p {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .contactForm .contactInner form .inputs {
+    grid-gap: 20px !important;
+  }
+  .contactForm .contactInner form .input {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactForm .contactInner form .input label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contactForm .contactInner form .input input {
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+  }
+  .contactForm .contactInner form .comment {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactForm .contactInner form .comment label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contactForm .contactInner form .comment textarea {
+    width: 100%;
+    min-height: 100px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+  }
+  .contactForm .contactInner form button {
+    width: 100%;
+    height: 60px;
+  }
+  .offices {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .offices h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .offices p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .offices .officesInner {
+    width: 100%;
+  }
+  .offices .office h6 {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .offices .office p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
 .partnershipBanner, .projectBanner {
   background: #F4F4F4;
   border: none;
@@ -13813,21 +15307,25 @@ footer .footerEnd p {
   font-weight: bolder;
 }
 
-.partnershipBanner .bannerTxt img, .projectBanner .bannerTxt img {
-  width: 39px;
-  height: 39px;
-}
-
 .partnershipBanner .bannerImg, .projectBanner .bannerImg {
-  width: 939px;
-  height: 554px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 1;
 }
 
 .partnerGrids {
   background: #F4F4F4;
+}
+
+.partnerGrids .top {
+  -ms-grid-columns: 1fr 3.5fr;
+      grid-template-columns: 1fr 3.5fr;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .partnerGrids .top h1 {
@@ -14081,6 +15579,474 @@ footer .footerEnd p {
   font-weight: bolder;
 }
 
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+  .partnershipBanner .back, .projectBanner .back {
+    height: 60%;
+  }
+  .partnershipBanner .bannerTxt h1, .projectBanner .bannerTxt h1 {
+    font-size: 55px;
+  }
+  .partnershipBanner .bannerTxt p, .projectBanner .bannerTxt p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .partnershipBanner .bannerTxt h5, .projectBanner .bannerTxt h5 {
+    font-size: 20px;
+  }
+  .partnerGrids .top h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .partnerGrids .top p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .partnerGrids .partnerCard {
+    width: 100%;
+    min-height: 80vh;
+  }
+  .partnerGrids .partnerCard .top span {
+    width: 100%;
+    height: 100px;
+  }
+  .partnerGrids .partnerCard .top span h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .partnerGrids .partnerCard .top p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .partnerGrids .partnerCard a {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .partnerGrids .partnerCard a img {
+    width: 60px;
+    height: 60px;
+  }
+  .partnerDetails .wrapper {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+  }
+  .partnerDetails .wrapper h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .partnerDetails .wrapper p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .partnerDetails .wrapper a {
+    width: 300px;
+    height: 80px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .partnerRequire h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .partnerRequire .req {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .partnerRequire .req img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+  .partnerRequire .req h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .partnerRequire .req p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .partnerDownload .wrapper {
+    -ms-grid-columns: 2fr 1.5fr;
+        grid-template-columns: 2fr 1.5fr;
+  }
+  .partnerDownload .wrapper h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .partnerDownload .wrapper a {
+    width: 300px;
+    height: 80px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .partnershipBanner .back, .projectBanner .back {
+    height: 50%;
+  }
+  .partnershipBanner .bannerTxt span, .projectBanner .bannerTxt span {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .partnershipBanner .bannerTxt span *, .projectBanner .bannerTxt span * {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .partnershipBanner .bannerTxt h1, .projectBanner .bannerTxt h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .partnershipBanner .bannerTxt p, .projectBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .partnershipBanner .bannerTxt h5, .projectBanner .bannerTxt h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .partnershipBanner .bannerImg, .projectBanner .bannerImg {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .partnerGrids .top h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .partnerGrids .top p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+  }
+  .partnerGrids .partnerCard {
+    width: 100%;
+    min-height: 500px;
+  }
+  .partnerGrids .partnerCard .top span {
+    width: 100%;
+    height: 100px;
+  }
+  .partnerGrids .partnerCard .top span h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .partnerGrids .partnerCard .top p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+  }
+  .partnerGrids .partnerCard a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .partnerGrids .partnerCard a img {
+    width: 50px;
+    height: 50px;
+  }
+  .partnerDetails .wrapper {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+  }
+  .partnerDetails .wrapper h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .partnerDetails .wrapper p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .partnerDetails .wrapper a {
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .partnerRequire h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .partnerRequire .req img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .partnerRequire .req h5 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .partnerRequire .req p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .partnerDownload .wrapper {
+    -ms-grid-columns: 2fr 1.5fr;
+        grid-template-columns: 2fr 1.5fr;
+  }
+  .partnerDownload .wrapper h1 {
+    font-size: 32px;
+    line-height: 40px;
+    width: 100% !important;
+  }
+  .partnerDownload .wrapper a {
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .partnershipBanner .back, .projectBanner .back {
+    height: 65%;
+  }
+  .partnershipBanner .bannerTxt h1, .projectBanner .bannerTxt h1 {
+    font-size: 40px;
+  }
+  .partnershipBanner .bannerTxt p, .projectBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .partnershipBanner .bannerTxt h5, .projectBanner .bannerTxt h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .partnershipBanner .bannerImg, .projectBanner .bannerImg {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .partnerGrids .top h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .partnerGrids .top p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+  .partnerGrids .partnerCard {
+    min-height: 400px;
+  }
+  .partnerGrids .partnerCard .top span {
+    width: 100%;
+    height: 80px;
+  }
+  .partnerGrids .partnerCard .top span h4 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .partnerGrids .partnerCard .top p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .partnerGrids .partnerCard a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .partnerGrids .partnerCard a img {
+    width: 40px;
+    height: 40px;
+  }
+  .partnerDetails .wrapper {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+  }
+  .partnerDetails .wrapper h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .partnerDetails .wrapper p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .partnerDetails .wrapper a {
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .partnerRequire h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .partnerRequire .req img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .partnerRequire .req h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .partnerRequire .req p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .partnerDownload .wrapper {
+    -ms-grid-columns: 2fr 1.5fr;
+        grid-template-columns: 2fr 1.5fr;
+  }
+  .partnerDownload .wrapper h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .partnerDownload .wrapper a {
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .partnershipBanner, .projectBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+  }
+  .partnershipBanner .back, .projectBanner .back {
+    height: 80%;
+  }
+  .partnershipBanner .bannerTxt h1, .projectBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .partnershipBanner .bannerTxt span, .projectBanner .bannerTxt span {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .partnershipBanner .bannerTxt p, .projectBanner .bannerTxt p, .partnershipBanner .bannerTxt h5, .projectBanner .bannerTxt h5 {
+    color: white;
+  }
+  .partnershipBanner .bannerImg, .projectBanner .bannerImg {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .partnerGrids {
+    padding: 30px 24px !important;
+  }
+  .partnerGrids .top {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .partnerGrids .top h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .partnerGrids .top p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .partnerGrids .partnerCard {
+    min-height: 300px;
+  }
+  .partnerGrids .partnerCard .top span {
+    width: 100%;
+    height: 80px;
+  }
+  .partnerGrids .partnerCard .top span h4 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .partnerGrids .partnerCard .top p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .partnerGrids .partnerCard a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .partnerGrids .partnerCard a img {
+    width: 30px;
+    height: 30px;
+  }
+  .partnerDetails {
+    padding: 30px 24px !important;
+  }
+  .partnerDetails .back {
+    width: 100%;
+  }
+  .partnerDetails .wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .partnerDetails .wrapper h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .partnerDetails .wrapper p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .partnerDetails .wrapper a {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  .partnerRequire h1 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  .partnerRequire .req {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .partnerRequire .req img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .partnerRequire .req h5 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .partnerRequire .req p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .partnerDownload {
+    padding: 30px 24px !important;
+  }
+  .partnerDownload .wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .partnerDownload .wrapper h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .partnerDownload .wrapper a {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .projectsGrid {
   background: #F4F4F4;
 }
@@ -14257,6 +16223,180 @@ footer .footerEnd p {
 .projectDetails .imgLightbox .modalWrapper .modalContent .next img {
   width: 80px;
   height: 80px;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+  .projectBanner .back {
+    height: 55%;
+  }
+  .projectBanner .bannerTxt h1 {
+    font-size: 55px;
+    line-height: 62px;
+  }
+  .projectBanner .bannerTxt p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .projectBanner .bannerTxt h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .projectBanner .bannerTxt h6 {
+    font-size: 20px;
+  }
+  .projectsGrid h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .projectsGrid .projectCard {
+    width: 100%;
+    height: 600px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 2fr 1fr;
+        grid-template-rows: 2fr 1fr;
+  }
+  .projectsGrid .projectCard .imgWrapper {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .projectsGrid .projectCard .cardTxt {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .projectsGrid .projectCard .cardTxt h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .projectsGrid .projectCard .cardTxt p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .projectBanner .back {
+    height: 45%;
+  }
+  .projectBanner .bannerTxt h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .projectBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .projectBanner .bannerTxt h5 {
+    font-size: 20px;
+  }
+  .projectBanner .bannerImg {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .projectsGrid h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .projectsGrid .projectCard {
+    width: 100%;
+    height: 500px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 2fr 1fr;
+        grid-template-rows: 2fr 1fr;
+  }
+  .projectsGrid .projectCard .imgWrapper {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  .projectsGrid .projectCard .cardTxt {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  .projectsGrid .projectCard .cardTxt h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .projectsGrid .projectCard .cardTxt p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .projectBanner .back {
+    height: 60%;
+  }
+  .projectBanner .bannerTxt h1 {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  .projectBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .projectBanner .bannerTxt h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .projectsGrid h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .projectsGrid .projectCard {
+    width: 100%;
+    height: 400px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 2fr 1fr;
+        grid-template-rows: 2fr 1fr;
+  }
+  .projectsGrid .projectCard .cardTxt h4 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .projectsGrid .projectCard .cardTxt p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .projectBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+  }
+  .projectBanner .back {
+    height: 80%;
+  }
+  .projectBanner .bannerTxt h1 {
+    font-size: 45px;
+  }
+  .projectBanner .bannerTxt p, .projectBanner .bannerTxt h5 {
+    color: white;
+  }
+  .projectBanner .bannerImg {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .projectsGrid h1 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .projectsGrid .projectCard {
+    width: 100%;
+    height: 400px;
+  }
 }
 
 .resourceBanner {
