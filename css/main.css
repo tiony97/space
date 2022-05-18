@@ -1805,6 +1805,11 @@ footer .footerEnd p {
   font-weight: normal;
 }
 
+.partners {
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+}
+
 .partners .partnerText h2 {
   font-size: 48px;
   font-weight: bolder;
@@ -1978,6 +1983,7 @@ footer .footerEnd p {
 
 .community .communityInfo {
   z-index: 1;
+  padding-left: 0 !important;
 }
 
 .community .communityInfo .imgWrapper {
@@ -2057,6 +2063,7 @@ footer .footerEnd p {
 
 .stylePoints {
   background: #1226AA;
+  padding-left: 0 !important;
 }
 
 .stylePoints .overlay {
@@ -2515,8 +2522,8 @@ footer .footerEnd p {
     grid-gap: 50px;
   }
   .explore .exploreCards .cardLayout {
-    width: auto;
-    height: 50vh;
+    width: 100%;
+    height: 50vh !important;
     border-radius: 20px;
     padding: 20px !important;
   }
@@ -2979,41 +2986,38 @@ footer .footerEnd p {
     line-height: 32px;
   }
   .homeBanner .tabGrids .link1 {
-    padding-left: 90px !important;
+    padding-left: 80px !important;
   }
   .homeBanner .tabSection {
     min-height: 70vh;
-  }
-  .homeBanner .tabSection h3 {
-    font-size: 20px;
-    line-height: 30px;
-    width: 100% !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .homeBanner .tab1 .textContent h3 {
     font-size: 20px;
-    line-height: 32px;
-    width: 100%;
+    line-height: 30px;
+    font-weight: 600;
   }
   .homeBanner .tab1 .textContent form {
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .homeBanner .tab1 .textContent form input, .homeBanner .tab1 .textContent form select, .homeBanner .tab1 .textContent form button {
     min-height: 60px;
-    font-size: 14px;
+    font-size: 16px;
     padding: 0px 15px;
     border-radius: 20px !important;
   }
   .homeBanner .tab1 .textContent form input::-webkit-input-placeholder, .homeBanner .tab1 .textContent form select::-webkit-input-placeholder, .homeBanner .tab1 .textContent form button::-webkit-input-placeholder {
-    font-size: 14px;
+    font-size: 16px;
   }
   .homeBanner .tab1 .textContent form input:-ms-input-placeholder, .homeBanner .tab1 .textContent form select:-ms-input-placeholder, .homeBanner .tab1 .textContent form button:-ms-input-placeholder {
-    font-size: 14px;
+    font-size: 16px;
   }
   .homeBanner .tab1 .textContent form input::-ms-input-placeholder, .homeBanner .tab1 .textContent form select::-ms-input-placeholder, .homeBanner .tab1 .textContent form button::-ms-input-placeholder {
-    font-size: 14px;
+    font-size: 16px;
   }
   .homeBanner .tab1 .textContent form input::placeholder, .homeBanner .tab1 .textContent form select::placeholder, .homeBanner .tab1 .textContent form button::placeholder {
-    font-size: 14px;
+    font-size: 16px;
   }
   .homeBanner .tab1 .textContent form .s-hidden {
     padding-right: 10px;
@@ -3047,6 +3051,11 @@ footer .footerEnd p {
     padding: 0 6px;
     padding: 0 10px;
   }
+  .homeBanner .tab1 .textContent form button {
+    background: #FFB548;
+    color: #292929;
+    font-weight: 900 !important;
+  }
   .homeBanner .tab1 img {
     width: 100%;
     height: 50vh;
@@ -3055,12 +3064,13 @@ footer .footerEnd p {
   }
   .homeBanner .tab2 h4 {
     font-size: 20px;
+    line-height: 30px;
     font-weight: 30px;
-    width: 60%;
+    width: 40%;
   }
   .homeBanner .tab2 .productCategory {
-    -ms-grid-columns: (1fr)[4] !important;
-        grid-template-columns: repeat(4, 1fr) !important;
+    -ms-grid-columns: (1fr)[5] !important;
+        grid-template-columns: repeat(5, 1fr) !important;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
@@ -3070,49 +3080,49 @@ footer .footerEnd p {
     margin-top: 20px !important;
   }
   .homeBanner .tab2 .productCategory .categoryCard {
-    width: auto;
+    width: 100%;
     height: 200px;
     border-radius: 20px;
-    padding: 20px !important;
+    padding: 15px !important;
   }
   .homeBanner .tab2 .productCategory .categoryCard .info {
-    min-width: 70%;
-    height: 30px;
+    min-width: 100%;
+    min-height: 30px;
     border-radius: 20px;
     padding: 0 15px;
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 20px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .overlay {
     border-radius: 20px;
-    padding: 20px !important;
+    padding: 15px !important;
   }
   .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayInfo {
     width: auto;
-    height: 30px;
+    height: 50px;
     border-radius: 20px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayTxt {
-    font-size: 14px;
-    line-height: 24px;
-    margin-top: 30px;
+    font-size: 12px;
+    line-height: 20px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .shopLink {
     width: auto;
-    height: 30px;
-    border-radius: 20px;
+    min-height: 20px;
+    border-radius: 15px;
     padding: 15px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .shopLink img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .shopLink p {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 12px;
+    line-height: 20px;
   }
   .homeBanner .tab3 .textContent h3 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
   }
   .homeBanner .tab3 .textContent form {
     margin-top: 30px;
@@ -3179,9 +3189,9 @@ footer .footerEnd p {
        object-fit: cover;
   }
   .homeBanner .tab4 h3 {
-    font-size: 24px;
-    line-height: 32px;
-    width: 60%;
+    font-size: 20px;
+    line-height: 30px;
+    width: 70%;
     font-weight: 900 !important;
   }
   .homeBanner .tab4 form {
@@ -3253,7 +3263,7 @@ footer .footerEnd p {
     width: 95vw;
   }
   .assemble .title {
-    padding: 20px !important;
+    padding: 30px !important;
   }
   .assemble h1 {
     font-size: 30px;
@@ -3270,27 +3280,29 @@ footer .footerEnd p {
        object-fit: cover;
   }
   .assemble .gridContent .tabLink {
-    width: 100px;
-    height: 60px;
+    width: 80px;
+    height: 50px;
     border-radius: 20px;
   }
   .assemble .gridContent .tabLink img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .assemble .gridContent h3 {
     font-size: 20px;
     line-height: 24px;
-    margin: 15px 0 !important;
+    margin: 20px 0 !important;
   }
   .assemble .gridContent .search {
     width: 100%;
-    height: 50px;
+    height: 60px;
     border-radius: 30px;
   }
   .assemble .gridContent .search img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
   }
   .assemble .gridContent .search input {
     width: 100%;
@@ -3315,13 +3327,12 @@ footer .footerEnd p {
     grid-gap: 10px;
   }
   .assemble .gridContent .gallery .galleryCard img {
-    width: auto;
-    height: 100px;
+    width: 100%;
+    height: 90px;
   }
   .assemble .gridContent .gallery .galleryCard p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
-    color: #292929;
     text-align: center;
   }
   .assemble .assembleButtons {
@@ -3329,7 +3340,9 @@ footer .footerEnd p {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    grid-gap: 0;
+    grid-gap: 30px;
+    width: 100% !important;
+    margin-top: 50px !important;
   }
   .assemble .assembleButtons a {
     width: 100%;
@@ -3337,6 +3350,7 @@ footer .footerEnd p {
     border-radius: 20px;
     font-size: 18px;
     line-height: 24px;
+    margin: 0 !important;
   }
   .assemble .assembleButtons a * {
     font-size: 18px;
@@ -3347,81 +3361,100 @@ footer .footerEnd p {
     width: 40px;
   }
   .explore {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
     grid-gap: 30px;
+    padding: 48px 96px !important;
   }
   .explore .exploreContent h3 {
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .explore .exploreContent p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .explore .exploreContent a {
-    width: 250px;
+    width: 200px;
     height: 60px;
-    border-radius: 30px;
-    line-height: 40px;
+    border-radius: 20px;
+    line-height: 24px;
     font-size: 18px;
   }
   .explore .exploreCards {
-    grid-gap: 50px;
+    grid-gap: 30px;
   }
   .explore .exploreCards .cardLayout {
     width: auto;
-    height: 450px;
-    border-radius: 30px;
+    height: 45vh;
+    border-radius: 20px;
+    padding: 20px !important;
   }
   .explore .exploreCards .cardLayout .info {
-    min-width: 80%;
-    height: 60px;
-    border-radius: 30x;
-    padding: 0 15px;
-    font-size: 18px;
+    min-width: 60%;
+    height: 40px;
+    border-radius: 20x;
+    padding: 0 10px;
+    font-size: 16px;
   }
   .explore .exploreCards .cardLayout span {
-    font-size: 18px;
+    font-size: 16px;
   }
   .explore .exploreCards .cardLayout a {
-    min-width: 80%;
-    height: 60px;
-    justify-self: flex-end;
+    min-width: 100%;
+    height: auto;
+    margin-top: 5px;
   }
   .explore .exploreCards .cardLayout a p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .explore .exploreCards .cardLayout a img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px !important;
   }
   .explore .exploreCards .cardLayout .overlay {
-    border-radius: 30px;
+    border-radius: 20px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-bottom: 20px !important;
+  }
+  .explore .exploreCards .cardLayout .overlay span {
+    margin: 0 !important;
   }
   .explore .exploreCards .cardLayout .overlay .overlayInfo {
     width: 80%;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 20px;
+  }
+  .branches, .productBranches, .styleResources {
+    padding-bottom: 48px;
+  }
+  .branches .bgBack, .productBranches .bgBack, .styleResources .bgBack {
+    height: 80%;
   }
   .branches .wrapper, .productBranches .wrapper, .styleResources .wrapper {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
     width: 80vw !important;
+    padding: 30px 60px !important;
+    margin: 0 !important;
   }
   .branches .wrapper h2, .productBranches .wrapper h2, .styleResources .wrapper h2 {
-    font-size: 40px;
-    line-height: 50p8;
-    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 900 !important;
   }
   .branches .wrapper form .search, .productBranches .wrapper form .search, .styleResources .wrapper form .search {
-    width: 60vw;
+    width: 50vw;
     height: 60px;
+    border-radius: 20px;
   }
   .branches .wrapper form .search img, .productBranches .wrapper form .search img, .styleResources .wrapper form .search img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
   .branches .wrapper form .search input, .productBranches .wrapper form .search input, .styleResources .wrapper form .search input {
     font-size: 18px;
@@ -3442,60 +3475,80 @@ footer .footerEnd p {
     color: #292929;
     font-size: 18px;
   }
+  .branches .wrapper form .search input:focus, .productBranches .wrapper form .search input:focus, .styleResources .wrapper form .search input:focus {
+    outline: none;
+  }
+  .branches .wrapper form .radios, .productBranches .wrapper form .radios, .styleResources .wrapper form .radios {
+    margin-top: 30px !important;
+  }
   .branches .wrapper form .radios .container, .productBranches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
     position: relative;
-    padding-left: 30px;
+    padding-left: 35px;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .branches .wrapper form .radios .container .checkmark, .productBranches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
+    border-width: 4px;
   }
   .branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
-    top: 3px;
-    left: 3px;
-    right: 3px;
-    bottom: 3px;
-    width: 14px;
-    height: 14px;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    width: 12px;
+    height: 12px;
   }
   .branches .wrapper form .radios .container p, .productBranches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
   }
-  .branches .wrapper p, .productBranches .wrapper p, .styleResources .wrapper p {
-    font-size: 24px;
+  .branches .wrapper .buildtxt, .productBranches .wrapper .buildtxt, .styleResources .wrapper .buildtxt {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 30px !important;
   }
   .branches .wrapper .hardware, .productBranches .wrapper .hardware, .styleResources .wrapper .hardware {
-    -ms-grid-columns: 1fr 1fr !important;
-        grid-template-columns: 1fr 1fr !important;
-    width: 100% !important;
+    width: 100%;
+    margin-top: 0 !important;
+    padding: 0;
+    margin: 0;
+    grid-gap: 20px;
   }
   .branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
-    width: auto !important;
-    height: 280px;
-    padding: 10px !important;
-    border-radius: 25px !important;
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+    padding: 15px;
   }
   .branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
-    width: auto;
-    height: 38px;
+    min-width: 70%;
+    min-height: 20px;
     padding: 0 10px;
-    font-size: 18px;
+    font-size: 14px;
   }
   .branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
-    border-radius: 25px !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 15px;
+    border-radius: 20px;
+  }
+  .branches .wrapper .hardware .hardwareCard .overlay *, .productBranches .wrapper .hardware .hardwareCard .overlay *, .styleResources .wrapper .hardware .hardwareCard .overlay * {
+    margin: 0;
   }
   .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
     width: 80%;
-    height: 38px;
+    height: 30px;
   }
   .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px !important;
   }
   .branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
-    font-size: 16px;
+    font-size: 14px;
     color: #1226AA;
   }
   .branches .wrapper .hardware .hardwareCard .overlay .distance img, .productBranches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
@@ -3505,26 +3558,32 @@ footer .footerEnd p {
   .branches .wrapper .hardware .hardwareCard .overlay:hover, .productBranches .wrapper .hardware .hardwareCard .overlay:hover, .styleResources .wrapper .hardware .hardwareCard .overlay:hover {
     opacity: 1;
   }
+  .differences {
+    padding: 48px 96px !important;
+  }
   .differences h2 {
-    font-size: 60px;
+    font-size: 45px;
+  }
+  .differences .diffGrid {
+    margin-top: 30px !important;
   }
   .differences .differenceCard {
     height: 250px;
     width: 250px;
-    padding: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
   }
   .differences .differenceCard img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
   .differences .differenceCard h5 {
-    font-size: 22px;
-    margin-top: 20px;
-    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-top: 10px !important;
   }
   .differences .differenceCard .overlay {
-    border-radius: 30px;
+    border-radius: 20px;
   }
   .differences .differenceCard .overlay h4 {
     font-size: 24px;
@@ -3535,81 +3594,167 @@ footer .footerEnd p {
     line-height: 24px;
   }
   .partners {
-    -ms-grid-columns: 1fr 3fr;
-        grid-template-columns: 1fr 3fr;
+    -ms-grid-columns: 1fr 4fr;
+        grid-template-columns: 1fr 4fr;
+    margin: 48px 0 !important;
   }
   .partners .partnerText h2 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 42px;
     width: 100%;
   }
   .partners .partnerText a {
-    font-size: 18px;
+    font-size: 16px;
   }
   .partners .partnerSlider .sliderCard {
-    border-radius: 30px;
+    border-radius: 20px;
   }
   .partners .partnerSlider .sliderCard img {
-    width: auto;
-    height: 350px;
-    border-radius: 30px;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
   }
   .partners .partnerSlider .sliderCard p {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 24px;
+  }
+  .customers {
+    padding: 0 !important;
+    padding-bottom: 48px !important;
   }
   .customers .titleSection h2 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 42px;
     width: 80%;
   }
   .customers .titleSection a {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .customers .customerSlider {
+    margin-top: 20px !important;
   }
   .customers .customerSlider .customerCard {
-    width: auto;
-    height: 450px;
-    border-radius: 30px;
+    width: 100%;
+    height: 330px;
+    border-radius: 20px;
+    padding: 25px;
   }
   .customers .customerSlider .customerCard .overlay {
-    border-radius: 30px;
-    border: 2px solid #1226AA;
+    border-radius: 20px;
   }
   .customers .customerSlider .customerCard .name img {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .customers .customerSlider .customerCard .name h4 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .customers .customerSlider .customerCard p {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 24px;
   }
   .customers .customerSlider .customerCard .ratings img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+  }
+  .community {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .community h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .community .communityInfo {
+    margin-top: 50px !important;
+    padding-left: 0 !important;
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr 1.5fr;
+        grid-template-columns: 1fr 1.5fr;
+    grid-gap: 30px !important;
+  }
+  .community .communityInfo .imgWrapper {
+    width: 100%;
+    height: 55vh;
+    margin: 0 !important;
+  }
+  .community .communityInfo .imgWrapper img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .community .communityInfo .imgWrapper .linkBtns .commBtn {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .community .communityInfo .imgWrapper .linkBtns .commBtn img {
+    width: 20.82px;
+    height: 20.03px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .community .communityInfo .communityText {
+    margin: 0 !important;
+  }
+  .community .communityInfo .communityText .names {
+    margin: 20px 0 !important;
+  }
+  .community .communityInfo .communityText h5 {
+    font-size: 20px;
+    line-height: 24px;
+    width: 90%;
+  }
+  .community .communityInfo .communityText h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .community .communityInfo .communityText p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    width: 60%;
+  }
+  .community .communityInfo .communityText a {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px !important;
+  }
+  .stylePoints {
+    -ms-grid-columns: 1.5fr 1fr !important;
+        grid-template-columns: 1.5fr 1fr !important;
+    margin-top: 48px;
+    padding-left: 0 !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .stylePoints img {
-    width: auto;
-    height: 450px;
+    width: 100%;
+    height: 400px;
+  }
+  .stylePoints .styleText * {
+    margin: 0;
   }
   .stylePoints .styleText h2 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .stylePoints .styleText h5 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   .stylePoints .styleText a {
     width: 200px;
     height: 60px;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 20px;
+    border-radius: 20px;
   }
 }
 
@@ -3917,7 +4062,7 @@ footer .footerEnd p {
   .assemble h1 {
     font-size: 32px;
     line-height: 40px;
-    text-align: left;
+    text-align: center;
   }
   .assemble .wrapper {
     -ms-grid-columns: 1fr;
@@ -3928,6 +4073,11 @@ footer .footerEnd p {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .assemble .gridContent .tabs {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .assemble .gridContent .tabLink {
     width: 100px;
@@ -3943,6 +4093,7 @@ footer .footerEnd p {
   .assemble .gridContent h3 {
     font-size: 24px;
     line-height: 32px;
+    text-align: center;
   }
   .assemble .gridContent .search {
     width: 100%;
@@ -3994,13 +4145,24 @@ footer .footerEnd p {
         grid-template-columns: 1fr;
     grid-gap: 30px;
   }
+  .explore .exploreContent {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100% !important;
+  }
   .explore .exploreContent h3 {
     font-size: 32px;
     line-height: 40px;
+    text-align: center;
   }
   .explore .exploreContent p {
     font-size: 16px;
     line-height: 24px;
+    text-align: center;
   }
   .explore .exploreContent a {
     width: 200px;
@@ -4013,13 +4175,13 @@ footer .footerEnd p {
     grid-gap: 30px;
   }
   .explore .exploreCards .cardLayout {
-    width: auto;
-    height: 350px;
-    border-radius: 30px;
+    width: 100%;
+    height: 30vh !important;
+    border-radius: 20px;
   }
   .explore .exploreCards .cardLayout .info {
     min-width: 80%;
-    height: 60px;
+    min-height: 40px;
     border-radius: 30x;
     padding: 0 10px;
     font-size: 16px;
@@ -4040,15 +4202,18 @@ footer .footerEnd p {
     height: 40px;
   }
   .explore .exploreCards .cardLayout .overlay {
-    border-radius: 30px;
+    border-radius: 20px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
   .explore .exploreCards .cardLayout .overlay .overlayInfo {
     width: 80%;
-    height: 60px;
-    border-radius: 30px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .branches .wrapper, .productBranches .wrapper, .styleResources .wrapper {
+    width: 80vw !important;
   }
   .branches .wrapper h2, .productBranches .wrapper h2, .styleResources .wrapper h2 {
     font-size: 30px;
@@ -4107,11 +4272,15 @@ footer .footerEnd p {
   .branches .wrapper p, .productBranches .wrapper p, .styleResources .wrapper p {
     font-size: 16px;
   }
+  .branches .wrapper .hardware, .productBranches .wrapper .hardware, .styleResources .wrapper .hardware {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
   .branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
     width: auto;
-    height: 250px;
-    padding: 10px !important;
-    border-radius: 25px !important;
+    height: 200px;
+    padding: 20px !important;
+    border-radius: 20px !important;
   }
   .branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
     width: auto;
@@ -4120,7 +4289,7 @@ footer .footerEnd p {
     font-size: 16px;
   }
   .branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
-    border-radius: 25px !important;
+    border-radius: 20px !important;
   }
   .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
     width: 80%;
@@ -4138,8 +4307,14 @@ footer .footerEnd p {
     width: 22.39px;
     height: 31.98px;
   }
+  .differences {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .differences h2 {
     font-size: 50px;
+    text-align: center;
   }
   .differences .differenceCard {
     height: 250px;
@@ -4173,38 +4348,55 @@ footer .footerEnd p {
   }
   .partners .partnerText {
     margin-bottom: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .partners .partnerText h2 {
     font-size: 32px;
     line-height: 40px;
     width: 100%;
+    text-align: center;
   }
   .partners .partnerText a {
     font-size: 16px;
   }
   .partners .partnerSlider .sliderCard {
-    border-radius: 30px;
+    border-radius: 20px;
   }
   .partners .partnerSlider .sliderCard img {
     width: 100%;
-    height: 300px;
-    border-radius: 30px;
+    height: 250px;
+    border-radius: 20px;
   }
   .partners .partnerSlider .sliderCard p {
     font-size: 16px;
     line-height: 24px;
   }
+  .customers .titleSection {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .customers .titleSection h2 {
     font-size: 32px;
     line-height: 40px;
-    width: 80%;
+    width: 100%;
+    text-align: center;
   }
   .customers .titleSection a {
     font-size: 16px;
   }
   .customers .customerSlider .customerCard {
     width: 100%;
-    height: 400px;
+    height: 350px;
   }
   .customers .customerSlider .customerCard .name img {
     width: 80px;
@@ -4229,14 +4421,14 @@ footer .footerEnd p {
     line-height: 40px;
   }
   .community .communityInfo {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
   .community .communityInfo .imgWrapper {
     width: 100%;
-    height: 300px;
+    height: 100%;
   }
   .community .communityInfo .imgWrapper .linkBtns .commBtn {
     width: 70px;
@@ -4267,17 +4459,21 @@ footer .footerEnd p {
     font-size: 16px;
     line-height: 24px;
   }
+  .stylePoints {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
   .stylePoints img {
     width: auto;
-    height: 400px;
+    height: 300px;
   }
   .stylePoints .styleText h2 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
   }
   .stylePoints .styleText h5 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
   }
   .stylePoints .styleText a {
     width: 150px;
@@ -4303,6 +4499,11 @@ footer .footerEnd p {
   }
   .homeBanner .tabSection {
     min-height: 500px;
+  }
+  .homeBanner .tabSection h3, .homeBanner .tabSection h4 {
+    width: 100% !important;
+    font-weight: 700;
+    text-align: center;
   }
   .homeBanner .tab1 {
     padding: 40px 16px !important;
@@ -4544,6 +4745,7 @@ footer .footerEnd p {
   .branches .wrapper, .productBranches .wrapper, .styleResources .wrapper {
     width: 100vw !important;
     border-radius: 0;
+    padding: 32px 16px !important;
   }
   .branches .wrapper h2, .productBranches .wrapper h2, .styleResources .wrapper h2 {
     font-size: 30px;
@@ -4583,11 +4785,11 @@ footer .footerEnd p {
   .branches .wrapper .hardware, .productBranches .wrapper .hardware, .styleResources .wrapper .hardware {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
-    padding: 0 20px;
+    padding: 0;
   }
   .branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
-    width: auto;
-    height: 250px;
+    width: 100%;
+    height: 40vh !important;
     padding: 10px inherit !important;
     border-radius: 25px !important;
   }
@@ -4599,14 +4801,17 @@ footer .footerEnd p {
   }
   .branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
     border-radius: 25px !important;
+    padding: 20px;
   }
   .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
     width: 80%;
     height: 38px;
   }
   .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
-    font-size: 16px;
-    margin-top: 30px !important;
+    font-size: 18px;
+    width: 80%;
+    margin-top: 0px !important;
+    text-align: left;
   }
   .branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
     font-size: 16px;
@@ -4617,7 +4822,7 @@ footer .footerEnd p {
     height: 31.98px;
   }
   .assemble {
-    padding: 16px !important;
+    padding: 32px 16px !important;
   }
   .assemble .bgCover {
     width: 100%;
@@ -4640,7 +4845,7 @@ footer .footerEnd p {
     grid-gap: 10px;
   }
   .assemble .gridContent .tabLink {
-    width: 70px;
+    width: 100%;
     height: 70px;
     border-radius: 15px;
   }
@@ -4649,6 +4854,9 @@ footer .footerEnd p {
     height: 35px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .assemble .gridContent .tabLink p {
+    font-size: 14px;
   }
   .assemble .gridContent h3 {
     font-size: 20px;
@@ -4684,25 +4892,28 @@ footer .footerEnd p {
   .assemble .gridContent .gallery {
     width: 100%;
     grid-gap: 20px;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .assemble .gridContent .gallery .galleryCard img {
-    width: auto;
-    height: 120px;
+    width: 100%;
+    height: 150px;
   }
   .assemble .gridContent .gallery .galleryCard p {
     font-size: 16px;
     color: #292929;
   }
   .assemble .assembleButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   .assemble .assembleButtons a {
-    width: 250px;
+    width: 100%;
     height: 60px;
     border-radius: 30px;
     font-size: 16px;
@@ -4714,10 +4925,122 @@ footer .footerEnd p {
     height: 40px;
     width: 40px;
   }
-  .differences h2 {
-    font-size: 45px;
-    line-height: 52px;
+  .explore {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 30px;
+    padding: 32px 16px !important;
+  }
+  .explore .exploreContent {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100% !important;
+  }
+  .explore .exploreContent h3 {
+    font-size: 32px;
+    line-height: 40px;
     text-align: center;
+  }
+  .explore .exploreContent p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .explore .exploreContent a {
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  .explore .exploreCards {
+    grid-gap: 30px;
+  }
+  .explore .exploreCards .cardLayout {
+    width: 100%;
+    height: 40vh !important;
+    border-radius: 20px;
+  }
+  .explore .exploreCards .cardLayout .info {
+    min-width: 80%;
+    min-height: 40px;
+    border-radius: 30x;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  .explore .exploreCards .cardLayout span {
+    font-size: 16px;
+  }
+  .explore .exploreCards .cardLayout a {
+    min-width: 80%;
+    height: 60px;
+    justify-self: flex-end;
+  }
+  .explore .exploreCards .cardLayout a p {
+    font-size: 16px;
+  }
+  .explore .exploreCards .cardLayout a img {
+    width: 40px;
+    height: 40px;
+  }
+  .explore .exploreCards .cardLayout .overlay {
+    border-radius: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .explore .exploreCards .cardLayout .overlay .overlayInfo {
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .differences {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 32px 16px !important;
+  }
+  .differences h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .differences .diffGrid {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .differences .differenceCard {
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  .differences .differenceCard img {
+    width: 100px;
+    height: 100px;
+  }
+  .differences .differenceCard h5 {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .differences .differenceCard .overlay {
+    border-radius: 30px;
+  }
+  .differences .differenceCard .overlay h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .differences .differenceCard .overlay p {
+    font-size: 16px;
+    line-height: 24px;
   }
   .partners .partnerText {
     -webkit-box-align: center !important;
@@ -4757,7 +5080,7 @@ footer .footerEnd p {
   }
   .customers .customerSlider .customerCard {
     width: 100%;
-    height: 400px;
+    height: 350px;
   }
   .customers .customerSlider .customerCard .name img {
     width: 80px;
@@ -4778,7 +5101,7 @@ footer .footerEnd p {
     height: 30px;
   }
   .community {
-    padding: 16px !important;
+    padding: 32px 16px !important;
   }
   .community .back {
     width: 100%;
@@ -4786,6 +5109,15 @@ footer .footerEnd p {
   .community h2 {
     font-size: 30px;
     line-height: 40px;
+  }
+  .community .communityInfo {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+    margin-top: 0 !important;
+    padding-right: 0 !important;
   }
   .community .communityInfo .imgWrapper {
     width: 100%;
@@ -4809,7 +5141,7 @@ footer .footerEnd p {
     font-size: 24px;
     line-height: 32px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0;
     text-align: center;
   }
   .community .communityInfo .communityText h3 {
@@ -4829,10 +5161,12 @@ footer .footerEnd p {
     line-height: 24px;
   }
   .stylePoints {
-    padding: 16px !important;
+    padding: 32px 16px !important;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
   }
   .stylePoints img {
-    width: auto;
+    width: 100%;
     height: 300px;
   }
   .stylePoints .styleText {

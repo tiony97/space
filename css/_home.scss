@@ -930,6 +930,7 @@
 
 //PARTNERS
 .partners {
+    grid-template-columns: 1fr 4fr;
     .partnerText {
         h2 {
             font-size: 48px;
@@ -1089,6 +1090,7 @@
     }
     .communityInfo {
         z-index: 1;
+        padding-left: 0 !important;
         .imgWrapper {
             width: 80vw;
             height: 60vh;
@@ -1159,6 +1161,7 @@
 //STYLE POINTS SECTION
 .stylePoints {
     background: $blue;
+    padding-left: 0 !important;
     .overlay{
         position: absolute;
         width: 100%;
@@ -1596,8 +1599,8 @@
     .exploreCards {
         grid-gap: 50px;
         .cardLayout {
-            width: auto;
-            height: 50vh;
+            width: 100%;
+            height: 50vh !important;
             border-radius: 20px;
             padding: 20px !important;
             .info {
@@ -2050,651 +2053,770 @@
 
 //Medium size screens and laptops
 @media only screen and (max-width: 1024px) {
-.homeBanner {
-    //TAB LINKS
-    .tabGrids {
-        .gridLink {
-            height: 25vh;
-            padding: 0 30px !important;
-            img {
-                height: 50px;
-                width: 50px;
-            }
-            h1 {
-                font-size: 24px;
-                line-height: 32px;
-            }
-        }
-        .link1 {
-            padding-left: 90px !important;
-        }
-    }
-    
-    //TAB SECTIONS
-    .tabSection {
-        min-height: 70vh;
-        h3 {
-            font-size: 20px;
-            line-height: 30px;
-            width: 100% !important;
-        }
-    }
-    
-    //Actual tabs
-    .tab1 {
-        .textContent {
-            h3 {
-                font-size: 20px;
-                line-height: 32px;
-                width: 100%;
-            }
-            form {
-                margin-top: 20px;
-                input,select,button {
-                    min-height: 60px;
-                    font-size: 14px;
-                    padding: 0px 15px;
-                    border-radius: 20px !important;
-                    &::placeholder {
-                        font-size: 14px;
-                    }
+    .homeBanner {
+        //TAB LINKS
+        .tabGrids {
+            .gridLink {
+                height: 25vh;
+                padding: 0 30px !important;
+                img {
+                    height: 50px;
+                    width: 50px;
                 }
-                .s-hidden {
-                    padding-right: 10px;
-                    border-radius: 20px !important;
-                }
-                .select {
-                    font-size: 16px;
+                h1 {
+                    font-size: 24px;
                     line-height: 32px;
-                    border-radius: 20px !important;
-                }
-                .styledSelect {
-                    padding:0 20px;
-                    font-size: 16px;
-                    line-height: 24px;
-                    border-radius: 20px !important;
-                    &:after {
-                        content:"";
-                        width:0;
-                        height:0;
-                        border: 8px solid transparent;
-                        border-color: $light transparent transparent transparent;
-                        position:absolute;
-                        top: 45%;
-                        right: 20px;
-                    }
-                }
-                .options {
-                    padding: 10px;
-                    li {
-                        padding:0 6px;
-                        padding:0 10px;
-                    }
                 }
             }
-        }
-        img {
-            width: 100%;
-            height: 50vh;
-            object-fit: cover;
-        }
-    }
-    
-    .tab2 {
-        h4 {
-            font-size: 20px;
-            font-weight: 30px;
-            width: 60%;
-        }
-        .productCategory {
-            grid-template-columns: repeat(4, 1fr) !important;
-            align-items: start;
-            justify-content: start;
-            margin-top: 20px !important;
-            .categoryCard {
-                width: auto;
-                height: 200px;
-                border-radius: 20px;
-                padding: 20px !important;
-                .info {
-                    min-width: 70%;
-                    height: 30px;
-                    border-radius: 20px;
-                    padding: 0 15px;
-                    font-size: 14px;
-                }
-                .overlay {
-                    border-radius: 20px;
-                    padding: 20px !important;
-                    .overlayInfo {
-                        width: auto;
-                        height: 30px;
-                        border-radius: 20px;
-                    }
-                    .overlayTxt {
-                        font-size: 14px;
-                        line-height: 24px;
-                        margin-top: 30px;
-                    }
-                }
-                .shopLink {
-                    width: auto;
-                    height: 30px;
-                    border-radius: 20px;
-                    padding: 15px;
-                    img {
-                        width: 25px;
-                        height: 25px;
-                    }
-                    p {
-                        font-size: 14px;
-                        line-height: 21px;
-                    }
-                }
+            .link1 {
+                padding-left: 80px !important;
             }
         }
-    }
-    
-    .tab3 {
-        .textContent {
-            h3 {
-                font-size: 24px;
-                line-height: 32px;
-            }
-            form {
-                margin-top: 30px;
-                input,select,button {
-                    min-height: 60px;
-                    font-size: 16px;
-                    padding: 0px 15px;
-                    border-radius: 20px !important;
-                    &::placeholder {
+        
+        //TAB SECTIONS
+        .tabSection {
+            min-height: 70vh;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        //Actual tabs
+        .tab1 {
+            .textContent {
+                h3 {
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 600;
+                }
+                form {
+                    margin-top: 30px;
+                    input,select,button {
+                        min-height: 60px;
                         font-size: 16px;
-                    }
-                }
-                .s-hidden {
-                    padding-right: 10px;
-                    border-radius: 20px !important;
-                }
-                .select {
-                    font-size: 16px;
-                    line-height: 32px;
-                    border-radius: 20px !important;
-                }
-                .styledSelect {
-                    padding:0 20px;
-                    font-size: 16px;
-                    line-height: 24px;
-                    border-radius: 20px !important;
-                    &:after {
-                        content:"";
-                        width:0;
-                        height:0;
-                        border: 8px solid transparent;
-                        border-color: $light transparent transparent transparent;
-                        position:absolute;
-                        top: 45%;
-                        right: 20px;
-                    }
-                }
-                .options {
-                    padding: 10px;
-                    li {
-                        padding:0 6px;
-                        padding:0 10px;
-                    }
-                }
-                button {
-                    background: $orange;
-                    color: $dark;
-                    font-weight: 900 !important;
-                }
-            }
-        }
-        img {
-            width: 100%;
-            height: 50vh;
-            object-fit: cover;
-        }
-    }
-    
-    .tab4 {
-        h3 {
-            font-size: 24px;
-            line-height: 32px;
-            width: 60%;
-            font-weight: 900 !important;
-        }
-        form {
-            margin-top: 0 !important;
-            .radios {
-                margin-bottom: 10px !important;
-                width: 80%;
-                .container {
-                    font-size: 16px;
-                    .checkmark {
-                        height: 30px;
-                        width: 30px;
-                        &:after {
-                            top: 3px;
-                            left: 3px;
-                            right: 3px;
-                            bottom: 3px;
-                            width: 13px;
-                            height: 13px;
-                        }
-                    }
-                    p {
-                        font-size: 18px;
-                        line-height: 24px;
-                    }
-                }
-            }
-            .otherInputs {
-                .search {
-                    width: 100%;
-                    height: 60px;
-                    border-radius: 20px;
-                    img {
-                        width: 30.05px;
-                        height: 30.05px;
-                    }
-                    input {
-                        font-size: 16px;
+                        padding: 0px 15px;
+                        border-radius: 20px !important;
                         &::placeholder {
                             font-size: 16px;
                         }
                     }
+                    .s-hidden {
+                        padding-right: 10px;
+                        border-radius: 20px !important;
+                    }
+                    .select {
+                        font-size: 16px;
+                        line-height: 32px;
+                        border-radius: 20px !important;
+                    }
+                    .styledSelect {
+                        padding:0 20px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        border-radius: 20px !important;
+                        &:after {
+                            content:"";
+                            width:0;
+                            height:0;
+                            border: 8px solid transparent;
+                            border-color: $light transparent transparent transparent;
+                            position:absolute;
+                            top: 45%;
+                            right: 20px;
+                        }
+                    }
+                    .options {
+                        padding: 10px;
+                        li {
+                            padding:0 6px;
+                            padding:0 10px;
+                        }
+                    }
+                    button {
+                        background: $orange;
+                        color: $dark;
+                        font-weight: 900 !important;
+                    }
                 }
-                button {
-                    width: 100%;
-                    height: 60px;
-                    border-radius: 20px;
-                    font-size: 16px;
-                }
             }
-        }
-        img {
-            width: 100%;
-            height: 50vh;
-            object-fit: cover;
-        }
-    }
-}
-.assemble {
-    margin-top: 48px !important;
-    .bgCover {
-        width: 95vw;
-    }
-    .title {
-        padding: 20px !important;
-    }
-    h1 {
-        font-size: 30px;
-        line-height: 40px;
-    }
-    .wrapper {
-        grid-template-columns: 1.5fr 2fr;
-    }
-    .imgHolder {
-        img {
-            height: 60vh;
-            width: 100%;
-            object-fit: cover;
-        }
-    }
-    .gridContent {
-        .tabLink {
-            width: 100px;
-            height: 60px;
-            border-radius: 20px;
             img {
-                width: 40px;
-                height: 40px;
-            }
-        }
-        
-        h3 {
-            font-size: 20px;
-            line-height: 24px;
-            margin: 15px 0 !important;
-        }
-        .search {
-            width: 100%;
-            height: 50px;
-            border-radius: 30px;
-            img {
-                width: 25px;
-                height: 25px;
-            }
-            input {
                 width: 100%;
-                height: 100%;
-                font-size: 16px;
-                &::placeholder {
-                    font-size: 16px;
-                }
+                height: 50vh;
+                object-fit: cover;
             }
         }
-        .gallery {
-            width: 100%;
-            margin-top: 30px;
-            grid-gap: 10px;
-            .galleryCard {
-                img {
-                    width: auto;
-                    height: 100px;
-                }
-                p {
-                    font-size: 15px;
-                    line-height: 20px;
-                    color: $dark;
-                    text-align: center;
-                }
+        
+        .tab2 {
+            h4 {
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 30px;
+                width: 40%;
             }
-        }
-    }
-    .assembleButtons {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0;
-        a {
-            width: 100%;
-            height: 60px;
-            border-radius: 20px;
-            font-size: 18px;
-            line-height: 24px;
-            * { 
-                font-size: 18px;
-                line-height: 24px;
-            }
-        }
-        .plan {
-            img {
-                height: 40px;
-                width: 40px;
-            }
-        }
-    }
-}
-.explore {
-    grid-template-columns: 1fr;
-    grid-gap: 30px;
-    .exploreContent {
-        h3 {
-            font-size: 45px;
-            line-height: 50px;
-        }
-        p {
-            font-size: 20px;
-            line-height: 32px;
-        }
-        a {
-            width: 250px;
-            height: 60px;
-            border-radius: 30px;
-            line-height: 40px;
-            font-size: 18px;
-        }
-    }
-    .exploreCards {
-        grid-gap: 50px;
-        .cardLayout {
-            width: auto;
-            height: 450px;
-            border-radius: 30px;
-            .info {
-                min-width: 80%;
-                height: 60px;
-                border-radius: 30x;
-                padding: 0 15px;
-                font-size: 18px;
-            }
-            span {
-                font-size: 18px;
-            }
-            a {
-                min-width: 80%;
-                height: 60px;
-                justify-self: flex-end;
-                p {
-                    font-size: 18px;
-                }
-                img {
-                    width: 50px;
-                    height: 50px;
-                }
-            }
-            .overlay {
-                border-radius: 30px;
-                justify-content: space-between;
-                .overlayInfo {
-                    width: 80%;
-                    height: 60px;
-                    border-radius: 30px;
+            .productCategory {
+                grid-template-columns: repeat(5, 1fr) !important;
+                align-items: start;
+                justify-content: start;
+                margin-top: 20px !important;
+                .categoryCard {
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 20px;
+                    padding: 15px !important;
+                    .info {
+                        min-width: 100%;
+                        min-height: 30px;
+                        border-radius: 20px;
+                        padding: 0 15px;
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                    .overlay {
+                        border-radius: 20px;
+                        padding: 15px !important;
+                        .overlayInfo {
+                            width: auto;
+                            height: 50px;
+                            border-radius: 20px;
+                        }
+                        .overlayTxt {
+                            font-size: 12px;
+                            line-height: 20px;
+                        }
+                    }
+                    .shopLink {
+                        width: auto;
+                        min-height: 20px;
+                        border-radius: 15px;
+                        padding: 15px;
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                        p {
+                            font-size: 12px;
+                            line-height: 20px;
+                        }
+                    }
                 }
             }
         }
         
-    }
-}
-.branches {
-    .wrapper {
-        width: 80vw !important;
-        h2 {
-            font-size: 40px;
-            line-height: 50p8;
-            text-align: center;
+        .tab3 {
+            .textContent {
+                h3 {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                form {
+                    margin-top: 30px;
+                    input,select,button {
+                        min-height: 60px;
+                        font-size: 16px;
+                        padding: 0px 15px;
+                        border-radius: 20px !important;
+                        &::placeholder {
+                            font-size: 16px;
+                        }
+                    }
+                    .s-hidden {
+                        padding-right: 10px;
+                        border-radius: 20px !important;
+                    }
+                    .select {
+                        font-size: 16px;
+                        line-height: 32px;
+                        border-radius: 20px !important;
+                    }
+                    .styledSelect {
+                        padding:0 20px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        border-radius: 20px !important;
+                        &:after {
+                            content:"";
+                            width:0;
+                            height:0;
+                            border: 8px solid transparent;
+                            border-color: $light transparent transparent transparent;
+                            position:absolute;
+                            top: 45%;
+                            right: 20px;
+                        }
+                    }
+                    .options {
+                        padding: 10px;
+                        li {
+                            padding:0 6px;
+                            padding:0 10px;
+                        }
+                    }
+                    button {
+                        background: $orange;
+                        color: $dark;
+                        font-weight: 900 !important;
+                    }
+                }
+            }
+            img {
+                width: 100%;
+                height: 50vh;
+                object-fit: cover;
+            }
         }
-        form {
+        
+        .tab4 {
+            h3 {
+                font-size: 20px;
+                line-height: 30px;
+                width: 70%;
+                font-weight: 900 !important;
+            }
+            form {
+                margin-top: 0 !important;
+                .radios {
+                    margin-bottom: 10px !important;
+                    width: 80%;
+                    .container {
+                        font-size: 16px;
+                        .checkmark {
+                            height: 30px;
+                            width: 30px;
+                            &:after {
+                                top: 3px;
+                                left: 3px;
+                                right: 3px;
+                                bottom: 3px;
+                                width: 13px;
+                                height: 13px;
+                            }
+                        }
+                        p {
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+                .otherInputs {
+                    .search {
+                        width: 100%;
+                        height: 60px;
+                        border-radius: 20px;
+                        img {
+                            width: 30.05px;
+                            height: 30.05px;
+                        }
+                        input {
+                            font-size: 16px;
+                            &::placeholder {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    button {
+                        width: 100%;
+                        height: 60px;
+                        border-radius: 20px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            img {
+                width: 100%;
+                height: 50vh;
+                object-fit: cover;
+            }
+        }
+    }
+    .assemble {
+        margin-top: 48px !important;
+        .bgCover {
+            width: 95vw;
+        }
+        .title {
+            padding: 30px !important;
+        }
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .wrapper {
+            grid-template-columns: 1.5fr 2fr;
+        }
+        .imgHolder {
+            img {
+                height: 60vh;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .gridContent {
+            .tabLink {
+                width: 80px;
+                height: 50px;
+                border-radius: 20px;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    object-fit: contain;
+                }
+            }
+            
+            h3 {
+                font-size: 20px;
+                line-height: 24px;
+                margin: 20px 0 !important;
+            }
             .search {
-                width: 60vw;
+                width: 100%;
                 height: 60px;
+                border-radius: 30px;
                 img {
                     width: 30px;
                     height: 30px;
                 }
                 input {
-                    font-size: 18px;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 16px;
                     &::placeholder {
-                        color: $dark;
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                 }
             }
-            .radios {
-                .container {
-                    position: relative;
-                    padding-left: 30px;
-                    margin-bottom: 5px;
-                    font-size: 18px;
-                    .checkmark {
-                        height: 30px;
-                        width: 30px;
-                        &:after {
-                            top: 3px;
-                            left: 3px;
-                            right: 3px;
-                            bottom: 3px;
-                            width: 14px;
-                            height: 14px;
-                        }
+            .gallery {
+                width: 100%;
+                margin-top: 30px;
+                grid-gap: 10px;
+                .galleryCard {
+                    img {
+                        width: 100%;
+                        height: 90px;
                     }
                     p {
-                        font-size: 20px;
-                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
                     }
                 }
             }
         }
-        p {
-            font-size: 24px;
-        }
-        .hardware {
-            grid-template-columns: 1fr 1fr !important;
+        .assembleButtons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
             width: 100% !important;
-            .hardwareCard {
-                width: auto !important;
-                height: 280px;
-                padding: 10px !important;
-                border-radius: 25px !important;
-                .info {
-                    width: auto;
-                    height: 38px;
-                    padding: 0 10px;
+            margin-top: 50px !important;
+            a {
+                width: 100%;
+                height: 60px;
+                border-radius: 20px;
+                font-size: 18px;
+                line-height: 24px;
+                margin: 0 !important;
+                * { 
                     font-size: 18px;
+                    line-height: 24px;
                 }
-                .overlay {
-                    border-radius: 25px !important;
-                    .overlayInfo {
-                        width: 80%;
-                        height: 38px;
-                    }
-                    .overlayTxt {
-                        font-size: 18px;
-                    }
-                    .distance {
-                        p {
-                            font-size: 16px;
-                            color: $blue;
-                        }
-                        img {
-                            width: 22.39px;
-                            height: 31.98px;
-                        }
-                    }
-                    &:hover {
-                        opacity: 1;
-                    }
+            }
+            .plan {
+                img {
+                    height: 40px;
+                    width: 40px;
                 }
             }
         }
     }
-}
-.differences {
-    h2 {
-        font-size: 60px;
-    }
-    .differenceCard {
-        height: 250px;
-        width: 250px;
-        padding: 20px;
-        border-radius: 30px;
-        img {
-            width: 100px;
-            height: 100px;
-        }
-        h5 {
-            font-size: 22px;
-            margin-top: 20px;
-            text-align: center;
-        }
-        .overlay {
-            border-radius: 30px;
-            h4 {
-                font-size: 24px;
-                line-height: 32px;
+    .explore {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 30px;
+        padding: 48px 96px !important;
+        .exploreContent {
+            h3 {
+                font-size: 32px;
+                line-height: 40px;
             }
             p {
                 font-size: 18px;
                 line-height: 24px;
             }
+            a {
+                width: 200px;
+                height: 60px;
+                border-radius: 20px;
+                line-height: 24px;
+                font-size: 18px;
+            }
         }
-    }
-}
-.partners {
-    grid-template-columns: 1fr 3fr;
-    .partnerText {
-        h2 {
-            font-size: 40px;
-            line-height: 52px;
-            width: 100%;
-        }
-        a {
-            font-size: 18px;
-        }
-    }
-    .partnerSlider {
-        .sliderCard {
-            border-radius: 30px;
-            img {
+        .exploreCards {
+            grid-gap: 30px;
+            .cardLayout {
                 width: auto;
-                height: 350px;
-                border-radius: 30px;
+                height: 45vh;
+                border-radius: 20px;
+                padding: 20px !important;
+                .info {
+                    min-width: 60%;
+                    height: 40px;
+                    border-radius: 20x;
+                    padding: 0 10px;
+                    font-size: 16px;
+                }
+                span {
+                    font-size: 16px;
+                }
+                a {
+                    min-width: 100%;
+                    height: auto;
+                    margin-top: 5px;
+                    p {
+                        font-size: 16px;
+                    }
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        margin-left: 15px !important;
+                    }
+                }
+                .overlay {
+                    border-radius: 20px;
+                    justify-content: space-between;
+                    padding-bottom: 20px !important;
+                    span {
+                        margin: 0 !important;
+                    }
+                    .overlayInfo {
+                        width: 80%;
+                        height: 60px;
+                        border-radius: 20px;
+                    }
+                }
             }
-            p {
+            
+        }
+    }
+    .branches {
+        padding-bottom: 48px;
+        .bgBack {
+            height: 80%;
+        }
+        .wrapper {
+            height: fit-content !important;
+            width: 80vw !important;
+            padding: 30px 60px !important;
+            margin: 0 !important;
+            h2 {
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: 900 !important;
+            }
+            form {
+                .search {
+                    width: 50vw;
+                    height: 60px;
+                    border-radius: 20px;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    input {
+                        font-size: 18px;
+                        &::placeholder {
+                            color: $dark;
+                            font-size: 18px;
+                        }
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+                .radios {
+                    margin-top: 30px !important;
+                    .container {
+                        position: relative;
+                        padding-left: 35px;
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                        .checkmark {
+                            height: 25px;
+                            width: 25px;
+                            border-width: 4px;
+                            &:after {
+                                top: 2px;
+                                left: 2px;
+                                right: 2px;
+                                bottom: 2px;
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+                        p {
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .buildtxt {
+                font-size: 20px;
+                line-height: 32px;
+                margin-bottom: 30px !important;
+            }
+            .hardware {
+                width: 100%;
+                margin-top: 0 !important;
+                padding: 0;
+                margin: 0;
+                grid-gap: 20px;
+                .hardwareCard {
+                    width: 100%;
+                    border-radius: 20px;
+                    height: 200px;
+                    padding: 15px;
+                    .info {
+                        min-width: 70%;
+                        min-height: 20px;
+                        padding: 0 10px;
+                        font-size: 14px;
+                    }
+                    .overlay {
+                        justify-content: space-between;
+                        padding: 15px;
+                        border-radius: 20px;
+                        * {
+                            margin: 0;
+                        }
+                        .overlayInfo {
+                            width: 80%;
+                            height: 30px;
+                        }
+                        .overlayTxt {
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin-top: 20px !important;
+                        }
+                        .distance {
+                            p {
+                                font-size: 14px;
+                                color: $blue;
+                            }
+                            img {
+                                width: 22.39px;
+                                height: 31.98px;
+                            }
+                        }
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .differences {
+        padding: 48px 96px !important;
+        h2 {
+            font-size: 45px;
+        }
+        .diffGrid {
+            margin-top: 30px !important;
+        }
+        .differenceCard {
+            height: 250px;
+            width: 250px;
+            border-radius: 20px;
+            img {
+                width: 150px;
+                height: 150px;
+            }
+            h5 {
                 font-size: 20px;
                 line-height: 30px;
+                font-weight: 700;
+                margin-top: 10px !important;
             }
-        }
-    }
-}
-.customers {
-    .titleSection {
-        h2 {
-            font-size: 40px;
-            line-height: 50px;
-            width: 80%;
-        }
-        a {
-            font-size: 18px;
-        }
-    }
-    .customerSlider {
-        .customerCard {
-            width: auto;
-            height: 450px;
-            border-radius: 30px;
             .overlay {
-                border-radius: 30px;
-                border: 2px solid $blue;
-            }
-            .name {
-                img {
-                    width: 120px;
-                    height: 120px;
-                    object-fit: cover;
-                }
+                border-radius: 20px;
                 h4 {
-                    font-size: 20px;
-                    line-height: 30px;
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 24px;
                 }
             }
-            p {
-                font-size: 20px;
-                line-height: 30px;
+        }
+    }
+    .partners {
+        grid-template-columns: 1fr 4fr;
+        margin: 48px 0 !important;
+        .partnerText {
+            h2 {
+                font-size: 32px;
+                line-height: 42px;
+                width: 100%;
             }
-            .ratings {
+            a {
+                font-size: 16px;
+            }
+        }
+        .partnerSlider {
+            .sliderCard {
+                border-radius: 20px;
                 img {
-                    width: 35px;
-                    height: 35px;
+                    width: 100%;
+                    height: 250px;
+                    border-radius: 20px;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 24px;
                 }
             }
         }
     }
-}
-.stylePoints {
-    img {
-        width: auto;
-        height: 450px;
-    }
-    .styleText {
-        h2 {
-            font-size: 40px;
-            line-height: 50px;
+    .customers {
+        padding: 0 !important;
+        padding-bottom: 48px !important;
+        .titleSection {
+            h2 {
+                font-size: 32px;
+                line-height: 42px;
+                width: 80%;
+            }
+            a {
+                font-size: 16px;
+            }
         }
-        h5 {
-            font-size: 30px;
+        .customerSlider {
+            margin-top: 20px !important;
+            .customerCard {
+                width: 100%;
+                height: 330px;
+                border-radius: 20px;
+                padding: 25px;
+                .overlay {
+                    border-radius: 20px;
+                }
+                .name {
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        object-fit: cover;
+                    }
+                    h4 {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+                .ratings {
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .community {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+        h2 {
+            font-size: 32px;
             line-height: 40px;
         }
-        a {
-            width: 200px;
-            height: 60px;
-            font-size: 18px;
-            line-height: 24px;
+        .communityInfo {
+            margin-top: 50px !important;
+            padding-left: 0 !important;
+            display: grid !important;
+            grid-template-columns: 1fr 1.5fr;
+            grid-gap: 30px !important;
+            .imgWrapper {
+                width: 100%;
+                height: 55vh;
+                margin: 0 !important;
+                img {
+                    object-fit: cover;
+                }
+                .linkBtns {
+                    .commBtn {
+                        width: 50px;
+                        height: 50px;
+                        cursor: pointer;
+                        img {
+                            width: 20.82px;
+                            height: 20.03px;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+            .communityText {
+                margin: 0 !important;
+                .names {
+                    margin: 20px 0 !important;
+                }
+                h5 {
+                    font-size: 20px;
+                    line-height: 24px;
+                    width: 90%;
+                }
+                h3 {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-weight: normal;
+                    width: 60%;
+                }
+                a {
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-top: 20px !important;
+                }
+            }
         }
     }
-}
+    .stylePoints {
+        grid-template-columns: 1.5fr 1fr !important;
+        margin-top: 48px;
+        padding-left: 0 !important;
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+        img {
+            width: 100%;
+            height: 400px;
+        }
+        .styleText {
+            * {
+                margin: 0;
+            }
+            h2 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            h5 {
+                font-size: 20px;
+                line-height: 30px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            a {
+                width: 200px;
+                height: 60px;
+                font-size: 16px;
+                font-weight: 900;
+                line-height: 20px;
+                border-radius: 20px;
+            }
+        }
+    }
 }
 
 //Tablets
@@ -2977,7 +3099,7 @@
     h1 {
         font-size: 32px;
         line-height: 40px;
-        text-align: left;
+        text-align: center;
     }
     .wrapper {
         grid-template-columns: 1fr;
@@ -2990,6 +3112,9 @@
         }
     }
     .gridContent {
+        .tabs {
+            justify-content: center;
+        }
         .tabLink {
             width: 100px;
             height: 60px;
@@ -3004,6 +3129,7 @@
         h3 {
             font-size: 24px;
             line-height: 32px;
+            text-align: center;
         }
         .search {
             width: 100%;
@@ -3050,13 +3176,18 @@
     grid-template-columns: 1fr;
     grid-gap: 30px;
     .exploreContent {
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
         h3 {
             font-size: 32px;
             line-height: 40px;
+            text-align: center;
         }
         p {
             font-size: 16px;
             line-height: 24px;
+            text-align: center;
         }
         a {
             width: 200px;
@@ -3069,12 +3200,12 @@
     .exploreCards {
         grid-gap: 30px;
         .cardLayout {
-            width: auto;
-            height: 350px;
-            border-radius: 30px;
+            width: 100%;
+            height: 30vh !important;
+            border-radius: 20px;
             .info {
                 min-width: 80%;
-                height: 60px;
+                min-height: 40px;
                 border-radius: 30x;
                 padding: 0 10px;
                 font-size: 16px;
@@ -3095,12 +3226,12 @@
                 }
             }
             .overlay {
-                border-radius: 30px;
+                border-radius: 20px;
                 justify-content: space-between;
                 .overlayInfo {
                     width: 80%;
-                    height: 60px;
-                    border-radius: 30px;
+                    height: 40px;
+                    border-radius: 20px;
                 }
             }
         }
@@ -3109,6 +3240,7 @@
 }
 .branches {
     .wrapper {
+        width: 80vw !important;
         h2 {
             font-size: 30px;
             line-height: 40px;
@@ -3159,11 +3291,12 @@
             font-size: 16px;
         }
         .hardware {
+            grid-template-columns: 1fr 1fr;
             .hardwareCard {
                 width: auto;
-                height: 250px;
-                padding: 10px !important;
-                border-radius: 25px !important;
+                height: 200px;
+                padding: 20px !important;
+                border-radius: 20px !important;
                 .info {
                     width: auto;
                     height: auto;
@@ -3171,7 +3304,7 @@
                     font-size: 16px;
                 }
                 .overlay {
-                    border-radius: 25px !important;
+                    border-radius: 20px !important;
                     .overlayInfo {
                         width: 80%;
                         height: 38px;
@@ -3196,8 +3329,10 @@
     }
 }
 .differences {
+    align-items: center;
     h2 {
         font-size: 50px;
+        text-align: center;
     }
     .differenceCard {
         height: 250px;
@@ -3230,10 +3365,12 @@
     grid-template-columns: 1fr;
     .partnerText {
         margin-bottom: 20px;
+        align-items: center;
         h2 {
             font-size: 32px;
             line-height: 40px;
             width: 100%;
+            text-align: center;
         }
         a {
             font-size: 16px;
@@ -3241,11 +3378,11 @@
     }
     .partnerSlider {
         .sliderCard {
-            border-radius: 30px;
+            border-radius: 20px;
             img {
                 width: 100%;
-                height: 300px;
-                border-radius: 30px;
+                height: 250px;
+                border-radius: 20px;
             }
             p {
                 font-size: 16px;
@@ -3256,10 +3393,14 @@
 }
 .customers {
     .titleSection {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
         h2 {
             font-size: 32px;
             line-height: 40px;
-            width: 80%;
+            width: 100%;
+            text-align: center;
         }
         a {
             font-size: 16px;
@@ -3268,7 +3409,7 @@
     .customerSlider {
         .customerCard {
             width: 100%;
-            height: 400px;
+            height: 350px;
             .name {
                 img {
                     width: 80px;
@@ -3299,10 +3440,10 @@
         line-height: 40px;
     }
     .communityInfo {
-        flex-direction: column;
+        flex-direction: column !important;
         .imgWrapper {
             width: 100%;
-            height: 300px;
+            height: 100%;
             .linkBtns {
                 .commBtn {
                     width: 70px;
@@ -3340,18 +3481,19 @@
     }
 }
 .stylePoints {
+    grid-template-columns: 1fr 1fr !important;
     img {
         width: auto;
-        height: 400px;
+        height: 300px;
     }
     .styleText {
         h2 {
-            font-size: 32px;
+            font-size: 30px;
             line-height: 40px;
         }
         h5 {
-            font-size: 24px;
-            line-height: 32px;
+            font-size: 20px;
+            line-height: 30px;
         }
         a {
             width: 150px;
@@ -3386,6 +3528,11 @@
     //TAB SECTIONS
     .tabSection {
         min-height: 500px;
+        h3,h4 {
+            width: 100% !important;
+            font-weight: 700;
+            text-align: center;
+        }
     }
     
     //Actual tabs
@@ -3614,6 +3761,7 @@
 .wrapper {
     width: 100vw !important;
     border-radius: 0;
+    padding: 32px 16px !important;
     h2 {
         font-size: 30px;
         line-height: 40px;
@@ -3646,10 +3794,10 @@
     }
     .hardware {
         grid-template-columns: 1fr !important;
-        padding: 0 20px;
+        padding: 0;
         .hardwareCard {
-            width: auto;
-            height: 250px;
+            width: 100%;
+            height: 40vh !important;
             padding: 10px inherit !important;
             border-radius: 25px !important;
             .info {
@@ -3660,13 +3808,16 @@
             }
             .overlay {
                 border-radius: 25px !important;
+                padding: 20px;
                 .overlayInfo {
                     width: 80%;
                     height: 38px;
                 }
                 .overlayTxt {
-                    font-size: 16px;
-                    margin-top: 30px !important;
+                    font-size: 18px;
+                    width: 80%;
+                    margin-top: 0px !important;
+                    text-align: left;
                 }
                 .distance {
                     p {
@@ -3684,7 +3835,7 @@
 }
 }
 .assemble {
-    padding: 16px !important;
+    padding: 32px 16px !important;
     .bgCover {
         width: 100%;
     }
@@ -3706,13 +3857,16 @@
             grid-gap: 10px;
         }
         .tabLink {
-            width: 70px;
+            width: 100%;
             height: 70px;
             border-radius: 15px;
             img {
                 width: 35px;
                 height: 35px;
                 object-fit: cover;
+            }
+            p {
+                font-size: 14px;
             }
         }
         
@@ -3741,11 +3895,11 @@
         .gallery {
             width: 100%;
             grid-gap: 20px;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(2,1fr);
             .galleryCard {
                 img {
-                    width: auto;
-                    height: 120px;
+                    width: 100%;
+                    height: 150px;
                 }
                 p {
                     font-size: 16px;
@@ -3755,9 +3909,10 @@
         }
     }
     .assembleButtons {
+        display: flex;
         flex-direction: column;
         a {
-            width: 250px;
+            width: 100%;
             height: 60px;
             border-radius: 30px;
             font-size: 16px;
@@ -3771,11 +3926,109 @@
         }
     }
 }
+.explore {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    padding: 32px 16px !important;
+    .exploreContent {
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+        h3 {
+            font-size: 32px;
+            line-height: 40px;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+        a {
+            width: 100%;
+            height: 60px;
+            border-radius: 30px;
+            line-height: 40px;
+            font-size: 16px;
+        }
+    }
+    .exploreCards {
+        grid-gap: 30px;
+        .cardLayout {
+            width: 100%;
+            height: 40vh !important;
+            border-radius: 20px;
+            .info {
+                min-width: 80%;
+                min-height: 40px;
+                border-radius: 30x;
+                padding: 0 10px;
+                font-size: 16px;
+            }
+            span {
+                font-size: 16px;
+            }
+            a {
+                min-width: 80%;
+                height: 60px;
+                justify-self: flex-end;
+                p {
+                    font-size: 16px;
+                }
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .overlay {
+                border-radius: 20px;
+                justify-content: space-between;
+                .overlayInfo {
+                    width: 80%;
+                    height: 40px;
+                    border-radius: 20px;
+                }
+            }
+        }
+        
+    }
+}
 .differences {
+    align-items: center;
+    padding: 32px 16px !important;
     h2 {
-        font-size: 45px;
-        line-height: 52px;
+        font-size: 40px;
         text-align: center;
+    }
+    .diffGrid {
+        align-items: center;
+        justify-content: center;
+    }
+    .differenceCard {
+        height: 250px;
+        width: 250px;
+        padding: 20px;
+        border-radius: 30px;
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        h5 {
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .overlay {
+            border-radius: 30px;
+            h4 {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
     }
 }
 .partners {
@@ -3817,7 +4070,7 @@
     .customerSlider {
         .customerCard {
             width: 100%;
-            height: 400px;
+            height: 350px;
             .name {
                 img {
                     width: 80px;
@@ -3843,7 +4096,7 @@
     }
 }
 .community {
-    padding: 16px !important;
+    padding: 32px 16px !important;
     .back {
         width: 100%;
     }
@@ -3852,6 +4105,11 @@
         line-height: 40px;
     }
     .communityInfo {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        margin-top: 0 !important;
+        padding-right: 0 !important;
         .imgWrapper {
             width: 100%;
             height: 300px;
@@ -3873,7 +4131,7 @@
                 font-size: 24px;
                 line-height: 32px;
                 width: 100%;
-                margin-top: 20px;
+                margin-top: 0;
                 text-align: center;
             }
             h3 {
@@ -3896,9 +4154,10 @@
     }
 }
 .stylePoints {
-    padding: 16px !important;
+    padding: 32px 16px !important;
+    grid-template-columns: 1fr !important;
     img {
-        width: auto;
+        width: 100%;
         height: 300px;
     }
     .styleText {
