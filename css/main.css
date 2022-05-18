@@ -2125,8 +2125,8 @@ footer .footerEnd p {
     width: 50px;
   }
   .homeBanner .tabGrids .gridLink h1 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .homeBanner .tabGrids .link1 {
     padding-left: 70px !important;
@@ -4513,6 +4513,9 @@ footer .footerEnd p {
     line-height: 32px;
     text-align: center;
   }
+  .homeBanner .tab1 .textContent form {
+    justify-items: center;
+  }
   .homeBanner .tab1 .textContent form input, .homeBanner .tab1 .textContent form select, .homeBanner .tab1 .textContent form button {
     height: 60px;
     border-radius: 30px;
@@ -4530,6 +4533,9 @@ footer .footerEnd p {
   }
   .homeBanner .tab1 .textContent form input::placeholder, .homeBanner .tab1 .textContent form select::placeholder, .homeBanner .tab1 .textContent form button::placeholder {
     font-size: 16px;
+  }
+  .homeBanner .tab1 .textContent form button {
+    width: 50vw;
   }
   .homeBanner .tab1 .textContent form .s-hidden {
     padding-right: 10px;
@@ -4613,11 +4619,17 @@ footer .footerEnd p {
   }
   .homeBanner .tab3 {
     padding: 40px 16px !important;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .homeBanner .tab3 .textContent h3 {
     font-size: 24px;
     line-height: 30px;
     text-align: center;
+  }
+  .homeBanner .tab3 .textContent form {
+    justify-items: center;
   }
   .homeBanner .tab3 .textContent form input, .homeBanner .tab3 .textContent form select, .homeBanner .tab3 .textContent form button {
     min-height: 60px;
@@ -4637,6 +4649,9 @@ footer .footerEnd p {
   }
   .homeBanner .tab3 .textContent form input::placeholder, .homeBanner .tab3 .textContent form select::placeholder, .homeBanner .tab3 .textContent form button::placeholder {
     font-size: 16px;
+  }
+  .homeBanner .tab3 .textContent form button {
+    width: 50vw;
   }
   .homeBanner .tab3 .textContent form .s-hidden {
     visibility: hidden;
@@ -4711,15 +4726,23 @@ footer .footerEnd p {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 20px;
+    justify-items: center;
   }
   .homeBanner .tab4 form .otherInputs .search {
-    width: auto;
+    width: 100%;
     height: 60px;
     border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .homeBanner .tab4 form .otherInputs .search img {
-    width: 35.05px;
-    height: 35.05px;
+    margin: 0 !important;
+    width: 30.05px;
+    height: 30.05px;
   }
   .homeBanner .tab4 form .otherInputs .search input {
     font-size: 16px;
@@ -4737,9 +4760,9 @@ footer .footerEnd p {
     font-size: 16px;
   }
   .homeBanner .tab4 form .otherInputs button {
-    width: auto;
+    width: 50vw;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 20px;
     font-size: 16px;
   }
   .branches .wrapper, .productBranches .wrapper, .styleResources .wrapper {
@@ -4842,7 +4865,7 @@ footer .footerEnd p {
     display: grid !important;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 15px;
   }
   .assemble .gridContent .tabLink {
     width: 100%;
@@ -4892,12 +4915,12 @@ footer .footerEnd p {
   .assemble .gridContent .gallery {
     width: 100%;
     grid-gap: 20px;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
   .assemble .gridContent .gallery .galleryCard img {
     width: 100%;
-    height: 150px;
+    height: 100px;
   }
   .assemble .gridContent .gallery .galleryCard p {
     font-size: 16px;
@@ -4913,13 +4936,14 @@ footer .footerEnd p {
             flex-direction: column;
   }
   .assemble .assembleButtons a {
-    width: 100%;
+    width: 50vw;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 20px;
     font-size: 16px;
+    margin: 0 !important;
   }
   .assemble .assembleButtons .plan {
-    margin-top: 20px;
+    margin-top: 10px !important;
   }
   .assemble .assembleButtons .plan img {
     height: 40px;
@@ -4951,9 +4975,9 @@ footer .footerEnd p {
     text-align: center;
   }
   .explore .exploreContent a {
-    width: 100%;
+    width: 50vw;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 20px;
     line-height: 40px;
     font-size: 16px;
   }
@@ -5185,7 +5209,7 @@ footer .footerEnd p {
     text-align: center;
   }
   .stylePoints .styleText a {
-    width: 250px;
+    width: 50vw;
     height: 60px;
     font-size: 16px;
     line-height: 24px;
@@ -6313,41 +6337,68 @@ footer .footerEnd p {
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
+  .productBanner, .roofingBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .productBanner .back, .roofingBanner .back {
+    height: 55%;
+  }
   .productBanner .bannerTxt h1, .roofingBanner .bannerTxt h1 {
-    font-size: 55px;
+    font-size: 45px;
   }
   .productBanner .bannerTxt p, .roofingBanner .bannerTxt p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
   }
   .productBanner .bannerTxt h5, .roofingBanner .bannerTxt h5 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .productBanner .bannerTxt h6, .roofingBanner .bannerTxt h6 {
-    font-size: 20px;
-    color: white;
-    font-weight: bolder;
+    font-size: 16px;
   }
   .productBanner .bannerTxt img, .roofingBanner .bannerTxt img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+  }
+  .productBanner .bannerImg, .roofingBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .productGrids {
+    padding: 0 96px !important;
+    padding-bottom: 48px !important;
   }
   .productGrids h4 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 800;
+  }
+  .productGrids .prGrid {
+    margin-top: 30px !important;
+    grid-gap: 30px;
   }
   .productGrids .productCard {
-    height: 500px;
+    height: 400px;
+  }
+  .productGrids .productCard .imgWrapper {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
   }
   .productGrids .productCard .cardTxt {
     height: auto;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
   .productGrids .productCard .cardTxt h4 {
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .productGrids .productCard .cardTxt p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .productTips .tipsHeader h1 {
     font-size: 45px;

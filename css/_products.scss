@@ -987,43 +987,64 @@
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
     .productBanner {
+        height: fit-content !important;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        .back {
+            height: 55%;
+        }
         .bannerTxt {
             h1 {
-                font-size: 55px;
+                font-size: 45px;
             }
             p {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 30px;
             }
             h5 {
-                font-size: 20px;
+                font-size: 18px;
             }
             h6 {
-                font-size: 20px;
-                color: white;
-                font-weight: bolder;
+                font-size: 16px;
             }
             img {
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
             }
+        }
+        .bannerImg {
+            margin-top: 0px !important;
         }
     }
     .productGrids {
+        padding: 0 96px !important;
+        padding-bottom: 48px !important;
         h4 {
-            font-size: 32px;
-            line-height: 40px;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 800;
+        }
+        .prGrid {
+            margin-top: 30px !important;
+            grid-gap: 30px;
         }
         .productCard {
-            height: 500px;
+            height: 400px;
+            .imgWrapper {
+                border-top-right-radius: 20px;
+                border-top-left-radius: 20px;
+            }
             .cardTxt {
                 height: auto;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
                 h4 {
-                    font-size: 30px;
+                    font-size: 24px;
+                    line-height: 32px;
                 }
                 p {
-                    font-size: 20px;
-                    line-height: 32px;
+                    font-size: 18px;
+                    line-height: 24px;
                 }
             }
         }
