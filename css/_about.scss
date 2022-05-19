@@ -5,7 +5,7 @@
     .back {
         background: $blue;
         width: 100%;
-        height: 60%;
+        height: 65%;
         top: 0;
         left: 0;
     }
@@ -19,7 +19,7 @@
         p {
             font-size: 32px;
             line-height: 40px;
-            font-weight: normal;
+            font-weight: 600;
             color: $dark;
         }
         h5 {
@@ -840,35 +840,41 @@
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
 .aboutBanner {
+    height: fit-content !important;
+    padding-top: 48px;
+    padding-bottom: 48px;
     .back {
-        height: 55%;
+        height: 55% !important;
     }
     .bannerTxt {
         h1 {
-            font-size: 55px;
+            font-size: 45px;
+            margin-bottom: 20px !important;
         }
         p {
-            font-size: 22px;
-            line-height: 32px;
+            font-size: 20px;
+            line-height: 30px;
+            width: 50%;
         }
         h5 {
-            font-size: 20px;
+            font-size: 18px;
+            line-height: 24px;
         }
         h6 {
-            font-size: 20px;
-            color: white;
-            font-weight: bolder;
+            font-size: 18px;
+            line-height: 24px;
         }
         img {
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
         }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
     }
 }
 .videoSection {
-    background: $light;
     height: auto !important;
-    
     .imgBox {
         height: 550px;
         width: auto;

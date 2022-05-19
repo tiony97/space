@@ -94,7 +94,7 @@ nav {
     }
     .mobileLogo {
         width: auto;
-        height: auto;
+        height: 100%;
         display: none;
     }
     .navIcons {
@@ -465,11 +465,6 @@ footer {
 //Tablets
 @media only screen and (max-width: 768px) {
     .responsiveNav {
-        height: 80px;
-        .logo {
-            width: auto;
-            height: auto;
-        }
         .navIcons {
             img {
                 width: 30.61px;
@@ -569,13 +564,12 @@ footer {
 //Mobile
 @media only screen and (max-width: 540px) {
     .responsiveNav {
-        height: 80px;
         .logo {
             display: none !important;
         }
         .mobileLogo {
             display: flex !important;
-            height: 50px;
+            height: 100%;
             width: auto;
             object-fit: contain;
         }

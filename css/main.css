@@ -91,7 +91,7 @@ nav .navBtns .login:hover {
 
 .responsiveNav .mobileLogo {
   width: auto;
-  height: auto;
+  height: 100%;
   display: none;
 }
 
@@ -502,13 +502,6 @@ footer .footerEnd p {
 }
 
 @media only screen and (max-width: 768px) {
-  .responsiveNav {
-    height: 80px;
-  }
-  .responsiveNav .logo {
-    width: auto;
-    height: auto;
-  }
   .responsiveNav .navIcons img {
     width: 30.61px;
     height: 30.61px;
@@ -609,9 +602,6 @@ footer .footerEnd p {
 }
 
 @media only screen and (max-width: 540px) {
-  .responsiveNav {
-    height: 80px;
-  }
   .responsiveNav .logo {
     display: none !important;
   }
@@ -619,7 +609,7 @@ footer .footerEnd p {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    height: 50px;
+    height: 100%;
     width: auto;
     -o-object-fit: contain;
        object-fit: contain;
@@ -1546,45 +1536,45 @@ footer .footerEnd p {
   background-size: cover;
 }
 
-.branches, .productBranches, .styleResources {
+.branches, .styleResources {
   min-height: auto;
 }
 
-.branches .bgBack, .productBranches .bgBack, .styleResources .bgBack {
+.branches .bgBack, .styleResources .bgBack {
   position: absolute;
   bottom: 0;
   right: 0;
   background: #1226AA;
   width: 100%;
-  height: 85%;
+  height: 70% !important;
   z-index: -1;
 }
 
-.branches .wrapper, .productBranches .wrapper, .styleResources .wrapper {
+.branches .wrapper, .styleResources .wrapper {
   background: #DD8797;
   height: auto;
   border-radius: 50px;
 }
 
-.branches .wrapper h2, .productBranches .wrapper h2, .styleResources .wrapper h2 {
+.branches .wrapper h2, .styleResources .wrapper h2 {
   font-size: 48px;
   font-weight: bolder;
   color: #292929;
 }
 
-.branches .wrapper form .search, .productBranches .wrapper form .search, .styleResources .wrapper form .search {
+.branches .wrapper form .search, .styleResources .wrapper form .search {
   width: 981px;
   height: 100px;
   background: #D597A3;
   border-radius: 50px;
 }
 
-.branches .wrapper form .search img, .productBranches .wrapper form .search img, .styleResources .wrapper form .search img {
+.branches .wrapper form .search img, .styleResources .wrapper form .search img {
   width: 41.05px;
   height: 41.05px;
 }
 
-.branches .wrapper form .search input, .productBranches .wrapper form .search input, .styleResources .wrapper form .search input {
+.branches .wrapper form .search input, .styleResources .wrapper form .search input {
   outline: none;
   width: 100%;
   height: 100%;
@@ -1593,31 +1583,31 @@ footer .footerEnd p {
   font-size: 24px;
 }
 
-.branches .wrapper form .search input::-webkit-input-placeholder, .productBranches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
+.branches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
   color: #292929;
   font-size: 24px;
 }
 
-.branches .wrapper form .search input:-ms-input-placeholder, .productBranches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
+.branches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
   color: #292929;
   font-size: 24px;
 }
 
-.branches .wrapper form .search input::-ms-input-placeholder, .productBranches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
+.branches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
   color: #292929;
   font-size: 24px;
 }
 
-.branches .wrapper form .search input::placeholder, .productBranches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
+.branches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
   color: #292929;
   font-size: 24px;
 }
 
-.branches .wrapper form .search input:focus, .productBranches .wrapper form .search input:focus, .styleResources .wrapper form .search input:focus {
+.branches .wrapper form .search input:focus, .styleResources .wrapper form .search input:focus {
   outline: none;
 }
 
-.branches .wrapper form .radios .container, .productBranches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
+.branches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
   position: relative;
   padding-left: 35px;
   margin-bottom: 5px;
@@ -1629,11 +1619,11 @@ footer .footerEnd p {
   user-select: none;
 }
 
-.branches .wrapper form .radios .container:hover input ~ .checkmark, .productBranches .wrapper form .radios .container:hover input ~ .checkmark, .styleResources .wrapper form .radios .container:hover input ~ .checkmark {
+.branches .wrapper form .radios .container:hover input ~ .checkmark, .styleResources .wrapper form .radios .container:hover input ~ .checkmark {
   background-color: #DD8797;
 }
 
-.branches .wrapper form .radios .container input, .productBranches .wrapper form .radios .container input, .styleResources .wrapper form .radios .container input {
+.branches .wrapper form .radios .container input, .styleResources .wrapper form .radios .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -1641,15 +1631,15 @@ footer .footerEnd p {
   width: 0;
 }
 
-.branches .wrapper form .radios .container input:checked ~ .checkmark, .productBranches .wrapper form .radios .container input:checked ~ .checkmark, .styleResources .wrapper form .radios .container input:checked ~ .checkmark {
+.branches .wrapper form .radios .container input:checked ~ .checkmark, .styleResources .wrapper form .radios .container input:checked ~ .checkmark {
   background-color: #DD8797;
 }
 
-.branches .wrapper form .radios .container input:checked ~ .checkmark:after, .productBranches .wrapper form .radios .container input:checked ~ .checkmark:after, .styleResources .wrapper form .radios .container input:checked ~ .checkmark:after {
+.branches .wrapper form .radios .container input:checked ~ .checkmark:after, .styleResources .wrapper form .radios .container input:checked ~ .checkmark:after {
   display: block;
 }
 
-.branches .wrapper form .radios .container .checkmark, .productBranches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
+.branches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
   position: relative;
   height: 40px;
   width: 40px;
@@ -1658,13 +1648,13 @@ footer .footerEnd p {
   border-radius: 50%;
 }
 
-.branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
+.branches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
+.branches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
   top: 5px;
   left: 5px;
   right: 5px;
@@ -1675,21 +1665,21 @@ footer .footerEnd p {
   background: #292929;
 }
 
-.branches .wrapper form .radios .container p, .productBranches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
+.branches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
   font-size: 24px;
   font-weight: bold;
 }
 
-.branches .wrapper p, .productBranches .wrapper p, .styleResources .wrapper p {
+.branches .wrapper p, .styleResources .wrapper p {
   font-size: 32px;
   color: #292929;
 }
 
-.branches .wrapper .hardware, .productBranches .wrapper .hardware, .styleResources .wrapper .hardware {
+.branches .wrapper .hardware, .styleResources .wrapper .hardware {
   margin-top: 50px;
 }
 
-.branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
+.branches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
   width: 300px;
   height: 315px;
   border-radius: 50px;
@@ -1697,7 +1687,7 @@ footer .footerEnd p {
   background-size: cover;
 }
 
-.branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
+.branches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
   min-width: 184px;
   height: 38px;
   border-radius: 25px;
@@ -1709,7 +1699,7 @@ footer .footerEnd p {
   z-index: 5;
 }
 
-.branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
+.branches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1722,29 +1712,29 @@ footer .footerEnd p {
   opacity: 0;
 }
 
-.branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+.branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
   width: 233px;
   height: 64px;
   border-radius: 25px;
   background: transparent;
 }
 
-.branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+.branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
   font-size: 24px;
   color: #1226AA;
 }
 
-.branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
+.branches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
   font-size: 14px;
   color: #1226AA;
 }
 
-.branches .wrapper .hardware .hardwareCard .overlay .distance img, .productBranches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
+.branches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
   width: 22.39px;
   height: 31.98px;
 }
 
-.branches .wrapper .hardware .hardwareCard .overlay:hover, .productBranches .wrapper .hardware .hardwareCard .overlay:hover, .styleResources .wrapper .hardware .hardwareCard .overlay:hover {
+.branches .wrapper .hardware .hardwareCard .overlay:hover, .styleResources .wrapper .hardware .hardwareCard .overlay:hover {
   opacity: 1;
 }
 
@@ -2563,13 +2553,13 @@ footer .footerEnd p {
     height: 60px;
     border-radius: 20px;
   }
-  .branches, .productBranches, .styleResources {
+  .branches, .styleResources {
     padding-bottom: 48px;
   }
-  .branches .bgBack, .productBranches .bgBack, .styleResources .bgBack {
+  .branches .bgBack, .styleResources .bgBack {
     height: 80%;
   }
-  .branches .wrapper, .productBranches .wrapper, .styleResources .wrapper {
+  .branches .wrapper, .styleResources .wrapper {
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
     height: fit-content !important;
@@ -2577,57 +2567,57 @@ footer .footerEnd p {
     padding: 30px 80px !important;
     margin: 0 !important;
   }
-  .branches .wrapper h2, .productBranches .wrapper h2, .styleResources .wrapper h2 {
+  .branches .wrapper h2, .styleResources .wrapper h2 {
     font-size: 32px;
     line-height: 40px;
     font-weight: 900 !important;
   }
-  .branches .wrapper form .search, .productBranches .wrapper form .search, .styleResources .wrapper form .search {
+  .branches .wrapper form .search, .styleResources .wrapper form .search {
     width: 50vw;
     height: 60px;
     border-radius: 20px;
   }
-  .branches .wrapper form .search img, .productBranches .wrapper form .search img, .styleResources .wrapper form .search img {
+  .branches .wrapper form .search img, .styleResources .wrapper form .search img {
     width: 40px;
     height: 40px;
   }
-  .branches .wrapper form .search input, .productBranches .wrapper form .search input, .styleResources .wrapper form .search input {
+  .branches .wrapper form .search input, .styleResources .wrapper form .search input {
     font-size: 18px;
   }
-  .branches .wrapper form .search input::-webkit-input-placeholder, .productBranches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
+  .branches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
     color: #292929;
     font-size: 18px;
   }
-  .branches .wrapper form .search input:-ms-input-placeholder, .productBranches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
+  .branches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
     color: #292929;
     font-size: 18px;
   }
-  .branches .wrapper form .search input::-ms-input-placeholder, .productBranches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
+  .branches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
     color: #292929;
     font-size: 18px;
   }
-  .branches .wrapper form .search input::placeholder, .productBranches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
+  .branches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
     color: #292929;
     font-size: 18px;
   }
-  .branches .wrapper form .search input:focus, .productBranches .wrapper form .search input:focus, .styleResources .wrapper form .search input:focus {
+  .branches .wrapper form .search input:focus, .styleResources .wrapper form .search input:focus {
     outline: none;
   }
-  .branches .wrapper form .radios, .productBranches .wrapper form .radios, .styleResources .wrapper form .radios {
+  .branches .wrapper form .radios, .styleResources .wrapper form .radios {
     margin-top: 30px !important;
   }
-  .branches .wrapper form .radios .container, .productBranches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
+  .branches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
     position: relative;
     padding-left: 35px;
     margin-bottom: 5px;
     font-size: 16px;
   }
-  .branches .wrapper form .radios .container .checkmark, .productBranches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
+  .branches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
     height: 30px;
     width: 30px;
     border-width: 4px;
   }
-  .branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
+  .branches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
     top: 4px;
     left: 4px;
     right: 4px;
@@ -2635,59 +2625,59 @@ footer .footerEnd p {
     width: 13px;
     height: 13px;
   }
-  .branches .wrapper form .radios .container p, .productBranches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
+  .branches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
     font-size: 20px;
     font-weight: bold;
   }
-  .branches .wrapper .buildtxt, .productBranches .wrapper .buildtxt, .styleResources .wrapper .buildtxt {
+  .branches .wrapper .buildtxt, .styleResources .wrapper .buildtxt {
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 30px !important;
   }
-  .branches .wrapper .hardware, .productBranches .wrapper .hardware, .styleResources .wrapper .hardware {
+  .branches .wrapper .hardware, .styleResources .wrapper .hardware {
     width: 100%;
     margin-top: 0 !important;
     padding: 0;
     margin: 0;
   }
-  .branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
+  .branches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
     width: 100%;
     border-radius: 20px;
     height: 200px;
     padding: 15px;
   }
-  .branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
+  .branches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
     min-width: 70%;
     min-height: 30px;
     padding: 0 10px;
     font-size: 14px;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
+  .branches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 15px;
     border-radius: 20px;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay *, .productBranches .wrapper .hardware .hardwareCard .overlay *, .styleResources .wrapper .hardware .hardwareCard .overlay * {
+  .branches .wrapper .hardware .hardwareCard .overlay *, .styleResources .wrapper .hardware .hardwareCard .overlay * {
     margin: 0;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
     width: 80%;
     height: 30px;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
     font-size: 14px;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
+  .branches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
     font-size: 14px;
     color: #1226AA;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .distance img, .productBranches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
+  .branches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
     width: 22.39px;
     height: 31.98px;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay:hover, .productBranches .wrapper .hardware .hardwareCard .overlay:hover, .styleResources .wrapper .hardware .hardwareCard .overlay:hover {
+  .branches .wrapper .hardware .hardwareCard .overlay:hover, .styleResources .wrapper .hardware .hardwareCard .overlay:hover {
     opacity: 1;
   }
   .differences {
@@ -3428,13 +3418,13 @@ footer .footerEnd p {
     height: 60px;
     border-radius: 20px;
   }
-  .branches, .productBranches, .styleResources {
+  .branches, .styleResources {
     padding-bottom: 48px;
   }
-  .branches .bgBack, .productBranches .bgBack, .styleResources .bgBack {
+  .branches .bgBack, .styleResources .bgBack {
     height: 80%;
   }
-  .branches .wrapper, .productBranches .wrapper, .styleResources .wrapper {
+  .branches .wrapper, .styleResources .wrapper {
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
     height: fit-content !important;
@@ -3442,57 +3432,57 @@ footer .footerEnd p {
     padding: 30px 60px !important;
     margin: 0 !important;
   }
-  .branches .wrapper h2, .productBranches .wrapper h2, .styleResources .wrapper h2 {
+  .branches .wrapper h2, .styleResources .wrapper h2 {
     font-size: 32px;
     line-height: 40px;
     font-weight: 900 !important;
   }
-  .branches .wrapper form .search, .productBranches .wrapper form .search, .styleResources .wrapper form .search {
+  .branches .wrapper form .search, .styleResources .wrapper form .search {
     width: 50vw;
     height: 60px;
     border-radius: 20px;
   }
-  .branches .wrapper form .search img, .productBranches .wrapper form .search img, .styleResources .wrapper form .search img {
+  .branches .wrapper form .search img, .styleResources .wrapper form .search img {
     width: 40px;
     height: 40px;
   }
-  .branches .wrapper form .search input, .productBranches .wrapper form .search input, .styleResources .wrapper form .search input {
+  .branches .wrapper form .search input, .styleResources .wrapper form .search input {
     font-size: 18px;
   }
-  .branches .wrapper form .search input::-webkit-input-placeholder, .productBranches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
+  .branches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
     color: #292929;
     font-size: 18px;
   }
-  .branches .wrapper form .search input:-ms-input-placeholder, .productBranches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
+  .branches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
     color: #292929;
     font-size: 18px;
   }
-  .branches .wrapper form .search input::-ms-input-placeholder, .productBranches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
+  .branches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
     color: #292929;
     font-size: 18px;
   }
-  .branches .wrapper form .search input::placeholder, .productBranches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
+  .branches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
     color: #292929;
     font-size: 18px;
   }
-  .branches .wrapper form .search input:focus, .productBranches .wrapper form .search input:focus, .styleResources .wrapper form .search input:focus {
+  .branches .wrapper form .search input:focus, .styleResources .wrapper form .search input:focus {
     outline: none;
   }
-  .branches .wrapper form .radios, .productBranches .wrapper form .radios, .styleResources .wrapper form .radios {
+  .branches .wrapper form .radios, .styleResources .wrapper form .radios {
     margin-top: 30px !important;
   }
-  .branches .wrapper form .radios .container, .productBranches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
+  .branches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
     position: relative;
     padding-left: 35px;
     margin-bottom: 5px;
     font-size: 16px;
   }
-  .branches .wrapper form .radios .container .checkmark, .productBranches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
+  .branches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
     height: 25px;
     width: 25px;
     border-width: 4px;
   }
-  .branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
+  .branches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
     top: 2px;
     left: 2px;
     right: 2px;
@@ -3500,62 +3490,62 @@ footer .footerEnd p {
     width: 12px;
     height: 12px;
   }
-  .branches .wrapper form .radios .container p, .productBranches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
+  .branches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
     font-size: 18px;
     font-weight: bold;
   }
-  .branches .wrapper .buildtxt, .productBranches .wrapper .buildtxt, .styleResources .wrapper .buildtxt {
+  .branches .wrapper .buildtxt, .styleResources .wrapper .buildtxt {
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 30px !important;
   }
-  .branches .wrapper .hardware, .productBranches .wrapper .hardware, .styleResources .wrapper .hardware {
+  .branches .wrapper .hardware, .styleResources .wrapper .hardware {
     width: 100%;
     margin-top: 0 !important;
     padding: 0;
     margin: 0;
     grid-gap: 20px;
   }
-  .branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
+  .branches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
     width: 100%;
     border-radius: 20px;
     height: 200px;
     padding: 15px;
   }
-  .branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
+  .branches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
     min-width: 70%;
     min-height: 20px;
     padding: 0 10px;
     font-size: 14px;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
+  .branches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 15px;
     border-radius: 20px;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay *, .productBranches .wrapper .hardware .hardwareCard .overlay *, .styleResources .wrapper .hardware .hardwareCard .overlay * {
+  .branches .wrapper .hardware .hardwareCard .overlay *, .styleResources .wrapper .hardware .hardwareCard .overlay * {
     margin: 0;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
     width: 80%;
     height: 30px;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
     font-size: 14px;
     line-height: 20px;
     margin-top: 20px !important;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
+  .branches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
     font-size: 14px;
     color: #1226AA;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .distance img, .productBranches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
+  .branches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
     width: 22.39px;
     height: 31.98px;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay:hover, .productBranches .wrapper .hardware .hardwareCard .overlay:hover, .styleResources .wrapper .hardware .hardwareCard .overlay:hover {
+  .branches .wrapper .hardware .hardwareCard .overlay:hover, .styleResources .wrapper .hardware .hardwareCard .overlay:hover {
     opacity: 1;
   }
   .differences {
@@ -4212,52 +4202,52 @@ footer .footerEnd p {
     height: 40px;
     border-radius: 20px;
   }
-  .branches .wrapper, .productBranches .wrapper, .styleResources .wrapper {
-    width: 80vw !important;
+  .branches .wrapper, .styleResources .wrapper {
+    width: 90vw !important;
   }
-  .branches .wrapper h2, .productBranches .wrapper h2, .styleResources .wrapper h2 {
+  .branches .wrapper h2, .styleResources .wrapper h2 {
     font-size: 30px;
     line-height: 40px;
   }
-  .branches .wrapper form .search, .productBranches .wrapper form .search, .styleResources .wrapper form .search {
+  .branches .wrapper form .search, .styleResources .wrapper form .search {
     width: 60vw;
     height: 60px;
   }
-  .branches .wrapper form .search img, .productBranches .wrapper form .search img, .styleResources .wrapper form .search img {
+  .branches .wrapper form .search img, .styleResources .wrapper form .search img {
     width: 24px;
     height: 24px;
   }
-  .branches .wrapper form .search input, .productBranches .wrapper form .search input, .styleResources .wrapper form .search input {
+  .branches .wrapper form .search input, .styleResources .wrapper form .search input {
     font-size: 16px;
   }
-  .branches .wrapper form .search input::-webkit-input-placeholder, .productBranches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
+  .branches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
     color: #292929;
     font-size: 16px;
   }
-  .branches .wrapper form .search input:-ms-input-placeholder, .productBranches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
+  .branches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
     color: #292929;
     font-size: 16px;
   }
-  .branches .wrapper form .search input::-ms-input-placeholder, .productBranches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
+  .branches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
     color: #292929;
     font-size: 16px;
   }
-  .branches .wrapper form .search input::placeholder, .productBranches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
+  .branches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
     color: #292929;
     font-size: 16px;
   }
-  .branches .wrapper form .radios .container, .productBranches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
+  .branches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
     position: relative;
     padding-left: 0px;
     margin-bottom: 5px;
     font-size: 16px;
   }
-  .branches .wrapper form .radios .container .checkmark, .productBranches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
+  .branches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
     height: 24px;
     width: 24px;
     border: 4px solid #292929;
   }
-  .branches .wrapper form .radios .container .checkmark:after, .productBranches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
+  .branches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
     top: 3px;
     left: 3px;
     right: 3px;
@@ -4265,45 +4255,45 @@ footer .footerEnd p {
     width: 10px;
     height: 10px;
   }
-  .branches .wrapper form .radios .container p, .productBranches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
+  .branches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
     font-size: 16px;
     font-weight: bold;
   }
-  .branches .wrapper p, .productBranches .wrapper p, .styleResources .wrapper p {
+  .branches .wrapper p, .styleResources .wrapper p {
     font-size: 16px;
   }
-  .branches .wrapper .hardware, .productBranches .wrapper .hardware, .styleResources .wrapper .hardware {
+  .branches .wrapper .hardware, .styleResources .wrapper .hardware {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  .branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
+  .branches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
     width: auto;
     height: 200px;
     padding: 20px !important;
     border-radius: 20px !important;
   }
-  .branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
+  .branches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
     width: auto;
     height: auto;
     padding: 5px 2px;
     font-size: 16px;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
+  .branches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
     border-radius: 20px !important;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
     width: 80%;
     height: 38px;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
     font-size: 16px;
     margin-top: 30px !important;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
+  .branches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
     font-size: 16px;
     color: #1226AA;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .distance img, .productBranches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
+  .branches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
     width: 22.39px;
     height: 31.98px;
   }
@@ -4765,82 +4755,82 @@ footer .footerEnd p {
     border-radius: 20px;
     font-size: 16px;
   }
-  .branches .wrapper, .productBranches .wrapper, .styleResources .wrapper {
+  .branches .wrapper, .styleResources .wrapper {
     width: 100vw !important;
     border-radius: 0;
     padding: 32px 16px !important;
   }
-  .branches .wrapper h2, .productBranches .wrapper h2, .styleResources .wrapper h2 {
+  .branches .wrapper h2, .styleResources .wrapper h2 {
     font-size: 30px;
     line-height: 40px;
     text-align: center;
     text-align: center;
   }
-  .branches .wrapper form .search, .productBranches .wrapper form .search, .styleResources .wrapper form .search {
+  .branches .wrapper form .search, .styleResources .wrapper form .search {
     width: 100%;
     height: 60px;
   }
-  .branches .wrapper form .search input, .productBranches .wrapper form .search input, .styleResources .wrapper form .search input {
+  .branches .wrapper form .search input, .styleResources .wrapper form .search input {
     font-size: 16px;
   }
-  .branches .wrapper form .search input::-webkit-input-placeholder, .productBranches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
+  .branches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
     font-size: 16px;
   }
-  .branches .wrapper form .search input:-ms-input-placeholder, .productBranches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
+  .branches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
     font-size: 16px;
   }
-  .branches .wrapper form .search input::-ms-input-placeholder, .productBranches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
+  .branches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
     font-size: 16px;
   }
-  .branches .wrapper form .search input::placeholder, .productBranches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
+  .branches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
     font-size: 16px;
   }
-  .branches .wrapper form .radios .container, .productBranches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
+  .branches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
     position: relative;
     padding-left: 0px;
     margin-bottom: 5px;
     font-size: 16px;
   }
-  .branches .wrapper p, .productBranches .wrapper p, .styleResources .wrapper p {
+  .branches .wrapper p, .styleResources .wrapper p {
     font-size: 18px;
     text-align: center;
   }
-  .branches .wrapper .hardware, .productBranches .wrapper .hardware, .styleResources .wrapper .hardware {
+  .branches .wrapper .hardware, .styleResources .wrapper .hardware {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
     padding: 0;
   }
-  .branches .wrapper .hardware .hardwareCard, .productBranches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
+  .branches .wrapper .hardware .hardwareCard, .styleResources .wrapper .hardware .hardwareCard {
     width: 100%;
     height: 40vh !important;
     padding: 10px inherit !important;
     border-radius: 25px !important;
   }
-  .branches .wrapper .hardware .hardwareCard .info, .productBranches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
+  .branches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
     width: auto;
     height: auto;
     padding: 5px 2px;
     font-size: 16px;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay, .productBranches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
+  .branches .wrapper .hardware .hardwareCard .overlay, .styleResources .wrapper .hardware .hardwareCard .overlay {
     border-radius: 25px !important;
     padding: 20px;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayInfo, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayInfo {
     width: 80%;
     height: 38px;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+  .branches .wrapper .hardware .hardwareCard .overlay .overlayTxt, .styleResources .wrapper .hardware .hardwareCard .overlay .overlayTxt {
     font-size: 18px;
     width: 80%;
     margin-top: 0px !important;
     text-align: left;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .distance p, .productBranches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
+  .branches .wrapper .hardware .hardwareCard .overlay .distance p, .styleResources .wrapper .hardware .hardwareCard .overlay .distance p {
     font-size: 16px;
     color: #1226AA;
   }
-  .branches .wrapper .hardware .hardwareCard .overlay .distance img, .productBranches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
+  .branches .wrapper .hardware .hardwareCard .overlay .distance img, .styleResources .wrapper .hardware .hardwareCard .overlay .distance img {
     width: 22.39px;
     height: 31.98px;
   }
@@ -5242,7 +5232,7 @@ footer .footerEnd p {
 .productBanner .bannerTxt p, .roofingBanner .bannerTxt p {
   font-size: 32px;
   line-height: 40px;
-  font-weight: normal;
+  font-weight: 600;
   color: #292929;
 }
 
@@ -5443,17 +5433,210 @@ footer .footerEnd p {
 }
 
 .productBranches {
+  min-height: auto;
   background: #F4F4F4;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .productBranches .bgBack {
-  background: white !important;
-  height: 70%;
-  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: white;
+  width: 100%;
+  height: 70% !important;
+  z-index: 0;
 }
 
 .productBranches .wrapper {
-  z-index: 2;
+  position: relative;
+  z-index: 3;
+  background: #1226AA;
+  height: auto;
+  border-radius: 30px;
+}
+
+.productBranches .wrapper h2 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: white;
+}
+
+.productBranches .wrapper form .search {
+  width: 981px;
+  height: 100px;
+  background: #2C3EB3;
+  border-radius: 30px;
+}
+
+.productBranches .wrapper form .search img {
+  width: 41.05px;
+  height: 41.05px;
+}
+
+.productBranches .wrapper form .search input {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: transparent;
+  font-size: 24px;
+}
+
+.productBranches .wrapper form .search input::-webkit-input-placeholder {
+  color: #818CD2 !important;
+  font-size: 24px;
+}
+
+.productBranches .wrapper form .search input:-ms-input-placeholder {
+  color: #818CD2 !important;
+  font-size: 24px;
+}
+
+.productBranches .wrapper form .search input::-ms-input-placeholder {
+  color: #818CD2 !important;
+  font-size: 24px;
+}
+
+.productBranches .wrapper form .search input::placeholder {
+  color: #818CD2 !important;
+  font-size: 24px;
+}
+
+.productBranches .wrapper form .search input:focus {
+  outline: none;
+}
+
+.productBranches .wrapper form .radios .container {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.productBranches .wrapper form .radios .container:hover input ~ .checkmark {
+  background-color: #1226AA;
+}
+
+.productBranches .wrapper form .radios .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.productBranches .wrapper form .radios .container input:checked ~ .checkmark {
+  background-color: #1226AA;
+}
+
+.productBranches .wrapper form .radios .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.productBranches .wrapper form .radios .container .checkmark {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background-color: #1226AA;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.productBranches .wrapper form .radios .container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.productBranches .wrapper form .radios .container .checkmark:after {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+}
+
+.productBranches .wrapper form .radios .container p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.productBranches .wrapper p {
+  font-size: 32px;
+  color: white;
+}
+
+.productBranches .wrapper .hardware {
+  margin-top: 50px;
+}
+
+.productBranches .wrapper .hardware .hardwareCard {
+  width: 300px;
+  height: 315px;
+  border-radius: 50px;
+  background: url("../assets/sustainable.png") no-repeat center center;
+  background-size: cover;
+}
+
+.productBranches .wrapper .hardware .hardwareCard .info {
+  min-width: 184px;
+  height: 38px;
+  border-radius: 25px;
+  padding: 0 20px;
+  background: #1226AA;
+  color: white;
+  font-size: 24px;
+  font-weight: bolder;
+  z-index: 5;
+}
+
+.productBranches .wrapper .hardware .hardwareCard .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F4F4F4;
+  border-radius: 50px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  opacity: 0;
+}
+
+.productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo {
+  width: 233px;
+  height: 64px;
+  border-radius: 25px;
+  background: transparent;
+}
+
+.productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt {
+  font-size: 24px;
+  color: #1226AA;
+}
+
+.productBranches .wrapper .hardware .hardwareCard .overlay .distance p {
+  font-size: 14px;
+  color: #1226AA;
+}
+
+.productBranches .wrapper .hardware .hardwareCard .overlay .distance img {
+  width: 22.39px;
+  height: 31.98px;
+}
+
+.productBranches .wrapper .hardware .hardwareCard .overlay:hover {
+  opacity: 1;
 }
 
 /*PRODUCTS CATEGORY STYLES */
@@ -5500,7 +5683,7 @@ footer .footerEnd p {
   width: 304px;
   height: 97px;
   border-radius: 25px;
-  border: 3px solid #1226AA;
+  border: 2px solid #1226AA;
   color: #292929;
   font-size: 18px;
   line-height: 24px;
@@ -5539,7 +5722,7 @@ footer .footerEnd p {
 }
 
 .productsExplore .exploreWrapper .tileTypes .activeImageChoice img, .subCategoryForm .exploreWrapper .tileTypes .activeImageChoice img {
-  border: 5px solid #1226AA;
+  border: 3px solid #1226AA;
 }
 
 .productsExplore .exploreWrapper .tileTypes .activeImageChoice p, .subCategoryForm .exploreWrapper .tileTypes .activeImageChoice p {
@@ -5627,7 +5810,7 @@ footer .footerEnd p {
 .materialsSlider .materialsCard {
   width: 494px;
   height: 518px;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .materialsSlider .materialsCard .back1 {
@@ -5637,7 +5820,7 @@ footer .footerEnd p {
   width: 100%;
   height: 100%;
   border-radius: 50px;
-  z-index: -1;
+  z-index: 1;
   background-color: #1226AA;
 }
 
@@ -5648,10 +5831,11 @@ footer .footerEnd p {
   width: 100%;
   height: 100%;
   border-radius: 50px;
-  z-index: -1;
+  z-index: 3;
 }
 
 .materialsSlider .materialsCard .cardWrapper {
+  position: relative;
   z-index: 5;
   width: 100% !important;
 }
@@ -5953,19 +6137,19 @@ footer .footerEnd p {
 }
 
 .styleResources .wrapper form .search input::-webkit-input-placeholder {
-  color: white;
+  color: #B7BDE5;
 }
 
 .styleResources .wrapper form .search input:-ms-input-placeholder {
-  color: white;
+  color: #B7BDE5;
 }
 
 .styleResources .wrapper form .search input::-ms-input-placeholder {
-  color: white;
+  color: #B7BDE5;
 }
 
 .styleResources .wrapper form .search input::placeholder {
-  color: white;
+  color: #B7BDE5;
 }
 
 .styleResources .wrapper .helpTxt {
@@ -5982,6 +6166,15 @@ footer .footerEnd p {
   height: 315px;
   border-radius: 50px;
   background: #F4F4F4;
+}
+
+.styleResources .resources .resourceCard .pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .styleResources .resources .resourceCard .info {
@@ -6143,6 +6336,30 @@ footer .footerEnd p {
 .subCategoryForm .formSection .inputs .numberInput input::-webkit-inner-spin-button, .subCategoryForm .formSection .inputs .numberInput input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.subCategoryForm .formSection .assembleButtons a {
+  width: 415px;
+  height: 98px;
+  border-radius: 25px;
+  outline: none;
+  color: #292929;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.subCategoryForm .formSection .assembleButtons .quote {
+  background: #FFB548;
+}
+
+.subCategoryForm .formSection .assembleButtons .plan {
+  background: transparent;
+  border: 3px solid #292929;
+}
+
+.subCategoryForm .formSection .assembleButtons .plan img {
+  height: 75px;
+  width: 75px;
 }
 
 .subCategorySpecs {
@@ -6345,10 +6562,11 @@ footer .footerEnd p {
     padding-bottom: 48px;
   }
   .productBanner .back, .roofingBanner .back {
-    height: 55%;
+    height: 60% !important;
   }
   .productBanner .bannerTxt h1, .roofingBanner .bannerTxt h1 {
     font-size: 45px;
+    margin-bottom: 20px !important;
   }
   .productBanner .bannerTxt p, .roofingBanner .bannerTxt p {
     font-size: 20px;
@@ -6400,65 +6618,119 @@ footer .footerEnd p {
     font-size: 18px;
     line-height: 24px;
   }
+  .productTips {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .productTips .tipsHeader {
+    margin-bottom: 20px;
+  }
   .productTips .tipsHeader h1 {
-    font-size: 45px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .productTips .tipsHeader p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .productTips .tipsInfo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.3fr 1fr;
+        grid-template-columns: 1.3fr 1fr;
+    grid-gap: 40px;
+  }
+  .productTips .tipsInfo .imgWrapper {
+    width: 100%;
+    height: 55vh;
+    margin: 0;
+  }
+  .productTips .tipsInfo .imgWrapper img {
+    width: 100%;
+    height: 100%;
+    -o-object-position: top;
+       object-position: top;
   }
   .productTips .tipsInfo .imgWrapper .linkBtns .commBtn {
-    width: 80px;
+    width: 60px;
     height: 60px;
   }
   .productTips .tipsInfo .imgWrapper .linkBtns .commBtn img {
     width: 20.82px;
-    height: 25.03px;
+    height: 20.03px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .productTips .tipsInfo .communityText {
+    margin: 0;
+  }
+  .productTips .tipsInfo .communityText .names {
+    margin-bottom: 10px !important;
   }
   .productTips .tipsInfo .communityText h3 {
-    font-size: 32px;
+    font-size: 30px !important;
+    line-height: 40px;
   }
   .productTips .tipsInfo .communityText p {
-    font-size: 22px !important;
+    font-size: 18px !important;
+    line-height: 24px;
     width: 80%;
   }
   .productTips .tipsInfo .communityText a {
-    font-size: 22px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .productBranches {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .productBranches .bgBack {
+    height: 80%;
+  }
+  .productBranches .wrapper {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    width: 80vw !important;
+    padding: 30px 80px !important;
+    margin: 0 !important;
   }
   .productBranches .wrapper h2 {
-    font-size: 45px;
-    font-weight: bolder;
-    color: #292929;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 900 !important;
   }
   .productBranches .wrapper form .search {
-    width: 60vw;
-    height: 80px;
+    width: 50vw;
+    height: 60px;
+    border-radius: 20px;
   }
   .productBranches .wrapper form .search img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .productBranches .wrapper form .search input {
-    font-size: 22px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .search input::-webkit-input-placeholder {
-    color: #292929;
-    font-size: 22px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .search input:-ms-input-placeholder {
-    color: #292929;
-    font-size: 22px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .search input::-ms-input-placeholder {
-    color: #292929;
-    font-size: 22px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .search input::placeholder {
-    color: #292929;
-    font-size: 22px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .search input:focus {
     outline: none;
+  }
+  .productBranches .wrapper form .radios {
+    margin-top: 30px !important;
   }
   .productBranches .wrapper form .radios .container {
     position: relative;
@@ -6469,42 +6741,62 @@ footer .footerEnd p {
   .productBranches .wrapper form .radios .container .checkmark {
     height: 30px;
     width: 30px;
+    border-width: 4px;
   }
   .productBranches .wrapper form .radios .container .checkmark:after {
-    top: 2px;
-    left: 2.5px;
-    right: 1px;
-    bottom: 1px;
-    width: 15px;
-    height: 15px;
+    top: 4px;
+    left: 4.5px;
+    right: 4px;
+    bottom: 4px;
+    width: 13px;
+    height: 13px;
   }
   .productBranches .wrapper form .radios .container p {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
   }
-  .productBranches .wrapper p {
-    font-size: 30px;
+  .productBranches .wrapper .buildtxt {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 30px !important;
+  }
+  .productBranches .wrapper .hardware {
+    width: 100%;
+    margin-top: 0 !important;
+    padding: 0;
+    margin: 0;
   }
   .productBranches .wrapper .hardware .hardwareCard {
-    width: auto;
-    height: 280px;
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+    padding: 15px;
   }
   .productBranches .wrapper .hardware .hardwareCard .info {
-    width: 80%;
-    height: 38px;
+    min-width: 70%;
+    min-height: 30px;
     padding: 0 10px;
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 15px;
+    border-radius: 20px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay * {
+    margin: 0;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo {
     width: 80%;
-    height: 38px;
+    height: 30px;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt {
-    font-size: 16px;
+    font-size: 14px;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .distance p {
     font-size: 14px;
-    color: #1226AA;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .distance img {
     width: 22.39px;
@@ -6513,450 +6805,667 @@ footer .footerEnd p {
   .productBranches .wrapper .hardware .hardwareCard .overlay:hover {
     opacity: 1;
   }
+  .roofingBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px;
+    padding-bottom: 48px !important;
+  }
   .roofingBanner .back {
-    height: 58%;
+    height: 60%;
+  }
+  .roofingBanner .bannerTxt .top {
+    margin-bottom: 0px !important;
   }
   .roofingBanner .bannerTxt h1 {
-    font-size: 55px;
-    line-height: 60px;
-  }
-  .roofingBanner .bannerTxt p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .roofingBanner .bannerTxt h5 {
-    font-size: 20px;
-  }
-  .roofingBanner .bannerTxt h6 {
-    font-size: 20px;
-    color: white;
-    font-weight: bolder;
-  }
-  .roofingBanner .bannerTxt img {
-    width: 30px;
-    height: 30px;
-  }
-  .productsExplore h1, .subCategoryForm h1 {
     font-size: 45px;
   }
-  .productsExplore .exploreWrapper .tiles .choice, .subCategoryForm .exploreWrapper .tiles .choice {
-    width: auto;
-    height: 90px;
+  .roofingBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .roofingBanner .bannerTxt h5 {
     font-size: 18px;
-    line-height: 24px;
-    font-weight: normal;
+  }
+  .roofingBanner .bannerTxt h6 {
+    font-size: 18px;
+  }
+  .roofingBanner .bannerTxt img {
+    width: 25px;
+    height: 25px;
+  }
+  .roofingBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .productsExplore, .subCategoryForm {
+    padding-top: 48px;
+  }
+  .productsExplore h1, .subCategoryForm h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  .productsExplore .exploreWrapper, .subCategoryForm .exploreWrapper {
+    margin-top: 30px;
+    grid-gap: 50px;
+  }
+  .productsExplore .exploreWrapper .imgSection, .subCategoryForm .exploreWrapper .imgSection {
+    width: 100%;
+    height: 60vh !important;
+  }
+  .productsExplore .exploreWrapper .imgSection img, .subCategoryForm .exploreWrapper .imgSection img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .productsExplore .exploreWrapper .tiles, .subCategoryForm .exploreWrapper .tiles {
+    grid-gap: 15px !important;
+  }
+  .productsExplore .exploreWrapper .tiles .choice, .subCategoryForm .exploreWrapper .tiles .choice {
+    width: 100%;
+    height: 60px;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 15px;
+  }
+  .productsExplore .exploreWrapper .tileTypes, .subCategoryForm .exploreWrapper .tileTypes {
+    margin-top: 30px;
   }
   .productsExplore .exploreWrapper .tileTypes h4, .subCategoryForm .exploreWrapper .tileTypes h4 {
     font-size: 20px;
     line-height: 32px;
-    font-weight: bold;
-    color: #292929;
+  }
+  .productsExplore .exploreWrapper .tileTypes .gallery, .subCategoryForm .exploreWrapper .tileTypes .gallery {
+    margin-top: 10px;
   }
   .productsExplore .exploreWrapper .tileTypes .galleryCard, .subCategoryForm .exploreWrapper .tileTypes .galleryCard {
     cursor: pointer;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .productsExplore .exploreWrapper .tileTypes .galleryCard img, .subCategoryForm .exploreWrapper .tileTypes .galleryCard img {
     width: 100px;
     height: 100px;
-    border-radius: 25px;
+    border-radius: 20px;
   }
   .productsExplore .exploreWrapper .tileTypes .galleryCard p, .subCategoryForm .exploreWrapper .tileTypes .galleryCard p {
-    font-size: 16px;
-    color: #292929;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px !important;
+  }
+  .productsExplore .exploreWrapper .inputs, .subCategoryForm .exploreWrapper .inputs {
+    margin-top: 40px;
   }
   .productsExplore .exploreWrapper .inputs h3, .subCategoryForm .exploreWrapper .inputs h3 {
-    font-size: 30px;
-    line-height: 40px;
-    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
   }
   .productsExplore .exploreWrapper .inputs label, .subCategoryForm .exploreWrapper .inputs label {
     font-size: 16px;
     line-height: 24px;
-    font-weight: normal;
   }
   .productsExplore .exploreWrapper .inputs .numberInput, .subCategoryForm .exploreWrapper .inputs .numberInput {
     width: 100%;
-    height: 90px;
+    height: 60px;
   }
   .productsExplore .exploreWrapper .inputs .numberInput .numberBtns, .subCategoryForm .exploreWrapper .inputs .numberInput .numberBtns {
     height: 100%;
     width: 30%;
     padding: 2px 4px;
+    padding: 10px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .productsExplore .exploreWrapper .inputs .numberInput .numberBtns span, .subCategoryForm .exploreWrapper .inputs .numberInput .numberBtns span {
+    margin: 0 !important;
   }
   .productsExplore .exploreWrapper .inputs .numberInput .numberBtns img, .subCategoryForm .exploreWrapper .inputs .numberInput .numberBtns img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     -o-object-fit: contain;
        object-fit: contain;
   }
   .productsExplore .exploreWrapper .inputs .numberInput input, .subCategoryForm .exploreWrapper .inputs .numberInput input {
     width: 100%;
     height: 100%;
-    font-size: 22px;
+    font-size: 18px;
     padding: 0 10px;
   }
   .productsExplore .exploreWrapper button, .subCategoryForm .exploreWrapper button {
-    width: 350px;
-    height: 90px;
-    font-size: 22px;
+    width: 300px;
+    height: 60px;
+    font-size: 18px;
     line-height: 24px;
+    margin-top: 40px;
   }
   .materialsSlider {
-    background: #F4F4F4;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .materialsSlider h1 {
-    font-size: 45px;
-    line-height: 56px;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 0 !important;
+  }
+  .materialsSlider .materialsSlider {
+    margin-top: 30px;
+    padding: 0 !important;
+    height: auto;
   }
   .materialsSlider .materialsCard {
-    width: auto;
-    height: 450px !important;
+    width: 100%;
+    height: 50vh !important;
+    border-radius: 30px;
+  }
+  .materialsSlider .materialsCard .back1 {
+    border-radius: 30px;
+  }
+  .materialsSlider .materialsCard .back2 {
+    border-radius: 30px;
+  }
+  .materialsSlider .materialsCard .cardWrapper {
+    border-radius: 30px;
   }
   .materialsSlider .materialsCard .cardWrapper span {
-    height: 70px;
-    font-size: 22px;
-    line-height: 32px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 20px;
   }
   .materialsSlider .materialsCard .cardWrapper p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .materialsSlider .materialsCard .cardWrapper a {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .materialsSlider .materialsCard .cardWrapper a img {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .faq {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .faq h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .faq .faqSlider {
+    margin: 30px 0 !important;
   }
   .faq .faqCard {
     width: 100%;
-    min-height: 80px;
+    height: 60px !important;
+    padding: 0 !important;
+    border-radius: 20px;
   }
   .faq .faqCard p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .faq .accordion .accord {
-    min-height: 80px;
+    min-height: 60px;
+    padding: 10px 30px !important;
   }
   .faq .accordion .accord span h4 {
-    font-size: 25px;
-    line-height: 32px;
-    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
   }
   .faq .accordion .accord span img {
-    width: 50.63px;
-    height: 50.63px;
+    width: 40.63px;
+    height: 40.63px;
   }
   .faq .accordion .accord p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .profileGrid {
+    padding: 0 96px !important;
+    padding-bottom: 48px !important;
   }
   .profileGrid .profileIntro h1 {
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .profileGrid .profileIntro p {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .profileGrid .profileCard {
-    min-height: 500px;
+    min-height: 300px;
     width: auto;
   }
   .profileGrid .profileCard .imgWrapper {
     width: auto;
-    height: 350px;
+    height: 250px;
+  }
+  .profileGrid .profileCard .imgWrapper img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .profileGrid .profileCard .cardTxt {
+    height: auto;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px !important;
+  }
+  .profileGrid .profileCard .cardTxt * {
+    margin: 0;
   }
   .profileGrid .profileCard .cardTxt h4 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 5px !important;
   }
   .profileGrid .profileCard .cardTxt p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
   }
+  .prodBenefits {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .prodBenefits .benfWrapper {
+    grid-gap: 30px;
+  }
   .prodBenefits .benfWrapper img {
-    height: 500px;
+    height: 60vh;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .prodBenefits .benfWrapper h1 {
-    font-size: 45px;
-    line-height: 56px;
+    font-size: 32px;
+    line-height: 40px;
   }
-  .prodBenefits .benfWrapper p {
+  .prodBenefits .benfWrapper .featureText {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .prodBenefits .benfWrapper h3 {
     font-size: 24px;
     line-height: 32px;
   }
-  .prodBenefits .benfWrapper h3 {
-    font-size: 32px;
-    line-height: 40px;
-  }
   .prodBenefits .benfWrapper .list p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 24px;
   }
   .prodBenefits .benfWrapper .list img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .featuresGrid {
+    padding-top: 0 !important;
+    padding-bottom: 48px !important;
+  }
+  .featuresGrid .benfGrid {
+    grid-gap: 10px;
   }
   .featuresGrid h4 {
-    font-size: 32px;
-    line-height: 45px;
+    font-size: 24px;
+    line-height: 32px;
+    width: 50%;
   }
   .featuresGrid .benf img {
-    width: 120px;
-    height: 120px;
-  }
-  .featuresGrid .benf h5 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .featuresGrid .benf p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .styleResources .wrapper h2 {
-    font-size: 45px;
-  }
-  .styleResources .wrapper form .search {
-    width: 60vw;
+    width: 80px;
     height: 80px;
   }
+  .featuresGrid .benf h5 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .featuresGrid .benf p {
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+  }
+  .styleResources {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .styleResources .bgBack {
+    height: 80%;
+  }
+  .styleResources .wrapper {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    width: 80vw !important;
+    padding: 30px 80px !important;
+    margin: 0 !important;
+  }
+  .styleResources .wrapper h2 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 900 !important;
+  }
+  .styleResources .wrapper form .search {
+    width: 50vw;
+    height: 60px;
+    border-radius: 20px;
+  }
   .styleResources .wrapper form .search img {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .styleResources .wrapper form .search input {
-    font-size: 22px;
+    font-size: 18px;
   }
   .styleResources .wrapper form .search input::-webkit-input-placeholder {
-    font-size: 22px;
+    font-size: 18px;
   }
   .styleResources .wrapper form .search input:-ms-input-placeholder {
-    font-size: 22px;
+    font-size: 18px;
   }
   .styleResources .wrapper form .search input::-ms-input-placeholder {
-    font-size: 22px;
+    font-size: 18px;
   }
   .styleResources .wrapper form .search input::placeholder {
-    font-size: 22px;
+    font-size: 18px;
   }
   .styleResources .wrapper form .search input:focus {
     outline: none;
   }
-  .styleResources .wrapper .helpTxt {
-    font-size: 30px;
+  .styleResources .wrapper p.helpTxt {
+    font-size: 24px !important;
+    line-height: 32px;
+    margin: 40px 0 !important;
+  }
+  .styleResources .resources {
+    width: 100%;
+    margin-top: 0 !important;
+    padding: 0;
+    margin: 0;
   }
   .styleResources .resources .resourceCard {
-    width: auto;
-    height: 300px;
-    border-radius: 50px;
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+    padding: 15px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 0;
   }
   .styleResources .resources .resourceCard .info {
-    min-width: 184px;
-    height: 38px;
-    padding: 0 20px;
-    font-size: 20px;
+    min-width: 70%;
+    height: auto !important;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 0;
   }
   .styleResources .resources .resourceCard .resourceTxt {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100% !important;
+    margin: 0;
+  }
+  .styleResources .resources .resourceCard .arrowBtn {
+    margin: 0;
   }
   .styleResources .resources .resourceCard .arrowBtn img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .subCategorySlider {
+    padding-bottom: 30px !important;
   }
   .subCategorySlider .subCard {
-    width: 340px;
-    height: 95px;
-    border-radius: 25px;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
   }
   .subCategorySlider .subCard h6 {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .subCategoryForm {
+    padding-top: 24px !important;
+    padding-bottom: 0 !important;
+  }
+  .subCategoryForm .imgSection img {
+    height: 65vh !important;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .subCategoryForm .formSection {
     z-index: 5 !important;
   }
   .subCategoryForm .formSection .top h1 {
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .subCategoryForm .formSection .top p {
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    width: 80%;
   }
   .subCategoryForm .formSection .tileColors h6 {
     font-size: 20px;
     line-height: 30px;
   }
+  .subCategoryForm .formSection .tileColors .clrs {
+    margin-top: 10px !important;
+  }
   .subCategoryForm .formSection .tileColors span {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
   .subCategoryForm .formSection .tileTypes h4 {
-    font-size: 20px;
-    line-height: 32px;
-    font-weight: bold;
-    color: #292929;
+    font-size: 18px;
+    line-height: 24px;
   }
-  .subCategoryForm .formSection .tileTypes .galleryCard {
-    cursor: pointer;
+  .subCategoryForm .formSection .tileTypes .galleryCard * {
+    margin: 0 !important;
   }
   .subCategoryForm .formSection .tileTypes .galleryCard img {
     width: 100px;
     height: 100px;
-    border-radius: 25px;
+    border-radius: 20px;
   }
   .subCategoryForm .formSection .tileTypes .galleryCard p {
-    font-size: 16px;
-    color: #292929;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .subCategoryForm .formSection .inputs {
+    margin-top: 40px;
   }
   .subCategoryForm .formSection .inputs h3 {
-    font-size: 24px !important;
-    line-height: 40px;
-    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
   }
   .subCategoryForm .formSection .inputs label {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
-    font-weight: normal;
   }
   .subCategoryForm .formSection .inputs .numberInput {
     width: 100%;
-    height: 90px;
+    height: 60px;
   }
   .subCategoryForm .formSection .inputs .numberInput .numberBtns {
     height: 100%;
     width: 30%;
     padding: 2px 4px;
+    padding: 10px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .subCategoryForm .formSection .inputs .numberInput .numberBtns span {
+    margin: 0 !important;
   }
   .subCategoryForm .formSection .inputs .numberInput .numberBtns img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     -o-object-fit: contain;
        object-fit: contain;
   }
   .subCategoryForm .formSection .inputs .numberInput input {
     width: 100%;
     height: 100%;
-    font-size: 22px;
+    font-size: 18px;
     padding: 0 10px;
   }
-  .subCategoryForm .formSection button {
-    width: 350px;
-    height: 90px;
-    font-size: 22px;
+  .subCategoryForm .formSection .assembleButtons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    width: 100% !important;
+  }
+  .subCategoryForm .formSection .assembleButtons a {
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 !important;
+  }
+  .subCategoryForm .formSection .assembleButtons a * {
+    font-size: 18px;
     line-height: 24px;
   }
+  .subCategoryForm .formSection .assembleButtons .plan img {
+    height: 40px;
+    width: 40px;
+  }
   .subCategorySpecs {
-    background: #F4F4F4;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .subCategorySpecs .heritageGrid {
+    margin-top: 30px !important;
   }
   .subCategorySpecs h1 {
-    font-size: 45px;
-    line-height: 50px;
-  }
-  .subCategorySpecs .benf {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 800 !important;
   }
   .subCategorySpecs .benf img {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
   }
   .subCategorySpecs .benf h5 {
-    font-size: 30px;
-    line-height: 40px;
-    margin-top: 10px !important;
+    font-size: 22px;
+    line-height: 32px;
   }
   .subCategorySpecs .benf p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+  }
+  .subCategoryComments {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .subCategoryComments .comments {
     display: -ms-grid !important;
     display: grid !important;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    -ms-grid-columns: 1fr 1.5fr;
+        grid-template-columns: 1fr 1.5fr;
+    grid-gap: 40px !important;
   }
   .subCategoryComments .comments .imgWrapper {
     width: auto;
-    height: 80vh;
+    height: 60vh;
+    margin: 0 !important;
   }
   .subCategoryComments .comments .imgWrapper .linkBtns .commBtn {
-    width: 70px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
   .subCategoryComments .comments .imgWrapper .linkBtns .commBtn img {
     width: 20.82px;
     height: 25.03px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .subCategoryComments .comments .commentsText {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 !important;
   }
   .subCategoryComments .comments .commentsText .quote {
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 80px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .subCategoryComments .comments .commentsText h1 {
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 20px !important;
   }
   .subCategoryComments .comments .commentsText p {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
     width: 70%;
+    margin: 10px 0 !important;
+  }
+  .subCategoryComments .comments .commentsText .person {
+    margin-top: 10px !important;
+  }
+  .subCategoryComments .comments .commentsText .person * {
+    margin: 0;
   }
   .subCategoryComments .comments .commentsText .person h4 {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px !important;
   }
   .subCategoryComments .comments .commentsText .person h6 {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .subCategoryComments .gallery {
+    margin-top: 0 !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
   }
   .subCategoryComments .gallery h1 {
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 30px !important;
+  }
+  .subCategoryComments .gallery .heritageSlider {
+    margin-top: 48px !important;
   }
   .subCategoryComments .gallery .heritageImg {
-    width: 579px;
-    height: 475px;
-  }
-  .subCategoryComments .imgLightbox {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: #EACBD1;
-  }
-  .subCategoryComments .imgLightbox .modalWrapper {
-    position: relative;
   }
   .subCategoryComments .imgLightbox .modalWrapper .close {
-    position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 5vh;
+    right: 5vw;
   }
   .subCategoryComments .imgLightbox .modalWrapper .close img {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
   }
   .subCategoryComments .imgLightbox .modalWrapper .modalContent .previous img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
   .subCategoryComments .imgLightbox .modalWrapper .modalContent .modalImage {
     width: 50vw;
@@ -6965,20 +7474,27 @@ footer .footerEnd p {
        object-fit: cover;
   }
   .subCategoryComments .imgLightbox .modalWrapper .modalContent .next img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
+  .productBanner, .roofingBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
   .productBanner .back, .roofingBanner .back {
-    height: 55%;
+    height: 55% !important;
   }
   .productBanner .bannerTxt h1, .roofingBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 40px;
   }
   .productBanner .bannerTxt p, .roofingBanner .bannerTxt p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
   }
   .productBanner .bannerTxt h5, .roofingBanner .bannerTxt h5 {
@@ -6987,155 +7503,223 @@ footer .footerEnd p {
   .productBanner .bannerTxt h6, .roofingBanner .bannerTxt h6 {
     font-size: 16px;
   }
+  .productBanner .bannerTxt img, .roofingBanner .bannerTxt img {
+    width: 25px;
+    height: 25px;
+  }
   .productBanner .bannerImg, .roofingBanner .bannerImg {
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    margin-top: 0px !important;
+  }
+  .productGrids {
+    padding: 0 96px !important;
+    padding-bottom: 48px !important;
   }
   .productGrids h4 {
     font-size: 24px;
     line-height: 32px;
+    font-weight: 800;
+  }
+  .productGrids .prGrid {
+    margin-top: 30px !important;
+    grid-gap: 30px;
   }
   .productGrids .productCard {
-    height: 400px !important;
+    height: 300px;
   }
-  .productGrids .productCard .cardTxt {
-    padding: 20px 30px !important;
+  .productGrids .productCard .cardTxt * {
+    margin: 0 !important;
   }
   .productGrids .productCard .cardTxt h4 {
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
   }
   .productGrids .productCard .cardTxt p {
     font-size: 16px;
     line-height: 20px;
   }
+  .productTips {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .productTips .tipsHeader {
+    margin-bottom: 20px;
+  }
   .productTips .tipsHeader h1 {
-    font-size: 32px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .productTips .tipsHeader p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
   .productTips .tipsInfo {
-    display: -ms-grid !important;
-    display: grid !important;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.3fr 1fr;
+        grid-template-columns: 1.3fr 1fr;
+    grid-gap: 40px;
   }
   .productTips .tipsInfo .imgWrapper {
-    width: auto !important;
-    height: 400px;
+    width: 100%;
+    height: 55vh;
+    margin: 0;
+  }
+  .productTips .tipsInfo .imgWrapper img {
+    width: 100%;
+    height: 100%;
+    -o-object-position: top;
+       object-position: top;
   }
   .productTips .tipsInfo .imgWrapper .linkBtns .commBtn {
-    width: 70px;
+    width: 50px;
     height: 50px;
   }
   .productTips .tipsInfo .imgWrapper .linkBtns .commBtn img {
-    width: 15.82px;
+    width: 20.82px;
     height: 20.03px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .productTips .tipsInfo .communityText {
+    margin: 0;
+  }
+  .productTips .tipsInfo .communityText .names {
+    margin-bottom: 10px !important;
   }
   .productTips .tipsInfo .communityText h3 {
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 24px !important;
+    line-height: 32px;
   }
   .productTips .tipsInfo .communityText p {
     font-size: 16px !important;
-    line-height: 24px;
-    width: 90%;
+    line-height: 20px;
+    width: 80%;
   }
   .productTips .tipsInfo .communityText a {
     font-size: 16px;
+    line-height: 20px;
+  }
+  .productBranches {
+    padding-bottom: 48px;
+  }
+  .productBranches .bgBack {
+    height: 80%;
   }
   .productBranches .wrapper {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
     width: 80vw !important;
+    padding: 30px 50px !important;
+    margin: 0 !important;
   }
   .productBranches .wrapper h2 {
-    font-size: 40px;
-    line-height: 50p8;
-    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 900 !important;
   }
   .productBranches .wrapper form .search {
-    width: 60vw;
+    width: 50vw;
     height: 60px;
+    border-radius: 20px;
   }
   .productBranches .wrapper form .search img {
     width: 30px;
     height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .productBranches .wrapper form .search input {
     font-size: 18px;
   }
   .productBranches .wrapper form .search input::-webkit-input-placeholder {
-    color: #292929;
     font-size: 18px;
   }
   .productBranches .wrapper form .search input:-ms-input-placeholder {
-    color: #292929;
     font-size: 18px;
   }
   .productBranches .wrapper form .search input::-ms-input-placeholder {
-    color: #292929;
     font-size: 18px;
   }
   .productBranches .wrapper form .search input::placeholder {
-    color: #292929;
     font-size: 18px;
+  }
+  .productBranches .wrapper form .search input:focus {
+    outline: none;
+  }
+  .productBranches .wrapper form .radios {
+    margin-top: 30px !important;
   }
   .productBranches .wrapper form .radios .container {
     position: relative;
-    padding-left: 30px;
+    padding-left: 35px;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .productBranches .wrapper form .radios .container .checkmark {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
+    border-width: 4px;
   }
   .productBranches .wrapper form .radios .container .checkmark:after {
-    top: 3px;
-    left: 3px;
-    right: 3px;
-    bottom: 3px;
-    width: 14px;
-    height: 14px;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    width: 12px;
+    height: 12px;
   }
   .productBranches .wrapper form .radios .container p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
   }
-  .productBranches .wrapper p {
-    font-size: 24px;
+  .productBranches .wrapper .buildtxt {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 30px !important;
   }
   .productBranches .wrapper .hardware {
-    -ms-grid-columns: 1fr 1fr !important;
-        grid-template-columns: 1fr 1fr !important;
-    width: 100% !important;
+    width: 100%;
+    margin-top: 0 !important;
+    padding: 0;
+    margin: 0;
+    grid-gap: 20px;
   }
   .productBranches .wrapper .hardware .hardwareCard {
-    width: auto !important;
-    height: 280px;
-    padding: 10px !important;
-    border-radius: 25px !important;
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+    padding: 15px;
   }
   .productBranches .wrapper .hardware .hardwareCard .info {
-    width: auto;
-    height: 38px;
+    min-width: 70%;
+    min-height: 20px;
     padding: 0 10px;
-    font-size: 18px;
+    font-size: 14px;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay {
-    border-radius: 25px !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 15px;
+    border-radius: 20px;
+  }
+  .productBranches .wrapper .hardware .hardwareCard .overlay * {
+    margin: 0;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo {
     width: 80%;
-    height: 38px;
+    height: 30px;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt {
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px !important;
+    width: 100%;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .distance p {
-    font-size: 16px;
-    color: #1226AA;
+    font-size: 14px;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .distance img {
     width: 22.39px;
@@ -7144,210 +7728,338 @@ footer .footerEnd p {
   .productBranches .wrapper .hardware .hardwareCard .overlay:hover {
     opacity: 1;
   }
+  .roofingBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px;
+    padding-bottom: 48px !important;
+  }
   .roofingBanner .back {
-    height: 50%;
+    height: 52% !important;
+  }
+  .roofingBanner .bannerTxt .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .roofingBanner .bannerTxt .top * {
+    margin: 0 !important;
   }
   .roofingBanner .bannerTxt h1 {
     font-size: 45px;
-    line-height: 50px;
+    line-height: 52px;
   }
   .roofingBanner .bannerTxt p {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 30px;
   }
   .roofingBanner .bannerTxt h5 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .roofingBanner .bannerTxt h6 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .roofingBanner .bannerTxt img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+  }
+  .roofingBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .productsExplore, .subCategoryForm {
+    padding-top: 48px;
   }
   .productsExplore h1, .subCategoryForm h1 {
     font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  .productsExplore .exploreWrapper, .subCategoryForm .exploreWrapper {
+    margin-top: 30px;
+    grid-gap: 40px;
+  }
+  .productsExplore .exploreWrapper .imgSection, .subCategoryForm .exploreWrapper .imgSection {
+    width: 100%;
+    height: 60vh !important;
+  }
+  .productsExplore .exploreWrapper .imgSection img, .subCategoryForm .exploreWrapper .imgSection img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .productsExplore .exploreWrapper .tiles, .subCategoryForm .exploreWrapper .tiles {
-    grid-gap: 20px;
+    grid-gap: 15px !important;
   }
   .productsExplore .exploreWrapper .tiles .choice, .subCategoryForm .exploreWrapper .tiles .choice {
-    width: auto;
-    height: 80px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: normal;
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 15px;
+  }
+  .productsExplore .exploreWrapper .tileTypes, .subCategoryForm .exploreWrapper .tileTypes {
+    margin-top: 30px;
   }
   .productsExplore .exploreWrapper .tileTypes h4, .subCategoryForm .exploreWrapper .tileTypes h4 {
     font-size: 20px;
     line-height: 32px;
-    font-weight: bold;
-    color: #292929;
+  }
+  .productsExplore .exploreWrapper .tileTypes .gallery, .subCategoryForm .exploreWrapper .tileTypes .gallery {
+    margin-top: 10px;
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
   }
   .productsExplore .exploreWrapper .tileTypes .galleryCard, .subCategoryForm .exploreWrapper .tileTypes .galleryCard {
     cursor: pointer;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 !important;
   }
   .productsExplore .exploreWrapper .tileTypes .galleryCard img, .subCategoryForm .exploreWrapper .tileTypes .galleryCard img {
     width: 100px;
     height: 100px;
-    border-radius: 25px;
+    border-radius: 20px;
   }
   .productsExplore .exploreWrapper .tileTypes .galleryCard p, .subCategoryForm .exploreWrapper .tileTypes .galleryCard p {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
-    color: #292929;
+    margin-top: 10px !important;
+  }
+  .productsExplore .exploreWrapper .inputs, .subCategoryForm .exploreWrapper .inputs {
+    margin-top: 40px;
   }
   .productsExplore .exploreWrapper .inputs h3, .subCategoryForm .exploreWrapper .inputs h3 {
     font-size: 24px;
     line-height: 32px;
-    font-weight: bold;
   }
   .productsExplore .exploreWrapper .inputs label, .subCategoryForm .exploreWrapper .inputs label {
     font-size: 16px;
     line-height: 24px;
-    font-weight: normal;
   }
-  .productsExplore .exploreWrapper .inputs .inputWrapper, .subCategoryForm .exploreWrapper .inputs .inputWrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  .productsExplore .exploreWrapper .inputs .label2, .subCategoryForm .exploreWrapper .inputs .label2 {
+    margin-bottom: 25px !important;
   }
   .productsExplore .exploreWrapper .inputs .numberInput, .subCategoryForm .exploreWrapper .inputs .numberInput {
     width: 100%;
-    height: 70px;
+    height: 60px;
   }
   .productsExplore .exploreWrapper .inputs .numberInput .numberBtns, .subCategoryForm .exploreWrapper .inputs .numberInput .numberBtns {
     height: 100%;
     width: 30%;
     padding: 2px 4px;
+    padding: 10px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .productsExplore .exploreWrapper .inputs .numberInput .numberBtns span, .subCategoryForm .exploreWrapper .inputs .numberInput .numberBtns span {
+    margin: 0 !important;
   }
   .productsExplore .exploreWrapper .inputs .numberInput .numberBtns img, .subCategoryForm .exploreWrapper .inputs .numberInput .numberBtns img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     -o-object-fit: contain;
        object-fit: contain;
-    margin: 0 !important;
-    padding: 0 !important;
   }
   .productsExplore .exploreWrapper .inputs .numberInput input, .subCategoryForm .exploreWrapper .inputs .numberInput input {
     width: 100%;
     height: 100%;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0 10px;
   }
   .productsExplore .exploreWrapper button, .subCategoryForm .exploreWrapper button {
     width: 300px;
-    height: 70px;
+    height: 60px;
     font-size: 18px;
     line-height: 24px;
+    margin-top: 40px;
+  }
+  .materialsSlider {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .materialsSlider h1 {
     font-size: 32px;
     line-height: 40px;
+    margin-bottom: 0 !important;
+  }
+  .materialsSlider .materialsSlider {
+    margin-top: 30px;
+    padding: 0 !important;
+    height: auto;
   }
   .materialsSlider .materialsCard {
-    width: auto;
-    height: 400px !important;
+    width: 100%;
+    height: 50vh !important;
+    border-radius: 30px;
+  }
+  .materialsSlider .materialsCard .back1 {
+    border-radius: 30px;
+  }
+  .materialsSlider .materialsCard .back2 {
+    border-radius: 30px;
+  }
+  .materialsSlider .materialsCard .cardWrapper {
+    border-radius: 30px;
   }
   .materialsSlider .materialsCard .cardWrapper span {
-    height: 70px;
-    font-size: 20px;
-    line-height: 32px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 20px;
   }
   .materialsSlider .materialsCard .cardWrapper p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .materialsSlider .materialsCard .cardWrapper a {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .materialsSlider .materialsCard .cardWrapper a img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .faq {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .faq h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .faq .faqSlider {
+    margin: 30px 0 !important;
   }
   .faq .faqCard {
-    width: auto;
-    height: 80px;
+    width: 100%;
+    height: 60px !important;
+    padding: 0 !important;
+    border-radius: 20px;
   }
   .faq .faqCard p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .faq .accordion .accord {
     min-height: 60px;
-  }
-  .faq .accordion .accord span {
-    margin-bottom: 10px;
+    padding: 10px 30px !important;
   }
   .faq .accordion .accord span h4 {
     font-size: 20px;
-    line-height: 32px;
-    font-weight: bold;
+    line-height: 30px;
   }
   .faq .accordion .accord span img {
     width: 40.63px;
     height: 40.63px;
   }
   .faq .accordion .accord p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
+  .profileGrid {
+    padding: 0 96px !important;
+    padding-bottom: 48px !important;
+  }
   .profileGrid .profileIntro h1 {
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .profileGrid .profileIntro p {
     font-size: 20px;
-    line-height: 32px;
+    line-height: 24px;
   }
   .profileGrid .profileCard {
-    min-height: 500px;
+    min-height: 300px;
     width: auto;
   }
   .profileGrid .profileCard .imgWrapper {
     width: auto;
-    height: 300px;
+    height: 250px;
+  }
+  .profileGrid .profileCard .imgWrapper img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .profileGrid .profileCard .cardTxt {
+    height: auto;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px !important;
+  }
+  .profileGrid .profileCard .cardTxt * {
+    margin: 0;
   }
   .profileGrid .profileCard .cardTxt h4 {
     font-size: 24px;
     line-height: 32px;
+    margin-bottom: 5px !important;
   }
   .profileGrid .profileCard .cardTxt p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .prodBenefits {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .prodBenefits .benfWrapper {
+    grid-gap: 30px;
   }
   .prodBenefits .benfWrapper img {
-    height: 500px;
+    height: 60vh;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .prodBenefits .benfWrapper h1 {
     font-size: 32px;
     line-height: 40px;
   }
-  .prodBenefits .benfWrapper p {
+  .prodBenefits .benfWrapper .featureText {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
   .prodBenefits .benfWrapper h3 {
     font-size: 24px;
     line-height: 32px;
   }
   .prodBenefits .benfWrapper .list p {
-    font-size: 18px;
-    line-height: 34px;
+    font-size: 16px;
+    line-height: 24px;
   }
   .prodBenefits .benfWrapper .list img {
     width: 15px;
     height: 15px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .featuresGrid {
+    padding-top: 0 !important;
+    padding-bottom: 48px !important;
+    padding-left: 96px !important;
+  }
+  .featuresGrid .benfGrid {
+    grid-gap: 20px;
   }
   .featuresGrid h4 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    width: 50%;
   }
   .featuresGrid .benf {
     -webkit-box-orient: vertical;
@@ -7355,166 +8067,246 @@ footer .footerEnd p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .featuresGrid .benf * {
+    margin: 0 !important;
+  }
   .featuresGrid .benf img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .featuresGrid .benf h5 {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
   }
   .featuresGrid .benf p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+  }
+  .styleResources {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .styleResources .bgBack {
+    height: 80%;
+  }
+  .styleResources .wrapper {
+    width: 80vw !important;
+    padding: 30px 50px !important;
+    margin: 0 !important;
   }
   .styleResources .wrapper h2 {
-    font-size: 45px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .styleResources .wrapper form .search {
-    width: 60vw;
+    width: 50vw;
     height: 60px;
+    border-radius: 20px;
   }
   .styleResources .wrapper form .search img {
     width: 30px;
     height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .styleResources .wrapper form .search input {
-    font-size: 20px;
+    font-size: 18px;
   }
   .styleResources .wrapper form .search input::-webkit-input-placeholder {
-    font-size: 20px;
+    font-size: 18px;
   }
   .styleResources .wrapper form .search input:-ms-input-placeholder {
-    font-size: 20px;
+    font-size: 18px;
   }
   .styleResources .wrapper form .search input::-ms-input-placeholder {
-    font-size: 20px;
+    font-size: 18px;
   }
   .styleResources .wrapper form .search input::placeholder {
-    font-size: 20px;
+    font-size: 18px;
   }
   .styleResources .wrapper form .search input:focus {
     outline: none;
   }
-  .styleResources .wrapper .helpTxt {
-    font-size: 30px;
-    text-align: center;
-    margin: 20px 0 !important;
+  .styleResources .wrapper p.helpTxt {
+    font-size: 20px !important;
+    line-height: 30px;
+    margin: 40px 0 !important;
   }
   .styleResources .resources {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    margin-top: 20px !important;
+    grid-gap: 20px !important;
   }
   .styleResources .resources .resourceCard {
-    width: 300px;
-    height: 300px;
-    border-radius: 50px;
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+    padding: 15px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 0;
   }
   .styleResources .resources .resourceCard .info {
-    min-width: 184px;
-    height: 38px;
-    padding: 0 20px;
-    font-size: 20px;
+    min-width: 70%;
+    height: auto !important;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 0;
   }
   .styleResources .resources .resourceCard .resourceTxt {
-    font-size: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100% !important;
+    margin: 0;
+  }
+  .styleResources .resources .resourceCard .arrowBtn {
+    margin: 0;
   }
   .styleResources .resources .resourceCard .arrowBtn img {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .subCategorySlider {
+    padding-bottom: 30px !important;
   }
   .subCategorySlider .subCard {
-    width: auto;
-    height: 80px;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
   }
   .subCategorySlider .subCard h6 {
     font-size: 18px;
     line-height: 24px;
   }
+  .subCategoryForm {
+    padding-top: 24px !important;
+    padding-bottom: 0 !important;
+  }
+  .subCategoryForm .imgSection img {
+    height: 65vh !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .subCategoryForm .formSection {
+    z-index: 5 !important;
+  }
   .subCategoryForm .formSection .top h1 {
-    font-size: 45px;
+    font-size: 32px;
     line-height: 40px;
   }
   .subCategoryForm .formSection .top p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
+    font-weight: 700;
+    width: 80%;
   }
   .subCategoryForm .formSection .tileColors h6 {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .subCategoryForm .formSection .tileColors .clrs {
+    margin-top: 10px !important;
   }
   .subCategoryForm .formSection .tileColors span {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
   .subCategoryForm .formSection .tileTypes h4 {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .subCategoryForm .formSection .tileTypes .galleryCard * {
+    margin: 0 !important;
   }
   .subCategoryForm .formSection .tileTypes .galleryCard img {
     width: 100px;
     height: 100px;
+    border-radius: 20px;
   }
   .subCategoryForm .formSection .tileTypes .galleryCard p {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 20px;
     text-align: center;
-    color: #292929;
+  }
+  .subCategoryForm .formSection .inputs {
+    margin-top: 40px;
   }
   .subCategoryForm .formSection .inputs h3 {
     font-size: 24px;
     line-height: 32px;
-    font-weight: bold;
   }
   .subCategoryForm .formSection .inputs label {
     font-size: 16px;
     line-height: 24px;
-    font-weight: normal;
   }
-  .subCategoryForm .formSection .inputs .inputWrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  .subCategoryForm .formSection .inputs .label2 {
+    margin-bottom: 25px !important;
   }
   .subCategoryForm .formSection .inputs .numberInput {
     width: 100%;
-    height: 70px;
+    height: 60px;
   }
   .subCategoryForm .formSection .inputs .numberInput .numberBtns {
     height: 100%;
     width: 30%;
     padding: 2px 4px;
+    padding: 10px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .subCategoryForm .formSection .inputs .numberInput .numberBtns span {
+    margin: 0 !important;
   }
   .subCategoryForm .formSection .inputs .numberInput .numberBtns img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     -o-object-fit: contain;
        object-fit: contain;
-    margin: 0 !important;
-    padding: 0 !important;
   }
   .subCategoryForm .formSection .inputs .numberInput input {
     width: 100%;
     height: 100%;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0 10px;
   }
-  .subCategoryForm .formSection button {
-    width: 300px;
-    height: 70px;
+  .subCategoryForm .formSection .assembleButtons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    width: 100% !important;
+  }
+  .subCategoryForm .formSection .assembleButtons a {
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 !important;
+  }
+  .subCategoryForm .formSection .assembleButtons a * {
     font-size: 18px;
     line-height: 24px;
   }
+  .subCategoryForm .formSection .assembleButtons .plan img {
+    height: 40px;
+    width: 40px;
+  }
   .subCategorySpecs {
-    background: #F4F4F4;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .subCategorySpecs .heritageGrid {
+    margin-top: 30px !important;
   }
   .subCategorySpecs h1 {
     font-size: 32px;
     line-height: 40px;
+    font-weight: 800 !important;
   }
   .subCategorySpecs .benf {
     -webkit-box-orient: vertical;
@@ -7522,76 +8314,112 @@ footer .footerEnd p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .subCategorySpecs .benf * {
+    margin: 0 !important;
+  }
   .subCategorySpecs .benf img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .subCategorySpecs .benf h5 {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
-    margin-top: 10px !important;
   }
   .subCategorySpecs .benf p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+  }
+  .subCategoryComments {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .subCategoryComments .comments {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr 1.5fr;
+        grid-template-columns: 1fr 1.5fr;
+    grid-gap: 40px !important;
   }
   .subCategoryComments .comments .imgWrapper {
     width: auto;
-    height: 70vh;
+    height: 60vh;
+    margin: 0 !important;
   }
   .subCategoryComments .comments .imgWrapper .linkBtns .commBtn {
     width: 60px;
-    height: 40px;
+    height: 60px;
   }
   .subCategoryComments .comments .imgWrapper .linkBtns .commBtn img {
-    width: 15.82px;
-    height: 20.03px;
+    width: 20.82px;
+    height: 25.03px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .subCategoryComments .comments .commentsText {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 !important;
   }
   .subCategoryComments .comments .commentsText .quote {
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 80px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .subCategoryComments .comments .commentsText h1 {
     font-size: 32px;
     line-height: 40px;
+    margin-top: 20px !important;
   }
   .subCategoryComments .comments .commentsText p {
-    font-size: 18px;
-    line-height: 24px;
-    width: 80%;
+    font-size: 20px;
+    line-height: 30px;
+    width: 70%;
+    margin: 10px 0 !important;
+  }
+  .subCategoryComments .comments .commentsText .person {
+    margin-top: 10px !important;
+  }
+  .subCategoryComments .comments .commentsText .person * {
+    margin: 0;
   }
   .subCategoryComments .comments .commentsText .person h4 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px !important;
   }
   .subCategoryComments .comments .commentsText .person h6 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .subCategoryComments .gallery {
+    margin-top: 0 !important;
+    padding-left: 96px !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
   }
   .subCategoryComments .gallery h1 {
     font-size: 32px;
     line-height: 40px;
+    margin-bottom: 30px !important;
+  }
+  .subCategoryComments .gallery .heritageSlider {
+    margin-top: 48px !important;
   }
   .subCategoryComments .gallery .heritageImg {
-    width: auto;
-    height: auto;
-  }
-  .subCategoryComments .imgLightbox .modalWrapper {
-    position: relative;
+    width: 100%;
+    height: 100%;
   }
   .subCategoryComments .imgLightbox .modalWrapper .close {
-    position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 5vh;
+    right: 5vw;
   }
   .subCategoryComments .imgLightbox .modalWrapper .close img {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
   }
   .subCategoryComments .imgLightbox .modalWrapper .modalContent .previous img {
     width: 60px;
@@ -7610,135 +8438,226 @@ footer .footerEnd p {
 }
 
 @media only screen and (max-width: 768px) {
+  .productBanner, .roofingBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
   .productBanner .back, .roofingBanner .back {
-    height: 60%;
+    height: 45% !important;
   }
   .productBanner .bannerTxt h1, .roofingBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 40px;
   }
   .productBanner .bannerTxt p, .roofingBanner .bannerTxt p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .productBanner .bannerTxt h5, .roofingBanner .bannerTxt h5 {
+    font-size: 16px;
+  }
+  .productBanner .bannerTxt h6, .roofingBanner .bannerTxt h6 {
     font-size: 14px;
-    line-height: 24px;
   }
   .productBanner .bannerTxt img, .roofingBanner .bannerTxt img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+  }
+  .productBanner .bannerImg, .roofingBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .productGrids {
+    padding: 48px !important;
+    padding-top: 0 !important;
   }
   .productGrids h4 {
     font-size: 24px;
     line-height: 32px;
+    font-weight: 800;
+  }
+  .productGrids .prGrid {
+    margin-top: 30px !important;
+    grid-gap: 30px;
+  }
+  .productGrids .productCard {
+    height: 300px;
   }
   .productGrids .productCard .cardTxt {
-    padding: 15px 25px !important;
+    padding: 10px 20px !important;
+  }
+  .productGrids .productCard .cardTxt * {
+    margin: 0 !important;
   }
   .productGrids .productCard .cardTxt h4 {
     font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
   }
   .productGrids .productCard .cardTxt p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
+  }
+  .productTips {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .productTips .tipsHeader {
+    margin-bottom: 20px;
   }
   .productTips .tipsHeader h1 {
     font-size: 30px;
+    line-height: 40px;
+  }
+  .productTips .tipsHeader p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .productTips .tipsInfo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.3fr 1fr;
+        grid-template-columns: 1.3fr 1fr;
+    grid-gap: 40px;
   }
   .productTips .tipsInfo .imgWrapper {
-    height: 350px;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+  }
+  .productTips .tipsInfo .imgWrapper img {
+    width: 100%;
+    height: 100%;
+    -o-object-position: top;
+       object-position: top;
   }
   .productTips .tipsInfo .imgWrapper .linkBtns .commBtn {
-    width: 60px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
   .productTips .tipsInfo .imgWrapper .linkBtns .commBtn img {
-    width: 10.82px;
-    height: 15.03px;
+    width: 20.82px;
+    height: 20.03px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .productTips .tipsInfo .communityText {
+    margin: 0;
+  }
+  .productTips .tipsInfo .communityText .names {
+    margin-bottom: 10px !important;
   }
   .productTips .tipsInfo .communityText h3 {
-    font-size: 24px;
+    font-size: 24px !important;
     line-height: 32px;
   }
   .productTips .tipsInfo .communityText p {
     font-size: 16px !important;
-    line-height: 24px;
-    width: 90%;
+    line-height: 20px;
+    width: 80%;
   }
   .productTips .tipsInfo .communityText a {
     font-size: 16px;
+    line-height: 20px;
+  }
+  .productBranches {
+    padding-bottom: 48px;
+  }
+  .productBranches .bgBack {
+    height: 80%;
+  }
+  .productBranches .wrapper {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    width: 90vw !important;
+    padding: 30px 50px !important;
+    margin: 0 !important;
   }
   .productBranches .wrapper h2 {
     font-size: 30px;
     line-height: 40px;
+    font-weight: 900 !important;
   }
   .productBranches .wrapper form .search {
-    width: 60vw;
+    width: 50vw;
     height: 60px;
+    border-radius: 20px;
   }
   .productBranches .wrapper form .search img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .productBranches .wrapper form .search input {
-    font-size: 16px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .search input::-webkit-input-placeholder {
-    color: #292929;
-    font-size: 16px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .search input:-ms-input-placeholder {
-    color: #292929;
-    font-size: 16px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .search input::-ms-input-placeholder {
-    color: #292929;
-    font-size: 16px;
+    font-size: 18px;
   }
   .productBranches .wrapper form .search input::placeholder {
-    color: #292929;
-    font-size: 16px;
+    font-size: 18px;
+  }
+  .productBranches .wrapper form .search input:focus {
+    outline: none;
+  }
+  .productBranches .wrapper form .radios {
+    margin-top: 30px !important;
   }
   .productBranches .wrapper form .radios .container {
     position: relative;
-    padding-left: 0px;
+    padding-left: 35px;
     margin-bottom: 5px;
     font-size: 16px;
   }
   .productBranches .wrapper form .radios .container .checkmark {
-    height: 24px;
-    width: 24px;
-    border: 4px solid #292929;
+    height: 25px;
+    width: 25px;
+    border-width: 4px;
   }
   .productBranches .wrapper form .radios .container .checkmark:after {
-    top: 3px;
-    left: 3px;
-    right: 3px;
-    bottom: 3px;
-    width: 10px;
-    height: 10px;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    width: 12px;
+    height: 12px;
   }
   .productBranches .wrapper form .radios .container p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
   }
-  .productBranches .wrapper p {
-    font-size: 18px;
+  .productBranches .wrapper .buildtxt {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 30px !important;
+  }
+  .productBranches .wrapper .hardware {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   .productBranches .wrapper .hardware .hardwareCard {
     width: auto;
-    height: 250px;
-    padding: 10px !important;
-    border-radius: 25px !important;
+    height: 200px;
+    padding: 20px !important;
+    border-radius: 20px !important;
   }
   .productBranches .wrapper .hardware .hardwareCard .info {
     width: auto;
     height: auto;
     padding: 5px 2px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay {
-    border-radius: 25px !important;
+    border-radius: 20px !important;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo {
     width: 80%;
@@ -7749,15 +8668,19 @@ footer .footerEnd p {
     margin-top: 30px !important;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .distance p {
-    font-size: 14px;
+    font-size: 16px;
     color: #1226AA;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .distance img {
     width: 22.39px;
     height: 31.98px;
   }
+  .roofingBanner {
+    padding-top: 48px;
+    padding-bottom: 48px !important;
+  }
   .roofingBanner .back {
-    height: 50% !important;
+    height: 45% !important;
   }
   .roofingBanner .bannerTxt .top {
     -webkit-box-align: start;
@@ -7765,7 +8688,8 @@ footer .footerEnd p {
             align-items: flex-start;
   }
   .roofingBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 40px;
+    line-height: 50px;
   }
   .roofingBanner .bannerTxt p {
     font-size: 16px;
@@ -7773,47 +8697,59 @@ footer .footerEnd p {
   }
   .roofingBanner .bannerTxt h5 {
     font-size: 14px;
+    line-height: 24px;
   }
   .roofingBanner .bannerTxt h6 {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
   }
   .roofingBanner .bannerTxt img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
   }
-  .productsExplore .back, .subCategoryForm .back {
-    width: 100%;
+  .roofingBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .productsExplore, .subCategoryForm {
+    padding-top: 48px;
   }
   .productsExplore h1, .subCategoryForm h1 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .productsExplore .exploreWrapper, .subCategoryForm .exploreWrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    margin-top: 30px;
     grid-gap: 20px;
-    padding: 0 48px !important;
+  }
+  .productsExplore .exploreWrapper .imgSection, .subCategoryForm .exploreWrapper .imgSection {
+    width: 100%;
+    height: 400px !important;
   }
   .productsExplore .exploreWrapper .imgSection img, .subCategoryForm .exploreWrapper .imgSection img {
-    height: 300px;
     width: 100%;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .productsExplore .exploreWrapper .tiles, .subCategoryForm .exploreWrapper .tiles {
-    grid-gap: 20px;
+    grid-gap: 10px !important;
   }
   .productsExplore .exploreWrapper .tiles .choice, .subCategoryForm .exploreWrapper .tiles .choice {
-    width: auto;
-    height: 60px;
-    font-size: 14px;
-    line-height: 18px;
+    width: 100%;
+    height: 50px;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 15px;
+  }
+  .productsExplore .exploreWrapper .tileTypes, .subCategoryForm .exploreWrapper .tileTypes {
+    margin-top: 30px;
   }
   .productsExplore .exploreWrapper .tileTypes h4, .subCategoryForm .exploreWrapper .tileTypes h4 {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 32px;
   }
   .productsExplore .exploreWrapper .tileTypes .gallery, .subCategoryForm .exploreWrapper .tileTypes .gallery {
+    margin-top: 10px;
     display: -ms-grid !important;
     display: grid !important;
     -ms-grid-columns: (1fr)[5];
@@ -7822,31 +8758,35 @@ footer .footerEnd p {
   }
   .productsExplore .exploreWrapper .tileTypes .galleryCard, .subCategoryForm .exploreWrapper .tileTypes .galleryCard {
     cursor: pointer;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 !important;
   }
   .productsExplore .exploreWrapper .tileTypes .galleryCard img, .subCategoryForm .exploreWrapper .tileTypes .galleryCard img {
     width: 100px;
-    height: 100px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 25px;
+    height: 80px;
+    border-radius: 15px;
   }
   .productsExplore .exploreWrapper .tileTypes .galleryCard p, .subCategoryForm .exploreWrapper .tileTypes .galleryCard p {
     font-size: 14px;
+    line-height: 20px;
     text-align: center;
-    color: #292929;
+    margin-top: 10px !important;
+  }
+  .productsExplore .exploreWrapper .inputs, .subCategoryForm .exploreWrapper .inputs {
+    margin-top: 40px;
   }
   .productsExplore .exploreWrapper .inputs h3, .subCategoryForm .exploreWrapper .inputs h3 {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 30px;
   }
   .productsExplore .exploreWrapper .inputs label, .subCategoryForm .exploreWrapper .inputs label {
     font-size: 16px;
     line-height: 24px;
-    font-weight: normal;
   }
-  .productsExplore .exploreWrapper .inputs .inputWrapper, .subCategoryForm .exploreWrapper .inputs .inputWrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  .productsExplore .exploreWrapper .inputs .label2, .subCategoryForm .exploreWrapper .inputs .label2 {
+    margin-bottom: 25px !important;
   }
   .productsExplore .exploreWrapper .inputs .numberInput, .subCategoryForm .exploreWrapper .inputs .numberInput {
     width: 100%;
@@ -7854,18 +8794,21 @@ footer .footerEnd p {
   }
   .productsExplore .exploreWrapper .inputs .numberInput .numberBtns, .subCategoryForm .exploreWrapper .inputs .numberInput .numberBtns {
     height: 100%;
-    width: 20%;
-    padding: 5px 4px;
+    width: 30%;
+    padding: 2px 4px;
+    padding: 10px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .productsExplore .exploreWrapper .inputs .numberInput .numberBtns span, .subCategoryForm .exploreWrapper .inputs .numberInput .numberBtns span {
     margin: 0 !important;
-    padding: 0 !important;
   }
   .productsExplore .exploreWrapper .inputs .numberInput .numberBtns img, .subCategoryForm .exploreWrapper .inputs .numberInput .numberBtns img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     -o-object-fit: contain;
        object-fit: contain;
-    margin: 0 !important;
-    padding: 0 !important;
   }
   .productsExplore .exploreWrapper .inputs .numberInput input, .subCategoryForm .exploreWrapper .inputs .numberInput input {
     width: 100%;
@@ -7874,95 +8817,145 @@ footer .footerEnd p {
     padding: 0 10px;
   }
   .productsExplore .exploreWrapper button, .subCategoryForm .exploreWrapper button {
-    width: 300px;
+    width: 200px;
     height: 60px;
     font-size: 16px;
     line-height: 24px;
+    margin-top: 40px;
+  }
+  .materialsSlider {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .materialsSlider h1 {
     font-size: 30px;
     line-height: 40px;
+    margin-bottom: 0 !important;
+  }
+  .materialsSlider .materialsSlider {
+    margin-top: 30px;
+    padding: 0 !important;
+    height: auto;
   }
   .materialsSlider .materialsCard {
-    width: auto;
+    width: 100%;
     height: 350px !important;
+    border-radius: 30px;
+  }
+  .materialsSlider .materialsCard .back1 {
+    border-radius: 20px;
+  }
+  .materialsSlider .materialsCard .back2 {
+    border-radius: 20px;
+  }
+  .materialsSlider .materialsCard .cardWrapper {
+    border-radius: 20px;
   }
   .materialsSlider .materialsCard .cardWrapper span {
-    height: 70px;
-    font-size: 20px;
-    line-height: 32px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 20px;
   }
   .materialsSlider .materialsCard .cardWrapper p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .materialsSlider .materialsCard .cardWrapper a {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .materialsSlider .materialsCard .cardWrapper a img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .faq {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .faq h1 {
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .faq .faqSlider {
+    margin: 30px 0 !important;
   }
   .faq .faqCard {
-    width: auto;
-    height: 80px;
+    width: 100%;
+    height: 60px !important;
+    padding: 0 !important;
+    border-radius: 20px;
   }
   .faq .faqCard p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
   }
   .faq .accordion .accord {
     min-height: 60px;
-  }
-  .faq .accordion .accord span {
-    margin-bottom: 10px;
+    padding: 10px 30px !important;
   }
   .faq .accordion .accord span h4 {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
   }
   .faq .accordion .accord span img {
     width: 40.63px;
     height: 40.63px;
   }
   .faq .accordion .accord p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
+  }
+  .profileGrid {
+    padding: 0 48px !important;
+    padding-bottom: 48px !important;
   }
   .profileGrid .profileIntro h1 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .profileGrid .profileIntro p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .profileGrid .profileCard {
-    min-height: 400px;
-    width: auto;
-  }
-  .profileGrid .profileCard .imgWrapper {
-    width: auto;
-    height: 200px;
-  }
-  .profileGrid .profileCard .cardTxt {
-    padding: 20px;
-  }
-  .profileGrid .profileCard .cardTxt h4 {
     font-size: 24px;
     line-height: 32px;
   }
+  .profileGrid .profileIntro p {
+    font-size: 18px !important;
+    line-height: 24px;
+  }
+  .profileGrid .profileCard {
+    height: auto;
+    width: 100%;
+  }
+  .profileGrid .profileCard .imgWrapper {
+    width: 100%;
+    height: 150px;
+  }
+  .profileGrid .profileCard .imgWrapper img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .profileGrid .profileCard .cardTxt {
+    height: auto;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 15px !important;
+  }
+  .profileGrid .profileCard .cardTxt * {
+    margin: 0;
+  }
+  .profileGrid .profileCard .cardTxt h4 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 5px !important;
+  }
   .profileGrid .profileCard .cardTxt p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+  }
+  .prodBenefits {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .prodBenefits .benfWrapper {
+    grid-gap: 30px;
   }
   .prodBenefits .benfWrapper img {
     height: 400px;
@@ -7970,16 +8963,18 @@ footer .footerEnd p {
        object-fit: cover;
   }
   .prodBenefits .benfWrapper h1 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
   }
-  .prodBenefits .benfWrapper p {
-    font-size: 16px;
+  .prodBenefits .benfWrapper p.featureText {
+    font-size: 18px !important;
     line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
   .prodBenefits .benfWrapper h3 {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 30px;
   }
   .prodBenefits .benfWrapper .list p {
     font-size: 16px;
@@ -7988,165 +8983,267 @@ footer .footerEnd p {
   .prodBenefits .benfWrapper .list img {
     width: 15px;
     height: 15px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .featuresGrid {
+    padding-top: 0 !important;
+    padding-bottom: 48px !important;
+    padding-left: 96px !important;
+  }
+  .featuresGrid .benfGrid {
+    grid-gap: 20px;
   }
   .featuresGrid h4 {
     font-size: 24px;
     line-height: 32px;
+    width: 80%;
+  }
+  .featuresGrid .benf {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .featuresGrid .benf * {
+    margin: 0 !important;
   }
   .featuresGrid .benf img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .featuresGrid .benf h5 {
     font-size: 22px;
-    line-height: 30px;
+    line-height: 32px;
   }
   .featuresGrid .benf p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
+    width: 100%;
+  }
+  .styleResources {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .styleResources .bgBack {
+    height: 80%;
+  }
+  .styleResources .wrapper {
+    width: 80vw !important;
+    padding: 30px 50px !important;
+    margin: 0 !important;
   }
   .styleResources .wrapper h2 {
-    font-size: 45px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .styleResources .wrapper form .search {
-    width: 60vw;
+    width: 50vw;
     height: 60px;
+    border-radius: 20px;
   }
   .styleResources .wrapper form .search img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .styleResources .wrapper form .search input {
-    font-size: 16px;
+    font-size: 18px;
   }
   .styleResources .wrapper form .search input::-webkit-input-placeholder {
-    font-size: 16px;
+    font-size: 18px;
   }
   .styleResources .wrapper form .search input:-ms-input-placeholder {
-    font-size: 16px;
+    font-size: 18px;
   }
   .styleResources .wrapper form .search input::-ms-input-placeholder {
-    font-size: 16px;
+    font-size: 18px;
   }
   .styleResources .wrapper form .search input::placeholder {
-    font-size: 16px;
+    font-size: 18px;
   }
-  .styleResources .wrapper .helpTxt {
-    font-size: 24px;
+  .styleResources .wrapper form .search input:focus {
+    outline: none;
+  }
+  .styleResources .wrapper p.helpTxt {
+    font-size: 20px !important;
+    line-height: 30px;
+    margin: 40px 0 !important;
     text-align: center;
-    margin: 20px 0 !important;
   }
   .styleResources .resources {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    margin-top: 20px !important;
+    grid-gap: 20px !important;
   }
   .styleResources .resources .resourceCard {
-    width: auto;
-    height: 300px;
-    border-radius: 50px;
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+    padding: 15px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 0;
   }
   .styleResources .resources .resourceCard .info {
-    min-width: 100%;
-    height: 38px;
-    padding: 0 20px;
-    font-size: 20px;
+    min-width: 70%;
+    height: auto !important;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 0;
   }
   .styleResources .resources .resourceCard .resourceTxt {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100% !important;
+    margin: 0;
+  }
+  .styleResources .resources .resourceCard .arrowBtn {
+    margin: 0;
   }
   .styleResources .resources .resourceCard .arrowBtn img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .subCategorySlider {
+    padding-bottom: 30px !important;
   }
   .subCategorySlider .subCard {
-    width: auto;
-    height: 80px;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
   }
   .subCategorySlider .subCard h6 {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
+  .subCategoryForm {
+    padding-top: 24px !important;
+    padding-bottom: 0 !important;
+  }
+  .subCategoryForm .imgSection img {
+    height: 50vh !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .subCategoryForm .formSection .top h1 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
   }
   .subCategoryForm .formSection .top p {
     font-size: 18px;
     line-height: 24px;
+    width: 80%;
   }
   .subCategoryForm .formSection .tileColors h6 {
     font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
+    line-height: 30px;
+  }
+  .subCategoryForm .formSection .tileColors .clrs {
+    margin-top: 10px !important;
   }
   .subCategoryForm .formSection .tileColors span {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
   .subCategoryForm .formSection .tileTypes h4 {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .subCategoryForm .formSection .tileTypes .galleryCard * {
+    margin: 0 !important;
   }
   .subCategoryForm .formSection .tileTypes .galleryCard img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 80px;
+    border-radius: 20px;
   }
   .subCategoryForm .formSection .tileTypes .galleryCard p {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 20px;
     text-align: center;
-    color: #292929;
+  }
+  .subCategoryForm .formSection .inputs {
+    margin-top: 40px;
   }
   .subCategoryForm .formSection .inputs h3 {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
   }
   .subCategoryForm .formSection .inputs label {
     font-size: 16px;
     line-height: 24px;
-    font-weight: normal;
   }
-  .subCategoryForm .formSection .inputs .inputWrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  .subCategoryForm .formSection .inputs .label2 {
+    margin-bottom: 25px !important;
   }
   .subCategoryForm .formSection .inputs .numberInput {
     width: 100%;
-    height: 70px;
+    height: 60px;
   }
   .subCategoryForm .formSection .inputs .numberInput .numberBtns {
     height: 100%;
-    width: 20%;
+    width: 30%;
     padding: 2px 4px;
+    padding: 10px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .subCategoryForm .formSection .inputs .numberInput .numberBtns span {
+    margin: 0 !important;
   }
   .subCategoryForm .formSection .inputs .numberInput .numberBtns img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     -o-object-fit: contain;
        object-fit: contain;
-    margin: 0 !important;
-    padding: 0 !important;
   }
   .subCategoryForm .formSection .inputs .numberInput input {
     width: 100%;
     height: 100%;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0 10px;
   }
-  .subCategoryForm .formSection button {
-    width: 300px;
-    height: 70px;
-    font-size: 18px;
-    line-height: 24px;
+  .subCategoryForm .formSection .assembleButtons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    width: 100% !important;
+  }
+  .subCategoryForm .formSection .assembleButtons a {
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 !important;
+  }
+  .subCategoryForm .formSection .assembleButtons a * {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .subCategoryForm .formSection .assembleButtons .plan img {
+    height: 30px;
+    width: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .subCategorySpecs {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .subCategorySpecs .heritageGrid {
+    margin-top: 30px !important;
   }
   .subCategorySpecs h1 {
     font-size: 32px;
     line-height: 40px;
+    font-weight: 800 !important;
   }
   .subCategorySpecs .benf {
     -webkit-box-orient: vertical;
@@ -8154,124 +9251,193 @@ footer .footerEnd p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .subCategorySpecs .benf * {
+    margin: 0 !important;
+  }
   .subCategorySpecs .benf img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .subCategorySpecs .benf h5 {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
-    margin-top: 10px !important;
   }
   .subCategorySpecs .benf p {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .subCategoryComments .back {
+    font-size: 16px;
+    line-height: 22px;
     width: 100%;
   }
+  .subCategoryComments {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .subCategoryComments .comments {
+    display: -ms-grid !important;
+    display: grid !important;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
+    grid-gap: 40px !important;
   }
   .subCategoryComments .comments .imgWrapper {
-    width: auto;
-    height: 40vh;
+    width: 100%;
+    height: 50vh;
+    margin: 0 !important;
   }
   .subCategoryComments .comments .imgWrapper .linkBtns .commBtn {
-    width: 60px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
   .subCategoryComments .comments .imgWrapper .linkBtns .commBtn img {
     width: 15.82px;
-    height: 20.03px;
-  }
-  .subCategoryComments .comments .commentsText .quote {
-    width: 100px;
-    height: 100px;
-  }
-  .subCategoryComments .comments .commentsText h1 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .subCategoryComments .comments .commentsText p {
-    font-size: 18px;
-    line-height: 24px;
-    width: 80%;
-  }
-  .subCategoryComments .comments .commentsText .person h4 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .subCategoryComments .comments .commentsText .person h6 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .subCategoryComments .gallery h1 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .subCategoryComments .gallery .heritageImg {
-    width: auto;
-    height: auto;
-  }
-  .subCategoryComments .imgLightbox .modalWrapper {
-    position: relative;
-  }
-  .subCategoryComments .imgLightbox .modalWrapper .close {
-    position: absolute;
-    top: 50px;
-    right: 50px;
-  }
-  .subCategoryComments .imgLightbox .modalWrapper .close img {
-    width: 30px;
-    height: 30px;
-  }
-  .subCategoryComments .imgLightbox .modalWrapper .modalContent .previous img {
-    width: 50px;
-    height: 50px;
+    height: 15.03px;
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .subCategoryComments .comments .commentsText {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 !important;
+  }
+  .subCategoryComments .comments .commentsText .quote {
+    width: 100px;
+    height: 80px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .subCategoryComments .comments .commentsText h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 20px !important;
+  }
+  .subCategoryComments .comments .commentsText p {
+    font-size: 18px;
+    line-height: 30px;
+    width: 70%;
+    margin: 10px 0 !important;
+  }
+  .subCategoryComments .comments .commentsText .person {
+    margin-top: 10px !important;
+  }
+  .subCategoryComments .comments .commentsText .person * {
+    margin: 0;
+  }
+  .subCategoryComments .comments .commentsText .person h4 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px !important;
+  }
+  .subCategoryComments .comments .commentsText .person h6 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .subCategoryComments .gallery {
+    margin-top: 0 !important;
+    padding-left: 96px !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+  .subCategoryComments .gallery h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px !important;
+  }
+  .subCategoryComments .gallery .heritageSlider {
+    margin-top: 48px !important;
+  }
+  .subCategoryComments .gallery .heritageImg {
+    width: 100%;
+    height: 100%;
+  }
+  .subCategoryComments .imgLightbox .modalWrapper .close {
+    top: 5vh;
+    right: 5vw;
+  }
+  .subCategoryComments .imgLightbox .modalWrapper .close img {
+    width: 40px;
+    height: 40px;
+  }
+  .subCategoryComments .imgLightbox .modalWrapper .modalContent .previous img {
+    width: 60px;
+    height: 60px;
+  }
   .subCategoryComments .imgLightbox .modalWrapper .modalContent .modalImage {
     width: 60vw;
-    height: 50vh;
+    height: 40vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .subCategoryComments .imgLightbox .modalWrapper .modalContent .next img {
     width: 60px;
     height: 60px;
-    -o-object-fit: contain;
-       object-fit: contain;
   }
 }
 
 @media only screen and (max-width: 540px) {
   .productBanner, .roofingBanner {
     grid-gap: 0;
-    padding-top: 30px;
+    padding-left: 0;
+    padding: 32px 16px !important;
   }
   .productBanner .back, .roofingBanner .back {
     height: 80%;
   }
   .productBanner .bannerTxt h1, .roofingBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .productBanner .bannerTxt p, .roofingBanner .bannerTxt p, .productBanner .bannerTxt h5, .roofingBanner .bannerTxt h5 {
     color: white;
+  }
+  .productBanner .bannerTxt h5, .roofingBanner .bannerTxt h5 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .productBanner .bannerTxt img, .roofingBanner .bannerTxt img {
+    width: 25px;
+    height: 25px;
   }
   .productBanner .bannerImg, .roofingBanner .bannerImg {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .productGrids {
+    padding: 32px 16px !important;
+  }
+  .productGrids .title {
+    text-align: center;
+  }
+  .productTips {
+    padding: 32px 16px !important;
+    padding-right: 0 !important;
+  }
   .productTips .back {
     width: 100%;
   }
+  .productTips .tipsHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .productTips .tipsHeader * {
+    margin: 0;
+  }
   .productTips .tipsHeader h1 {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 32px;
+    text-align: center;
+  }
+  .productTips .tipsHeader p {
+    font-size: 16px;
+    line-height: 20px;
     text-align: center;
   }
   .productTips .tipsInfo {
@@ -8282,19 +9448,50 @@ footer .footerEnd p {
   .productTips .tipsInfo .imgWrapper {
     height: 300px;
   }
+  .productTips .tipsInfo .communityText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .productTips .tipsInfo .communityText * {
+    text-align: center;
+  }
   .productBranches .wrapper {
-    width: 100vw !important;
+    width: 100% !important;
     border-radius: 0;
+    padding: 32px 16px !important;
   }
   .productBranches .wrapper h2 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
     text-align: center;
     text-align: center;
   }
   .productBranches .wrapper form .search {
     width: 100%;
     height: 60px;
+  }
+  .productBranches .wrapper form .search input {
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .search input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .search input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .search input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .productBranches .wrapper form .search input::placeholder {
+    font-size: 16px;
   }
   .productBranches .wrapper form .radios .container {
     position: relative;
@@ -8309,11 +9506,11 @@ footer .footerEnd p {
   .productBranches .wrapper .hardware {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
-    padding: 0 20px;
+    padding: 0;
   }
   .productBranches .wrapper .hardware .hardwareCard {
-    width: auto;
-    height: 250px;
+    width: 100%;
+    height: 40vh !important;
     padding: 10px inherit !important;
     border-radius: 25px !important;
   }
@@ -8321,21 +9518,24 @@ footer .footerEnd p {
     width: auto;
     height: auto;
     padding: 5px 2px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay {
     border-radius: 25px !important;
+    padding: 20px;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .overlayInfo {
     width: 80%;
     height: 38px;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .overlayTxt {
-    font-size: 16px;
-    margin-top: 30px !important;
+    font-size: 18px;
+    width: 80%;
+    margin-top: 0px !important;
+    text-align: left;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .distance p {
-    font-size: 14px;
+    font-size: 16px;
     color: #1226AA;
   }
   .productBranches .wrapper .hardware .hardwareCard .overlay .distance img {
@@ -8344,13 +9544,14 @@ footer .footerEnd p {
   }
   .roofingBanner {
     grid-gap: 0;
-    padding-top: 30px;
+    padding-left: 0;
+    padding: 32px 16px !important;
   }
   .roofingBanner .back {
     height: 80% !important;
   }
   .roofingBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 32px;
   }
   .roofingBanner .bannerTxt p, .roofingBanner .bannerTxt h5, .roofingBanner .bannerTxt h6 {
     color: white;
@@ -8363,16 +9564,39 @@ footer .footerEnd p {
     width: 100%;
   }
   .productsExplore h1, .subCategoryForm h1 {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 32px;
   }
   .productsExplore .exploreWrapper, .subCategoryForm .exploreWrapper {
-    padding: 0 24px !important;
+    padding: 32px 16px !important;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 0;
+    margin: 0;
+  }
+  .productsExplore .exploreWrapper .imgSection, .subCategoryForm .exploreWrapper .imgSection {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    margin: 0 !important;
   }
   .productsExplore .exploreWrapper .imgSection img, .subCategoryForm .exploreWrapper .imgSection img {
     height: 250px;
   }
+  .productsExplore .exploreWrapper form, .subCategoryForm .exploreWrapper form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .productsExplore .exploreWrapper .tiles, .subCategoryForm .exploreWrapper .tiles {
+    margin-top: 20px;
     grid-gap: 10px;
   }
   .productsExplore .exploreWrapper .tiles .choice, .subCategoryForm .exploreWrapper .tiles .choice {
@@ -8389,20 +9613,21 @@ footer .footerEnd p {
   .productsExplore .exploreWrapper .tileTypes .gallery, .subCategoryForm .exploreWrapper .tileTypes .gallery {
     display: -ms-grid !important;
     display: grid !important;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     margin-top: 5px;
+    padding: 0 !important;
   }
   .productsExplore .exploreWrapper .tileTypes .galleryCard, .subCategoryForm .exploreWrapper .tileTypes .galleryCard {
     cursor: pointer;
   }
   .productsExplore .exploreWrapper .tileTypes .galleryCard img, .subCategoryForm .exploreWrapper .tileTypes .galleryCard img {
-    width: auto;
-    height: 100px;
+    width: 100%;
+    height: 80px;
     -o-object-fit: cover;
        object-fit: cover;
-    border-radius: 25px;
+    border-radius: 20px;
   }
   .productsExplore .exploreWrapper .tileTypes .galleryCard p, .subCategoryForm .exploreWrapper .tileTypes .galleryCard p {
     font-size: 14px;
@@ -8417,7 +9642,10 @@ footer .footerEnd p {
   .productsExplore .exploreWrapper .inputs label, .subCategoryForm .exploreWrapper .inputs label {
     font-size: 16px;
     line-height: 24px;
-    font-weight: normal;
+    text-align: center;
+  }
+  .productsExplore .exploreWrapper .inputs .label2, .subCategoryForm .exploreWrapper .inputs .label2 {
+    margin-bottom: 0 !important;
   }
   .productsExplore .exploreWrapper .inputs .numberInput, .subCategoryForm .exploreWrapper .inputs .numberInput {
     width: 100%;
@@ -8425,14 +9653,21 @@ footer .footerEnd p {
   }
   .productsExplore .exploreWrapper .inputs .numberInput .numberBtns, .subCategoryForm .exploreWrapper .inputs .numberInput .numberBtns {
     height: 100%;
-    width: 20%;
-    padding: 5px 4px;
+    width: 30%;
+    padding: 2px 4px;
+    padding: 10px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .productsExplore .exploreWrapper .inputs .numberInput .numberBtns span, .subCategoryForm .exploreWrapper .inputs .numberInput .numberBtns span {
     margin: 0 !important;
-    padding: 0 !important;
   }
   .productsExplore .exploreWrapper .inputs .numberInput .numberBtns img, .subCategoryForm .exploreWrapper .inputs .numberInput .numberBtns img {
     width: 15px;
     height: 15px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .productsExplore .exploreWrapper .inputs .numberInput input, .subCategoryForm .exploreWrapper .inputs .numberInput input {
     width: 100%;
@@ -8441,7 +9676,7 @@ footer .footerEnd p {
     padding: 0 10px;
   }
   .productsExplore .exploreWrapper button, .subCategoryForm .exploreWrapper button {
-    width: 100%;
+    width: 50vw;
     height: 60px;
     font-weight: bolder;
     font-size: 16px;
@@ -8454,7 +9689,11 @@ footer .footerEnd p {
   }
   .materialsSlider .materialsCard {
     width: auto;
-    height: 300px !important;
+    height: 350px !important;
+    border-radius: 30px !important;
+  }
+  .materialsSlider .materialsCard .overlay {
+    border-radius: 30px !important;
   }
   .materialsSlider .materialsCard .cardWrapper .top * {
     margin: 0;
@@ -8482,6 +9721,7 @@ footer .footerEnd p {
   .faq h1 {
     font-size: 30px;
     line-height: 32px;
+    margin: 0 16px !important;
   }
   .faq .faqCard {
     width: auto;
@@ -8509,6 +9749,10 @@ footer .footerEnd p {
   .faq .accordion .accord p {
     font-size: 14px;
     line-height: 20px;
+  }
+  .profileGrid {
+    padding: 0 16px !important;
+    grid-gap: 16px !important;
   }
   .profileGrid .profileIntro {
     -webkit-box-align: center;
@@ -8571,6 +9815,15 @@ footer .footerEnd p {
   .prodBenefits .benfWrapper h3 {
     font-size: 20px;
     line-height: 28px;
+    text-align: center;
+  }
+  .prodBenefits .benfWrapper .list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .prodBenefits .benfWrapper .list p {
     font-size: 14px;
@@ -8582,12 +9835,16 @@ footer .footerEnd p {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .featuresGrid {
+    padding: 32px 16px !important;
+  }
   .featuresGrid .back {
     display: none;
   }
   .featuresGrid h4 {
     font-size: 24px;
     line-height: 30px;
+    width: 100%;
     text-align: center;
   }
   .featuresGrid .benf {
@@ -8620,18 +9877,26 @@ footer .footerEnd p {
   .featuresGrid .benf h5 {
     font-size: 22px;
     line-height: 30px;
+    text-align: center;
   }
   .featuresGrid .benf p {
     font-size: 14px;
     line-height: 24px;
     font-weight: normal !important;
+    text-align: center;
+    width: 100%;
+  }
+  .styleResources {
+    padding: 0 !important;
   }
   .styleResources .wrapper {
-    width: 100%;
+    width: 100% !important;
     border-radius: 0 !important;
+    padding: 32px 16px !important;
   }
   .styleResources .wrapper h2 {
-    font-size: 32px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .styleResources .wrapper form .search {
     width: 100%;
@@ -8642,7 +9907,7 @@ footer .footerEnd p {
     height: 20px;
   }
   .styleResources .wrapper form .search input {
-    font-size: 14px;
+    font-size: 16px;
   }
   .styleResources .wrapper form .search input::-webkit-input-placeholder {
     font-size: 16px;
@@ -8657,19 +9922,19 @@ footer .footerEnd p {
     font-size: 16px;
   }
   .styleResources .wrapper .helpTxt {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
-    margin: 20px 0 !important;
   }
   .styleResources .resources {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     margin-top: 20px !important;
+    padding: 0 16px;
   }
   .styleResources .resources .resourceCard {
     width: auto;
-    height: 300px;
-    border-radius: 50px;
+    height: 250px;
+    border-radius: 20px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -8677,12 +9942,14 @@ footer .footerEnd p {
   }
   .styleResources .resources .resourceCard .info {
     min-width: 100%;
-    height: 38px;
-    padding: 15px;
+    height: auto !important;
+    padding: 10px;
     font-size: 15px;
   }
   .styleResources .resources .resourceCard .resourceTxt {
     font-size: 16px;
+    line-height: 20px;
+    text-align: left;
   }
   .styleResources .resources .resourceCard .arrowBtn img {
     width: 25px;
@@ -8696,15 +9963,30 @@ footer .footerEnd p {
     font-size: 16px;
     line-height: 24px;
   }
+  .subCategoryForm .imgSection img {
+    height: 300px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .subCategoryForm .formSection .top {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .subCategoryForm .formSection .top h1 {
     font-size: 32px;
     line-height: 40px;
     text-align: center;
+    margin-top: 20px;
   }
   .subCategoryForm .formSection .top p {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
+    width: 100%;
   }
   .subCategoryForm .formSection .tileColors {
     display: -webkit-box;
@@ -8736,8 +10018,14 @@ footer .footerEnd p {
     line-height: 24px;
     text-align: center;
   }
+  .subCategoryForm .formSection .tileTypes .gallery {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding: 0 !important;
+  }
   .subCategoryForm .formSection .tileTypes .galleryCard img {
-    width: 100px;
+    width: auto;
     height: 100px;
   }
   .subCategoryForm .formSection .tileTypes .galleryCard p {
@@ -8763,33 +10051,48 @@ footer .footerEnd p {
   }
   .subCategoryForm .formSection .inputs .numberInput {
     width: 100%;
-    height: 70px;
+    height: 60px;
   }
   .subCategoryForm .formSection .inputs .numberInput .numberBtns {
     height: 100%;
-    width: 20%;
+    width: 30%;
     padding: 2px 4px;
+    padding: 10px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .subCategoryForm .formSection .inputs .numberInput .numberBtns span {
+    margin: 0 !important;
   }
   .subCategoryForm .formSection .inputs .numberInput .numberBtns img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     -o-object-fit: contain;
        object-fit: contain;
-    margin: 0 !important;
-    padding: 0 !important;
   }
   .subCategoryForm .formSection .inputs .numberInput input {
     width: 100%;
     height: 100%;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0 10px;
   }
-  .subCategoryForm .formSection button {
-    width: 100%;
-    height: 60px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: bold;
+  .subCategoryForm .formSection .assembleButtons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subCategoryForm .formSection .assembleButtons a {
+    width: 50vw;
+    margin: 0 !important;
   }
   .subCategorySpecs h1 {
     font-size: 30px;
@@ -8821,11 +10124,15 @@ footer .footerEnd p {
   .subCategorySpecs .benf p {
     font-size: 18px;
     line-height: 24px;
+    text-align: center;
+  }
+  .subCategoryComments .back {
+    width: 100%;
   }
   .subCategoryComments .comments {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-gap: 15px;
+    grid-gap: 0px;
   }
   .subCategoryComments .comments .imgWrapper {
     width: auto;
@@ -8833,11 +10140,11 @@ footer .footerEnd p {
   }
   .subCategoryComments .comments .imgWrapper .linkBtns .commBtn {
     width: 60px;
-    height: 40px;
+    height: 60px;
   }
   .subCategoryComments .comments .imgWrapper .linkBtns .commBtn img {
     width: 15.82px;
-    height: 20.03px;
+    height: 15.03px;
   }
   .subCategoryComments .comments .commentsText {
     -webkit-box-align: center !important;
@@ -8853,6 +10160,7 @@ footer .footerEnd p {
     height: 80px;
   }
   .subCategoryComments .comments .commentsText h1 {
+    margin-top: 0 !important;
     font-size: 30px;
     line-height: 40px;
     text-align: center;
@@ -8873,11 +10181,15 @@ footer .footerEnd p {
     line-height: 24px;
     text-align: center;
   }
+  .subCategoryComments .gallery {
+    padding-left: 0 !important;
+  }
   .subCategoryComments .gallery h1 {
     font-size: 30px;
     line-height: 40px;
     margin-top: 20px !important;
     text-align: center;
+    margin-top: 0;
   }
   .subCategoryComments .gallery .heritageImg {
     width: auto;
@@ -8923,7 +10235,7 @@ footer .footerEnd p {
 .aboutBanner .back {
   background: #1226AA;
   width: 100%;
-  height: 60%;
+  height: 65%;
   top: 0;
   left: 0;
 }
@@ -8941,7 +10253,7 @@ footer .footerEnd p {
 .aboutBanner .bannerTxt p {
   font-size: 32px;
   line-height: 40px;
-  font-weight: normal;
+  font-weight: 600;
   color: #292929;
 }
 
@@ -9885,30 +11197,41 @@ footer .footerEnd p {
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
+  .aboutBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
   .aboutBanner .back {
-    height: 55%;
+    height: 55% !important;
   }
   .aboutBanner .bannerTxt h1 {
-    font-size: 55px;
+    font-size: 45px;
+    margin-bottom: 20px !important;
   }
   .aboutBanner .bannerTxt p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 50%;
   }
   .aboutBanner .bannerTxt h5 {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .aboutBanner .bannerTxt h6 {
-    font-size: 20px;
-    color: white;
-    font-weight: bolder;
+    font-size: 18px;
+    line-height: 24px;
   }
   .aboutBanner .bannerTxt img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+  }
+  .aboutBanner .bannerImg {
+    margin-top: 0px !important;
   }
   .videoSection {
-    background: #F4F4F4;
     height: auto !important;
   }
   .videoSection .imgBox {

@@ -15,36 +15,34 @@
 <body>
     <div class="app" id="app">
         <!--NAVIGATION-->
-        <nav class="flex items-center justify-between w-full lg:px-20 md:px-8 py-5">
+        <nav class="flex items-center justify-between w-full lg:px-20 py-1" id="navigation">
             <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
             <div class="links flex lg:space-x-8">
-                <div class="pageLinks flex items-center justify-center lg:space-x-5">
+                <div class="pageLinks flex items-center justify-center lg:space-x-8">
                     <a href="./index.html">Home</a>
                     <a href="./products.html" class="activeLink">Products</a>
                     <a href="./about.html">About Us</a>
                     <a href="./style.html">Style Points</a>
                     <a href="./impact.html">Our Impact</a>
                     <a href="./news.html">News</a>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="./contact.html">Contact Us</a>
                 </div>
                 <div class="navIcons flex items-center lg:space-x-4">
                     <img src="./assets/search_black_24dp.png" alt="" class="search">
-                    <img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag">
                 </div>
                 <div class="navBtns flex lg:space-x-4">
-                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
-                    <a href="#" class="login flex items-center justify-center">Login</a>
+                    <a href="javascript:void(0)" class="call flex items-center justify-center">Call Us Now</a>
                 </div>
             </div>
         </nav>
         
         <!--RESPONSIVE NAV-->
-        <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-5">
+        <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-1">
             <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
             <img src="./assets/mobile logo.png" alt="" class="mobileLogo">
             <div class="navIcons flex items-center lg:space-x-4 md:space-x-2 space-x-2">
-                <a href="#"><img src="./assets/search_black_24dp.png" alt="" class="search"></a>
-                <a href="#"><img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag"></a>
+                <a href="javascript:void(0)"><img src="./assets/search_black_24dp.png" alt="" class="search"></a>
+                <a href="javascript:void(0)"><img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag"></a>
                 <span class="cursor-pointer menuOpen"><img src="./assets/menu open black.png" alt=""></span>
             </div>
         </div>
@@ -63,14 +61,14 @@
                     <a href="contact.html">Contact Us</a>
                 </div>
                 <div class="overlayBtns flex space-x-4">
-                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
-                    <a href="#" class="login flex items-center justify-center">Login</a>
+                    <a href="javascript:void(0)" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="javascript:void(0)" class="login flex items-center justify-center">Login</a>
                 </div>
                 <div class="overlaySocial flex flex-col items-center">
                     <div class="flex lg:space-x-5 space-x-2">
-                        <a href="#"><img src="./assets/icons8-facebook-50.png" alt="" class="socialIcon"></a>
-                        <a href="#"><img src="./assets/icons8-twitter-30.png" alt="" class="socialIcon"></a>
-                        <a href="#"><img src="./assets/icons8-instagram-24.png" alt="" class="socialIcon"></a>
+                        <a href="javascript:void(0)"><img src="./assets/icons8-facebook-50.png" alt="" class="socialIcon"></a>
+                        <a href="javascript:void(0)"><img src="./assets/icons8-twitter-30.png" alt="" class="socialIcon"></a>
+                        <a href="javascript:void(0)"><img src="./assets/icons8-instagram-24.png" alt="" class="socialIcon"></a>
                     </div>
                 </div>
             </div>
@@ -81,7 +79,7 @@
             <div class="roofingBanner relative w-full h-auto lg:pl-24 md:pl-12 pl-5 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:pb-24 md:pb-12 pb-6">
                 <div class="back absolute"></div>
                 <div class="bannerTxt h-full flex flex-col justify-end items-start space-y-3 pb-5">
-                    <span class="top flex flex-col lg:flex-row  h-auto items-center justify-center lg:space-x-4 lg:mb-10 md:mb-6 mb-4">
+                    <span class="top flex flex-col lg:flex-row h-auto items-center justify-center lg:space-x-4 lg:mb-10 md:mb-6 mb-4">
                         <h6>Style Products</h6>
                         <h1>Roofing</h1>
                     </span>
@@ -148,7 +146,7 @@
                             </div>
                             <div class="inputs lg:mt-12 md:mt-6 mt-4">
                                 <h3>Calculate the number of tiles for your building project</h3>
-                                <div class="inputWrapper grid grid-cols-2 gap-3 mt-2">
+                                <div class="inputWrapper grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3 mt-2">
                                     <div class="flex flex-col space-y-4">
                                         <label>Enter your space measurement(Meters)</label>
                                         <div class="numberInput flex items-center justify-center">
@@ -160,7 +158,7 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col space-y-4">
-                                        <label>Estimated number of tiles</label>
+                                        <label class="label2">Estimated number of tiles</label>
                                         <div class="numberInput flex items-center justify-center">
                                             <div class="numberBtns flex flex-col items-center justify-center lg:space-y-4 md:space-y-1 space-y-1">
                                                 <span class="cursor-pointer addBtn"><img src="./assets/arrow up white.png" alt=""></span>
@@ -347,7 +345,7 @@
                             <h3 v-show="currentTipsImg==3">Sustainable roofing technology</h3>
                         </div>
                         <p>Space & Style is heavily invested in our local community and the  World at large to help make it a better place for future generations.</p>
-                        <a href="#" class="lg:mt-5 mt-3">Read full story here</a>
+                        <a href="javascript:void(0)" class="lg:mt-5 mt-3">Read full story here</a>
                     </div>
                 </div>
             </div>
@@ -550,7 +548,7 @@
                 
                 1280: {
                 slidesPerView: 3.5,
-                spaceBetween: 40
+                spaceBetween: 30
                 }
             }
         });

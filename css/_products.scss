@@ -19,7 +19,7 @@
         p {
             font-size: 32px;
             line-height: 40px;
-            font-weight: normal;
+            font-weight: 600;
             color: $dark;
         }
         h5 {
@@ -190,15 +190,174 @@
 
 //BRANCHES SECTION
 .productBranches {
-    @extend .branches;
+    min-height: auto;
     background: $light;
+    padding-top: 96px;
+    padding-bottom: 96px;
     .bgBack {
-        background: white !important;
-        height: 70%;
-        z-index: 1;
-    }   
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: white;
+        width: 100%;
+        height: 70% !important; 
+        z-index: 0;
+    }
     .wrapper {
-        z-index: 2;
+        position: relative;
+        z-index: 3;
+        background: $blue;
+        height: auto;
+        border-radius: 30px;
+        h2 {
+            font-size: 48px;
+            font-weight: bolder;
+            color: white;
+        }
+        form {
+            .search {
+                width: 981px;
+                height: 100px;
+                background: #2C3EB3;
+                border-radius: 30px;
+                img {
+                    width: 41.05px;
+                    height: 41.05px;
+                }
+                input {
+                    outline: none;
+                    width: 100%;
+                    height: 100%;
+                    color: white;
+                    background: transparent;
+                    font-size: 24px;
+                    &::placeholder {
+                        color: #818CD2 !important;
+                        font-size: 24px;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            .radios {
+                .container {
+                    position: relative;
+                    padding-left: 35px;
+                    margin-bottom: 5px;
+                    cursor: pointer;
+                    font-size: 22px;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    &:hover {
+                        input ~ .checkmark {
+                            background-color: $blue;
+                        }
+                    }
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                        &:checked ~ .checkmark {
+                            background-color: $blue;
+                        }
+                        &:checked ~ .checkmark:after {
+                            display: block;
+                        }
+                    }
+                    .checkmark {
+                        position: relative;
+                        height: 40px;
+                        width: 40px;
+                        background-color: $blue;
+                        border: 5px solid white;
+                        border-radius: 50%;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+                        &:after {
+                            top: 5px;
+                            left: 5px;
+                            right: 5px;
+                            bottom: 5px;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background: white;
+                        }
+                    }
+                    p {
+                        font-size: 24px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 32px;
+            color: white;
+        }
+        .hardware {
+            margin-top: 50px;
+            .hardwareCard {
+                width: 300px;
+                height: 315px;
+                border-radius: 50px;
+                background: url('../assets/sustainable.png') no-repeat center center;
+                background-size: cover;
+                .info {
+                    min-width: 184px;
+                    height: 38px;
+                    border-radius: 25px;
+                    padding: 0 20px;
+                    background: $blue;
+                    color: white;
+                    font-size: 24px;
+                    font-weight: bolder;
+                    z-index: 5;
+                }
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: $light;
+                    border-radius: 50px;
+                    transition: all .5s ease-in-out;
+                    opacity: 0;
+                    .overlayInfo {
+                        width: 233px;
+                        height: 64px;
+                        border-radius: 25px;
+                        background: transparent;
+                    }
+                    .overlayTxt {
+                        font-size: 24px;
+                        color: $blue;
+                    }
+                    .distance {
+                        p {
+                            font-size: 14px;
+                            color: $blue;
+                        }
+                        img {
+                            width: 22.39px;
+                            height: 31.98px;
+                        }
+                    }
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -243,7 +402,7 @@
                 width: 304px;
                 height: 97px;
                 border-radius: 25px;
-                border: 3px solid $blue;
+                border: 2px solid $blue;
                 color: $dark;
                 font-size: 18px;
                 line-height: 24px;
@@ -278,7 +437,7 @@
             }
             .activeImageChoice {
                 img {
-                    border: 5px solid $blue;
+                    border: 3px solid $blue;
                 }
                 p {
                     color: $blue;
@@ -359,7 +518,7 @@
     .materialsCard {
         width: 494px;
         height: 518px;
-        border-radius: 50px;
+        border-radius: 30px;
         .back1 {
             position: absolute;
             top: 0;
@@ -367,8 +526,8 @@
             width: 100%;
             height: 100%;
             border-radius: 50px;
-            z-index: -1;
-            background-color: $blue;
+            z-index: 1;
+            background-color: $blue
         }
         .back2 {
             position: absolute;
@@ -377,9 +536,10 @@
             width: 100%;
             height: 100%;
             border-radius: 50px;
-            z-index: -1;
+            z-index: 3;
         }
         .cardWrapper {
+            position: relative;
             z-index: 5;
             width: 100% !important;
             span {
@@ -629,6 +789,7 @@
        height: 70%;
        background: white;
    }
+   
    .wrapper {
        z-index: 5 !important;
        background: $blue;
@@ -642,7 +803,7 @@
                input {
                    color: white;
                    &::placeholder {
-                       color: white;
+                       color: #B7BDE5;
                    }
                }
            }
@@ -659,6 +820,14 @@
             height: 315px;
             border-radius: 50px;
             background: $light;
+            .pattern {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
             .info {
                 min-width: 184px;
                 height: 38px;
@@ -804,6 +973,28 @@
                         -webkit-appearance: none;
                         margin: 0;
                     }
+                }
+            }
+        }
+        .assembleButtons {
+            a {
+                width: 415px;
+                height: 98px;
+                border-radius: 25px;
+                outline: none;
+                color: $dark;
+                font-size: 24px;
+                font-weight: 900;
+            }
+            .quote {
+                background: $orange;
+            }
+            .plan {
+                background: transparent;
+                border: 3px solid $dark;
+                img {
+                    height: 75px;
+                    width: 75px;
                 }
             }
         }
@@ -991,11 +1182,12 @@
         padding-top: 48px;
         padding-bottom: 48px;
         .back {
-            height: 55%;
+            height: 60% !important;
         }
         .bannerTxt {
             h1 {
                 font-size: 45px;
+                margin-bottom: 20px !important;
             }
             p {
                 font-size: 20px;
@@ -1050,62 +1242,95 @@
         }
     }
     .productTips {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         .tipsHeader {
+            margin-bottom: 20px;
             h1 {
-                font-size: 45px;
+                font-size: 32px;
+                line-height: 40px;
             }
             p {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 30px;
             }
         }
         .tipsInfo {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            grid-gap: 40px;
             .imgWrapper {
+                width: 100%;
+                height: 55vh;
+                margin: 0;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-position: top;
+                }
                 .linkBtns {
                     .commBtn {
-                        width: 80px;
+                        width: 60px;
                         height: 60px;
                         img {
                             width: 20.82px;
-                            height: 25.03px;
+                            height: 20.03px;
+                            object-fit: contain;
                         }
                     }
                 }
             }
             .communityText {
+                margin: 0;
+                .names {
+                    margin-bottom: 10px !important;
+                }
                 h3 {
-                    font-size: 32px;
+                    font-size: 30px !important;
+                    line-height: 40px;
                 }
                 p {
-                    font-size: 22px !important;
+                    font-size: 18px !important;
+                    line-height: 24px;
                     width: 80%;
                 }
                 a {
-                    font-size: 22px;
+                    font-size: 18px;
+                    line-height: 24px;
                 }
             }
         }
     }
     .productBranches {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        .bgBack {
+            height: 80%;
+        }
         .wrapper {
+            height: fit-content !important;
+            width: 80vw !important;
+            padding: 30px 80px !important;
+            margin: 0 !important;
             h2 {
-                font-size: 45px;
-                font-weight: bolder;
-                color: $dark;
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: 900 !important;
             }
             form {
                 .search {
-                    width: 60vw;
-                    height: 80px;
+                    width: 50vw;
+                    height: 60px;
+                    border-radius: 20px;
                     img {
-                        width: 40px;
-                        height: 40px;
+                        width: 30px;
+                        height: 30px;
+                        object-fit: contain;
                     }
                     input {
-                        font-size: 22px;
+                        font-size: 18px;
                         &::placeholder {
-                            color: $dark;
-                            font-size: 22px;
+                            font-size: 18px;
                         }
                         &:focus {
                             outline: none;
@@ -1113,6 +1338,7 @@
                     }
                 }
                 .radios {
+                    margin-top: 30px !important;
                     .container {
                         position: relative;
                         padding-left: 35px;
@@ -1121,47 +1347,61 @@
                         .checkmark {
                             height: 30px;
                             width: 30px;
+                            border-width: 4px;
                             &:after {
-                                top: 2px;
-                                left: 2.5px;
-                                right: 1px;
-                                bottom: 1px;
-                                width: 15px;
-                                height: 15px;
+                                top: 4px;
+                                left: 4.5px;
+                                right: 4px;
+                                bottom: 4px;
+                                width: 13px;
+                                height: 13px;
                             }
                         }
                         p {
-                            font-size: 22px;
+                            font-size: 20px;
                             font-weight: bold;
                         }
                     }
                 }
             }
-            p {
-                font-size: 30px;
+            .buildtxt {
+                font-size: 20px;
+                line-height: 32px;
+                margin-bottom: 30px !important;
             }
             .hardware {
+                width: 100%;
+                margin-top: 0 !important;
+                padding: 0;
+                margin: 0;
                 .hardwareCard {
-                    width: auto;
-                    height: 280px;
+                    width: 100%;
+                    border-radius: 20px;
+                    height: 200px;
+                    padding: 15px;
                     .info {
-                        width: 80%;
-                        height: 38px;
+                        min-width: 70%;
+                        min-height: 30px;
                         padding: 0 10px;
-                        font-size: 16px;
+                        font-size: 14px;
                     }
                     .overlay {
+                        justify-content: space-between;
+                        padding: 15px;
+                        border-radius: 20px;
+                        * {
+                            margin: 0;
+                        }
                         .overlayInfo {
                             width: 80%;
-                            height: 38px;
+                            height: 30px;
                         }
                         .overlayTxt {
-                            font-size: 16px;
+                            font-size: 14px;
                         }
                         .distance {
                             p {
                                 font-size: 14px;
-                                color: $blue;
                             }
                             img {
                                 width: 22.39px;
@@ -1179,166 +1419,221 @@
     
     //Product Category Page
     .roofingBanner {
+        height: fit-content !important;
+        padding-top: 48px;
+        padding-bottom: 48px !important;
         .back {
-            height: 58%;
+            height: 60%;
         }
         .bannerTxt {
+            .top {
+                margin-bottom: 0px !important;
+            }
             h1 {
-                font-size: 55px;
-                line-height: 60px;
+                font-size: 45px;
             }
             p {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 30px;
             }
             h5 {
-                font-size: 20px;
+                font-size: 18px;
             }
             h6 {
-                font-size: 20px;
-                color: white;
-                font-weight: bolder;
+                font-size: 18px;
             }
             img {
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
             }
+        }
+        .bannerImg {
+            margin-top: 0px !important;
         }
     }
     .productsExplore {
+        padding-top: 48px;
         h1 {
-            font-size: 45px;
+            font-size: 32px;
+            line-height: 40px;
+            margin: 0;
+            padding: 0;
         }
         .exploreWrapper {
+            margin-top: 30px;
+            grid-gap: 50px;
+            .imgSection {
+                width: 100%;
+                height: 60vh !important; 
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
             .tiles {
+                grid-gap: 15px !important;
                 .choice {
-                    width: auto;
-                    height: 90px;
-                    font-size: 18px;
-                    line-height: 24px;
-                    font-weight: normal;
+                    width: 100%;
+                    height: 60px;
+                    font-size: 15px;
+                    line-height: 20px;
+                    border-radius: 15px;
                 }
             }
             .tileTypes {
+                margin-top: 30px;
                 h4 {
                     font-size: 20px;
                     line-height: 32px;
-                    font-weight: bold;
-                    color: $dark;
+                }
+                .gallery {
+                    margin-top: 10px;
                 }
                 .galleryCard {
                     cursor: pointer;
+                    align-items: center;
                     img {
                         width: 100px;
                         height: 100px;
-                        border-radius: 25px;
+                        border-radius: 20px;
                     }
                     p {
-                        font-size: 16px;
-                        color: $dark;
+                        font-size: 14px;
+                        text-align: center;
+                        margin-top: 10px !important;
                     }
                 }
             }
             .inputs {
+                margin-top: 40px;
                 h3 {
-                    font-size: 30px;
-                    line-height: 40px;
-                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
                 }
                 label {
                     font-size: 16px;
                     line-height: 24px;
-                    font-weight: normal;
                 }
                 .numberInput {
                     width: 100%;
-                    height: 90px;
+                    height: 60px;
                     .numberBtns {
                         height: 100%;
                         width: 30%;
                         padding: 2px 4px;
+                        padding: 10px 0;
+                        justify-content: space-between;
+                        span {
+                            margin: 0 !important;
+                        }
                         img {
-                            width: 25px;
-                            height: 25px;
+                            width: 20px;
+                            height: 20px;
                             object-fit: contain;
                         }
                     }
                     input {
                         width: 100%;
                         height: 100%;
-                        font-size: 22px;
+                        font-size: 18px;
                         padding: 0 10px;
                     }
                 }
             }
             button {
-                width: 350px;
-                height: 90px;
-                font-size: 22px;
+                width: 300px;
+                height: 60px;
+                font-size: 18px;
                 line-height: 24px;
+                margin-top: 40px;
             }
         }
     }
     .materialsSlider {
-        background: $light;
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         h1 {
-            font-size: 45px;
-            line-height: 56px;
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 0 !important;
+        }
+        .materialsSlider {
+            margin-top: 30px;
+            padding: 0 !important;
+            height: auto;
         }
         .materialsCard {
-            width: auto;
-            height: 450px !important;
+            width: 100%;
+            height: 50vh !important;
+            border-radius: 30px;
+            .back1 {
+                border-radius: 30px;
+            }
+            .back2 {
+                border-radius: 30px;
+            }
             .cardWrapper {
+                border-radius: 30px;
                 span {
-                    height: 70px;
-                    font-size: 22px;
-                    line-height: 32px;
+                    height: 60px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    border-radius: 20px;
                 }
                 p {
-                    font-size: 18px;
-                    line-height: 24px;
+                    font-size: 16px;
+                    line-height: 20px;
                 }
                 a {
-                    font-size: 18px;
-                    line-height: 24px;
+                    font-size: 16px;
+                    line-height: 20px;
                     img {
-                        width: 50px;
-                        height: 50px;
+                        width: 35px;
+                        height: 35px;
+                        object-fit: contain;
                     }
                 }
             }
         }
     }
     .faq {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         h1 {
-            font-size: 40px;
-            line-height: 52px;
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .faqSlider {
+            margin: 30px 0 !important;
         }
         .faqCard {
             width: 100%;
-            min-height: 80px;
+            height: 60px !important;
+            padding: 0 !important;
+            border-radius: 20px;
             p {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 16px;
+                line-height: 20px;
             }
         }
         .accordion {
             .accord {
-                min-height: 80px;
+                min-height: 60px;
+                padding: 10px 30px !important;
                 span {
                     h4 {
-                       font-size: 25px;
-                       line-height: 32px;
-                       font-weight: bold; 
+                       font-size: 20px;
+                       line-height: 30px;
                     }
                     img {
-                        width: 50.63px;
-                        height: 50.63px;
+                        width: 40.63px;
+                        height: 40.63px;
                     }
                 }
                 p {
-                    font-size: 22px;
-                    line-height: 32px;
+                    font-size: 18px;
+                    line-height: 24px;
                 }
             }
         }
@@ -1346,103 +1641,144 @@
     
     //Product Sub Category styles
     .profileGrid {
+        padding: 0 96px !important;
+        padding-bottom: 48px !important;
         .profileIntro {
             h1{
-                font-size: 45px;
-                line-height: 50px;
+                font-size: 30px;
+                line-height: 40px;
             }
             p{
-                font-size: 24px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 24px;
             }
         }
         .profileCard {
-            min-height: 500px;
+            min-height: 300px;
             width: auto;
             .imgWrapper {
                 width: auto;
-                height: 350px;
+                height: 250px;
+                img {
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                }
             }
             .cardTxt {
+                height: auto;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                padding: 20px !important;
+                * {
+                    margin: 0;
+                }
                 h4 {
-                    font-size: 30px;
-                    line-height: 40px;
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin-bottom: 5px !important;
                 }
                 p {
-                    font-size: 20px;
+                    font-size: 18px;
                     line-height: 24px;
                 }
             }
         }
     }
     .prodBenefits {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         .benfWrapper {
+            grid-gap: 30px;
             img {
-                height: 500px;
+                height: 60vh;
+                object-fit: cover;
             }
             h1{
-                font-size: 45px;
-                line-height: 56px;
-            }
-            p{
-                font-size: 24px;
-                line-height: 32px;
-            }  
-            h3 {
                 font-size: 32px;
                 line-height: 40px;
             }
+            .featureText {
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }  
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+            }
             .list {
                 p {
-                    font-size: 20px;
-                    line-height: 32px;
+                    font-size: 16px;
+                    line-height: 24px;
                 }
                 
                 img {
-                    width: 20px;
-                    height: 20px;
+                    width: 15px;
+                    height: 15px;
+                    object-fit: contain;
                 }
             }
         }
     }
     .featuresGrid {
+        padding-top: 0 !important;
+        padding-bottom: 48px !important;
+        .benfGrid {
+            grid-gap: 10px;
+        }
         h4 {
-            font-size: 32px;
-            line-height: 45px;
+            font-size: 24px;
+            line-height: 32px;
+            width: 50%;
         }
         
         .benf {
             img {
-                width: 120px;
-                height: 120px;
+                width: 80px;
+                height: 80px;
             }
             h5 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 22px;
+                line-height: 32px;
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 16px;
+                line-height: 22px;
+                width: 100%;
             }
         }
     }
     .styleResources {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+        .bgBack {
+            height: 80%;
+        }
         .wrapper {
+            height: fit-content !important;
+            width: 80vw !important;
+            padding: 30px 80px !important;
+            margin: 0 !important;
             h2 {
-                font-size: 45px;
+                font-size: 32px;
+                line-height: 40px;
+                font-weight: 900 !important;
             }
             form {
                 .search {
-                    width: 60vw;
-                    height: 80px;
+                    width: 50vw;
+                    height: 60px;
+                    border-radius: 20px;
                     img {
-                        width: 40px;
-                        height: 40px;
+                        width: 25px;
+                        height: 25px;
+                        object-fit: contain;
                     }
                     input {
-                        font-size: 22px;
+                        font-size: 18px;
                         &::placeholder {
-                            font-size: 22px;
+                            font-size: 18px;
                         }
                         &:focus {
                             outline: none;
@@ -1450,30 +1786,43 @@
                     }
                 }
             }
-            .helpTxt {
-                font-size: 30px;    
+            p.helpTxt {
+                font-size: 24px !important;
+                line-height: 32px;
+                margin: 40px 0 !important;
             }
         }
         .resources {
+            width: 100%;
+            margin-top: 0 !important;
+            padding: 0;
+            margin: 0;
             .resourceCard {
-                width: auto;
-                height: 300px;
-                border-radius: 50px;
+                width: 100%;
+                border-radius: 20px;
+                height: 200px;
+                padding: 15px;
                 justify-content: space-between;
                 margin-top: 0;
                 .info {
-                    min-width: 184px;
-                    height: 38px;
-                    padding: 0 20px;
-                    font-size: 20px;
+                    min-width: 70%;
+                    height: auto !important;
+                    padding: 5px 10px;
+                    font-size: 14px;
+                    margin: 0;
                 }
                 .resourceTxt {
-                    font-size: 20px;
+                    font-size: 16px;
+                    line-height: 20px;
+                    width: 100% !important;
+                    margin: 0;
                 }
                 .arrowBtn {
+                    margin: 0;
                     img {
-                        width: 35px;
-                        height: 35px;
+                        width: 30px;
+                        height: 30px;
+                        object-fit: contain;
                     }
                 }
             }
@@ -1482,27 +1831,38 @@
     
     //Product expanded sub category styles
     .subCategorySlider {
+        padding-bottom: 30px !important;
         .subCard {
-            width: 340px;
-            height: 95px;
-            border-radius: 25px;
+            width: 100%;
+            height: 60px;
+            border-radius: 20px;
             h6 {
-                font-size: 22px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 24px;
             }
         }
     }
     .subCategoryForm {
+        padding-top: 24px !important;
+        padding-bottom: 0 !important;
+        .imgSection {
+            img {
+                height: 65vh !important;
+                object-fit: cover;
+            }
+        }
         .formSection {
             z-index: 5 !important;
             .top {
                 h1 {
-                    font-size: 45px;
-                    line-height: 50px;
+                    font-size: 32px;
+                    line-height: 40px;
                 }
                 p {
-                    font-size: 24px;
-                    line-height: 40px;
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    width: 80%;
                 }
             }
             .tileColors {
@@ -1510,176 +1870,215 @@
                     font-size: 20px;
                     line-height: 30px;
                 }
+                .clrs {
+                    margin-top: 10px !important;
+                }
                 span {
-                    width: 45px;
-                    height: 45px;
+                    width: 40px;
+                    height: 40px;
                 }
             }
             .tileTypes {
                 h4 {
-                    font-size: 20px;
-                    line-height: 32px;
-                    font-weight: bold;
-                    color: $dark;
+                    font-size: 18px;
+                    line-height: 24px;
                 }
                 .galleryCard {
-                    cursor: pointer;
+                    * {
+                        margin: 0 !important;
+                    }
                     img {
                         width: 100px;
                         height: 100px;
-                        border-radius: 25px;
+                        border-radius: 20px;
                     }
                     p {
-                        font-size: 16px;
-                        color: $dark;
+                        font-size: 14px;
+                        line-height: 20px;
+                        text-align: center;
                     }
                 }
             }
             .inputs {
+                margin-top: 40px;
                 h3 {
-                    font-size: 24px !important;
-                    line-height: 40px;
-                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 32px;
                 }
                 label {
-                    font-size: 18px;
+                    font-size: 16px;
                     line-height: 24px;
-                    font-weight: normal;
                 }
                 .numberInput {
                     width: 100%;
-                    height: 90px;
+                    height: 60px;
                     .numberBtns {
                         height: 100%;
                         width: 30%;
                         padding: 2px 4px;
+                        padding: 10px 0;
+                        justify-content: space-between;
+                        span {
+                            margin: 0 !important;
+                        }
                         img {
-                            width: 25px;
-                            height: 25px;
+                            width: 20px;
+                            height: 20px;
                             object-fit: contain;
                         }
                     }
                     input {
                         width: 100%;
                         height: 100%;
-                        font-size: 22px;
+                        font-size: 18px;
                         padding: 0 10px;
                     }
                 }
             }
-            button {
-                width: 350px;
-                height: 90px;
-                font-size: 22px;
-                line-height: 24px;
+            .assembleButtons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 30px;
+                width: 100% !important;
+                a {
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 20px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin: 0 !important;
+                    * { 
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+                .plan {
+                    img {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
             }
         }
     }
     .subCategorySpecs {
-        background: $light;
-        h1 {
-            font-size: 45px;
-            line-height: 50px;
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+        .heritageGrid {
+            margin-top: 30px !important;
         }
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 800 !important;
+        }
+        
         .benf {
-            flex-direction: column;
             img {
-                width: 120px;
-                height: 120px;
+                width: 80px;
+                height: 80px;
             }
             h5 {
-                font-size: 30px;
-                line-height: 40px;
-                margin-top: 10px !important;
+                font-size: 22px;
+                line-height: 32px;
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 16px;
+                line-height: 22px;
+                width: 100%;
             }
         }
     }
     .subCategoryComments {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         .comments {
             display: grid !important;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 20px;
+            grid-template-columns: 1fr 1.5fr;
+            grid-gap: 40px !important;
             .imgWrapper {
                 width: auto;
-                height: 80vh;
+                height: 60vh;
+                margin: 0 !important;
                 .linkBtns {
                     .commBtn {
-                        width: 70px;
-                        height: 50px;
+                        width: 60px;
+                        height: 60px;
                         img {
                             width: 20.82px;
                             height: 25.03px;
+                            object-fit: contain;
                         }
                     }
                 }
             }
             .commentsText {
+                justify-content: center;
+                margin: 0 !important;
                 .quote {
-                    width: auto;
-                    height: auto;
+                    width: 100px;
+                    height: 80px;
+                    object-fit: contain;
                 }
                 h1 {
-                    font-size: 45px;
-                    line-height: 50px;
+                    font-size: 32px;
+                    line-height: 40px;
+                    margin-top: 20px !important;
                 }
                 p {
-                    font-size: 24px;
-                    line-height: 32px;
+                    font-size: 20px;
+                    line-height: 30px;
                     width: 70%; 
+                    margin: 10px 0 !important;
                 }
                 .person {
+                    margin-top: 10px !important;
+                    * {
+                        margin: 0;
+                    }
                     h4 {
-                        font-size: 22px;
-                        line-height: 30px;
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-bottom: 5px !important;
                     }
                     h6 {
-                        font-size: 22px;
-                        line-height: 30px;
+                        font-size: 16px;
+                        line-height: 20px;
                     }
                 }
             }
         }
         .gallery {
+            margin-top: 0 !important;
+            height: fit-content !important;
             h1 {
-                font-size: 45px;
-                line-height: 50px;
+                font-size: 32px;
+                line-height: 40px;
+                margin-bottom: 30px !important;
             }
-            
+            .heritageSlider {
+                margin-top: 48px !important;
+            }
             .heritageImg{
-                width: 579px;
-                height: 475px;
+                width: 100%;
+                height: 100%;
             }
         }
         .imgLightbox {
-            display: none;
-            position: fixed;
-            z-index: 100;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: #EACBD1;
             .modalWrapper {
-                position: relative;
                 .close {
-                    position: absolute;
-                    top: 50px;
-                    right: 50px;
+                    top: 5vh;
+                    right: 5vw;
                     img {
-                        width: 48px;
-                        height: 48px;
+                        width: 40px;
+                        height: 40px;
                     }
                 }
                 .modalContent {
                     .previous {
                         img {
-                            width: 80px;
-                            height: 80px;
+                            width: 60px;
+                            height: 60px;
                         }
                     }
                     .modalImage {
@@ -1689,8 +2088,8 @@
                     }
                     .next {
                         img {
-                            width: 80px;
-                            height: 80px;
+                            width: 60px;
+                            height: 60px;
                         }
                     }
                 }
@@ -1702,15 +2101,18 @@
 //Medium size screens and laptops
 @media only screen and (max-width: 1024px) {
     .productBanner {
+        height: fit-content !important;
+        padding-top: 48px;
+        padding-bottom: 48px;
         .back {
-            height: 55%;
+            height: 55% !important;
         }
         .bannerTxt {
             h1 {
-                font-size: 45px;
+                font-size: 40px;
             }
             p {
-                font-size: 20px;
+                font-size: 18px;
                 line-height: 24px;
             }
             h5 {
@@ -1719,23 +2121,37 @@
             h6 {
                 font-size: 16px;
             }
+            img {
+                width: 25px;
+                height: 25px;
+            }
         }
         .bannerImg {
-            height: 250px;
-            object-fit: cover;
+            margin-top: 0px !important;
         }
     }
     .productGrids {
+        padding: 0 96px !important;
+        padding-bottom: 48px !important;
         h4 {
             font-size: 24px;
             line-height: 32px;
+            font-weight: 800;
+        }
+        .prGrid {
+            margin-top: 30px !important;
+            grid-gap: 30px;
         }
         .productCard {
-            height: 400px !important;
+            height: 300px;
             .cardTxt {
-                padding: 20px 30px !important;
+                *{
+                    margin: 0 !important;
+                }
                 h4 {
-                    font-size: 22px;
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 10px;
                 }
                 p {
                     font-size: 16px;
@@ -1745,127 +2161,169 @@
         }
     }
     .productTips {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         .tipsHeader {
+            margin-bottom: 20px;
             h1 {
-                font-size: 32px;
+                font-size: 30px;
+                line-height: 40px;
             }
             p {
-                font-size: 16px;
+                font-size: 18px;
                 line-height: 24px;
             }
         }
         .tipsInfo {
-            display: grid !important;
-            grid-template-columns: 1fr 1fr;
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            grid-gap: 40px;
             .imgWrapper {
-                width: auto !important;
-                height: 400px;
+                width: 100%;
+                height: 55vh;
+                margin: 0;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-position: top;
+                }
                 .linkBtns {
                     .commBtn {
-                        width: 70px;
+                        width: 50px;
                         height: 50px;
                         img {
-                            width: 15.82px;
+                            width: 20.82px;
                             height: 20.03px;
+                            object-fit: contain;
                         }
                     }
                 }
             }
             .communityText {
+                margin: 0;
+                .names {
+                    margin-bottom: 10px !important;
+                }
                 h3 {
-                    font-size: 24px;
-                    line-height: 40px;
+                    font-size: 24px !important;
+                    line-height: 32px;
                 }
                 p {
                     font-size: 16px !important;
-                    line-height: 24px;
-                    width: 90%;
+                    line-height: 20px;
+                    width: 80%;
                 }
                 a {
                     font-size: 16px;
+                    line-height: 20px;
                 }
             }
         }
     }
     .productBranches {
+        padding-bottom: 48px;
+        .bgBack {
+            height: 80%;
+        }
         .wrapper {
+            height: fit-content !important;
             width: 80vw !important;
+            padding: 30px 50px !important;
+            margin: 0 !important;
             h2 {
-                font-size: 40px;
-                line-height: 50p8;
-                text-align: center;
+                font-size: 30px;
+                line-height: 40px;
+                font-weight: 900 !important;
             }
             form {
                 .search {
-                    width: 60vw;
+                    width: 50vw;
                     height: 60px;
+                    border-radius: 20px;
                     img {
                         width: 30px;
                         height: 30px;
+                        object-fit: contain;
                     }
                     input {
                         font-size: 18px;
                         &::placeholder {
-                            color: $dark;
                             font-size: 18px;
+                        }
+                        &:focus {
+                            outline: none;
                         }
                     }
                 }
                 .radios {
+                    margin-top: 30px !important;
                     .container {
                         position: relative;
-                        padding-left: 30px;
+                        padding-left: 35px;
                         margin-bottom: 5px;
-                        font-size: 18px;
+                        font-size: 16px;
                         .checkmark {
-                            height: 30px;
-                            width: 30px;
+                            height: 25px;
+                            width: 25px;
+                            border-width: 4px;
                             &:after {
-                                top: 3px;
-                                left: 3px;
-                                right: 3px;
-                                bottom: 3px;
-                                width: 14px;
-                                height: 14px;
+                                top: 2px;
+                                left: 2px;
+                                right: 2px;
+                                bottom: 2px;
+                                width: 12px;
+                                height: 12px;
                             }
                         }
                         p {
-                            font-size: 20px;
+                            font-size: 18px;
                             font-weight: bold;
                         }
                     }
                 }
             }
-            p {
-                font-size: 24px;
+            .buildtxt {
+                font-size: 20px;
+                line-height: 32px;
+                margin-bottom: 30px !important;
             }
             .hardware {
-                grid-template-columns: 1fr 1fr !important;
-                width: 100% !important;
+                width: 100%;
+                margin-top: 0 !important;
+                padding: 0;
+                margin: 0;
+                grid-gap: 20px;
                 .hardwareCard {
-                    width: auto !important;
-                    height: 280px;
-                    padding: 10px !important;
-                    border-radius: 25px !important;
+                    width: 100%;
+                    border-radius: 20px;
+                    height: 200px;
+                    padding: 15px;
                     .info {
-                        width: auto;
-                        height: 38px;
+                        min-width: 70%;
+                        min-height: 20px;
                         padding: 0 10px;
-                        font-size: 18px;
+                        font-size: 14px;
                     }
                     .overlay {
-                        border-radius: 25px !important;
+                        justify-content: space-between;
+                        padding: 15px;
+                        border-radius: 20px;
+                        * {
+                            margin: 0;
+                        }
                         .overlayInfo {
                             width: 80%;
-                            height: 38px;
+                            height: 30px;
                         }
                         .overlayTxt {
-                            font-size: 18px;
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin-top: 20px !important;
+                            width: 100%;
                         }
                         .distance {
                             p {
-                                font-size: 16px;
-                                color: $blue;
+                                font-size: 14px;
                             }
                             img {
                                 width: 22.39px;
@@ -1883,135 +2341,190 @@
     
     //Product Category Page
     .roofingBanner {
+        height: fit-content !important;
+        padding-top: 48px;
+        padding-bottom: 48px !important;
         .back {
-            height: 50%;
+            height: 52% !important;
         }
         .bannerTxt {
+            .top {
+                flex-direction: column;
+                align-items: flex-start;
+                * {
+                    margin: 0 !important;
+                }
+            }
             h1 {
                 font-size: 45px;
-                line-height: 50px;
+                line-height: 52px;
             }
             p {
                 font-size: 20px;
-                line-height: 24px;
+                line-height: 30px;
             }
             h5 {
-                font-size: 16px;
+                font-size: 18px;
             }
             h6 {
-                font-size: 16px;
+                font-size: 18px;
             }
             img {
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
             }
+        }
+        .bannerImg {
+            margin-top: 0px !important;
         }
     }
     .productsExplore {
+        padding-top: 48px;
         h1 {
             font-size: 32px;
+            line-height: 40px;
+            margin: 0;
+            padding: 0;
         }
         .exploreWrapper {
+            margin-top: 30px;
+            grid-gap: 40px;
+            .imgSection {
+                width: 100%;
+                height: 60vh !important; 
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
             .tiles {
-                grid-gap: 20px;
+                grid-gap: 15px !important;
                 .choice {
-                    width: auto;
-                    height: 80px;
-                    font-size: 16px;
-                    line-height: 24px;
-                    font-weight: normal;
+                    width: 100%;
+                    height: 60px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    border-radius: 15px;
                 }
             }
             .tileTypes {
+                margin-top: 30px;
                 h4 {
                     font-size: 20px;
                     line-height: 32px;
-                    font-weight: bold;
-                    color: $dark;
+                }
+                .gallery {
+                    margin-top: 10px;
+                    display: grid !important;
+                    grid-template-columns: repeat(5, 1fr);
+                    grid-gap: 15px;
                 }
                 .galleryCard {
                     cursor: pointer;
+                    align-items: center;
+                    margin: 0 !important;
                     img {
                         width: 100px;
                         height: 100px;
-                        border-radius: 25px;
+                        border-radius: 20px;
                     }
                     p {
-                        font-size: 16px;
+                        font-size: 14px;
                         text-align: center;
-                        color: $dark;
+                        margin-top: 10px !important;
                     }
                 }
             }
             .inputs {
+                margin-top: 40px;
                 h3 {
                     font-size: 24px;
                     line-height: 32px;
-                    font-weight: bold;
                 }
                 label {
                     font-size: 16px;
                     line-height: 24px;
-                    font-weight: normal;
                 }
-                .inputWrapper {
-                    grid-template-columns: 1fr;
+                .label2 {
+                    margin-bottom: 25px !important;
                 }
                 .numberInput {
                     width: 100%;
-                    height: 70px;
+                    height: 60px;
                     .numberBtns {
                         height: 100%;
                         width: 30%;
                         padding: 2px 4px;
-                        img {
-                            width: 25px;
-                            height: 25px;
-                            object-fit: contain;
+                        padding: 10px 0;
+                        justify-content: space-between;
+                        span {
                             margin: 0 !important;
-                            padding: 0 !important;
+                        }
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            object-fit: contain;
                         }
                     }
                     input {
                         width: 100%;
                         height: 100%;
-                        font-size: 16px;
+                        font-size: 18px;
                         padding: 0 10px;
                     }
                 }
             }
             button {
                 width: 300px;
-                height: 70px;
+                height: 60px;
                 font-size: 18px;
                 line-height: 24px;
+                margin-top: 40px;
             }
         }
     }
     .materialsSlider {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         h1 {
             font-size: 32px;
             line-height: 40px;
+            margin-bottom: 0 !important;
+        }
+        .materialsSlider {
+            margin-top: 30px;
+            padding: 0 !important;
+            height: auto;
         }
         .materialsCard {
-            width: auto;
-            height: 400px !important;
+            width: 100%;
+            height: 50vh !important;
+            border-radius: 30px;
+            .back1 {
+                border-radius: 30px;
+            }
+            .back2 {
+                border-radius: 30px;
+            }
             .cardWrapper {
+                border-radius: 30px;
                 span {
-                    height: 70px;
-                    font-size: 20px;
-                    line-height: 32px;
+                    height: 60px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    border-radius: 20px;
                 }
                 p {
                     font-size: 16px;
-                    line-height: 24px;
+                    line-height: 20px;
                 }
                 a {
                     font-size: 16px;
-                    line-height: 24px;
+                    line-height: 20px;
                     img {
-                        width: 40px;
-                        height: 40px;
+                        width: 35px;
+                        height: 35px;
                         object-fit: contain;
                     }
                 }
@@ -2019,27 +2532,33 @@
         }
     }
     .faq {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         h1 {
-            font-size: 40px;
-            line-height: 50px;
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .faqSlider {
+            margin: 30px 0 !important;
         }
         .faqCard {
-            width: auto;
-            height: 80px;
+            width: 100%;
+            height: 60px !important;
+            padding: 0 !important;
+            border-radius: 20px;
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
             }
         }
         .accordion {
             .accord {
                 min-height: 60px;
+                padding: 10px 30px !important;
                 span {
-                    margin-bottom: 10px;
                     h4 {
                        font-size: 20px;
-                       line-height: 32px;
-                       font-weight: bold; 
+                       line-height: 30px;
                     }
                     img {
                         width: 40.63px;
@@ -2047,7 +2566,7 @@
                     }
                 }
                 p {
-                    font-size: 16px;
+                    font-size: 18px;
                     line-height: 24px;
                 }
             }
@@ -2056,47 +2575,67 @@
     
     //Product Sub Category styles
     .profileGrid {
+        padding: 0 96px !important;
+        padding-bottom: 48px !important;
         .profileIntro {
             h1{
-                font-size: 45px;
-                line-height: 50px;
+                font-size: 30px;
+                line-height: 40px;
             }
             p{
                 font-size: 20px;
-                line-height: 32px;
+                line-height: 24px;
             }
         }
         .profileCard {
-            min-height: 500px;
+            min-height: 300px;
             width: auto;
             .imgWrapper {
                 width: auto;
-                height: 300px;
+                height: 250px;
+                img {
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                }
             }
             .cardTxt {
+                height: auto;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                padding: 20px !important;
+                * {
+                    margin: 0;
+                }
                 h4 {
                     font-size: 24px;
                     line-height: 32px;
+                    margin-bottom: 5px !important;
                 }
                 p {
-                    font-size: 18px;
-                    line-height: 24px;
+                    font-size: 16px;
+                    line-height: 20px;
                 }
             }
         }
     }
     .prodBenefits {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         .benfWrapper {
+            grid-gap: 30px;
             img {
-                height: 500px;
+                height: 60vh;
+                object-fit: cover;
             }
             h1{
                 font-size: 32px;
                 line-height: 40px;
             }
-            p{
+            .featureText {
                 font-size: 20px;
-                line-height: 30px;
+                line-height: 24px;
+                margin-bottom: 20px;
+                margin-top: 10px;
             }  
             h3 {
                 font-size: 24px;
@@ -2104,55 +2643,79 @@
             }
             .list {
                 p {
-                    font-size: 18px;
-                    line-height: 34px;
+                    font-size: 16px;
+                    line-height: 24px;
                 }
+                
                 img {
                     width: 15px;
                     height: 15px;
+                    object-fit: contain;
                 }
             }
         }
     }
     .featuresGrid {
+        padding-top: 0 !important;
+        padding-bottom: 48px !important;
+        padding-left: 96px !important;
+        .benfGrid {
+            grid-gap: 20px;
+        }
         h4 {
-            font-size: 30px;
-            line-height: 40px;
+            font-size: 24px;
+            line-height: 32px;
+            width: 50%;
         }
         
         .benf {
             flex-direction: column;
+            * {
+                margin: 0 !important;
+            }
             img {
-                width: 100px;
-                height: 100px;
+                width: 80px;
+                height: 80px;
             }
             h5 {
-                font-size: 24px;
+                font-size: 22px;
                 line-height: 32px;
             }
             p {
-                font-size: 18px;
-                line-height: 24px;
+                font-size: 16px;
+                line-height: 22px;
+                width: 100%;
             }
         }
     }
     .styleResources {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+        .bgBack {
+            height: 80%;
+        }
         .wrapper {
+            width: 80vw !important;
+            padding: 30px 50px !important;
+            margin: 0 !important;
             h2 {
-                font-size: 45px;
+                font-size: 30px;
+                line-height: 40px;
             }
             form {
                 .search {
-                    width: 60vw;
+                    width: 50vw;
                     height: 60px;
+                    border-radius: 20px;
                     img {
                         width: 30px;
                         height: 30px;
+                        object-fit: contain;
                     }
                     input {
-                        font-size: 20px;
+                        font-size: 18px;
                         &::placeholder {
-                            font-size: 20px;
+                            font-size: 18px;
                         }
                         &:focus {
                             outline: none;
@@ -2160,34 +2723,40 @@
                     }
                 }
             }
-            .helpTxt {
-                font-size: 30px;
-                text-align: center;   
-                margin: 20px 0 !important; 
+            p.helpTxt {
+                font-size: 20px !important;
+                line-height: 30px;
+                margin: 40px 0 !important;
             }
         }
         .resources {
-            grid-template-columns: 1fr 1fr;
-            margin-top: 20px !important;
+            grid-gap: 20px !important;
             .resourceCard {
-                width: 300px;
-                height: 300px;
-                border-radius: 50px;
+                width: 100%;
+                border-radius: 20px;
+                height: 200px;
+                padding: 15px;
                 justify-content: space-between;
                 margin-top: 0;
                 .info {
-                    min-width: 184px;
-                    height: 38px;
-                    padding: 0 20px;
-                    font-size: 20px;
+                    min-width: 70%;
+                    height: auto !important;
+                    padding: 5px 10px;
+                    font-size: 14px;
+                    margin: 0;
                 }
                 .resourceTxt {
-                    font-size: 20px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    width: 100% !important;
+                    margin: 0;
                 }
                 .arrowBtn {
+                    margin: 0;
                     img {
-                        width: 35px;
-                        height: 35px;
+                        width: 25px;
+                        height: 25px;
+                        object-fit: contain;
                     }
                 }
             }
@@ -2196,9 +2765,11 @@
     
     //Product expanded sub category styles
     .subCategorySlider {
+        padding-bottom: 30px !important;
         .subCard {
-            width: auto;
-            height: 80px;
+            width: 100%;
+            height: 60px;
+            border-radius: 20px;
             h6 {
                 font-size: 18px;
                 line-height: 24px;
@@ -2206,178 +2777,243 @@
         }
     }
     .subCategoryForm {
-        .formSection {
-            .top {
-                h1 {
-                    font-size: 45px;
-                    line-height: 40px;
-                }
-                p {
-                    font-size: 18px;
-                    line-height: 24px;
-                }
-            }
-            .tileColors {
-                h6 {
-                    font-size: 18px;
-                    line-height: 24px;
-                    font-weight: bold;
-                }
-                span {
-                    width: 35px;
-                    height: 35px;
-                }
-            }
-            .tileTypes {
-                h4 {
-                    font-size: 20px;
-                    line-height: 32px;
-                }
-                .galleryCard {
-                    img {
-                        width: 100px;
-                        height: 100px;
-                    }
-                    p {
-                        font-size: 16px;
-                        text-align: center;
-                        color: $dark;
-                    }
-                }
-            }
-            .inputs {
-                h3 {
-                    font-size: 24px;
-                    line-height: 32px;
-                    font-weight: bold;
-                }
-                label {
-                    font-size: 16px;
-                    line-height: 24px;
-                    font-weight: normal;
-                }
-                .inputWrapper {
-                    grid-template-columns: 1fr;
-                }
-                .numberInput {
-                    width: 100%;
-                    height: 70px;
-                    .numberBtns {
-                        height: 100%;
-                        width: 30%;
-                        padding: 2px 4px;
-                        img {
-                            width: 25px;
-                            height: 25px;
-                            object-fit: contain;
-                            margin: 0 !important;
-                            padding: 0 !important;
-                        }
-                    }
-                    input {
-                        width: 100%;
-                        height: 100%;
-                        font-size: 16px;
-                        padding: 0 10px;
-                    }
-                }
-            }
-            button {
-                width: 300px;
-                height: 70px;
-                font-size: 18px;
-                line-height: 24px;
-            }
-        }
-    }
-    .subCategorySpecs {
-        background: $light;
-        h1 {
-            font-size: 32px;
-            line-height: 40px;
-        }
-        .benf {
-            flex-direction: column;
+        padding-top: 24px !important;
+        padding-bottom: 0 !important;
+        .imgSection {
             img {
-                width: 100px;
-                height: 100px;
-            }
-            h5 {
-                font-size: 24px;
-                line-height: 32px;
-                margin-top: 10px !important;
-            }
-            p {
-                font-size: 18px;
-                line-height: 24px;
+                height: 65vh !important;
+                object-fit: cover;
             }
         }
-    }
-    .subCategoryComments {
-        .comments {
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 15px;
-            .imgWrapper {
-                width: auto;
-                height: 70vh;
-                .linkBtns {
-                    .commBtn {
-                        width: 60px;
-                        height: 40px;
-                        img {
-                            width: 15.82px;
-                            height: 20.03px;
-                        }
-                    }
-                }
-            }
-            .commentsText {
-                .quote {
-                    width: auto;
-                    height: auto;
-                }
+        .formSection {
+            z-index: 5 !important;
+            .top {
                 h1 {
                     font-size: 32px;
                     line-height: 40px;
                 }
                 p {
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    width: 80%;
+                }
+            }
+            .tileColors {
+                h6 {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                .clrs {
+                    margin-top: 10px !important;
+                }
+                span {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .tileTypes {
+                h4 {
                     font-size: 18px;
                     line-height: 24px;
-                    width: 80%; 
                 }
-                .person {
-                    h4 {
+                .galleryCard {
+                    * {
+                        margin: 0 !important;
+                    }
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 20px;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 20px;
+                        text-align: center;
+                    }
+                }
+            }
+            .inputs {
+                margin-top: 40px;
+                h3 {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                label {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                .label2 {
+                    margin-bottom: 25px !important;
+                }
+                .numberInput {
+                    width: 100%;
+                    height: 60px;
+                    .numberBtns {
+                        height: 100%;
+                        width: 30%;
+                        padding: 2px 4px;
+                        padding: 10px 0;
+                        justify-content: space-between;
+                        span {
+                            margin: 0 !important;
+                        }
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            object-fit: contain;
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 18px;
+                        padding: 0 10px;
+                    }
+                }
+            }
+            .assembleButtons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 30px;
+                width: 100% !important;
+                a {
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 20px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin: 0 !important;
+                    * { 
                         font-size: 18px;
                         line-height: 24px;
                     }
+                }
+                .plan {
+                    img {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .subCategorySpecs {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+        .heritageGrid {
+            margin-top: 30px !important;
+        }
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 800 !important;
+        }
+        
+        .benf {
+            flex-direction: column;
+            * {
+                margin: 0 !important;
+            }
+            img {
+                width: 80px;
+                height: 80px;
+            }
+            h5 {
+                font-size: 22px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 22px;
+                width: 100%;
+            }
+        }
+    }
+    .subCategoryComments {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+        .comments {
+            display: grid !important;
+            grid-template-columns: 1fr 1.5fr;
+            grid-gap: 40px !important;
+            .imgWrapper {
+                width: auto;
+                height: 60vh;
+                margin: 0 !important;
+                .linkBtns {
+                    .commBtn {
+                        width: 60px;
+                        height: 60px;
+                        img {
+                            width: 20.82px;
+                            height: 25.03px;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+            .commentsText {
+                justify-content: center;
+                margin: 0 !important;
+                .quote {
+                    width: 100px;
+                    height: 80px;
+                    object-fit: contain;
+                }
+                h1 {
+                    font-size: 32px;
+                    line-height: 40px;
+                    margin-top: 20px !important;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 30px;
+                    width: 70%; 
+                    margin: 10px 0 !important;
+                }
+                .person {
+                    margin-top: 10px !important;
+                    * {
+                        margin: 0;
+                    }
+                    h4 {
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-bottom: 5px !important;
+                    }
                     h6 {
-                        font-size: 18px;
-                        line-height: 24px;
+                        font-size: 16px;
+                        line-height: 20px;
                     }
                 }
             }
         }
         .gallery {
+            margin-top: 0 !important;
+            padding-left: 96px !important;
+            height: fit-content !important;
             h1 {
                 font-size: 32px;
                 line-height: 40px;
+                margin-bottom: 30px !important;
             }
-            
+            .heritageSlider {
+                margin-top: 48px !important;
+            }
             .heritageImg{
-                width: auto;
-                height: auto;
+                width: 100%;
+                height: 100%;
             }
         }
         .imgLightbox {
             .modalWrapper {
-                position: relative;
                 .close {
-                    position: absolute;
-                    top: 50px;
-                    right: 50px;
+                    top: 5vh;
+                    right: 5vw;
                     img {
-                        width: 32px;
-                        height: 32px;
+                        width: 40px;
+                        height: 40px;
                     }
                 }
                 .modalContent {
@@ -2407,146 +3043,208 @@
 //Tablets
 @media only screen and (max-width: 768px) {
     .productBanner {
+        height: fit-content !important;
+        padding-top: 48px;
+        padding-bottom: 48px;
         .back {
-            height: 60%;
+            height: 45% !important;
         }
         .bannerTxt {
             h1 {
-                font-size: 45px;
+                font-size: 40px;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
             }
             h5 {
+                font-size: 16px;
+            }
+            h6 {
                 font-size: 14px;
-                line-height: 24px;
             }
             img {
-                width: 20px;
-                height: 20px;
+                width: 25px;
+                height: 25px;
             }
+        }
+        .bannerImg {
+            margin-top: 0px !important;
         }
     }
     .productGrids {
+        padding: 48px !important;
+        padding-top: 0 !important;
         h4 {
             font-size: 24px;
             line-height: 32px;
+            font-weight: 800;
+        }
+        .prGrid {
+            margin-top: 30px !important;
+            grid-gap: 30px;
         }
         .productCard {
+            height: 300px;
             .cardTxt {
-                padding: 15px 25px !important;
+                *{
+                    margin: 0 !important;
+                }
+                padding: 10px 20px !important;
                 h4 {
                     font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 10px;
                 }
                 p {
-                    font-size: 14px;
+                    font-size: 16px;
                     line-height: 20px;
                 }
             }
         }
     }
     .productTips {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         .tipsHeader {
+            margin-bottom: 20px;
             h1 {
                 font-size: 30px;
+                line-height: 40px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
             }
         }
         .tipsInfo {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            grid-gap: 40px;
             .imgWrapper {
-                height: 350px;
+                width: 100%;
+                height: 400px;
+                margin: 0;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-position: top;
+                }
                 .linkBtns {
                     .commBtn {
-                        width: 60px;
-                        height: 40px;
+                        width: 50px;
+                        height: 50px;
                         img {
-                            width: 10.82px;
-                            height: 15.03px;
+                            width: 20.82px;
+                            height: 20.03px;
+                            object-fit: contain;
                         }
                     }
                 }
             }
             .communityText {
+                margin: 0;
+                .names {
+                    margin-bottom: 10px !important;
+                }
                 h3 {
-                    font-size: 24px;
+                    font-size: 24px !important;
                     line-height: 32px;
                 }
                 p {
                     font-size: 16px !important;
-                    line-height: 24px;
-                    width: 90%;
+                    line-height: 20px;
+                    width: 80%;
                 }
                 a {
                     font-size: 16px;
+                    line-height: 20px;
                 }
             }
         }
     }
     .productBranches {
+        padding-bottom: 48px;
+        .bgBack {
+            height: 80%;
+        }
         .wrapper {
+            height: fit-content !important;
+            width: 90vw !important;
+            padding: 30px 50px !important;
+            margin: 0 !important;
             h2 {
                 font-size: 30px;
                 line-height: 40px;
+                font-weight: 900 !important;
             }
             form {
                 .search {
-                    width: 60vw;
+                    width: 50vw;
                     height: 60px;
+                    border-radius: 20px;
                     img {
-                        width: 24px;
-                        height:24px;
+                        width: 30px;
+                        height: 30px;
+                        object-fit: contain;
                     }
                     input {
-                        font-size: 16px;
+                        font-size: 18px;
                         &::placeholder {
-                            color: $dark;
-                            font-size: 16px;
+                            font-size: 18px;
+                        }
+                        &:focus {
+                            outline: none;
                         }
                     }
                 }
                 .radios {
+                    margin-top: 30px !important;
                     .container {
                         position: relative;
-                        padding-left: 0px;
+                        padding-left: 35px;
                         margin-bottom: 5px;
                         font-size: 16px;
                         .checkmark {
-                            height: 24px;
-                            width: 24px;
-                            border: 4px solid $dark;
+                            height: 25px;
+                            width: 25px;
+                            border-width: 4px;
                             &:after {
-                                top: 3px;
-                                left: 3px;
-                                right: 3px;
-                                bottom: 3px;
-                                width: 10px;
-                                height: 10px;
+                                top: 2px;
+                                left: 2px;
+                                right: 2px;
+                                bottom: 2px;
+                                width: 12px;
+                                height: 12px;
                             }
                         }
                         p {
-                            font-size: 16px;
+                            font-size: 18px;
                             font-weight: bold;
                         }
                     }
                 }
             }
-            p {
-                font-size: 18px;
+            .buildtxt {
+                font-size: 20px;
+                line-height: 32px;
+                margin-bottom: 30px !important;
             }
             .hardware {
+                grid-template-columns: 1fr 1fr;
                 .hardwareCard {
                     width: auto;
-                    height: 250px;
-                    padding: 10px !important;
-                    border-radius: 25px !important;
+                    height: 200px;
+                    padding: 20px !important;
+                    border-radius: 20px !important;
                     .info {
                         width: auto;
                         height: auto;
                         padding: 5px 2px;
-                        font-size: 14px;
+                        font-size: 16px;
                     }
                     .overlay {
-                        border-radius: 25px !important;
+                        border-radius: 20px !important;
                         .overlayInfo {
                             width: 80%;
                             height: 38px;
@@ -2557,7 +3255,7 @@
                         }
                         .distance {
                             p {
-                                font-size: 14px;
+                                font-size: 16px;
                                 color: $blue;
                             }
                             img {
@@ -2573,15 +3271,18 @@
     
     //Product Category Page
     .roofingBanner {
+        padding-top: 48px;
+        padding-bottom: 48px !important;
         .back {
-            height: 50% !important;
+            height: 45% !important;
         }
         .bannerTxt {
             .top {
                 align-items: flex-start;
             }
             h1 {
-                font-size: 45px;
+                font-size: 40px;
+                line-height: 50px;
             }
             p {
                 font-size: 16px;
@@ -2589,97 +3290,107 @@
             }
             h5 {
                 font-size: 14px;
+                line-height: 24px;
             }
             h6 {
-                font-size: 14px;
+                font-size: 16px;
+                line-height: 24px;
             }
             img {
-                width: 20px;
-                height: 20px;
+                width: 25px;
+                height: 25px;
             }
+        }
+        .bannerImg {
+            margin-top: 0px !important;
         }
     }
     .productsExplore {
-        .back {
-            width: 100%;
-        }
+        padding-top: 48px;
         h1 {
-            font-size: 30px;
-            line-height: 40px;
+            font-size: 24px;
+            line-height: 32px;
         }
         .exploreWrapper {
-            grid-template-columns: 1fr;
+            margin-top: 30px;
             grid-gap: 20px;
-            padding: 0 48px !important;
             .imgSection {
+                width: 100%;
+                height: 400px !important; 
                 img {
-                    height: 300px;
                     width: 100%;
+                    height: 100%;
                     object-fit: cover;
                 }
             }
             .tiles {
-                grid-gap: 20px;
+                grid-gap: 10px !important;
                 .choice {
-                    width: auto;
-                    height: 60px;
-                    font-size: 14px;
-                    line-height: 18px;
+                    width: 100%;
+                    height: 50px;
+                    font-size: 12px;
+                    line-height: 16px;
+                    border-radius: 15px;
                 }
             }
             .tileTypes {
+                margin-top: 30px;
                 h4 {
-                    font-size: 18px;
-                    line-height: 24px;
+                    font-size: 20px;
+                    line-height: 32px;
                 }
-                .gallery{
+                .gallery {
+                    margin-top: 10px;
                     display: grid !important;
-                    grid-template-columns: repeat(5,1fr);
+                    grid-template-columns: repeat(5, 1fr);
                     grid-gap: 10px;
                 }
                 .galleryCard {
                     cursor: pointer;
+                    align-items: center;
+                    margin: 0 !important;
                     img {
                         width: 100px;
-                        height: 100px;
-                        object-fit: cover;
-                        border-radius: 25px;
+                        height: 80px;
+                        border-radius: 15px;
                     }
                     p {
                         font-size: 14px;
+                        line-height: 20px;
                         text-align: center;
-                        color: $dark;
+                        margin-top: 10px !important;
                     }
                 }
             }
             .inputs {
+                margin-top: 40px;
                 h3 {
                     font-size: 20px;
-                    line-height: 24px;
+                    line-height: 30px;
                 }
                 label {
                     font-size: 16px;
                     line-height: 24px;
-                    font-weight: normal;
                 }
-                .inputWrapper {
-                    grid-template-columns: 1fr;
+                .label2 {
+                    margin-bottom: 25px !important;
                 }
                 .numberInput {
                     width: 100%;
                     height: 60px;
                     .numberBtns {
                         height: 100%;
-                        width: 20%;
-                        padding: 5px 4px;
-                        margin: 0 !important;
-                        padding: 0 !important;
-                        img {
-                            width: 20px;
-                            height: 20px;
-                            object-fit: contain;
+                        width: 30%;
+                        padding: 2px 4px;
+                        padding: 10px 0;
+                        justify-content: space-between;
+                        span {
                             margin: 0 !important;
-                            padding: 0 !important;
+                        }
+                        img {
+                            width: 15px;
+                            height: 15px;
+                            object-fit: contain;
                         }
                     }
                     input {
@@ -2691,37 +3402,55 @@
                 }
             }
             button {
-                width: 300px;
+                width: 200px;
                 height: 60px;
                 font-size: 16px;
                 line-height: 24px;
+                margin-top: 40px;
             }
         }
     }
     .materialsSlider {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         h1 {
             font-size: 30px;
             line-height: 40px;
+            margin-bottom: 0 !important;
+        }
+        .materialsSlider {
+            margin-top: 30px;
+            padding: 0 !important;
+            height: auto;
         }
         .materialsCard {
-            width: auto;
+            width: 100%;
             height: 350px !important;
+            border-radius: 30px;
+            .back1 {
+                border-radius: 20px;
+            }
+            .back2 {
+                border-radius: 20px;
+            }
             .cardWrapper {
+                border-radius: 20px;
                 span {
-                    height: 70px;
-                    font-size: 20px;
-                    line-height: 32px;
+                    height: 60px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    border-radius: 20px;
                 }
                 p {
                     font-size: 16px;
-                    line-height: 24px;
+                    line-height: 20px;
                 }
                 a {
                     font-size: 16px;
-                    line-height: 24px;
+                    line-height: 20px;
                     img {
-                        width: 40px;
-                        height: 40px;
+                        width: 35px;
+                        height: 35px;
                         object-fit: contain;
                     }
                 }
@@ -2729,27 +3458,33 @@
         }
     }
     .faq {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         h1 {
-            font-size: 30px;
-            line-height: 45px;
+            font-size: 32px;
+            line-height: 40px;
+        }
+        .faqSlider {
+            margin: 30px 0 !important;
         }
         .faqCard {
-            width: auto;
-            height: 80px;
+            width: 100%;
+            height: 60px !important;
+            padding: 0 !important;
+            border-radius: 20px;
             p {
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 20px;
             }
         }
         .accordion {
             .accord {
                 min-height: 60px;
+                padding: 10px 30px !important;
                 span {
-                    margin-bottom: 10px;
                     h4 {
-                       font-size: 18px;
-                       line-height: 24px;
-                       font-weight: bold; 
+                       font-size: 20px;
+                       line-height: 30px;
                     }
                     img {
                         width: 40.63px;
@@ -2757,7 +3492,7 @@
                     }
                 }
                 p {
-                    font-size: 16px;
+                    font-size: 18px;
                     line-height: 24px;
                 }
             }
@@ -2766,136 +3501,189 @@
     
     //Product Sub Category styles
     .profileGrid {
+        padding: 0 48px !important;
+        padding-bottom: 48px !important;
         .profileIntro {
             h1 {
-                font-size: 32px;
-                line-height: 40px;
+                font-size: 24px;
+                line-height: 32px;
             }
             p {
-                font-size: 16px;
+                font-size: 18px !important;
                 line-height: 24px;
             }
         }
         .profileCard {
-            min-height: 400px;
-            width: auto;
+            height: auto;
+            width: 100%;
             .imgWrapper {
-                width: auto;
-                height: 200px;
+                width: 100%;
+                height: 150px;
+                img {
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                }
             }
             .cardTxt {
-                padding: 20px;
+                height: auto;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                padding: 15px !important;
+                * {
+                    margin: 0;
+                }
                 h4 {
-                    font-size: 24px;
-                    line-height: 32px;
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 5px !important;
                 }
                 p {
                     font-size: 16px;
-                    line-height: 24px;
+                    line-height: 20px;
                 }
             }
         }
     }
     .prodBenefits {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         .benfWrapper {
+            grid-gap: 30px;
             img {
                 height: 400px;
                 object-fit: cover;
             }
             h1 {
-                font-size: 32px;
+                font-size: 30px;
                 line-height: 40px;
             }
-            p{
-                font-size: 16px;
+            p.featureText {
+                font-size: 18px !important;
                 line-height: 24px;
+                margin-bottom: 20px;
+                margin-top: 10px;
             }  
             h3 {
                 font-size: 20px;
-                line-height: 28px;
+                line-height: 30px;
             }
             .list {
                 p {
                     font-size: 16px;
                     line-height: 24px;
                 }
+                
                 img {
                     width: 15px;
                     height: 15px;
+                    object-fit: contain;
                 }
             }
         }
     }
     .featuresGrid {
+        padding-top: 0 !important;
+        padding-bottom: 48px !important;
+        padding-left: 96px !important;
+        .benfGrid {
+            grid-gap: 20px;
+        }
         h4 {
             font-size: 24px;
             line-height: 32px;
+            width: 80%;
         }
         
         .benf {
+            flex-direction: column;
+            * {
+                margin: 0 !important;
+            }
             img {
-                width: 100px;
-                height: 100px;
+                width: 80px;
+                height: 80px;
             }
             h5 {
                 font-size: 22px;
-                line-height: 30px;
+                line-height: 32px;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 22px;
+                width: 100%;
             }
         }
     }
     .styleResources {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+        .bgBack {
+            height: 80%;
+        }
         .wrapper {
+            width: 80vw !important;
+            padding: 30px 50px !important;
+            margin: 0 !important;
             h2 {
-                font-size: 45px;
+                font-size: 30px;
+                line-height: 40px;
             }
             form {
                 .search {
-                    width: 60vw;
+                    width: 50vw;
                     height: 60px;
+                    border-radius: 20px;
                     img {
-                        width: 25px;
-                        height: 25px;
+                        width: 30px;
+                        height: 30px;
+                        object-fit: contain;
                     }
                     input {
-                        font-size: 16px;
+                        font-size: 18px;
                         &::placeholder {
-                            font-size: 16px;
+                            font-size: 18px;
+                        }
+                        &:focus {
+                            outline: none;
                         }
                     }
                 }
             }
-            .helpTxt {
-                font-size: 24px;
-                text-align: center;   
-                margin: 20px 0 !important; 
+            p.helpTxt {
+                font-size: 20px !important;
+                line-height: 30px;
+                margin: 40px 0 !important;
+                text-align: center;
             }
         }
         .resources {
-            grid-template-columns: 1fr 1fr;
-            margin-top: 20px !important;
+            grid-gap: 20px !important;
             .resourceCard {
-                width: auto;
-                height: 300px;
-                border-radius: 50px;
+                width: 100%;
+                border-radius: 20px;
+                height: 200px;
+                padding: 15px;
                 justify-content: space-between;
                 margin-top: 0;
                 .info {
-                    min-width: 100%;
-                    height: 38px;
-                    padding: 0 20px;
-                    font-size: 20px;
+                    min-width: 70%;
+                    height: auto !important;
+                    padding: 5px 10px;
+                    font-size: 14px;
+                    margin: 0;
                 }
                 .resourceTxt {
-                    font-size: 16px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    width: 100% !important;
+                    margin: 0;
                 }
                 .arrowBtn {
+                    margin: 0;
                     img {
-                        width: 30px;
-                        height: 30px;
+                        width: 25px;
+                        height: 25px;
+                        object-fit: contain;
                     }
                 }
             }
@@ -2904,210 +3692,272 @@
     
     //Product expanded sub category styles
     .subCategorySlider {
+        padding-bottom: 30px !important;
         .subCard {
-            width: auto;
-            height: 80px;
+            width: 100%;
+            height: 60px;
+            border-radius: 20px;
             h6 {
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 24px;
             }
         }
     }
     .subCategoryForm {
+        padding-top: 24px !important;
+        padding-bottom: 0 !important;
+        .imgSection {
+            img {
+                height: 50vh !important;
+                object-fit: cover;
+            }
+        }
         .formSection {
             .top {
                 h1 {
-                    font-size: 32px;
+                    font-size: 30px;
                     line-height: 40px;
                 }
                 p {
                     font-size: 18px;
                     line-height: 24px;
+                    width: 80%;
                 }
             }
             .tileColors {
                 h6 {
                     font-size: 18px;
-                    line-height: 24px;
-                    font-weight: bold;
+                    line-height: 30px;
+                }
+                .clrs {
+                    margin-top: 10px !important;
                 }
                 span {
-                    width: 35px;
-                    height: 35px;
+                    width: 30px;
+                    height: 30px;
                 }
             }
             .tileTypes {
                 h4 {
-                    font-size: 20px;
-                    line-height: 32px;
+                    font-size: 16px;
+                    line-height: 20px;
                 }
                 .galleryCard {
+                    * {
+                        margin: 0 !important;
+                    }
                     img {
-                        width: 100px;
-                        height: 100px;
+                        width: 100%;
+                        height: 80px;
+                        border-radius: 20px;
                     }
                     p {
-                        font-size: 16px;
+                        font-size: 14px;
+                        line-height: 20px;
                         text-align: center;
-                        color: $dark;
                     }
                 }
             }
             .inputs {
+                margin-top: 40px;
                 h3 {
-                    font-size: 24px;
-                    line-height: 32px;
-                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 30px;
                 }
                 label {
                     font-size: 16px;
                     line-height: 24px;
-                    font-weight: normal;
                 }
-                .inputWrapper {
-                    grid-template-columns: 1fr;
+                .label2 {
+                    margin-bottom: 25px !important;
                 }
                 .numberInput {
                     width: 100%;
-                    height: 70px;
+                    height: 60px;
                     .numberBtns {
                         height: 100%;
-                        width: 20%;
+                        width: 30%;
                         padding: 2px 4px;
-                        img {
-                            width: 25px;
-                            height: 25px;
-                            object-fit: contain;
+                        padding: 10px 0;
+                        justify-content: space-between;
+                        span {
                             margin: 0 !important;
-                            padding: 0 !important;
+                        }
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            object-fit: contain;
                         }
                     }
                     input {
                         width: 100%;
                         height: 100%;
-                        font-size: 16px;
+                        font-size: 18px;
                         padding: 0 10px;
                     }
                 }
             }
-            button {
-                width: 300px;
-                height: 70px;
-                font-size: 18px;
-                line-height: 24px;
+            .assembleButtons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 30px;
+                width: 100% !important;
+                a {
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 20px;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin: 0 !important;
+                    * { 
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+                .plan {
+                    img {
+                        height: 30px;
+                        width: 30px;
+                        object-fit: contain;
+                    }
+                }
             }
         }
     }
     .subCategorySpecs {
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
+        .heritageGrid {
+            margin-top: 30px !important;
+        }
         h1 {
             font-size: 32px;
             line-height: 40px;
+            font-weight: 800 !important;
         }
+        
         .benf {
             flex-direction: column;
+            * {
+                margin: 0 !important;
+            }
             img {
-                width: 100px;
-                height: 100px;
+                width: 80px;
+                height: 80px;
             }
             h5 {
-                font-size: 24px;
+                font-size: 22px;
                 line-height: 32px;
-                margin-top: 10px !important;
             }
             p {
-                font-size: 18px;
-                line-height: 24px;
+                font-size: 16px;
+                line-height: 22px;
+                width: 100%;
             }
         }
     }
     .subCategoryComments {
-        .back {
-            width: 100%;
-        }
+        padding-top: 48px !important;
+        padding-bottom: 48px !important;
         .comments {
+            display: grid !important;
             grid-template-columns: 1fr 1fr;
-            grid-gap: 15px;
+            grid-gap: 40px !important;
             .imgWrapper {
-                width: auto;
-                height: 40vh;
+                width: 100%;
+                height: 50vh;
+                margin: 0 !important;
                 .linkBtns {
                     .commBtn {
-                        width: 60px;
-                        height: 40px;
+                        width: 50px;
+                        height: 50px;
                         img {
                             width: 15.82px;
-                            height: 20.03px;
+                            height: 15.03px;
+                            object-fit: contain;
                         }
                     }
                 }
             }
             .commentsText {
+                justify-content: center;
+                margin: 0 !important;
                 .quote {
                     width: 100px;
-                    height: 100px;
+                    height: 80px;
+                    object-fit: contain;
                 }
                 h1 {
-                    font-size: 32px;
+                    font-size: 30px;
                     line-height: 40px;
+                    margin-top: 20px !important;
                 }
                 p {
                     font-size: 18px;
-                    line-height: 24px;
-                    width: 80%; 
+                    line-height: 30px;
+                    width: 70%; 
+                    margin: 10px 0 !important;
                 }
                 .person {
+                    margin-top: 10px !important;
+                    * {
+                        margin: 0;
+                    }
                     h4 {
-                        font-size: 18px;
-                        line-height: 24px;
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-bottom: 5px !important;
                     }
                     h6 {
-                        font-size: 18px;
-                        line-height: 24px;
+                        font-size: 16px;
+                        line-height: 20px;
                     }
                 }
             }
         }
         .gallery {
+            margin-top: 0 !important;
+            padding-left: 96px !important;
+            height: fit-content !important;
             h1 {
-                font-size: 32px;
+                font-size: 30px;
                 line-height: 40px;
+                margin-bottom: 30px !important;
             }
-            
+            .heritageSlider {
+                margin-top: 48px !important;
+            }
             .heritageImg{
-                width: auto;
-                height: auto;
+                width: 100%;
+                height: 100%;
             }
         }
         .imgLightbox {
             .modalWrapper {
-                position: relative;
                 .close {
-                    position: absolute;
-                    top: 50px;
-                    right: 50px;
+                    top: 5vh;
+                    right: 5vw;
                     img {
-                        width: 30px;
-                        height: 30px;
+                        width: 40px;
+                        height: 40px;
                     }
                 }
                 .modalContent {
                     .previous {
                         img {
-                            width: 50px;
-                            height: 50px;
-                            object-fit: contain;
+                            width: 60px;
+                            height: 60px;
                         }
                     }
                     .modalImage {
                         width: 60vw;
-                        height: 50vh;
+                        height: 40vh;
                         object-fit: cover;
                     }
                     .next {
                         img {
                             width: 60px;
                             height: 60px;
-                            object-fit: contain;
                         }
                     }
                 }
@@ -3119,30 +3969,59 @@
 @media only screen and (max-width: 540px) {
     .productBanner {
         grid-gap: 0;
-        padding-top: 30px;
+        padding-left: 0;
+        padding: 32px 16px !important;
         .back {
             height: 80%;
         }
         .bannerTxt {
             h1 {
-                font-size: 45px;
+                font-size: 32px;
+                line-height: 40px;
             }
             p,h5 {
                 color: white;
+            }
+            h5 {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            img {  
+                width: 25px;
+                height: 25px;
             }
         }
         .bannerImg {
             object-fit: cover;
         }
     }
+    .productGrids{
+        padding: 32px 16px !important;
+        .title {
+            text-align: center;
+        }
+    }
     .productTips {
+        padding: 32px 16px !important;
+        padding-right: 0 !important;
         .back {
             width: 100%;
         }
         .tipsHeader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            * {
+                margin: 0;
+            }
             h1 {
-                font-size: 30px;
+                font-size: 24px;
                 line-height: 32px;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
                 text-align: center;
             }
         }
@@ -3152,15 +4031,24 @@
             .imgWrapper {
                 height: 300px;
             }
+            .communityText {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                * {
+                    text-align: center;
+                }
+            }
         }
     }
     .productBranches {
         .wrapper {
-            width: 100vw !important;
+            width: 100% !important;
             border-radius: 0;
+            padding: 32px 16px !important;
             h2 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 24px;
+                line-height: 32px;
                 text-align: center;
                 text-align: center;
             }
@@ -3168,6 +4056,12 @@
                 .search {
                     width: 100%;
                     height: 60px;
+                    input {
+                        font-size: 16px;
+                        &::placeholder {
+                            font-size: 16px;
+                        }
+                    }
                 }
                 .radios {
                     .container {
@@ -3184,31 +4078,34 @@
             }
             .hardware {
                 grid-template-columns: 1fr !important;
-                padding: 0 20px;
+                padding: 0;
                 .hardwareCard {
-                    width: auto;
-                    height: 250px;
+                    width: 100%;
+                    height: 40vh !important;
                     padding: 10px inherit !important;
                     border-radius: 25px !important;
                     .info {
                         width: auto;
                         height: auto;
                         padding: 5px 2px;
-                        font-size: 14px;
+                        font-size: 16px;
                     }
                     .overlay {
                         border-radius: 25px !important;
+                        padding: 20px;
                         .overlayInfo {
                             width: 80%;
                             height: 38px;
                         }
                         .overlayTxt {
-                            font-size: 16px;
-                            margin-top: 30px !important;
+                            font-size: 18px;
+                            width: 80%;
+                            margin-top: 0px !important;
+                            text-align: left;
                         }
                         .distance {
                             p {
-                                font-size: 14px;
+                                font-size: 16px;
                                 color: $blue;
                             }
                             img {
@@ -3225,13 +4122,14 @@
     //Product Category Page
     .roofingBanner {
         grid-gap: 0;
-        padding-top: 30px;
+        padding-left: 0;
+        padding: 32px 16px !important;
         .back {
             height: 80% !important;
         }
         .bannerTxt {
             h1 {
-                font-size: 45px;
+                font-size: 32px;
             }
             p,h5,h6 {
                 color: white;
@@ -3246,17 +4144,28 @@
             width: 100%;
         }
         h1 {
-            font-size: 30px;
+            font-size: 24px;
             line-height: 32px;
         }
         .exploreWrapper {
-            padding: 0 24px !important;
+            padding: 32px 16px !important;
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+            margin: 0;
             .imgSection {
+                height: fit-content !important;
+                margin: 0 !important;
                 img {
                     height: 250px;
                 }
             }
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             .tiles {
+                margin-top: 20px;
                 grid-gap: 10px;
                 .choice {
                     width: auto;
@@ -3273,17 +4182,18 @@
                 }
                 .gallery{
                     display: grid !important;
-                    grid-template-columns: repeat(3,1fr);
+                    grid-template-columns: repeat(4, 1fr);
                     grid-gap: 10px;
                     margin-top: 5px;
+                    padding: 0 !important;
                 }
                 .galleryCard {
                     cursor: pointer;
                     img {
-                        width: auto;
-                        height: 100px;
+                        width: 100%;
+                        height: 80px;
                         object-fit: cover;
-                        border-radius: 25px;
+                        border-radius: 20px;
                     }
                     p {
                         font-size: 14px;
@@ -3301,20 +4211,27 @@
                 label {
                     font-size: 16px;
                     line-height: 24px;
-                    font-weight: normal;
+                    text-align: center;
+                }
+                .label2 {
+                    margin-bottom: 0 !important;
                 }
                 .numberInput {
                     width: 100%;
                     height: 60px;
                     .numberBtns {
                         height: 100%;
-                        width: 20%;
-                        padding: 5px 4px;
-                        margin: 0 !important;
-                        padding: 0 !important;
+                        width: 30%;
+                        padding: 2px 4px;
+                        padding: 10px 0;
+                        justify-content: space-between;
+                        span {
+                            margin: 0 !important;
+                        }
                         img {
                             width: 15px;
                             height: 15px;
+                            object-fit: contain;
                         }
                     }
                     input {
@@ -3326,7 +4243,7 @@
                 }
             }
             button {
-                width: 100%;
+                width: 50vw;
                 height: 60px;
                 font-weight: bolder;
                 font-size: 16px;
@@ -3342,7 +4259,11 @@
         }
         .materialsCard {
             width: auto;
-            height: 300px !important;
+            height: 350px !important;
+            border-radius: 30px !important;
+            .overlay {
+                border-radius: 30px !important;
+            }
             .cardWrapper {
                 .top * {
                     margin: 0;
@@ -3373,6 +4294,7 @@
         h1 {
             font-size: 30px;
             line-height: 32px;
+            margin: 0 16px !important;
         }
         .faqCard {
             width: auto;
@@ -3407,6 +4329,8 @@
     
     //Product Sub Category styles
     .profileGrid {
+        padding: 0 16px !important;
+        grid-gap: 16px !important;
         .profileIntro {
             align-items: center;
             justify-content: center;
@@ -3464,8 +4388,11 @@
             h3 {
                 font-size: 20px;
                 line-height: 28px;
+                text-align: center;
             }
             .list {
+                justify-content: center;
+                align-items: center;
                 p {
                     font-size: 14px;
                     line-height: 20px;
@@ -3479,12 +4406,14 @@
         }
     }
     .featuresGrid {
+        padding: 32px 16px !important;
         .back {
             display: none;
         }
         h4 {
             font-size: 24px;
             line-height: 30px;
+            width: 100%;
             text-align: center;
         }
         .benf {
@@ -3503,20 +4432,26 @@
             h5 {
                 font-size: 22px;
                 line-height: 30px;
+                text-align: center;
             }
             p {
                 font-size: 14px;
                 line-height: 24px;
                 font-weight: normal !important;
+                text-align: center;
+                width: 100%;
             }
         }
     }
     .styleResources {
+        padding: 0 !important;
         .wrapper {
-            width: 100%;
+            width: 100% !important;
             border-radius: 0 !important;
+            padding: 32px 16px !important;
             h2 {
-                font-size: 32px;
+                font-size: 30px;
+                line-height: 40px;
             }
             form {
                 .search {
@@ -3527,7 +4462,7 @@
                         height: 20px;
                     }
                     input {
-                        font-size: 14px;
+                        font-size: 16px;
                         &::placeholder {
                             font-size: 16px;
                         }
@@ -3535,28 +4470,30 @@
                 }
             }
             .helpTxt {
-                font-size: 22px;
+                font-size: 20px;
                 text-align: center;   
-                margin: 20px 0 !important; 
             }
         }
         .resources {
             grid-template-columns: 1fr;
             margin-top: 20px !important;
+            padding: 0 16px;
             .resourceCard {
                 width: auto;
-                height: 300px;
-                border-radius: 50px;
+                height: 250px;
+                border-radius: 20px;
                 justify-content: space-between;
                 margin-top: 0;
                 .info {
                     min-width: 100%;
-                    height: 38px;
-                    padding: 15px;
+                    height: auto !important;
+                    padding: 10px;
                     font-size: 15px;
                 }
                 .resourceTxt {
                     font-size: 16px;
+                    line-height: 20px;
+                    text-align: left;
                 }
                 .arrowBtn {
                     img {
@@ -3580,17 +4517,27 @@
         }
     }
     .subCategoryForm {
+        .imgSection {
+            img {
+                height: 300px !important;
+                object-fit: cover;
+            }
+        }
         .formSection {
             .top {
+                align-items: center;
+                justify-content: center;
                 h1 {
                     font-size: 32px;
                     line-height: 40px;
                     text-align: center;
+                    margin-top: 20px;
                 }
                 p {
                     font-size: 16px;
                     line-height: 24px;
                     text-align: center;
+                    width: 100%;
                 }
             }
             .tileColors {
@@ -3615,9 +4562,14 @@
                     line-height: 24px;
                     text-align: center;
                 }
+                .gallery {
+                    grid-template-columns: repeat(3, 1fr);
+                    width: 100%;
+                    padding: 0 !important;
+                }
                 .galleryCard {
                     img {
-                        width: 100px;
+                        width: auto;
                         height: 100px;
                     }
                     p {
@@ -3645,33 +4597,41 @@
                 }
                 .numberInput {
                     width: 100%;
-                    height: 70px;
+                    height: 60px;
                     .numberBtns {
                         height: 100%;
-                        width: 20%;
+                        width: 30%;
                         padding: 2px 4px;
-                        img {
-                            width: 25px;
-                            height: 25px;
-                            object-fit: contain;
+                        padding: 10px 0;
+                        justify-content: space-between;
+                        span {
                             margin: 0 !important;
-                            padding: 0 !important;
+                        }
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            object-fit: contain;
                         }
                     }
                     input {
                         width: 100%;
                         height: 100%;
-                        font-size: 16px;
+                        font-size: 18px;
                         padding: 0 10px;
                     }
                 }
             }
-            button {
-                width: 100%;
-                height: 60px;
-                font-size: 16px;
-                line-height: 24px;
-                font-weight: bold;
+            .assembleButtons {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+                justify-items: center;
+                align-content: center;
+                align-items: center;
+                a {
+                    width: 50vw;
+                    margin: 0 !important;
+                }
             }
         }
     }
@@ -3698,23 +4658,27 @@
             p {
                 font-size: 18px;
                 line-height: 24px;
+                text-align: center;
             }
         }
     }
     .subCategoryComments {
+        .back {
+            width: 100%;
+        }
         .comments {
             grid-template-columns: 1fr;
-            grid-gap: 15px;
+            grid-gap: 0px;
             .imgWrapper {
                 width: auto;
                 height: 40vh;
                 .linkBtns {
                     .commBtn {
                         width: 60px;
-                        height: 40px;
+                        height: 60px;
                         img {
                             width: 15.82px;
-                            height: 20.03px;
+                            height: 15.03px;
                         }
                     }
                 }
@@ -3728,6 +4692,7 @@
                     height: 80px;
                 }
                 h1 {
+                    margin-top: 0 !important;
                     font-size: 30px;
                     line-height: 40px;
                     text-align: center;
@@ -3753,11 +4718,13 @@
             }
         }
         .gallery {
+            padding-left: 0 !important;
             h1 {
                 font-size: 30px;
                 line-height: 40px;
                 margin-top: 20px !important;
                 text-align: center;
+                margin-top: 0;
             }
             
             .heritageImg{

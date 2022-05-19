@@ -718,7 +718,7 @@
         right: 0;
         background: $blue;
         width: 100%;
-        height: 85%;
+        height: 70% !important;
         z-index: -1;
     }
     .wrapper {
@@ -3240,7 +3240,7 @@
 }
 .branches {
     .wrapper {
-        width: 80vw !important;
+        width: 90vw !important;
         h2 {
             font-size: 30px;
             line-height: 40px;

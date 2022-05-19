@@ -16,36 +16,34 @@
     
     <div class="app" id="app">
         <!--NAVIGATION-->
-        <nav class="flex items-center justify-between w-full lg:px-20 md:px-8 py-5">
+        <nav class="flex items-center justify-between w-full lg:px-20 py-1" id="navigation">
             <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
             <div class="links flex lg:space-x-8">
-                <div class="pageLinks flex items-center justify-center lg:space-x-5">
+                <div class="pageLinks flex items-center justify-center lg:space-x-8">
                     <a href="./index.html">Home</a>
                     <a href="./products.html" class="activeLink">Products</a>
                     <a href="./about.html">About Us</a>
                     <a href="./style.html">Style Points</a>
                     <a href="./impact.html">Our Impact</a>
                     <a href="./news.html">News</a>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="./contact.html">Contact Us</a>
                 </div>
                 <div class="navIcons flex items-center lg:space-x-4">
                     <img src="./assets/search_black_24dp.png" alt="" class="search">
-                    <img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag">
                 </div>
                 <div class="navBtns flex lg:space-x-4">
-                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
-                    <a href="#" class="login flex items-center justify-center">Login</a>
+                    <a href="javascript:void(0)" class="call flex items-center justify-center">Call Us Now</a>
                 </div>
             </div>
         </nav>
         
         <!--RESPONSIVE NAV-->
-        <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-5">
+        <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-1">
             <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
             <img src="./assets/mobile logo.png" alt="" class="mobileLogo">
             <div class="navIcons flex items-center lg:space-x-4 md:space-x-2 space-x-2">
-                <a href="#"><img src="./assets/search_black_24dp.png" alt="" class="search"></a>
-                <a href="#"><img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag"></a>
+                <a href="javascript:void(0)"><img src="./assets/search_black_24dp.png" alt="" class="search"></a>
+                <a href="javascript:void(0)"><img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag"></a>
                 <span class="cursor-pointer menuOpen"><img src="./assets/menu open black.png" alt=""></span>
             </div>
         </div>
@@ -64,14 +62,14 @@
                     <a href="contact.html">Contact Us</a>
                 </div>
                 <div class="overlayBtns flex space-x-4">
-                    <a href="#" class="call flex items-center justify-center">Call Us Now</a>
-                    <a href="#" class="login flex items-center justify-center">Login</a>
+                    <a href="javascript:void(0)" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="javascript:void(0)" class="login flex items-center justify-center">Login</a>
                 </div>
                 <div class="overlaySocial flex flex-col items-center">
                     <div class="flex lg:space-x-5 space-x-2">
-                        <a href="#"><img src="./assets/icons8-facebook-50.png" alt="" class="socialIcon"></a>
-                        <a href="#"><img src="./assets/icons8-twitter-30.png" alt="" class="socialIcon"></a>
-                        <a href="#"><img src="./assets/icons8-instagram-24.png" alt="" class="socialIcon"></a>
+                        <a href="javascript:void(0)"><img src="./assets/icons8-facebook-50.png" alt="" class="socialIcon"></a>
+                        <a href="javascript:void(0)"><img src="./assets/icons8-twitter-30.png" alt="" class="socialIcon"></a>
+                        <a href="javascript:void(0)"><img src="./assets/icons8-instagram-24.png" alt="" class="socialIcon"></a>
                     </div>
                 </div>
             </div>
@@ -140,7 +138,7 @@
                         <form action="#">
                             <div class="tileColors">
                                 <h6>Choose color</h6>
-                                <div class="flex items-center space-x-4 mt-3">
+                                <div class="clrs flex items-center space-x-4 mt-3">
                                     <span @click="activeTileColor=1" :class="{'color1': true, 'activeTileColor': activeTileColor==1}"></span>
                                     <span @click="activeTileColor=2" :class="{'color2': true, 'activeTileColor': activeTileColor==2}"></span>
                                     <span @click="activeTileColor=3" :class="{'color3': true, 'activeTileColor': activeTileColor==3}"></span>
@@ -163,7 +161,7 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col space-y-4">
-                                        <label>Estimated number of tiles</label>
+                                        <label class="label2">Estimated number of tiles</label>
                                         <div class="numberInput flex items-center justify-center">
                                             <div class="numberBtns flex flex-col items-center justify-center lg:space-y-3 md:space-y-1 space-y-1">
                                                 <span class="cursor-pointer addBtn"><img src="./assets/arrow up white.png" alt=""></span>
@@ -176,7 +174,7 @@
                             </div>
                             
                             <div class="tileTypes lg:mt-12 md:mt-6 mt-4">
-                                <h4>Select the tile type</h4>
+                                <h4>Add your Heritage accessories</h4>
                                 <div class="gallery flex items-center justify-start lg:space-x-5 lg:space-x-3 p-0 mt-5">
                                     <div @click="activeImageChoice=1" :class="{'galleryCard flex flex-col items-center justify-center space-y-3':true, 'activeImageChoice': activeImageChoice==1}">
                                         <img src="./assets/MATERIAL HOLDER.png" alt="">
@@ -201,7 +199,13 @@
                                 </div>
                             </div>
                         
-                            <button type="submit" class="lg:mt-20 md:mt-14 mt-8">Get quotation</button>
+                            <div class="assembleButtons flex items-center justify-start lg:space-x-12 md:space-x-6 lg:my-12 md:my-8 my-6">
+                                <a href="javascript:void(0)" class="quote flex items-center justify-center">Add to cart</a>
+                                <a href="javascript:void(0)" class="plan flex items-center justify-center space-x-5">
+                                    <img src="./assets/file_upload_black_24dp.png" alt="">
+                                    <h3>Upload Plan</h3>
+                                </a>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -209,8 +213,8 @@
             
             <!--SUBCATEGORY SPECIFICATIONS-->
             <div class="subCategorySpecs relative w-full h-auto lg:py-24 md:py-12 py-6 lg:px-24 md:px-12 px-6">
-                <h1>Heritage tile <br/>specifications</h1>
-                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-6 gap-6 lg:mt-12 mt-6">
+                <h1>Heritage tile specifications</h1>
+                <div class="heritageGrid grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-6 gap-6 lg:mt-12 mt-6">
                     <div class="benf flex items-start lg:space-x-5">
                         <img src="./assets/hand blue.png" alt="">
                         <div class="text">
@@ -260,7 +264,7 @@
             <div class="subCategoryComments relative w-full h-auto lg:py-24 md:py-12 py-6">
                 <div class="back absolute"></div>
                 
-                <div class="comments lg:pr-24 md:pr-12 pr-6 flex items-center justify-start lg:space-x-12 md:space-x-6 h-auto w-full">
+                <div class="comments lg:pr-24 md:pr-12 flex items-center justify-start lg:space-x-12 md:space-x-6 h-auto w-full">
                     <div class="imgWrapper relative">
                         <img src="./assets/dealer.png" alt="" class="commentImg" v-show="currentComment==1">
                         <img src="./assets/open spaces.png" alt="" class="commentImg" v-show="currentComment==2">
@@ -296,7 +300,7 @@
                 
                 <div class="gallery lg:pl-40 md:pl-20 pl-0 lg:mt-20 md:mt-10 mt-5 h-auto">
                     <div class="swiper heritageSlider w-full h-auto lg:mt-12 md:mt-6 mt-3">
-                        <h1 class="lg:mb-12 md:mb-6 mb-3">Heritage <br/> gallery</h1>
+                        <h1 class="lg:mb-12 md:mb-6 mb-3">Heritage gallery</h1>
                         <div class="swiper-wrapper">
                             <div class="heritageImg swiper-slide h-auto w-auto">
                                 <img src="./assets/heritage 1.png" alt="">
@@ -336,20 +340,22 @@
                     <h2>Style Resources</h2>
                     <form action="#" class="w-full flex flex-col items-center">
                         <div class="search flex items-center space-x-5 px-5">
-                            <img src="./assets/search_white.png" alt="">
+                            <img src="./assets/icons8-search-30.png" alt="">
                             <input type="text" placeholder="Search style resources">
                         </div>
                     </form>
                     <p class="helpTxt">We help you get updated with latest building tips for a successful project</p>
                     <div class="resources grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 lg:gap-10 gap-6">
                         <div class="resourceCard relative p-6 flex flex-col items-start">
-                           <span class="info flex items-center justify-center">Downloads</span>
+                            <img src="./assets/PATTERN.png" alt="" class="pattern">
+                            <span class="info flex items-center justify-center">Downloads</span>
                             <p class="resourceTxt mt-12 mb-5">Assemble the building materials for your 1 bedroom home.</p>
                             <div class="arrowBtn flex items-center space-x-3">
                                     <img src="./assets/Group 10.png" alt="">
                             </div>
                         </div>
                         <div class="resourceCard relative p-6 flex flex-col items-start">
+                            <img src="./assets/PATTERN.png" alt="" class="pattern">
                             <span class="info flex items-center justify-center">Installation</span>
                              <p class="resourceTxt mt-12 mb-5">Assemble the building materials for your 1 bedroom home.</p>
                              <div class="arrowBtn flex items-center space-x-3">
@@ -357,13 +363,15 @@
                              </div>
                         </div>
                         <div class="resourceCard relative p-6 flex flex-col items-start">
-                        <span class="info flex items-center justify-center">Videos</span>
+                            <img src="./assets/PATTERN.png" alt="" class="pattern">
+                            <span class="info flex items-center justify-center">Videos</span>
                             <p class="resourceTxt mt-12 mb-5">Assemble the building materials for your 1 bedroom home.</p>
                             <div class="arrowBtn flex items-center space-x-3">
                                     <img src="./assets/Group 10.png" alt="">
                             </div>
                         </div> 
                         <div class="resourceCard relative p-6 flex flex-col items-start">
+                            <img src="./assets/PATTERN.png" alt="" class="pattern">
                             <span class="info flex items-center justify-center">Certification</span>
                             <p class="resourceTxt mt-12 mb-5">Assemble the building materials for your 1 bedroom home.</p>
                             <div class="arrowBtn flex items-center space-x-3">
@@ -546,6 +554,10 @@
                 },
                 // when window width is >= 640px
                 640: {
+                slidesPerView: 2.8,
+                spaceBetween: 30
+                },
+                1024: {
                 slidesPerView: 2.8,
                 spaceBetween: 50
                 }
