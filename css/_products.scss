@@ -3051,7 +3051,8 @@
         }
         .bannerTxt {
             h1 {
-                font-size: 40px;
+                font-size: 32px;
+                line-height: 40px;
             }
             p {
                 font-size: 16px;
@@ -3274,15 +3275,15 @@
         padding-top: 48px;
         padding-bottom: 48px !important;
         .back {
-            height: 45% !important;
+            height: 48% !important;
         }
         .bannerTxt {
             .top {
                 align-items: flex-start;
             }
             h1 {
-                font-size: 40px;
-                line-height: 50px;
+                font-size: 32px;
+                line-height: 40px;
             }
             p {
                 font-size: 16px;
@@ -4295,6 +4296,7 @@
             font-size: 30px;
             line-height: 32px;
             margin: 0 16px !important;
+            margin-bottom: 10px !important;
         }
         .faqCard {
             width: auto;

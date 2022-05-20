@@ -19,21 +19,8 @@
         p {
             font-size: 32px;
             line-height: 40px;
-            font-weight: normal;
+            font-weight: 600;
             color: $dark;
-        }
-        h5 {
-            font-size: 24px;
-            color: $dark;
-        }
-        h6 {
-            font-size: 24px;
-            color: white;
-            font-weight: bolder;
-        }
-        img {
-            width: 39px;
-            height: 39px;
         }
     }
     .bannerImg {
@@ -110,6 +97,9 @@
 .impactCommunity {
     background: $light;
     .intro {
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 0;
+        align-items: center;
         h1 {
             font-size: 48px;
             line-height: 56px;
@@ -129,8 +119,8 @@
         }
     }
     .imageBox {
-        width: auto;
-        height: 660px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         img {
             width: 100%;
@@ -297,11 +287,12 @@
             h3 {
                 font-size: 32px;
                 line-height: 40px;
+                margin-bottom: 48px !important;
                 font-weight: bold;
                 color: $dark;
             }
             .initiatives {
-                grid-template-columns: 1.5fr 1fr;
+                grid-template-columns: 1fr 1fr;
                 .initiative {
                     .top {
                         width: auto;
@@ -527,61 +518,67 @@
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
 .impactBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 55%;
+        height: 60% !important;
     }
     .bannerTxt {
         h1 {
-            font-size: 55px;
+            font-size: 45px;
+            margin-bottom: 20px !important;
         }
         p {
-            font-size: 22px;
-            line-height: 32px;
-        }
-        h5 {
             font-size: 20px;
+            line-height: 30px;
+            width: 70%;
         }
-        h6 {
-            font-size: 20px;
-            color: white;
-            font-weight: bolder;
-        }
-        img {
-            width: 30px;
-            height: 30px;
-        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
     }
 }
 .impactTraining {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 40px;
-        line-height: 52px;
+        font-size: 32px;
+        line-height: 40px;
     }
     h5 {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 30px;
+        padding: 20px 0 !important;
+    }
+    h1,h5,.trainGrid {
+        margin: 0 !important;
+    }
+    .trainGrid {
+        grid-gap: 40px !important;
     }
     .impactCard {
         .cardImg {
             width: 100%;
-            height: 500px;
+            height: 50vh;
             object-fit: cover;
         }
         .text {
             h3 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 24px;
+                line-height: 30px;
             }
             p {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 18px;
+                line-height: 24px;
             }
             a {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 16px;
+                line-height: 20px;
                 img {
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
+                    object-fit: contain;
                 }
             }
         }
@@ -589,73 +586,87 @@
     }
 }
 .impactCommunity {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .intro {
+        margin-bottom: 24px !important;
         h1 {
-            font-size: 40px;
-            line-height: 52px;
+            font-size: 32px;
+            line-height: 40px;
         }
         p {
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 20px;
+            line-height: 24px;
         }
     }
     .imageBox {
         width: 100%;
-        height: 500px;
+        height: 60vh;
         img {
             object-fit: cover;
+            object-position: top center;
         }
     }
     .detailsBox {
         .impact {
+            padding: 48px !important;
             h3 {
-                font-size: 32px;
-                line-height: 40px;
-            }
-            p {
-                font-size: 22px;
+                font-size: 24px;
                 line-height: 30px;
             }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
             span {
+                margin: 0 !important;
                 img{
-                    width: 70px;
-                    height: 70px;
+                    width: 50px;
+                    height: 50px;
                     object-fit: contain;
+                }
+                &:first-child {
+                    margin-right: 15px !important;
                 }
             }
         }
     }
 }
 .impactEnvironment {
+    padding-bottom: 48px !important;
     .intro {
+        align-items: center;
+        margin-bottom: 0px !important;
         h1 {
-            font-size: 40px;
-            line-height: 52px;
+            font-size: 32px;
+            line-height: 40px;
         }
         p {
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 20px;
+            line-height: 24px;
         }
     }
-    
+    .impactSlider {
+        margin-top: 20px !important;
+    }
     .impactCard {
         width: auto;
-        height: 600px;
+        height: 60vh;
         .imgWrapper {
             overflow: hidden;
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
         }
         .cardTxt {
-            border-bottom-right-radius: 30px;
-            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
             h4 {
-                font-size: 28px;
-                line-height: 32px;
+                font-size: 22px;
+                line-height: 30px;
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 16px;
+                line-height: 20px;
             }
         }
     }
@@ -663,52 +674,62 @@
 
 //Impact Training Styles
 .trainingDetails {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .wrapper {
         grid-template-columns: 1.5fr 2fr;
+        grid-gap: 48px !important;
         img {
             width: 100%;
-            height: 500px;
+            height: 60vh;
         }
         .trainingText {
             h1 {
-                font-size: 45px;
-                line-height: 52px;
+                font-size: 32px;
+                line-height: 40px;
             }
             p {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 18px;
+                line-height: 24px;
             }
         }
     }
 }
 .trainingCommitment {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .wrapper {
         grid-template-columns: 1fr 3fr;
         .avatarSection {
             h1 {
-                font-size: 45px;
-                line-height: 52px;
+                font-size: 32px;
+                line-height: 40px;
             }
             img {
-                width: 300px;
-                height: 300px;
+                width: 200px;
+                height: 200px;
+                object-fit: contain;
             }
         }
         .textSection {
             h3 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 24px !important;
+                font-weight: normal !important;
             }
             .initiatives {
-                grid-template-columns: 1.5fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 36px;
                 .initiative {
                     .top {
-                        grid-template-columns: 1fr;
+                        grid-gap: 10px !important;
                         span {
-                            width: 110px;
+                            width: 100px;
                             height: 100px;
                             padding: 15px;
-                            margin-bottom: 15px;
+                            margin-bottom: 5px;
+                            border-radius: 20px !important;
                             img {
                                 width: 100%;
                                 height: 100%;
@@ -716,16 +737,17 @@
                             }
                         }
                         h5 {
-                            font-size: 24px;
-                            line-height: 32px;
+                            font-size: 20px;
+                            line-height: 24px;
+                            font-weight: 900 !important;
                             margin: 0;
                             padding: 0;
                         }
                     }
                     
                     p {
-                        font-size: 22px;
-                        line-height: 32px;
+                        font-size: 16px;
+                        line-height: 20px;
                     }
                 }
             }
@@ -733,6 +755,8 @@
     }
 }
 .trainingGallery {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .topSection {
         grid-template-columns: 1.5fr 2fr;
         img {
@@ -741,17 +765,18 @@
         }
         .topText {
             h1 {
-                font-size: 45px;
-                line-height: 52px;
+                font-size: 32px;
+                line-height: 40px;
             }
             p {
-                font-size: 22px;
-                line-height: 32px;
-                width: 80%; 
+                font-size: 18px;
+                line-height: 24px;
+                width: 60%; 
             }
         }
     }
     .gallery {
+        margin-top: 24px !important;
         .trainingImg {
             width: 100%;
             height: 100%;
@@ -787,6 +812,9 @@
             }
         }
     }
+}
+.trainingSpacing {
+    height: 48px !important;
 }
 
 //Impact Community
@@ -852,57 +880,68 @@
 
 @media only screen and (max-width: 1024px) {
 .impactBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 45%;
+        height: 55% !important;
     }
     .bannerTxt {
         h1 {
-            font-size: 45px;
+            font-size: 40px;
+            margin-bottom: 20px !important;
         }
         p {
-            font-size: 20px;
-            line-height: 30px;
-        }
-        h5 {
-            font-size: 20px;
+            font-size: 18px;
+            line-height: 24px;
+            width: 80%;
         }
     }
     .bannerImg {
-        height: 250px;
-        object-fit: cover;
+        margin-top: 0px !important;
     }
 }
 .impactTraining {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 30px;
+        line-height: 40px;
     }
     h5 {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 20px 0 !important;
+    }
+    h1,h5,.trainGrid {
+        margin: 0 !important;
+    }
+    .trainGrid {
+        grid-gap: 40px !important;
     }
     .impactCard {
         .cardImg {
             width: 100%;
-            height: 400px;
+            height: 50vh;
             object-fit: cover;
         }
         .text {
             h3 {
-                font-size: 24px;
-                line-height: 32px;
+                font-size: 22px;
+                line-height: 30px;
             }
             p {
-                font-size: 20px;
-                line-height: 32px;
-                width: 100%;
+                font-size: 18px;
+                line-height: 24px;
+                width: 90% !important;
             }
             a {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 16px;
+                line-height: 20px;
                 img {
                     width: 40px;
                     height: 40px;
+                    object-fit: contain;
                 }
             }
         }
@@ -910,123 +949,153 @@
     }
 }
 .impactCommunity {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .intro {
+        margin-bottom: 24px !important;
         h1 {
-            font-size: 40px;
-            line-height: 52px;
+            font-size: 30px;
+            line-height: 40px;
+            width: 100% !important;
         }
         p {
-            font-size: 22px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 24px;
         }
     }
     .imageBox {
         width: 100%;
         height: 100%;
+        img {
+            object-fit: cover;
+            object-position: top center;
+        }
     }
     .detailsBox {
         .impact {
-            height: auto;
-            padding: 30px !important;
+            padding: 48px !important;
             h3 {
                 font-size: 24px;
-                line-height: 32px;
-            }
-            p {
-                font-size: 20px;
                 line-height: 30px;
             }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
             span {
+                margin: 0 !important;
                 img{
                     width: 50px;
                     height: 50px;
                     object-fit: contain;
+                }
+                &:first-child {
+                    margin-right: 10px !important;
                 }
             }
         }
     }
 }
 .impactEnvironment {
+    padding-bottom: 48px !important;
     .intro {
+        align-items: center;
+        margin-bottom: 0px !important;
         h1 {
-            font-size: 40px;
-            line-height: 52px;
+            font-size: 30px;
+            line-height: 40px;
         }
         p {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 24px;
         }
     }
-    
+    .impactSlider {
+        margin-top: 20px !important;
+    }
     .impactCard {
         width: auto;
-        height: 500px;
+        height: 60vh;
+        .imgWrapper {
+            overflow: hidden;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
         .cardTxt {
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 15px !important;
             h4 {
-                font-size: 24px;
-                line-height: 32px;
-            }
-            p {
                 font-size: 20px;
                 line-height: 30px;
             }
-        }
-    }
-    .impactCard:last-child {
-        h4 {
-            margin-bottom: 32px !important;
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
     }
 }
 
 //Impact Training Styles
 .trainingDetails {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .wrapper {
         grid-template-columns: 1.5fr 2fr;
+        grid-gap: 48px !important;
         img {
             width: 100%;
-            height: 400px;
+            height: 60vh;
         }
         .trainingText {
             h1 {
-                font-size: 40px;
-                line-height: 50px;
+                font-size: 32px;
+                line-height: 40px;
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 24px;
             }
         }
     }
 }
 .trainingCommitment {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .wrapper {
         grid-template-columns: 1fr 3fr;
         .avatarSection {
             h1 {
-                font-size: 40px;
-                line-height: 50px;
+                font-size: 32px;
+                line-height: 40px;
             }
             img {
-                width: 300px;
-                height: 300px;
+                width: 200px;
+                height: 200px;
+                object-fit: contain;
             }
         }
         .textSection {
             h3 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 24px !important;
+                font-weight: normal !important;
             }
             .initiatives {
-                grid-template-columns: 1.5fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 30px;
                 .initiative {
                     .top {
                         grid-template-columns: 1fr;
+                        grid-gap: 10px !important;
                         span {
-                            width: 110px;
-                            height: 100px;
+                            width: 80px;
+                            height: 80px;
                             padding: 15px;
-                            margin-bottom: 15px;
+                            margin-bottom: 5px;
+                            border-radius: 20px !important;
                             img {
                                 width: 100%;
                                 height: 100%;
@@ -1034,16 +1103,17 @@
                             }
                         }
                         h5 {
-                            font-size: 24px;
-                            line-height: 32px;
+                            font-size: 20px;
+                            line-height: 24px;
+                            font-weight: 900 !important;
                             margin: 0;
                             padding: 0;
                         }
                     }
                     
                     p {
-                        font-size: 20px;
-                        line-height: 32px;
+                        font-size: 16px;
+                        line-height: 20px;
                     }
                 }
             }
@@ -1051,6 +1121,8 @@
     }
 }
 .trainingGallery {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .topSection {
         grid-template-columns: 1.5fr 2fr;
         img {
@@ -1059,21 +1131,21 @@
         }
         .topText {
             h1 {
-                font-size: 40px;
-                line-height: 50px;
+                font-size: 32px;
+                line-height: 40px;
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
-                width: 80%; 
+                font-size: 18px;
+                line-height: 24px;
+                width: 70%; 
             }
         }
     }
     .gallery {
-        max-height: 300px;
+        margin-top: 24px !important;
         .trainingImg {
             width: 100%;
-            height: 100% auto;
+            height: 100%;
         }
     }
     .imgLightbox {
@@ -1095,18 +1167,20 @@
                 }
                 .modalImage {
                     width: 50vw;
-                    height: 60vh;
+                    height: 70vh;
                 }
                 .next {
                     img {
-                        width: 50px;
-                        height: 50px;
-                        object-fit: contain;
+                        width: 60px;
+                        height: 60px;
                     }
                 }
             }
         }
     }
+}
+.trainingSpacing {
+    height: 48px !important;
 }
 
 //Impact Community
@@ -1171,35 +1245,45 @@
 
 @media only screen and (max-width: 768px) {
 .impactBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 55%;
+        height: 45% !important;
     }
     .bannerTxt {
         h1 {
-            font-size: 40px;
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 20px !important;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
-        }
-        h5 {
-            font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
+            width: 80%;
         }
     }
     .bannerImg {
-        height: 250px;
-        object-fit: cover;
+        margin-top: 0px !important;
     }
 }
 .impactTraining {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 32px;
+        font-size: 30px;
         line-height: 40px;
     }
     h5 {
-        font-size: 22px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 20px 0 !important;
+    }
+    h1,h5,.trainGrid {
+        margin: 0 !important;
+    }
+    .trainGrid {
+        grid-gap: 40px !important;
     }
     .impactCard {
         .cardImg {
@@ -1209,19 +1293,21 @@
         }
         .text {
             h3 {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 30px;
             }
             p {
                 font-size: 16px;
                 line-height: 24px;
+                width: 90% !important;
             }
             a {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
                 img {
                     width: 30px;
                     height: 30px;
+                    object-fit: contain;
                 }
             }
         }
@@ -1229,33 +1315,49 @@
     }
 }
 .impactCommunity {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .intro {
+        margin-bottom: 24px !important;
+        grid-template-columns: 1fr 2.5fr;
         h1 {
-            font-size: 32px;
-            line-height: 40px;
+            font-size: 24px;
+            line-height: 30px;
+            width: 100% !important;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
+        }
+    }
+    .imageBox {
+        width: 100%;
+        height: 100%;
+        img {
+            object-fit: cover;
+            object-position: top center;
         }
     }
     .detailsBox {
         .impact {
-            height: auto;
-            padding: 30px !important;
+            padding: 40px !important;
             h3 {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 24px;
+                line-height: 30px;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
             }
             span {
+                margin: 0 !important;
                 img{
-                    width: 40px;
-                    height: 40px;
+                    width: 50px;
+                    height: 50px;
                     object-fit: contain;
+                }
+                &:first-child {
+                    margin-right: 10px !important;
                 }
             }
         }
@@ -1264,32 +1366,38 @@
 .impactEnvironment {
     .intro {
         h1 {
-            font-size: 32px;
-            line-height: 40px;
+            font-size: 24px;
+            line-height: 30px;
         }
         p {
             font-size: 16px;
-            line-height: 30px;
+            line-height: 20px;
+            width: 80% !important;
         }
     }
     
     .impactCard {
         width: auto;
-        height: 400px;
+        height: 300px;
         .cardTxt {
             h4 {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 24px;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
             }
         }
-    }
-    .impactCard:last-child {
-        h4 {
-            margin-bottom: 32px !important;
+        &:last-child {
+            h4 {
+                width: 30% !important;
+            }
+        }
+        &:nth-child(1), &:nth-child(2) {
+            h4 {
+                width: 60% !important;
+            }
         }
     }
 }
@@ -1304,12 +1412,12 @@
         }
         .trainingText {
             h1 {
-                font-size: 32px;
-                line-height: 50px;
+                font-size: 30px;
+                line-height: 35px;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
             }
         }
     }
@@ -1322,13 +1430,15 @@
             grid-template-columns: 1fr 1fr;
             align-items: center;
             justify-items: center;
+            justify-content: center;
+            align-content: center;
             h1 {
-                font-size: 32px;
-                line-height: 40px;
+                font-size: 30px;
+                line-height: 35px;
             }
             img {
-                width: 200px;
-                height: 200px;
+                width: 150px;
+                height: 150px;
             }
         }
         .textSection {
@@ -1342,8 +1452,8 @@
                     .top {
                         grid-template-columns: 1fr;
                         span {
-                            width: 110px;
-                            height: 100px;
+                            width: 80px;
+                            height: 80px;
                             padding: 15px;
                             margin-bottom: 15px;
                             img {
@@ -1353,8 +1463,8 @@
                             }
                         }
                         h5 {
-                            font-size: 22px;
-                            line-height: 32px;
+                            font-size: 20px;
+                            line-height: 24px;
                             margin: 0;
                             padding: 0;
                         }
@@ -1362,7 +1472,7 @@
                     
                     p {
                         font-size: 16px;
-                        line-height: 24px;
+                        line-height: 20px;
                     }
                 }
             }
@@ -1498,10 +1608,12 @@
     }
     .bannerTxt {
         h1 {
-            font-size: 45px;
+            font-size: 32px;
+            line-height: 40px;
         }
         p,h5 {
             color: white;
+            font-size: 16px !important;
         }
     }
     .bannerImg {
@@ -1516,11 +1628,11 @@
     }
     h1 {
         font-size: 30px;
-        line-height: 40px;
+        line-height: 35px;
     }
     h5 {
-        font-size: 22px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 24px;
     }
     .impactCard {
         .cardImg {
@@ -1533,18 +1645,18 @@
             flex-direction: column;
             align-items: center;
             h3 {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 24px;
                 text-align: center;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
                 text-align: center;
             }
             a {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
                 img {
                     width: 30px;
                     height: 30px;
@@ -1557,16 +1669,17 @@
 .impactCommunity {
     padding: 30px 24px !important;
     .intro {
+        display: flex;
         flex-direction: column;
         align-items: center;
         h1 {
             font-size: 30px;
-            line-height: 40px;
+            line-height: 35px;
             text-align: center;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
             margin-top: 10px;
             text-align: center;
         }
@@ -1579,12 +1692,12 @@
             height: auto;
             padding: 30px !important;
             h3 {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 24px;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
             }
             span {
                 img{
@@ -1602,13 +1715,14 @@
         flex-direction: column;
         align-items: center;
         h1 {
-            font-size: 32px;
-            line-height: 40px;
+            font-size: 30px;
+            line-height: 35px;
             text-align: center;
+            width: 100% !important;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
             text-align: center;
             width: 100%;
         }
@@ -1616,22 +1730,27 @@
     
     .impactCard {
         width: auto;
-        height: 400px;
+        height: 350px;
         .cardTxt {
             padding: 20px;
             h4 {
                 font-size: 20px;
-                line-height: 30px;
+                line-height: 24px;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
             }
         }
-    }
-    .impactCard:last-child {
-        h4 {
-            margin-bottom: 32px !important;
+        &:last-child {
+            h4 {
+                width: 30% !important;
+            }
+        }
+        &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+            h4 {
+                width: 100% !important;
+            }
         }
     }
 }

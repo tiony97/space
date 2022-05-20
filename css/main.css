@@ -33,8 +33,8 @@ nav .logo {
 
 nav .pageLinks a {
   font-size: 16px;
-  font-weight: 400;
-  color: #292929;
+  font-weight: 600 !important;
+  color: black;
   padding: 0 12px !important;
 }
 
@@ -108,7 +108,7 @@ nav .navBtns .login:hover {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #292929;
+  background: black;
   z-index: 100;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -182,7 +182,7 @@ nav .navBtns .login:hover {
 footer {
   background: #EACBD1;
   height: auto;
-  color: #292929;
+  color: black;
 }
 
 footer .top {
@@ -206,13 +206,13 @@ footer .logoSection p {
   font-size: 32px;
   font-weight: normal;
   line-height: 40px;
-  color: #292929;
+  color: black;
 }
 
 footer .logoSection input {
   width: 100%;
   height: 78px;
-  background: #292929;
+  background: black;
   color: white;
   outline: none;
   border-radius: 50px;
@@ -221,25 +221,25 @@ footer .logoSection input {
 }
 
 footer .logoSection input::-webkit-input-placeholder {
-  color: #EACBD1;
+  color: #eacbd17a;
   font-size: 24px;
   line-height: 32px;
 }
 
 footer .logoSection input:-ms-input-placeholder {
-  color: #EACBD1;
+  color: #eacbd17a;
   font-size: 24px;
   line-height: 32px;
 }
 
 footer .logoSection input::-ms-input-placeholder {
-  color: #EACBD1;
+  color: #eacbd17a;
   font-size: 24px;
   line-height: 32px;
 }
 
 footer .logoSection input::placeholder {
-  color: #EACBD1;
+  color: #eacbd17a;
   font-size: 24px;
   line-height: 32px;
 }
@@ -250,7 +250,7 @@ footer .linkSection {
 }
 
 footer .linkSection .sect h5 {
-  color: #292929;
+  color: black;
   font-size: 24px;
   line-height: 32px;
   font-weight: bold;
@@ -259,12 +259,12 @@ footer .linkSection .sect h5 {
 footer .linkSection .sect a {
   font-size: 16px;
   line-height: 24px;
-  color: #292929;
+  color: black;
   font-weight: bold;
 }
 
 footer .iconSection h5 {
-  color: #292929;
+  color: black;
   font-size: 24px;
   line-height: 32px;
   font-weight: bold;
@@ -303,7 +303,7 @@ footer .footerEnd p {
   nav .pageLinks a {
     font-size: 15px;
     font-weight: 400;
-    color: #292929;
+    color: black;
     padding: 0 !important;
   }
   nav .navIcons {
@@ -335,12 +335,17 @@ footer .footerEnd p {
     font-size: 15px;
     margin: 0px 5px !important;
   }
+  footer {
+    padding-top: 48px !important;
+  }
   footer .logoSection p {
     font-size: 20px;
     line-height: 30px;
+    font-weight: 600 !important;
   }
   footer .logoSection input {
     height: 60px;
+    border-radius: 20px !important;
     font-size: 16px;
   }
   footer .logoSection input::-webkit-input-placeholder {
@@ -358,6 +363,10 @@ footer .footerEnd p {
   footer .linkSection h5 {
     font-size: 20px !important;
     line-height: 30px;
+  }
+  footer .linkSection a {
+    margin: 0 !important;
+    margin-bottom: 5px !important;
   }
   footer .iconSection h5 {
     font-size: 20px;
@@ -418,7 +427,7 @@ footer .footerEnd p {
   footer {
     background: #EACBD1;
     height: auto;
-    color: #292929;
+    color: black;
   }
   footer .top {
     display: -ms-grid;
@@ -439,12 +448,12 @@ footer .footerEnd p {
     font-size: 18px;
     font-weight: normal;
     line-height: 24px;
-    color: #292929;
+    color: black;
   }
   footer .logoSection input {
     width: auto;
     height: 60px;
-    background: #292929;
+    background: black;
     color: white;
     outline: none;
     border-radius: 25px;
@@ -476,7 +485,7 @@ footer .footerEnd p {
         grid-template-columns: 1fr 1fr 1.5fr 1fr !important;
   }
   footer .linkSection .sect h5 {
-    color: #292929;
+    color: black;
     font-size: 18px !important;
     line-height: 24px;
     font-weight: bolder !important;
@@ -484,8 +493,10 @@ footer .footerEnd p {
   footer .linkSection .sect a {
     font-size: 14px;
     line-height: 24px;
-    color: #292929;
+    color: black;
     font-weight: bold;
+    margin: 0 !important;
+    margin-bottom: 2px !important;
   }
   footer .iconSection {
     display: none;
@@ -529,7 +540,7 @@ footer .footerEnd p {
   footer {
     background: #EACBD1;
     height: auto;
-    color: #292929;
+    color: black;
   }
   footer .top {
     display: -ms-grid;
@@ -550,7 +561,7 @@ footer .footerEnd p {
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
-    color: #292929;
+    color: black;
   }
   footer .logoSection input {
     width: 40vw;
@@ -579,7 +590,7 @@ footer .footerEnd p {
         grid-template-columns: 1fr 1fr 1fr 1fr !important;
   }
   footer .linkSection .sect h5 {
-    color: #292929;
+    color: black;
     font-size: 18px !important;
     line-height: 24px;
     font-weight: bolder !important;
@@ -587,7 +598,7 @@ footer .footerEnd p {
   footer .linkSection .sect a {
     font-size: 14px;
     line-height: 24px;
-    color: #292929;
+    color: black;
     font-weight: bold;
   }
   footer .footerEnd img {
@@ -654,7 +665,7 @@ footer .footerEnd p {
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
-    color: #292929;
+    color: black;
   }
   footer .logoSection input {
     width: 100%;
@@ -684,7 +695,7 @@ footer .footerEnd p {
 .homeBanner .tabGrids .gridLink {
   height: 284px;
   background-color: #F4F4F4;
-  color: #292929;
+  color: black;
   border-right: 2px solid rgba(128, 128, 128, 0.438);
   border-bottom: 1px solid rgba(128, 128, 128, 0.438);
   -webkit-transition: all .3s ease-in-out;
@@ -729,7 +740,7 @@ footer .footerEnd p {
 
 .homeBanner .orange h1, .homeBanner .orange h2 {
   font-weight: 900 !important;
-  color: #292929 !important;
+  color: black !important;
 }
 
 .homeBanner .green {
@@ -747,7 +758,7 @@ footer .footerEnd p {
 
 .homeBanner .red h1, .homeBanner .red h2 {
   font-weight: 900 !important;
-  color: #292929 !important;
+  color: black !important;
 }
 
 .homeBanner .tab1 {
@@ -870,7 +881,7 @@ footer .footerEnd p {
   margin: 0 0;
   padding: 10px;
   list-style: none;
-  color: #292929 !important;
+  color: black !important;
   font-weight: 900 !important;
   background-color: white;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -890,7 +901,7 @@ footer .footerEnd p {
 
 .homeBanner .tab1 .textContent form button {
   background: #FFB548;
-  color: #292929;
+  color: black;
   font-weight: 900 !important;
 }
 
@@ -926,7 +937,7 @@ footer .footerEnd p {
   border-radius: 25px;
   padding: 0 20px;
   background: #F4F4F4;
-  color: #292929;
+  color: black;
   -webkit-box-shadow: 1px 2px 3px 2px #70707062;
           box-shadow: 1px 2px 3px 2px #70707062;
   font-size: 24px;
@@ -1117,7 +1128,7 @@ footer .footerEnd p {
   margin: 0 0;
   padding: 10px;
   list-style: none;
-  color: #292929;
+  color: black;
   background-color: white;
   font-weight: 900;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -1137,7 +1148,7 @@ footer .footerEnd p {
 
 .homeBanner .tab3 .textContent form button {
   background: #FFB548;
-  color: #292929;
+  color: black;
   font-weight: 900 !important;
 }
 
@@ -1153,7 +1164,7 @@ footer .footerEnd p {
 }
 
 .homeBanner .tab4 h3 {
-  color: #292929;
+  color: black;
   font-size: 32px;
   font-weight: 500;
 }
@@ -1193,7 +1204,7 @@ footer .footerEnd p {
   height: 40px;
   width: 40px;
   background-color: #DD8797;
-  border: 5px solid #292929;
+  border: 5px solid black;
   border-radius: 50%;
 }
 
@@ -1211,7 +1222,7 @@ footer .footerEnd p {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #292929;
+  background: black;
 }
 
 .homeBanner .tab4 form .radios .container p {
@@ -1235,29 +1246,29 @@ footer .footerEnd p {
   outline: none;
   width: 100%;
   height: 100%;
-  color: #292929;
+  color: black;
   background: transparent;
   font-size: 24px;
   font-weight: bolder;
 }
 
 .homeBanner .tab4 form .otherInputs .search input::-webkit-input-placeholder {
-  color: #292929;
+  color: black;
   font-size: 24px;
 }
 
 .homeBanner .tab4 form .otherInputs .search input:-ms-input-placeholder {
-  color: #292929;
+  color: black;
   font-size: 24px;
 }
 
 .homeBanner .tab4 form .otherInputs .search input::-ms-input-placeholder {
-  color: #292929;
+  color: black;
   font-size: 24px;
 }
 
 .homeBanner .tab4 form .otherInputs .search input::placeholder {
-  color: #292929;
+  color: black;
   font-size: 24px;
 }
 
@@ -1295,7 +1306,7 @@ footer .footerEnd p {
   font-weight: 900 !important;
   line-height: 56px;
   text-align: center;
-  color: #292929;
+  color: black;
 }
 
 .assemble h1 span {
@@ -1317,8 +1328,8 @@ footer .footerEnd p {
   height: 97px;
   background: white;
   border-radius: 30px;
-  -webkit-box-shadow: 2px 2px 2px 2px #e8e8e8;
-          box-shadow: 2px 2px 2px 2px #e8e8e8;
+  -webkit-box-shadow: 2px 2px 2px 2px #bfbfbf;
+          box-shadow: 2px 2px 2px 2px #bfbfbf;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -1384,7 +1395,7 @@ footer .footerEnd p {
 
 .assemble .gridContent .gallery .galleryCard p {
   font-size: 16px;
-  color: #292929;
+  color: black;
 }
 
 .assemble .assembleButtons a {
@@ -1392,7 +1403,7 @@ footer .footerEnd p {
   height: 98px;
   border-radius: 25px;
   outline: none;
-  color: #292929;
+  color: black;
   font-size: 24px;
   font-weight: 900;
 }
@@ -1403,7 +1414,7 @@ footer .footerEnd p {
 
 .assemble .assembleButtons .plan {
   background: transparent;
-  border: 3px solid #292929;
+  border: 3px solid black;
 }
 
 .assemble .assembleButtons .plan img {
@@ -1419,7 +1430,7 @@ footer .footerEnd p {
 .explore .exploreContent h3 {
   font-size: 48px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .explore .exploreContent h3 span {
@@ -1428,7 +1439,7 @@ footer .footerEnd p {
 
 .explore .exploreContent p {
   font-size: 32px;
-  color: #292929;
+  color: black;
 }
 
 .explore .exploreContent a {
@@ -1559,7 +1570,7 @@ footer .footerEnd p {
 .branches .wrapper h2, .styleResources .wrapper h2 {
   font-size: 48px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .branches .wrapper form .search, .styleResources .wrapper form .search {
@@ -1578,28 +1589,28 @@ footer .footerEnd p {
   outline: none;
   width: 100%;
   height: 100%;
-  color: #292929;
+  color: black;
   background: transparent;
   font-size: 24px;
 }
 
 .branches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
-  color: #292929;
+  color: black;
   font-size: 24px;
 }
 
 .branches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
-  color: #292929;
+  color: black;
   font-size: 24px;
 }
 
 .branches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
-  color: #292929;
+  color: black;
   font-size: 24px;
 }
 
 .branches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
-  color: #292929;
+  color: black;
   font-size: 24px;
 }
 
@@ -1644,7 +1655,7 @@ footer .footerEnd p {
   height: 40px;
   width: 40px;
   background-color: #DD8797;
-  border: 5px solid #292929;
+  border: 5px solid black;
   border-radius: 50%;
 }
 
@@ -1662,7 +1673,7 @@ footer .footerEnd p {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #292929;
+  background: black;
 }
 
 .branches .wrapper form .radios .container p, .styleResources .wrapper form .radios .container p {
@@ -1672,7 +1683,7 @@ footer .footerEnd p {
 
 .branches .wrapper p, .styleResources .wrapper p {
   font-size: 32px;
-  color: #292929;
+  color: black;
 }
 
 .branches .wrapper .hardware, .styleResources .wrapper .hardware {
@@ -1776,7 +1787,7 @@ footer .footerEnd p {
   left: 0;
   border-radius: 50px;
   background: #FFB548;
-  color: #292929;
+  color: black;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -1804,7 +1815,7 @@ footer .footerEnd p {
   font-size: 48px;
   font-weight: bolder;
   line-height: 56px;
-  color: #292929;
+  color: black;
   width: 55%;
 }
 
@@ -1842,7 +1853,7 @@ footer .footerEnd p {
   font-size: 48px;
   font-weight: bolder;
   line-height: 56px;
-  color: #292929;
+  color: black;
   width: 55%;
 }
 
@@ -1963,7 +1974,7 @@ footer .footerEnd p {
   font-size: 48px;
   font-weight: bolder;
   line-height: 56px;
-  color: #292929;
+  color: black;
   z-index: 1;
 }
 
@@ -2014,7 +2025,7 @@ footer .footerEnd p {
 }
 
 .community .communityInfo .imgWrapper .linkBtns .btn1 {
-  background: #292929 !important;
+  background: black !important;
 }
 
 .community .communityInfo .imgWrapper .linkBtns .btn2 {
@@ -2025,7 +2036,7 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: bold;
-  color: #292929;
+  color: black;
   width: 90%;
 }
 
@@ -2039,7 +2050,7 @@ footer .footerEnd p {
   font-size: 24px;
   font-weight: bold;
   line-height: 32px;
-  color: #292929;
+  color: black;
   width: 70%;
 }
 
@@ -2099,7 +2110,7 @@ footer .footerEnd p {
   line-height: 32px;
   font-weight: bolder;
   background: #FFB548;
-  color: #292929;
+  color: black;
   border-radius: 25px;
   outline: none;
 }
@@ -2185,7 +2196,7 @@ footer .footerEnd p {
   }
   .homeBanner .tab1 .textContent form button {
     background: #FFB548;
-    color: #292929;
+    color: black;
     font-weight: 900 !important;
   }
   .homeBanner .tab1 img {
@@ -2310,7 +2321,7 @@ footer .footerEnd p {
   }
   .homeBanner .tab3 .textContent form button {
     background: #FFB548;
-    color: #292929;
+    color: black;
     font-weight: 900 !important;
   }
   .homeBanner .tab3 img {
@@ -2461,7 +2472,7 @@ footer .footerEnd p {
   }
   .assemble .gridContent .gallery .galleryCard p {
     font-size: 16px;
-    color: #292929;
+    color: black;
   }
   .assemble .assembleButtons {
     display: -ms-grid;
@@ -2585,19 +2596,19 @@ footer .footerEnd p {
     font-size: 18px;
   }
   .branches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
-    color: #292929;
+    color: black;
     font-size: 18px;
   }
   .branches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
-    color: #292929;
+    color: black;
     font-size: 18px;
   }
   .branches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
-    color: #292929;
+    color: black;
     font-size: 18px;
   }
   .branches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
-    color: #292929;
+    color: black;
     font-size: 18px;
   }
   .branches .wrapper form .search input:focus, .styleResources .wrapper form .search input:focus {
@@ -3043,7 +3054,7 @@ footer .footerEnd p {
   }
   .homeBanner .tab1 .textContent form button {
     background: #FFB548;
-    color: #292929;
+    color: black;
     font-weight: 900 !important;
   }
   .homeBanner .tab1 img {
@@ -3169,7 +3180,7 @@ footer .footerEnd p {
   }
   .homeBanner .tab3 .textContent form button {
     background: #FFB548;
-    color: #292929;
+    color: black;
     font-weight: 900 !important;
   }
   .homeBanner .tab3 img {
@@ -3450,19 +3461,19 @@ footer .footerEnd p {
     font-size: 18px;
   }
   .branches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
-    color: #292929;
+    color: black;
     font-size: 18px;
   }
   .branches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
-    color: #292929;
+    color: black;
     font-size: 18px;
   }
   .branches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
-    color: #292929;
+    color: black;
     font-size: 18px;
   }
   .branches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
-    color: #292929;
+    color: black;
     font-size: 18px;
   }
   .branches .wrapper form .search input:focus, .styleResources .wrapper form .search input:focus {
@@ -3964,7 +3975,7 @@ footer .footerEnd p {
   }
   .homeBanner .tab3 .textContent form button {
     background: #FFB548;
-    color: #292929;
+    color: black;
     font-weight: 900 !important;
   }
   .homeBanner .tab3 img {
@@ -4123,7 +4134,7 @@ footer .footerEnd p {
   }
   .assemble .gridContent .gallery .galleryCard p {
     font-size: 16px;
-    color: #292929;
+    color: black;
   }
   .assemble .assembleButtons a {
     height: 60px;
@@ -4221,19 +4232,19 @@ footer .footerEnd p {
     font-size: 16px;
   }
   .branches .wrapper form .search input::-webkit-input-placeholder, .styleResources .wrapper form .search input::-webkit-input-placeholder {
-    color: #292929;
+    color: black;
     font-size: 16px;
   }
   .branches .wrapper form .search input:-ms-input-placeholder, .styleResources .wrapper form .search input:-ms-input-placeholder {
-    color: #292929;
+    color: black;
     font-size: 16px;
   }
   .branches .wrapper form .search input::-ms-input-placeholder, .styleResources .wrapper form .search input::-ms-input-placeholder {
-    color: #292929;
+    color: black;
     font-size: 16px;
   }
   .branches .wrapper form .search input::placeholder, .styleResources .wrapper form .search input::placeholder {
-    color: #292929;
+    color: black;
     font-size: 16px;
   }
   .branches .wrapper form .radios .container, .styleResources .wrapper form .radios .container {
@@ -4245,7 +4256,7 @@ footer .footerEnd p {
   .branches .wrapper form .radios .container .checkmark, .styleResources .wrapper form .radios .container .checkmark {
     height: 24px;
     width: 24px;
-    border: 4px solid #292929;
+    border: 4px solid black;
   }
   .branches .wrapper form .radios .container .checkmark:after, .styleResources .wrapper form .radios .container .checkmark:after {
     top: 3px;
@@ -4696,7 +4707,7 @@ footer .footerEnd p {
   .homeBanner .tab4 form .radios .container .checkmark {
     height: 24px;
     width: 24px;
-    border: 4px solid #292929;
+    border: 4px solid black;
   }
   .homeBanner .tab4 form .radios .container .checkmark:after {
     top: 3px;
@@ -4914,7 +4925,7 @@ footer .footerEnd p {
   }
   .assemble .gridContent .gallery .galleryCard p {
     font-size: 16px;
-    color: #292929;
+    color: black;
   }
   .assemble .assembleButtons {
     display: -webkit-box;
@@ -5233,12 +5244,12 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: 600;
-  color: #292929;
+  color: black;
 }
 
 .productBanner .bannerTxt h5, .roofingBanner .bannerTxt h5 {
   font-size: 24px;
-  color: #292929;
+  color: black;
 }
 
 .productBanner .bannerTxt h6, .roofingBanner .bannerTxt h6 {
@@ -5268,7 +5279,7 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .productGrids .productCard {
@@ -5315,14 +5326,14 @@ footer .footerEnd p {
 .productGrids .productCard .cardTxt h4 {
   font-size: 32px;
   font-weight: bold;
-  color: #292929;
+  color: black;
 }
 
 .productGrids .productCard .cardTxt p {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .productTips {
@@ -5347,7 +5358,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900;
-  color: #292929;
+  color: black;
 }
 
 .productTips .tipsHeader h1 span {
@@ -5358,7 +5369,7 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .productTips .tipsInfo {
@@ -5403,7 +5414,7 @@ footer .footerEnd p {
 }
 
 .productTips .tipsInfo .imgWrapper .linkBtns .btn1 {
-  background: #292929 !important;
+  background: black !important;
 }
 
 .productTips .tipsInfo .imgWrapper .linkBtns .btn2 {
@@ -5420,7 +5431,7 @@ footer .footerEnd p {
   font-size: 24px;
   font-weight: normal;
   line-height: 32px;
-  color: #292929;
+  color: black;
   width: 70%;
 }
 
@@ -5661,7 +5672,7 @@ footer .footerEnd p {
 .productsExplore h1, .subCategoryForm h1 {
   font-size: 48px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
   line-height: 56px;
   z-index: 1;
 }
@@ -5684,7 +5695,7 @@ footer .footerEnd p {
   height: 97px;
   border-radius: 25px;
   border: 2px solid #1226AA;
-  color: #292929;
+  color: black;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
@@ -5703,7 +5714,7 @@ footer .footerEnd p {
   font-size: 24px;
   line-height: 32px;
   font-weight: bold;
-  color: #292929;
+  color: black;
 }
 
 .productsExplore .exploreWrapper .tileTypes .galleryCard, .subCategoryForm .exploreWrapper .tileTypes .galleryCard {
@@ -5718,7 +5729,7 @@ footer .footerEnd p {
 
 .productsExplore .exploreWrapper .tileTypes .galleryCard p, .subCategoryForm .exploreWrapper .tileTypes .galleryCard p {
   font-size: 16px;
-  color: #292929;
+  color: black;
 }
 
 .productsExplore .exploreWrapper .tileTypes .activeImageChoice img, .subCategoryForm .exploreWrapper .tileTypes .activeImageChoice img {
@@ -5752,7 +5763,7 @@ footer .footerEnd p {
   height: 100%;
   width: 30%;
   padding: 2px 4px;
-  background: #292929;
+  background: black;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
@@ -5770,7 +5781,7 @@ footer .footerEnd p {
   font-size: 24px;
   padding: 0 10px;
   outline: none;
-  color: #292929;
+  color: black;
   background: transparent;
   -moz-appearance: textfield;
 }
@@ -5785,7 +5796,7 @@ footer .footerEnd p {
   height: 98px;
   border-radius: 25px;
   background: #FFB548;
-  color: #292929;
+  color: black;
   outline: none;
   font-size: 24px;
   line-height: 32px;
@@ -5800,7 +5811,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
 }
 
 .materialsSlider h1 span {
@@ -5877,7 +5888,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
 }
 
 .faq .faqCard {
@@ -5885,7 +5896,7 @@ footer .footerEnd p {
   height: 98px;
   border-radius: 25px;
   background: white;
-  color: #292929;
+  color: black;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -5903,7 +5914,7 @@ footer .footerEnd p {
 
 .faq .accordion {
   background: white;
-  color: #292929;
+  color: black;
 }
 
 .faq .accordion .accord {
@@ -5938,7 +5949,7 @@ footer .footerEnd p {
 .profileGrid .profileIntro h1 {
   font-size: 48px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
   line-height: 56px;
   z-index: 1;
 }
@@ -5950,7 +5961,7 @@ footer .footerEnd p {
 .profileGrid .profileIntro p {
   font-size: 32px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: normal;
 }
 
@@ -5991,13 +6002,13 @@ footer .footerEnd p {
 }
 
 .profileGrid .profileCard .cardTxt h4 {
-  color: #292929;
+  color: black;
   font-size: 32px;
   font-weight: bold;
 }
 
 .profileGrid .profileCard .cardTxt p {
-  color: #292929;
+  color: black;
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
@@ -6026,7 +6037,7 @@ footer .footerEnd p {
 .prodBenefits .benfWrapper h1 {
   font-size: 48px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
   line-height: 56px;
   z-index: 2;
 }
@@ -6038,7 +6049,7 @@ footer .footerEnd p {
 .prodBenefits .benfWrapper p {
   font-size: 32px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: normal;
   z-index: 2;
 }
@@ -6046,7 +6057,7 @@ footer .footerEnd p {
 .prodBenefits .benfWrapper h3 {
   font-size: 40px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
   line-height: 48px;
   z-index: 2;
 }
@@ -6054,7 +6065,7 @@ footer .footerEnd p {
 .prodBenefits .benfWrapper .list {
   font-size: 24px;
   font-weight: normal;
-  color: #292929;
+  color: black;
   line-height: 32px;
   z-index: 2;
 }
@@ -6081,7 +6092,7 @@ footer .footerEnd p {
 .featuresGrid h4 {
   font-size: 32px;
   font-weight: bold;
-  color: #292929;
+  color: black;
   line-height: 45px;
 }
 
@@ -6098,13 +6109,13 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .featuresGrid .benf p {
   font-size: 24px;
   font-weight: normal;
-  color: #292929;
+  color: black;
   line-height: 32px;
 }
 
@@ -6209,7 +6220,7 @@ footer .footerEnd p {
   height: 98px;
   border-radius: 25px;
   cursor: pointer;
-  color: #292929;
+  color: black;
   font-weight: 900 !important;
   background: white;
   -webkit-transition: all .3s ease-in-out;
@@ -6243,21 +6254,21 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900;
-  color: #292929;
+  color: black;
 }
 
 .subCategoryForm .formSection .top p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .subCategoryForm .formSection .tileColors h6 {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .subCategoryForm .formSection .tileColors span {
@@ -6310,7 +6321,7 @@ footer .footerEnd p {
   height: 100%;
   width: 30%;
   padding: 2px 4px;
-  background: #292929;
+  background: black;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
 }
@@ -6328,7 +6339,7 @@ footer .footerEnd p {
   font-size: 24px;
   padding: 0 10px;
   outline: none;
-  color: #292929;
+  color: black;
   background: transparent;
   -moz-appearance: textfield;
 }
@@ -6343,7 +6354,7 @@ footer .footerEnd p {
   height: 98px;
   border-radius: 25px;
   outline: none;
-  color: #292929;
+  color: black;
   font-size: 24px;
   font-weight: 900;
 }
@@ -6354,7 +6365,7 @@ footer .footerEnd p {
 
 .subCategoryForm .formSection .assembleButtons .plan {
   background: transparent;
-  border: 3px solid #292929;
+  border: 3px solid black;
 }
 
 .subCategoryForm .formSection .assembleButtons .plan img {
@@ -6370,7 +6381,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .subCategorySpecs .benf img {
@@ -6382,13 +6393,13 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .subCategorySpecs .benf p {
   font-size: 24px;
   font-weight: bold;
-  color: #292929;
+  color: black;
   line-height: 32px;
 }
 
@@ -6443,7 +6454,7 @@ footer .footerEnd p {
 }
 
 .subCategoryComments .comments .imgWrapper .linkBtns .btn1 {
-  background: #292929 !important;
+  background: black !important;
 }
 
 .subCategoryComments .comments .imgWrapper .linkBtns .btn2 {
@@ -6463,7 +6474,7 @@ footer .footerEnd p {
   font-size: 48px;
   font-weight: bolder;
   line-height: 56px;
-  color: #292929;
+  color: black;
 }
 
 .subCategoryComments .comments .commentsText h1 span {
@@ -6474,7 +6485,7 @@ footer .footerEnd p {
   font-size: 32px;
   font-weight: normal;
   line-height: 40px;
-  color: #292929;
+  color: black;
   width: 70%;
 }
 
@@ -6482,20 +6493,20 @@ footer .footerEnd p {
   font-size: 24px;
   font-weight: bolder;
   line-height: 32px;
-  color: #292929;
+  color: black;
 }
 
 .subCategoryComments .comments .commentsText .person h6 {
   font-size: 24px;
   font-weight: normal;
   line-height: 40px;
-  color: #292929;
+  color: black;
 }
 
 .subCategoryComments .gallery h1 {
   font-size: 48px;
   line-height: 56px;
-  color: #292929;
+  color: black;
   font-weight: 900;
   z-index: 5 !important;
 }
@@ -8449,7 +8460,8 @@ footer .footerEnd p {
     height: 45% !important;
   }
   .productBanner .bannerTxt h1, .roofingBanner .bannerTxt h1 {
-    font-size: 40px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .productBanner .bannerTxt p, .roofingBanner .bannerTxt p {
     font-size: 16px;
@@ -8680,7 +8692,7 @@ footer .footerEnd p {
     padding-bottom: 48px !important;
   }
   .roofingBanner .back {
-    height: 45% !important;
+    height: 48% !important;
   }
   .roofingBanner .bannerTxt .top {
     -webkit-box-align: start;
@@ -8688,8 +8700,8 @@ footer .footerEnd p {
             align-items: flex-start;
   }
   .roofingBanner .bannerTxt h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .roofingBanner .bannerTxt p {
     font-size: 16px;
@@ -9632,7 +9644,7 @@ footer .footerEnd p {
   .productsExplore .exploreWrapper .tileTypes .galleryCard p, .subCategoryForm .exploreWrapper .tileTypes .galleryCard p {
     font-size: 14px;
     text-align: center;
-    color: #292929;
+    color: black;
   }
   .productsExplore .exploreWrapper .inputs h3, .subCategoryForm .exploreWrapper .inputs h3 {
     font-size: 18px;
@@ -9722,6 +9734,7 @@ footer .footerEnd p {
     font-size: 30px;
     line-height: 32px;
     margin: 0 16px !important;
+    margin-bottom: 10px !important;
   }
   .faq .faqCard {
     width: auto;
@@ -10031,7 +10044,7 @@ footer .footerEnd p {
   .subCategoryForm .formSection .tileTypes .galleryCard p {
     font-size: 16px;
     text-align: center;
-    color: #292929;
+    color: black;
   }
   .subCategoryForm .formSection .inputs h3 {
     font-size: 20px;
@@ -10254,12 +10267,12 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: 600;
-  color: #292929;
+  color: black;
 }
 
 .aboutBanner .bannerTxt h5 {
   font-size: 24px;
-  color: #292929;
+  color: black;
 }
 
 .aboutBanner .bannerTxt h6 {
@@ -10323,7 +10336,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900;
-  color: #292929;
+  color: black;
 }
 
 .videoSection .textBox h1 span {
@@ -10334,7 +10347,7 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .videoSection .videoModal {
@@ -10378,7 +10391,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900;
-  color: #292929;
+  color: black;
 }
 
 .lifetime h1 span {
@@ -10402,14 +10415,14 @@ footer .footerEnd p {
   font-size: 40px;
   line-height: 48px;
   font-weight: bold;
-  color: #292929;
+  color: black;
 }
 
 .lifetime .detailsBox .detail p {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .lifetime .detailsBox .detail span img {
@@ -10451,7 +10464,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900;
-  color: #292929;
+  color: black;
 }
 
 .assurance h1 span {
@@ -10462,7 +10475,7 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .assurance .item {
@@ -10491,14 +10504,14 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: 900;
-  color: #292929;
+  color: black;
 }
 
 .assurance .item p {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .team {
@@ -10537,14 +10550,14 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: bold;
-  color: #292929;
+  color: black;
 }
 
 .team .teamWrapper .left p {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .team .teamWrapper .left a {
@@ -10554,7 +10567,7 @@ footer .footerEnd p {
   font-size: 24px;
   line-height: 32px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
   border-radius: 25px;
   outline: none;
 }
@@ -10567,14 +10580,14 @@ footer .footerEnd p {
   font-size: 40px;
   line-height: 48px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .team .teamWrapper .right h1 {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900;
-  color: #292929;
+  color: black;
 }
 
 .team .teamWrapper .right h1 span {
@@ -10585,7 +10598,7 @@ footer .footerEnd p {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .team .teamWrapper .right a {
@@ -10602,6 +10615,10 @@ footer .footerEnd p {
   height: 544px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.aboutSpacer {
+  background: #F4F4F4;
 }
 
 .career {
@@ -10651,7 +10668,7 @@ footer .footerEnd p {
   line-height: 32px;
   font-weight: bolder;
   background: #FFB548;
-  color: #292929;
+  color: black;
   border-radius: 30px;
   outline: none;
 }
@@ -10665,7 +10682,7 @@ footer .footerEnd p {
 .aboutTeamBanner .back {
   background: #1226AA;
   width: 100%;
-  height: 60%;
+  height: 65%;
   top: 0;
   left: 0;
 }
@@ -10683,13 +10700,13 @@ footer .footerEnd p {
 .aboutTeamBanner .bannerTxt p {
   font-size: 32px;
   line-height: 40px;
-  font-weight: normal;
-  color: #292929;
+  font-weight: 600;
+  color: black;
 }
 
 .aboutTeamBanner .bannerTxt h5 {
   font-size: 24px;
-  color: #292929;
+  color: black;
 }
 
 .aboutTeamBanner .bannerTxt h6 {
@@ -10714,7 +10731,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900;
-  color: #292929;
+  color: black;
 }
 
 .executives h1 span {
@@ -10730,21 +10747,21 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 48px;
   font-weight: bold;
-  color: #292929;
+  color: black;
 }
 
 .executives .bio .text p {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .executives .bio .text a {
   font-size: 24px;
   line-height: 32px;
   font-weight: bold;
-  color: #292929;
+  color: black;
 }
 
 .executives .bio .text a img {
@@ -10783,21 +10800,21 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900;
-  color: #292929;
+  color: black;
 }
 
 .bioInfo .textBox h5 {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .bioInfo .textBox p {
   font-size: 24px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .teamSpacer {
@@ -10813,7 +10830,7 @@ footer .footerEnd p {
 .aboutCultureBanner .back, .aboutCareerBanner .back {
   background: #1226AA;
   width: 100%;
-  height: 60%;
+  height: 65%;
   top: 0;
   left: 0;
 }
@@ -10831,13 +10848,13 @@ footer .footerEnd p {
 .aboutCultureBanner .bannerTxt p, .aboutCareerBanner .bannerTxt p {
   font-size: 32px;
   line-height: 40px;
-  font-weight: normal;
-  color: #292929;
+  font-weight: 600;
+  color: black;
 }
 
 .aboutCultureBanner .bannerTxt h5, .aboutCareerBanner .bannerTxt h5 {
   font-size: 24px;
-  color: #292929;
+  color: black;
 }
 
 .aboutCultureBanner .bannerTxt h6, .aboutCareerBanner .bannerTxt h6 {
@@ -10858,7 +10875,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900;
-  color: #292929;
+  color: black;
   z-index: 2;
 }
 
@@ -10870,7 +10887,7 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
   z-index: 2;
 }
 
@@ -10901,14 +10918,14 @@ footer .footerEnd p {
   font-size: 40px;
   line-height: 48px;
   font-weight: bold;
-  color: #292929;
+  color: black;
 }
 
 .investing .detailsBox .detail p {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .investing .detailsBox .detail span img {
@@ -10959,21 +10976,21 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 800;
-  color: #292929;
+  color: black;
 }
 
 .diversity .textWrapper h5 {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .diversity .textWrapper p {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 /*ABOUT CAREERS STYLES*/
@@ -11018,7 +11035,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900;
-  color: #292929;
+  color: black;
 }
 
 .careerJoin .textBox h1 span {
@@ -11029,7 +11046,7 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .careerJoin .textBox .applyBtn {
@@ -11039,7 +11056,7 @@ footer .footerEnd p {
   line-height: 32px;
   font-weight: bolder;
   background: #FFB548;
-  color: #292929;
+  color: black;
   border-radius: 25px;
   outline: none;
 }
@@ -11053,7 +11070,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900;
-  color: #292929;
+  color: black;
 }
 
 .careerExplore .search {
@@ -11073,28 +11090,28 @@ footer .footerEnd p {
   outline: none;
   width: 100%;
   height: 100%;
-  color: #292929;
+  color: black;
   background: transparent;
   font-size: 24px;
 }
 
 .careerExplore .search input::-webkit-input-placeholder {
-  color: #292929;
+  color: black;
   font-size: 24px;
 }
 
 .careerExplore .search input:-ms-input-placeholder {
-  color: #292929;
+  color: black;
   font-size: 24px;
 }
 
 .careerExplore .search input::-ms-input-placeholder {
-  color: #292929;
+  color: black;
   font-size: 24px;
 }
 
 .careerExplore .search input::placeholder {
-  color: #292929;
+  color: black;
   font-size: 24px;
 }
 
@@ -11111,14 +11128,14 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .careerExplore .jobs .jobCard p {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .careerExplore .jobs .jobCard h6 {
@@ -11139,7 +11156,7 @@ footer .footerEnd p {
 }
 
 .careerExplore .pagination .previous {
-  background: #292929;
+  background: black;
   width: 206px;
   height: 73px;
   -webkit-transition: all .3s ease-in-out;
@@ -11162,8 +11179,8 @@ footer .footerEnd p {
   width: 68px;
   height: 73px;
   font-size: 32px;
-  color: #292929;
-  border: 1px solid #292929;
+  color: black;
+  border: 1px solid black;
   background: transparent;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -11201,11 +11218,11 @@ footer .footerEnd p {
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
     height: fit-content !important;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .aboutBanner .back {
-    height: 55% !important;
+    height: 60% !important;
   }
   .aboutBanner .bannerTxt h1 {
     font-size: 45px;
@@ -11233,529 +11250,140 @@ footer .footerEnd p {
   }
   .videoSection {
     height: auto !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .videoSection .vidGrid {
+    grid-gap: 40px !important;
   }
   .videoSection .imgBox {
-    height: 550px;
-    width: auto;
+    height: 65vh !important;
+    width: 100%;
   }
   .videoSection .imgBox span {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
   .videoSection .imgBox span img {
     width: 50px;
     height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .videoSection .textBox h1 {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .videoSection .textBox p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
   }
-  .videoSection .videoModal {
-    width: 100%;
-    height: 100%;
-  }
   .videoSection .videoModal .videoWrapper .close {
-    position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 5vh !important;
+    right: 5vw !important;
   }
   .videoSection .videoModal .videoWrapper .close img {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .videoSection .videoModal .videoWrapper .video {
     width: 80vw;
     height: 70vh;
   }
+  .lifetime {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .lifetime * {
+    margin: 0 !important;
+  }
   .lifetime h1 {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
+    width: 40%;
+    margin-bottom: 20px !important;
   }
   .lifetime .imageBox {
     width: auto;
-    height: 550px;
-  }
-  .lifetime .detailsBox .detail h3 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .lifetime .detailsBox .detail p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .lifetime .detailsBox .detail span img {
-    width: 70px;
-    height: 70px;
-  }
-  .assurance {
-    -ms-grid-columns: 1fr 3fr;
-        grid-template-columns: 1fr 3fr;
-  }
-  .assurance h1 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .assurance h5 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .assurance .item {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-gap: 0;
-  }
-  .assurance .item span {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 20px;
-  }
-  .assurance .item span img {
-    width: 100px;
-    height: 100px;
-  }
-  .assurance .item .inner h6 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .assurance .item .inner p {
-    font-size: 22px;
-    line-height: 30px;
-  }
-  .team .back {
-    width: 95%;
-  }
-  .team .teamWrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 2fr 2fr;
-        grid-template-columns: 2fr 2fr;
-    grid-gap: 60px;
-  }
-  .team .teamWrapper .left img {
-    width: 100%;
-    height: 550px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .team .teamWrapper .left h4 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .team .teamWrapper .left p {
-    font-size: 22px;
-    line-height: 30px;
-  }
-  .team .teamWrapper .left a {
-    width: 300px;
-    height: 80px;
-    font-size: 22px;
-    line-height: 32px;
-    border-radius: 30px;
-  }
-  .team .teamWrapper .right h3 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .team .teamWrapper .right h1 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .team .teamWrapper .right p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .team .teamWrapper .right a {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .team .teamWrapper .right img {
-    width: 100%;
-    height: 550px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .career img {
-    width: 100%;
-    height: 450px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .career .careerText h2 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .career .careerText h5 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .career .careerText a {
-    width: 250px;
-    height: 80px;
-    font-size: 22px;
-    line-height: 30px;
-    border-radius: 30px;
-  }
-  .aboutTeamBanner .back {
-    height: 55%;
-  }
-  .aboutTeamBanner .bannerTxt h1 {
-    font-size: 50px;
-  }
-  .aboutTeamBanner .bannerTxt p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .aboutTeamBanner .bannerTxt h5 {
-    font-size: 20px;
-  }
-  .aboutTeamBanner .bannerTxt h6 {
-    font-size: 20px;
-    color: white;
-    font-weight: bolder;
-  }
-  .aboutTeamBanner .bannerTxt img {
-    width: 30px;
-    height: 30px;
-  }
-  .executives h1 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .executives .bio img {
-    width: 200px !important;
-    height: 200px !important;
-  }
-  .executives .bio .text h4 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .executives .bio .text p {
-    font-size: 22px;
-    line-height: 30px;
-  }
-  .executives .bio .text a {
-    font-size: 22px;
-    line-height: 30px;
-  }
-  .executives .bio .text a img {
-    width: 45px !important;
-    height: 45px !important;
-  }
-  .bioInfo .back {
-    width: 95%;
-  }
-  .bioInfo .imgBox {
-    height: 500px;
-    width: auto;
-  }
-  .bioInfo .textBox h1 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .bioInfo .textBox h5 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .bioInfo .textBox p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .aboutCultureBanner .back, .aboutCareerBanner .back {
-    height: 55%;
-  }
-  .aboutCultureBanner .bannerTxt h1, .aboutCareerBanner .bannerTxt h1 {
-    font-size: 50px;
-    line-height: 60px;
-  }
-  .aboutCultureBanner .bannerTxt p, .aboutCareerBanner .bannerTxt p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .aboutCultureBanner .bannerTxt h5, .aboutCareerBanner .bannerTxt h5 {
-    font-size: 20px;
-    color: #292929;
-  }
-  .aboutCultureBanner .bannerTxt h6, .aboutCareerBanner .bannerTxt h6 {
-    font-size: 20px;
-  }
-  .investing .intro h1 {
-    font-size: 45px;
-    line-height: 52px;
-    font-weight: 900;
-  }
-  .investing .intro p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .investing .imageBox {
-    width: 100%;
-    height: 500px;
-  }
-  .investing .detailsBox .detail h3 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .investing .detailsBox .detail p {
-    font-size: 22px;
-    line-height: 30px;
-  }
-  .investing .detailsBox .detail span img {
-    width: 60px;
-    height: 60px;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .diversity .imgWrapper img {
-    width: 100%;
-    height: 600px;
-  }
-  .diversity .textWrapper h2 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .diversity .textWrapper h5 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .diversity .textWrapper p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .careerJoin .back {
-    width: 95%;
-  }
-  .careerJoin .imgBox {
-    height: 500px;
-    width: 100%;
-  }
-  .careerJoin .imgBox span {
-    width: 120px;
-    height: 120px;
-  }
-  .careerJoin .imgBox span img {
-    width: 50px;
-    height: 50px;
-  }
-  .careerJoin .textBox h1 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .careerJoin .textBox p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .careerJoin .textBox .applyBtn {
-    width: 250px;
-    height: 80px;
-    font-size: 22px;
-    line-height: 32px;
-    border-radius: 30px;
-  }
-  .careerExplore h1 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .careerExplore .search {
-    width: 600px;
-    height: 80px;
-  }
-  .careerExplore .search img {
-    width: 40px;
-    height: 40px;
-  }
-  .careerExplore .search input {
-    font-size: 22px;
-  }
-  .careerExplore .search input::-webkit-input-placeholder {
-    font-size: 22px;
-  }
-  .careerExplore .search input:-ms-input-placeholder {
-    font-size: 22px;
-  }
-  .careerExplore .search input::-ms-input-placeholder {
-    font-size: 22px;
-  }
-  .careerExplore .search input::placeholder {
-    font-size: 22px;
-  }
-  .careerExplore .search input:focus {
-    outline: none;
-  }
-  .careerExplore .jobs .jobCard h4 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .careerExplore .jobs .jobCard p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .careerExplore .jobs .jobCard h6 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .careerExplore .jobs .jobCard .right a {
-    width: 130px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .careerExplore .pagination .previous {
-    width: 200px;
-    height: 60px;
-  }
-  .careerExplore .pagination .previous img {
-    width: 20px;
-    height: 20px;
-  }
-  .careerExplore .pagination .previous p {
-    font-size: 22px;
-    line-height: 30px;
-  }
-  .careerExplore .pagination .pages span {
-    width: 60px;
-    height: 70px;
-    font-size: 22px;
-  }
-  .careerExplore .pagination .next {
-    background: #1226AA;
-    width: 200px;
-    height: 70px;
-  }
-  .careerExplore .pagination .next img {
-    width: 20px;
-    height: 20px;
-  }
-  .careerExplore .pagination .next p {
-    font-size: 22px;
-    line-height: 30px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .aboutBanner .back {
-    height: 50%;
-  }
-  .aboutBanner .bannerTxt h1 {
-    font-size: 45px;
-  }
-  .aboutBanner .bannerTxt p {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .aboutBanner .bannerTxt h5 {
-    font-size: 16px;
-  }
-  .aboutBanner .bannerTxt h6 {
-    font-size: 16px;
-  }
-  .aboutBanner .bannerImg {
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .videoSection .imgBox {
-    height: 500px;
-    width: 100%;
-  }
-  .videoSection .imgBox span {
-    width: 100px;
-    height: 100px;
-  }
-  .videoSection .imgBox span img {
-    width: 40px;
-    height: 40px;
-  }
-  .videoSection .textBox h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .videoSection .textBox p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .videoSection .videoModal {
-    width: 100%;
-    height: 100%;
-  }
-  .videoSection .videoModal .videoWrapper .close {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-  }
-  .videoSection .videoModal .videoWrapper .close img {
-    width: 40px;
-    height: 40px;
-  }
-  .videoSection .videoModal .videoWrapper .video {
-    width: 70vw;
     height: 60vh;
-  }
-  .lifetime h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .lifetime .imageBox {
-    width: 100%;
-    height: 500px;
   }
   .lifetime .imageBox img {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .lifetime .detailsBox .detail * {
+    margin: 0 !important;
+  }
   .lifetime .detailsBox .detail h3 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .lifetime .detailsBox .detail p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
   }
   .lifetime .detailsBox .detail span img {
     width: 50px;
     height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 10px !important;
   }
   .assurance {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 4fr;
+        grid-template-columns: 1fr 4fr;
+    grid-gap: 0;
+    padding-bottom: 48px !important;
   }
   .assurance h1 {
-    font-size: 40px;
-    line-height: 50px;
-    width: 80% !important;
-    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 40px;
+    width: 100% !important;
   }
   .assurance h5 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .assurance .itemGrid {
+    grid-gap: 30px !important;
   }
   .assurance .item {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-gap: 0;
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+    grid-gap: 20px !important;
   }
   .assurance .item span {
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: 85%;
     margin-bottom: 20px;
   }
   .assurance .item span img {
-    width: 100px;
-    height: 100px;
+    width: 70%;
+    height: 70%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .assurance .item .inner * {
+    margin: 0 !important;
   }
   .assurance .item .inner h6 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px !important;
   }
   .assurance .item .inner p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .team {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .team .back {
     width: 95%;
@@ -11769,263 +11397,320 @@ footer .footerEnd p {
   }
   .team .teamWrapper .left img {
     width: 100%;
-    height: 500px;
-  }
-  .team .teamWrapper .left h4 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .team .teamWrapper .left p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .team .teamWrapper .left a {
-    width: 300px;
-    height: 60px;
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .team .teamWrapper .right h3 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .team .teamWrapper .right h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .team .teamWrapper .right p {
-    font-size: 20px;
-    line-height: 32px;
-  }
-  .team .teamWrapper .right a {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .team .teamWrapper .right img {
-    width: 100%;
-    height: 500px;
-  }
-  .career img {
-    width: 100%;
-    height: 400px;
+    height: 60vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .team .teamWrapper .left .leftText {
+    margin-top: 40px !important;
+  }
+  .team .teamWrapper .left h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .team .teamWrapper .left p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .team .teamWrapper .left a {
+    width: 60%;
+    height: 60px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 20px;
+  }
+  .team .teamWrapper .right .rightText {
+    margin-bottom: 48px !important;
+  }
+  .team .teamWrapper .right h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px !important;
+  }
+  .team .teamWrapper .right h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 !important;
+  }
+  .team .teamWrapper .right p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  .team .teamWrapper .right a {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 40px;
+  }
+  .team .teamWrapper .right img {
+    width: 100%;
+    height: 60vh;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .career {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .career img {
+    width: 100%;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .career .careerText * {
+    margin: 0 !important;
+  }
   .career .careerText h2 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .career .careerText h5 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 10px !important;
+    margin-bottom: 30px !important;
   }
   .career .careerText a {
     width: 250px;
     height: 60px;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900 !important;
+    border-radius: 20px;
+  }
+  .aboutSpacer {
+    height: 48px !important;
+  }
+  .aboutTeamBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .aboutTeamBanner .back {
-    height: 45%;
+    height: 60% !important;
+  }
+  .aboutTeamBanner .bannerTxt {
+    padding-bottom: 24px;
   }
   .aboutTeamBanner .bannerTxt .bannerHeader {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .aboutTeamBanner .bannerTxt .bannerHeader * {
-    margin: 0;
+    margin-bottom: 0 !important;
+    height: auto;
   }
   .aboutTeamBanner .bannerTxt h1 {
     font-size: 45px;
-    line-height: 52px;
+    margin-bottom: 20px !important;
   }
   .aboutTeamBanner .bannerTxt p {
     font-size: 20px;
     line-height: 30px;
+    width: 80%;
   }
   .aboutTeamBanner .bannerTxt h5 {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .aboutTeamBanner .bannerTxt h6 {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .aboutTeamBanner .bannerTxt img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
   .aboutTeamBanner .bannerImg {
-    height: 250px !important;
-    -o-object-fit: cover;
-       object-fit: cover;
+    margin-top: 0px !important;
+  }
+  .executives {
+    padding-bottom: 48px !important;
   }
   .executives h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
-  .executives .bio {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+  .executives .wrapper {
+    margin-top: 24px !important;
   }
   .executives .bio img {
     width: 200px !important;
     height: 200px !important;
   }
-  .executives .bio .text {
-    margin-top: 20px;
-  }
   .executives .bio .text h4 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .executives .bio .text p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .executives .bio .text a {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .executives .bio .text a img {
-    width: 45px !important;
-    height: 45px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .bioInfo {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .bioInfo .back {
+    width: 95%;
+  }
+  .bioInfo .imgBox {
+    height: 60vh;
+    width: 100%;
+    background-position: top center;
+  }
+  .bioInfo .textBox * {
+    margin: 0 !important;
   }
   .bioInfo .textBox h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .bioInfo .textBox h5 {
-    font-size: 30px;
+    font-size: 32px;
     line-height: 40px;
   }
+  .bioInfo .textBox h5 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 10px 0 !important;
+    font-weight: 700;
+  }
   .bioInfo .textBox p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .teamSpacer {
+    height: 48px !important;
+  }
+  .aboutCultureBanner, .aboutCareerBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .aboutCultureBanner .back, .aboutCareerBanner .back {
-    height: 45%;
+    height: 65% !important;
+  }
+  .aboutCultureBanner .bannerTxt, .aboutCareerBanner .bannerTxt {
+    padding-bottom: 24px;
   }
   .aboutCultureBanner .bannerTxt .bannerHeader, .aboutCareerBanner .bannerTxt .bannerHeader {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .aboutCultureBanner .bannerTxt .bannerHeader *, .aboutCareerBanner .bannerTxt .bannerHeader * {
-    margin: 0;
+    margin-bottom: 0 !important;
+    height: auto;
   }
   .aboutCultureBanner .bannerTxt h1, .aboutCareerBanner .bannerTxt h1 {
     font-size: 45px;
-    line-height: 52px;
+    margin-bottom: 20px !important;
   }
   .aboutCultureBanner .bannerTxt p, .aboutCareerBanner .bannerTxt p {
     font-size: 20px;
-    line-height: 32px;
+    line-height: 30px;
+    width: 80%;
   }
   .aboutCultureBanner .bannerTxt h5, .aboutCareerBanner .bannerTxt h5 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
   .aboutCultureBanner .bannerTxt h6, .aboutCareerBanner .bannerTxt h6 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
   .aboutCultureBanner .bannerImg, .aboutCareerBanner .bannerImg {
-    height: 250px !important;
-    -o-object-fit: cover;
-       object-fit: cover;
+    margin-top: 0px !important;
+  }
+  .investing {
+    margin-top: 48px !important;
+  }
+  .investing * {
+    margin: 0 !important;
+  }
+  .investing .intro {
+    height: auto;
+    margin-bottom: 20px !important;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .investing .intro h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
+    margin-right: 20px !important;
   }
   .investing .intro p {
     font-size: 20px;
-    line-height: 32px;
+    line-height: 24px;
   }
   .investing .imageBox {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 60vh;
   }
   .investing .imageBox img {
-    width: 100%;
-    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .investing .detailsBox .detail {
+    padding: 20px 40px !important;
+  }
+  .investing .detailsBox .detail * {
+    margin: 0 !important;
+  }
   .investing .detailsBox .detail h3 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .investing .detailsBox .detail p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
   }
   .investing .detailsBox .detail span img {
     width: 50px;
     height: 50px;
     -o-object-fit: contain;
        object-fit: contain;
+    margin-right: 10px !important;
+  }
+  .diversity {
+    margin-top: 48px !important;
   }
   .diversity .imgWrapper img {
     width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    height: 60vh;
+  }
+  .diversity .textWrapper * {
+    margin: 0 !important;
   }
   .diversity .textWrapper h2 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px !important;
   }
   .diversity .textWrapper h5 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 10px !important;
   }
   .diversity .textWrapper p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .aboutCareerBanner .back {
-    height: 50% !important;
-  }
-  .aboutCareerBanner .bannerTxt h1 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .aboutCareerBanner .bannerTxt p {
-    font-size: 20px;
-    line-height: 32px;
-  }
-  .aboutCareerBanner .bannerTxt h5 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
-  .aboutCareerBanner .bannerTxt h6 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .aboutCareerBanner .bannerImg {
-    height: 250px !important;
-    -o-object-fit: cover;
-       object-fit: cover;
+  .careerJoin {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .careerJoin .back {
     width: 95%;
   }
+  .careerJoin .wrapper {
+    grid-gap: 40px !important;
+  }
   .careerJoin .imgBox {
-    height: 500px;
+    height: 60vh;
     width: 100%;
   }
   .careerJoin .imgBox span {
@@ -12036,121 +11721,160 @@ footer .footerEnd p {
     width: 50px;
     height: 50px;
   }
+  .careerJoin .textBox {
+    padding-top: 10px !important;
+  }
   .careerJoin .textBox h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .careerJoin .textBox p {
     font-size: 20px;
-    line-height: 32px;
+    line-height: 24px;
   }
   .careerJoin .textBox .applyBtn {
-    width: 250px;
+    width: 200px;
     height: 60px;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 20px;
+  }
+  .careerExplore {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .careerExplore h1 {
-    font-size: 40px;
-    line-height: 52px;
-  }
-  .careerExplore .search {
-    width: 60vw;
-    height: 60px;
-  }
-  .careerExplore .search img {
-    width: 40px;
-    height: 40px;
-  }
-  .careerExplore .search input {
-    font-size: 20px;
-  }
-  .careerExplore .search input::-webkit-input-placeholder {
-    font-size: 20px;
-  }
-  .careerExplore .search input:-ms-input-placeholder {
-    font-size: 20px;
-  }
-  .careerExplore .search input::-ms-input-placeholder {
-    font-size: 20px;
-  }
-  .careerExplore .search input::placeholder {
-    font-size: 20px;
-  }
-  .careerExplore .search input:focus {
-    outline: none;
-  }
-  .careerExplore .jobs .jobCard h4 {
-    font-size: 30px;
+    font-size: 32px;
     line-height: 40px;
   }
+  .careerExplore .search {
+    width: 50vw;
+    height: 60px;
+    border-radius: 20px !important;
+  }
+  .careerExplore .search img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .careerExplore .search input {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .careerExplore .search input::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .careerExplore .search input:-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .careerExplore .search input::-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .careerExplore .search input::placeholder {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .careerExplore .jobs .jobCard h4 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700 !important;
+  }
   .careerExplore .jobs .jobCard p {
-    font-size: 20px;
-    line-height: 30px;
-    width: 100% !important;
+    font-size: 18px;
+    line-height: 24px;
+    width: 90% !important;
   }
   .careerExplore .jobs .jobCard h6 {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .careerExplore .jobs .jobCard .right a {
     width: 130px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
   }
   .careerExplore .pagination .previous {
-    width: 200px;
-    height: 60px;
+    width: 150px;
+    height: 50px;
   }
   .careerExplore .pagination .previous img {
     width: 20px;
     height: 20px;
   }
   .careerExplore .pagination .previous p {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .careerExplore .pagination .pages span {
-    width: 60px;
-    height: 70px;
-    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
   }
   .careerExplore .pagination .next {
     background: #1226AA;
     width: 200px;
-    height: 70px;
+    height: 50px;
   }
   .careerExplore .pagination .next img {
     width: 20px;
     height: 20px;
   }
   .careerExplore .pagination .next p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
+  .aboutBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .aboutBanner .back {
-    height: 55%;
+    height: 55% !important;
   }
   .aboutBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px !important;
   }
   .aboutBanner .bannerTxt p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
+    width: 60%;
   }
   .aboutBanner .bannerTxt h5 {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+  }
+  .aboutBanner .bannerTxt h6 {
+    font-size: 16px;
+    line-height: 20px;
   }
   .aboutBanner .bannerTxt img {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+  }
+  .aboutBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .videoSection {
+    height: auto !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .videoSection .vidGrid {
+    grid-gap: 40px !important;
   }
   .videoSection .imgBox {
-    height: 400px;
+    height: 65vh !important;
     width: 100%;
   }
   .videoSection .imgBox span {
@@ -12158,41 +11882,59 @@ footer .footerEnd p {
     height: 80px;
   }
   .videoSection .imgBox span img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .videoSection .textBox h1 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
   }
   .videoSection .textBox p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
-  .videoSection .videoModal {
-    width: 100%;
-    height: 100%;
-  }
   .videoSection .videoModal .videoWrapper .close {
-    position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 5vh !important;
+    right: 5vw !important;
   }
   .videoSection .videoModal .videoWrapper .close img {
     width: 40px;
     height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .videoSection .videoModal .videoWrapper .video {
-    width: 70vw;
-    height: 60vh;
+    width: 80vw;
+    height: 70vh;
+  }
+  .lifetime {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .lifetime * {
+    margin: 0 !important;
   }
   .lifetime h1 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
+    width: 40%;
+    margin-bottom: 20px !important;
   }
   .lifetime .imageBox {
-    width: 100%;
-    height: 400px;
+    width: auto;
+    height: 60vh;
+  }
+  .lifetime .imageBox img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .lifetime .detailsBox .detail {
+    padding: 20px 40px !important;
+  }
+  .lifetime .detailsBox .detail * {
+    margin: 0 !important;
   }
   .lifetime .detailsBox .detail h3 {
     font-size: 24px;
@@ -12200,49 +11942,68 @@ footer .footerEnd p {
   }
   .lifetime .detailsBox .detail p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
   }
   .lifetime .detailsBox .detail span img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 10px !important;
   }
   .assurance {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 3.5fr;
+        grid-template-columns: 1fr 3.5fr;
+    grid-gap: 0;
+    padding-bottom: 48px !important;
   }
   .assurance h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
     width: 100% !important;
-    margin-bottom: 20px;
   }
   .assurance h5 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .assurance .itemGrid {
+    grid-gap: 20px !important;
   }
   .assurance .item {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-gap: 0;
+    -ms-grid-columns: 1fr 2.5fr;
+        grid-template-columns: 1fr 2.5fr;
+    grid-gap: 15px !important;
   }
   .assurance .item span {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 80%;
+    margin-bottom: 15px;
   }
   .assurance .item span img {
-    width: 100px;
-    height: 100px;
+    width: 70%;
+    height: 70%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .assurance .item .inner * {
+    margin: 0 !important;
   }
   .assurance .item .inner h6 {
     font-size: 24px;
     line-height: 32px;
+    margin-bottom: 10px !important;
   }
   .assurance .item .inner p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+  }
+  .team {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .team .back {
     width: 95%;
@@ -12252,216 +12013,382 @@ footer .footerEnd p {
     display: grid;
     -ms-grid-columns: 2fr 2fr;
         grid-template-columns: 2fr 2fr;
-    grid-gap: 20px;
+    grid-gap: 40px;
   }
   .team .teamWrapper .left img {
     width: 100%;
-    height: 400px;
+    height: 60vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .team .teamWrapper .left .leftText {
+    margin-top: 40px !important;
   }
   .team .teamWrapper .left h4 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .team .teamWrapper .left p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
   .team .teamWrapper .left a {
-    width: 300px;
+    width: 80%;
     height: 60px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+    border-radius: 20px;
+  }
+  .team .teamWrapper .right .rightText {
+    margin-bottom: 48px !important;
   }
   .team .teamWrapper .right h3 {
     font-size: 24px;
     line-height: 32px;
+    margin-bottom: 10px !important;
   }
   .team .teamWrapper .right h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 !important;
   }
   .team .teamWrapper .right p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
+    margin-top: 10px;
+    width: 90% !important;
   }
   .team .teamWrapper .right a {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
+    margin-top: 40px;
   }
   .team .teamWrapper .right img {
     width: 100%;
-    height: 400px;
+    height: 60vh;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .career {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .career img {
     width: 100%;
-    height: 400px;
+    height: 50vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .career .careerText * {
+    margin: 0 !important;
+  }
   .career .careerText h2 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .career .careerText h5 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px !important;
+    margin-bottom: 30px !important;
   }
   .career .careerText a {
     width: 200px;
     height: 60px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+    font-weight: 900 !important;
+    border-radius: 20px;
+  }
+  .aboutSpacer {
+    height: 48px !important;
+  }
+  .aboutTeamBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .aboutTeamBanner .back {
-    height: 55%;
+    height: 50% !important;
+  }
+  .aboutTeamBanner .bannerTxt {
+    padding-bottom: 20px;
+  }
+  .aboutTeamBanner .bannerTxt .bannerHeader {
+    margin-bottom: 24px !important;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .aboutTeamBanner .bannerTxt .bannerHeader * {
+    margin: 0 !important;
   }
   .aboutTeamBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 40px;
     line-height: 50px;
+    margin-bottom: 20px !important;
   }
   .aboutTeamBanner .bannerTxt p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
+    width: 80%;
   }
   .aboutTeamBanner .bannerTxt h5 {
     font-size: 16px;
+    line-height: 20px;
   }
   .aboutTeamBanner .bannerTxt h6 {
     font-size: 16px;
+    line-height: 20px;
   }
   .aboutTeamBanner .bannerTxt img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
   .aboutTeamBanner .bannerImg {
-    width: 100%;
-    height: 400px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    margin-top: 0px !important;
+  }
+  .executives {
+    padding-bottom: 48px !important;
   }
   .executives h1 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
   }
-  .executives .bio img {
-    width: 200px;
-    height: 200px;
+  .executives .wrapper {
+    margin-top: 24px !important;
+    grid-gap: 24px !important;
   }
-  .executives .bio .text {
-    margin-top: 20px;
+  .executives .bio img {
+    width: 150px !important;
+    height: 150px !important;
   }
   .executives .bio .text h4 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
   }
   .executives .bio .text p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .executives .bio .text a {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .executives .bio .text a img {
-    width: 35px !important;
-    height: 35px !important;
+    width: 30px !important;
+    height: 30px !important;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .bioInfo {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .bioInfo .back {
     width: 95%;
   }
   .bioInfo .imgBox {
-    height: 500px;
-    width: auto;
+    height: 60vh;
+    width: 100%;
+  }
+  .bioInfo .textBox * {
+    margin: 0 !important;
   }
   .bioInfo .textBox h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .bioInfo .textBox h5 {
     font-size: 24px;
     line-height: 32px;
+    margin: 10px 0 !important;
   }
   .bioInfo .textBox p {
     font-size: 16px;
     line-height: 24px;
   }
+  .teamSpacer {
+    height: 48px !important;
+  }
   .aboutCultureBanner .back, .aboutCareerBanner .back {
-    height: 55%;
+    height: 55% !important;
+  }
+  .aboutCultureBanner .bannerTxt, .aboutCareerBanner .bannerTxt {
+    padding-bottom: 20px;
+  }
+  .aboutCultureBanner .bannerTxt .bannerHeader, .aboutCareerBanner .bannerTxt .bannerHeader {
+    margin-bottom: 24px !important;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .aboutCultureBanner .bannerTxt .bannerHeader *, .aboutCareerBanner .bannerTxt .bannerHeader * {
+    margin: 0 !important;
   }
   .aboutCultureBanner .bannerTxt h1, .aboutCareerBanner .bannerTxt h1 {
     font-size: 40px;
     line-height: 50px;
+    margin-bottom: 20px !important;
   }
   .aboutCultureBanner .bannerTxt p, .aboutCareerBanner .bannerTxt p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
+    width: 80%;
   }
   .aboutCultureBanner .bannerTxt h5, .aboutCareerBanner .bannerTxt h5 {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .aboutCultureBanner .bannerTxt h6, .aboutCareerBanner .bannerTxt h6 {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+  }
+  .aboutCultureBanner .bannerImg, .aboutCareerBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .investing {
+    margin-top: 48px !important;
+  }
+  .investing * {
+    margin: 0 !important;
+  }
+  .investing .intro {
+    height: auto;
+    margin-bottom: 20px !important;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .investing .intro h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .investing .intro p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .investing .detailsBox .detail h3 {
     font-size: 30px;
     line-height: 40px;
+    margin-right: 20px !important;
+  }
+  .investing .intro p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .investing .imageBox {
+    width: auto;
+    height: 60vh;
+  }
+  .investing .imageBox img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .investing .detailsBox .detail {
+    padding: 20px 40px !important;
+  }
+  .investing .detailsBox .detail * {
+    margin: 0 !important;
+  }
+  .investing .detailsBox .detail h3 {
+    font-size: 24px;
+    line-height: 32px;
   }
   .investing .detailsBox .detail p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
   }
   .investing .detailsBox .detail span img {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     -o-object-fit: contain;
        object-fit: contain;
+    margin-right: 10px !important;
+  }
+  .diversity {
+    margin-top: 48px !important;
+  }
+  .diversity .imgWrapper img {
+    width: 100%;
+    height: 60vh;
+  }
+  .diversity .textWrapper * {
+    margin: 0 !important;
   }
   .diversity .textWrapper h2 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px !important;
   }
   .diversity .textWrapper h5 {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 30px;
+    margin-bottom: 10px !important;
   }
   .diversity .textWrapper p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
   .aboutCareerBanner .back {
-    height: 65% !important;
+    height: 60% !important;
+  }
+  .aboutCareerBanner .bannerTxt {
+    padding-bottom: 20px;
+  }
+  .aboutCareerBanner .bannerTxt .bannerHeader {
+    margin-bottom: 24px !important;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .aboutCareerBanner .bannerTxt .bannerHeader * {
+    margin: 0 !important;
   }
   .aboutCareerBanner .bannerTxt h1 {
     font-size: 40px;
     line-height: 50px;
+    margin-bottom: 20px !important;
   }
   .aboutCareerBanner .bannerTxt p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
+    width: 80%;
   }
   .aboutCareerBanner .bannerTxt h5 {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .aboutCareerBanner .bannerTxt h6 {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+  }
+  .aboutCareerBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .careerJoin {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .careerJoin .back {
     width: 95%;
   }
+  .careerJoin .wrapper {
+    grid-gap: 40px !important;
+  }
   .careerJoin .imgBox {
-    height: 400px;
+    height: 60vh;
     width: 100%;
   }
   .careerJoin .imgBox span {
@@ -12472,23 +12399,688 @@ footer .footerEnd p {
     width: 50px;
     height: 50px;
   }
+  .careerJoin .textBox {
+    padding-top: 10px !important;
+  }
+  .careerJoin .textBox * {
+    margin: 0 !important;
+  }
   .careerJoin .textBox h1 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
   }
   .careerJoin .textBox p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
+    margin-top: 10px !important;
+    margin-bottom: 30px !important;
   }
   .careerJoin .textBox .applyBtn {
-    width: 250px;
+    width: 200px;
     height: 60px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+    border-radius: 20px;
+  }
+  .careerExplore {
+    padding: 48px !important;
   }
   .careerExplore h1 {
     font-size: 32px;
     line-height: 40px;
+  }
+  .careerExplore .search {
+    width: 50vw;
+    height: 60px;
+    border-radius: 20px !important;
+  }
+  .careerExplore .search img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .careerExplore .search input {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .careerExplore .search input::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .careerExplore .search input:-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .careerExplore .search input::-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .careerExplore .search input::placeholder {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .careerExplore .jobs .jobCard {
+    width: 100% !important;
+  }
+  .careerExplore .jobs .jobCard h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700 !important;
+  }
+  .careerExplore .jobs .jobCard p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 90% !important;
+  }
+  .careerExplore .jobs .jobCard h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .careerExplore .jobs .jobCard .right a {
+    width: 130px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .careerExplore .pagination .previous {
+    width: 100px;
+    height: 50px;
+  }
+  .careerExplore .pagination .previous img {
+    width: 20px;
+    height: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .careerExplore .pagination .previous p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .careerExplore .pagination .pages span {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .careerExplore .pagination .next {
+    background: #1226AA;
+    width: 100px;
+    height: 50px;
+  }
+  .careerExplore .pagination .next img {
+    width: 20px;
+    height: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .careerExplore .pagination .next p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutBanner {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .aboutBanner .back {
+    height: 45% !important;
+  }
+  .aboutBanner .bannerTxt h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px !important;
+  }
+  .aboutBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 70%;
+  }
+  .aboutBanner .bannerTxt h5 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .aboutBanner .bannerTxt h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .aboutBanner .bannerTxt img {
+    width: 25px;
+    height: 25px;
+  }
+  .aboutBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .videoSection {
+    height: auto !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .videoSection .vidGrid {
+    grid-gap: 40px !important;
+  }
+  .videoSection .imgBox {
+    height: 400px !important;
+    width: 100%;
+  }
+  .videoSection .imgBox span {
+    width: 80px;
+    height: 80px;
+  }
+  .videoSection .imgBox span img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .videoSection .textBox h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .videoSection .textBox p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .videoSection .videoModal .videoWrapper .close {
+    top: 5vh !important;
+    right: 5vw !important;
+  }
+  .videoSection .videoModal .videoWrapper .close img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .videoSection .videoModal .videoWrapper .video {
+    width: 80vw;
+    height: 50vh;
+  }
+  .lifetime {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .lifetime * {
+    margin: 0 !important;
+  }
+  .lifetime h1 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 60%;
+    margin-bottom: 20px !important;
+  }
+  .lifetime .imageBox {
+    width: auto;
+    height: 400px;
+  }
+  .lifetime .imageBox img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .lifetime .detailsBox .detail {
+    padding: 20px 40px !important;
+  }
+  .lifetime .detailsBox .detail * {
+    margin: 0 !important;
+  }
+  .lifetime .detailsBox .detail h3 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .lifetime .detailsBox .detail p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+  }
+  .lifetime .detailsBox .detail span img {
+    width: 50px;
+    height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 10px !important;
+  }
+  .assurance {
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    padding-bottom: 48px !important;
+  }
+  .assurance h1 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 100% !important;
+  }
+  .assurance h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .assurance .itemGrid {
+    grid-gap: 15px !important;
+  }
+  .assurance .item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 10px !important;
+  }
+  .assurance .item span {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+  }
+  .assurance .item span img {
+    width: 70%;
+    height: 70%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .assurance .item .inner * {
+    margin: 0 !important;
+  }
+  .assurance .item .inner h6 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 5px !important;
+  }
+  .assurance .item .inner p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .team {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .team .back {
+    width: 95%;
+  }
+  .team .teamWrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    grid-gap: 40px;
+  }
+  .team .teamWrapper .left img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .team .teamWrapper .left .leftText {
+    margin-top: 40px !important;
+  }
+  .team .teamWrapper .left h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .team .teamWrapper .left p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .team .teamWrapper .left a {
+    width: 80%;
+    height: 60px;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 20px;
+  }
+  .team .teamWrapper .right .rightText {
+    margin-bottom: 48px !important;
+  }
+  .team .teamWrapper .right h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px !important;
+  }
+  .team .teamWrapper .right h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 !important;
+  }
+  .team .teamWrapper .right p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+    width: 90% !important;
+  }
+  .team .teamWrapper .right a {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 40px;
+  }
+  .team .teamWrapper .right img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .career {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .career img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .career .careerText * {
+    margin: 0 !important;
+  }
+  .career .careerText h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .career .careerText h5 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px !important;
+    margin-bottom: 30px !important;
+  }
+  .career .careerText a {
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 900 !important;
+    border-radius: 20px;
+  }
+  .aboutSpacer {
+    height: 48px !important;
+  }
+  .aboutTeamBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .aboutTeamBanner .back {
+    height: 50% !important;
+  }
+  .aboutTeamBanner .bannerTxt {
+    padding-bottom: 20px;
+  }
+  .aboutTeamBanner .bannerTxt .bannerHeader {
+    margin-bottom: 24px !important;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .aboutTeamBanner .bannerTxt .bannerHeader * {
+    margin: 0 !important;
+  }
+  .aboutTeamBanner .bannerTxt h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px !important;
+  }
+  .aboutTeamBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+  }
+  .aboutTeamBanner .bannerTxt h5 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .aboutTeamBanner .bannerTxt h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .aboutTeamBanner .bannerTxt img {
+    width: 25px;
+    height: 25px;
+  }
+  .aboutTeamBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .executives {
+    padding-bottom: 48px !important;
+  }
+  .executives h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .executives .wrapper {
+    margin-top: 24px !important;
+    grid-gap: 24px !important;
+  }
+  .executives .bio img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .executives .bio .text * {
+    margin: 0 !important;
+  }
+  .executives .bio .text h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .executives .bio .text p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 5px !important;
+  }
+  .executives .bio .text a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .executives .bio .text a img {
+    width: 20px !important;
+    height: 20px !important;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-left: 5px !important;
+  }
+  .bioInfo .back {
+    width: 95%;
+  }
+  .bioInfo .imgBox {
+    height: 500px;
+    width: 100%;
+  }
+  .bioInfo .textBox h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .bioInfo .textBox h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .bioInfo .textBox p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .aboutCultureBanner .back, .aboutCareerBanner .back {
+    height: 50% !important;
+  }
+  .aboutCultureBanner .bannerTxt, .aboutCareerBanner .bannerTxt {
+    padding-bottom: 20px;
+  }
+  .aboutCultureBanner .bannerTxt .bannerHeader, .aboutCareerBanner .bannerTxt .bannerHeader {
+    margin-bottom: 24px !important;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .aboutCultureBanner .bannerTxt .bannerHeader *, .aboutCareerBanner .bannerTxt .bannerHeader * {
+    margin: 0 !important;
+  }
+  .aboutCultureBanner .bannerTxt h1, .aboutCareerBanner .bannerTxt h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px !important;
+  }
+  .aboutCultureBanner .bannerTxt p, .aboutCareerBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 80%;
+  }
+  .aboutCultureBanner .bannerTxt h5, .aboutCareerBanner .bannerTxt h5 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .aboutCultureBanner .bannerTxt h6, .aboutCareerBanner .bannerTxt h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .aboutCultureBanner .bannerImg, .aboutCareerBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .investing {
+    margin-top: 48px !important;
+  }
+  .investing * {
+    margin: 0 !important;
+  }
+  .investing .intro {
+    height: auto;
+    margin-bottom: 20px !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .investing .intro h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-right: 20px !important;
+  }
+  .investing .intro p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .investing .imageBox {
+    width: auto;
+    height: 400px;
+  }
+  .investing .imageBox img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .investing .detailsBox .detail {
+    padding: 20px 40px !important;
+  }
+  .investing .detailsBox .detail * {
+    margin: 0 !important;
+  }
+  .investing .detailsBox .detail h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .investing .detailsBox .detail p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+  }
+  .investing .detailsBox .detail span img {
+    width: 50px;
+    height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 10px !important;
+  }
+  .diversity {
+    margin-top: 48px !important;
+  }
+  .diversity .imgWrapper img {
+    width: 100%;
+    height: 400px;
+  }
+  .diversity .textWrapper * {
+    margin: 0 !important;
+  }
+  .diversity .textWrapper h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px !important;
+  }
+  .diversity .textWrapper h5 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px !important;
+  }
+  .diversity .textWrapper p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .aboutCareerBanner .back {
+    height: 55% !important;
+  }
+  .aboutCareerBanner .bannerTxt {
+    padding-bottom: 20px;
+  }
+  .aboutCareerBanner .bannerTxt .bannerHeader {
+    margin-bottom: 24px !important;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .aboutCareerBanner .bannerTxt .bannerHeader * {
+    margin: 0 !important;
+  }
+  .aboutCareerBanner .bannerTxt h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px !important;
+  }
+  .aboutCareerBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 80%;
+  }
+  .aboutCareerBanner .bannerTxt h5 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .aboutCareerBanner .bannerTxt h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .aboutCareerBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .careerJoin .back {
+    width: 95%;
+  }
+  .careerJoin .imgBox {
+    height: 400px;
+    width: 100%;
+  }
+  .careerJoin .textBox h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .careerJoin .textBox p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .careerJoin .textBox .applyBtn {
+    width: 150px;
+    height: 60px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .careerExplore h1 {
+    font-size: 30px;
+    line-height: 35px;
   }
   .careerExplore .search {
     width: 60vw;
@@ -12513,29 +13105,26 @@ footer .footerEnd p {
   .careerExplore .search input::placeholder {
     font-size: 16px;
   }
-  .careerExplore .search input:focus {
-    outline: none;
-  }
   .careerExplore .jobs .jobCard h4 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .careerExplore .jobs .jobCard p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     width: 100% !important;
   }
   .careerExplore .jobs .jobCard h6 {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .careerExplore .jobs .jobCard .right a {
     width: 100px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .careerExplore .pagination .previous {
-    width: 150px;
+    width: 100px;
     height: 40px;
   }
   .careerExplore .pagination .previous img {
@@ -12555,7 +13144,7 @@ footer .footerEnd p {
   }
   .careerExplore .pagination .next {
     background: #1226AA;
-    width: 150px;
+    width: 100px;
     height: 40px;
   }
   .careerExplore .pagination .next img {
@@ -12579,7 +13168,7 @@ footer .footerEnd p {
     height: 80%;
   }
   .aboutBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 40px;
   }
   .aboutBanner .bannerTxt p, .aboutBanner .bannerTxt h5 {
     color: white;
@@ -12642,6 +13231,7 @@ footer .footerEnd p {
     font-size: 30px;
     line-height: 40px;
     text-align: center;
+    width: 100%;
   }
   .lifetime .imageBox {
     width: 100%;
@@ -12838,10 +13428,14 @@ footer .footerEnd p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .executives .bio img {
-    width: 200px;
-    height: 200px;
+    width: 200px !important;
+    height: 200px !important;
   }
   .executives .bio .text {
     margin-top: 20px;
@@ -12897,16 +13491,16 @@ footer .footerEnd p {
             align-items: center;
   }
   .bioInfo .textBox h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .bioInfo .textBox h5 {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
   }
   .bioInfo .textBox p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     text-align: center;
   }
   .aboutCultureBanner, .aboutCareerBanner {
@@ -13189,7 +13783,7 @@ footer .footerEnd p {
 .styleBanner .back {
   background: #1226AA;
   width: 100%;
-  height: 70%;
+  height: 65%;
   top: 0;
   left: 0;
 }
@@ -13207,13 +13801,13 @@ footer .footerEnd p {
 .styleBanner .bannerTxt p {
   font-size: 32px;
   line-height: 40px;
-  font-weight: normal;
-  color: #292929;
+  font-weight: 600;
+  color: black;
 }
 
 .styleBanner .bannerTxt h5 {
   font-size: 24px;
-  color: #292929;
+  color: black;
 }
 
 .styleBanner .bannerTxt h6 {
@@ -13264,7 +13858,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900;
-  color: #292929;
+  color: black;
 }
 
 .styleHow .textBox h1 span {
@@ -13275,7 +13869,7 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .styleHow .textBox .applyBtn {
@@ -13285,7 +13879,7 @@ footer .footerEnd p {
   line-height: 32px;
   font-weight: bolder;
   background: #FFB548;
-  color: #292929;
+  color: black;
   border-radius: 25px;
   outline: none;
 }
@@ -13294,11 +13888,17 @@ footer .footerEnd p {
   background: #F4F4F4;
 }
 
+.styleBenefits .intro {
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  grid-gap: 0;
+}
+
 .styleBenefits .intro h1 {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
 }
 
 .styleBenefits .intro h1 span {
@@ -13309,7 +13909,7 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .styleBenefits .benefitsCard {
@@ -13344,7 +13944,7 @@ footer .footerEnd p {
 }
 
 .styleBenefits .benefitsCard .cardWrapper span {
-  min-width: 390px;
+  width: 100%;
   height: 98px;
   border-radius: 25px;
   background: #0E1C77;
@@ -13356,7 +13956,7 @@ footer .footerEnd p {
 
 .styleBenefits .benefitsCard .cardWrapper p {
   font-size: 24px;
-  color: white;
+  color: #F4F4F4;
   line-height: 32px;
 }
 
@@ -13380,7 +13980,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
 }
 
 .styleRegister h1 span {
@@ -13421,289 +14021,465 @@ footer .footerEnd p {
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
+  .styleBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .styleBanner .back {
-    height: 55%;
+    height: 60% !important;
   }
   .styleBanner .bannerTxt h1 {
-    font-size: 55px;
+    font-size: 45px;
+    margin-bottom: 20px !important;
   }
   .styleBanner .bannerTxt p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 60%;
   }
   .styleBanner .bannerTxt h5 {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .styleBanner .bannerTxt h6 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .styleBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .styleHow {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .styleHow .back {
     width: 95%;
   }
   .styleHow .imgBox {
-    height: 500px;
+    height: 60vh;
   }
   .styleHow .textBox h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 900 !important;
   }
   .styleHow .textBox p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .styleHow .textBox .applyBtn {
-    width: 300px;
-    height: 80px;
-    font-size: 22px;
-    line-height: 32px;
-    border-radius: 30px;
+    width: 250px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 20px;
+  }
+  .styleBenefits {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .styleBenefits .intro h1 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .styleBenefits .intro p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .styleBenefits .benefitsCard {
-    width: auto;
-    height: 450px;
-    border-radius: 30px;
-  }
-  .styleBenefits .benefitsCard .back1 {
-    border-radius: 30px;
-  }
-  .styleBenefits .benefitsCard .back2 {
-    border-radius: 30px;
-  }
-  .styleBenefits .benefitsCard .cardWrapper span {
-    min-width: 60%;
-    height: 80px;
-    border-radius: 30px;
-    font-size: 18px;
-    line-height: 32px;
-  }
-  .styleBenefits .benefitsCard .cardWrapper p {
-    font-size: 18px;
-    line-height: 32px;
-  }
-  .styleBenefits .benefitsCard .cardWrapper a {
-    font-size: 18px;
-    line-height: 32px;
-  }
-  .styleBenefits .benefitsCard .cardWrapper a img {
-    width: 50px;
-    height: 50px;
-  }
-  .styleRegister h1 {
-    font-size: 40px;
-    line-height: 52px;
-  }
-  .styleRegister .left, .styleRegister .right {
-    height: auto;
-    width: auto;
-  }
-  .styleRegister .left img {
-    width: auto;
-    height: 500px;
-  }
-  .styleRegister .right h3 {
     font-size: 32px;
     line-height: 40px;
   }
+  .styleBenefits .intro p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .styleBenefits .benefitsSlider {
+    margin-top: 20px;
+    padding: 0 !important;
+    height: auto;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard {
+    width: 100%;
+    height: 50vh !important;
+    border-radius: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .back1 {
+    border-radius: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .back2 {
+    border-radius: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper {
+    border-radius: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper span {
+    height: 60px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper a img {
+    width: 35px;
+    height: 35px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .styleRegister {
+    padding-bottom: 48px !important;
+  }
+  .styleRegister h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .styleRegister .styleGrid {
+    margin: 0 !important;
+  }
+  .styleRegister .left, .styleRegister .right {
+    height: 60vh;
+    width: 100%;
+  }
+  .styleRegister .left img {
+    width: 80%;
+    height: 80%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .styleRegister .right h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
   .styleRegister .right p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
+  .styleBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .styleBanner .back {
-    height: 50%;
+    height: 60% !important;
   }
   .styleBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px !important;
   }
   .styleBanner .bannerTxt p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
+    width: 60%;
   }
   .styleBanner .bannerTxt h5 {
     font-size: 16px;
+    line-height: 20px;
+  }
+  .styleBanner .bannerTxt h6 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .styleBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .styleHow {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .styleHow .back {
     width: 95%;
   }
   .styleHow .imgBox {
-    height: 400px;
+    height: 60vh;
   }
   .styleHow .textBox h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .styleHow .textBox p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .styleHow .textBox .applyBtn {
     width: 250px;
     height: 60px;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 20px;
+  }
+  .styleBenefits {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .styleBenefits .intro {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .styleBenefits .intro h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
+    width: 100% !important;
   }
   .styleBenefits .intro p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
-  .styleBenefits .benefitsCard {
-    width: auto;
-    height: 450px;
+  .styleBenefits .benefitsSlider {
+    margin-top: 20px;
+    padding: 0 !important;
+    height: auto;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard {
+    width: 100%;
+    height: 50vh !important;
+    border-radius: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .back1 {
+    border-radius: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .back2 {
+    border-radius: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper {
     border-radius: 30px;
   }
-  .styleBenefits .benefitsCard .cardWrapper span {
-    min-width: 60%;
-    min-height: 60px;
-    border-radius: 30px;
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper span {
+    height: 60px;
     font-size: 18px;
-    line-height: 32px;
+    line-height: 24px;
+    border-radius: 20px;
+    margin-bottom: 20px !important;
   }
-  .styleBenefits .benefitsCard .cardWrapper p {
-    font-size: 18px;
-    line-height: 32px;
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper p {
+    font-size: 16px;
+    line-height: 20px;
   }
-  .styleBenefits .benefitsCard .cardWrapper a {
-    font-size: 18px;
-    line-height: 32px;
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper a {
+    font-size: 16px;
+    line-height: 20px;
   }
-  .styleBenefits .benefitsCard .cardWrapper a img {
-    width: 50px;
-    height: 50px;
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper a img {
+    width: 35px;
+    height: 35px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .styleRegister {
+    padding-bottom: 48px !important;
   }
   .styleRegister h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .styleRegister .styleGrid {
+    margin: 0 !important;
+  }
+  .styleRegister .left, .styleRegister .right {
+    height: 60vh;
+    width: 100%;
   }
   .styleRegister .left img {
-    width: auto;
-    height: 500px;
+    width: 80%;
+    height: 80%;
     -o-object-fit: contain;
        object-fit: contain;
   }
   .styleRegister .right {
-    padding: 24px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .styleRegister .right h3 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .styleRegister .right p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .styleBanner .back {
-    height: 50% !important;
-  }
-  .styleBanner .bannerTxt h1 {
-    font-size: 45px;
-  }
-  .styleBanner .bannerTxt p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .styleBanner .bannerTxt h5 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .styleHow .back {
-    width: 95%;
-  }
-  .styleHow .imgBox {
-    height: 400px;
-  }
-  .styleHow .textBox h1 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .styleHow .textBox p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .styleHow .textBox .applyBtn {
-    width: 250px;
-    height: 60px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .styleBenefits .intro {
+    padding: 40px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .styleBenefits .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    margin-bottom: 20px;
-  }
-  .styleBenefits .intro p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .styleBenefits .benefitsCard {
-    width: auto;
-    height: 350px;
-  }
-  .styleBenefits .benefitsCard .cardWrapper span {
-    min-width: 60%;
-    min-height: 60px;
-    border-radius: 30px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .styleBenefits .benefitsCard .cardWrapper p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .styleBenefits .benefitsCard .cardWrapper a {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .styleBenefits .benefitsCard .cardWrapper a img {
-    width: 50px;
-    height: 50px;
-  }
-  .styleRegister h1 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .styleRegister .left img {
-    width: auto;
-    height: 400px;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .styleRegister .right {
-    padding: 24px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .styleRegister .right h3 {
-    font-size: 30px;
-    line-height: 40px;
-    width: 100%;
+    font-size: 24px;
+    line-height: 32px;
   }
   .styleRegister .right p {
     font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .styleBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .styleBanner .back {
+    height: 55% !important;
+  }
+  .styleBanner .bannerTxt h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px !important;
+  }
+  .styleBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 80%;
+  }
+  .styleBanner .bannerTxt h5 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .styleBanner .bannerTxt h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .styleBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .styleHow {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .styleHow .back {
+    width: 95%;
+  }
+  .styleHow .imgBox {
+    height: 400px;
+  }
+  .styleHow .textBox h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .styleHow .textBox p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .styleHow .textBox .applyBtn {
+    width: 150px;
+    height: 60px;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 20px;
+  }
+  .styleBenefits {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .styleBenefits .intro {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 20px;
+  }
+  .styleBenefits .intro h1 {
+    font-size: 30px;
+    line-height: 35px;
+    width: 100% !important;
+  }
+  .styleBenefits .intro p {
+    font-size: 16px;
     line-height: 24px;
+  }
+  .styleBenefits .benefitsSlider {
+    margin-top: 20px;
+    padding: 0 !important;
+    height: auto;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard {
+    width: 100%;
+    height: 300px !important;
+    border-radius: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .back1 {
+    border-radius: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .back2 {
+    border-radius: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper {
+    border-radius: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper span {
+    height: 60px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 20px;
+    margin-bottom: 20px !important;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .styleBenefits .benefitsSlider .benefitsCard .cardWrapper a img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .styleRegister {
+    padding-bottom: 48px !important;
+  }
+  .styleRegister h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .styleRegister .styleGrid {
+    margin: 0 !important;
+  }
+  .styleRegister .left, .styleRegister .right {
+    height: 400px;
+    width: 100%;
+  }
+  .styleRegister .left img {
+    width: 80%;
+    height: 80%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .styleRegister .right {
+    padding: 40px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .styleRegister .right h3 {
+    font-size: 24px;
+    line-height: 32px;
+    width: 100% !important;
+  }
+  .styleRegister .right p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100% !important;
   }
 }
 
@@ -13716,7 +14492,7 @@ footer .footerEnd p {
     height: 80%;
   }
   .styleBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 32px;
   }
   .styleBanner .bannerTxt p, .styleBanner .bannerTxt h5 {
     color: white;
@@ -13765,6 +14541,9 @@ footer .footerEnd p {
     line-height: 24px;
   }
   .styleBenefits .intro {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -13776,7 +14555,7 @@ footer .footerEnd p {
   .styleBenefits .intro h1 {
     font-size: 30px;
     line-height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     text-align: center;
   }
   .styleBenefits .intro p {
@@ -13787,6 +14566,9 @@ footer .footerEnd p {
   .styleBenefits .benefitsCard {
     width: auto;
     height: 300px;
+  }
+  .styleBenefits .benefitsCard .cardWrapper {
+    padding: 16px;
   }
   .styleBenefits .benefitsCard .cardWrapper span {
     min-width: 60%;
@@ -13864,24 +14646,8 @@ footer .footerEnd p {
 .impactBanner .bannerTxt p {
   font-size: 32px;
   line-height: 40px;
-  font-weight: normal;
-  color: #292929;
-}
-
-.impactBanner .bannerTxt h5 {
-  font-size: 24px;
-  color: #292929;
-}
-
-.impactBanner .bannerTxt h6 {
-  font-size: 24px;
-  color: white;
-  font-weight: bolder;
-}
-
-.impactBanner .bannerTxt img {
-  width: 39px;
-  height: 39px;
+  font-weight: 600;
+  color: black;
 }
 
 .impactBanner .bannerImg {
@@ -13909,7 +14675,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
   z-index: 2;
 }
 
@@ -13921,7 +14687,7 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
   z-index: 2;
 }
 
@@ -13944,13 +14710,13 @@ footer .footerEnd p {
 .impactTraining .impactCard .text h3 {
   font-size: 32px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: bold;
 }
 
 .impactTraining .impactCard .text p {
   font-size: 24px;
-  color: #292929;
+  color: black;
   line-height: 32px;
 }
 
@@ -13970,11 +14736,20 @@ footer .footerEnd p {
   background: #F4F4F4;
 }
 
+.impactCommunity .intro {
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  grid-gap: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .impactCommunity .intro h1 {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
   z-index: 2;
 }
 
@@ -13986,13 +14761,13 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
   z-index: 2;
 }
 
 .impactCommunity .imageBox {
-  width: auto;
-  height: 660px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -14009,14 +14784,14 @@ footer .footerEnd p {
   font-size: 40px;
   line-height: 48px;
   font-weight: bold;
-  color: #292929;
+  color: black;
 }
 
 .impactCommunity .detailsBox .impact p {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .impactCommunity .detailsBox .impact span img {
@@ -14040,7 +14815,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
   z-index: 2;
 }
 
@@ -14052,7 +14827,7 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
   z-index: 2;
 }
 
@@ -14101,14 +14876,14 @@ footer .footerEnd p {
 .impactEnvironment .impactCard .cardTxt h4 {
   font-size: 32px;
   font-weight: bold;
-  color: #292929;
+  color: black;
 }
 
 .impactEnvironment .impactCard .cardTxt p {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .trainingDetails {
@@ -14141,12 +14916,12 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
 }
 
 .trainingDetails .wrapper .trainingText p {
   font-size: 32px;
-  color: #292929;
+  color: black;
   line-height: 40px;
   font-weight: normal;
 }
@@ -14164,7 +14939,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
   z-index: 2;
 }
 
@@ -14182,13 +14957,14 @@ footer .footerEnd p {
 .trainingCommitment .wrapper .textSection h3 {
   font-size: 32px;
   line-height: 40px;
+  margin-bottom: 48px !important;
   font-weight: bold;
-  color: #292929;
+  color: black;
 }
 
 .trainingCommitment .wrapper .textSection .initiatives {
-  -ms-grid-columns: 1.5fr 1fr;
-      grid-template-columns: 1.5fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .trainingCommitment .wrapper .textSection .initiatives .initiative .top {
@@ -14225,7 +15001,7 @@ footer .footerEnd p {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .trainingGallery {
@@ -14258,7 +15034,7 @@ footer .footerEnd p {
   font-size: 48px;
   font-weight: bolder;
   line-height: 56px;
-  color: #292929;
+  color: black;
 }
 
 .trainingGallery .topSection .topText h1 span {
@@ -14269,7 +15045,7 @@ footer .footerEnd p {
   font-size: 32px;
   font-weight: normal;
   line-height: 40px;
-  color: #292929;
+  color: black;
   width: 70%;
 }
 
@@ -14363,7 +15139,7 @@ footer .footerEnd p {
   font-size: 48px;
   font-weight: bolder;
   line-height: 56px;
-  color: #292929;
+  color: black;
 }
 
 .communityInfo .topSection .topText h1 span {
@@ -14374,7 +15150,7 @@ footer .footerEnd p {
   font-size: 32px;
   font-weight: normal;
   line-height: 40px;
-  color: #292929;
+  color: black;
   width: 100%;
 }
 
@@ -14436,162 +15212,219 @@ footer .footerEnd p {
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
+  .impactBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .impactBanner .back {
-    height: 55%;
+    height: 60% !important;
   }
   .impactBanner .bannerTxt h1 {
-    font-size: 55px;
+    font-size: 45px;
+    margin-bottom: 20px !important;
   }
   .impactBanner .bannerTxt p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .impactBanner .bannerTxt h5 {
     font-size: 20px;
+    line-height: 30px;
+    width: 70%;
   }
-  .impactBanner .bannerTxt h6 {
-    font-size: 20px;
-    color: white;
-    font-weight: bolder;
+  .impactBanner .bannerImg {
+    margin-top: 0px !important;
   }
-  .impactBanner .bannerTxt img {
-    width: 30px;
-    height: 30px;
+  .impactTraining {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .impactTraining h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .impactTraining h5 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 20px 0 !important;
+  }
+  .impactTraining h1, .impactTraining h5, .impactTraining .trainGrid {
+    margin: 0 !important;
+  }
+  .impactTraining .trainGrid {
+    grid-gap: 40px !important;
   }
   .impactTraining .impactCard .cardImg {
     width: 100%;
-    height: 500px;
+    height: 50vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .impactTraining .impactCard .text h3 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .impactTraining .impactCard .text p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .impactTraining .impactCard .text a {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .impactTraining .impactCard .text a img {
-    width: 50px;
-    height: 50px;
-  }
-  .impactCommunity .intro h1 {
-    font-size: 40px;
-    line-height: 52px;
-  }
-  .impactCommunity .intro p {
     font-size: 24px;
     line-height: 30px;
   }
+  .impactTraining .impactCard .text p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .impactTraining .impactCard .text a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .impactTraining .impactCard .text a img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .impactCommunity {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .impactCommunity .intro {
+    margin-bottom: 24px !important;
+  }
+  .impactCommunity .intro h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .impactCommunity .intro p {
+    font-size: 20px;
+    line-height: 24px;
+  }
   .impactCommunity .imageBox {
     width: 100%;
-    height: 500px;
+    height: 60vh;
   }
   .impactCommunity .imageBox img {
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: top center;
+       object-position: top center;
+  }
+  .impactCommunity .detailsBox .impact {
+    padding: 48px !important;
   }
   .impactCommunity .detailsBox .impact h3 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .impactCommunity .detailsBox .impact p {
-    font-size: 22px;
-    line-height: 30px;
-  }
-  .impactCommunity .detailsBox .impact span img {
-    width: 70px;
-    height: 70px;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .impactEnvironment .intro h1 {
-    font-size: 40px;
-    line-height: 52px;
-  }
-  .impactEnvironment .intro p {
     font-size: 24px;
     line-height: 30px;
   }
+  .impactCommunity .detailsBox .impact p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .impactCommunity .detailsBox .impact span {
+    margin: 0 !important;
+  }
+  .impactCommunity .detailsBox .impact span img {
+    width: 50px;
+    height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .impactCommunity .detailsBox .impact span:first-child {
+    margin-right: 15px !important;
+  }
+  .impactEnvironment {
+    padding-bottom: 48px !important;
+  }
+  .impactEnvironment .intro {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0px !important;
+  }
+  .impactEnvironment .intro h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .impactEnvironment .intro p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .impactEnvironment .impactSlider {
+    margin-top: 20px !important;
+  }
   .impactEnvironment .impactCard {
     width: auto;
-    height: 600px;
+    height: 60vh;
   }
   .impactEnvironment .impactCard .imgWrapper {
     overflow: hidden;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .impactEnvironment .impactCard .cardTxt {
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
   .impactEnvironment .impactCard .cardTxt h4 {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 30px;
   }
   .impactEnvironment .impactCard .cardTxt p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .trainingDetails {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .trainingDetails .wrapper {
     -ms-grid-columns: 1.5fr 2fr;
         grid-template-columns: 1.5fr 2fr;
+    grid-gap: 48px !important;
   }
   .trainingDetails .wrapper img {
     width: 100%;
-    height: 500px;
+    height: 60vh;
   }
   .trainingDetails .wrapper .trainingText h1 {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .trainingDetails .wrapper .trainingText p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .trainingCommitment {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .trainingCommitment .wrapper {
     -ms-grid-columns: 1fr 3fr;
         grid-template-columns: 1fr 3fr;
   }
   .trainingCommitment .wrapper .avatarSection h1 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .trainingCommitment .wrapper .avatarSection img {
-    width: 300px;
-    height: 300px;
-  }
-  .trainingCommitment .wrapper .textSection h3 {
-    font-size: 30px;
+    font-size: 32px;
     line-height: 40px;
   }
+  .trainingCommitment .wrapper .avatarSection img {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .trainingCommitment .wrapper .textSection h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px !important;
+    font-weight: normal !important;
+  }
   .trainingCommitment .wrapper .textSection .initiatives {
-    -ms-grid-columns: 1.5fr 1fr;
-        grid-template-columns: 1.5fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 36px;
   }
   .trainingCommitment .wrapper .textSection .initiatives .initiative .top {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-gap: 10px !important;
   }
   .trainingCommitment .wrapper .textSection .initiatives .initiative .top span {
-    width: 110px;
+    width: 100px;
     height: 100px;
     padding: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    border-radius: 20px !important;
   }
   .trainingCommitment .wrapper .textSection .initiatives .initiative .top span img {
     width: 100%;
@@ -14600,14 +15433,19 @@ footer .footerEnd p {
        object-fit: cover;
   }
   .trainingCommitment .wrapper .textSection .initiatives .initiative .top h5 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 900 !important;
     margin: 0;
     padding: 0;
   }
   .trainingCommitment .wrapper .textSection .initiatives .initiative p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .trainingGallery {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .trainingGallery .topSection {
     -ms-grid-columns: 1.5fr 2fr;
@@ -14618,13 +15456,16 @@ footer .footerEnd p {
     height: 60vh;
   }
   .trainingGallery .topSection .topText h1 {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .trainingGallery .topSection .topText p {
-    font-size: 22px;
-    line-height: 32px;
-    width: 80%;
+    font-size: 18px;
+    line-height: 24px;
+    width: 60%;
+  }
+  .trainingGallery .gallery {
+    margin-top: 24px !important;
   }
   .trainingGallery .gallery .trainingImg {
     width: 100%;
@@ -14649,6 +15490,9 @@ footer .footerEnd p {
   .trainingGallery .imgLightbox .modalWrapper .modalContent .next img {
     width: 60px;
     height: 60px;
+  }
+  .trainingSpacing {
+    height: 48px !important;
   }
   .communityInfo .topSection {
     -ms-grid-columns: 1.5fr 2fr;
@@ -14697,78 +15541,111 @@ footer .footerEnd p {
 }
 
 @media only screen and (max-width: 1024px) {
+  .impactBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .impactBanner .back {
-    height: 45%;
+    height: 55% !important;
   }
   .impactBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 40px;
+    margin-bottom: 20px !important;
   }
   .impactBanner .bannerTxt p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .impactBanner .bannerTxt h5 {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 80%;
   }
   .impactBanner .bannerImg {
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    margin-top: 0px !important;
+  }
+  .impactTraining {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .impactTraining h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .impactTraining h5 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 20px 0 !important;
+  }
+  .impactTraining h1, .impactTraining h5, .impactTraining .trainGrid {
+    margin: 0 !important;
+  }
+  .impactTraining .trainGrid {
+    grid-gap: 40px !important;
   }
   .impactTraining .impactCard .cardImg {
     width: 100%;
-    height: 400px;
+    height: 50vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .impactTraining .impactCard .text h3 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 30px;
   }
   .impactTraining .impactCard .text p {
-    font-size: 20px;
-    line-height: 32px;
-    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+    width: 90% !important;
   }
   .impactTraining .impactCard .text a {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .impactTraining .impactCard .text a img {
     width: 40px;
     height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .impactCommunity {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .impactCommunity .intro {
+    margin-bottom: 24px !important;
   }
   .impactCommunity .intro h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 30px;
+    line-height: 40px;
+    width: 100% !important;
   }
   .impactCommunity .intro p {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .impactCommunity .imageBox {
     width: 100%;
     height: 100%;
   }
+  .impactCommunity .imageBox img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top center;
+       object-position: top center;
+  }
   .impactCommunity .detailsBox .impact {
-    height: auto;
-    padding: 30px !important;
+    padding: 48px !important;
   }
   .impactCommunity .detailsBox .impact h3 {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 30px;
   }
   .impactCommunity .detailsBox .impact p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .impactCommunity .detailsBox .impact span {
+    margin: 0 !important;
   }
   .impactCommunity .detailsBox .impact span img {
     width: 50px;
@@ -14776,74 +15653,112 @@ footer .footerEnd p {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .impactCommunity .detailsBox .impact span:first-child {
+    margin-right: 10px !important;
+  }
+  .impactEnvironment {
+    padding-bottom: 48px !important;
+  }
+  .impactEnvironment .intro {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0px !important;
+  }
   .impactEnvironment .intro h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .impactEnvironment .intro p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .impactEnvironment .impactSlider {
+    margin-top: 20px !important;
   }
   .impactEnvironment .impactCard {
     width: auto;
-    height: 500px;
+    height: 60vh;
+  }
+  .impactEnvironment .impactCard .imgWrapper {
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .impactEnvironment .impactCard .cardTxt {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 15px !important;
   }
   .impactEnvironment .impactCard .cardTxt h4 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-  .impactEnvironment .impactCard .cardTxt p {
     font-size: 20px;
     line-height: 30px;
   }
-  .impactEnvironment .impactCard:last-child h4 {
-    margin-bottom: 32px !important;
+  .impactEnvironment .impactCard .cardTxt p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .trainingDetails {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .trainingDetails .wrapper {
     -ms-grid-columns: 1.5fr 2fr;
         grid-template-columns: 1.5fr 2fr;
+    grid-gap: 48px !important;
   }
   .trainingDetails .wrapper img {
     width: 100%;
-    height: 400px;
+    height: 60vh;
   }
   .trainingDetails .wrapper .trainingText h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .trainingDetails .wrapper .trainingText p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .trainingCommitment {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .trainingCommitment .wrapper {
     -ms-grid-columns: 1fr 3fr;
         grid-template-columns: 1fr 3fr;
   }
   .trainingCommitment .wrapper .avatarSection h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .trainingCommitment .wrapper .avatarSection img {
-    width: 300px;
-    height: 300px;
-  }
-  .trainingCommitment .wrapper .textSection h3 {
-    font-size: 30px;
+    font-size: 32px;
     line-height: 40px;
   }
+  .trainingCommitment .wrapper .avatarSection img {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .trainingCommitment .wrapper .textSection h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px !important;
+    font-weight: normal !important;
+  }
   .trainingCommitment .wrapper .textSection .initiatives {
-    -ms-grid-columns: 1.5fr 1fr;
-        grid-template-columns: 1.5fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
   }
   .trainingCommitment .wrapper .textSection .initiatives .initiative .top {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    grid-gap: 10px !important;
   }
   .trainingCommitment .wrapper .textSection .initiatives .initiative .top span {
-    width: 110px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     padding: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    border-radius: 20px !important;
   }
   .trainingCommitment .wrapper .textSection .initiatives .initiative .top span img {
     width: 100%;
@@ -14852,14 +15767,19 @@ footer .footerEnd p {
        object-fit: cover;
   }
   .trainingCommitment .wrapper .textSection .initiatives .initiative .top h5 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 900 !important;
     margin: 0;
     padding: 0;
   }
   .trainingCommitment .wrapper .textSection .initiatives .initiative p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .trainingGallery {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .trainingGallery .topSection {
     -ms-grid-columns: 1.5fr 2fr;
@@ -14870,20 +15790,20 @@ footer .footerEnd p {
     height: 60vh;
   }
   .trainingGallery .topSection .topText h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .trainingGallery .topSection .topText p {
-    font-size: 20px;
-    line-height: 30px;
-    width: 80%;
+    font-size: 18px;
+    line-height: 24px;
+    width: 70%;
   }
   .trainingGallery .gallery {
-    max-height: 300px;
+    margin-top: 24px !important;
   }
   .trainingGallery .gallery .trainingImg {
     width: 100%;
-    height: 100% auto;
+    height: 100%;
   }
   .trainingGallery .imgLightbox .modalWrapper .close {
     top: 30px;
@@ -14899,13 +15819,14 @@ footer .footerEnd p {
   }
   .trainingGallery .imgLightbox .modalWrapper .modalContent .modalImage {
     width: 50vw;
-    height: 60vh;
+    height: 70vh;
   }
   .trainingGallery .imgLightbox .modalWrapper .modalContent .next img {
-    width: 50px;
-    height: 50px;
-    -o-object-fit: contain;
-       object-fit: contain;
+    width: 60px;
+    height: 60px;
+  }
+  .trainingSpacing {
+    height: 48px !important;
   }
   .communityInfo .topSection {
     -ms-grid-columns: 1.5fr 2fr;
@@ -14954,32 +15875,47 @@ footer .footerEnd p {
 }
 
 @media only screen and (max-width: 768px) {
+  .impactBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .impactBanner .back {
-    height: 55%;
+    height: 45% !important;
   }
   .impactBanner .bannerTxt h1 {
-    font-size: 40px;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px !important;
   }
   .impactBanner .bannerTxt p {
     font-size: 16px;
-    line-height: 24px;
-  }
-  .impactBanner .bannerTxt h5 {
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+    width: 80%;
   }
   .impactBanner .bannerImg {
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    margin-top: 0px !important;
+  }
+  .impactTraining {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .impactTraining h1 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
   }
   .impactTraining h5 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 20px 0 !important;
+  }
+  .impactTraining h1, .impactTraining h5, .impactTraining .trainGrid {
+    margin: 0 !important;
+  }
+  .impactTraining .trainGrid {
+    grid-gap: 40px !important;
   }
   .impactTraining .impactCard .cardImg {
     width: 100%;
@@ -14988,69 +15924,101 @@ footer .footerEnd p {
        object-fit: cover;
   }
   .impactTraining .impactCard .text h3 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
   }
   .impactTraining .impactCard .text p {
     font-size: 16px;
     line-height: 24px;
+    width: 90% !important;
   }
   .impactTraining .impactCard .text a {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .impactTraining .impactCard .text a img {
     width: 30px;
     height: 30px;
-  }
-  .impactCommunity .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .impactCommunity .intro p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .impactCommunity .detailsBox .impact {
-    height: auto;
-    padding: 30px !important;
-  }
-  .impactCommunity .detailsBox .impact h3 {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .impactCommunity .detailsBox .impact p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .impactCommunity .detailsBox .impact span img {
-    width: 40px;
-    height: 40px;
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .impactCommunity {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .impactCommunity .intro {
+    margin-bottom: 24px !important;
+    -ms-grid-columns: 1fr 2.5fr;
+        grid-template-columns: 1fr 2.5fr;
+  }
+  .impactCommunity .intro h1 {
+    font-size: 24px;
+    line-height: 30px;
+    width: 100% !important;
+  }
+  .impactCommunity .intro p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .impactCommunity .imageBox {
+    width: 100%;
+    height: 100%;
+  }
+  .impactCommunity .imageBox img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top center;
+       object-position: top center;
+  }
+  .impactCommunity .detailsBox .impact {
+    padding: 40px !important;
+  }
+  .impactCommunity .detailsBox .impact h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .impactCommunity .detailsBox .impact p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .impactCommunity .detailsBox .impact span {
+    margin: 0 !important;
+  }
+  .impactCommunity .detailsBox .impact span img {
+    width: 50px;
+    height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .impactCommunity .detailsBox .impact span:first-child {
+    margin-right: 10px !important;
+  }
   .impactEnvironment .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 30px;
   }
   .impactEnvironment .intro p {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 20px;
+    width: 80% !important;
   }
   .impactEnvironment .impactCard {
     width: auto;
-    height: 400px;
+    height: 300px;
   }
   .impactEnvironment .impactCard .cardTxt h4 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .impactEnvironment .impactCard .cardTxt p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .impactEnvironment .impactCard:last-child h4 {
-    margin-bottom: 32px !important;
+    width: 30% !important;
+  }
+  .impactEnvironment .impactCard:nth-child(1) h4, .impactEnvironment .impactCard:nth-child(2) h4 {
+    width: 60% !important;
   }
   .trainingDetails .wrapper {
     -ms-grid-columns: 1fr 1fr;
@@ -15061,12 +16029,12 @@ footer .footerEnd p {
     height: 300px !important;
   }
   .trainingDetails .wrapper .trainingText h1 {
-    font-size: 32px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 35px;
   }
   .trainingDetails .wrapper .trainingText p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .trainingCommitment .wrapper {
     -ms-grid-columns: 1fr;
@@ -15081,14 +16049,19 @@ footer .footerEnd p {
         -ms-flex-align: center;
             align-items: center;
     justify-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .trainingCommitment .wrapper .avatarSection h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 35px;
   }
   .trainingCommitment .wrapper .avatarSection img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .trainingCommitment .wrapper .textSection h3 {
     font-size: 24px;
@@ -15103,8 +16076,8 @@ footer .footerEnd p {
         grid-template-columns: 1fr;
   }
   .trainingCommitment .wrapper .textSection .initiatives .initiative .top span {
-    width: 110px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     padding: 15px;
     margin-bottom: 15px;
   }
@@ -15115,14 +16088,14 @@ footer .footerEnd p {
        object-fit: cover;
   }
   .trainingCommitment .wrapper .textSection .initiatives .initiative .top h5 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
     margin: 0;
     padding: 0;
   }
   .trainingCommitment .wrapper .textSection .initiatives .initiative p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .trainingGallery .topSection {
     -ms-grid-columns: 1fr 1fr;
@@ -15227,10 +16200,12 @@ footer .footerEnd p {
     height: 80%;
   }
   .impactBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .impactBanner .bannerTxt p, .impactBanner .bannerTxt h5 {
     color: white;
+    font-size: 16px !important;
   }
   .impactBanner .bannerImg {
     height: 300px;
@@ -15245,11 +16220,11 @@ footer .footerEnd p {
   }
   .impactTraining h1 {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 35px;
   }
   .impactTraining h5 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .impactTraining .impactCard .cardImg {
     width: 100%;
@@ -15270,18 +16245,18 @@ footer .footerEnd p {
             align-items: center;
   }
   .impactTraining .impactCard .text h3 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
     text-align: center;
   }
   .impactTraining .impactCard .text p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     text-align: center;
   }
   .impactTraining .impactCard .text a {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .impactTraining .impactCard .text a img {
     width: 30px;
@@ -15291,6 +16266,9 @@ footer .footerEnd p {
     padding: 30px 24px !important;
   }
   .impactCommunity .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -15301,12 +16279,12 @@ footer .footerEnd p {
   }
   .impactCommunity .intro h1 {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 35px;
     text-align: center;
   }
   .impactCommunity .intro p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     margin-top: 10px;
     text-align: center;
   }
@@ -15318,12 +16296,12 @@ footer .footerEnd p {
     padding: 30px !important;
   }
   .impactCommunity .detailsBox .impact h3 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .impactCommunity .detailsBox .impact p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .impactCommunity .detailsBox .impact span img {
     width: 40px;
@@ -15344,33 +16322,37 @@ footer .footerEnd p {
             align-items: center;
   }
   .impactEnvironment .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 35px;
     text-align: center;
+    width: 100% !important;
   }
   .impactEnvironment .intro p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     text-align: center;
     width: 100%;
   }
   .impactEnvironment .impactCard {
     width: auto;
-    height: 400px;
+    height: 350px;
   }
   .impactEnvironment .impactCard .cardTxt {
     padding: 20px;
   }
   .impactEnvironment .impactCard .cardTxt h4 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 24px;
   }
   .impactEnvironment .impactCard .cardTxt p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .impactEnvironment .impactCard:last-child h4 {
-    margin-bottom: 32px !important;
+    width: 30% !important;
+  }
+  .impactEnvironment .impactCard:nth-child(1) h4, .impactEnvironment .impactCard:nth-child(2) h4, .impactEnvironment .impactCard:nth-child(3) h4 {
+    width: 100% !important;
   }
   .trainingDetails {
     padding: 30px 24px !important;
@@ -15617,12 +16599,12 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .newsBanner .bannerTxt h5 {
   font-size: 24px;
-  color: #292929;
+  color: black;
 }
 
 .newsBanner .bannerImg {
@@ -15649,7 +16631,7 @@ footer .footerEnd p {
 }
 
 .newsArticles .newsTabs .tab p {
-  color: #292929;
+  color: black;
   font-size: 24px;
   line-height: 32px;
   font-weight: bolder;
@@ -15676,7 +16658,7 @@ footer .footerEnd p {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .newsArticles .yearInput .s-hidden {
@@ -15693,7 +16675,7 @@ footer .footerEnd p {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  color: #292929;
+  color: black;
   background: #F4F4F4;
   width: 300px;
   height: 100%;
@@ -15729,7 +16711,7 @@ footer .footerEnd p {
   width: 0;
   height: 0;
   border: 10px solid transparent;
-  border-color: #292929 transparent transparent transparent;
+  border-color: black transparent transparent transparent;
   position: absolute;
   top: 45%;
   right: 20px;
@@ -15791,7 +16773,7 @@ footer .footerEnd p {
 .newsArticles .articles .article p {
   font-size: 24px;
   line-height: 32px;
-  color: #292929;
+  color: black;
   font-weight: normal;
 }
 
@@ -15835,7 +16817,7 @@ footer .footerEnd p {
 }
 
 .articleTabs .tab p {
-  color: #292929;
+  color: black;
   font-size: 24px;
   line-height: 32px;
   font-weight: bolder;
@@ -15877,7 +16859,7 @@ footer .footerEnd p {
 .articleContent .top .textContent h4 {
   font-size: 48px;
   line-height: 56px;
-  color: #292929;
+  color: black;
   font-weight: bolder;
 }
 
@@ -15896,7 +16878,7 @@ footer .footerEnd p {
 .articleContent .top .textContent p {
   font-size: 24px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: normal;
 }
 
@@ -15907,7 +16889,7 @@ footer .footerEnd p {
 .articleContent .textWrap p {
   font-size: 24px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: normal;
 }
 
@@ -15923,14 +16905,14 @@ footer .footerEnd p {
 .articleContent .bottom .author h6 {
   font-size: 24px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: bold;
 }
 
 .articleContent .bottom .author p {
   font-size: 24px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: normal;
 }
 
@@ -15986,7 +16968,7 @@ footer .footerEnd p {
 .relatedStories .articles .article p {
   font-size: 24px;
   line-height: 32px;
-  color: #292929;
+  color: black;
   font-weight: normal;
 }
 
@@ -16649,12 +17631,12 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .contactBanner .bannerTxt h5 {
   font-size: 24px;
-  color: #292929;
+  color: black;
 }
 
 .contactBanner .bannerTxt .call img {
@@ -16672,7 +17654,7 @@ footer .footerEnd p {
   font-size: 24px;
   line-height: 40px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .contactBanner .bannerImg {
@@ -16710,28 +17692,28 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .contactForm .contactInner form p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .contactForm .contactInner form .input label {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .contactForm .contactInner form .input input {
   width: auto;
   height: 98px;
-  border: 2px solid darkgray;
-  color: #292929;
+  border: 2px solid gray;
+  color: black;
   outline: none;
   font-size: 16px;
   line-height: 24px;
@@ -16740,25 +17722,25 @@ footer .footerEnd p {
 }
 
 .contactForm .contactInner form .input input::-webkit-input-placeholder {
-  color: darkgray;
+  color: gray;
   font-size: 16px;
   line-height: 24px;
 }
 
 .contactForm .contactInner form .input input:-ms-input-placeholder {
-  color: darkgray;
+  color: gray;
   font-size: 16px;
   line-height: 24px;
 }
 
 .contactForm .contactInner form .input input::-ms-input-placeholder {
-  color: darkgray;
+  color: gray;
   font-size: 16px;
   line-height: 24px;
 }
 
 .contactForm .contactInner form .input input::placeholder {
-  color: darkgray;
+  color: gray;
   font-size: 16px;
   line-height: 24px;
 }
@@ -16771,14 +17753,14 @@ footer .footerEnd p {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .contactForm .contactInner form .comment textarea {
   width: auto;
   min-height: 205px;
-  border: 2px solid darkgray;
-  color: #292929;
+  border: 2px solid gray;
+  color: black;
   outline: none;
   font-size: 16px;
   line-height: 24px;
@@ -16787,25 +17769,25 @@ footer .footerEnd p {
 }
 
 .contactForm .contactInner form .comment textarea::-webkit-input-placeholder {
-  color: darkgray;
+  color: gray;
   font-size: 16px;
   line-height: 24px;
 }
 
 .contactForm .contactInner form .comment textarea:-ms-input-placeholder {
-  color: darkgray;
+  color: gray;
   font-size: 16px;
   line-height: 24px;
 }
 
 .contactForm .contactInner form .comment textarea::-ms-input-placeholder {
-  color: darkgray;
+  color: gray;
   font-size: 16px;
   line-height: 24px;
 }
 
 .contactForm .contactInner form .comment textarea::placeholder {
-  color: darkgray;
+  color: gray;
   font-size: 16px;
   line-height: 24px;
 }
@@ -16818,7 +17800,7 @@ footer .footerEnd p {
   width: 40%;
   height: 98px;
   background: #FFB548;
-  color: #292929;
+  color: black;
   font-size: 24px;
   font-weight: bolder;
   border-radius: 30px;
@@ -16838,7 +17820,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .offices h1 span {
@@ -16849,21 +17831,21 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: medium;
-  color: #292929;
+  color: black;
 }
 
 .offices .office h6 {
   font-size: 24px;
   line-height: 32px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .offices .office p {
   font-size: 18px;
   line-height: 24px;
   font-weight: medium;
-  color: #292929;
+  color: black;
 }
 
 /*MEDIA QUERIES*/
@@ -17299,12 +18281,12 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .partnershipBanner .bannerTxt h5, .projectBanner .bannerTxt h5 {
   font-size: 24px;
-  color: #292929;
+  color: black;
 }
 
 .partnershipBanner .bannerTxt h6, .projectBanner .bannerTxt h6 {
@@ -17338,7 +18320,7 @@ footer .footerEnd p {
   font-size: 48px;
   font-weight: bolder;
   line-height: 56px;
-  color: #292929;
+  color: black;
 }
 
 .partnerGrids .top h1 span {
@@ -17349,7 +18331,7 @@ footer .footerEnd p {
   font-size: 32px;
   font-weight: normal;
   line-height: 40px;
-  color: #292929;
+  color: black;
 }
 
 .partnerGrids .partnerCard {
@@ -17380,14 +18362,14 @@ footer .footerEnd p {
   font-size: 36px;
   font-weight: bolder;
   line-height: 40px;
-  color: #292929;
+  color: black;
 }
 
 .partnerGrids .partnerCard .top p {
   font-size: 32px;
   font-weight: normal;
   line-height: 40px;
-  color: #292929;
+  color: black;
 }
 
 .partnerGrids .partnerCard a {
@@ -17480,7 +18462,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900 !important;
-  color: #292929;
+  color: black;
   z-index: 2;
 }
 
@@ -17492,7 +18474,7 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
   z-index: 2;
 }
 
@@ -17513,7 +18495,7 @@ footer .footerEnd p {
 .partnerRequire h1 {
   font-size: 48px;
   font-weight: bold;
-  color: #292929;
+  color: black;
   line-height: 56px;
 }
 
@@ -17530,13 +18512,13 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .partnerRequire .req p {
   font-size: 24px;
   font-weight: normal;
-  color: #292929;
+  color: black;
   line-height: 32px;
 }
 
@@ -18061,7 +19043,7 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .projectsGrid .projectCard {
@@ -18108,14 +19090,14 @@ footer .footerEnd p {
 .projectsGrid .projectCard .cardTxt h4 {
   font-size: 32px;
   font-weight: bold;
-  color: #292929;
+  color: black;
 }
 
 .projectsGrid .projectCard .cardTxt p {
   font-size: 24px;
   line-height: 32px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .projectDetails {
@@ -18148,7 +19130,7 @@ footer .footerEnd p {
   font-size: 48px;
   font-weight: bolder;
   line-height: 56px;
-  color: #292929;
+  color: black;
 }
 
 .projectDetails .topSection .topText h1 span {
@@ -18171,7 +19153,7 @@ footer .footerEnd p {
   font-size: 24px;
   font-weight: normal;
   line-height: 32px;
-  color: #292929;
+  color: black;
   width: 80%;
 }
 
@@ -18432,12 +19414,12 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .resourceBanner .bannerTxt h5 {
   font-size: 24px;
-  color: #292929;
+  color: black;
 }
 
 .resourceBanner .bannerTxt h6 {
@@ -18513,7 +19495,7 @@ footer .footerEnd p {
 }
 
 .featuredResources .featuresInfo .imgWrapper .linkBtns .btn1 {
-  background: #292929 !important;
+  background: black !important;
 }
 
 .featuredResources .featuresInfo .imgWrapper .linkBtns .btn2 {
@@ -18524,7 +19506,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: 900;
-  color: #292929;
+  color: black;
 }
 
 .featuredResources .featuresInfo .featuresText h1 span {
@@ -18541,7 +19523,7 @@ footer .footerEnd p {
   font-size: 24px;
   font-weight: normal;
   line-height: 32px;
-  color: #292929;
+  color: black;
   width: 70%;
 }
 
@@ -18561,7 +19543,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .resourceFilter .filter span {
@@ -18576,7 +19558,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .resourceFilter .filter span img {
@@ -18598,14 +19580,14 @@ footer .footerEnd p {
 .resourceFilter .filterContent p {
   font-size: 24px;
   line-height: 32px;
-  color: #292929;
+  color: black;
   font-weight: normal;
 }
 
 .resourceFilter .filterContent h5 {
   font-size: 32px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: bolder;
   cursor: pointer;
   -webkit-transition: all .3s ease-in-out;
@@ -18639,7 +19621,7 @@ footer .footerEnd p {
 .resourceFilter .resources .resource p {
   font-size: 24px;
   line-height: 32px;
-  color: #292929;
+  color: black;
   font-weight: normal;
 }
 
@@ -18675,7 +19657,7 @@ footer .footerEnd p {
 .resourceContent .top .textContent h4 {
   font-size: 48px;
   line-height: 56px;
-  color: #292929;
+  color: black;
   font-weight: bolder;
 }
 
@@ -18694,7 +19676,7 @@ footer .footerEnd p {
 .resourceContent .top .textContent p {
   font-size: 24px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: normal;
 }
 
@@ -18705,7 +19687,7 @@ footer .footerEnd p {
 .resourceContent .textWrap p {
   font-size: 24px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: normal;
 }
 
@@ -18721,14 +19703,14 @@ footer .footerEnd p {
 .resourceContent .bottom .author h6 {
   font-size: 24px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: bold;
 }
 
 .resourceContent .bottom .author p {
   font-size: 24px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: normal;
 }
 
@@ -18762,7 +19744,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .relatedResources h1 span {
@@ -18773,7 +19755,7 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .relatedResources .resources .resource {
@@ -18795,7 +19777,7 @@ footer .footerEnd p {
 .relatedResources .resources .resource p {
   font-size: 24px;
   line-height: 32px;
-  color: #292929;
+  color: black;
   font-weight: normal;
 }
 
@@ -18807,7 +19789,7 @@ footer .footerEnd p {
   width: 400px;
   height: 85px;
   border-radius: 30px;
-  color: #292929;
+  color: black;
   background: #FFB548;
   font-size: 24px;
   line-height: 32px;
@@ -18841,12 +19823,12 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .downloadsBanner .bannerTxt h5 {
   font-size: 24px;
-  color: #292929;
+  color: black;
 }
 
 .downloadsBanner .bannerTxt h6 {
@@ -18874,7 +19856,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .downloadsFilter .filter span {
@@ -18889,7 +19871,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .downloadsFilter .filter span img {
@@ -18911,14 +19893,14 @@ footer .footerEnd p {
 .downloadsFilter .filterContent p {
   font-size: 24px;
   line-height: 32px;
-  color: #292929;
+  color: black;
   font-weight: normal;
 }
 
 .downloadsFilter .filterContent h5 {
   font-size: 32px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: bolder;
   cursor: pointer;
   -webkit-transition: all .3s ease-in-out;
@@ -18954,7 +19936,7 @@ footer .footerEnd p {
 .downloadsFilter .downloads .download p {
   font-size: 32px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: normal;
   z-index: 1;
 }
@@ -18962,7 +19944,7 @@ footer .footerEnd p {
 .downloadsFilter .downloads .download h6 {
   font-size: 24px;
   line-height: 32px;
-  color: #292929;
+  color: black;
   font-weight: normal;
   z-index: 1;
 }
@@ -19011,12 +19993,12 @@ footer .footerEnd p {
   font-size: 32px;
   line-height: 40px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .faqBanner .bannerTxt h5 {
   font-size: 24px;
-  color: #292929;
+  color: black;
 }
 
 .faqBanner .bannerTxt h6 {
@@ -19044,7 +20026,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: normal;
-  color: #292929;
+  color: black;
 }
 
 .faqFilter .filter span {
@@ -19059,7 +20041,7 @@ footer .footerEnd p {
   font-size: 48px;
   line-height: 56px;
   font-weight: bolder;
-  color: #292929;
+  color: black;
 }
 
 .faqFilter .filter span img {
@@ -19081,14 +20063,14 @@ footer .footerEnd p {
 .faqFilter .filterContent p {
   font-size: 24px;
   line-height: 32px;
-  color: #292929;
+  color: black;
   font-weight: normal;
 }
 
 .faqFilter .filterContent h5 {
   font-size: 32px;
   line-height: 40px;
-  color: #292929;
+  color: black;
   font-weight: bolder;
   cursor: pointer;
   -webkit-transition: all .3s ease-in-out;

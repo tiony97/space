@@ -321,6 +321,11 @@
     }
 }
 
+//SPACER
+.aboutSpacer {
+    background: $light;
+}
+
 //CAREERS SECTION
 .career {
     background: $blue;
@@ -375,7 +380,7 @@
     .back {
         background: $blue;
         width: 100%;
-        height: 60%;
+        height: 65%;
         top: 0;
         left: 0;
     }
@@ -389,7 +394,7 @@
         p {
             font-size: 32px;
             line-height: 40px;
-            font-weight: normal;
+            font-weight: 600;
             color: $dark;
         }
         h5 {
@@ -505,7 +510,7 @@
     .back {
         background: $blue;
         width: 100%;
-        height: 60%;
+        height: 65%;
         top: 0;
         left: 0;
     }
@@ -519,7 +524,7 @@
         p {
             font-size: 32px;
             line-height: 40px;
-            font-weight: normal;
+            font-weight: 600;
             color: $dark;
         }
         h5 {
@@ -841,10 +846,10 @@
 @media only screen and (max-width: 1600px) {
 .aboutBanner {
     height: fit-content !important;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 55% !important;
+        height: 60% !important;
     }
     .bannerTxt {
         h1 {
@@ -875,39 +880,43 @@
 }
 .videoSection {
     height: auto !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .vidGrid {
+        grid-gap: 40px !important;
+    }
     .imgBox {
-        height: 550px;
-        width: auto;
+        height: 65vh !important;
+        width: 100%;
         span {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             img {
                 width: 50px;
                 height: 50px;
+                object-fit: contain;
             }
         }
     }
     .textBox {
         h1 {
-            font-size: 45px;
-            line-height: 52px;
+            font-size: 32px;
+            line-height: 40px;
         }
         p {
-            font-size: 22px;
+            font-size: 20px;
             line-height: 30px;
         }
     }
     .videoModal {
-        width: 100%;
-        height: 100%;
         .videoWrapper {
             .close {
-                position: absolute;
-                top: 50px;
-                right: 50px;
+                top: 5vh !important;
+                right: 5vw !important;
                 img {
-                    width: 48px;
-                    height: 48px;
+                    width: 40px;
+                    height: 40px;
+                    object-fit: contain;
                 }
             }
             .video {
@@ -918,569 +927,99 @@
     }
 }
 .lifetime {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    * {
+        margin: 0 !important;
+    }
     h1 {
-        font-size: 45px;
-        line-height: 52px;
-    }
-    .imageBox {
-        width: auto;
-        height: 550px;
-    }
-    .detailsBox {
-        .detail {
-            h3 {
-                font-size: 32px;
-                line-height: 40px;
-            }
-            p {
-                font-size: 22px;
-                line-height: 32px;
-            }
-            span {
-                img{
-                    width: 70px;
-                    height: 70px;
-                }
-            }
-        }
-    }
-}
-.assurance {
-    grid-template-columns: 1fr 3fr;
-    h1 {
-        font-size: 45px;
-        line-height: 52px;
-    }
-    h5 {
-        font-size: 30px;
+        font-size: 32px;
         line-height: 40px;
+        width: 40%;
+        margin-bottom: 20px !important;
     }
-    .item {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 0;
-        span {
-            width: 120px;
-            height: 120px;
-            margin-bottom: 20px;
-            img {
-                width: 100px;
-                height: 100px;
-            }
-        }
-        .inner {
-            h6 {
-                font-size: 30px;
-                line-height: 40px;
-            }
-            p {
-                font-size: 22px;
-                line-height: 30px;
-            }
-        }
-    }
-}
-.team {
-    .back {
-        width: 95%;
-    }
-    .teamWrapper {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        grid-gap: 60px;
-        .left {
-            img {
-                width: 100%;
-                height: 550px;
-                object-fit: cover;
-            }
-            h4 {
-                font-size: 30px;
-                line-height: 40px;
-            }
-            p {
-                font-size: 22px;
-                line-height: 30px;
-            }
-            a {
-                width: 300px;
-                height: 80px;
-                font-size: 22px;
-                line-height: 32px;
-                border-radius: 30px;
-            }
-        }
-        .right {
-            h3 {
-                font-size: 32px;
-                line-height: 40px;
-            }
-            h1 {
-                font-size: 45px;
-                line-height: 52px;
-            }
-            p {
-                font-size: 22px;
-                line-height: 32px;
-            }
-            a {
-                font-size: 22px;
-                line-height: 32px;
-            }
-            img {
-                width: 100%;
-                height: 550px;
-                object-fit: cover;
-            }
-        }
-    }
-}
-.career {
-    img {
-        width: 100%;
-        height: 450px;
-        object-fit: cover;
-    }
-    .careerText {
-        h2 {
-            font-size: 45px;
-            line-height: 52px;
-        }
-        h5 {
-            font-size: 30px;
-            line-height: 40px;
-        }
-        a {
-            width: 250px;
-            height: 80px;
-            font-size: 22px;
-            line-height: 30px;
-            border-radius: 30px;
-        }
-    }
-}
-
-//About Team Page
-.aboutTeamBanner {
-    .back {
-        height: 55%;
-    }
-    .bannerTxt {
-        h1 {
-            font-size: 50px;
-        }
-        p {
-            font-size: 22px;
-            line-height: 32px;
-        }
-        h5 {
-            font-size: 20px;
-        }
-        h6 {
-            font-size: 20px;
-            color: white;
-            font-weight: bolder;
-        }
-        img {
-            width: 30px;
-            height: 30px;
-        }
-    }
-}
-.executives {
-    h1 {
-        font-size: 45px;
-        line-height: 52px;
-    }
-    .bio {
-        img {
-            width: 200px !important;
-            height: 200px !important;
-        }
-        .text {
-            h4 {
-                font-size: 30px;
-                line-height: 40px;
-            }
-            p {
-                font-size: 22px;
-                line-height: 30px;
-            }
-            a {
-                font-size: 22px;
-                line-height: 30px;
-                img {
-                    width: 45px !important;
-                    height: 45px !important;
-                }
-            }
-        }
-    }
-}
-
-//Team Bio Info
-.bioInfo {
-    .back {
-        width: 95%;
-    }
-    .imgBox {
-        height: 500px;
+    .imageBox {
         width: auto;
-    }
-    .textBox {
-        h1 {
-            font-size: 45px;
-            line-height: 52px;
-        }
-        h5 {
-            font-size: 30px;
-            line-height: 40px;
-        }
-        p {
-            font-size: 20px;
-            line-height: 30px;
-        }
-    }
-}
-
-//About Culture
-.aboutCultureBanner{
-    .back {
-        height: 55%;
-    }
-    .bannerTxt {
-        h1 {
-            font-size: 50px;
-            line-height: 60px;
-        }
-        p {
-            font-size: 22px;
-            line-height: 32px;
-        }
-        h5 {
-            font-size: 20px;
-            color: $dark;
-        }
-        h6 {
-            font-size: 20px;
-        }
-    }
-}
-.investing {
-    .intro {
-        h1 {
-            font-size: 45px;
-            line-height: 52px;
-            font-weight: 900;
-        }
-        p {
-            font-size: 22px;
-            line-height: 32px;
-        }
-    }
-    .imageBox {
-        width: 100%;
-        height: 500px;
-    }
-    .detailsBox {
-        .detail {
-            h3 {
-                font-size: 32px;
-                line-height: 40px;
-            }
-            p {
-                font-size: 22px;
-                line-height: 30px;
-            }
-            span {
-                img{
-                    width: 60px;
-                    height: 60px;
-                    object-fit: contain;
-                }
-            }
-        }
-    }
-}
-.diversity {
-    .imgWrapper {
-        img {
-            width: 100%;
-            height: 600px;
-        }
-    }
-    .textWrapper {
-        h2 {
-            font-size: 45px;
-            line-height: 52px;
-        }
-        h5 {
-            font-size: 30px;
-            line-height: 40px;
-        }
-        p {
-            font-size: 22px;
-            line-height: 32px;
-        }
-    }
-}
-
-//About Career
-.careerJoin {
-    .back {
-        width: 95%;
-    }
-    .imgBox {
-        height: 500px;
-        width: 100%;
-        span {
-            width: 120px;
-            height: 120px;
-            img {
-                width: 50px;
-                height: 50px;
-            }
-        }
-    }
-    .textBox {
-        h1 {
-            font-size: 45px;
-            line-height: 52px;
-        }
-        p {
-            font-size: 22px;
-            line-height: 32px;
-        }
-        .applyBtn {
-            width: 250px;
-            height: 80px;
-            font-size: 22px;
-            line-height: 32px;
-            border-radius: 30px;
-        }
-    }
-}
-.careerExplore {
-    h1 {
-        font-size: 45px;
-        line-height: 52px;
-    }
-    .search {
-        width: 600px;
-        height: 80px;
-        img {
-            width: 40px;
-            height: 40px;
-        }
-        input {
-            font-size: 22px;
-            &::placeholder {
-                font-size: 22px;
-            }
-            &:focus {
-                outline: none;
-            }
-        }
-    }
-    
-    .jobs {
-        .jobCard {
-            h4 {
-                font-size: 30px;
-                line-height: 40px;
-            }
-            p {
-                font-size: 20px;
-                line-height: 30px;
-            }
-            h6 {
-                font-size: 16px;
-                line-height: 24px;
-            }
-            .right {
-                a {
-                    width: 130px;
-                    font-size: 16px;
-                    line-height: 24px;
-                }
-            }
-        }
-    }
-    .pagination {
-        .previous {
-            width: 200px;
-            height: 60px;
-            img {
-                width: 20px;
-                height: 20px;
-            }
-            p{
-                font-size: 22px;
-                line-height: 30px;
-            }
-        }
-        .pages {
-            span {
-                width: 60px;
-                height: 70px;
-                font-size: 22px;
-            }
-        }
-        .next {
-            background: $blue;
-            width: 200px;
-            height: 70px;
-            img {
-                width: 20px;
-                height: 20px;
-            }
-            p{
-                font-size: 22px;
-                line-height: 30px;
-            }
-        }
-    }
-}
-}
-
-
-@media only screen and (max-width: 1024px) {
-.aboutBanner {
-    .back {
-        height: 50%;
-    }
-    .bannerTxt {
-        h1 {
-            font-size: 45px;
-        }
-        p {
-            font-size: 20px;
-            line-height: 24px;
-        }
-        h5 {
-            font-size: 16px;
-        }
-        h6 {
-            font-size: 16px;
-        }
-    }
-    .bannerImg {
-        height: 250px;
-        object-fit: cover;
-    }
-}
-.videoSection {
-    .imgBox {
-        height: 500px;
-        width: 100%;
-        span {
-            width: 100px;
-            height: 100px;
-            img {
-                width: 40px;
-                height: 40px;
-            }
-        }
-    }
-    .textBox {
-        h1 {
-            font-size: 40px;
-            line-height: 50px;
-        }
-        p {
-            font-size: 20px;
-            line-height: 30px;
-        }
-    }
-    .videoModal {
-        width: 100%;
-        height: 100%;
-        .videoWrapper {
-            .close {
-                position: absolute;
-                top: 30px;
-                right: 30px;
-                img {
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-            .video {
-                width: 70vw;
-                height: 60vh;
-            }
-        }
-    }
-}
-.lifetime {
-    h1 {
-        font-size: 40px;
-        line-height: 50px;
-    }
-    .imageBox {
-        width: 100%;
-        height: 500px;
+        height: 60vh;
         img {
             object-fit: cover;
         }
     }
     .detailsBox {
         .detail {
+            * {
+                margin: 0 !important;
+            }
             h3 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 24px;
+                line-height: 32px;
             }
             p {
-                font-size: 20px;
-                line-height: 32px;
+                font-size: 18px;
+                line-height: 24px;
+                margin-top: 10px !important;
+                margin-bottom: 20px !important;
             }
             span {
                 img{
                     width: 50px;
                     height: 50px;
+                    object-fit: contain;
+                    margin-right: 10px !important;
                 }
             }
         }
     }
 }
 .assurance {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 0;
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 40px;
-        line-height: 50px;
-        width: 80% !important;
-        margin-bottom: 20px;
+        font-size: 32px;
+        line-height: 40px;
+        width: 100% !important;
     }
     h5 {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .itemGrid {
+        grid-gap: 30px !important;
     }
     .item {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 0;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 20px !important;
         span {
-            width: 120px;
-            height: 120px;
+            width: 100%;
+            height: 85%;
             margin-bottom: 20px;
             img {
-                width: 100px;
-                height: 100px;
+                width: 70%;
+                height: 70%;
+                object-fit: contain;
             }
         }
         .inner {
+            * {
+                margin: 0 !important;
+            }
             h6 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 10px !important;
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 24px;
             }
         }
     }
 }
 .team {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
         width: 95%;
     }
@@ -1491,136 +1030,165 @@
         .left {
             img {
                 width: 100%;
-                height: 500px;
+                height: 60vh;
+                object-fit: cover;
+            }
+            .leftText {
+                margin-top: 40px !important;
             }
             h4 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 24px;
+                line-height: 32px;
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 24px;
             }
             a {
-                width: 300px;
+                width: 60%;
                 height: 60px;
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 18px;
+                line-height: 24px;
+                border-radius: 20px;
             }
         }
         .right {
+            .rightText {
+                margin-bottom: 48px !important;
+            }
             h3 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 10px !important;
             }
             h1 {
-                font-size: 40px;
-                line-height: 50px;
+                font-size: 32px;
+                line-height: 40px;
+                margin: 0 !important;
             }
             p {
-                font-size: 20px;
-                line-height: 32px;
+                font-size: 18px;
+                line-height: 24px;
+                margin-top: 10px;
             }
             a {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 24px;
+                margin-top: 40px;
             }
             img {
                 width: 100%;
-                height: 500px;
+                height: 60vh;
+                object-fit: contain;
             }
         }
     }
 }
 .career {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     img {
         width: 100%;
-        height: 400px;
+        height: 50vh;
         object-fit: cover;
     }
     .careerText {
+        * {
+            margin: 0 !important;
+        }
         h2 {
-            font-size: 40px;
-            line-height: 50px;
+            font-size: 32px;
+            line-height: 40px;
         }
         h5 {
-            font-size: 30px;
-            line-height: 40px;
+            font-size: 24px;
+            line-height: 32px;
+            margin-top: 10px !important;
+            margin-bottom: 30px !important;
         }
         a {
             width: 250px;
             height: 60px;
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 900 !important;
+            border-radius: 20px;
         }
     }
+}
+.aboutSpacer {
+    height: 48px !important;
 }
 
 //About Team Page
 .aboutTeamBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 45%;
+        height: 60% !important;
     }
     .bannerTxt {
+        padding-bottom: 24px;
         .bannerHeader {
-            flex-direction: column;
-            align-items: flex-start;
-            * {
-                margin: 0;
-            }
+            margin-bottom: 0 !important;
+            height: auto;
         }
         h1 {
             font-size: 45px;
-            line-height: 52px;
+            margin-bottom: 20px !important;
         }
         p {
             font-size: 20px;
             line-height: 30px;
+            width: 80%;
         }
         h5 {
-            font-size: 16px;
+            font-size: 18px;
+            line-height: 24px;
         }
         h6 {
-            font-size: 16px;
+            font-size: 18px;
+            line-height: 24px;
         }
         img {
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
         }
     }
     .bannerImg {
-        height: 250px !important;
-        object-fit: cover;
+        margin-top: 0px !important;
     }
 }
 .executives {
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .wrapper {
+        margin-top: 24px !important;
     }
     .bio {
-        flex-direction: column;
-        align-items: flex-start;
         img {
             width: 200px !important;
             height: 200px !important;
         }
         .text {
-            margin-top: 20px;
             h4 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 24px;
+                line-height: 32px;
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 24px;
             }
             a {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 24px;
                 img {
-                    width: 45px !important;
-                    height: 45px !important;
+                    width: 40px !important;
+                    height: 40px !important;
                 }
             }
         }
@@ -1629,155 +1197,170 @@
 
 //Team Bio Info
 .bioInfo {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        width: 95%;
+    }
+    .imgBox {
+        height: 60vh;
+        width: 100%;
+        background-position: top center;
+    }
     .textBox {
-        h1 {
-            font-size: 40px;
-            line-height: 50px;
+        * {
+            margin: 0 !important;
         }
-        h5 {
-            font-size: 30px;
+        h1 {
+            font-size: 32px;
             line-height: 40px;
         }
+        h5 {
+            font-size: 24px;
+            line-height: 32px;
+            margin: 10px 0 !important;
+            font-weight: 700;
+        }
         p {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 24px;
         }
     }
+}
+.teamSpacer {
+    height: 48px !important;
 }
 
 //About Culture
 .aboutCultureBanner{
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 45%;
+        height: 65% !important;
     }
     .bannerTxt {
+        padding-bottom: 24px;
         .bannerHeader {
-            flex-direction: column;
-            align-items: flex-start;
-            * {
-                margin: 0;
-            }
+            margin-bottom: 0 !important;
+            height: auto;
         }
         h1 {
             font-size: 45px;
-            line-height: 52px;
+            margin-bottom: 20px !important;
         }
         p {
             font-size: 20px;
-            line-height: 32px;
+            line-height: 30px;
+            width: 80%;
         }
         h5 {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 24px;
         }
         h6 {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 24px;
         }
     }
     .bannerImg {
-        height: 250px !important;
-        object-fit: cover;
+        margin-top: 0px !important;
     }
 }
 .investing {
+    margin-top: 48px !important;
+    * {
+        margin: 0 !important;
+    }
     .intro {
+        height: auto;
+        margin-bottom: 20px !important;
+        align-items: flex-end;
         h1 {
-            font-size: 40px;
-            line-height: 52px;
+            font-size: 32px;
+            line-height: 40px;
+            margin-right: 20px !important;
         }
         p {
             font-size: 20px;
-            line-height: 32px;
+            line-height: 24px;
         }
     }
     .imageBox {
-        width: 100%;
-        height: 100%;
+        width: auto;
+        height: 60vh;
         img {
-            width: 100%;
-            height: 100%;
             object-fit: cover;
         }
     }
     .detailsBox {
         .detail {
+            padding: 20px 40px !important;
+            * {
+                margin: 0 !important;
+            }
             h3 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 24px;
+                line-height: 32px;
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 24px;
+                margin-top: 10px !important;
+                margin-bottom: 20px !important;
             }
             span {
                 img{
                     width: 50px;
                     height: 50px;
                     object-fit: contain;
+                    margin-right: 10px !important;
                 }
             }
         }
     }
 }
 .diversity {
+    margin-top: 48px !important;
     .imgWrapper {
         img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: 60vh;
         }
     }
     .textWrapper {
+        * {
+            margin: 0 !important;
+        }
         h2 {
-            font-size: 40px;
-            line-height: 50px;
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 20px !important;
         }
         h5 {
-            font-size: 30px;
-            line-height: 40px;
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 10px !important;
         }
         p {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 24px;
         }
     }
 }
 
 //About Career
-.aboutCareerBanner {
-    .back {
-        height: 50% !important;
-    }
-    .bannerTxt {
-        h1 {
-            font-size: 45px;
-            line-height: 52px;
-        }
-        p {
-            font-size: 20px;
-            line-height: 32px;
-        }
-        h5 {
-            font-size: 16px;
-            line-height: 24px;
-        }
-        h6 {
-            font-size: 16px;
-            line-height: 24px;
-        }
-    }
-    .bannerImg {
-        height: 250px !important;
-        object-fit: cover;
-    }
-}
 .careerJoin {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
         width: 95%;
     }
+    .wrapper {
+        grid-gap: 40px !important;
+    }
     .imgBox {
-        height: 500px;
+        height: 60vh;
         width: 100%;
         span {
             width: 120px;
@@ -1789,41 +1372,46 @@
         }
     }
     .textBox {
+        padding-top: 10px !important;
         h1 {
-            font-size: 40px;
-            line-height: 52px;
+            font-size: 32px;
+            line-height: 40px;
         }
         p {
             font-size: 20px;
-            line-height: 32px;
+            line-height: 24px;
         }
         .applyBtn {
-            width: 250px;
+            width: 200px;
             height: 60px;
-            font-size: 20px;
-            line-height: 32px;
+            font-size: 16px;
+            line-height: 20px;
+            border-radius: 20px;
         }
     }
 }
 .careerExplore {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 40px;
-        line-height: 52px;
+        font-size: 32px;
+        line-height: 40px;
     }
     .search {
-        width: 60vw;
+        width: 50vw;
         height: 60px;
+        border-radius: 20px !important;
         img {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
         }
         input {
-            font-size: 20px;
+            font-size: 18px;
+            line-height: 24px;
             &::placeholder {
-                font-size: 20px;
-            }
-            &:focus {
-                outline: none;
+                font-size: 18px;
+                line-height: 24px;
             }
         }
     }
@@ -1831,22 +1419,23 @@
     .jobs {
         .jobCard {
             h4 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 700 !important;
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
-                width: 100% !important;
+                font-size: 18px;
+                line-height: 24px;
+                width: 90% !important;
             }
             h6 {
-                font-size: 16px;
-                line-height: 24px;
+                font-size: 14px;
+                line-height: 20px;
             }
             .right {
                 a {
                     width: 130px;
-                    font-size: 16px;
+                    font-size: 14px;
                     line-height: 24px;
                 }
             }
@@ -1854,35 +1443,728 @@
     }
     .pagination {
         .previous {
-            width: 200px;
-            height: 60px;
+            width: 150px;
+            height: 50px;
             img {
                 width: 20px;
                 height: 20px;
             }
             p{
-                font-size: 22px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 24px;
             }
         }
         .pages {
             span {
-                width: 60px;
-                height: 70px;
-                font-size: 22px;
+                width: 50px;
+                height: 50px;
+                font-size: 18px;
             }
         }
         .next {
             background: $blue;
             width: 200px;
-            height: 70px;
+            height: 50px;
             img {
                 width: 20px;
                 height: 20px;
             }
             p{
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+}
+
+
+@media only screen and (max-width: 1024px) {
+.aboutBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        height: 55% !important;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 20px !important;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+            width: 60%;
+        }
+        h5 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        h6 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
+    }
+}
+.videoSection {
+    height: auto !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .vidGrid {
+        grid-gap: 40px !important;
+    }
+    .imgBox {
+        height: 65vh !important;
+        width: 100%;
+        span {
+            width: 80px;
+            height: 80px;
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+    .textBox {
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    .videoModal {
+        .videoWrapper {
+            .close {
+                top: 5vh !important;
+                right: 5vw !important;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    object-fit: contain;
+                }
+            }
+            .video {
+                width: 80vw;
+                height: 70vh;
+            }
+        }
+    }
+}
+.lifetime {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    * {
+        margin: 0 !important;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+        width: 40%;
+        margin-bottom: 20px !important;
+    }
+    .imageBox {
+        width: auto;
+        height: 60vh;
+        img {
+            object-fit: cover;
+        }
+    }
+    .detailsBox {
+        .detail {
+            * {
+                margin: 0 !important;
+            }
+            padding: 20px 40px !important;
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                margin-top: 10px !important;
+                margin-bottom: 20px !important;
+            }
+            span {
+                img{
+                    width: 50px;
+                    height: 50px;
+                    object-fit: contain;
+                    margin-right: 10px !important;
+                }
+            }
+        }
+    }
+}
+.assurance {
+    grid-template-columns: 1fr 3.5fr;
+    grid-gap: 0;
+    padding-bottom: 48px !important;
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+        width: 100% !important;
+    }
+    h5 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .itemGrid {
+        grid-gap: 20px !important;
+    }
+    .item {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        grid-gap: 15px !important;
+        span {
+            width: 100%;
+            height: 80%;
+            margin-bottom: 15px;
+            img {
+                width: 70%;
+                height: 70%;
+                object-fit: contain;
+            }
+        }
+        .inner {
+            * {
+                margin: 0 !important;
+            }
+            h6 {
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 10px !important;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+.team {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        width: 95%;
+    }
+    .teamWrapper {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 40px;
+        .left {
+            img {
+                width: 100%;
+                height: 60vh;
+                object-fit: cover;
+            }
+            .leftText {
+                margin-top: 40px !important;
+            }
+            h4 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+            a {
+                width: 80%;
+                height: 60px;
+                font-size: 16px;
+                line-height: 20px;
+                border-radius: 20px;
+            }
+        }
+        .right {
+            .rightText {
+                margin-bottom: 48px !important;
+            }
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 10px !important;
+            }
+            h1 {
+                font-size: 30px;
+                line-height: 40px;
+                margin: 0 !important;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+                margin-top: 10px;
+                width: 90% !important;
+            }
+            a {
+                font-size: 18px;
+                line-height: 24px;
+                margin-top: 40px;
+            }
+            img {
+                width: 100%;
+                height: 60vh;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.career {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+    .careerText {
+        * {
+            margin: 0 !important;
+        }
+        h2 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        h5 {
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 10px !important;
+            margin-bottom: 30px !important;
+        }
+        a {
+            width: 200px;
+            height: 60px;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 900 !important;
+            border-radius: 20px;
+        }
+    }
+}
+.aboutSpacer {
+    height: 48px !important;
+}
+
+//About Team Page
+.aboutTeamBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        height: 50% !important;
+    }
+    .bannerTxt {
+        padding-bottom: 20px;
+        .bannerHeader {
+            margin-bottom: 24px !important;
+            height: auto;
+            flex-direction: column;
+            align-items: flex-start;
+            * {
+                margin: 0 !important;
+            }
+        }
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 20px !important;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+            width: 80%;
+        }
+        h5 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        h6 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
+    }
+}
+.executives {
+    padding-bottom: 48px !important;
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .wrapper {
+        margin-top: 24px !important;
+        grid-gap: 24px !important;
+    }
+    .bio {
+        img {
+            width: 150px !important;
+            height: 150px !important;
+        }
+        .text {
+            h4 {
                 font-size: 20px;
                 line-height: 30px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            a {
+                font-size: 16px;
+                line-height: 20px;
+                img {
+                    width: 30px !important;
+                    height: 30px !important;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+//Team Bio Info
+.bioInfo {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        width: 95%;
+    }
+    .imgBox {
+        height: 60vh;
+        width: 100%;
+    }
+    .textBox {
+        * {
+            margin: 0 !important;
+        }
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        h5 {
+            font-size: 24px;
+            line-height: 32px;
+            margin: 10px 0 !important;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+.teamSpacer {
+    height: 48px !important;
+}
+
+//About Culture
+.aboutCultureBanner{
+    .back {
+        height: 55% !important;
+    }
+    .bannerTxt {
+        padding-bottom: 20px;
+        .bannerHeader {
+            margin-bottom: 24px !important;
+            height: auto;
+            flex-direction: column;
+            align-items: flex-start;
+            * {
+                margin: 0 !important;
+            }
+        }
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 20px !important;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+            width: 80%;
+        }
+        h5 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        h6 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
+    }
+}
+.investing {
+    margin-top: 48px !important;
+    * {
+        margin: 0 !important;
+    }
+    .intro {
+        height: auto;
+        margin-bottom: 20px !important;
+        align-items: flex-end;
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+            margin-right: 20px !important;
+        }
+        p {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+    .imageBox {
+        width: auto;
+        height: 60vh;
+        img {
+            object-fit: cover;
+        }
+    }
+    .detailsBox {
+        .detail {
+            padding: 20px 40px !important;
+            * {
+                margin: 0 !important;
+            }
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                margin-top: 10px !important;
+                margin-bottom: 20px !important;
+            }
+            span {
+                img{
+                    width: 50px;
+                    height: 50px;
+                    object-fit: contain;
+                    margin-right: 10px !important;
+                }
+            }
+        }
+    }
+}
+.diversity {
+    margin-top: 48px !important;
+    .imgWrapper {
+        img {
+            width: 100%;
+            height: 60vh;
+        }
+    }
+    .textWrapper {
+        * {
+            margin: 0 !important;
+        }
+        h2 {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 20px !important;
+        }
+        h5 {
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 10px !important;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
+
+//About Career
+.aboutCareerBanner {
+    .back {
+        height: 60% !important;
+    }
+    .bannerTxt {
+        padding-bottom: 20px;
+        .bannerHeader {
+            margin-bottom: 24px !important;
+            height: auto;
+            flex-direction: column;
+            align-items: flex-start;
+            * {
+                margin: 0 !important;
+            }
+        }
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 20px !important;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+            width: 80%;
+        }
+        h5 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        h6 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
+    }
+}
+.careerJoin {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        width: 95%;
+    }
+    .wrapper {
+        grid-gap: 40px !important;
+    }
+    .imgBox {
+        height: 60vh;
+        width: 100%;
+        span {
+            width: 120px;
+            height: 120px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    .textBox {
+        padding-top: 10px !important;
+        * {
+            margin: 0 !important;
+        }
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+            margin-top: 10px !important;
+            margin-bottom: 30px !important;
+        }
+        .applyBtn {
+            width: 200px;
+            height: 60px;
+            font-size: 16px;
+            line-height: 20px;
+            border-radius: 20px;
+        }
+    }
+}
+.careerExplore {
+    padding: 48px !important;
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .search {
+        width: 50vw;
+        height: 60px;
+        border-radius: 20px !important;
+        img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+        input {
+            font-size: 18px;
+            line-height: 24px;
+            &::placeholder {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    
+    .jobs {
+        .jobCard {
+            width: 100% !important;
+            h4 {
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 700 !important;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                width: 90% !important;
+            }
+            h6 {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .right {
+                a {
+                    width: 130px;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .pagination {
+        .previous {
+            width: 100px;
+            height: 50px;
+            img {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+            }
+            p{
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        .pages {
+            span {
+                width: 50px;
+                height: 50px;
+                font-size: 16px;
+            }
+        }
+        .next {
+            background: $blue;
+            width: 100px;
+            height: 50px;
+            img {
+                width: 20px;
+                height: 20px;
+                object-fit: contain;
+            }
+            p{
+                font-size: 16px;
+                line-height: 20px;
             }
         }
     }
@@ -1892,43 +2174,62 @@
 //Tablets
 @media only screen and (max-width: 768px) {
 .aboutBanner {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 55%;
+        height: 45% !important;
     }
     .bannerTxt {
         h1 {
-            font-size: 45px;
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 20px !important;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
+            width: 70%;
         }
         h5 {
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        h6 {
+            font-size: 14px;
+            line-height: 20px;
         }
         img {
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
         }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
     }
 }
 .videoSection {
+    height: auto !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .vidGrid {
+        grid-gap: 40px !important;
+    }
     .imgBox {
-        height: 400px;
+        height: 400px !important;
         width: 100%;
         span {
             width: 80px;
             height: 80px;
             img {
-                width: 30px;
-                height: 30px;
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
             }
         }
     }
     .textBox {
         h1 {
-            font-size: 32px;
+            font-size: 30px;
             line-height: 40px;
         }
         p {
@@ -1937,223 +2238,301 @@
         }
     }
     .videoModal {
-        width: 100%;
-        height: 100%;
         .videoWrapper {
             .close {
-                position: absolute;
-                top: 30px;
-                right: 30px;
+                top: 5vh !important;
+                right: 5vw !important;
                 img {
                     width: 40px;
                     height: 40px;
+                    object-fit: contain;
                 }
             }
             .video {
-                width: 70vw;
-                height: 60vh;
+                width: 80vw;
+                height: 50vh;
             }
         }
     }
 }
 .lifetime {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    * {
+        margin: 0 !important;
+    }
     h1 {
-        font-size: 32px;
+        font-size: 30px;
         line-height: 40px;
+        width: 60%;
+        margin-bottom: 20px !important;
     }
     .imageBox {
-        width: 100%;
+        width: auto;
         height: 400px;
+        img {
+            object-fit: cover;
+        }
     }
     .detailsBox {
         .detail {
+            * {
+                margin: 0 !important;
+            }
+            padding: 20px 40px !important;
             h3 {
-                font-size: 24px;
+                font-size: 20px;
                 line-height: 32px;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
+                margin-top: 10px !important;
+                margin-bottom: 20px !important;
             }
             span {
                 img{
-                    width: 30px;
-                    height: 30px;
+                    width: 50px;
+                    height: 50px;
+                    object-fit: contain;
+                    margin-right: 10px !important;
                 }
             }
         }
     }
 }
 .assurance {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 30px;
+        line-height: 40px;
         width: 100% !important;
-        margin-bottom: 20px;
     }
     h5 {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .itemGrid {
+        grid-gap: 15px !important;
     }
     .item {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 0;
+        grid-gap: 10px !important;
         span {
-            width: 120px;
-            height: 120px;
-            margin-bottom: 20px;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 5px;
             img {
-                width: 100px;
-                height: 100px;
+                width: 70%;
+                height: 70%;
+                object-fit: contain;
             }
         }
         .inner {
+            * {
+                margin: 0 !important;
+            }
             h6 {
-                font-size: 24px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 5px !important;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
             }
         }
     }
 }
 .team {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
         width: 95%;
     }
     .teamWrapper {
         display: grid;
         grid-template-columns: 2fr 2fr;
-        grid-gap: 20px;
+        grid-gap: 40px;
         .left {
             img {
                 width: 100%;
                 height: 400px;
+                object-fit: cover;
+            }
+            .leftText {
+                margin-top: 40px !important;
             }
             h4 {
-                font-size: 30px;
-                line-height: 40px;
-            }
-            p {
-                font-size: 16px;
-                line-height: 24px;
-            }
-            a {
-                width: 300px;
-                height: 60px;
-                font-size: 16px;
-                line-height: 24px;
-            }
-        }
-        .right {
-            h3 {
                 font-size: 24px;
                 line-height: 32px;
             }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            a {
+                width: 80%;
+                height: 60px;
+                font-size: 16px;
+                line-height: 20px;
+                border-radius: 20px;
+            }
+        }
+        .right {
+            .rightText {
+                margin-bottom: 48px !important;
+            }
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 10px !important;
+            }
             h1 {
-                font-size: 40px;
-                line-height: 50px;
+                font-size: 30px;
+                line-height: 40px;
+                margin: 0 !important;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
+                margin-top: 10px;
+                width: 90% !important;
             }
             a {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
+                margin-top: 40px;
             }
             img {
                 width: 100%;
                 height: 400px;
+                object-fit: contain;
             }
         }
     }
 }
 .career {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     img {
         width: 100%;
-        height: 400px;
+        height: 300px;
         object-fit: cover;
     }
     .careerText {
+        * {
+            margin: 0 !important;
+        }
         h2 {
-            font-size: 40px;
-            line-height: 50px;
+            font-size: 30px;
+            line-height: 40px;
         }
         h5 {
-            font-size: 24px;
-            line-height: 32px;
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 10px !important;
+            margin-bottom: 30px !important;
         }
         a {
             width: 200px;
             height: 60px;
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
+            font-weight: 900 !important;
+            border-radius: 20px;
         }
     }
+}
+.aboutSpacer {
+    height: 48px !important;
 }
 
 //About Team Page
 .aboutTeamBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 55%;
+        height: 50% !important;
     }
     .bannerTxt {
+        padding-bottom: 20px;
+        .bannerHeader {
+            margin-bottom: 24px !important;
+            height: auto;
+            flex-direction: column;
+            align-items: flex-start;
+            * {
+                margin: 0 !important;
+            }
+        }
         h1 {
-            font-size: 45px;
-            line-height: 50px;
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 20px !important;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
+            width: 100%;
         }
         h5 {
-            font-size: 16px;
+            font-size: 14px;
+            line-height: 20px;
         }
         h6 {
-            font-size: 16px;
+            font-size: 14px;
+            line-height: 20px;
         }
         img {
-            width: 30px;
-            height: 30px;
+            width: 25px;
+            height: 25px;
         }
     }
     .bannerImg {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
+        margin-top: 0px !important;
     }
 }
 .executives {
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .wrapper {
+        margin-top: 24px !important;
+        grid-gap: 24px !important;
     }
     .bio {
         img {
-            width: 200px;
-            height: 200px;
+            width: 100px !important;
+            height: 100px !important;
         }
         .text {
-            margin-top: 20px;
+            * {
+                margin: 0 !important;
+            }
             h4 {
-                font-size: 24px;
-                line-height: 32px;
+                font-size: 18px;
+                line-height: 24px;
             }
             p {
-                font-size: 16px;
-                line-height: 24px;
+                font-size: 14px;
+                line-height: 20px;
+                margin: 5px !important;
             }
             a {
-                font-size: 16px;
-                line-height: 24px;
+                font-size: 14px;
+                line-height: 20px;
                 img {
-                    width: 35px !important;
-                    height: 35px !important;
+                    width: 20px !important;
+                    height: 20px !important;
+                    object-fit: contain;
+                    margin-left: 5px !important;
                 }
             }
         }
@@ -2167,20 +2546,20 @@
     }
     .imgBox {
         height: 500px;
-        width: auto;
+        width: 100%;
     }
     .textBox {
         h1 {
-            font-size: 40px;
-            line-height: 50px;
+            font-size: 30px;
+            line-height: 40px;
         }
         h5 {
-            font-size: 24px;
-            line-height: 32px;
+            font-size: 20px;
+            line-height: 30px;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 22px;
         }
     }
 }
@@ -2188,72 +2567,120 @@
 //About Culture
 .aboutCultureBanner{
     .back {
-        height: 55%;
+        height: 50% !important;
     }
     .bannerTxt {
+        padding-bottom: 20px;
+        .bannerHeader {
+            margin-bottom: 24px !important;
+            height: auto;
+            flex-direction: column;
+            align-items: flex-start;
+            * {
+                margin: 0 !important;
+            }
+        }
         h1 {
-            font-size: 40px;
-            line-height: 50px;
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 20px !important;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
+            width: 80%;
         }
         h5 {
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 14px;
+            line-height: 20px;
         }
         h6 {
-            font-size: 16px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
+    }
+}
+.investing {
+    margin-top: 48px !important;
+    * {
+        margin: 0 !important;
+    }
+    .intro {
+        height: auto;
+        margin-bottom: 20px !important;
+        align-items: flex-start;
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+            margin-right: 20px !important;
+        }
+        p {
+            font-size: 20px;
             line-height: 24px;
         }
     }
-    
-}
-.investing {
-    .intro {
-        h1 {
-            font-size: 40px;
-            line-height: 50px;
-        }
-        p {
-            font-size: 16px;
-            line-height: 24px;
+    .imageBox {
+        width: auto;
+        height: 400px;
+        img {
+            object-fit: cover;
         }
     }
     .detailsBox {
         .detail {
+            padding: 20px 40px !important;
+            * {
+                margin: 0 !important;
+            }
             h3 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 24px;
+                line-height: 32px;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
+                margin-top: 10px !important;
+                margin-bottom: 20px !important;
             }
             span {
                 img{
-                    width: 45px;
-                    height: 45px;
+                    width: 50px;
+                    height: 50px;
                     object-fit: contain;
+                    margin-right: 10px !important;
                 }
             }
         }
     }
 }
 .diversity {
+    margin-top: 48px !important;
+    .imgWrapper {
+        img {
+            width: 100%;
+            height: 400px;
+        }
+    }
     .textWrapper {
+        * {
+            margin: 0 !important;
+        }
         h2 {
-            font-size: 40px;
-            line-height: 50px;
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 20px !important;
         }
         h5 {
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 10px !important;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
         }
     }
 }
@@ -2261,25 +2688,40 @@
 //About Career
 .aboutCareerBanner {
     .back {
-        height: 65% !important;
+        height: 55% !important;
     }
     .bannerTxt {
+        padding-bottom: 20px;
+        .bannerHeader {
+            margin-bottom: 24px !important;
+            height: auto;
+            flex-direction: column;
+            align-items: flex-start;
+            * {
+                margin: 0 !important;
+            }
+        }
         h1 {
-            font-size: 40px;
-            line-height: 50px;
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 20px !important;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
+            width: 80%;
         }
         h5 {
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 14px;
+            line-height: 20px;
         }
         h6 {
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 14px;
+            line-height: 20px;
         }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
     }
 }
 .careerJoin {
@@ -2289,36 +2731,29 @@
     .imgBox {
         height: 400px;
         width: 100%;
-        span {
-            width: 120px;
-            height: 120px;
-            img {
-                width: 50px;
-                height: 50px;
-            }
-        }
+        
     }
     .textBox {
         h1 {
-            font-size: 32px;
-            line-height: 40px;
+            font-size: 30px;
+            line-height: 35px;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
         }
         .applyBtn {
-            width: 250px;
+            width: 150px;
             height: 60px;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 14px;
+            line-height: 20px;
         }
     }
 }
 .careerExplore {
     h1 {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 30px;
+        line-height: 35px;
     }
     .search {
         width: 60vw;
@@ -2332,39 +2767,36 @@
             &::placeholder {
                 font-size: 16px;
             }
-            &:focus {
-                outline: none;
-            }
         }
     }
     
     .jobs {
         .jobCard {
             h4 {
-                font-size: 24px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 24px;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
                 width: 100% !important;
             }
             h6 {
                 font-size: 14px;
-                line-height: 24px;
+                line-height: 20px;
             }
             .right {
                 a {
                     width: 100px;
-                    font-size: 16px;
-                    line-height: 24px;
+                    font-size: 14px;
+                    line-height: 20px;
                 }
             }
         }
     }
     .pagination {
         .previous {
-            width: 150px;
+            width: 100px;
             height: 40px;
             img {
                 width: 15px;
@@ -2385,7 +2817,7 @@
         }
         .next {
             background: $blue;
-            width: 150px;
+            width: 100px;
             height: 40px;
             img {
                 width: 15px;
@@ -2411,7 +2843,7 @@
     }
     .bannerTxt {
         h1 {
-            font-size: 45px;
+            font-size: 40px;
         }
         p,h5 {
             color: white;
@@ -2479,6 +2911,7 @@
         font-size: 30px;
         line-height: 40px;
         text-align: center;
+        width: 100%;
     }
     .imageBox {
         width: 100%;
@@ -2669,9 +3102,10 @@
     
     .bio {
         align-items: center;
+        flex-direction: column;
         img {
-            width: 200px;
-            height: 200px;
+            width: 200px !important;
+            height: 200px !important;
         }
         .text {
             margin-top: 20px;
@@ -2715,16 +3149,16 @@
         flex-direction: column;
         align-items: center;
         h1 {
-            font-size: 32px;
-            line-height: 40px;
+            font-size: 24px;
+            line-height: 32px;
         }
         h5 {
-            font-size: 22px;
+            font-size: 20px;
             line-height: 30px;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
             text-align: center;
         }
     }

@@ -5,7 +5,7 @@
     .back {
         background: $blue;
         width: 100%;
-        height: 70%;
+        height: 65%;
         top: 0;
         left: 0;
     }
@@ -19,7 +19,7 @@
         p {
             font-size: 32px;
             line-height: 40px;
-            font-weight: normal;
+            font-weight: 600;
             color: $dark;
         }
         h5 {
@@ -95,6 +95,8 @@
 .styleBenefits {
     background: $light;
     .intro {
+        grid-template-columns: 1fr 4fr;
+        grid-gap: 0;
         h1 {
             font-size: 48px;
             line-height: 56px;
@@ -137,7 +139,7 @@
         .cardWrapper {
             z-index: 5;
             span {
-                min-width: 390px;
+                width: 100%;
                 height: 98px;
                 border-radius: 25px;
                 background: #0E1C77;
@@ -148,7 +150,7 @@
             }
             p {
                 font-size: 24px;
-                color: white;
+                color: $light;
                 line-height: 32px;
             }
             a {
@@ -209,116 +211,148 @@
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
 .styleBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 55%;
+        height: 60% !important;
     }
     .bannerTxt {
         h1 {
-            font-size: 55px;
+            font-size: 45px;
+            margin-bottom: 20px !important;
         }
         p {
-            font-size: 22px;
-            line-height: 32px;
+            font-size: 20px;
+            line-height: 30px;
+            width: 60%;
         }
         h5 {
-            font-size: 20px;
+            font-size: 18px;
+            line-height: 24px;
         }
+        h6 {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
     }
 }
 .styleHow {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
         width: 95%;
     }
     .imgBox {
-        height: 500px;
+        height: 60vh;
     }
     .textBox {
         h1 {
-            font-size: 40px;
-            line-height: 52px;
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 900 !important;
         }
         p {
-            font-size: 22px;
-            line-height: 32px;
+            font-size: 18px;
+            line-height: 24px;
         }
         .applyBtn {
-            width: 300px;
-            height: 80px;
-            font-size: 22px;
-            line-height: 32px;
-            border-radius: 30px;
+            width: 250px;
+            height: 60px;
+            font-size: 18px;
+            line-height: 24px;
+            border-radius: 20px;
         }
     }
 }
 .styleBenefits {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .intro {
         h1 {
-            font-size: 45px;
-            line-height: 52px;
+            font-size: 32px;
+            line-height: 40px;
         }
         p {
-            font-size: 22px;
-            line-height: 32px;
+            font-size: 20px;
+            line-height: 24px;
         }
     }
-    .benefitsCard {
-        width: auto;
-        height: 450px;
-        border-radius: 30px;
-        .back1 {
-            border-radius: 30px;
-        }
-        .back2 {
-            border-radius: 30px;
-        }
-        .cardWrapper {
-            span {
-                min-width: 60%;
-                height: 80px;
-                border-radius: 30px;
-                font-size: 18px;
-                line-height: 32px;
+    .benefitsSlider {
+        margin-top: 20px;
+        padding: 0 !important;
+        height: auto;
+        .benefitsCard {
+            width: 100%;
+            height: 50vh !important;
+            border-radius: 20px;
+            .back1 {
+                border-radius: 20px;
             }
-            p {
-                font-size: 18px;
-                line-height: 32px;
+            .back2 {
+                border-radius: 20px;
             }
-            a {
-                font-size: 18px;
-                line-height: 32px;
-                img {
-                    width: 50px;
-                    height: 50px;
+            .cardWrapper {
+                border-radius: 20px;
+                span {
+                    height: 60px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    border-radius: 20px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                a {
+                    font-size: 16px;
+                    line-height: 20px;
+                    img {
+                        width: 35px;
+                        height: 35px;
+                        object-fit: contain;
+                    }
                 }
             }
         }
     }
 }
 .styleRegister {
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 40px;
-        line-height: 52px;
+        font-size: 32px;
+        line-height: 40px;
+        margin: 0 !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .styleGrid {
+        margin: 0 !important;
     }
     
     .left, .right {
-        height: auto;
-        width: auto;
+        height: 60vh;
+        width: 100%;
     }
     
     .left {
         img {
-            width: auto;
-            height: 500px;
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
         }
     }
     .right {
         h3 {
-            font-size: 32px;
-            line-height: 40px;
+            font-size: 24px;
+            line-height: 30px;
         }
         p {
-            font-size: 22px;
-            line-height: 32px;
+            font-size: 18px;
+            line-height: 24px;
         }
     }
 }
@@ -328,107 +362,155 @@
 //Medium size laptops
 @media only screen and (max-width: 1024px) {
 .styleBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 50%;
+        height: 60% !important;
     }
     .bannerTxt {
         h1 {
-            font-size: 45px;
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 20px !important;
         }
         p {
-            font-size: 20px;
+            font-size: 18px;
             line-height: 24px;
+            width: 60%;
         }
         h5 {
             font-size: 16px;
+            line-height: 20px;
         }
+        h6 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
     }
 }
 .styleHow {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
         width: 95%;
     }
     .imgBox {
-        height: 400px;
+        height: 60vh;
     }
     .textBox {
         h1 {
-            font-size: 40px;
-            line-height: 52px;
+            font-size: 30px;
+            line-height: 40px;
         }
         p {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 24px;
         }
         .applyBtn {
             width: 250px;
             height: 60px;
-            font-size: 20px;
-            line-height: 32px;
+            font-size: 18px;
+            line-height: 24px;
+            border-radius: 20px;
         }
     }
 }
 .styleBenefits {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .intro {
+        align-items: center;
         h1 {
-            font-size: 40px;
-            line-height: 50px;
+            font-size: 30px;
+            line-height: 40px;
+            width: 100% !important;
         }
         p {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 24px;
         }
     }
-    .benefitsCard {
-        width: auto;
-        height: 450px;
-        border-radius: 30px;
-        .cardWrapper {
-            span {
-                min-width: 60%;
-                min-height: 60px;
+    .benefitsSlider {
+        margin-top: 20px;
+        padding: 0 !important;
+        height: auto;
+        .benefitsCard {
+            width: 100%;
+            height: 50vh !important;
+            border-radius: 20px;
+            .back1 {
+                border-radius: 20px;
+            }
+            .back2 {
+                border-radius: 20px;
+            }
+            .cardWrapper {
                 border-radius: 30px;
-                font-size: 18px;
-                line-height: 32px;
-            }
-            p {
-                font-size: 18px;
-                line-height: 32px;
-            }
-            a {
-                font-size: 18px;
-                line-height: 32px;
-                img {
-                    width: 50px;
-                    height: 50px;
+                span {
+                    height: 60px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    border-radius: 20px;
+                    margin-bottom: 20px !important;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                a {
+                    font-size: 16px;
+                    line-height: 20px;
+                    img {
+                        width: 35px;
+                        height: 35px;
+                        object-fit: contain;
+                    }
                 }
             }
         }
     }
 }
 .styleRegister {
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 40px;
-        line-height: 52px;
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0 !important;
+        margin-bottom: 20px !important;
     }
- 
+    
+    .styleGrid {
+        margin: 0 !important;
+    }
+    
+    .left, .right {
+        height: 60vh;
+        width: 100%;
+    }
+    
     .left {
         img {
-            width: auto;
-            height: 500px;
+            width: 80%;
+            height: 80%;
             object-fit: contain;
         }
     }
     .right {
-        padding: 24px;
+        padding: 40px !important;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         h3 {
-            font-size: 30px;
-            line-height: 40px;
+            font-size: 24px;
+            line-height: 32px;
         }
         p {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 16px;
+            line-height: 20px;
         }
     }
 }
@@ -437,24 +519,39 @@
 //Tablets
 @media only screen and (max-width: 768px) {
 .styleBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 50% !important;
+        height: 55% !important;
     }
     .bannerTxt {
         h1 {
-            font-size: 45px;
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 20px !important;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
+            width: 80%;
         }
         h5 {
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 14px;
+            line-height: 20px;
         }
+        h6 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
     }
 }
 .styleHow {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
         width: 95%;
     }
@@ -463,84 +560,117 @@
     }
     .textBox {
         h1 {
-            font-size: 32px;
-            line-height: 40px;
+            font-size: 30px;
+            line-height: 35px;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
         }
         .applyBtn {
-            width: 250px;
+            width: 150px;
             height: 60px;
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
+            border-radius: 20px;
         }
     }
 }
 .styleBenefits {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .intro {
-        flex-direction: column;
+        align-items: center;
+        grid-gap: 20px;
         h1 {
-            font-size: 32px;
-            line-height: 40px;
-            margin-bottom: 20px;
+            font-size: 30px;
+            line-height: 35px;
+            width: 100% !important;
         }
         p {
             font-size: 16px;
             line-height: 24px;
         }
     }
-    .benefitsCard {
-        width: auto;
-        height: 350px;
-        .cardWrapper {
-            span {
-                min-width: 60%;
-                min-height: 60px;
-                border-radius: 30px;
-                font-size: 16px;
-                line-height: 24px;
+    .benefitsSlider {
+        margin-top: 20px;
+        padding: 0 !important;
+        height: auto;
+        .benefitsCard {
+            width: 100%;
+            height: 300px !important;
+            border-radius: 20px;
+            .back1 {
+                border-radius: 20px;
             }
-            p {
-                font-size: 16px;
-                line-height: 24px;
+            .back2 {
+                border-radius: 20px;
             }
-            a {
-                font-size: 16px;
-                line-height: 24px;
-                img {
-                    width: 50px;
-                    height: 50px;
+            .cardWrapper {
+                border-radius: 20px;
+                span {
+                    height: 60px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    border-radius: 20px;
+                    margin-bottom: 20px !important;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                a {
+                    font-size: 16px;
+                    line-height: 20px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        object-fit: contain;
+                    }
                 }
             }
         }
     }
 }
 .styleRegister {
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 32px;
+        font-size: 30px;
         line-height: 40px;
+        margin: 0 !important;
+        margin-bottom: 20px !important;
     }
- 
+    
+    .styleGrid {
+        margin: 0 !important;
+    }
+    
+    .left, .right {
+        height: 400px;
+        width: 100%;
+    }
+    
     .left {
         img {
-            width: auto;
-            height: 400px;
+            width: 80%;
+            height: 80%;
             object-fit: contain;
         }
     }
     .right {
-        padding: 24px;
+        padding: 40px !important;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         h3 {
-            font-size: 30px;
-            line-height: 40px;
-            width: 100%;
+            font-size: 24px;
+            line-height: 32px;
+            width: 100% !important;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
+            width: 100% !important;
         }
     }
 }
@@ -556,7 +686,7 @@
     }
     .bannerTxt {
         h1 {
-            font-size: 45px;
+            font-size: 32px;
         }
         p,h5 {
             color: white;
@@ -600,12 +730,13 @@
 }
 .styleBenefits {
     .intro {
+        display: flex !important;
         flex-direction: column;
         align-items: center;
         h1 {
             font-size: 30px;
             line-height: 40px;
-            margin-bottom: 20px;
+            margin-bottom: 0;
             text-align: center;
         }
         p {
@@ -618,6 +749,7 @@
         width: auto;
         height: 300px;
         .cardWrapper {
+            padding: 16px;
             span {
                 min-width: 60%;
                 min-height: 60px;

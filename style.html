@@ -14,11 +14,11 @@
 </head>
 <body>
     <div class="app" id="app">
-        <!--NAVIGATION-->
-        <nav class="flex items-center justify-between w-full lg:px-20 md:px-8 py-5">
+       <!--NAVIGATION-->
+       <nav class="flex items-center justify-between w-full lg:px-20 py-1" id="navigation">
             <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
             <div class="links flex lg:space-x-8">
-                <div class="pageLinks flex items-center justify-center lg:space-x-5">
+                <div class="pageLinks flex items-center justify-center lg:space-x-8">
                     <a href="./index.html">Home</a>
                     <a href="./products.html">Products</a>
                     <a href="./about.html">About Us</a>
@@ -29,17 +29,15 @@
                 </div>
                 <div class="navIcons flex items-center lg:space-x-4">
                     <img src="./assets/search_black_24dp.png" alt="" class="search">
-                    <img src="./assets/shopping_bag_black_24dp.png" alt="" class="bag">
                 </div>
                 <div class="navBtns flex lg:space-x-4">
                     <a href="javascript:void(0)" class="call flex items-center justify-center">Call Us Now</a>
-                    <a href="javascript:void(0)" class="login flex items-center justify-center">Login</a>
                 </div>
             </div>
         </nav>
-        
+    
         <!--RESPONSIVE NAV-->
-        <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-5">
+        <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-1">
             <img src="./assets/LOGO HOLDER.png" alt="logo" class="logo">
             <img src="./assets/mobile logo.png" alt="" class="mobileLogo">
             <div class="navIcons flex items-center lg:space-x-4 md:space-x-2 space-x-2">
@@ -78,7 +76,7 @@
         
         <main class="w-full">
             <!--STYLE PAGE BANNER SECTION-->
-            <div class="styleBanner relative w-full h-auto lg:pl-24 md:pl-12 pl-5 lg:pb-24 md:pb-12 pb-6 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
+            <div class="styleBanner relative w-full h-auto lg:pl-24 md:pl-12 lg:pb-24 md:pb-12 pb-6 grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
                 <div class="back absolute"></div>
                 <div class="bannerTxt h-full flex flex-col justify-end items-start space-y-3 pb-5">
                     <h1 class="lg:mb-10 mb-6">Style Points</h1>
@@ -102,10 +100,9 @@
             
             <!--STYLE POINTS BENEFITS-->
             <div class="styleBenefits flex flex-col items-start w-full h-auto lg:py-24 md:py-12 py-5 lg:pl-24 md:pl-12 pl-5">
-                <div class="intro flex items-start lg:space-x-20">
-                    <h1 class="lg:w-3/6 w-full"><span>Benefits</span> of Style points</h1>
-                    <p class="lg:w-4/6 md:w-5/6 w-full">We have partnered with different suppliers that provide services readily available
-                        and you can redeem your Style points for your preferred service</p>
+                <div class="intro grid">
+                    <h1 class="lg:w-4/5 w-full"><span>Benefits</span> of Style points</h1>
+                    <p class="lg:w-4/5 md:w-4/5 w-full">We have partnered with different suppliers that provide services readily available and you can redeem your Style points for your preferred service</p>
                 </div>
                 <div class="swiper benefitsSlider h-full w-full lg:mt-12 md:mt-8 mt-4">
                     <div class="swiper-wrapper">
@@ -113,8 +110,8 @@
                             <div class="back1"></div>
                             <img src="./assets/PATTERN.png" alt="" class="back2">
                             <div class="cardWrapper flex flex-col justify-between items-start h-full w-full">
-                                <div class="top lg:space-y-10 md:space-y-5 space-y-4">
-                                    <span class="p-4 flex items-center justify-start">Car accessories dealers</span>
+                                <div class="top">
+                                    <span class="p-4 flex items-center justify-start lg:mb-10">Car accessories dealers</span>
                                     <p>Assemble the building materials for your 1 bedroom home. Assemble the building materials for your 1 bedroom home.</p>
                                 </div>
                                 <a href="javascript:void(0)" class="flex items-center lg:space-x-5 space-x-3">
@@ -127,8 +124,8 @@
                             <div class="back1"></div>
                             <img src="./assets/PATTERN.png" alt="" class="back2">
                             <div class="cardWrapper flex flex-col justify-between items-start h-full w-full">
-                                <div class="top lg:space-y-10 md:space-y-5 space-y-4">
-                                    <span class="p-4 flex items-center justify-start">Pay home utilities</span>
+                                <div class="top">
+                                    <span class="p-4 flex items-center justify-start lg:mb-10">Pay home utilities</span>
                                     <p>Assemble the building materials for your 1 bedroom home. Assemble the building materials for your 1 bedroom home.</p>
                                 </div>
                                 <a href="javascript:void(0)" class="flex items-center lg:space-x-5 space-x-3">
@@ -141,8 +138,8 @@
                             <div class="back1"></div>
                             <img src="./assets/PATTERN.png" alt="" class="back2">
                             <div class="cardWrapper flex flex-col justify-between items-start h-full w-full">
-                                <div class="top lg:space-y-10 md:space-y-5 space-y-4">
-                                    <span class="p-4 flex items-center justify-start">Shopping at<br/> Supermarkets & Malls</span>
+                                <div class="top">
+                                    <span class="p-4 flex items-center justify-start lg:mb-10">Shopping at<br/> Supermarkets & Malls</span>
                                     <p>Assemble the building materials for your 1 bedroom home. Assemble the building materials for your 1 bedroom home.</p>
                                 </div>
                                 <a href="javascript:void(0)" class="flex items-center lg:space-x-5 space-x-3">
@@ -155,13 +152,12 @@
                             <div class="back1"></div>
                             <img src="./assets/PATTERN.png" alt="" class="back2">
                             <div class="cardWrapper flex flex-col justify-between items-start h-full w-full">
-                                <div class="top lg:space-y-10 md:space-y-5 space-y-4">
-                                    <span class="p-4 flex items-center justify-start">Purchase phones
-                                        <br/>At select dealers</span>
+                                <div class="top">
+                                    <span class="p-4 flex items-center justify-start lg:mb-10">Purchase phones At select dealers</span>
                                     <p>Assemble the building materials for your 1 bedroom home. Assemble the building materials for your 1 bedroom home.</p>
                                 </div>
                                 <a href="javascript:void(0)" class="flex items-center lg:space-x-5 space-x-3">
-                                    <h6>Learn More</h6>
+                                    <h6>Redeem Now</h6>
                                     <img src="./assets/Group 11.png" alt="">
                                 </a>
                             </div>
@@ -170,12 +166,12 @@
                             <div class="back1"></div>
                             <img src="./assets/PATTERN.png" alt="" class="back2">
                             <div class="cardWrapper flex flex-col justify-between items-start h-full w-full">
-                                <div class="top lg:space-y-10 md:space-y-5 space-y-4">
-                                    <span class="p-4 flex items-center justify-start">Shopping Coupons</span>
+                                <div class="top">
+                                    <span class="p-4 flex items-center justify-start lg:mb-10">Shopping Coupons</span>
                                     <p>Assemble the building materials for your 1 bedroom home. Assemble the building materials for your 1 bedroom home.</p>
                                 </div>
                                 <a href="javascript:void(0)" class="flex items-center lg:space-x-5 space-x-3">
-                                    <h6>Learn More</h6>
+                                    <h6>Redeem Now</h6>
                                     <img src="./assets/Group 11.png" alt="">
                                 </a>
                             </div>
@@ -184,12 +180,12 @@
                             <div class="back1"></div>
                             <img src="./assets/PATTERN.png" alt="" class="back2">
                             <div class="cardWrapper flex flex-col justify-between items-start h-full w-full">
-                                <div class="top lg:space-y-10 md:space-y-5 space-y-4">
-                                    <span class="p-4 flex items-center justify-start">Travel and Hotel deals</span>
+                                <div class="top">
+                                    <span class="p-4 flex items-center justify-start lg:mb-10">Travel and Hotel deals</span>
                                     <p>Assemble the building materials for your 1 bedroom home. Assemble the building materials for your 1 bedroom home.</p>
                                 </div>
                                 <a href="javascript:void(0)" class="flex items-center lg:space-x-5 space-x-3">
-                                    <h6>Learn More</h6>
+                                    <h6>Redeem Now</h6>
                                     <img src="./assets/Group 11.png" alt="">
                                 </a>
                             </div>
@@ -198,12 +194,12 @@
                             <div class="back1"></div>
                             <img src="./assets/PATTERN.png" alt="" class="back2">
                             <div class="cardWrapper flex flex-col justify-between items-start h-full w-full">
-                                <div class="top lg:space-y-10 md:space-y-5 space-y-4">
-                                    <span class="p-4 flex items-center justify-start">Membership clubs</span>
+                                <div class="top">
+                                    <span class="p-4 flex items-center justify-start lg:mb-10">Membership clubs</span>
                                     <p>Assemble the building materials for your 1 bedroom home. Assemble the building materials for your 1 bedroom home.</p>
                                 </div>
                                 <a href="javascript:void(0)" class="flex items-center lg:space-x-5 space-x-3">
-                                    <h6>Learn More</h6>
+                                    <h6>Redeem Now</h6>
                                     <img src="./assets/Group 11.png" alt="">
                                 </a>
                             </div>
@@ -215,7 +211,7 @@
             <!--STYLE REGISTER SECTION-->
             <div class="styleRegister flex flex-col lg:space-y-12 md:space-y-6 space-4 lg:px-24 md:px-12 px-6 lg:pb-24 md:pb-12 pb-6">
                 <h1>How do I <span>register</span> for the Style points?</h1>
-                <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-0">
+                <div class="styleGrid grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-0">
                     <div class="left flex items-center justify-center h-auto w-auto">
                         <img src="./assets/style points.png" alt="">
                     </div>
@@ -233,7 +229,7 @@
             <!--VIDEO SECTION-->
             <div class="videoSection relative w-full flex items-center justify-start lg:pr-24 md:pr-12 sm:px-6 lg:pl-0 md:pl-0 lg:py-24 md:py-12 py-6">
                 <div class="back absolute"></div>
-                <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-16 md:gap-8 gap-4">
+                <div class="vidGrid grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-16 md:gap-8 gap-4">
                     <div class="imgBox flex items-center justify-center">
                         <span class="play flex items-center justify-center cursor-pointer pl-3"><img src="./assets/play.png" alt=""></span>
                     </div>
@@ -402,16 +398,16 @@
                 },
                 // when window width is >= 640px
                 640: {
-                slidesPerView: 2.3,
+                slidesPerView: 2.6,
                 spaceBetween: 30
                 },
                 1024: {
-                slidesPerView: 2.6,
+                slidesPerView: 2.7,
                 spaceBetween: 30 
                 },
                 1280: {
                 slidesPerView: 3.6,
-                spaceBetween: 50
+                spaceBetween: 30
                 }
             }
         });
