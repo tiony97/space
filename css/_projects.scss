@@ -1,6 +1,34 @@
 //Projects page styles
 .projectBanner {
-    @extend .partnershipBanner;
+    background: $light;
+    border: none;
+    .back {
+        background: $blue;
+        width: 100%;
+        height: 65%;
+        top: 0;
+        left: 0;
+    }
+    .bannerTxt {
+        z-index: 1;
+        h1 {
+            font-size: 64px;
+            font-weight: 900;
+            color: white;
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 600;
+            color: $dark;
+        }
+    }
+    .bannerImg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        z-index: 1;
+    }
 }
 
 .projectsGrid {
@@ -160,52 +188,132 @@
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
 .projectBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 55%;
+        height: 60% !important;
     }
     .bannerTxt {
         h1 {
-            font-size: 55px;
-            line-height: 62px;
+            font-size: 45px;
+            margin-bottom: 20px !important;
         }
         p {
-            font-size: 22px;
-            line-height: 32px;
-        }
-        h5 {
             font-size: 20px;
             line-height: 30px;
+            width: 70%;
         }
-        h6 {
-            font-size: 20px;
-        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
     }
 }    
 .projectsGrid {
+    padding-top: 0px !important;
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 24px !important;
     }
     .projectCard {
         width: 100%;
-        height: 600px;
+        height: 60vh;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2fr 1fr;
         .imgWrapper {
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
         }
         .cardTxt {
-            border-bottom-right-radius: 30px;
-            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
             h4 {
                 font-size: 24px;
                 line-height: 32px;
             }
             p {
-                font-size: 20px;
-                line-height: 32px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+//Single project details
+.projectDetails {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        width: 95%;
+    }
+    .topSection {
+        grid-template-columns: 1.5fr 2fr;
+        .topText {
+            h1 {
+                font-size: 32px;
+                line-height: 40px;
+                margin-top: 10px !important;
+            }
+            .time {
+                margin: 20px 0 !important;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    object-fit: contain;
+                }
+                h6 {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+            p {
+                margin: 0 !important;
+                font-size: 18px;
+                line-height: 24px;
+                width: 80%; 
+            }
+        }
+    }
+    .gallery {
+        margin-top: 24px !important;
+        .projectImg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .imgLightbox {
+        .modalWrapper {
+            position: relative;
+            .close {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .modalContent {
+                .previous {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+                .modalImage {
+                    width: 60vw;
+                    height: 40vh;
+                    object-fit: cover;
+                }
+                .next {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
             }
         }
     }
@@ -214,52 +322,135 @@
 
 @media only screen and (max-width: 1024px) {
 .projectBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 45%;
+        height: 55% !important;
     }
     .bannerTxt {
         h1 {
-            font-size: 45px;
-            line-height: 52px;
+            font-size: 40px;
+            margin-bottom: 20px !important;
         }
         p {
-            font-size: 20px;
-            line-height: 30px;
-        }
-        h5 {
-            font-size: 20px;
+            font-size: 18px;
+            line-height: 24px;
+            width: 80%;
         }
     }
     .bannerImg {
-        height: 250px;
-        object-fit: cover;
+        margin-top: 0px !important;
     }
 }
 .projectsGrid {
+    padding-top: 0px !important;
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 24px !important;
     }
     .projectCard {
         width: 100%;
-        height: 500px;
+        height: 60vh;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2fr 1fr;
         .imgWrapper {
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
         }
         .cardTxt {
-            border-bottom-right-radius: 30px;
-            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
             h4 {
-                font-size: 24px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 24px;
             }
             p {
-                font-size: 20px;
-                line-height: 32px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+//Single project details
+.projectDetails {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        width: 95%;
+    }
+    .topSection {
+        grid-template-columns: 1.5fr 2fr;
+        grid-gap: 30px !important;
+        .topText {
+            h1 {
+                font-size: 24px;
+                line-height: 30px;
+                margin-top: 10px !important;
+            }
+            .time {
+                margin: 20px 0 !important;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    object-fit: contain;
+                    margin-right: 10px !important;
+                }
+                h6 {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin: 0;
+                }
+            }
+            p {
+                margin: 0 !important;
+                font-size: 16px;
+                line-height: 20px;
+                width: 90%; 
+            }
+        }
+    }
+    .gallery {
+        margin-top: 24px !important;
+        .projectImg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .imgLightbox {
+        .modalWrapper {
+            position: relative;
+            .close {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .modalContent {
+                .previous {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+                .modalImage {
+                    width: 60vw;
+                    height: 40vh;
+                    object-fit: cover;
+                }
+                .next {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
             }
         }
     }
@@ -268,28 +459,34 @@
 
 @media only screen and (max-width: 768px) {
 .projectBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 60%;
+        height: 50% !important;
     }
     .bannerTxt {
         h1 {
-            font-size: 45px;
-            line-height: 52px;
+            font-size: 32px;
+            margin-bottom: 40px !important;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
+            width: 80%;
         }
-        h5 {
-            font-size: 16px;
-            line-height: 24px;
-        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
     }
 }
 .projectsGrid {
+    padding-top: 0px !important;
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 24px !important;
     }
     .projectCard {
         width: 100%;
@@ -297,18 +494,107 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2fr 1fr;
+        .imgWrapper {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
         .cardTxt {
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
             h4 {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 24px;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
             }
         }
     }
 }  
+
+//Single project details
+.projectDetails {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        width: 95%;
+    }
+    .topSection {
+        grid-template-columns: 1.5fr 2fr;
+        grid-gap: 30px !important;
+        img {
+            height: 400px;
+        }
+        .topText {
+            h1 {
+                font-size: 24px;
+                line-height: 30px;
+                margin-top: 10px !important;
+            }
+            .time {
+                margin: 20px 0 !important;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    object-fit: contain;
+                    margin-right: 10px !important;
+                }
+                h6 {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin: 0;
+                }
+            }
+            p {
+                margin: 0 !important;
+                font-size: 16px;
+                line-height: 20px;
+                width: 100%; 
+            }
+        }
+    }
+    .gallery {
+        margin-top: 48px !important;
+        .projectImg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .imgLightbox {
+        .modalWrapper {
+            position: relative;
+            .close {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .modalContent {
+                .previous {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+                .modalImage {
+                    width: 60vw;
+                    height: 40vh;
+                    object-fit: cover;
+                }
+                .next {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
 }
 
 @media only screen and (max-width: 540px) {
@@ -320,10 +606,12 @@
     }
     .bannerTxt {
         h1 {
-            font-size: 45px;
+            font-size: 32px;
+            line-height: 40px;
         }
         p,h5 {
             color: white;
+            font-size: 16px !important;
         }
     }
     .bannerImg {
@@ -332,14 +620,123 @@
     }
 }
 .projectsGrid {
+    padding-top: 0px !important;
+    padding-bottom: 48px !important;
     h1 {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 24px !important;
         text-align: center;
     }
     .projectCard {
         width: 100%;
         height: 400px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        .imgWrapper {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .cardTxt {
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            h4 {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}  
+
+//Single project details
+.projectDetails {
+    padding: 30px 24px !important;
+    .back {
+        width: 100%;
+    }
+    .topSection {
+        grid-template-columns: 1fr;
+        grid-gap: 30px !important;
+        img {
+            height: 300px;
+        }
+        .topText {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                font-size: 24px;
+                line-height: 30px;
+                margin-top: 10px !important;
+                text-align: center;
+            }
+            .time {
+                margin: 20px 0 !important;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    object-fit: contain;
+                    margin-right: 10px !important;
+                }
+                h6 {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin: 0;
+                }
+            }
+            p {
+                margin: 0 !important;
+                font-size: 16px;
+                line-height: 20px;
+                width: 100%; 
+                text-align: center;
+            }
+        }
+    }
+    .gallery {
+        margin-top: 48px !important;
+        .projectImg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .imgLightbox {
+        .modalWrapper {
+            position: relative;
+            .close {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .modalContent {
+                .previous {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+                .modalImage {
+                    width: 60vw;
+                    height: 40vh;
+                    object-fit: cover;
+                }
+                .next {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
     }
 }
 }

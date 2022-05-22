@@ -19,7 +19,7 @@
         p {
             font-size: 32px;
             line-height: 40px;
-            font-weight: normal;
+            font-weight: 600;
             color: $dark;
         }
         h5 {
@@ -170,6 +170,9 @@
             }
             &:hover {
                 border: 2px solid #707070;
+                p {
+                    font-weight: 900;
+                }
             }
         }
     }
@@ -348,59 +351,66 @@
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
 .newsBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 60%;
+        height: 67% !important;
     }
     .bannerTxt {
         h1 {
-            font-size: 55px;
+            font-size: 45px;
+            line-height: 52px;
+            margin-bottom: 20px !important;
         }
         p {
-            font-size: 22px;
-            line-height: 32px;
-        }
-        h5 {
             font-size: 20px;
+            line-height: 30px;
+            width: 70%;
         }
-        h6 {
-            font-size: 20px;
-            color: white;
-            font-weight: bolder;
-        }
-        img {
-            width: 30px;
-            height: 30px;
-        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
     }
 }
 .newsArticles {
     .newsTabs {
+        margin-bottom: 48px !important;
         .tab {
-            width: 300px;
-            height: 80px;
+            width: 250px;
+            height: 60px;
+            border-radius: 20px !important;
+            margin: 0 !important;
             p {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+            &:nth-child(2) {
+                margin: 0 30px !important;
             }
         }
     }
     .yearInput {
-        min-height: 80px;
+        height: auto;
+        border-radius: 20px !important;
+        padding: 10px 20px !important;
         p {
-            font-size: 22px;
-            line-height: 32px;
+            font-size: 18px;
+            line-height: 24px;
         }
         .select {
-            width: 300px;
-            height: 100%;
-            font-size: 22px;
-            line-height: 32px;
+            width: 250px;
+            height: 50px;
+            border-radius: 20px !important;
+            font-size: 18px;
+            line-height: 24px;
         }
         .styledSelect {
             padding:0 20px;
-            font-size: 22px;
-            line-height: 32px;
-            width: 300px;
+            font-size: 18px;
+            line-height: 24px;
+            border-radius: 20px !important;
+            width: 100%;
             height: 100%;
             &:after {
                 top: 45%;
@@ -417,90 +427,108 @@
         }
     }
     .articles {
+        margin-top: 24px !important;
+        grid-gap: 30px !important;
         .article {
-            height: 600px;
+            height: 70vh;
             img {
                 width: 100%;
                 height: 70%;
-                border-radius: 30px;
+                border-radius: 20px;
             }
             p {
-                font-size: 22px;
-                line-height: 32px;
+                font-size: 18px;
+                line-height: 24px;
             }
         }
     }
     .more {
-        width: 300px;
-        height: 80px;
-        font-size: 22px;
-        line-height: 32px;
+        width: 250px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 24px;
+        border-radius: 20px !important;
     }
 }
 
 //Article Page
 .articleTabs {
+    padding-bottom: 24px !important;
     .tab {
-        width: 300px;
-        height: 80px;
+        width: 250px;
+        height: 60px;
+        border-radius: 20px !important;
+        margin: 0 !important;
         p {
-            font-size: 22px;
-            line-height: 32px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &:nth-child(2) {
+            margin: 0 30px !important;
         }
     }
 }
 .articleContent {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .top {
         .articleImage {
             width: 100%;
-            height: 600px;
+            height: 60vh;
         }
         .textContent {
             h4 {
-                font-size: 40px;
-                line-height: 52px;
+                font-size: 32px;
+                line-height: 40px;
             }
             .time {
+                margin: 20px 0 !important;
                 img {
-                    width: 40px;
-                    height: 40px;
+                    width: 30px;
+                    height: 30px;
+                    object-fit: contain;
                 }
                 h6 {
-                    font-size: 18px;
-                    line-height: 24px;
+                    font-size: 16px;
+                    line-height: 20px;
                 }
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 24px;
             }
         }
     }
     .textWrap{
         p {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 24px;
         }
     }
     .bottom {
+        margin-top: 24px !important;
+        .btm {
+            margin: 0 !important;
+        }
         .author {
             img {
                 width: 100px;
                 height: 100px;
             }
             h6 {
-                font-size: 24px;
-                line-height: 32px;
+                font-size: 20px;
+                line-height: 24px;
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 24px;
             }
         }
         .shareBtn {
             height: 60px;
             width: auto;
             padding: 0 24px;
+            border-radius: 20px !important;
             p {
                 font-size: 16px;
                 line-height: 40px;
@@ -516,21 +544,26 @@
     }
 }
 .relatedStories {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     h1 {
         font-size: 30px;
         line-height: 40px;
+        margin-bottom: 24px !important;
     }
     .articles {
+        margin-top: 0 !important;
+        grid-gap: 30px !important;
         .article {
-            height: 600px;
+            height: 70vh;
             img {
                 width: 100%;
                 height: 70%;
                 border-radius: 30px;
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 24px;
             }
         }
     }
@@ -539,55 +572,66 @@
 
 @media only screen and (max-width: 1024px) {
 .newsBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 50%;
+        height: 62% !important;
     }
     .bannerTxt {
         h1 {
-            font-size: 45px;
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 20px !important;
         }
         p {
-            font-size: 20px;
-            line-height: 30px;
-        }
-        h5 {
-            font-size: 20px;
+            font-size: 18px;
+            line-height: 24px;
+            width: 80%;
         }
     }
     .bannerImg {
-        height: 250px;
-        object-fit: cover;
+        margin-top: 0px !important;
     }
 }
 .newsArticles {
     .newsTabs {
+        margin-bottom: 48px !important;
         .tab {
             width: 200px;
             height: 60px;
+            border-radius: 20px !important;
+            margin: 0 !important;
             p {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &:nth-child(2) {
+                margin: 0 25px !important;
             }
         }
     }
     .yearInput {
-        height: 60px;
-        width: fit-content;
+        height: auto;
+        border-radius: 20px !important;
+        padding: 10px 20px !important;
         p {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 24px;
         }
         .select {
-            width: 200px;
-            height: 100%;
-            font-size: 20px;
-            line-height: 30px;
+            width: 250px;
+            height: 50px;
+            border-radius: 20px !important;
+            font-size: 18px;
+            line-height: 24px;
         }
         .styledSelect {
             padding:0 20px;
-            font-size: 20px;
-            line-height: 3px;
-            width: 200px;
+            font-size: 18px;
+            line-height: 24px;
+            border-radius: 20px !important;
+            width: 100%;
             height: 100%;
             &:after {
                 top: 45%;
@@ -604,54 +648,143 @@
         }
     }
     .articles {
+        margin-top: 24px !important;
+        grid-gap: 30px !important;
         .article {
-            height: 500px;
+            height: 70vh;
             img {
                 width: 100%;
                 height: 70%;
+                border-radius: 20px;
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 24px;
             }
         }
     }
     .more {
-        width: 200px;
+        width: 250px;
         height: 60px;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 24px;
+        border-radius: 20px !important;
     }
 }
 
 //Article Page
 .articleTabs {
+    padding-bottom: 24px !important;
     .tab {
         width: 200px;
         height: 60px;
+        border-radius: 20px !important;
+        margin: 0 !important;
         p {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &:nth-child(2) {
+            margin: 0 30px !important;
+        }
+    }
+}
+.articleContent {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .top {
+        .articleImage {
+            width: 100%;
+            height: 80vh;
+        }
+        .textContent {
+            h4 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            .time {
+                margin: 20px 0 !important;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    object-fit: contain;
+                }
+                h6 {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .textWrap{
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    .bottom {
+        margin-top: 24px !important;
+        .btm {
+            margin: 0 !important;
+        }
+        .author {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            h6 {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        .shareBtn {
+            height: 60px;
+            width: auto;
+            padding: 0 24px;
+            border-radius: 20px !important;
+            p {
+                font-size: 16px;
+                line-height: 40px;
+                color: white;
+                font-weight: bolder;
+            }
+            img {
+                width: 40px;
+                height: 30px;
+                object-fit: contain;
+            }
         }
     }
 }
 .relatedStories {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     h1 {
         font-size: 30px;
         line-height: 40px;
+        margin-bottom: 24px !important;
     }
-    .articles { 
-        grid-gap: 20px !important;
+    .articles {
+        margin-top: 0 !important;
+        grid-gap: 30px !important;
         .article {
-            height: 500px;
+            height: 70vh;
             img {
                 width: 100%;
                 height: 70%;
                 border-radius: 30px;
             }
             p {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 18px;
+                line-height: 24px;
             }
         }
     }
@@ -660,32 +793,33 @@
 
 @media only screen and (max-width: 768px) {
 .newsBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
     .back {
-        height: 60%;
+        height: 55% !important;
     }
     .bannerTxt {
         h1 {
             font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 20px !important;
         }
         p {
             font-size: 16px;
-            line-height: 24px;
-        }
-        h5 {
-            font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
+            width: 80%;
         }
     }
     .bannerImg {
-        height: 250px;
-        object-fit: cover;
+        margin-top: 0px !important;
     }
 }
 .newsArticles {
     .newsTabs {
         .tab {
             width: 160px;
-            height: 60px;
+            height: 50px;
             p {
                 font-size: 16px;
                 line-height: 24px;
@@ -765,7 +899,7 @@
         }
         .textContent {
             h4 {
-                font-size: 32px;
+                font-size: 30px;
                 line-height: 40px;
             }
             .time {
@@ -775,19 +909,19 @@
                 }
                 h6 {
                     font-size: 16px;
-                    line-height: 24px;
+                    line-height: 20px;
                 }
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
             }
         }
     }
     .textWrap{
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
         }
     }
     .bottom {
@@ -798,11 +932,11 @@
             }
             h6 {
                 font-size: 20px;
-                line-height: 30px;
+                line-height: 24px;
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
             }
         }
         .shareBtn {
@@ -811,7 +945,7 @@
             padding: 0 24px;
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
             }
             img {
                 width: 40px;
@@ -835,7 +969,7 @@
             }
             p {
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 20px;
             }
         }
     }
@@ -851,7 +985,7 @@
     }
     .bannerTxt {
         h1 {
-            font-size: 45px;
+            font-size: 32px;
         }
         p,h5 {
             color: white;
@@ -875,6 +1009,9 @@
             p {
                 font-size: 16px;
                 line-height: 24px;
+            }
+            &:nth-child(2) {
+                margin: 10px 0 !important;
             }
         }
     }
@@ -943,7 +1080,10 @@
         margin-bottom: 10px;
         p {
             font-size: 16px;
-            line-height: 24px;
+            line-height: 20px;
+        }
+        &:nth-child(2) {
+            margin: 10px 0 !important;
         }
     }
 }

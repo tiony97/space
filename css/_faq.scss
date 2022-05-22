@@ -19,30 +19,17 @@
         p {
             font-size: 32px;
             line-height: 40px;
-            font-weight: normal;
+            font-weight: 600;
             color: $dark;
-        }
-        h5 {
-            font-size: 24px;
-            color: $dark;
-        }
-        h6 {
-            font-size: 24px;
-            color: white;
-            font-weight: bolder;
-        }
-        img {
-            width: 39px;
-            height: 39px;
         }
     }
     .bannerImg {
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
         z-index: 1;
     }
 }
-
 .faqFilter {
     background: $light;
     .filter {
@@ -99,4 +86,293 @@
         }
     }
     
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+.faqBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        height: 70% !important;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+            margin-bottom: 20px !important;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+            width: 70%;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
+    }
+}
+.faqFilter {
+    padding-bottom: 0px !important;
+    .filter {
+        margin-bottom: 0px !important;
+        p {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        span {
+            width: auto;
+            height: 60px;
+            border-radius: 20px;
+            h5 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+    .filterContent {
+        .close {
+            width: 40px;
+            height: 40px;
+            object-fit: contain; 
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        h5 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .filterItems {
+            margin: 24px 0 !important;
+        }
+        .spacer {
+            display: none !important;
+        }
+    } 
+}   
+}
+@media only screen and (max-width: 1024px) {
+.faqBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        height: 60% !important;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 20px !important;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+            width: 70%;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
+    }
+} 
+.faqFilter {
+    .filter {
+        p {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        span {
+            width: auto;
+            height: 60px;
+            border-radius: 20px;
+            h5 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+    .filterContent {
+        .close {
+            width: 40px;
+            height: 40px;
+            object-fit: contain; 
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        h5 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .filterItems {
+            margin: 24px 0 !important;
+        }
+        .spacer {
+            display: none !important;
+        }
+    } 
+} 
+}
+@media only screen and (max-width: 768px) {
+.faqBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        height: 55% !important;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 20px !important;
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            width: 80%;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
+    }
+}
+.faqFilter {
+    .filter {
+        p {
+            font-size: 24px;
+            line-height: 32px;
+            width: 60%;
+        }
+        span {
+            width: auto;
+            height: fit-content;
+            border-radius: 20px;
+            h5 {
+                font-size: 24px;
+                line-height: 35px;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+    .filterContent {
+        .close {
+            width: 40px;
+            height: 40px;
+            object-fit: contain; 
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        h5 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .filterItems {
+            margin: 24px 0 !important;
+        }
+        .spacer {
+            display: none !important;
+        }
+    } 
+}
+}
+@media only screen and (max-width: 540px) {
+.faqBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+    .back {
+        height: 80%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        p,h5 {
+            color: white;
+            font-size: 16px !important;
+        }
+    }
+    .bannerImg {
+        height: 300px;
+        object-fit: cover;
+    }
+}
+.faqFilter {
+    .filter {
+        flex-direction: column;
+        align-items: center;
+        p {
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            margin: 0 !important;
+            margin-bottom: 10px !important;
+            width: 100%;
+        }
+        span {
+            width: auto;
+            height: 60px;
+            border-radius: 20px;
+            margin: 0 !important;
+            h5 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+    }
+    .filterContent {
+        .close {
+            width: 40px;
+            height: 40px;
+            object-fit: contain; 
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        h5 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .top {
+            flex-direction: column;
+        }
+        .filterItems {
+            margin: 24px 0 !important;
+            flex-direction: column;
+            align-items: center;
+        }
+        .spacer {
+            display: none !important;
+        }
+    } 
+}
 }

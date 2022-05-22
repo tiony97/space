@@ -5,7 +5,7 @@
     .back {
         background: $blue;
         width: 100%;
-        height: 65%;
+        height: 70%;
         top: 0;
         left: 0;
     }
@@ -19,126 +19,495 @@
         p {
             font-size: 32px;
             line-height: 40px;
-            font-weight: normal;
+            font-weight: 600;
             color: $dark;
-        }
-        h5 {
-            font-size: 24px;
-            color: $dark;
-        }
-        h6 {
-            font-size: 24px;
-            color: white;
-            font-weight: bolder;
-        }
-        img {
-            width: 39px;
-            height: 39px;
         }
     }
     .bannerImg {
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
         z-index: 1;
     }
 }
 
 .downloadsFilter {
-    background: $light;
-    .filter {
-        p {
+background: $light;
+.filter {
+    p {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: normal;
+        color: $dark;
+    }
+    span {
+        width: auto;
+        height: 95px;
+        background: white;
+        border-radius: 30px;
+        border: 2px solid #1629a323;
+        h5 {
             font-size: 48px;
             line-height: 56px;
-            font-weight: normal;
+            font-weight: bolder;
             color: $dark;
+        }
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+.filterContent {
+    background: white;
+    transition: all .3s ease-in-out;
+    .close {
+        width: 48px;
+        height: 48px; 
+    }
+    p {
+        font-size: 24px;
+        line-height: 32px;
+        color: $dark;
+        font-weight: normal;
+    }
+    h5 {
+        font-size: 32px;
+        line-height: 40px;
+        color: $dark;
+        font-weight: bolder;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        &:hover {
+            color: $blue;
+        }
+    }
+    .active {
+        color: $blue;
+    }
+}
+.downloads {
+    .download {
+        background: white;
+        border-radius: 30px;
+        height: 500px;
+        transition: all .3s ease-in-out;
+        .overlay {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        p {
+            font-size: 32px;
+            line-height: 40px;
+            color: $dark;
+            font-weight: normal;
+            z-index: 1;
+        }
+        h6 {
+            font-size: 24px;
+            line-height: 32px;
+            color: $dark;
+            font-weight: 800;
+            z-index: 1;
+        }
+        .downloadIcon{
+            width: 50px;
+            height: 50px;
+        }
+        &:hover {
+            background: $blue;
+            h6 {
+                color: $orange !important;
+            }
+            p {
+                color: white !important;
+            }
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 1600px) {
+.downloadsBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        height: 65% !important;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+            line-height: 52px;
+            margin-bottom: 20px !important;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+            width: 70%;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
+    }
+}
+.downloadsFilter {
+    padding-bottom: 48px !important;
+    .filter {
+        p {
+            font-size: 32px;
+            line-height: 40px;
         }
         span {
             width: auto;
-            height: 95px;
-            background: white;
-            border-radius: 30px;
-            border: 2px solid #1629a323;
+            height: 60px;
+            border-radius: 20px;
             h5 {
-                font-size: 48px;
-                line-height: 56px;
-                font-weight: bolder;
-                color: $dark;
+                font-size: 40px;
+                line-height: 45px;
             }
             img {
-                width: 60px;
-                height: 60px;
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
             }
         }
     }
     .filterContent {
-        background: white;
-        transition: all .3s ease-in-out;
         .close {
-            width: 48px;
-            height: 48px; 
+            width: 40px;
+            height: 40px;
+            object-fit: contain; 
         }
         p {
-            font-size: 24px;
-            line-height: 32px;
-            color: $dark;
-            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
         }
         h5 {
-            font-size: 32px;
-            line-height: 40px;
-            color: $dark;
-            font-weight: bolder;
-            cursor: pointer;
-            transition: all .3s ease-in-out;
-            &:hover {
-                color: $blue;
-            }
+            font-size: 24px;
+            line-height: 32px;
         }
-        .active {
-            color: $blue;
+        .filterItems {
+            margin: 24px 0 !important;
+        }
+        .spacer {
+            display: none !important;
         }
     }
     .downloads {
+        margin-top: 24px !important;
         .download {
-            background: white;
-            border-radius: 30px;
-            height: 500px;
-            transition: all .3s ease-in-out;
-            .overlay {
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: 1;
-            }
+            border-radius: 20px;
+            height: 350px;
             p {
-                font-size: 32px;
-                line-height: 40px;
-                color: $dark;
-                font-weight: normal;
-                z-index: 1;
+                font-size: 24px;
+                line-height: 30px;
+                margin-top: 24px !important;
             }
             h6 {
-                font-size: 24px;
-                line-height: 32px;
-                color: $dark;
-                font-weight: normal;
-                z-index: 1;
+                font-size: 18px;
+                line-height: 24px;
             }
             .downloadIcon{
-                width: 50px;
-                height: 50px;
-            }
-            &:hover {
-                background: $blue;
-                h6 {
-                    color: $orange !important;
-                }
-                p {
-                    color: white !important;
-                }
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
             }
         }
     }
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.downloadsBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        height: 60% !important;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 20px !important;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+            width: 70%;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
+    }
+}
+.downloadsFilter {
+    padding-bottom: 48px !important;
+    .filter {
+        p {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        span {
+            width: auto;
+            height: 60px;
+            border-radius: 20px;
+            h5 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+    .filterContent {
+        .close {
+            width: 40px;
+            height: 40px;
+            object-fit: contain; 
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        h5 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .filterItems {
+            margin: 24px 0 !important;
+        }
+        .spacer {
+            display: none !important;
+        }
+    }
+    .downloads {
+        margin-top: 24px !important;
+        grid-gap: 30px !important;
+        .download {
+            border-radius: 20px;
+            height: 300px;
+            padding: 30px !important;
+            p {
+                font-size: 20px;
+                line-height: 24px;
+                margin-top: 24px !important;
+            }
+            h6 {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .downloadIcon{
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 768px) {
+.downloadsBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        height: 55% !important;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 20px !important;
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            width: 80%;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
+    }
+}
+.downloadsFilter {
+    padding-bottom: 48px !important;
+    .filter {
+        p {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        span {
+            width: auto;
+            height: 60px;
+            border-radius: 20px;
+            h5 {
+                font-size: 30px;
+                line-height: 35px;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+    .filterContent {
+        .close {
+            width: 40px;
+            height: 40px;
+            object-fit: contain; 
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        h5 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .filterItems {
+            margin: 24px 0 !important;
+        }
+        .spacer {
+            display: none !important;
+        }
+    }
+    .downloads {
+        margin-top: 24px !important;
+        grid-gap: 30px !important;
+        .download {
+            border-radius: 20px;
+            height: 300px;
+            padding: 30px !important;
+            p {
+                font-size: 20px;
+                line-height: 24px;
+                margin-top: 24px !important;
+            }
+            h6 {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .downloadIcon{
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 540px) {
+.downloadsBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+    .back {
+        height: 80%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        p,h5 {
+            color: white;
+            font-size: 16px !important;
+        }
+    }
+    .bannerImg {
+        height: 300px;
+        object-fit: cover;
+    }
+}
+.downloadsFilter {
+    padding: 30px 24px !important;
+    .filter {
+        flex-direction: column;
+        align-items: center;
+        p {
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            margin: 0 !important;
+        }
+        span {
+            width: auto;
+            height: 60px;
+            border-radius: 20px;
+            margin: 0 !important;
+            h5 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+    }
+    .filterContent {
+        .close {
+            width: 40px;
+            height: 40px;
+            object-fit: contain; 
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        h5 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .top {
+            flex-direction: column;
+        }
+        .filterItems {
+            margin: 24px 0 !important;
+            flex-direction: column;
+            align-items: center;
+        }
+        .spacer {
+            display: none !important;
+        }
+    }
+    .downloads {
+        margin-top: 24px !important;
+        grid-gap: 30px !important;
+        .download {
+            border-radius: 20px;
+            height: 300px;
+            padding: 30px !important;
+            p {
+                font-size: 20px;
+                line-height: 24px;
+                margin-top: 24px !important;
+            }
+            h6 {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            .downloadIcon{
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+}
 }

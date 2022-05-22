@@ -19,26 +19,14 @@
         p {
             font-size: 32px;
             line-height: 40px;
-            font-weight: normal;
+            font-weight: 600;
             color: $dark;
-        }
-        h5 {
-            font-size: 24px;
-            color: $dark;
-        }
-        h6 {
-            font-size: 24px;
-            color: white;
-            font-weight: bolder;
-        }
-        img {
-            width: 39px;
-            height: 39px;
         }
     }
     .bannerImg {
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
         z-index: 1;
     }
 }
@@ -56,6 +44,8 @@
         z-index: 0;
     }
     .featuresInfo {
+        grid-template-columns: 1.5fr 1fr;
+        grid-gap: 48px;
         z-index: 1;
         .imgWrapper {
             width: 80vw;
@@ -133,7 +123,7 @@
         p {
             font-size: 48px;
             line-height: 56px;
-            font-weight: normal;
+            font-weight: 600;
             color: $dark;
         }
         span {
@@ -198,7 +188,7 @@
                 font-size: 24px;
                 line-height: 32px;
                 color: $dark;
-                font-weight: normal;
+                font-weight: 600;
             }
             &:hover {
                 border: 2px solid #707070;
@@ -302,7 +292,6 @@
         }
     }
 }
-
 .relatedResources {
     background: $light;
     h1 {
@@ -353,4 +342,998 @@
         line-height: 32px;
         font-weight: bolder;
     }
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+.resourceBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        height: 65% !important;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 45px;
+            margin-bottom: 20px !important;
+        }
+        p {
+            font-size: 20px;
+            line-height: 30px;
+            width: 60%;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
+    }
+}  
+.featuredResources {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        width: 95%;
+    }
+    .featuresInfo {
+        grid-gap: 30px;
+        .imgWrapper {
+            width: 100%;
+            height: 60vh;
+            .linkBtns {
+                .commBtn {
+                    width: 70px;
+                    height: 50px;
+                    img {
+                        width: 20.82px;
+                        height: 20.03px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        .featuresText {
+            h1 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            .names {
+                margin-bottom: 10px !important;
+            }
+            h3 {
+                font-size: 24px;
+                line-height: 30px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+                width: 100%;
+            }
+            a {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+.resourceFilter {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .filter {
+        margin-bottom: 0px !important;
+        p {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        span {
+            width: auto;
+            height: 60px;
+            border-radius: 20px;
+            h5 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+    .filterContent {
+        .close {
+            width: 40px;
+            height: 40px;
+            object-fit: contain; 
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        h5 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .filterItems {
+            margin: 24px 0 !important;
+        }
+        .spacer {
+            display: none !important;
+        }
+    }
+    .resources {
+        margin-top: 24px !important;
+        grid-gap: 30px !important;
+        .resource {
+            height: 70vh;
+            img {
+                width: 100%;
+                height: 70%;
+                border-radius: 20px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+//SINGLE RESOURCE PAGE STYLES
+.resourceContent {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .top {
+        .resourceImage {
+            width: 100%;
+            height: 60vh;
+        }
+        .textContent {
+            h4 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            .time {
+                margin: 20px 0 !important;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    object-fit: contain;
+                }
+                h6 {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .textWrap{
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    .bottom {
+        margin-top: 24px !important;
+        .btm {
+            margin: 0 !important;
+        }
+        .author {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            h6 {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        .shareBtn {
+            height: 60px;
+            width: auto;
+            padding: 0 24px;
+            border-radius: 20px !important;
+            p {
+                font-size: 16px;
+                line-height: 40px;
+                color: white;
+                font-weight: bolder;
+            }
+            img {
+                width: 40px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.relatedResources {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 10px !important;
+    }
+    p {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600 !important;
+        margin-bottom: 20px !important;
+        margin-top: 0 !important;
+    }
+    .resources {
+        margin-top: 0 !important;
+        grid-gap: 30px !important;
+        .resource {
+            height: 70vh;
+            img {
+                width: 100%;
+                height: 70%;
+                border-radius: 30px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+                margin-top: 20px !important;
+            }
+        }
+    }
+    .more {
+        width: 300px;
+        height: 60px;
+        border-radius: 20px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.resourceBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        height: 60% !important;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 20px !important;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+            width: 60%;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
+    }
+}  
+.featuredResources {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        width: 95%;
+    }
+    .featuresInfo {
+        grid-gap: 30px;
+        .imgWrapper {
+            width: 100%;
+            height: 60vh;
+            .linkBtns {
+                .commBtn {
+                    width: 70px;
+                    height: 50px;
+                    img {
+                        width: 20.82px;
+                        height: 20.03px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        .featuresText {
+            h1 {
+                font-size: 30px;
+                line-height: 35px;
+                width: 100%;
+            }
+            .names {
+                margin-bottom: 10px !important;
+            }
+            h3 {
+                font-size: 24px;
+                line-height: 30px;
+                width: 100%;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+                width: 100%;
+            }
+            a {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+.resourceFilter {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .filter {
+        margin-bottom: 0px !important;
+        p {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        span {
+            width: auto;
+            height: 60px;
+            border-radius: 20px;
+            h5 {
+                font-size: 40px;
+                line-height: 45px;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+    .filterContent {
+        .close {
+            width: 40px;
+            height: 40px;
+            object-fit: contain; 
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        h5 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .filterItems {
+            margin: 24px 0 !important;
+        }
+        .spacer {
+            display: none !important;
+        }
+    }
+    .resources {
+        margin-top: 24px !important;
+        grid-gap: 30px !important;
+        .resource {
+            height: 70vh;
+            img {
+                width: 100%;
+                height: 70%;
+                border-radius: 20px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+} 
+
+//SINGLE RESOURCE PAGE STYLES
+.resourceContent {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .top {
+        .resourceImage {
+            width: 100%;
+            height: 80vh;
+        }
+        .textContent {
+            h4 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            .time {
+                margin: 20px 0 !important;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    object-fit: contain;
+                }
+                h6 {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+    .textWrap{
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    .bottom {
+        margin-top: 24px !important;
+        .btm {
+            margin: 0 !important;
+        }
+        .author {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+            h6 {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        .shareBtn {
+            height: 60px;
+            width: auto;
+            padding: 0 24px;
+            border-radius: 20px !important;
+            p {
+                font-size: 16px;
+                line-height: 40px;
+                color: white;
+                font-weight: bolder;
+            }
+            img {
+                width: 40px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.relatedResources {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    h1 {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 10px !important;
+    }
+    p {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600 !important;
+        margin-bottom: 20px !important;
+        margin-top: 0 !important;
+    }
+    .resources {
+        margin-top: 0 !important;
+        grid-gap: 30px !important;
+        .resource {
+            height: 70vh;
+            img {
+                width: 100%;
+                height: 70%;
+                border-radius: 20px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+                margin-top: 20px !important;
+            }
+        }
+    }
+    .more {
+        width: 300px;
+        height: 60px;
+        border-radius: 20px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+}
+
+@media only screen and (max-width: 768px) {
+.resourceBanner {
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        height: 55% !important;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 20px !important;
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            width: 80%;
+        }
+    }
+    .bannerImg {
+        margin-top: 0px !important;
+    }
+}  
+.featuredResources {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .back {
+        width: 95%;
+    }
+    .featuresInfo {
+        grid-gap: 30px;
+        .imgWrapper {
+            width: 100%;
+            height: 400px;
+            .linkBtns {
+                .commBtn {
+                    width: 70px;
+                    height: 50px;
+                    img {
+                        width: 20.82px;
+                        height: 20.03px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        .featuresText {
+            h1 {
+                font-size: 30px;
+                line-height: 35px;
+                width: 100%;
+            }
+            .names {
+                margin-bottom: 10px !important;
+            }
+            h3 {
+                font-size: 24px;
+                line-height: 30px;
+                width: 100%;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                width: 100%;
+            }
+            a {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+.resourceFilter {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    .filter {
+        p {
+            font-size: 24px;
+            line-height: 32px;
+            width: 60%;
+        }
+        span {
+            width: 300px;
+            height: fit-content;
+            border-radius: 20px;
+            h5 {
+                font-size: 24px;
+                line-height: 35px;
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+            }
+        }
+    }
+    .filterContent {
+        .close {
+            width: 40px;
+            height: 40px;
+            object-fit: contain; 
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        h5 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .filterItems {
+            margin: 24px 0 !important;
+        }
+        .spacer {
+            display: none !important;
+        }
+    }
+    .resources {
+        margin-top: 24px !important;
+        grid-gap: 30px !important;
+        .resource {
+            height: 500px;
+            img {
+                width: 100%;
+                height: 70%;
+                border-radius: 20px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+//SINGLE RESOURCE PAGE STYLES
+.resourceContent {
+    .top {
+        .resourceImage {
+            width: 100%;
+            height: 100%;
+        }
+        .textContent {
+            h4 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            .time {
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+                h6 {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+    .textWrap{
+        p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .bottom {
+        .author {
+            img {
+                width: 80px;
+                height: 80px;
+            }
+            h6 {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        .shareBtn {
+            height: 60px;
+            width: 350px;
+            padding: 0 24px;
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            img {
+                width: 40px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.relatedResources {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .resources { 
+        .resource {
+            height: 400px;
+            img {
+                width: 100%;
+                height: 70%;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+    .more {
+        width: 300px;
+        height: 60px;
+        border-radius: 20px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+}
+
+@media only screen and (max-width: 540px) {
+.resourceBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+    .back {
+        height: 80%;
+    }
+    .bannerTxt {
+        h1 {
+            font-size: 32px;
+        }
+        p,h5 {
+            color: white;
+        }
+    }
+    .bannerImg {
+        height: 300px;
+        object-fit: cover;
+    }
+}
+.featuredResources {
+    padding: 30px 24px !important;
+    .back {
+        width: 100%;
+    }
+    .featuresInfo {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        .imgWrapper {
+            width: 100%;
+            height: 300px;
+            .linkBtns {
+                .commBtn {
+                    width: 70px;
+                    height: 50px;
+                    img {
+                        width: 20.82px;
+                        height: 20.03px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        .featuresText {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                font-size: 30px;
+                line-height: 35px;
+                width: 100%;
+                text-align: center;
+            }
+            .names {
+                margin-bottom: 10px !important;
+            }
+            h3 {
+                font-size: 24px;
+                line-height: 30px;
+                width: 100%;
+                text-align: center;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                width: 100%;
+                text-align: center;
+            }
+            a {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+.resourceFilter {
+    padding: 30px 24px !important;
+    .filter {
+        flex-direction: column;
+        align-items: center;
+        p {
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            margin: 0 !important;
+            margin-bottom: 10px !important;
+            width: 100%;
+        }
+        span {
+            width: 60vw;
+            height: 60px;
+            border-radius: 20px;
+            margin: 0 !important;
+            h5 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+    }
+    .filterContent {
+        .close {
+            width: 40px;
+            height: 40px;
+            object-fit: contain; 
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        h5 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .top {
+            flex-direction: column;
+        }
+        .filterItems {
+            margin: 24px 0 !important;
+            flex-direction: column;
+            align-items: center;
+        }
+        .spacer {
+            display: none !important;
+        }
+    }
+    .resources {
+        margin-top: 24px !important;
+        grid-gap: 30px !important;
+        .resource {
+            height: 400px;
+            img {
+                width: 100%;
+                height: 70%;
+                border-radius: 20px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+//SINGLE RESOURCE PAGE STYLES
+.resourceContent {
+    padding: 30px 24px !important;
+    .back {
+        width: 100%;
+    }
+    .top {
+        padding: 0 !important;
+        .textContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h4 {
+                font-size: 30px;
+                line-height: 32px;
+                text-align: center;
+            }
+            .time {
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+                h6 {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+            }
+        }
+    }
+    .textWrap{
+        padding: 0 !important;
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+    .bottom {
+        padding: 0 !important;
+        .author {
+            img {
+                width: 60px;
+                height: 60px;
+            }
+            h6 {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        .shareBtn {
+            height: 60px;
+            width: 100%;
+            padding: 0 24px;
+            margin-top: 10px;
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            img {
+                width: 40px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+.relatedResources {
+    h1 {
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    .resources { 
+        .resource {
+            height: 400px;
+            img {
+                width: 100%;
+                height: 70%;
+            }
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                text-align: left;
+            }
+        }
+    }
+    .more {
+        width: 55vw;
+        height: 60px;
+        border-radius: 20px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
 }

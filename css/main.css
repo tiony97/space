@@ -13168,7 +13168,7 @@ footer .footerEnd p {
     height: 80%;
   }
   .aboutBanner .bannerTxt h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
   .aboutBanner .bannerTxt p, .aboutBanner .bannerTxt h5 {
     color: white;
@@ -13409,7 +13409,7 @@ footer .footerEnd p {
     height: 80%;
   }
   .aboutTeamBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 32px;
   }
   .aboutTeamBanner .bannerTxt p, .aboutTeamBanner .bannerTxt h5 {
     color: white;
@@ -13511,7 +13511,7 @@ footer .footerEnd p {
     height: 80%;
   }
   .aboutCultureBanner .bannerTxt h1, .aboutCareerBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 32px;
   }
   .aboutCultureBanner .bannerTxt p, .aboutCareerBanner .bannerTxt p, .aboutCultureBanner .bannerTxt h5, .aboutCareerBanner .bannerTxt h5 {
     color: white;
@@ -13591,7 +13591,7 @@ footer .footerEnd p {
     height: 80%;
   }
   .aboutCareerBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 32px;
   }
   .aboutCareerBanner .bannerTxt p, .aboutCareerBanner .bannerTxt h5 {
     color: white;
@@ -15494,6 +15494,10 @@ footer .footerEnd p {
   .trainingSpacing {
     height: 48px !important;
   }
+  .communityInfo {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .communityInfo .topSection {
     -ms-grid-columns: 1.5fr 2fr;
         grid-template-columns: 1.5fr 2fr;
@@ -15505,12 +15509,15 @@ footer .footerEnd p {
        object-fit: cover;
   }
   .communityInfo .topSection .topText h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .communityInfo .topSection .topText p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .communityInfo .gallery {
+    margin-top: 48px !important;
   }
   .communityInfo .gallery .communityImg {
     width: 100%;
@@ -15828,23 +15835,30 @@ footer .footerEnd p {
   .trainingSpacing {
     height: 48px !important;
   }
+  .communityInfo {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .communityInfo .topSection {
     -ms-grid-columns: 1.5fr 2fr;
         grid-template-columns: 1.5fr 2fr;
   }
   .communityInfo .topSection img {
     width: 100%;
-    height: 100%;
+    height: 70vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .communityInfo .topSection .topText h1 {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .communityInfo .topSection .topText p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .communityInfo .gallery {
+    margin-top: 48px !important;
   }
   .communityInfo .gallery .communityImg {
     width: 100%;
@@ -16156,12 +16170,12 @@ footer .footerEnd p {
        object-fit: cover;
   }
   .communityInfo .topSection .topText h1 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
   }
   .communityInfo .topSection .topText p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .communityInfo .gallery .communityImg {
     width: 100%;
@@ -16598,7 +16612,7 @@ footer .footerEnd p {
 .newsBanner .bannerTxt p {
   font-size: 32px;
   line-height: 40px;
-  font-weight: normal;
+  font-weight: 600;
   color: black;
 }
 
@@ -16779,6 +16793,10 @@ footer .footerEnd p {
 
 .newsArticles .articles .article:hover {
   border: 2px solid #707070;
+}
+
+.newsArticles .articles .article:hover p {
+  font-weight: 900;
 }
 
 .newsArticles .more {
@@ -16978,54 +16996,67 @@ footer .footerEnd p {
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
+  .newsBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .newsBanner .back {
-    height: 60%;
+    height: 67% !important;
   }
   .newsBanner .bannerTxt h1 {
-    font-size: 55px;
+    font-size: 45px;
+    line-height: 52px;
+    margin-bottom: 20px !important;
   }
   .newsBanner .bannerTxt p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .newsBanner .bannerTxt h5 {
     font-size: 20px;
+    line-height: 30px;
+    width: 70%;
   }
-  .newsBanner .bannerTxt h6 {
-    font-size: 20px;
-    color: white;
-    font-weight: bolder;
+  .newsBanner .bannerImg {
+    margin-top: 0px !important;
   }
-  .newsBanner .bannerTxt img {
-    width: 30px;
-    height: 30px;
+  .newsArticles .newsTabs {
+    margin-bottom: 48px !important;
   }
   .newsArticles .newsTabs .tab {
-    width: 300px;
-    height: 80px;
+    width: 250px;
+    height: 60px;
+    border-radius: 20px !important;
+    margin: 0 !important;
   }
   .newsArticles .newsTabs .tab p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .newsArticles .newsTabs .tab:nth-child(2) {
+    margin: 0 30px !important;
   }
   .newsArticles .yearInput {
-    min-height: 80px;
+    height: auto;
+    border-radius: 20px !important;
+    padding: 10px 20px !important;
   }
   .newsArticles .yearInput p {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .newsArticles .yearInput .select {
-    width: 300px;
-    height: 100%;
-    font-size: 22px;
-    line-height: 32px;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px !important;
+    font-size: 18px;
+    line-height: 24px;
   }
   .newsArticles .yearInput .styledSelect {
     padding: 0 20px;
-    font-size: 22px;
-    line-height: 32px;
-    width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 20px !important;
+    width: 100%;
     height: 100%;
   }
   .newsArticles .yearInput .styledSelect:after {
@@ -17040,72 +17071,101 @@ footer .footerEnd p {
     margin: 0 0;
     padding: 0 10px;
   }
+  .newsArticles .articles {
+    margin-top: 24px !important;
+    grid-gap: 30px !important;
+  }
   .newsArticles .articles .article {
-    height: 600px;
+    height: 70vh;
   }
   .newsArticles .articles .article img {
     width: 100%;
     height: 70%;
-    border-radius: 30px;
+    border-radius: 20px;
   }
   .newsArticles .articles .article p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .newsArticles .more {
-    width: 300px;
-    height: 80px;
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .articleTabs .tab {
-    width: 300px;
-    height: 80px;
-  }
-  .articleTabs .tab p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .articleContent .top .articleImage {
-    width: 100%;
-    height: 600px;
-  }
-  .articleContent .top .textContent h4 {
-    font-size: 40px;
-    line-height: 52px;
-  }
-  .articleContent .top .textContent .time img {
-    width: 40px;
-    height: 40px;
-  }
-  .articleContent .top .textContent .time h6 {
     font-size: 18px;
     line-height: 24px;
   }
+  .newsArticles .more {
+    width: 250px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 20px !important;
+  }
+  .articleTabs {
+    padding-bottom: 24px !important;
+  }
+  .articleTabs .tab {
+    width: 250px;
+    height: 60px;
+    border-radius: 20px !important;
+    margin: 0 !important;
+  }
+  .articleTabs .tab p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .articleTabs .tab:nth-child(2) {
+    margin: 0 30px !important;
+  }
+  .articleContent {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .articleContent .top .articleImage {
+    width: 100%;
+    height: 60vh;
+  }
+  .articleContent .top .textContent h4 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .articleContent .top .textContent .time {
+    margin: 20px 0 !important;
+  }
+  .articleContent .top .textContent .time img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .articleContent .top .textContent .time h6 {
+    font-size: 16px;
+    line-height: 20px;
+  }
   .articleContent .top .textContent p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .articleContent .textWrap p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .articleContent .bottom {
+    margin-top: 24px !important;
+  }
+  .articleContent .bottom .btm {
+    margin: 0 !important;
   }
   .articleContent .bottom .author img {
     width: 100px;
     height: 100px;
   }
   .articleContent .bottom .author h6 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .articleContent .bottom .author p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .articleContent .bottom .shareBtn {
     height: 60px;
     width: auto;
     padding: 0 24px;
+    border-radius: 20px !important;
   }
   .articleContent .bottom .shareBtn p {
     font-size: 16px;
@@ -17119,12 +17179,21 @@ footer .footerEnd p {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .relatedStories {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .relatedStories h1 {
     font-size: 30px;
     line-height: 40px;
+    margin-bottom: 24px !important;
+  }
+  .relatedStories .articles {
+    margin-top: 0 !important;
+    grid-gap: 30px !important;
   }
   .relatedStories .articles .article {
-    height: 600px;
+    height: 70vh;
   }
   .relatedStories .articles .article img {
     width: 100%;
@@ -17132,59 +17201,73 @@ footer .footerEnd p {
     border-radius: 30px;
   }
   .relatedStories .articles .article p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
+  .newsBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .newsBanner .back {
-    height: 50%;
+    height: 62% !important;
   }
   .newsBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px !important;
   }
   .newsBanner .bannerTxt p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .newsBanner .bannerTxt h5 {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 80%;
   }
   .newsBanner .bannerImg {
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    margin-top: 0px !important;
+  }
+  .newsArticles .newsTabs {
+    margin-bottom: 48px !important;
   }
   .newsArticles .newsTabs .tab {
     width: 200px;
     height: 60px;
+    border-radius: 20px !important;
+    margin: 0 !important;
   }
   .newsArticles .newsTabs .tab p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .newsArticles .newsTabs .tab:nth-child(2) {
+    margin: 0 25px !important;
   }
   .newsArticles .yearInput {
-    height: 60px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    height: auto;
+    border-radius: 20px !important;
+    padding: 10px 20px !important;
   }
   .newsArticles .yearInput p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .newsArticles .yearInput .select {
-    width: 200px;
-    height: 100%;
-    font-size: 20px;
-    line-height: 30px;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px !important;
+    font-size: 18px;
+    line-height: 24px;
   }
   .newsArticles .yearInput .styledSelect {
     padding: 0 20px;
-    font-size: 20px;
-    line-height: 3px;
-    width: 200px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 20px !important;
+    width: 100%;
     height: 100%;
   }
   .newsArticles .yearInput .styledSelect:after {
@@ -17199,40 +17282,129 @@ footer .footerEnd p {
     margin: 0 0;
     padding: 0 10px;
   }
+  .newsArticles .articles {
+    margin-top: 24px !important;
+    grid-gap: 30px !important;
+  }
   .newsArticles .articles .article {
-    height: 500px;
+    height: 70vh;
   }
   .newsArticles .articles .article img {
     width: 100%;
     height: 70%;
+    border-radius: 20px;
   }
   .newsArticles .articles .article p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .newsArticles .more {
-    width: 200px;
+    width: 250px;
     height: 60px;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 20px !important;
+  }
+  .articleTabs {
+    padding-bottom: 24px !important;
   }
   .articleTabs .tab {
     width: 200px;
     height: 60px;
+    border-radius: 20px !important;
+    margin: 0 !important;
   }
   .articleTabs .tab p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .articleTabs .tab:nth-child(2) {
+    margin: 0 30px !important;
+  }
+  .articleContent {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .articleContent .top .articleImage {
+    width: 100%;
+    height: 80vh;
+  }
+  .articleContent .top .textContent h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .articleContent .top .textContent .time {
+    margin: 20px 0 !important;
+  }
+  .articleContent .top .textContent .time img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .articleContent .top .textContent .time h6 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .articleContent .top .textContent p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .articleContent .textWrap p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .articleContent .bottom {
+    margin-top: 24px !important;
+  }
+  .articleContent .bottom .btm {
+    margin: 0 !important;
+  }
+  .articleContent .bottom .author img {
+    width: 100px;
+    height: 100px;
+  }
+  .articleContent .bottom .author h6 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 24px;
+  }
+  .articleContent .bottom .author p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .articleContent .bottom .shareBtn {
+    height: 60px;
+    width: auto;
+    padding: 0 24px;
+    border-radius: 20px !important;
+  }
+  .articleContent .bottom .shareBtn p {
+    font-size: 16px;
+    line-height: 40px;
+    color: white;
+    font-weight: bolder;
+  }
+  .articleContent .bottom .shareBtn img {
+    width: 40px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .relatedStories {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .relatedStories h1 {
     font-size: 30px;
     line-height: 40px;
+    margin-bottom: 24px !important;
   }
   .relatedStories .articles {
-    grid-gap: 20px !important;
+    margin-top: 0 !important;
+    grid-gap: 30px !important;
   }
   .relatedStories .articles .article {
-    height: 500px;
+    height: 70vh;
   }
   .relatedStories .articles .article img {
     width: 100%;
@@ -17240,34 +17412,38 @@ footer .footerEnd p {
     border-radius: 30px;
   }
   .relatedStories .articles .article p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .newsBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .newsBanner .back {
-    height: 60%;
+    height: 55% !important;
   }
   .newsBanner .bannerTxt h1 {
     font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px !important;
   }
   .newsBanner .bannerTxt p {
     font-size: 16px;
-    line-height: 24px;
-  }
-  .newsBanner .bannerTxt h5 {
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+    width: 80%;
   }
   .newsBanner .bannerImg {
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    margin-top: 0px !important;
   }
   .newsArticles .newsTabs .tab {
     width: 160px;
-    height: 60px;
+    height: 50px;
   }
   .newsArticles .newsTabs .tab p {
     font-size: 16px;
@@ -17338,7 +17514,7 @@ footer .footerEnd p {
     height: 100%;
   }
   .articleContent .top .textContent h4 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
   }
   .articleContent .top .textContent .time img {
@@ -17347,15 +17523,15 @@ footer .footerEnd p {
   }
   .articleContent .top .textContent .time h6 {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .articleContent .top .textContent p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .articleContent .textWrap p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .articleContent .bottom .author img {
     width: 80px;
@@ -17363,11 +17539,11 @@ footer .footerEnd p {
   }
   .articleContent .bottom .author h6 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 24px;
   }
   .articleContent .bottom .author p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .articleContent .bottom .shareBtn {
     height: 60px;
@@ -17376,7 +17552,7 @@ footer .footerEnd p {
   }
   .articleContent .bottom .shareBtn p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .articleContent .bottom .shareBtn img {
     width: 40px;
@@ -17397,7 +17573,7 @@ footer .footerEnd p {
   }
   .relatedStories .articles .article p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
 }
 
@@ -17410,7 +17586,7 @@ footer .footerEnd p {
     height: 80%;
   }
   .newsBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 32px;
   }
   .newsBanner .bannerTxt p, .newsBanner .bannerTxt h5 {
     color: white;
@@ -17446,6 +17622,9 @@ footer .footerEnd p {
   .newsArticles .newsTabs .tab p {
     font-size: 16px;
     line-height: 24px;
+  }
+  .newsArticles .newsTabs .tab:nth-child(2) {
+    margin: 10px 0 !important;
   }
   .newsArticles .yearInput {
     height: auto;
@@ -17515,7 +17694,10 @@ footer .footerEnd p {
   }
   .articleTabs .tab p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+  }
+  .articleTabs .tab:nth-child(2) {
+    margin: 10px 0 !important;
   }
   .articleContent {
     padding: 30px 24px !important;
@@ -17653,7 +17835,7 @@ footer .footerEnd p {
 .contactBanner .bannerTxt .call h6 {
   font-size: 24px;
   line-height: 40px;
-  font-weight: bolder;
+  font-weight: 800 !important;
   color: black;
 }
 
@@ -17705,7 +17887,7 @@ footer .footerEnd p {
 .contactForm .contactInner form .input label {
   font-size: 16px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 700;
   color: black;
 }
 
@@ -17850,111 +18032,175 @@ footer .footerEnd p {
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
+  .contactBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .contactBanner .back {
-    height: 55%;
+    height: 60% !important;
   }
   .contactBanner .bannerTxt h1 {
-    font-size: 55px;
-    line-height: 62px;
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 20px !important;
   }
   .contactBanner .bannerTxt p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .contactBanner .bannerTxt h5 {
     font-size: 20px;
-    line-height: 32px;
+    line-height: 30px;
+    width: 70%;
   }
   .contactBanner .bannerTxt .call img {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .contactBanner .bannerTxt .call .lightIcons {
+    display: none;
+  }
   .contactBanner .bannerTxt .call h6 {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .contactBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .contactForm {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .contactForm .contactInner img {
     width: 100%;
-    height: 600px;
+    height: 70vh;
   }
   .contactForm .contactInner form h1 {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
     width: 80%;
   }
   .contactForm .contactInner form p {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .contactForm .contactInner form .inputs {
+    grid-gap: 24px !important;
   }
   .contactForm .contactInner form .input label {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .contactForm .contactInner form .input input {
     width: 100%;
-    height: 80px;
+    height: 60px;
     font-size: 14px;
     line-height: 20px;
     padding: 15px;
+    border-radius: 20px !important;
+  }
+  .contactForm .contactInner form .input input::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .contactForm .contactInner form .input input:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .contactForm .contactInner form .input input::-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .contactForm .contactInner form .input input::placeholder {
+    font-size: 12px;
+    line-height: 20px;
   }
   .contactForm .contactInner form .comment label {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .contactForm .contactInner form .comment textarea {
     width: 100%;
     min-height: 150px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 20px;
     padding: 20px;
+    border-radius: 20px !important;
+  }
+  .contactForm .contactInner form .comment textarea::-webkit-input-placeholder {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .contactForm .contactInner form .comment textarea:-ms-input-placeholder {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .contactForm .contactInner form .comment textarea::-ms-input-placeholder {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .contactForm .contactInner form .comment textarea::placeholder {
+    font-size: 13px;
+    line-height: 20px;
   }
   .contactForm .contactInner form button {
     width: 40%;
-    height: 80px;
+    height: 60px;
     background: #FFB548;
-    font-size: 22px;
-    margin-top: 30px;
+    font-size: 18px;
+    margin-top: 24px;
+    border-radius: 20px !important;
   }
   .offices {
     -ms-grid-columns: 1fr 4fr;
         grid-template-columns: 1fr 4fr;
     grid-gap: 30px;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .offices h1 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .offices p {
-    font-size: 30px;
+    font-size: 32px;
     line-height: 40px;
   }
-  .offices .office h6 {
-    font-size: 22px;
+  .offices p {
+    font-size: 24px;
     line-height: 30px;
   }
-  .offices .office p {
+  .offices .officesInner {
+    grid-gap: 30px !important;
+  }
+  .offices .office h6 {
     font-size: 18px;
     line-height: 24px;
+    margin-bottom: 20px !important;
+  }
+  .offices .office p {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
+  .contactBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .contactBanner .back {
-    height: 45%;
+    height: 50% !important;
   }
   .contactBanner .bannerTxt h1 {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px !important;
   }
   .contactBanner .bannerTxt p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .contactBanner .bannerTxt h5 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 80%;
   }
   .contactBanner .bannerTxt .call img {
     width: 50px;
@@ -17962,122 +18208,175 @@ footer .footerEnd p {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .contactBanner .bannerTxt .call .lightIcons {
+    display: none;
+  }
   .contactBanner .bannerTxt .call h6 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .contactBanner .bannerImg {
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    margin-top: 0px !important;
+  }
+  .contactForm {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .contactForm .contactInner {
+    grid-gap: 40px !important;
   }
   .contactForm .contactInner img {
     width: 100%;
-    height: 500px;
+    height: 70vh;
   }
   .contactForm .contactInner form h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 35px;
     width: 80%;
   }
   .contactForm .contactInner form p {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 30px;
   }
   .contactForm .contactInner form .inputs {
-    grid-gap: 20px !important;
+    grid-gap: 24px !important;
   }
   .contactForm .contactInner form .input label {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .contactForm .contactInner form .input input {
     width: 100%;
-    height: 80px;
+    height: 60px;
     font-size: 14px;
     line-height: 20px;
     padding: 15px;
+    border-radius: 20px !important;
+  }
+  .contactForm .contactInner form .input input::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .contactForm .contactInner form .input input:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .contactForm .contactInner form .input input::-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .contactForm .contactInner form .input input::placeholder {
+    font-size: 12px;
+    line-height: 20px;
   }
   .contactForm .contactInner form .comment label {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .contactForm .contactInner form .comment textarea {
     width: 100%;
     min-height: 150px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 20px;
-    padding: 15px;
+    padding: 20px;
+    border-radius: 20px !important;
+  }
+  .contactForm .contactInner form .comment textarea::-webkit-input-placeholder {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .contactForm .contactInner form .comment textarea:-ms-input-placeholder {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .contactForm .contactInner form .comment textarea::-ms-input-placeholder {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .contactForm .contactInner form .comment textarea::placeholder {
+    font-size: 13px;
+    line-height: 20px;
   }
   .contactForm .contactInner form button {
     width: 40%;
-    height: 80px;
+    height: 60px;
     background: #FFB548;
-    font-size: 20px;
-    margin-top: 30px;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 20px !important;
   }
   .offices {
-    -ms-grid-columns: 2fr 4fr;
-        grid-template-columns: 2fr 4fr;
+    -ms-grid-columns: 1fr 4fr;
+        grid-template-columns: 1fr 4fr;
     grid-gap: 30px;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .offices h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .offices p {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 30px;
   }
   .offices .officesInner {
-    width: 100%;
+    grid-gap: 30px !important;
+    width: 100% !important;
   }
   .offices .office h6 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 24px;
+    margin-bottom: 20px !important;
   }
   .offices .office p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .contactBanner .back {
-    height: 55%;
+    height: 45% !important;
   }
   .contactBanner .bannerTxt h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px !important;
   }
   .contactBanner .bannerTxt p {
     font-size: 16px;
-    line-height: 24px;
-  }
-  .contactBanner .bannerTxt h5 {
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+    width: 80%;
   }
   .contactBanner .bannerTxt .call img {
     width: 40px;
     height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .contactBanner .bannerTxt .call .lightIcons {
+    display: none;
   }
   .contactBanner .bannerTxt .call h6 {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .contactBanner .bannerImg {
+    margin-top: 0px !important;
   }
   .contactForm .back {
     width: 100%;
   }
   .contactForm .contactInner img {
     width: 100%;
-    height: 400px;
+    height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .contactForm .contactInner form h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 35px;
     width: 100%;
   }
   .contactForm .contactInner form p {
@@ -18089,7 +18388,7 @@ footer .footerEnd p {
   }
   .contactForm .contactInner form .input label {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .contactForm .contactInner form .input input {
     width: 100%;
@@ -18100,7 +18399,7 @@ footer .footerEnd p {
   }
   .contactForm .contactInner form .comment label {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .contactForm .contactInner form .comment textarea {
     width: 100%;
@@ -18112,9 +18411,8 @@ footer .footerEnd p {
   .contactForm .contactInner form button {
     width: 40%;
     height: 60px;
-    background: #FFB548;
     font-size: 16px;
-    margin-top: 24px;
+    margin-top: 20px;
   }
   .offices {
     -ms-grid-columns: 1fr;
@@ -18124,21 +18422,27 @@ footer .footerEnd p {
   .offices h1 {
     font-size: 32px;
     line-height: 40px;
+    margin-bottom: 15px !important;
   }
   .offices p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
   .offices .officesInner {
-    width: 100%;
+    grid-gap: 30px !important;
+    width: 100% !important;
+  }
+  .offices .office * {
+    margin: 0 !important;
   }
   .offices .office h6 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 24px;
+    margin-bottom: 15px !important;
   }
   .offices .office p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
 }
 
@@ -18151,7 +18455,7 @@ footer .footerEnd p {
     height: 80%;
   }
   .contactBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 32px;
   }
   .contactBanner .bannerTxt p, .contactBanner .bannerTxt h5, .contactBanner .bannerTxt h6 {
     color: white !important;
@@ -18254,12 +18558,12 @@ footer .footerEnd p {
   }
 }
 
-.partnershipBanner, .projectBanner {
+.partnershipBanner {
   background: #F4F4F4;
   border: none;
 }
 
-.partnershipBanner .back, .projectBanner .back {
+.partnershipBanner .back {
   background: #1226AA;
   width: 100%;
   height: 65%;
@@ -18267,35 +18571,31 @@ footer .footerEnd p {
   left: 0;
 }
 
-.partnershipBanner .bannerTxt, .projectBanner .bannerTxt {
+.partnershipBanner .bannerTxt {
   z-index: 1;
 }
 
-.partnershipBanner .bannerTxt h1, .projectBanner .bannerTxt h1 {
+.partnershipBanner .bannerTxt h1 {
   font-size: 64px;
   font-weight: 900;
   color: white;
 }
 
-.partnershipBanner .bannerTxt p, .projectBanner .bannerTxt p {
-  font-size: 32px;
-  line-height: 40px;
-  font-weight: normal;
-  color: black;
-}
-
-.partnershipBanner .bannerTxt h5, .projectBanner .bannerTxt h5 {
+.partnershipBanner .bannerTxt h6 {
   font-size: 24px;
-  color: black;
-}
-
-.partnershipBanner .bannerTxt h6, .projectBanner .bannerTxt h6 {
-  font-size: 24px;
+  line-height: 32px;
   color: white;
   font-weight: bolder;
 }
 
-.partnershipBanner .bannerImg, .projectBanner .bannerImg {
+.partnershipBanner .bannerTxt p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  color: black;
+}
+
+.partnershipBanner .bannerImg {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -18329,7 +18629,7 @@ footer .footerEnd p {
 
 .partnerGrids .top p {
   font-size: 32px;
-  font-weight: normal;
+  font-weight: 600;
   line-height: 40px;
   color: black;
 }
@@ -18503,6 +18803,10 @@ footer .footerEnd p {
   color: #1226AA;
 }
 
+.partnerRequire .partnerGrid {
+  margin-top: 40px !important;
+}
+
 .partnerRequire .req img {
   width: 129px;
   height: 129px;
@@ -18569,26 +18873,48 @@ footer .footerEnd p {
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
-  .partnershipBanner .back, .projectBanner .back {
-    height: 60%;
+  .partnershipBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
-  .partnershipBanner .bannerTxt h1, .projectBanner .bannerTxt h1 {
-    font-size: 55px;
+  .partnershipBanner .back {
+    height: 67% !important;
   }
-  .partnershipBanner .bannerTxt p, .projectBanner .bannerTxt p {
-    font-size: 22px;
-    line-height: 32px;
+  .partnershipBanner .bannerTxt h1 {
+    font-size: 45px;
+    margin-bottom: 20px !important;
   }
-  .partnershipBanner .bannerTxt h5, .projectBanner .bannerTxt h5 {
+  .partnershipBanner .bannerTxt span {
+    margin-bottom: 0 !important;
+  }
+  .partnershipBanner .bannerTxt h6 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .partnershipBanner .bannerTxt p {
     font-size: 20px;
+    line-height: 30px;
+    width: 70%;
+  }
+  .partnershipBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .partnerGrids {
+    padding-bottom: 48px !important;
+  }
+  .partnerGrids .top {
+    margin-bottom: 24px !important;
   }
   .partnerGrids .top h1 {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .partnerGrids .top p {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .partnerGrids .partnerCard {
     width: 100%;
@@ -18596,247 +18922,318 @@ footer .footerEnd p {
   }
   .partnerGrids .partnerCard .top span {
     width: 100%;
-    height: 100px;
-  }
-  .partnerGrids .partnerCard .top span h4 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .partnerGrids .partnerCard .top p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .partnerGrids .partnerCard a {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .partnerGrids .partnerCard a img {
-    width: 60px;
-    height: 60px;
-  }
-  .partnerDetails .wrapper {
-    -ms-grid-columns: 1.5fr 2fr;
-        grid-template-columns: 1.5fr 2fr;
-  }
-  .partnerDetails .wrapper h1 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .partnerDetails .wrapper p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .partnerDetails .wrapper a {
-    width: 300px;
     height: 80px;
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .partnerRequire h1 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .partnerRequire .req {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .partnerRequire .req img {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 20px;
-  }
-  .partnerRequire .req h5 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .partnerRequire .req p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .partnerDownload .wrapper {
-    -ms-grid-columns: 2fr 1.5fr;
-        grid-template-columns: 2fr 1.5fr;
-  }
-  .partnerDownload .wrapper h1 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .partnerDownload .wrapper a {
-    width: 300px;
-    height: 80px;
-    font-size: 22px;
-    line-height: 32px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .partnershipBanner .back, .projectBanner .back {
-    height: 50%;
-  }
-  .partnershipBanner .bannerTxt span, .projectBanner .bannerTxt span {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .partnershipBanner .bannerTxt span *, .projectBanner .bannerTxt span * {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  .partnershipBanner .bannerTxt h1, .projectBanner .bannerTxt h1 {
-    font-size: 45px;
-    line-height: 52px;
-  }
-  .partnershipBanner .bannerTxt p, .projectBanner .bannerTxt p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .partnershipBanner .bannerTxt h5, .projectBanner .bannerTxt h5 {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .partnershipBanner .bannerImg, .projectBanner .bannerImg {
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .partnerGrids .top h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .partnerGrids .top p {
-    font-size: 20px;
-    line-height: 30px;
-    width: 100%;
-  }
-  .partnerGrids .partnerCard {
-    width: 100%;
-    min-height: 500px;
-  }
-  .partnerGrids .partnerCard .top span {
-    width: 100%;
-    height: 100px;
+    border-radius: 20px !important;
+    margin-bottom: 40px !important;
   }
   .partnerGrids .partnerCard .top span h4 {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 30px;
   }
   .partnerGrids .partnerCard .top p {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 30px;
-    width: 100%;
+    width: 90%;
+    margin: 0 !important;
   }
   .partnerGrids .partnerCard a {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .partnerGrids .partnerCard a img {
     width: 50px;
     height: 50px;
   }
+  .partnerDetails {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .partnerDetails .wrapper {
     -ms-grid-columns: 1.5fr 2fr;
         grid-template-columns: 1.5fr 2fr;
   }
+  .partnerDetails .wrapper img {
+    height: 60vh;
+  }
   .partnerDetails .wrapper h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .partnerDetails .wrapper p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px !important;
+    width: 80%;
   }
   .partnerDetails .wrapper a {
-    width: 300px;
+    width: 250px;
     height: 60px;
-    font-size: 20px;
-    line-height: 30px;
+    border-radius: 20px !important;
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .partnerRequire {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .partnerRequire h1 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .partnerRequire .partnerGrid {
+    grid-gap: 40px !important;
+    margin-top: 30px;
   }
   .partnerRequire .req img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 20px;
   }
   .partnerRequire .req h5 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 30px;
   }
   .partnerRequire .req p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .partnerDownload {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .partnerDownload .wrapper {
     -ms-grid-columns: 2fr 1.5fr;
         grid-template-columns: 2fr 1.5fr;
   }
+  .partnerDownload .wrapper img {
+    height: 50vh;
+  }
   .partnerDownload .wrapper h1 {
     font-size: 32px;
     line-height: 40px;
-    width: 100% !important;
+    width: 70% !important;
   }
   .partnerDownload .wrapper a {
-    width: 300px;
+    width: 250px;
     height: 60px;
-    font-size: 20px;
-    line-height: 30px;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .partnershipBanner .back, .projectBanner .back {
-    height: 65%;
+@media only screen and (max-width: 1024px) {
+  .partnershipBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
-  .partnershipBanner .bannerTxt h1, .projectBanner .bannerTxt h1 {
+  .partnershipBanner .back {
+    height: 65% !important;
+  }
+  .partnershipBanner .bannerTxt h1 {
     font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px !important;
   }
-  .partnershipBanner .bannerTxt p, .projectBanner .bannerTxt p {
+  .partnershipBanner .bannerTxt h6 {
     font-size: 16px;
     line-height: 24px;
   }
-  .partnershipBanner .bannerTxt h5, .projectBanner .bannerTxt h5 {
-    font-size: 16px;
+  .partnershipBanner .bannerTxt p {
+    font-size: 18px;
     line-height: 24px;
+    width: 70%;
   }
-  .partnershipBanner .bannerImg, .projectBanner .bannerImg {
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
+  .partnershipBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .partnerGrids {
+    padding-bottom: 48px !important;
+  }
+  .partnerGrids .top {
+    margin-bottom: 24px !important;
   }
   .partnerGrids .top h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 35px;
   }
   .partnerGrids .top p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
-    width: 100%;
   }
   .partnerGrids .partnerCard {
-    min-height: 400px;
+    width: 100%;
+    min-height: 80vh;
   }
   .partnerGrids .partnerCard .top span {
     width: 100%;
     height: 80px;
+    border-radius: 20px !important;
+    margin-bottom: 40px !important;
   }
   .partnerGrids .partnerCard .top span h4 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .partnerGrids .partnerCard .top p {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 90%;
+    margin: 0 !important;
+  }
+  .partnerGrids .partnerCard a {
+    font-size: 18px;
     line-height: 24px;
+  }
+  .partnerGrids .partnerCard a img {
+    width: 50px;
+    height: 50px;
+  }
+  .partnerDetails {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .partnerDetails .wrapper {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+  }
+  .partnerDetails .wrapper img {
+    height: 60vh;
+  }
+  .partnerDetails .wrapper h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .partnerDetails .wrapper p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px !important;
+    width: 80%;
+  }
+  .partnerDetails .wrapper a {
+    width: 200px;
+    height: 60px;
+    border-radius: 20px !important;
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .partnerRequire {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .partnerRequire h1 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 50%;
+  }
+  .partnerRequire .partnerGrid {
+    grid-gap: 20px !important;
+    margin-top: 30px;
+  }
+  .partnerRequire .req img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0px;
+  }
+  .partnerRequire .req h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .partnerRequire .req p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .partnerDownload {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .partnerDownload .wrapper {
+    -ms-grid-columns: 2fr 1.5fr;
+        grid-template-columns: 2fr 1.5fr;
+  }
+  .partnerDownload .wrapper img {
+    height: 50vh;
+  }
+  .partnerDownload .wrapper h1 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 80% !important;
+  }
+  .partnerDownload .wrapper a {
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .partnershipBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .partnershipBanner .back {
+    height: 50% !important;
+  }
+  .partnershipBanner .bannerTxt h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px !important;
+  }
+  .partnershipBanner .bannerTxt h6 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .partnershipBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 70%;
+  }
+  .partnershipBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .partnerGrids {
+    padding-bottom: 48px !important;
+  }
+  .partnerGrids .top {
+    margin-bottom: 24px !important;
+  }
+  .partnerGrids .top h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .partnerGrids .top p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .partnerGrids .partnerCard {
+    width: 100%;
+    min-height: 400px;
+  }
+  .partnerGrids .partnerCard .top span {
+    width: 100%;
+    height: 60px;
+    border-radius: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .partnerGrids .partnerCard .top span h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .partnerGrids .partnerCard .top p {
+    font-size: 18px;
+    line-height: 24px;
+    width: 90%;
+    margin: 0 !important;
   }
   .partnerGrids .partnerCard a {
     font-size: 16px;
@@ -18846,78 +19243,117 @@ footer .footerEnd p {
     width: 40px;
     height: 40px;
   }
+  .partnerDetails {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .partnerDetails .wrapper {
     -ms-grid-columns: 1.5fr 2fr;
         grid-template-columns: 1.5fr 2fr;
   }
+  .partnerDetails .wrapper img {
+    height: 400px;
+  }
   .partnerDetails .wrapper h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 35px;
   }
   .partnerDetails .wrapper p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+    margin-top: 10px !important;
+    width: 80%;
   }
   .partnerDetails .wrapper a {
     width: 200px;
     height: 60px;
+    border-radius: 20px !important;
+    margin-top: 40px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+  }
+  .partnerRequire {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .partnerRequire h1 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
+    width: 70%;
+  }
+  .partnerRequire .partnerGrid {
+    grid-gap: 20px !important;
+    margin-top: 30px;
+  }
+  .partnerRequire .req {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .partnerRequire .req img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0px;
   }
   .partnerRequire .req h5 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 30px;
   }
   .partnerRequire .req p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+  }
+  .partnerDownload {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
   }
   .partnerDownload .wrapper {
-    -ms-grid-columns: 2fr 1.5fr;
-        grid-template-columns: 2fr 1.5fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .partnerDownload .wrapper img {
+    height: 300px;
   }
   .partnerDownload .wrapper h1 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
+    width: 100% !important;
   }
   .partnerDownload .wrapper a {
     width: 200px;
     height: 60px;
+    border-radius: 20px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
 }
 
 @media only screen and (max-width: 540px) {
-  .partnershipBanner, .projectBanner {
+  .partnershipBanner {
     grid-gap: 0;
     padding: 30px 24px !important;
   }
-  .partnershipBanner .back, .projectBanner .back {
+  .partnershipBanner .back {
     height: 80%;
   }
-  .partnershipBanner .bannerTxt h1, .projectBanner .bannerTxt h1 {
-    font-size: 45px;
+  .partnershipBanner .bannerTxt h1 {
+    font-size: 32px;
   }
-  .partnershipBanner .bannerTxt span, .projectBanner .bannerTxt span {
+  .partnershipBanner .bannerTxt span {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+    margin: 0;
   }
-  .partnershipBanner .bannerTxt p, .projectBanner .bannerTxt p, .partnershipBanner .bannerTxt h5, .projectBanner .bannerTxt h5 {
+  .partnershipBanner .bannerTxt span * {
+    margin: 0;
+  }
+  .partnershipBanner .bannerTxt p, .partnershipBanner .bannerTxt h5, .partnershipBanner .bannerTxt h6 {
     color: white;
   }
-  .partnershipBanner .bannerImg, .projectBanner .bannerImg {
+  .partnershipBanner .bannerImg {
     height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -18953,6 +19389,7 @@ footer .footerEnd p {
   .partnerGrids .partnerCard .top p {
     font-size: 16px;
     line-height: 24px;
+    text-align: left;
   }
   .partnerGrids .partnerCard a {
     font-size: 16px;
@@ -18972,26 +19409,45 @@ footer .footerEnd p {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .partnerDetails .wrapper img {
+    height: 300px;
+  }
+  .partnerDetails .wrapper .textSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .partnerDetails .wrapper h1 {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 35px;
     text-align: center;
   }
   .partnerDetails .wrapper p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     text-align: center;
+    width: 100%;
   }
   .partnerDetails .wrapper a {
-    width: 100%;
+    width: 50vw;
     height: 60px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     margin-top: 10px;
+  }
+  .partnerRequire {
+    padding: 30px 24px !important;
   }
   .partnerRequire h1 {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 35px;
     width: 100%;
     text-align: center;
   }
@@ -19007,13 +19463,14 @@ footer .footerEnd p {
   }
   .partnerRequire .req h5 {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 30px;
     text-align: center;
   }
   .partnerRequire .req p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     text-align: center;
+    width: 100%;
   }
   .partnerDownload {
     padding: 30px 24px !important;
@@ -19022,17 +19479,63 @@ footer .footerEnd p {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .partnerDownload .wrapper img {
+    height: 300px;
+  }
+  .partnerDownload .wrapper .textSection {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .partnerDownload .wrapper h1 {
     font-size: 30px;
     line-height: 40px;
     text-align: center;
   }
   .partnerDownload .wrapper a {
-    width: 100%;
+    width: 50vw;
     height: 60px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
   }
+}
+
+.projectBanner {
+  background: #F4F4F4;
+  border: none;
+}
+
+.projectBanner .back {
+  background: #1226AA;
+  width: 100%;
+  height: 65%;
+  top: 0;
+  left: 0;
+}
+
+.projectBanner .bannerTxt {
+  z-index: 1;
+}
+
+.projectBanner .bannerTxt h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+}
+
+.projectBanner .bannerTxt p {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  color: black;
+}
+
+.projectBanner .bannerImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 1;
 }
 
 .projectsGrid {
@@ -19215,31 +19718,40 @@ footer .footerEnd p {
 
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 1600px) {
+  .projectBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .projectBanner .back {
-    height: 55%;
+    height: 60% !important;
   }
   .projectBanner .bannerTxt h1 {
-    font-size: 55px;
-    line-height: 62px;
+    font-size: 45px;
+    margin-bottom: 20px !important;
   }
   .projectBanner .bannerTxt p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .projectBanner .bannerTxt h5 {
     font-size: 20px;
     line-height: 30px;
+    width: 70%;
   }
-  .projectBanner .bannerTxt h6 {
-    font-size: 20px;
+  .projectBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .projectsGrid {
+    padding-top: 0px !important;
+    padding-bottom: 48px !important;
   }
   .projectsGrid h1 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 24px !important;
   }
   .projectsGrid .projectCard {
     width: 100%;
-    height: 600px;
+    height: 60vh;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -19248,50 +19760,126 @@ footer .footerEnd p {
         grid-template-rows: 2fr 1fr;
   }
   .projectsGrid .projectCard .imgWrapper {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .projectsGrid .projectCard .cardTxt {
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
   .projectsGrid .projectCard .cardTxt h4 {
     font-size: 24px;
     line-height: 32px;
   }
   .projectsGrid .projectCard .cardTxt p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .projectDetails {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .projectDetails .back {
+    width: 95%;
+  }
+  .projectDetails .topSection {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+  }
+  .projectDetails .topSection .topText h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 10px !important;
+  }
+  .projectDetails .topSection .topText .time {
+    margin: 20px 0 !important;
+  }
+  .projectDetails .topSection .topText .time img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .projectDetails .topSection .topText .time h6 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .projectDetails .topSection .topText p {
+    margin: 0 !important;
+    font-size: 18px;
+    line-height: 24px;
+    width: 80%;
+  }
+  .projectDetails .gallery {
+    margin-top: 24px !important;
+  }
+  .projectDetails .gallery .projectImg {
+    width: 100%;
+    height: 100%;
+  }
+  .projectDetails .imgLightbox .modalWrapper {
+    position: relative;
+  }
+  .projectDetails .imgLightbox .modalWrapper .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .projectDetails .imgLightbox .modalWrapper .close img {
+    width: 40px;
+    height: 40px;
+  }
+  .projectDetails .imgLightbox .modalWrapper .modalContent .previous img {
+    width: 60px;
+    height: 60px;
+  }
+  .projectDetails .imgLightbox .modalWrapper .modalContent .modalImage {
+    width: 60vw;
+    height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .projectDetails .imgLightbox .modalWrapper .modalContent .next img {
+    width: 60px;
+    height: 60px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
+  .projectBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .projectBanner .back {
-    height: 45%;
+    height: 55% !important;
   }
   .projectBanner .bannerTxt h1 {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 40px;
+    margin-bottom: 20px !important;
   }
   .projectBanner .bannerTxt p {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .projectBanner .bannerTxt h5 {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 80%;
   }
   .projectBanner .bannerImg {
-    height: 250px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    margin-top: 0px !important;
+  }
+  .projectsGrid {
+    padding-top: 0px !important;
+    padding-bottom: 48px !important;
   }
   .projectsGrid h1 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px !important;
   }
   .projectsGrid .projectCard {
     width: 100%;
-    height: 500px;
+    height: 60vh;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -19300,42 +19888,125 @@ footer .footerEnd p {
         grid-template-rows: 2fr 1fr;
   }
   .projectsGrid .projectCard .imgWrapper {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .projectsGrid .projectCard .cardTxt {
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
   .projectsGrid .projectCard .cardTxt h4 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .projectsGrid .projectCard .cardTxt p {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .projectDetails {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .projectDetails .back {
+    width: 95%;
+  }
+  .projectDetails .topSection {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+    grid-gap: 30px !important;
+  }
+  .projectDetails .topSection .topText h1 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 10px !important;
+  }
+  .projectDetails .topSection .topText .time {
+    margin: 20px 0 !important;
+  }
+  .projectDetails .topSection .topText .time img {
+    width: 20px;
+    height: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 10px !important;
+  }
+  .projectDetails .topSection .topText .time h6 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .projectDetails .topSection .topText p {
+    margin: 0 !important;
+    font-size: 16px;
+    line-height: 20px;
+    width: 90%;
+  }
+  .projectDetails .gallery {
+    margin-top: 24px !important;
+  }
+  .projectDetails .gallery .projectImg {
+    width: 100%;
+    height: 100%;
+  }
+  .projectDetails .imgLightbox .modalWrapper {
+    position: relative;
+  }
+  .projectDetails .imgLightbox .modalWrapper .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .projectDetails .imgLightbox .modalWrapper .close img {
+    width: 40px;
+    height: 40px;
+  }
+  .projectDetails .imgLightbox .modalWrapper .modalContent .previous img {
+    width: 60px;
+    height: 60px;
+  }
+  .projectDetails .imgLightbox .modalWrapper .modalContent .modalImage {
+    width: 60vw;
+    height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .projectDetails .imgLightbox .modalWrapper .modalContent .next img {
+    width: 60px;
+    height: 60px;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .projectBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
   .projectBanner .back {
-    height: 60%;
+    height: 50% !important;
   }
   .projectBanner .bannerTxt h1 {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 32px;
+    margin-bottom: 40px !important;
   }
   .projectBanner .bannerTxt p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+    width: 80%;
   }
-  .projectBanner .bannerTxt h5 {
-    font-size: 16px;
-    line-height: 24px;
+  .projectBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .projectsGrid {
+    padding-top: 0px !important;
+    padding-bottom: 48px !important;
   }
   .projectsGrid h1 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px !important;
   }
   .projectsGrid .projectCard {
     width: 100%;
@@ -19347,13 +20018,95 @@ footer .footerEnd p {
     -ms-grid-rows: 2fr 1fr;
         grid-template-rows: 2fr 1fr;
   }
+  .projectsGrid .projectCard .imgWrapper {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .projectsGrid .projectCard .cardTxt {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
   .projectsGrid .projectCard .cardTxt h4 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .projectsGrid .projectCard .cardTxt p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+  }
+  .projectDetails {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .projectDetails .back {
+    width: 95%;
+  }
+  .projectDetails .topSection {
+    -ms-grid-columns: 1.5fr 2fr;
+        grid-template-columns: 1.5fr 2fr;
+    grid-gap: 30px !important;
+  }
+  .projectDetails .topSection img {
+    height: 400px;
+  }
+  .projectDetails .topSection .topText h1 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 10px !important;
+  }
+  .projectDetails .topSection .topText .time {
+    margin: 20px 0 !important;
+  }
+  .projectDetails .topSection .topText .time img {
+    width: 20px;
+    height: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 10px !important;
+  }
+  .projectDetails .topSection .topText .time h6 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .projectDetails .topSection .topText p {
+    margin: 0 !important;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+  }
+  .projectDetails .gallery {
+    margin-top: 48px !important;
+  }
+  .projectDetails .gallery .projectImg {
+    width: 100%;
+    height: 100%;
+  }
+  .projectDetails .imgLightbox .modalWrapper {
+    position: relative;
+  }
+  .projectDetails .imgLightbox .modalWrapper .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .projectDetails .imgLightbox .modalWrapper .close img {
+    width: 40px;
+    height: 40px;
+  }
+  .projectDetails .imgLightbox .modalWrapper .modalContent .previous img {
+    width: 60px;
+    height: 60px;
+  }
+  .projectDetails .imgLightbox .modalWrapper .modalContent .modalImage {
+    width: 60vw;
+    height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .projectDetails .imgLightbox .modalWrapper .modalContent .next img {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -19366,24 +20119,140 @@ footer .footerEnd p {
     height: 80%;
   }
   .projectBanner .bannerTxt h1 {
-    font-size: 45px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .projectBanner .bannerTxt p, .projectBanner .bannerTxt h5 {
     color: white;
+    font-size: 16px !important;
   }
   .projectBanner .bannerImg {
     height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .projectsGrid {
+    padding-top: 0px !important;
+    padding-bottom: 48px !important;
+  }
   .projectsGrid h1 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px !important;
     text-align: center;
   }
   .projectsGrid .projectCard {
     width: 100%;
     height: 400px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 2fr 1fr;
+        grid-template-rows: 2fr 1fr;
+  }
+  .projectsGrid .projectCard .imgWrapper {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .projectsGrid .projectCard .cardTxt {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .projectsGrid .projectCard .cardTxt h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .projectsGrid .projectCard .cardTxt p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .projectDetails {
+    padding: 30px 24px !important;
+  }
+  .projectDetails .back {
+    width: 100%;
+  }
+  .projectDetails .topSection {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 30px !important;
+  }
+  .projectDetails .topSection img {
+    height: 300px;
+  }
+  .projectDetails .topSection .topText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projectDetails .topSection .topText h1 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 10px !important;
+    text-align: center;
+  }
+  .projectDetails .topSection .topText .time {
+    margin: 20px 0 !important;
+  }
+  .projectDetails .topSection .topText .time img {
+    width: 20px;
+    height: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 10px !important;
+  }
+  .projectDetails .topSection .topText .time h6 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .projectDetails .topSection .topText p {
+    margin: 0 !important;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .projectDetails .gallery {
+    margin-top: 48px !important;
+  }
+  .projectDetails .gallery .projectImg {
+    width: 100%;
+    height: 100%;
+  }
+  .projectDetails .imgLightbox .modalWrapper {
+    position: relative;
+  }
+  .projectDetails .imgLightbox .modalWrapper .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .projectDetails .imgLightbox .modalWrapper .close img {
+    width: 40px;
+    height: 40px;
+  }
+  .projectDetails .imgLightbox .modalWrapper .modalContent .previous img {
+    width: 60px;
+    height: 60px;
+  }
+  .projectDetails .imgLightbox .modalWrapper .modalContent .modalImage {
+    width: 60vw;
+    height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .projectDetails .imgLightbox .modalWrapper .modalContent .next img {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -19413,29 +20282,15 @@ footer .footerEnd p {
 .resourceBanner .bannerTxt p {
   font-size: 32px;
   line-height: 40px;
-  font-weight: normal;
+  font-weight: 600;
   color: black;
-}
-
-.resourceBanner .bannerTxt h5 {
-  font-size: 24px;
-  color: black;
-}
-
-.resourceBanner .bannerTxt h6 {
-  font-size: 24px;
-  color: white;
-  font-weight: bolder;
-}
-
-.resourceBanner .bannerTxt img {
-  width: 39px;
-  height: 39px;
 }
 
 .resourceBanner .bannerImg {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 1;
 }
 
@@ -19454,6 +20309,9 @@ footer .footerEnd p {
 }
 
 .featuredResources .featuresInfo {
+  -ms-grid-columns: 1.5fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
+  grid-gap: 48px;
   z-index: 1;
 }
 
@@ -19542,7 +20400,7 @@ footer .footerEnd p {
 .resourceFilter .filter p {
   font-size: 48px;
   line-height: 56px;
-  font-weight: normal;
+  font-weight: 600;
   color: black;
 }
 
@@ -19622,7 +20480,7 @@ footer .footerEnd p {
   font-size: 24px;
   line-height: 32px;
   color: black;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 .resourceFilter .resources .resource:hover {
@@ -19796,6 +20654,973 @@ footer .footerEnd p {
   font-weight: bolder;
 }
 
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+  .resourceBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .resourceBanner .back {
+    height: 65% !important;
+  }
+  .resourceBanner .bannerTxt h1 {
+    font-size: 45px;
+    margin-bottom: 20px !important;
+  }
+  .resourceBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 60%;
+  }
+  .resourceBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .featuredResources {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .featuredResources .back {
+    width: 95%;
+  }
+  .featuredResources .featuresInfo {
+    grid-gap: 30px;
+  }
+  .featuredResources .featuresInfo .imgWrapper {
+    width: 100%;
+    height: 60vh;
+  }
+  .featuredResources .featuresInfo .imgWrapper .linkBtns .commBtn {
+    width: 70px;
+    height: 50px;
+  }
+  .featuredResources .featuresInfo .imgWrapper .linkBtns .commBtn img {
+    width: 20.82px;
+    height: 20.03px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .featuredResources .featuresInfo .featuresText h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .featuredResources .featuresInfo .featuresText .names {
+    margin-bottom: 10px !important;
+  }
+  .featuredResources .featuresInfo .featuresText h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .featuredResources .featuresInfo .featuresText p {
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+  }
+  .featuredResources .featuresInfo .featuresText a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .resourceFilter {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .resourceFilter .filter {
+    margin-bottom: 0px !important;
+  }
+  .resourceFilter .filter p {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .resourceFilter .filter span {
+    width: auto;
+    height: 60px;
+    border-radius: 20px;
+  }
+  .resourceFilter .filter span h5 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .resourceFilter .filter span img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .resourceFilter .filterContent .close {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .resourceFilter .filterContent p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .resourceFilter .filterContent h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .resourceFilter .filterContent .filterItems {
+    margin: 24px 0 !important;
+  }
+  .resourceFilter .filterContent .spacer {
+    display: none !important;
+  }
+  .resourceFilter .resources {
+    margin-top: 24px !important;
+    grid-gap: 30px !important;
+  }
+  .resourceFilter .resources .resource {
+    height: 70vh;
+  }
+  .resourceFilter .resources .resource img {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+  }
+  .resourceFilter .resources .resource p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .resourceContent {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .resourceContent .top .resourceImage {
+    width: 100%;
+    height: 60vh;
+  }
+  .resourceContent .top .textContent h4 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .resourceContent .top .textContent .time {
+    margin: 20px 0 !important;
+  }
+  .resourceContent .top .textContent .time img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .resourceContent .top .textContent .time h6 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .resourceContent .top .textContent p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .resourceContent .textWrap p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .resourceContent .bottom {
+    margin-top: 24px !important;
+  }
+  .resourceContent .bottom .btm {
+    margin: 0 !important;
+  }
+  .resourceContent .bottom .author img {
+    width: 100px;
+    height: 100px;
+  }
+  .resourceContent .bottom .author h6 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .resourceContent .bottom .author p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .resourceContent .bottom .shareBtn {
+    height: 60px;
+    width: auto;
+    padding: 0 24px;
+    border-radius: 20px !important;
+  }
+  .resourceContent .bottom .shareBtn p {
+    font-size: 16px;
+    line-height: 40px;
+    color: white;
+    font-weight: bolder;
+  }
+  .resourceContent .bottom .shareBtn img {
+    width: 40px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .relatedResources {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .relatedResources h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px !important;
+  }
+  .relatedResources p {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600 !important;
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+  }
+  .relatedResources .resources {
+    margin-top: 0 !important;
+    grid-gap: 30px !important;
+  }
+  .relatedResources .resources .resource {
+    height: 70vh;
+  }
+  .relatedResources .resources .resource img {
+    width: 100%;
+    height: 70%;
+    border-radius: 30px;
+  }
+  .relatedResources .resources .resource p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 20px !important;
+  }
+  .relatedResources .more {
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .resourceBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .resourceBanner .back {
+    height: 60% !important;
+  }
+  .resourceBanner .bannerTxt h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px !important;
+  }
+  .resourceBanner .bannerTxt p {
+    font-size: 18px;
+    line-height: 24px;
+    width: 60%;
+  }
+  .resourceBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .featuredResources {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .featuredResources .back {
+    width: 95%;
+  }
+  .featuredResources .featuresInfo {
+    grid-gap: 30px;
+  }
+  .featuredResources .featuresInfo .imgWrapper {
+    width: 100%;
+    height: 60vh;
+  }
+  .featuredResources .featuresInfo .imgWrapper .linkBtns .commBtn {
+    width: 70px;
+    height: 50px;
+  }
+  .featuredResources .featuresInfo .imgWrapper .linkBtns .commBtn img {
+    width: 20.82px;
+    height: 20.03px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .featuredResources .featuresInfo .featuresText h1 {
+    font-size: 30px;
+    line-height: 35px;
+    width: 100%;
+  }
+  .featuredResources .featuresInfo .featuresText .names {
+    margin-bottom: 10px !important;
+  }
+  .featuredResources .featuresInfo .featuresText h3 {
+    font-size: 24px;
+    line-height: 30px;
+    width: 100%;
+  }
+  .featuredResources .featuresInfo .featuresText p {
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+  }
+  .featuredResources .featuresInfo .featuresText a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .resourceFilter {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .resourceFilter .filter {
+    margin-bottom: 0px !important;
+  }
+  .resourceFilter .filter p {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .resourceFilter .filter span {
+    width: auto;
+    height: 60px;
+    border-radius: 20px;
+  }
+  .resourceFilter .filter span h5 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .resourceFilter .filter span img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .resourceFilter .filterContent .close {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .resourceFilter .filterContent p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .resourceFilter .filterContent h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .resourceFilter .filterContent .filterItems {
+    margin: 24px 0 !important;
+  }
+  .resourceFilter .filterContent .spacer {
+    display: none !important;
+  }
+  .resourceFilter .resources {
+    margin-top: 24px !important;
+    grid-gap: 30px !important;
+  }
+  .resourceFilter .resources .resource {
+    height: 70vh;
+  }
+  .resourceFilter .resources .resource img {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+  }
+  .resourceFilter .resources .resource p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .resourceContent {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .resourceContent .top .resourceImage {
+    width: 100%;
+    height: 80vh;
+  }
+  .resourceContent .top .textContent h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .resourceContent .top .textContent .time {
+    margin: 20px 0 !important;
+  }
+  .resourceContent .top .textContent .time img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .resourceContent .top .textContent .time h6 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .resourceContent .top .textContent p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .resourceContent .textWrap p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .resourceContent .bottom {
+    margin-top: 24px !important;
+  }
+  .resourceContent .bottom .btm {
+    margin: 0 !important;
+  }
+  .resourceContent .bottom .author img {
+    width: 100px;
+    height: 100px;
+  }
+  .resourceContent .bottom .author h6 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .resourceContent .bottom .author p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .resourceContent .bottom .shareBtn {
+    height: 60px;
+    width: auto;
+    padding: 0 24px;
+    border-radius: 20px !important;
+  }
+  .resourceContent .bottom .shareBtn p {
+    font-size: 16px;
+    line-height: 40px;
+    color: white;
+    font-weight: bolder;
+  }
+  .resourceContent .bottom .shareBtn img {
+    width: 40px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .relatedResources {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .relatedResources h1 {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 10px !important;
+  }
+  .relatedResources p {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600 !important;
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+  }
+  .relatedResources .resources {
+    margin-top: 0 !important;
+    grid-gap: 30px !important;
+  }
+  .relatedResources .resources .resource {
+    height: 70vh;
+  }
+  .relatedResources .resources .resource img {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+  }
+  .relatedResources .resources .resource p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 20px !important;
+  }
+  .relatedResources .more {
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .resourceBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .resourceBanner .back {
+    height: 55% !important;
+  }
+  .resourceBanner .bannerTxt h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px !important;
+  }
+  .resourceBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 80%;
+  }
+  .resourceBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .featuredResources {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .featuredResources .back {
+    width: 95%;
+  }
+  .featuredResources .featuresInfo {
+    grid-gap: 30px;
+  }
+  .featuredResources .featuresInfo .imgWrapper {
+    width: 100%;
+    height: 400px;
+  }
+  .featuredResources .featuresInfo .imgWrapper .linkBtns .commBtn {
+    width: 70px;
+    height: 50px;
+  }
+  .featuredResources .featuresInfo .imgWrapper .linkBtns .commBtn img {
+    width: 20.82px;
+    height: 20.03px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .featuredResources .featuresInfo .featuresText h1 {
+    font-size: 30px;
+    line-height: 35px;
+    width: 100%;
+  }
+  .featuredResources .featuresInfo .featuresText .names {
+    margin-bottom: 10px !important;
+  }
+  .featuredResources .featuresInfo .featuresText h3 {
+    font-size: 24px;
+    line-height: 30px;
+    width: 100%;
+  }
+  .featuredResources .featuresInfo .featuresText p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+  }
+  .featuredResources .featuresInfo .featuresText a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .resourceFilter {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .resourceFilter .filter p {
+    font-size: 24px;
+    line-height: 32px;
+    width: 60%;
+  }
+  .resourceFilter .filter span {
+    width: 300px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 20px;
+  }
+  .resourceFilter .filter span h5 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .resourceFilter .filter span img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .resourceFilter .filterContent .close {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .resourceFilter .filterContent p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .resourceFilter .filterContent h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .resourceFilter .filterContent .filterItems {
+    margin: 24px 0 !important;
+  }
+  .resourceFilter .filterContent .spacer {
+    display: none !important;
+  }
+  .resourceFilter .resources {
+    margin-top: 24px !important;
+    grid-gap: 30px !important;
+  }
+  .resourceFilter .resources .resource {
+    height: 500px;
+  }
+  .resourceFilter .resources .resource img {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+  }
+  .resourceFilter .resources .resource p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .resourceContent .top .resourceImage {
+    width: 100%;
+    height: 100%;
+  }
+  .resourceContent .top .textContent h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .resourceContent .top .textContent .time img {
+    width: 30px;
+    height: 30px;
+  }
+  .resourceContent .top .textContent .time h6 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .resourceContent .top .textContent p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .resourceContent .textWrap p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .resourceContent .bottom .author img {
+    width: 80px;
+    height: 80px;
+  }
+  .resourceContent .bottom .author h6 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .resourceContent .bottom .author p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .resourceContent .bottom .shareBtn {
+    height: 60px;
+    width: 350px;
+    padding: 0 24px;
+  }
+  .resourceContent .bottom .shareBtn p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .resourceContent .bottom .shareBtn img {
+    width: 40px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .relatedResources h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .relatedResources .resources .resource {
+    height: 400px;
+  }
+  .relatedResources .resources .resource img {
+    width: 100%;
+    height: 70%;
+  }
+  .relatedResources .resources .resource p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .relatedResources .more {
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .resourceBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+  }
+  .resourceBanner .back {
+    height: 80%;
+  }
+  .resourceBanner .bannerTxt h1 {
+    font-size: 32px;
+  }
+  .resourceBanner .bannerTxt p, .resourceBanner .bannerTxt h5 {
+    color: white;
+  }
+  .resourceBanner .bannerImg {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .featuredResources {
+    padding: 30px 24px !important;
+  }
+  .featuredResources .back {
+    width: 100%;
+  }
+  .featuredResources .featuresInfo {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .featuredResources .featuresInfo .imgWrapper {
+    width: 100%;
+    height: 300px;
+  }
+  .featuredResources .featuresInfo .imgWrapper .linkBtns .commBtn {
+    width: 70px;
+    height: 50px;
+  }
+  .featuredResources .featuresInfo .imgWrapper .linkBtns .commBtn img {
+    width: 20.82px;
+    height: 20.03px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .featuredResources .featuresInfo .featuresText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .featuredResources .featuresInfo .featuresText h1 {
+    font-size: 30px;
+    line-height: 35px;
+    width: 100%;
+    text-align: center;
+  }
+  .featuredResources .featuresInfo .featuresText .names {
+    margin-bottom: 10px !important;
+  }
+  .featuredResources .featuresInfo .featuresText h3 {
+    font-size: 24px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .featuredResources .featuresInfo .featuresText p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .featuredResources .featuresInfo .featuresText a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .resourceFilter {
+    padding: 30px 24px !important;
+  }
+  .resourceFilter .filter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .resourceFilter .filter p {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    width: 100%;
+  }
+  .resourceFilter .filter span {
+    width: 60vw;
+    height: 60px;
+    border-radius: 20px;
+    margin: 0 !important;
+  }
+  .resourceFilter .filter span h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .resourceFilter .filter span img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .resourceFilter .filterContent .close {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .resourceFilter .filterContent p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .resourceFilter .filterContent h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .resourceFilter .filterContent .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .resourceFilter .filterContent .filterItems {
+    margin: 24px 0 !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .resourceFilter .filterContent .spacer {
+    display: none !important;
+  }
+  .resourceFilter .resources {
+    margin-top: 24px !important;
+    grid-gap: 30px !important;
+  }
+  .resourceFilter .resources .resource {
+    height: 400px;
+  }
+  .resourceFilter .resources .resource img {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+  }
+  .resourceFilter .resources .resource p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .resourceContent {
+    padding: 30px 24px !important;
+  }
+  .resourceContent .back {
+    width: 100%;
+  }
+  .resourceContent .top {
+    padding: 0 !important;
+  }
+  .resourceContent .top .textContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .resourceContent .top .textContent h4 {
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .resourceContent .top .textContent .time img {
+    width: 25px;
+    height: 25px;
+  }
+  .resourceContent .top .textContent .time h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .resourceContent .top .textContent p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .resourceContent .textWrap {
+    padding: 0 !important;
+  }
+  .resourceContent .textWrap p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .resourceContent .bottom {
+    padding: 0 !important;
+  }
+  .resourceContent .bottom .author img {
+    width: 60px;
+    height: 60px;
+  }
+  .resourceContent .bottom .author h6 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .resourceContent .bottom .author p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .resourceContent .bottom .shareBtn {
+    height: 60px;
+    width: 100%;
+    padding: 0 24px;
+    margin-top: 10px;
+  }
+  .resourceContent .bottom .shareBtn p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .resourceContent .bottom .shareBtn img {
+    width: 40px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .relatedResources h1 {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .relatedResources p {
+    text-align: center;
+  }
+  .relatedResources .resources .resource {
+    height: 400px;
+  }
+  .relatedResources .resources .resource img {
+    width: 100%;
+    height: 70%;
+  }
+  .relatedResources .resources .resource p {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
+  .relatedResources .more {
+    width: 55vw;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 .downloadsBanner {
   background: #F4F4F4;
   border: none;
@@ -19804,7 +21629,7 @@ footer .footerEnd p {
 .downloadsBanner .back {
   background: #1226AA;
   width: 100%;
-  height: 65%;
+  height: 70%;
   top: 0;
   left: 0;
 }
@@ -19822,29 +21647,15 @@ footer .footerEnd p {
 .downloadsBanner .bannerTxt p {
   font-size: 32px;
   line-height: 40px;
-  font-weight: normal;
+  font-weight: 600;
   color: black;
-}
-
-.downloadsBanner .bannerTxt h5 {
-  font-size: 24px;
-  color: black;
-}
-
-.downloadsBanner .bannerTxt h6 {
-  font-size: 24px;
-  color: white;
-  font-weight: bolder;
-}
-
-.downloadsBanner .bannerTxt img {
-  width: 39px;
-  height: 39px;
 }
 
 .downloadsBanner .bannerImg {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 1;
 }
 
@@ -19945,7 +21756,7 @@ footer .footerEnd p {
   font-size: 24px;
   line-height: 32px;
   color: black;
-  font-weight: normal;
+  font-weight: 800;
   z-index: 1;
 }
 
@@ -19964,6 +21775,397 @@ footer .footerEnd p {
 
 .downloadsFilter .downloads .download:hover p {
   color: white !important;
+}
+
+@media only screen and (max-width: 1600px) {
+  .downloadsBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .downloadsBanner .back {
+    height: 65% !important;
+  }
+  .downloadsBanner .bannerTxt h1 {
+    font-size: 45px;
+    line-height: 52px;
+    margin-bottom: 20px !important;
+  }
+  .downloadsBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 70%;
+  }
+  .downloadsBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .downloadsFilter {
+    padding-bottom: 48px !important;
+  }
+  .downloadsFilter .filter p {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .downloadsFilter .filter span {
+    width: auto;
+    height: 60px;
+    border-radius: 20px;
+  }
+  .downloadsFilter .filter span h5 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .downloadsFilter .filter span img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .downloadsFilter .filterContent .close {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .downloadsFilter .filterContent p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .downloadsFilter .filterContent h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .downloadsFilter .filterContent .filterItems {
+    margin: 24px 0 !important;
+  }
+  .downloadsFilter .filterContent .spacer {
+    display: none !important;
+  }
+  .downloadsFilter .downloads {
+    margin-top: 24px !important;
+  }
+  .downloadsFilter .downloads .download {
+    border-radius: 20px;
+    height: 350px;
+  }
+  .downloadsFilter .downloads .download p {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 24px !important;
+  }
+  .downloadsFilter .downloads .download h6 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .downloadsFilter .downloads .download .downloadIcon {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .downloadsBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .downloadsBanner .back {
+    height: 60% !important;
+  }
+  .downloadsBanner .bannerTxt h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px !important;
+  }
+  .downloadsBanner .bannerTxt p {
+    font-size: 18px;
+    line-height: 24px;
+    width: 70%;
+  }
+  .downloadsBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .downloadsFilter {
+    padding-bottom: 48px !important;
+  }
+  .downloadsFilter .filter p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .downloadsFilter .filter span {
+    width: auto;
+    height: 60px;
+    border-radius: 20px;
+  }
+  .downloadsFilter .filter span h5 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .downloadsFilter .filter span img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .downloadsFilter .filterContent .close {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .downloadsFilter .filterContent p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .downloadsFilter .filterContent h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .downloadsFilter .filterContent .filterItems {
+    margin: 24px 0 !important;
+  }
+  .downloadsFilter .filterContent .spacer {
+    display: none !important;
+  }
+  .downloadsFilter .downloads {
+    margin-top: 24px !important;
+    grid-gap: 30px !important;
+  }
+  .downloadsFilter .downloads .download {
+    border-radius: 20px;
+    height: 300px;
+    padding: 30px !important;
+  }
+  .downloadsFilter .downloads .download p {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 24px !important;
+  }
+  .downloadsFilter .downloads .download h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .downloadsFilter .downloads .download .downloadIcon {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .downloadsBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .downloadsBanner .back {
+    height: 55% !important;
+  }
+  .downloadsBanner .bannerTxt h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px !important;
+  }
+  .downloadsBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 80%;
+  }
+  .downloadsBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .downloadsFilter {
+    padding-bottom: 48px !important;
+  }
+  .downloadsFilter .filter p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .downloadsFilter .filter span {
+    width: auto;
+    height: 60px;
+    border-radius: 20px;
+  }
+  .downloadsFilter .filter span h5 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .downloadsFilter .filter span img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .downloadsFilter .filterContent .close {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .downloadsFilter .filterContent p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .downloadsFilter .filterContent h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .downloadsFilter .filterContent .filterItems {
+    margin: 24px 0 !important;
+  }
+  .downloadsFilter .filterContent .spacer {
+    display: none !important;
+  }
+  .downloadsFilter .downloads {
+    margin-top: 24px !important;
+    grid-gap: 30px !important;
+  }
+  .downloadsFilter .downloads .download {
+    border-radius: 20px;
+    height: 300px;
+    padding: 30px !important;
+  }
+  .downloadsFilter .downloads .download p {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 24px !important;
+  }
+  .downloadsFilter .downloads .download h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .downloadsFilter .downloads .download .downloadIcon {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .downloadsBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+  }
+  .downloadsBanner .back {
+    height: 80%;
+  }
+  .downloadsBanner .bannerTxt h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .downloadsBanner .bannerTxt p, .downloadsBanner .bannerTxt h5 {
+    color: white;
+    font-size: 16px !important;
+  }
+  .downloadsBanner .bannerImg {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .downloadsFilter {
+    padding: 30px 24px !important;
+  }
+  .downloadsFilter .filter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .downloadsFilter .filter p {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 !important;
+  }
+  .downloadsFilter .filter span {
+    width: auto;
+    height: 60px;
+    border-radius: 20px;
+    margin: 0 !important;
+  }
+  .downloadsFilter .filter span h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .downloadsFilter .filter span img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .downloadsFilter .filterContent .close {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .downloadsFilter .filterContent p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .downloadsFilter .filterContent h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .downloadsFilter .filterContent .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .downloadsFilter .filterContent .filterItems {
+    margin: 24px 0 !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .downloadsFilter .filterContent .spacer {
+    display: none !important;
+  }
+  .downloadsFilter .downloads {
+    margin-top: 24px !important;
+    grid-gap: 30px !important;
+  }
+  .downloadsFilter .downloads .download {
+    border-radius: 20px;
+    height: 300px;
+    padding: 30px !important;
+  }
+  .downloadsFilter .downloads .download p {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 24px !important;
+  }
+  .downloadsFilter .downloads .download h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .downloadsFilter .downloads .download .downloadIcon {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 .faqBanner {
@@ -19992,29 +22194,15 @@ footer .footerEnd p {
 .faqBanner .bannerTxt p {
   font-size: 32px;
   line-height: 40px;
-  font-weight: normal;
+  font-weight: 600;
   color: black;
-}
-
-.faqBanner .bannerTxt h5 {
-  font-size: 24px;
-  color: black;
-}
-
-.faqBanner .bannerTxt h6 {
-  font-size: 24px;
-  color: white;
-  font-weight: bolder;
-}
-
-.faqBanner .bannerTxt img {
-  width: 39px;
-  height: 39px;
 }
 
 .faqBanner .bannerImg {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 1;
 }
 
@@ -20083,5 +22271,301 @@ footer .footerEnd p {
 
 .faqFilter .filterContent .active {
   color: #1226AA;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1600px) {
+  .faqBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .faqBanner .back {
+    height: 70% !important;
+  }
+  .faqBanner .bannerTxt h1 {
+    font-size: 45px;
+    margin-bottom: 20px !important;
+  }
+  .faqBanner .bannerTxt p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 70%;
+  }
+  .faqBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .faqFilter {
+    padding-bottom: 0px !important;
+  }
+  .faqFilter .filter {
+    margin-bottom: 0px !important;
+  }
+  .faqFilter .filter p {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .faqFilter .filter span {
+    width: auto;
+    height: 60px;
+    border-radius: 20px;
+  }
+  .faqFilter .filter span h5 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .faqFilter .filter span img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .faqFilter .filterContent .close {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .faqFilter .filterContent p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .faqFilter .filterContent h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .faqFilter .filterContent .filterItems {
+    margin: 24px 0 !important;
+  }
+  .faqFilter .filterContent .spacer {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .faqBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .faqBanner .back {
+    height: 60% !important;
+  }
+  .faqBanner .bannerTxt h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px !important;
+  }
+  .faqBanner .bannerTxt p {
+    font-size: 18px;
+    line-height: 24px;
+    width: 70%;
+  }
+  .faqBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .faqFilter .filter p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .faqFilter .filter span {
+    width: auto;
+    height: 60px;
+    border-radius: 20px;
+  }
+  .faqFilter .filter span h5 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .faqFilter .filter span img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .faqFilter .filterContent .close {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .faqFilter .filterContent p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .faqFilter .filterContent h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .faqFilter .filterContent .filterItems {
+    margin: 24px 0 !important;
+  }
+  .faqFilter .filterContent .spacer {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .faqBanner {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .faqBanner .back {
+    height: 55% !important;
+  }
+  .faqBanner .bannerTxt h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px !important;
+  }
+  .faqBanner .bannerTxt p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 80%;
+  }
+  .faqBanner .bannerImg {
+    margin-top: 0px !important;
+  }
+  .faqFilter .filter p {
+    font-size: 24px;
+    line-height: 32px;
+    width: 60%;
+  }
+  .faqFilter .filter span {
+    width: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 20px;
+  }
+  .faqFilter .filter span h5 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .faqFilter .filter span img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .faqFilter .filterContent .close {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .faqFilter .filterContent p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .faqFilter .filterContent h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .faqFilter .filterContent .filterItems {
+    margin: 24px 0 !important;
+  }
+  .faqFilter .filterContent .spacer {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .faqBanner {
+    grid-gap: 0;
+    padding: 30px 24px !important;
+  }
+  .faqBanner .back {
+    height: 80%;
+  }
+  .faqBanner .bannerTxt h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .faqBanner .bannerTxt p, .faqBanner .bannerTxt h5 {
+    color: white;
+    font-size: 16px !important;
+  }
+  .faqBanner .bannerImg {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .faqFilter .filter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .faqFilter .filter p {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    width: 100%;
+  }
+  .faqFilter .filter span {
+    width: auto;
+    height: 60px;
+    border-radius: 20px;
+    margin: 0 !important;
+  }
+  .faqFilter .filter span h5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .faqFilter .filter span img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .faqFilter .filterContent .close {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .faqFilter .filterContent p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .faqFilter .filterContent h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .faqFilter .filterContent .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .faqFilter .filterContent .filterItems {
+    margin: 24px 0 !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .faqFilter .filterContent .spacer {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */
