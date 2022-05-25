@@ -761,6 +761,207 @@ footer .footerEnd p {
   color: black !important;
 }
 
+.homeBanner .chatIcon {
+  position: absolute;
+  bottom: 60px;
+  right: 96px;
+  background: white;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.homeBanner .chatIcon img {
+  width: 40px !important;
+  height: 40px !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.homeBanner .chatIcon h6 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 800;
+}
+
+.homeBanner .chatBox {
+  position: absolute;
+  bottom: 60px;
+  right: 96px;
+  background: white;
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+  z-index: 10;
+}
+
+.homeBanner .chatBox .previous h6 {
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+  font-weight: 600;
+  width: 80%;
+}
+
+.homeBanner .chatBox .previous span img {
+  width: 15px;
+  height: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.homeBanner .chatBox .previous span p {
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+  font-weight: 500;
+}
+
+.homeBanner .chatBox .previous .chatForm input {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-radius: 15px;
+  background: #F4F4F4;
+  color: black;
+  outline: none;
+  font-size: 14px;
+  border: 2px solid rgba(0, 0, 0, 0.301);
+}
+
+.homeBanner .chatBox .previous .chatForm input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: grey;
+}
+
+.homeBanner .chatBox .previous .chatForm input:-ms-input-placeholder {
+  font-size: 14px;
+  color: grey;
+}
+
+.homeBanner .chatBox .previous .chatForm input::-ms-input-placeholder {
+  font-size: 14px;
+  color: grey;
+}
+
+.homeBanner .chatBox .previous .chatForm input::placeholder {
+  font-size: 14px;
+  color: grey;
+}
+
+.homeBanner .chatBox .previous .chatForm button {
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  background: #1226AA;
+}
+
+.homeBanner .chatBox .previous .chatForm button img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.homeBanner .chatBox .previous .chatForm button p {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+
+.homeBanner .chatBox .next h6 {
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+  font-weight: 600;
+  width: 80%;
+}
+
+.homeBanner .chatBox .next span img {
+  width: 15px;
+  height: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.homeBanner .chatBox .next span p {
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+  font-weight: 500;
+}
+
+.homeBanner .chatBox .next .chat {
+  background: #F4F4F4;
+  border-radius: 15px;
+  padding: 20px 10px;
+  height: 60%;
+}
+
+.homeBanner .chatBox .next .chat img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.homeBanner .chatBox .next .chat .content {
+  background: #84B748;
+  border-radius: 15px;
+  padding: 20px 10px;
+}
+
+.homeBanner .chatBox .next .chat .content p {
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+.homeBanner .chatBox .next .chatInput {
+  height: 50px;
+  background: white;
+}
+
+.homeBanner .chatBox .next .chatInput input {
+  font-size: 14px;
+  color: black;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.homeBanner .chatBox .next .chatInput input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: black;
+}
+
+.homeBanner .chatBox .next .chatInput input:-ms-input-placeholder {
+  font-size: 14px;
+  color: black;
+}
+
+.homeBanner .chatBox .next .chatInput input::-ms-input-placeholder {
+  font-size: 14px;
+  color: black;
+}
+
+.homeBanner .chatBox .next .chatInput input::placeholder {
+  font-size: 14px;
+  color: black;
+}
+
+.homeBanner .chatBox .next .chatInput .icons img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .homeBanner .tab1 {
   background: #1226AA;
 }
@@ -927,8 +1128,6 @@ footer .footerEnd p {
   width: 300px;
   height: 315px;
   border-radius: 50px;
-  background: url("../assets/project img 2.png") no-repeat center center;
-  background-size: cover;
 }
 
 .homeBanner .tab2 .productCategory .categoryCard .info {
@@ -1006,6 +1205,31 @@ footer .footerEnd p {
   display: none;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard:nth-child(1) {
+  background: url("../assets/white house.png") no-repeat center center;
+  background-size: cover;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard:nth-child(2) {
+  background: url("../assets/floor.png") no-repeat center center;
+  background-size: cover;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard:nth-child(3) {
+  background: url("../assets/drainage.png") no-repeat center center;
+  background-size: cover;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard:nth-child(4) {
+  background: url("../assets/general.png") no-repeat center center;
+  background-size: cover;
+}
+
+.homeBanner .tab2 .productCategory .categoryCard:nth-child(5) {
+  background: url("../assets/nails.png") no-repeat center center;
+  background-size: cover;
 }
 
 .homeBanner .tab3 {
@@ -1157,6 +1381,14 @@ footer .footerEnd p {
   height: 494px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.homeBanner .tab3 .chatBox .previous button {
+  background: #FFB548 !important;
+}
+
+.homeBanner .tab3 .chatBox .previous button p {
+  color: black !important;
 }
 
 .homeBanner .tab4 {
@@ -1338,6 +1570,10 @@ footer .footerEnd p {
   border: 3px solid #1226AA !important;
 }
 
+.assemble .gridContent .activeBlue img {
+  border: 3px solid #1226AA !important;
+}
+
 .assemble .gridContent .activeBlue p {
   color: #1226AA !important;
   font-weight: 900 !important;
@@ -1388,9 +1624,16 @@ footer .footerEnd p {
   grid-row-gap: 50px;
 }
 
+.assemble .gridContent .gallery .galleryCard {
+  cursor: pointer;
+}
+
 .assemble .gridContent .gallery .galleryCard img {
   width: 170px;
   height: 170px;
+  border-radius: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .assemble .gridContent .gallery .galleryCard p {
@@ -1528,22 +1771,22 @@ footer .footerEnd p {
 }
 
 .explore .exploreCards .exploreCard1 {
-  background: url("../assets/drainage.png") no-repeat center center;
+  background: url("../assets/white house.png") no-repeat center center;
   background-size: cover;
 }
 
 .explore .exploreCards .exploreCard2 {
-  background: url("../assets/drainage.png") no-repeat center center;
+  background: url("../assets/floor.png") no-repeat center center;
   background-size: cover;
 }
 
 .explore .exploreCards .exploreCard3 {
-  background: url("../assets/drainage.png") no-repeat center center;
+  background: url("../assets/general.png") no-repeat center center;
   background-size: cover;
 }
 
 .explore .exploreCards .exploreCard4 {
-  background: url("../assets/drainage.png") no-repeat center center;
+  background: url("../assets/white house.png") no-repeat center center;
   background-size: cover;
 }
 
@@ -1694,8 +1937,6 @@ footer .footerEnd p {
   width: 300px;
   height: 315px;
   border-radius: 50px;
-  background: url("../assets/sustainable.png") no-repeat center center;
-  background-size: cover;
 }
 
 .branches .wrapper .hardware .hardwareCard .info, .styleResources .wrapper .hardware .hardwareCard .info {
@@ -1747,6 +1988,26 @@ footer .footerEnd p {
 
 .branches .wrapper .hardware .hardwareCard .overlay:hover, .styleResources .wrapper .hardware .hardwareCard .overlay:hover {
   opacity: 1;
+}
+
+.branches .wrapper .hardware .hardwareCard:nth-child(1), .styleResources .wrapper .hardware .hardwareCard:nth-child(1) {
+  background: url("../assets/branch 1.png") no-repeat center center;
+  background-size: cover;
+}
+
+.branches .wrapper .hardware .hardwareCard:nth-child(2), .styleResources .wrapper .hardware .hardwareCard:nth-child(2) {
+  background: url("../assets/branch 2.png") no-repeat center center;
+  background-size: cover;
+}
+
+.branches .wrapper .hardware .hardwareCard:nth-child(3), .styleResources .wrapper .hardware .hardwareCard:nth-child(3) {
+  background: url("../assets/branch 3.png") no-repeat center center;
+  background-size: cover;
+}
+
+.branches .wrapper .hardware .hardwareCard:nth-child(4), .styleResources .wrapper .hardware .hardwareCard:nth-child(4) {
+  background: url("../assets/branch 4.png") no-repeat center center;
+  background-size: cover;
 }
 
 .differences {
@@ -2464,10 +2725,10 @@ footer .footerEnd p {
   .assemble .gridContent .gallery {
     width: 100%;
     margin-top: 30px;
-    grid-gap: 10px;
+    grid-gap: 20px;
   }
   .assemble .gridContent .gallery .galleryCard img {
-    width: auto;
+    width: 100%;
     height: 120px;
   }
   .assemble .gridContent .gallery .galleryCard p {
@@ -2907,6 +3168,162 @@ footer .footerEnd p {
   .homeBanner .tabGrids .link1 {
     padding-left: 70px !important;
   }
+  .homeBanner .chatIcon {
+    bottom: 20%;
+    right: 96px;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+  }
+  .homeBanner .chatIcon img {
+    width: 40px;
+    height: 40px;
+  }
+  .homeBanner .chatIcon h6 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .homeBanner .chatBox {
+    bottom: 20%;
+    right: 96px;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+  }
+  .homeBanner .chatBox .previous h6 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    width: 80%;
+  }
+  .homeBanner .chatBox .previous span img {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .homeBanner .chatBox .previous span p {
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+  }
+  .homeBanner .chatBox .previous .chatForm input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+  .homeBanner .chatBox .previous .chatForm input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm input:-ms-input-placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm input::-ms-input-placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm input::placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm button {
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    background: #1226AA;
+  }
+  .homeBanner .chatBox .previous .chatForm button img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .homeBanner .chatBox .previous .chatForm button p {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+  }
+  .homeBanner .chatBox .next h6 {
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+    font-weight: 600;
+    width: 80%;
+  }
+  .homeBanner .chatBox .next span img {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .homeBanner .chatBox .next span p {
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    font-weight: 500;
+  }
+  .homeBanner .chatBox .next .chat {
+    background: #F4F4F4;
+    border-radius: 15px;
+    padding: 20px 10px;
+    height: 60%;
+  }
+  .homeBanner .chatBox .next .chat img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .homeBanner .chatBox .next .chat .content {
+    background: #84B748;
+    border-radius: 15px;
+    padding: 20px 10px;
+  }
+  .homeBanner .chatBox .next .chat .content p {
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    font-weight: 500;
+  }
+  .homeBanner .chatBox .next .chatInput {
+    height: 50px;
+    background: white;
+  }
+  .homeBanner .chatBox .next .chatInput input {
+    font-size: 14px;
+    color: black;
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  .homeBanner .chatBox .next .chatInput input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput input:-ms-input-placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput input::-ms-input-placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput input::placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput .icons img {
+    width: 20px;
+    height: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .explore {
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
@@ -2993,6 +3410,170 @@ footer .footerEnd p {
     min-height: 70vh;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .homeBanner .chatIcon {
+    bottom: 40px;
+    right: 96px;
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+  .homeBanner .chatIcon * {
+    margin: 0 !important;
+  }
+  .homeBanner .chatIcon img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px !important;
+  }
+  .homeBanner .chatIcon h6 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .homeBanner .chatBox {
+    bottom: 40px;
+    right: 96px;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+  }
+  .homeBanner .chatBox .previous h6 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    width: 80%;
+  }
+  .homeBanner .chatBox .previous span img {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .homeBanner .chatBox .previous span p {
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+  }
+  .homeBanner .chatBox .previous .chatForm input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+  .homeBanner .chatBox .previous .chatForm input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm input:-ms-input-placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm input::-ms-input-placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm input::placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm button {
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    background: #1226AA;
+  }
+  .homeBanner .chatBox .previous .chatForm button * {
+    margin: 0 !important;
+  }
+  .homeBanner .chatBox .previous .chatForm button img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 5px !important;
+  }
+  .homeBanner .chatBox .previous .chatForm button p {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+  }
+  .homeBanner .chatBox .next h6 {
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+    font-weight: 600;
+    width: 80%;
+  }
+  .homeBanner .chatBox .next span img {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .homeBanner .chatBox .next span p {
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    font-weight: 500;
+  }
+  .homeBanner .chatBox .next .chat {
+    background: #F4F4F4;
+    border-radius: 15px;
+    padding: 20px 10px;
+    height: 60%;
+  }
+  .homeBanner .chatBox .next .chat img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .homeBanner .chatBox .next .chat .content {
+    background: #84B748;
+    border-radius: 15px;
+    padding: 20px 10px;
+  }
+  .homeBanner .chatBox .next .chat .content p {
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    font-weight: 500;
+  }
+  .homeBanner .chatBox .next .chatInput {
+    height: 50px;
+    background: white;
+  }
+  .homeBanner .chatBox .next .chatInput input {
+    font-size: 14px;
+    color: black;
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  .homeBanner .chatBox .next .chatInput input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput input:-ms-input-placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput input::-ms-input-placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput input::placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput .icons img {
+    width: 20px;
+    height: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .homeBanner .tab1 .textContent h3 {
     font-size: 20px;
@@ -3783,6 +4364,162 @@ footer .footerEnd p {
     line-height: 32px;
     text-align: center;
   }
+  .homeBanner .chatIcon {
+    bottom: 50%;
+    right: 48px;
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+  .homeBanner .chatIcon img {
+    width: 30px;
+    height: 30px;
+  }
+  .homeBanner .chatIcon h6 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .homeBanner .chatBox {
+    bottom: 50%;
+    right: 48px;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+  }
+  .homeBanner .chatBox .previous h6 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    width: 80%;
+  }
+  .homeBanner .chatBox .previous span img {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .homeBanner .chatBox .previous span p {
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+  }
+  .homeBanner .chatBox .previous .chatForm input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+  .homeBanner .chatBox .previous .chatForm input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm input:-ms-input-placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm input::-ms-input-placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm input::placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm button {
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    background: #1226AA;
+  }
+  .homeBanner .chatBox .previous .chatForm button img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .homeBanner .chatBox .previous .chatForm button p {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+  }
+  .homeBanner .chatBox .next h6 {
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+    font-weight: 600;
+    width: 80%;
+  }
+  .homeBanner .chatBox .next span img {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .homeBanner .chatBox .next span p {
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    font-weight: 500;
+  }
+  .homeBanner .chatBox .next .chat {
+    background: #F4F4F4;
+    border-radius: 15px;
+    padding: 20px 10px;
+    height: 60%;
+  }
+  .homeBanner .chatBox .next .chat img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .homeBanner .chatBox .next .chat .content {
+    background: #84B748;
+    border-radius: 15px;
+    padding: 20px 10px;
+  }
+  .homeBanner .chatBox .next .chat .content p {
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    font-weight: 500;
+  }
+  .homeBanner .chatBox .next .chatInput {
+    height: 50px;
+    background: white;
+  }
+  .homeBanner .chatBox .next .chatInput input {
+    font-size: 14px;
+    color: black;
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  .homeBanner .chatBox .next .chatInput input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput input:-ms-input-placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput input::-ms-input-placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput input::placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput .icons img {
+    width: 20px;
+    height: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .homeBanner .tab1 {
     padding: 48px;
   }
@@ -4506,6 +5243,162 @@ footer .footerEnd p {
     font-weight: 700;
     text-align: center;
   }
+  .homeBanner .chatIcon {
+    bottom: 75%;
+    right: 48px;
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+  .homeBanner .chatIcon img {
+    width: 30px;
+    height: 30px;
+  }
+  .homeBanner .chatIcon h6 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .homeBanner .chatBox {
+    bottom: 75%;
+    right: 48px;
+    border-radius: 20px;
+    width: 80vw;
+    height: 30vh;
+    padding: 15px;
+  }
+  .homeBanner .chatBox .previous h6 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    width: 80%;
+  }
+  .homeBanner .chatBox .previous span img {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .homeBanner .chatBox .previous span p {
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+  }
+  .homeBanner .chatBox .previous .chatForm input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+  .homeBanner .chatBox .previous .chatForm input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm input:-ms-input-placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm input::-ms-input-placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm input::placeholder {
+    font-size: 14px;
+    color: grey;
+  }
+  .homeBanner .chatBox .previous .chatForm button {
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    background: #1226AA;
+  }
+  .homeBanner .chatBox .previous .chatForm button img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .homeBanner .chatBox .previous .chatForm button p {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+  }
+  .homeBanner .chatBox .next h6 {
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+    font-weight: 600;
+    width: 80%;
+  }
+  .homeBanner .chatBox .next span img {
+    width: 15px;
+    height: 15px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .homeBanner .chatBox .next span p {
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    font-weight: 500;
+  }
+  .homeBanner .chatBox .next .chat {
+    background: #F4F4F4;
+    border-radius: 15px;
+    padding: 20px 10px;
+    height: 60%;
+  }
+  .homeBanner .chatBox .next .chat img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .homeBanner .chatBox .next .chat .content {
+    background: #84B748;
+    border-radius: 15px;
+    padding: 20px 10px;
+  }
+  .homeBanner .chatBox .next .chat .content p {
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    font-weight: 500;
+  }
+  .homeBanner .chatBox .next .chatInput {
+    height: 50px;
+    background: white;
+  }
+  .homeBanner .chatBox .next .chatInput input {
+    font-size: 14px;
+    color: black;
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  .homeBanner .chatBox .next .chatInput input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput input:-ms-input-placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput input::-ms-input-placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput input::placeholder {
+    font-size: 14px;
+    color: black;
+  }
+  .homeBanner .chatBox .next .chatInput .icons img {
+    width: 20px;
+    height: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .homeBanner .tab1 {
     padding: 40px 16px !important;
   }
@@ -4687,6 +5580,10 @@ footer .footerEnd p {
     height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .homeBanner .tab3 .chatIcon, .homeBanner .tab3 .chatBox {
+    bottom: 5% !important;
+    right: 16px;
   }
   .homeBanner .tab4 {
     padding: 40px 16px !important;
@@ -5650,6 +6547,31 @@ footer .footerEnd p {
   opacity: 1;
 }
 
+.productBranches .wrapper .hardware .hardwareCard:nth-child(1) {
+  background: url("../assets/white house.png") no-repeat center center;
+  background-size: cover;
+}
+
+.productBranches .wrapper .hardware .hardwareCard:nth-child(2) {
+  background: url("../assets/floor.png") no-repeat center center;
+  background-size: cover;
+}
+
+.productBranches .wrapper .hardware .hardwareCard:nth-child(3) {
+  background: url("../assets/drainage.png") no-repeat center center;
+  background-size: cover;
+}
+
+.productBranches .wrapper .hardware .hardwareCard:nth-child(4) {
+  background: url("../assets/general.png") no-repeat center center;
+  background-size: cover;
+}
+
+.productBranches .wrapper .hardware .hardwareCard:nth-child(5) {
+  background: url("../assets/nails.png") no-repeat center center;
+  background-size: cover;
+}
+
 /*PRODUCTS CATEGORY STYLES */
 .roofingBanner .back {
   height: 60%;
@@ -5725,6 +6647,8 @@ footer .footerEnd p {
   width: 158px;
   height: 169px;
   border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .productsExplore .exploreWrapper .tileTypes .galleryCard p, .subCategoryForm .exploreWrapper .tileTypes .galleryCard p {

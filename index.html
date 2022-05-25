@@ -121,7 +121,7 @@
                     <img src="./assets/IMAGE HOLDER.png" alt="" class="lg:mt-0">
                 </div>
                 
-                <div v-show="currentHomeTab==2" class="tabSection tab2 w-full flex flex-col justify-start lg:space-y-12 md:space-y-6 space-y-3 lg:px-24 md:px-12 px-6 lg:py-12 lg:py-24 md:py-12 py-6">
+                <div v-show="currentHomeTab==2" class="tabSection relative tab2 w-full flex flex-col justify-start lg:space-y-12 md:space-y-6 space-y-3 lg:px-24 md:px-12 px-6 lg:py-12 lg:py-24 md:py-12 py-6">
                     <h4 class="lg:w-4/5 md:w-4/5 w-full">Our variety of building products meets the needs of a wide range of construction.</h4>
                     <div class="productCategory grid lg:grid-cols-5 mg:grid-cols-3 lg:gap-6">
                         <div class="categoryCard relative p-6 flex flex-col items-start justify-between">
@@ -180,9 +180,53 @@
                             </a>
                         </div>
                     </div>
+                    
+                    <!--Floating Chat box-->
+                    <span @click="activateChatBox=true" class="chatIcon flex flex-col items-center justify-center">
+                        <h6 class="lg:mb-3 mb-2">Talk to Us</h6>
+                        <img src="./assets/message.png" alt="">
+                    </span>
+                    <div v-show="activateChatBox==true" class="chatBox">
+                        <div v-show="activateChat==false" class="previous w-full h-full">
+                            <div class="top w-full h-auto flex items-center justify-between">
+                                <h6>Kindly give us your details below to be connected to the next available agent.</h6>
+                                <span @click="activateChatBox=false, activateChat=false" @click="ctivateChat=false" class="flex flex-col items-center space-y-2 cursor-pointer"><img src="./assets/close chat rounded.png" alt=""><p>close</p></span>
+                            </div>
+                            
+                            <div class="chatForm flex flex-col mt-3">
+                                <input type="text" name="name" placeholder="Enter your name">
+                                <input type="text" name="phone" placeholder="Enter your phone number" class="mt-3 mb-5">
+                                <button @click="activateChat=true" class="flex items-center justify-center space-x-3">
+                                    <img src="./assets/send.png" alt="">
+                                    <p>Start Chat</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div v-show="activateChat==true" class="next w-full h-full flex flex-col justify-between">
+                            <div class="top w-full h-auto flex items-center justify-between">
+                                <h6>Say something on the chat</h6>
+                                <span @click="activateChatBox=false, activateChat=false" @click="ctivateChat=false" class="flex flex-col items-center space-y-2 cursor-pointer"><img src="./assets/close chat rounded.png" alt=""><p>close</p></span>
+                            </div>
+                            <div class="chat flex items-center justify-center">
+                                <div class="wrapper flex items-end  space-x-3">
+                                    <img src="./assets/chat agent.png" alt="">
+                                    <div class="content">
+                                        <p>When you build with Space & Style, we give you innovative building materials.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chatInput flex items-center justify-between">
+                                <input type="text" placeholder="Write reply..." class="h-full w-full">
+                                <div class="icons flex items-center space-x-3">
+                                    <span class="cursor-pointer"><img src="./assets/chat attatch.png" alt=""></span>
+                                    <span class="cursor-pointer"><img src="./assets/chat emoji.png" alt=""></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div v-show="currentHomeTab==3" class="tabSection tab3 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-24 items-start lg:pl-24 lg:pr-0 md:pl-12 md:pr-0 lg:py-24 md:py-12 py-6">
+                <div v-show="currentHomeTab==3" class="tabSection relative tab3 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-24 items-start lg:pl-24 lg:pr-0 md:pl-12 md:pr-0 lg:py-24 md:py-12 py-6">
                     <div class="textContent">
                         <h3 class="lg:w-4/5 md:w-4/5 w-full">Now is a great time to consider becoming a partner with Space & Style.</h3>
                         <form action="#" class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-5 gap-4 lg:mt-16 mt-8">
@@ -199,6 +243,50 @@
                         </form>
                     </div>
                     <img src="./assets/IMAGE HOLDER.png" alt="" class="lg:mt-0">
+                    
+                    <!--Floating Chat box-->
+                    <span @click="activateChatBox=true" class="chatIcon flex flex-col items-center justify-center">
+                        <h6 class="lg:mb-3 mb-2">Talk to Us</h6>
+                        <img src="./assets/message orange.png" alt="">
+                    </span>
+                    <div v-show="activateChatBox==true" class="chatBox">
+                        <div v-show="activateChat==false" class="previous w-full h-full">
+                            <div class="top w-full h-auto flex items-center justify-between">
+                                <h6>Kindly give us your details below to be connected to the next available agent.</h6>
+                                <span @click="activateChatBox=false, activateChat=false" @click="ctivateChat=false" class="flex flex-col items-center space-y-2 cursor-pointer"><img src="./assets/close chat rounded.png" alt=""><p>close</p></span>
+                            </div>
+                            
+                            <div class="chatForm flex flex-col mt-3">
+                                <input type="text" name="name" placeholder="Enter your name">
+                                <input type="text" name="phone" placeholder="Enter your phone number" class="mt-3 mb-5">
+                                <button @click="activateChat=true" class="flex items-center justify-center space-x-3">
+                                    <img src="./assets/send dark.png" alt="">
+                                    <p>Start Chat</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div v-show="activateChat==true" class="next w-full h-full flex flex-col justify-between">
+                            <div class="top w-full h-auto flex items-center justify-between">
+                                <h6>Say something on the chat</h6>
+                                <span @click="activateChatBox=false, activateChat=false" @click="ctivateChat=false" class="flex flex-col items-center space-y-2 cursor-pointer"><img src="./assets/close chat rounded.png" alt=""><p>close</p></span>
+                            </div>
+                            <div class="chat flex items-center justify-center">
+                                <div class="wrapper flex items-end  space-x-3">
+                                    <img src="./assets/chat agent.png" alt="">
+                                    <div class="content">
+                                        <p>When you build with Space & Style, we give you innovative building materials.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chatInput flex items-center justify-between">
+                                <input type="text" placeholder="Write reply..." class="h-full w-full">
+                                <div class="icons flex items-center space-x-3">
+                                    <span class="cursor-pointer"><img src="./assets/chat attatch.png" alt=""></span>
+                                    <span class="cursor-pointer"><img src="./assets/chat emoji.png" alt=""></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                 <div v-show="currentHomeTab==4" class="tabSection tab4 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-24 items-start lg:pl-24 lg:pr-0 md:pl-12 md:pr-0 lg:py-24 md:py-12 py-6">
@@ -294,44 +382,44 @@
                             </form>
                         </div>
                         <div class="gallery grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 p-0 lg:mt-12 md:mt-6">
-                            <div class="galleryCard flex flex-col items-center justify-center space-y-3">
+                            <div @click="galleryChoice=1" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==1}">
+                                <img src="./assets/marbles.png" alt="">
+                                <p>Material Name</p>
+                            </div>
+                            <div @click="galleryChoice=2" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==2}">
                                 <img src="./assets/MATERIAL HOLDER.png" alt="">
                                 <p>Material Name</p>
                             </div>
-                            <div class="galleryCard flex flex-col items-center justify-center space-y-3">
+                            <div @click="galleryChoice=3" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==3}">
+                                <img src="./assets/floor.png" alt="">
+                                <p>Material Name</p>
+                            </div>
+                            <div @click="galleryChoice=4" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==4}">
+                                <img src="./assets/general.png" alt="">
+                                <p>Material Name</p>
+                            </div>
+                            <div @click="galleryChoice=5" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==5}">
+                                <img src="./assets/nails.png" alt="">
+                                <p>Material Name</p>
+                            </div>
+                            <div @click="galleryChoice=6" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==6}">
+                                <img src="./assets/nails.png" alt="">
+                                <p>Material Name</p>
+                            </div>
+                            <div @click="galleryChoice=7" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==7}">
                                 <img src="./assets/MATERIAL HOLDER.png" alt="">
                                 <p>Material Name</p>
                             </div>
-                            <div class="galleryCard flex flex-col items-center justify-center space-y-3">
-                                <img src="./assets/MATERIAL HOLDER.png" alt="">
+                            <div @click="galleryChoice=8" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==8}">
+                                <img src="./assets/general.png" alt="">
                                 <p>Material Name</p>
                             </div>
-                            <div class="galleryCard flex flex-col items-center justify-center space-y-3">
-                                <img src="./assets/MATERIAL HOLDER.png" alt="">
+                            <div @click="galleryChoice=9" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==9}">
+                                <img src="./assets/marbles.png" alt="">
                                 <p>Material Name</p>
                             </div>
-                            <div class="galleryCard flex flex-col items-center justify-center space-y-3">
-                                <img src="./assets/MATERIAL HOLDER.png" alt="">
-                                <p>Material Name</p>
-                            </div>
-                            <div class="galleryCard flex flex-col items-center justify-center space-y-3">
-                                <img src="./assets/MATERIAL HOLDER.png" alt="">
-                                <p>Material Name</p>
-                            </div>
-                            <div class="galleryCard flex flex-col items-center justify-center space-y-3">
-                                <img src="./assets/MATERIAL HOLDER.png" alt="">
-                                <p>Material Name</p>
-                            </div>
-                            <div class="galleryCard flex flex-col items-center justify-center space-y-3">
-                                <img src="./assets/MATERIAL HOLDER.png" alt="">
-                                <p>Material Name</p>
-                            </div>
-                            <div class="galleryCard flex flex-col items-center justify-center space-y-3">
-                                <img src="./assets/MATERIAL HOLDER.png" alt="">
-                                <p>Material Name</p>
-                            </div>
-                            <div class="galleryCard flex flex-col items-center justify-center space-y-3">
-                                <img src="./assets/MATERIAL HOLDER.png" alt="">
+                            <div @click="galleryChoice=10" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==10}">
+                                <img src="./assets/floor.png" alt="">
                                 <p>Material Name</p>
                             </div>
                         </div>
@@ -821,6 +909,9 @@
                 currentHomeTab: 1,
                 currentAssembleTab: 1,
                 currentCommunityImg: 1,
+                activateChatBox: false,
+                activateChat: false,
+                galleryChoice: 0
             },
         });
         
