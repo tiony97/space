@@ -32,10 +32,52 @@
                     <img src="./assets/search_black_24dp.png" alt="" class="search">
                 </div>
                 <div class="navBtns flex lg:space-x-4">
-                    <a href="javascript:void(0)" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="javascript:void(0)" :class="{'call flex items-center justify-center':true, 'liveBranch':showBranches==true}" @click="showBranches=!showBranches">
+                        <p v-show="showBranches==false">Contact branches</p>
+                        <p v-show="showBranches==true">Close branches</p>
+                    </a>
+                    <a href="javascript:void(0)" class="login flex items-center justify-center">Login</a>
                 </div>
             </div>
         </nav>
+        <!--Branches popup-->
+        <div v-show="showBranches==true" class="contactBranches flex items-center justify-between lg:px-20 md:px-12 px-5 py-16 lg:w-4/6 w-full">
+            <div class="branch flex flex-col space-y-2">
+                <h5>Kisumu Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+            <div class="branch flex flex-col space-y-2">
+                <h5>Kisii Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+            <div class="branch flex flex-col space-y-2">
+                <h5>Nakuru Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+            <div class="branch flex flex-col space-y-2">
+                <h5>Eldoret Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+            <div class="branch flex flex-col space-y-2">
+                <h5>Nairobi Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+        </div>
         
         <!--RESPONSIVE NAV-->
         <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-1">
@@ -102,7 +144,7 @@
                 </div>
                 
                 <!--Tab Sections-->
-                <div v-show="currentHomeTab==1" class="tabSection tab1 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-24 items-start lg:pl-24 lg:pr-0 md:pl-12 md:pr-0 lg:py-24 md:py-12 py-6">
+                <div v-show="currentHomeTab==1" class="tabSection relative tab1 w-full grid lg:grid-cols-2 grid-cols-1 lg:gap-24 items-start lg:pl-24 lg:pr-0 md:pl-12 md:pr-0 lg:py-24 md:py-12 py-6">
                     <div class="textContent">
                         <h3 class="lg:w-5/6 md:w-4/5 w-full">When you build with Space & Style, we give you innovative building materials.</h3>
                         <form action="#" class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-5 gap-4 lg:mt-16 mt-8">
@@ -119,65 +161,89 @@
                         </form>
                     </div>
                     <img src="./assets/IMAGE HOLDER.png" alt="" class="lg:mt-0">
+                    
+                    <!--Floating Chat box-->
+                    <span @click="activateChatBox=true" class="chatIcon flex flex-col items-center justify-center">
+                        <h6 class="lg:mb-3 mb-2">Talk to Us</h6>
+                        <img src="./assets/message.png" alt="">
+                    </span>
+                    <div v-show="activateChatBox==true" class="chatBox">
+                        <div v-show="activateChat==false" class="previous w-full h-full">
+                            <div class="top w-full h-auto flex items-center justify-between">
+                                <h6>Kindly give us your details below to be connected to the next available agent.</h6>
+                                <span @click="activateChatBox=false, activateChat=false" @click="ctivateChat=false" class="flex flex-col items-center space-y-2 cursor-pointer"><img src="./assets/close chat rounded.png" alt=""><p>close</p></span>
+                            </div>
+                            
+                            <div class="chatForm flex flex-col mt-3">
+                                <input type="text" name="name" placeholder="Enter your name">
+                                <input type="text" name="phone" placeholder="Enter your phone number" class="mt-3 mb-5">
+                                <button @click="activateChat=true" class="flex items-center justify-center space-x-3">
+                                    <img src="./assets/send.png" alt="">
+                                    <p>Start Chat</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div v-show="activateChat==true" class="next w-full h-full flex flex-col justify-between">
+                            <div class="top w-full h-auto flex items-center justify-between">
+                                <h6>Say something on the chat</h6>
+                                <span @click="activateChatBox=false, activateChat=false" @click="ctivateChat=false" class="flex flex-col items-center space-y-2 cursor-pointer"><img src="./assets/close chat rounded.png" alt=""><p>close</p></span>
+                            </div>
+                            <div class="chat flex items-center justify-center">
+                                <div class="wrapper flex items-end  space-x-3">
+                                    <img src="./assets/chat agent.png" alt="">
+                                    <div class="content">
+                                        <p>When you build with Space & Style, we give you innovative building materials.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chatInput flex items-center justify-between">
+                                <input type="text" placeholder="Write reply..." class="h-full w-full">
+                                <div class="icons flex items-center space-x-3">
+                                    <span class="cursor-pointer"><img src="./assets/chat attatch.png" alt=""></span>
+                                    <span class="cursor-pointer"><img src="./assets/chat emoji.png" alt=""></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                 <div v-show="currentHomeTab==2" class="tabSection relative tab2 w-full flex flex-col justify-start lg:space-y-12 md:space-y-6 space-y-3 lg:px-24 md:px-12 px-6 lg:py-12 lg:py-24 md:py-12 py-6">
                     <h4 class="lg:w-4/5 md:w-4/5 w-full">Our variety of building products meets the needs of a wide range of construction.</h4>
                     <div class="productCategory grid lg:grid-cols-5 mg:grid-cols-3 lg:gap-6">
                         <div class="categoryCard relative p-6 flex flex-col items-start justify-between">
-                            <span class="info flex items-center justify-center my-1">Category Name</span>
+                            <span class="info flex items-center justify-center my-1">Roofing</span>
                             <div class="overlay p-10 flex flex-col items-start">
                                 <span class="overlayInfo flex items-center justify-center"></span>
-                                <p class="overlayTxt mb-12">Brief description about the product category maximum of 10 words.</p>
-                            </div> 
-                            <a href="javascript:void(0)" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
-                                <img src="./assets/shopping_bag_white_24dp.png" alt="">
-                                <p>Shop Now</p>
-                            </a>
+                                <p class="overlayTxt mb-12">We have a wide range of roofing materials. Include; slates, tiles, vents, corrugated sheets, and more.</p>
+                            </div>
                         </div>
                         <div class="categoryCard relative p-6 flex flex-col items-start justify-between">
-                            <span class="info flex items-center justify-center my-1">Category Name</span>
+                            <span class="info flex items-center justify-center my-1">Flooring</span>
                             <div class="overlay p-10 flex flex-col items-start">
                                 <span class="overlayInfo flex items-center justify-center"></span>
                                 <p class="overlayTxt mb-12">Brief description about the product category maximum of 10 words.</p>
                             </div> 
-                            <a href="javascript:void(0)" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
-                                <img src="./assets/shopping_bag_white_24dp.png" alt="">
-                                <p>Shop Now</p>
-                            </a>
                         </div>
                         <div class="categoryCard relative p-6 flex flex-col items-start justify-between">
-                            <span class="info flex items-center justify-center my-1">Category Name</span>
+                            <span class="info flex items-center justify-center my-1">Drainage</span>
                             <div class="overlay p-10 flex flex-col items-start">
                                 <span class="overlayInfo flex items-center justify-center"></span>
                                 <p class="overlayTxt mb-12">Brief description about the product category maximum of 10 words.</p>
                             </div> 
-                            <a href="javascript:void(0)" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
-                                <img src="./assets/shopping_bag_white_24dp.png" alt="">
-                                <p>Shop Now</p>
-                            </a>
                         </div>
                         <div class="categoryCard relative p-6 flex flex-col items-start justify-between">
-                            <span class="info flex items-center justify-center my-1">Category Name</span>
+                            <span class="info flex items-center justify-center my-1">Steel Structures</span>
                             <div class="overlay p-10 flex flex-col items-start">
                                 <span class="overlayInfo flex items-center justify-center"></span>
                                 <p class="overlayTxt mb-12">Brief description about the product category maximum of 10 words.</p>
                             </div> 
-                            <a href="javascript:void(0)" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
-                                <img src="./assets/shopping_bag_white_24dp.png" alt="">
-                                <p>Shop Now</p>
-                            </a>
                         </div>
                         <div class="categoryCard relative p-6 flex flex-col items-start justify-between">
-                            <span class="info flex items-center justify-center my-1">Category Name</span>
+                            <span class="info flex items-center justify-center my-1">General Materials</span>
                             <div class="overlay p-10 flex flex-col items-start">
                                 <span class="overlayInfo flex items-center justify-center"></span>
                                 <p class="overlayTxt mb-12">Brief description about the product category maximum of 10 words.</p>
                             </div> 
-                            <a href="javascript:void(0)" class="shopLink flex items-center justify-start space-x-3 px-5 py-2">
-                                <img src="./assets/shopping_bag_white_24dp.png" alt="">
-                                <p>Shop Now</p>
-                            </a>
                         </div>
                     </div>
                     
@@ -320,6 +386,64 @@
                         </form>
                     </div>
                     <img src="./assets/Agents banner image.png" alt="" class="lg:mt-0">
+                    
+                    <!--Floating Chat box-->
+                    <span @click="activateChatBox=true" class="chatIcon flex flex-col items-center justify-center">
+                        <h6 class="lg:mb-3 mb-2">Talk to Us</h6>
+                        <img src="./assets/message.png" alt="">
+                    </span>
+                    <div v-show="activateChatBox==true" class="chatBox">
+                        <div v-show="activateChat==false" class="previous w-full h-full">
+                            <div class="top w-full h-auto flex items-center justify-between">
+                                <h6>Kindly give us your details below to be connected to the next available agent.</h6>
+                                <span @click="activateChatBox=false, activateChat=false" @click="ctivateChat=false" class="flex flex-col items-center space-y-2 cursor-pointer"><img src="./assets/close chat rounded.png" alt=""><p>close</p></span>
+                            </div>
+                            
+                            <div class="chatForm flex flex-col mt-3">
+                                <input type="text" name="name" placeholder="Enter your name">
+                                <input type="text" name="phone" placeholder="Enter your phone number" class="mt-3 mb-5">
+                                <button @click="activateChat=true" class="flex items-center justify-center space-x-3">
+                                    <img src="./assets/send.png" alt="">
+                                    <p>Start Chat</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div v-show="activateChat==true" class="next w-full h-full flex flex-col justify-between">
+                            <div class="top w-full h-auto flex items-center justify-between">
+                                <h6>Say something on the chat</h6>
+                                <span @click="activateChatBox=false, activateChat=false" @click="ctivateChat=false" class="flex flex-col items-center space-y-2 cursor-pointer"><img src="./assets/close chat rounded.png" alt=""><p>close</p></span>
+                            </div>
+                            <div class="chat flex items-center justify-center">
+                                <div class="wrapper flex items-end  space-x-3">
+                                    <img src="./assets/chat agent.png" alt="">
+                                    <div class="content">
+                                        <p>When you build with Space & Style, we give you innovative building materials.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chatInput flex items-center justify-between">
+                                <input type="text" placeholder="Write reply..." class="h-full w-full">
+                                <div class="icons flex items-center space-x-3">
+                                    <span class="cursor-pointer"><img src="./assets/chat attatch.png" alt=""></span>
+                                    <span class="cursor-pointer"><img src="./assets/chat emoji.png" alt=""></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--DEALS SECTION-->
+            <div class="deals flex flex-col items-center justify-center lg:px-24 md:px-12 px-6 lg:pt-12 md:pt-12 pt-6 lg:space-y-4 space-y-3">
+                <h1>Never miss out on our deals</h1>
+                <p>When you build with Space & Style, we give you innovative building materials.</p>
+                <div class="flex items-center justify-center lg:space-x-4 md:space-x-3">
+                    <span class="flex items-center justify-center"><img src="./assets/arrow left white.png" alt=""></span>
+                    <div class="imgWrap relative flex">
+                        <img src="./assets/4.png" alt="" class="img1 absolute">
+                        <img src="./assets/deals poster.png" alt="" class="img2 absolute">
+                    </div>
+                    <span class="flex items-center justify-center"><img src="./assets/arrow right white.png" alt=""></span>
                 </div>
             </div>
             
@@ -382,48 +506,28 @@
                             </form>
                         </div>
                         <div class="gallery grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 p-0 lg:mt-12 md:mt-6">
-                            <div @click="galleryChoice=1" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==1}">
-                                <img src="./assets/marbles.png" alt="">
-                                <p>Material Name</p>
-                            </div>
-                            <div @click="galleryChoice=2" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==2}">
-                                <img src="./assets/MATERIAL HOLDER.png" alt="">
-                                <p>Material Name</p>
-                            </div>
-                            <div @click="galleryChoice=3" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==3}">
+                            <div @click="galleryChoice=1" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'galleryBlue' : galleryChoice==1}">
                                 <img src="./assets/floor.png" alt="">
-                                <p>Material Name</p>
+                                <p>Flooring</p>
                             </div>
-                            <div @click="galleryChoice=4" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==4}">
-                                <img src="./assets/general.png" alt="">
-                                <p>Material Name</p>
-                            </div>
-                            <div @click="galleryChoice=5" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==5}">
-                                <img src="./assets/nails.png" alt="">
-                                <p>Material Name</p>
-                            </div>
-                            <div @click="galleryChoice=6" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==6}">
-                                <img src="./assets/nails.png" alt="">
-                                <p>Material Name</p>
-                            </div>
-                            <div @click="galleryChoice=7" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==7}">
+                            <div @click="galleryChoice=2" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'galleryBlue' : galleryChoice==2}">
                                 <img src="./assets/MATERIAL HOLDER.png" alt="">
-                                <p>Material Name</p>
+                                <p>Roofing</p>
                             </div>
-                            <div @click="galleryChoice=8" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==8}">
-                                <img src="./assets/general.png" alt="">
-                                <p>Material Name</p>
-                            </div>
-                            <div @click="galleryChoice=9" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==9}">
-                                <img src="./assets/marbles.png" alt="">
-                                <p>Material Name</p>
-                            </div>
-                            <div @click="galleryChoice=10" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'activeBlue' : galleryChoice==10}">
+                            <div @click="galleryChoice=3" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'galleryBlue' : galleryChoice==3}">
                                 <img src="./assets/floor.png" alt="">
-                                <p>Material Name</p>
+                                <p>Drainage</p>
+                            </div>
+                            <div @click="galleryChoice=4" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'galleryBlue' : galleryChoice==4}">
+                                <img src="./assets/general.png" alt="">
+                                <p>Flooring</p>
+                            </div>
+                            <div @click="galleryChoice=5" :class="{'galleryCard flex flex-col items-center justify-center space-y-3' : true,'galleryBlue' : galleryChoice==5}">
+                                <img src="./assets/nails.png" alt="">
+                                <p>Flooring</p>
                             </div>
                         </div>
-                        <div class="assembleButtons flex items-center justify-start lg:space-x-12 md:space-x-6 lg:my-24 md:my-12 my-6">
+                        <div class="assembleButtons flex items-center justify-start lg:space-x-12 md:space-x-6 lg:my-8 my-6">
                             <a href="javascript:void(0)" class="quote flex items-center justify-center">Get Quotation</a>
                             <a href="javascript:void(0)" class="plan flex items-center justify-center space-x-5">
                                 <img src="./assets/file_upload_black_24dp.png" alt="">
@@ -491,8 +595,9 @@
             </div>
             
             <!--BRANCHES SECTION-->
-            <div class="branches relative flex items-center justify-center">
-                <div class="bgBack"></div>
+            <div class="branches relative flex items-start justify-center lg:mb-12 md:mb-12 mb-6">
+                <img src="./assets/map.png" alt="" class="bgBack">
+                
                 <div class="wrapper flex flex-col justify-center items-center lg:px-24 md:px-12 px-6 lg:py-24 md:py-12 py-6 space-y-5 lg:mb-12 md:mb-12 mb-0">
                     <h2>Shop building materials countrywide</h2>
                     <form action="#" class="w-full flex flex-col items-center">
@@ -511,15 +616,11 @@
                                 <span class="checkmark"></span>
                                 <p>Dealers</p>
                             </label>
-                            <label class="container flex items-center justify-center space-x-2">
-                                <input type="radio">
-                                <span class="checkmark"></span>
-                                <p>Sellers</p>
-                            </label>
                         </div>
                     </form>
                     <p class="buildtxt lg:mb-32 md:mb-16 mb-8">Buy your building materials from these branches near you</p>
                     <div class="hardware grid grid-cols-4 gap-8">
+                        <!--
                         <div class="hardwareCard relative p-6 flex flex-col items-start">
                            <span class="info flex items-center justify-center">Hardware Name</span>
                            <div class="overlay p-10 flex flex-col items-start">
@@ -564,6 +665,7 @@
                                 </div>
                             </div> 
                         </div>
+                        -->
                     </div>
                 </div>
             </div>
@@ -609,23 +711,19 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide sliderCard flex flex-col items-start justify-center h-auto w-auto space-y-5 p-5">
                             <img src="./assets/partner img 1.png" alt="">
-                            <p>Brief project<br/>Description title<br/>Maximum 3 lines</p>
+                            <p>Kisaju homes partnership <br/> with Diamond Trust Bank</p>
                         </div>
                         <div class="swiper-slide sliderCard flex flex-col items-start justify-center h-auto w-auto space-y-5 p-5">
                             <img src="./assets/partner img 2.png" alt="">
-                            <p>Brief project<br/>Description title<br/>Maximum 3 lines</p>
+                            <p>Shanzu city partnership<br/>with Bamburi Cement</p>
                         </div>
                         <div class="swiper-slide sliderCard flex flex-col items-start justify-center h-auto w-auto space-y-5 p-5">
                             <img src="./assets/partner img 3.png" alt="">
-                            <p>Brief project<br/>Description title<br/>Maximum 3 lines</p>
+                            <p>New Kitsuru estate<br/>500 new units</p>
                         </div>
                         <div class="swiper-slide sliderCard flex flex-col items-start justify-center h-auto w-auto space-y-5 p-5">
-                            <img src="./assets/partner img 3.png" alt="">
-                            <p>Brief project<br/>Description title<br/>Maximum 3 lines</p>
-                        </div>
-                        <div class="swiper-slide sliderCard flex flex-col items-start justify-center h-auto w-auto space-y-5 p-5">
-                            <img src="./assets/partner img 3.png" alt="">
-                            <p>Brief project<br/>Description title<br/>Maximum 3 lines</p>
+                            <img src="./assets/partner img 1.png" alt="">
+                            <p>Kisaju homes partnership <br/> with Diamond Trust Bank</p>
                         </div>
                     </div>
                 </div>
@@ -643,8 +741,8 @@
                             <div class="overlay"></div>
                             <img src="./assets/PATTERN.png" alt="" class="overlayImg">
                             <div class="name flex items-center space-x-5">
-                                <img src="./assets/PROFILE HOLDER.png" alt="" class="user">
-                                <h4>Customer<br/>Name</h4>
+                                <img src="./assets/PROFILE IMAGE-1.png" alt="" class="user">
+                                <h4>Faith Jemiango</h4>
                             </div>
                             <p>I love the quality of roofing materials offered. I was lucky to get great assistance from the sales rep who was honest</p>
                             <div class="ratings flex flex-col items-start justify-center">
@@ -668,10 +766,85 @@
                             <div class="overlay"></div>
                             <img src="./assets/PATTERN.png" alt="" class="overlayImg">
                             <div class="name flex items-center space-x-5">
-                                <img src="./assets/PROFILE HOLDER.png" alt="" class="user">
-                                <h4>Customer<br/>Name</h4>
+                                <img src="./assets/LIMO.png" alt="" class="user">
+                                <h4>Isaac Limo</h4>
                             </div>
-                            <p>I love the quality of roofing materials offered. I was lucky to get great assistance from the sales rep who was honest</p>
+                            <p>It's the best place to shop for your roof in stylish designs. The Decra lovers, Space & Style is the home for all roof designs.</p>
+                            <div class="ratings flex flex-col items-start justify-center">
+                                <div class="light flex items-center justify-start space-x-2">
+                                    <img src="./assets/Group 69.png" alt="">
+                                    <img src="./assets/Group 69.png" alt="">
+                                    <img src="./assets/Group 69.png" alt="">
+                                    <img src="./assets/Group 69.png" alt="">
+                                    <img src="./assets/Path 60.png" alt="">
+                                </div>
+                                <div class="hover flex items-center justify-start space-x-2">
+                                    <img src="./assets/yellow fill star.png" alt="">
+                                    <img src="./assets/yellow fill star.png" alt="">
+                                    <img src="./assets/yellow fill star.png" alt="">
+                                    <img src="./assets/yellow fill star.png" alt="">
+                                    <img src="./assets/hollow star.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide relative customerCard flex flex-col items-start justify-between pt-5 pb-8 px-10">
+                            <div class="overlay"></div>
+                            <img src="./assets/PATTERN.png" alt="" class="overlayImg">
+                            <div class="name flex items-center space-x-5">
+                                <img src="./assets/PROFILE IMAGE-4.png" alt="" class="user">
+                                <h4>Tuesday Masaki</h4>
+                            </div>
+                            <p>The purchase and dispatch was quite efficient today. Excellent customer care!</p>
+                            <div class="ratings flex flex-col items-start justify-center">
+                                <div class="light flex items-center justify-start space-x-2">
+                                    <img src="./assets/Group 69.png" alt="">
+                                    <img src="./assets/Group 69.png" alt="">
+                                    <img src="./assets/Group 69.png" alt="">
+                                    <img src="./assets/Group 69.png" alt="">
+                                    <img src="./assets/Path 60.png" alt="">
+                                </div>
+                                <div class="hover flex items-center justify-start space-x-2">
+                                    <img src="./assets/yellow fill star.png" alt="">
+                                    <img src="./assets/yellow fill star.png" alt="">
+                                    <img src="./assets/yellow fill star.png" alt="">
+                                    <img src="./assets/yellow fill star.png" alt="">
+                                    <img src="./assets/hollow star.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide relative customerCard flex flex-col items-start justify-between pt-5 pb-8 px-10">
+                            <div class="overlay"></div>
+                            <img src="./assets/PATTERN.png" alt="" class="overlayImg">
+                            <div class="name flex items-center space-x-5">
+                                <img src="./assets/thande.png" alt="" class="user">
+                                <h4>Isaac W. Thande</h4>
+                            </div>
+                            <p>Great place to shop everything construction and style needs.</p>
+                            <div class="ratings flex flex-col items-start justify-center">
+                                <div class="light flex items-center justify-start space-x-2">
+                                    <img src="./assets/Group 69.png" alt="">
+                                    <img src="./assets/Group 69.png" alt="">
+                                    <img src="./assets/Group 69.png" alt="">
+                                    <img src="./assets/Group 69.png" alt="">
+                                    <img src="./assets/Path 60.png" alt="">
+                                </div>
+                                <div class="hover flex items-center justify-start space-x-2">
+                                    <img src="./assets/yellow fill star.png" alt="">
+                                    <img src="./assets/yellow fill star.png" alt="">
+                                    <img src="./assets/yellow fill star.png" alt="">
+                                    <img src="./assets/yellow fill star.png" alt="">
+                                    <img src="./assets/hollow star.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide relative customerCard flex flex-col items-start justify-between pt-5 pb-8 px-10">
+                            <div class="overlay"></div>
+                            <img src="./assets/PATTERN.png" alt="" class="overlayImg">
+                            <div class="name flex items-center space-x-5">
+                                <img src="./assets/PROFILE IMAGE-1.png" alt="" class="user">
+                                <h4>Faith Jemiango</h4>
+                            </div>
+                            <p>I love the quality of roofing materials offered. I was lucky to get great assistance from the sales rep who was honest.</p>
                             <div class="ratings flex flex-col items-start justify-center">
                                 <div class="light flex items-center justify-start space-x-2">
                                     <img src="./assets/Group 69.png" alt="">
@@ -694,9 +867,9 @@
                             <img src="./assets/PATTERN.png" alt="" class="overlayImg">
                             <div class="name flex items-center space-x-5">
                                 <img src="./assets/PROFILE HOLDER.png" alt="" class="user">
-                                <h4>Customer<br/>Name</h4>
+                                <h4>Faith Jemiango</h4>
                             </div>
-                            <p>I love the quality of roofing materials offered. I was lucky to get great assistance from the sales rep who was honest</p>
+                            <p>I love the quality of roofing materials offered. I was lucky to get great assistance from the sales rep who was honest.</p>
                             <div class="ratings flex flex-col items-start justify-center">
                                 <div class="light flex items-center justify-start space-x-2">
                                     <img src="./assets/Group 69.png" alt="">
@@ -718,10 +891,10 @@
                             <div class="overlay"></div>
                             <img src="./assets/PATTERN.png" alt="" class="overlayImg">
                             <div class="name flex items-center space-x-5">
-                                <img src="./assets/PROFILE HOLDER.png" alt="" class="user">
-                                <h4>Customer<br/>Name</h4>
+                                <img src="./assets/PROFILE HOLDER 2.png" alt="" class="user">
+                                <h4>Faith Jemiango</h4>
                             </div>
-                            <p>I love the quality of roofing materials offered. I was lucky to get great assistance from the sales rep who was honest</p>
+                            <p>I love the quality of roofing materials offered. I was lucky to get great assistance from the sales rep who was honest.</p>
                             <div class="ratings flex flex-col items-start justify-center">
                                 <div class="light flex items-center justify-start space-x-2">
                                     <img src="./assets/Group 69.png" alt="">
@@ -743,35 +916,10 @@
                             <div class="overlay"></div>
                             <img src="./assets/PATTERN.png" alt="" class="overlayImg">
                             <div class="name flex items-center space-x-5">
-                                <img src="./assets/PROFILE HOLDER.png" alt="" class="user">
-                                <h4>Customer<br/>Name</h4>
+                                <img src="./assets/PROFILE HOLDER 3.png" alt="" class="user">
+                                <h4>Faith Jemiango</h4>
                             </div>
-                            <p>I love the quality of roofing materials offered. I was lucky to get great assistance from the sales rep who was honest</p>
-                            <div class="ratings flex flex-col items-start justify-center">
-                                <div class="light flex items-center justify-start space-x-2">
-                                    <img src="./assets/Group 69.png" alt="">
-                                    <img src="./assets/Group 69.png" alt="">
-                                    <img src="./assets/Group 69.png" alt="">
-                                    <img src="./assets/Group 69.png" alt="">
-                                    <img src="./assets/Path 60.png" alt="">
-                                </div>
-                                <div class="hover flex items-center justify-start space-x-2">
-                                    <img src="./assets/yellow fill star.png" alt="">
-                                    <img src="./assets/yellow fill star.png" alt="">
-                                    <img src="./assets/yellow fill star.png" alt="">
-                                    <img src="./assets/yellow fill star.png" alt="">
-                                    <img src="./assets/hollow star.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide relative customerCard flex flex-col items-start justify-between pt-5 pb-8 px-10">
-                            <div class="overlay"></div>
-                            <img src="./assets/PATTERN.png" alt="" class="overlayImg">
-                            <div class="name flex items-center space-x-5">
-                                <img src="./assets/PROFILE HOLDER.png" alt="" class="user">
-                                <h4>Customer<br/>Name</h4>
-                            </div>
-                            <p>I love the quality of roofing materials offered. I was lucky to get great assistance from the sales rep who was honest</p>
+                            <p>I love the quality of roofing materials offered. I was lucky to get great assistance from the sales rep who was honest.</p>
                             <div class="ratings flex flex-col items-start justify-center">
                                 <div class="light flex items-center justify-start space-x-2">
                                     <img src="./assets/Group 69.png" alt="">
@@ -911,7 +1059,8 @@
                 currentCommunityImg: 1,
                 activateChatBox: false,
                 activateChat: false,
-                galleryChoice: 0
+                galleryChoice: 0,
+                showBranches: false
             },
         });
         

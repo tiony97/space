@@ -58,7 +58,6 @@ nav {
     }
     .navBtns {
         a {
-            min-width: 168px;
             height: 60px;
             font-size: 16px;
             border: 3px solid $blue;
@@ -67,17 +66,23 @@ nav {
             transition: all .2s ease-in-out;
         }
         .call {
+            min-width: 168px;
             color: white;
             font-weight: bold;
             background: $blue;
         }
         .login {
+            min-width: 130px;
             color: $blue;
             background: transparent;
             &:hover {
                 background: $blue;
                 color: white;
             }
+        }
+        .liveBranch {
+            color: $blue !important;
+            background: transparent !important;
         }
     }
 }
@@ -177,6 +182,32 @@ nav {
     visibility: visible;
 }
 
+//Contact Branches popup
+.contactBranches {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    z-index: 10;
+    background: white;
+    .branch {
+        h5 {
+            font-size: 16px;
+            font-weight: 800 !important;
+            color: $dark;
+        }
+        img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+        p {
+            font-size: 13px;
+            font-weight: 400 !important;
+            color: $dark;
+        }
+    }
+}
+
 //footer 
 footer {
     background: #EACBD1;
@@ -273,7 +304,7 @@ footer {
         .pageLinks {
             margin: 0 5px !important;
             a {
-                font-size: 15px;
+                font-size: 12px;
                 font-weight: 400;
                 color: $dark;
                 padding: 0 !important;
@@ -294,11 +325,18 @@ footer {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                min-width: 150px;
                 height: 50px;
                 border-radius: 15px;
-                font-size: 15px;
+                font-size: 13px;
                 margin: 0px 5px !important;
+            }
+            .call {
+                min-width: auto;
+                padding: 0 24px;
+            }
+            .login {
+                min-width: auto;
+                padding: 0 32px;
             }
         }
     }
@@ -327,6 +365,7 @@ footer {
             }
             a {
                 margin: 0 !important;
+                font-size: 15px;
                 margin-bottom: 5px !important;
             }
         }

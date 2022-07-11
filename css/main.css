@@ -50,7 +50,6 @@ nav .navIcons img {
 }
 
 nav .navBtns a {
-  min-width: 168px;
   height: 60px;
   font-size: 16px;
   border: 3px solid #1226AA;
@@ -61,12 +60,14 @@ nav .navBtns a {
 }
 
 nav .navBtns .call {
+  min-width: 168px;
   color: white;
   font-weight: bold;
   background: #1226AA;
 }
 
 nav .navBtns .login {
+  min-width: 130px;
   color: #1226AA;
   background: transparent;
 }
@@ -74,6 +75,11 @@ nav .navBtns .login {
 nav .navBtns .login:hover {
   background: #1226AA;
   color: white;
+}
+
+nav .navBtns .liveBranch {
+  color: #1226AA !important;
+  background: transparent !important;
 }
 
 .responsiveNav {
@@ -177,6 +183,33 @@ nav .navBtns .login:hover {
 .menuOverlay.open {
   opacity: 1;
   visibility: visible;
+}
+
+.contactBranches {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  z-index: 10;
+  background: white;
+}
+
+.contactBranches .branch h5 {
+  font-size: 16px;
+  font-weight: 800 !important;
+  color: black;
+}
+
+.contactBranches .branch img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.contactBranches .branch p {
+  font-size: 13px;
+  font-weight: 400 !important;
+  color: black;
 }
 
 footer {
@@ -301,7 +334,7 @@ footer .footerEnd p {
     margin: 0 5px !important;
   }
   nav .pageLinks a {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
     color: black;
     padding: 0 !important;
@@ -329,11 +362,18 @@ footer .footerEnd p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    min-width: 150px;
     height: 50px;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 13px;
     margin: 0px 5px !important;
+  }
+  nav .navBtns .call {
+    min-width: auto;
+    padding: 0 24px;
+  }
+  nav .navBtns .login {
+    min-width: auto;
+    padding: 0 32px;
   }
   footer {
     padding-top: 48px !important;
@@ -366,6 +406,7 @@ footer .footerEnd p {
   }
   footer .linkSection a {
     margin: 0 !important;
+    font-size: 15px;
     margin-bottom: 5px !important;
   }
   footer .iconSection h5 {
@@ -1519,6 +1560,58 @@ footer .footerEnd p {
   outline: none;
 }
 
+.deals h1 {
+  font-size: 48px;
+  font-weight: 900 !important;
+  line-height: 50px;
+  text-align: center;
+  color: black;
+}
+
+.deals p {
+  font-size: 20px;
+  font-weight: normal !important;
+  line-height: 30px;
+  text-align: center;
+  color: black;
+}
+
+.deals span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #1226AA;
+  cursor: pointer;
+}
+
+.deals span img {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.deals .imgWrap {
+  width: 60vw;
+  height: 70vh;
+}
+
+.deals .imgWrap .img1 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.deals .imgWrap .img2 {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .assemble {
   position: relative;
 }
@@ -1566,15 +1659,27 @@ footer .footerEnd p {
   transition: all .3s ease-in-out;
 }
 
+.assemble .gridContent .tabLink img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .assemble .gridContent .activeBlue .tabLink {
   border: 3px solid #1226AA !important;
 }
 
-.assemble .gridContent .activeBlue img {
+.assemble .gridContent .activeBlue p {
+  color: #1226AA !important;
+  font-weight: 900 !important;
+}
+
+.assemble .gridContent .galleryBlue img {
   border: 3px solid #1226AA !important;
 }
 
-.assemble .gridContent .activeBlue p {
+.assemble .gridContent .galleryBlue p {
   color: #1226AA !important;
   font-weight: 900 !important;
 }
@@ -1791,16 +1896,19 @@ footer .footerEnd p {
 }
 
 .branches, .styleResources {
-  min-height: auto;
+  min-height: 100vh;
 }
 
 .branches .bgBack, .styleResources .bgBack {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: #1226AA;
   width: 100%;
-  height: 70% !important;
+  height: 80% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
   z-index: -1;
 }
 
@@ -2105,9 +2213,9 @@ footer .footerEnd p {
 }
 
 .partners .partnerSlider .sliderCard p {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: normal;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 .customers .titleSection h2 {
@@ -2221,6 +2329,10 @@ footer .footerEnd p {
   display: none;
 }
 
+.community {
+  background: white;
+}
+
 .community .back {
   position: absolute;
   top: 0;
@@ -2245,7 +2357,7 @@ footer .footerEnd p {
 
 .community .communityInfo {
   z-index: 1;
-  padding-left: 0 !important;
+  padding: 0 !important;
 }
 
 .community .communityInfo .imgWrapper {
@@ -2506,8 +2618,8 @@ footer .footerEnd p {
     border-radius: 20px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .overlay .overlayTxt {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .homeBanner .tab2 .productCategory .categoryCard .shopLink {
     width: auto;
@@ -3009,7 +3121,7 @@ footer .footerEnd p {
     border-radius: 20px;
   }
   .partners .partnerSlider .sliderCard p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
   }
   .customers {
@@ -3043,11 +3155,11 @@ footer .footerEnd p {
        object-fit: cover;
   }
   .customers .customerSlider .customerCard .name h4 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
   }
   .customers .customerSlider .customerCard p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
   }
   .customers .customerSlider .customerCard .ratings img {
@@ -3063,7 +3175,7 @@ footer .footerEnd p {
     line-height: 40px;
   }
   .community .communityInfo {
-    margin-top: 50px !important;
+    margin-top: 30px !important;
     padding-left: 0 !important;
     display: -ms-grid !important;
     display: grid !important;
@@ -18718,7 +18830,7 @@ footer .footerEnd p {
 .contactBanner .back {
   background: #1226AA;
   width: 100%;
-  height: 60%;
+  height: 70%;
   top: 0;
   left: 0;
 }
@@ -18769,6 +18881,21 @@ footer .footerEnd p {
   -o-object-fit: contain;
      object-fit: contain;
   z-index: 1;
+}
+
+.contactMap {
+  height: 100vh;
+}
+
+.contactMap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Contactspacer {
+  background: #F4F4F4;
 }
 
 .contactForm {
@@ -18964,7 +19091,7 @@ footer .footerEnd p {
     padding-bottom: 48px !important;
   }
   .contactBanner .back {
-    height: 60% !important;
+    height: 75% !important;
   }
   .contactBanner .bannerTxt h1 {
     font-size: 45px;

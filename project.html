@@ -31,10 +31,52 @@
                     <img src="./assets/search_black_24dp.png" alt="" class="search">
                 </div>
                 <div class="navBtns flex lg:space-x-4">
-                    <a href="javascript:void(0)" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="javascript:void(0)" :class="{'call flex items-center justify-center':true, 'liveBranch':showBranches==true}" @click="showBranches=!showBranches">
+                        <p v-show="showBranches==false">Contact branches</p>
+                        <p v-show="showBranches==true">Close branches</p>
+                    </a>
+                    <a href="javascript:void(0)" class="login flex items-center justify-center">Login</a>
                 </div>
             </div>
         </nav>
+        <!--Branches popup-->
+        <div v-show="showBranches==true" class="contactBranches flex items-center justify-between lg:px-20 md:px-12 px-5 py-16 lg:w-4/6 w-full">
+            <div class="branch flex flex-col space-y-2">
+                <h5>Kisumu Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+            <div class="branch flex flex-col space-y-2">
+                <h5>Kisii Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+            <div class="branch flex flex-col space-y-2">
+                <h5>Nakuru Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+            <div class="branch flex flex-col space-y-2">
+                <h5>Eldoret Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+            <div class="branch flex flex-col space-y-2">
+                <h5>Nairobi Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+        </div>
 
         <!--RESPONSIVE NAV-->
         <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-1">
@@ -202,6 +244,7 @@
             el: '#app',
             data:{
                 activeImpact: 1,
+                showBranches: false
             },
             methods: {}
         });

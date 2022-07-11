@@ -5,7 +5,7 @@
     .back {
         background: $blue;
         width: 100%;
-        height: 60%;
+        height: 70%;
         top: 0;
         left: 0;
     }
@@ -49,6 +49,21 @@
         object-fit: contain;
         z-index: 1;
     }
+}
+
+//Contact Map
+.contactMap {
+    height: 100vh;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+//Spacer
+.Contactspacer {
+    background: $light;
 }
 
 //Contact Form
@@ -195,7 +210,7 @@
     padding-top: 48px !important;
     padding-bottom: 48px !important;
     .back {
-        height: 60% !important;
+        height: 75% !important;
     }
     .bannerTxt {
         h1 {

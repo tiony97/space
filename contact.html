@@ -25,16 +25,58 @@
                     <a href="./style.html">Style Points</a>
                     <a href="./impact.html">Our Impact</a>
                     <a href="./news.html">News</a>
-                    <a href="./contact.html" class="activeLink">Contact Us</a>
+                    <a href="./contact.html"  class="activeLink">Contact Us</a>
                 </div>
                 <div class="navIcons flex items-center lg:space-x-4">
                     <img src="./assets/search_black_24dp.png" alt="" class="search">
                 </div>
                 <div class="navBtns flex lg:space-x-4">
-                    <a href="javascript:void(0)" class="call flex items-center justify-center">Call Us Now</a>
+                    <a href="javascript:void(0)" :class="{'call flex items-center justify-center':true, 'liveBranch':showBranches==true}" @click="showBranches=!showBranches">
+                        <p v-show="showBranches==false">Contact branches</p>
+                        <p v-show="showBranches==true">Close branches</p>
+                    </a>
+                    <a href="javascript:void(0)" class="login flex items-center justify-center">Login</a>
                 </div>
             </div>
         </nav>
+        <!--Branches popup-->
+        <div v-show="showBranches==true" class="contactBranches flex items-center justify-between lg:px-20 md:px-12 px-5 py-16 lg:w-4/6 w-full">
+            <div class="branch flex flex-col space-y-2">
+                <h5>Kisumu Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+            <div class="branch flex flex-col space-y-2">
+                <h5>Kisii Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+            <div class="branch flex flex-col space-y-2">
+                <h5>Nakuru Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+            <div class="branch flex flex-col space-y-2">
+                <h5>Eldoret Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+            <div class="branch flex flex-col space-y-2">
+                <h5>Nairobi Office</h5>
+                <div class="flex items-center space-x-2">
+                    <img src="./assets/whatsapp.png" alt="">
+                    <p>+254 731 777 711</p>
+                </div>
+            </div>
+        </div>
 
         <!--RESPONSIVE NAV-->
         <div class="responsiveNav items-center justify-between w-full lg:px-20 md:px-12 px-5 py-1">
@@ -81,50 +123,8 @@
                 <div class="bannerTxt h-full flex flex-col justify-end items-start space-y-3 pb-6">
                     <h1 class="lg:mb-10 mb-6">Contact Us</h1>
                     <p class="lg:w-4/5 md:w-4/5 w-full">Let us help you by getting close to us</p>
-                    <div class="call flex items-center lg:space-x-5 md:space-x-3 space-x-2">
-                        <img src="./assets/phone.png" alt="" class="darkIcons">
-                        <img src="./assets/whatsapp.png" alt="" class="darkIcons">
-                        <img src="./assets/icons8-phone-24.png" alt="" class="lightIcons">
-                        <img src="./assets/icons8-whatsapp-24.png" alt="" class="lightIcons">
-                        <h6>020 2086700</h6>
-                    </div>
                 </div>
                 <img src="./assets/contact banner.png" alt="" class="bannerImg mt-24">
-            </div>
-            
-            <!--CONTACT FORM SECTION-->
-            <div class="contactForm relative flex w-full flex-col lg:pr-24 lg:pl-0 md:px-12 lg:py-24 md:py-12 py-6">
-                <div class="back"></div>
-                <div class="contactInner relative grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 lg:gap-16 md:gap-8 gap-5">
-                    <img src="./assets/contact image.png" alt="" class="contactImg">
-                    <form class="content lg:space-y-5 md-space-y-3 space-y-2">
-                        <h1 class="lg:w-3/5 md:w-4/5 w-full">Have a question or need more information?</h1>
-                        <p>Type your questions or comments below.</p>
-                        <div class="inputs grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-6 gap-4">
-                            <div class="input flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
-                                <label>First Name</label>
-                                <input type="text" placeholder="Type your name e.g Salawowo Salapata">
-                            </div>
-                            <div class="input flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
-                                <label>Second Name</label>
-                                <input type="text" placeholder="Type your name e.g Salawowo Salapata">
-                            </div>
-                            <div class="input flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
-                                <label>Email</label>
-                                <input type="email" placeholder="Type your email e.g salawowo@gmail.com">
-                            </div>
-                            <div class="input flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
-                                <label>Phone</label>
-                                <input type="tel" placeholder="Enter your phone number e.g 072X XXXX">
-                            </div>
-                        </div>
-                        <div class="comment flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
-                            <label>Questions or Comments</label>
-                            <textarea cols="30" rows="10" placeholder="Style Points is a loyalty scheme for all Space and Style customers. Once registered to the programme, you start earning points when you spend up to Ksh.500. The more you shop, the more points you earn. Earning of Style Points starts as soon as you register for the programme."></textarea>
-                        </div>
-                        <button type="submit" class="submitBtn">Submit</button>
-                    </form>
-                </div>
             </div>
             
             <!--CONTACT OFFICES SECTION-->
@@ -186,6 +186,48 @@
                     </div>
                 </div>
             </div>
+            
+            <!--CONTACT MAP-->
+            <div class="contactMap relative w-full">
+                <img src="./assets/map.png" alt="">
+            </div>
+            
+            <!--CONTACT FORM SECTION-->
+            <div class="contactForm relative flex w-full flex-col lg:pr-24 lg:pl-0 md:px-12 lg:py-24 md:py-12 py-6">
+                <div class="back"></div>
+                <div class="contactInner relative grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 lg:gap-16 md:gap-8 gap-5">
+                    <img src="./assets/contact image.png" alt="" class="contactImg">
+                    <form class="content lg:space-y-5 md-space-y-3 space-y-2">
+                        <h1 class="lg:w-3/5 md:w-4/5 w-full">Have a question or need more information?</h1>
+                        <p>Type your questions or comments below.</p>
+                        <div class="inputs grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-10 md:gap-6 gap-4">
+                            <div class="input flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
+                                <label>First Name</label>
+                                <input type="text" placeholder="Type your name e.g Salawowo Salapata">
+                            </div>
+                            <div class="input flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
+                                <label>Second Name</label>
+                                <input type="text" placeholder="Type your name e.g Salawowo Salapata">
+                            </div>
+                            <div class="input flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
+                                <label>Email</label>
+                                <input type="email" placeholder="Type your email e.g salawowo@gmail.com">
+                            </div>
+                            <div class="input flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
+                                <label>Phone</label>
+                                <input type="tel" placeholder="Enter your phone number e.g 072X XXXX">
+                            </div>
+                        </div>
+                        <div class="comment flex flex-col lg:space-y-5 md:space-y-3 space-y-2">
+                            <label>Questions or Comments</label>
+                            <textarea cols="30" rows="10" placeholder="Style Points is a loyalty scheme for all Space and Style customers. Once registered to the programme, you start earning points when you spend up to Ksh.500. The more you shop, the more points you earn. Earning of Style Points starts as soon as you register for the programme."></textarea>
+                        </div>
+                        <button type="submit" class="submitBtn">Submit</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="Contactspacer w-full lg:h-12 md:h-12 h-6"></div>
         </main>
         
         <!--FOOTER-->
@@ -253,6 +295,7 @@
                 activeNewsTab1: false,
                 activeNewsTab2: false,
                 activeNewsTab3: false,
+                showBranches: false
             },
         });
     </script>
